@@ -5,6 +5,10 @@ def build_rag_prompt(
 
     context_parts = []
 
+    seen_nodes = set()
+
+    MAX_CONTEXT_CHARS = 12000
+
     for chunk in retrieved_chunks:
 
         # -----------------------------------------
@@ -16,6 +20,12 @@ def build_rag_prompt(
 ==============================
 MAIN RETRIEVED CHUNK
 ==============================
+
+Contract:
+{chunk.get("contractId")}
+
+Score:
+{round(chunk.get("score", 0), 4)}
 
 Section:
 {chunk.get("sectionTitle")}
@@ -29,7 +39,7 @@ Text:
         )
 
         # -----------------------------------------
-        # HIERARCHICAL CONTEXT EXPANSION
+        # HIERARCHICAL CONTEXT
         # -----------------------------------------
 
         expanded_nodes = chunk.get(
@@ -39,16 +49,23 @@ Text:
 
         for node in expanded_nodes:
 
+            node_id = node.get("nodeId")
+
+            if node_id in seen_nodes:
+                continue
+
+            seen_nodes.add(node_id)
+
             node_text = node.get("text")
 
             if not node_text:
                 continue
 
-            # -----------------------------------------
-            # COMPRESS EXPANDED NODE TEXT
-            # -----------------------------------------
-
             node_type = node.get("nodeType")
+
+            # -----------------------------------------
+            # COMPRESS CONTEXT
+            # -----------------------------------------
 
             if node_type == "section":
                 compressed_text = node_text[:300]
@@ -69,7 +86,7 @@ Title:
 {node.get("title")}
 
 Node Type:
-{node.get("nodeType")}
+{node_type}
 
 Text:
 {compressed_text}
@@ -77,6 +94,12 @@ Text:
             )
 
     final_context = "\n\n".join(context_parts)
+
+    # -----------------------------------------
+    # TOKEN SAFETY
+    # -----------------------------------------
+
+    final_context = final_context[:MAX_CONTEXT_CHARS]
 
     prompt = f"""
 You are a contract intelligence assistant.
@@ -91,7 +114,7 @@ Use the hierarchical context to understand:
 - legal dependencies
 
 If the answer is not found, say:
-'I could not find relevant information.'
+"I could not find relevant information."
 
 Provide a concise legally grounded answer.
 
