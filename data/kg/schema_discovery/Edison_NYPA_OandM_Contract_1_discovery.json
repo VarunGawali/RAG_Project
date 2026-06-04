@@ -1,0 +1,2228 @@
+[
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XII:12_4:Community_Right_to_Know:9ebd93",
+    "source_clause_title": "12.4 Community Right to Know",
+    "contract_id": "Edison_NYPA_OandM_Contract_1",
+    "source_page_start": 34,
+    "source_page_end": 35,
+    "clause_type_hint": "payment",
+    "entities": [
+      {
+        "id": "ent_con_edison",
+        "entity_type": "Operator Obligor",
+        "name": "Con Edison",
+        "legal_role": "Con Edison is contractually obligated to develop and maintain the chemical inventory and implement the Risk Management Plan upon approval, making it responsible for compliance with chemical reporting and safety implementation at the facility.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall develop and maintain an inventory of all chemicals and hazardous substances... Con Edison shall notify the Power Authority... Con Edison shall be responsible for the implementation of the RMP...",
+        "properties": {}
+      },
+      {
+        "id": "ent_power_authority",
+        "entity_type": "Contracting Party and Regulatory Compliance Obligor",
+        "name": "Power Authority",
+        "legal_role": "The Power Authority is responsible for preparing, submitting, and maintaining the Risk Management Plan, conducting inspections, obtaining and submitting Material Safety Data Sheets, appointing an Emergency Coordinator, and filing required hazardous substance disclosure forms.",
+        "confidence": 1.0,
+        "evidence_quote": "The Power Authority shall be responsible for: i. Preparing, submitting, and maintaining the Risk Management Plan... ii. Conducting periodic inspections... The Power Authority shall obtain and submit Material Safety Data Sheets... The Power Authority shall appoint an Emergency Coordinator... The Power Authority shall be responsible for the filing of all Facility Inventory Forms...",
+        "properties": {}
+      },
+      {
+        "id": "ent_chemical_inventory",
+        "entity_type": "Chemical Inventory Obligation",
+        "name": "Chemical Inventory",
+        "legal_role": "A legally mandated inventory of all chemicals and hazardous substances subject to reporting requirements under the Community Right To Know Law, which must be developed and maintained by Con Edison.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall develop and maintain an inventory of all chemicals and hazardous substances, subject to reporting requirements under the Community Right To Know Law...",
+        "properties": {}
+      },
+      {
+        "id": "ent_risk_management_plan",
+        "entity_type": "Risk Management Plan (RMP)",
+        "name": "Risk Management Plan",
+        "legal_role": "A formal plan required by Environmental Laws for the facility, which the Power Authority must prepare, submit, maintain, and which Con Edison must implement upon approval.",
+        "confidence": 1.0,
+        "evidence_quote": "The Power Authority shall be responsible for: i. Preparing, submitting, and maintaining the Risk Management Plan ('RMP') for the Facility in compliance with Environmental Laws... Con Edison shall be responsible for the implementation of the RMP...",
+        "properties": {}
+      },
+      {
+        "id": "ent_material_safety_data_sheets",
+        "entity_type": "Material Safety Data Sheets (MSDS) Obligation",
+        "name": "Material Safety Data Sheets",
+        "legal_role": "Documents that the Power Authority must obtain and submit for Extremely Hazardous Substances and OSHA hazardous substances present at the facility in specified quantities to designated emergency response entities.",
+        "confidence": 1.0,
+        "evidence_quote": "The Power Authority shall obtain and submit Material Safety Data Sheets ('MSDS') for any Extremely Hazardous Substance ('EHS') present at the facility... to the State Emergency Response Commission ('SERC'), the Local Emergency Planning Committee ('LEPC'), and the local fire department...",
+        "properties": {}
+      },
+      {
+        "id": "ent_emergency_coordinator",
+        "entity_type": "Emergency Coordinator Appointment Obligation",
+        "name": "Emergency Coordinator",
+        "legal_role": "An individual appointed by the Power Authority to coordinate emergency response, with notification obligations to SERC and LEPC upon presence of EHS at or above threshold quantities.",
+        "confidence": 1.0,
+        "evidence_quote": "The Power Authority shall appoint an Emergency Coordinator and shall notify the SERC and the LEPC of such appointment within 60 days of an EHS being present at the facility...",
+        "properties": {}
+      },
+      {
+        "id": "ent_facility_inventory_forms",
+        "entity_type": "Hazardous Substance Disclosure Filing Obligation",
+        "name": "Facility Inventory Forms and 209-U Forms",
+        "legal_role": "Forms required to be filed by the Power Authority after the O&M Commencement Date disclosing hazardous substances, with associated fees and provision of copies to Con Edison.",
+        "confidence": 1.0,
+        "evidence_quote": "After the O&M Commencement Date, the Power Authority shall be responsible for the filing of all Facility Inventory Forms ('FIF'), 209-U forms and any other forms relating to the disclosure of hazardous substances...",
+        "properties": {}
+      },
+      {
+        "id": "ent_serc",
+        "entity_type": "State Emergency Response Commission (SERC)",
+        "name": "State Emergency Response Commission",
+        "legal_role": "A regulatory body to which the Power Authority must submit Material Safety Data Sheets and notify of Emergency Coordinator appointments.",
+        "confidence": 1.0,
+        "evidence_quote": "to the State Emergency Response Commission ('SERC')... The Power Authority shall appoint an Emergency Coordinator and shall notify the SERC...",
+        "properties": {}
+      },
+      {
+        "id": "ent_lepc",
+        "entity_type": "Local Emergency Planning Committee (LEPC)",
+        "name": "Local Emergency Planning Committee",
+        "legal_role": "A local regulatory body to which the Power Authority must submit Material Safety Data Sheets and notify of Emergency Coordinator appointments.",
+        "confidence": 1.0,
+        "evidence_quote": "to the... Local Emergency Planning Committee ('LEPC')... The Power Authority shall appoint an Emergency Coordinator and shall notify the... LEPC...",
+        "properties": {}
+      },
+      {
+        "id": "ent_local_fire_department",
+        "entity_type": "Local Fire Department",
+        "name": "Local Fire Department",
+        "legal_role": "Local emergency response entity to which the Power Authority must submit Material Safety Data Sheets for hazardous substances.",
+        "confidence": 1.0,
+        "evidence_quote": "to the... local fire department within three (3) months of their acquisition.",
+        "properties": {}
+      },
+      {
+        "id": "ent_o_and_m_commencement_date",
+        "entity_type": "Operational Commencement Date",
+        "name": "O&M Commencement Date",
+        "legal_role": "The date marking the start of operations and maintenance responsibilities, triggering certain obligations such as filing hazardous substance disclosure forms.",
+        "confidence": 1.0,
+        "evidence_quote": "At least thirty (30) days prior to the O&M Commencement Date... After the O&M Commencement Date, the Power Authority shall be responsible for the filing...",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_con_edison",
+        "target_id": "ent_chemical_inventory",
+        "relationship_type": "Chemical Inventory Development and Maintenance Obligation",
+        "legal_significance": "Con Edison is legally required to develop and maintain the chemical inventory, ensuring compliance with Community Right To Know Law reporting requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall develop and maintain an inventory of all chemicals and hazardous substances, subject to reporting requirements under the Community Right To Know Law..."
+      },
+      {
+        "source_id": "ent_con_edison",
+        "target_id": "ent_power_authority",
+        "relationship_type": "Notification Obligation Regarding Chemical Inventory Changes",
+        "legal_significance": "Con Edison must notify the Power Authority within five business days of any addition or removal of chemicals or hazardous substances, enabling the Power Authority to maintain accurate records and compliance.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall notify the Power Authority within five (5) business days whenever a new such chemical or hazardous substance is brought on to the facility or whenever such chemical or hazardous substance is removed..."
+      },
+      {
+        "source_id": "ent_power_authority",
+        "target_id": "ent_risk_management_plan",
+        "relationship_type": "RMP Preparation and Maintenance Obligation",
+        "legal_significance": "The Power Authority is legally responsible for preparing, submitting, and maintaining the Risk Management Plan to ensure compliance with Environmental Laws.",
+        "confidence": 1.0,
+        "evidence_quote": "The Power Authority shall be responsible for: i. Preparing, submitting, and maintaining the Risk Management Plan ('RMP') for the Facility in compliance with Environmental Laws..."
+      },
+      {
+        "source_id": "ent_power_authority",
+        "target_id": "ent_con_edison",
+        "relationship_type": "Provision of Draft RMP for Review and Comment",
+        "legal_significance": "The Power Authority must provide Con Edison with a draft RMP at least 30 days prior to the O&M Commencement Date, allowing Con Edison to review and approve implementation provisions, which affects Con Edison's implementation obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "At least thirty (30) days prior to the O&M Commencement Date, the Power Authority shall provide Con Edison with a draft RMP for Con Edison's review and comment."
+      },
+      {
+        "source_id": "ent_con_edison",
+        "target_id": "ent_risk_management_plan",
+        "relationship_type": "RMP Implementation Obligation Subject to Approval",
+        "legal_significance": "Con Edison is responsible for implementing the RMP only after having reviewed and approved the implementation sections, ensuring control over operational compliance measures.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall be responsible for the implementation of the RMP so long as Con Edison has had an opportunity to review and approve the implementation sections of the RMP."
+      },
+      {
+        "source_id": "ent_power_authority",
+        "target_id": "ent_material_safety_data_sheets",
+        "relationship_type": "MSDS Acquisition and Submission Obligation",
+        "legal_significance": "The Power Authority must obtain and submit MSDS for EHS and OSHA hazardous substances to designated emergency response entities, ensuring regulatory compliance and emergency preparedness.",
+        "confidence": 1.0,
+        "evidence_quote": "The Power Authority shall obtain and submit Material Safety Data Sheets ('MSDS') for any Extremely Hazardous Substance ('EHS') present at the facility... to the State Emergency Response Commission ('SERC'), the Local Emergency Planning Committee ('LEPC'), and the local fire department..."
+      },
+      {
+        "source_id": "ent_power_authority",
+        "target_id": "ent_emergency_coordinator",
+        "relationship_type": "Emergency Coordinator Appointment and Notification Obligation",
+        "legal_significance": "The Power Authority must appoint an Emergency Coordinator and notify SERC and LEPC within 60 days of EHS presence, ensuring designated emergency response leadership and regulatory notification.",
+        "confidence": 1.0,
+        "evidence_quote": "The Power Authority shall appoint an Emergency Coordinator and shall notify the SERC and the LEPC of such appointment within 60 days of an EHS being present at the facility..."
+      },
+      {
+        "source_id": "ent_power_authority",
+        "target_id": "ent_facility_inventory_forms",
+        "relationship_type": "Hazardous Substance Disclosure Filing and Fee Payment Obligation",
+        "legal_significance": "After the O&M Commencement Date, the Power Authority is responsible for filing all required hazardous substance disclosure forms and paying associated fees, ensuring compliance with Applicable Law.",
+        "confidence": 1.0,
+        "evidence_quote": "After the O&M Commencement Date, the Power Authority shall be responsible for the filing of all Facility Inventory Forms ('FIF'), 209-U forms and any other forms relating to the disclosure of hazardous substances... and for the payment of all associated filing fees..."
+      },
+      {
+        "source_id": "ent_power_authority",
+        "target_id": "ent_con_edison",
+        "relationship_type": "Provision of Copies of Filings Obligation",
+        "legal_significance": "The Power Authority must provide Con Edison with copies of all hazardous substance disclosure filings, ensuring transparency and enabling Con Edison to monitor compliance.",
+        "confidence": 1.0,
+        "evidence_quote": "and shall provide: Con Edison with a copy of each such filing."
+      },
+      {
+        "source_id": "ent_con_edison",
+        "target_id": "ent_power_authority",
+        "relationship_type": "Provision of Chemical Inventory Information Obligation",
+        "legal_significance": "Con Edison must provide the Power Authority with chemical inventory information under its custody and control in sufficient time to complete required filings, enabling the Power Authority to fulfill its filing obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall be responsible for providing Power Authority with information related to the chemical inventory under Con Edison's custody and control at the Facility in sufficient time to allow Power Authority to complete the required forms."
+      }
+    ],
+    "extractor_notes": "This clause delineates detailed compliance obligations between Con Edison and the Power Authority regarding chemical inventory, risk management, emergency coordination, and hazardous substance reporting under the Community Right To Know Law and related environmental regulations. The clause explicitly assigns preparation, notification, implementation, and filing duties, with clear timelines and approval rights, reflecting a complex regulatory compliance framework."
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:8d15fb:3_1_4:In_accordance_with_Article_XIX_Indemnification_the:027004",
+    "source_clause_title": "3.1.4 In accordance with Article XIX (Indemnification), the Power Authority will indemnify",
+    "contract_id": "Edison_NYPA_OandM_Contract_1",
+    "source_page_start": 12,
+    "source_page_end": 12,
+    "clause_type_hint": "liability",
+    "entities": [
+      {
+        "id": "ent_power_authority",
+        "entity_type": "Indemnitor",
+        "name": "Power Authority",
+        "legal_role": "The party obligated to indemnify and hold harmless Con Edison for NERC obligations and penalties during the Compliance Transfer Periods.",
+        "confidence": 1.0,
+        "evidence_quote": "the Power Authority will indemnify and hold Con Edison harmless, to the extent allowed by law, for all such NERC obligations and penalties",
+        "properties": {}
+      },
+      {
+        "id": "ent_con_edison",
+        "entity_type": "Indemnitee and Compliance Manager",
+        "name": "Con Edison",
+        "legal_role": "The party indemnified by the Power Authority during the Compliance Transfer Periods and who assumes compliance responsibility after those periods.",
+        "confidence": 1.0,
+        "evidence_quote": "the Power Authority will indemnify and hold Con Edison harmless... After the Compliance Transfer Periods, Con Edison will assume the responsibility for managing compliance",
+        "properties": {}
+      },
+      {
+        "id": "ent_compliance_transfer_periods",
+        "entity_type": "Compliance Transfer Periods",
+        "name": "Compliance Transfer Periods",
+        "legal_role": "The defined timeframe during which the Power Authority manages compliance and indemnifies Con Edison, after which Con Edison assumes compliance responsibility.",
+        "confidence": 1.0,
+        "evidence_quote": "hereinafter referred to as the \"Compliance Transfer Periods\"... After the Compliance Transfer Periods, Con Edison will assume the responsibility",
+        "properties": {}
+      },
+      {
+        "id": "ent_nerc_reliability_standards",
+        "entity_type": "Regulatory Compliance Standards",
+        "name": "NERC Reliability Standards, NPCC Reliability Standards, NPCC Directories and NPCC Criteria Requirements",
+        "legal_role": "The specific regulatory standards and requirements that govern compliance and trigger indemnification and accountability obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "each individual applicable NERC Reliability Standard, NPCC Reliability Standards, NPCC Directories and NPCC Criteria Requirements",
+        "properties": {}
+      },
+      {
+        "id": "ent_documentary_evidence",
+        "entity_type": "Compliance Documentation Obligation",
+        "name": "Documentary evidence required to demonstrate compliance",
+        "legal_role": "The evidence that Con Edison must provide to the Power Authority to demonstrate compliance during the Compliance Transfer Periods.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall provide the Power Authority with documentary evidence required to demonstrate compliance",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_power_authority",
+        "target_id": "ent_con_edison",
+        "relationship_type": "Indemnification and Hold Harmless Obligation",
+        "legal_significance": "The Power Authority's obligation to indemnify and hold Con Edison harmless protects Con Edison from liabilities related to NERC obligations and penalties during the Compliance Transfer Periods.",
+        "confidence": 1.0,
+        "evidence_quote": "the Power Authority will indemnify and hold Con Edison harmless, to the extent allowed by law, for all such NERC obligations and penalties"
+      },
+      {
+        "source_id": "ent_compliance_transfer_periods",
+        "target_id": "ent_power_authority",
+        "relationship_type": "Compliance Management Responsibility",
+        "legal_significance": "During the Compliance Transfer Periods, the Power Authority is responsible for managing compliance and accountability for violations and penalties under the specified standards.",
+        "confidence": 1.0,
+        "evidence_quote": "For the individual NERC Reliability Standards... that the Power Authority has responsibility for managing compliance, maintaining documentation, and the accountability for compliance violations and penalties, during the Compliance Transfer Periods"
+      },
+      {
+        "source_id": "ent_compliance_transfer_periods",
+        "target_id": "ent_con_edison",
+        "relationship_type": "Compliance Management Assumption",
+        "legal_significance": "After the Compliance Transfer Periods, Con Edison assumes responsibility and accountability for compliance and penalties under the applicable standards.",
+        "confidence": 1.0,
+        "evidence_quote": "After the Compliance Transfer Periods, Con Edison will assume the responsibility for managing compliance... and the accountability for compliance violations and penalties"
+      },
+      {
+        "source_id": "ent_con_edison",
+        "target_id": "ent_documentary_evidence",
+        "relationship_type": "Provision of Compliance Evidence",
+        "legal_significance": "Con Edison must provide documentary evidence to the Power Authority to demonstrate compliance during the Compliance Transfer Periods, enabling the Power Authority to fulfill its compliance management obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall provide the Power Authority with documentary evidence required to demonstrate compliance"
+      },
+      {
+        "source_id": "ent_nerc_reliability_standards",
+        "target_id": "ent_compliance_transfer_periods",
+        "relationship_type": "Temporal Compliance Framework",
+        "legal_significance": "The NERC and NPCC standards contain specific timeframes that define when retesting or analysis must occur, which delineates the Compliance Transfer Periods.",
+        "confidence": 1.0,
+        "evidence_quote": "each individual NERC Reliability Standard, NPCC Reliability Standards, NPCC Directories and NPCC Criteria Requirements contains a specific timeframe when such retesting or analysis must occur"
+      }
+    ],
+    "extractor_notes": "The clause defines a temporal division of compliance responsibility and indemnification between the Power Authority and Con Edison, centered on the Compliance Transfer Periods, with explicit obligations for evidence provision and accountability for penalties."
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:8d15fb:3_1_7:Management_of_Critical_Infrastructure_Protection_C:393209",
+    "source_clause_title": "3.1.7 Management of Critical Infrastructure Protection (CIP) Standards:",
+    "contract_id": "Edison_NYPA_OandM_Contract_1",
+    "source_page_start": 13,
+    "source_page_end": 14,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_nypa",
+        "entity_type": "Power Authority",
+        "name": "NYPA",
+        "legal_role": "NYPA is the party responsible for determining whether the Astoria Annex Substation is a Critical Asset and for certain compliance and cost responsibilities under the contract.",
+        "confidence": 1.0,
+        "evidence_quote": "NYPA will determine whether the Astoria Annex Substation is a Critical Asset and determine the existence of Critical Cyber Assets.",
+        "properties": {}
+      },
+      {
+        "id": "ent_astoria_annex_substation",
+        "entity_type": "Critical Asset Candidate",
+        "name": "Astoria Annex Substation",
+        "legal_role": "The Astoria Annex Substation is the facility subject to determination as a Critical Asset and Critical Cyber Assets, triggering compliance obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "NYPA will determine whether the Astoria Annex Substation is a Critical Asset and determine the existence of Critical Cyber Assets.",
+        "properties": {}
+      },
+      {
+        "id": "ent_critical_asset",
+        "entity_type": "Critical Asset",
+        "name": "Critical Asset",
+        "legal_role": "A designation that triggers mandatory compliance with CIP-003 through CIP-009 standards and related responsibilities.",
+        "confidence": 1.0,
+        "evidence_quote": "If Power Authority determines that the Astoria Annex Substation is a Critical Asset with Critical Cyber Assets, then compliance required by CIP-003 through CIP-009 shall be applied",
+        "properties": {}
+      },
+      {
+        "id": "ent_critical_cyber_assets",
+        "entity_type": "Critical Cyber Assets",
+        "name": "Critical Cyber Assets",
+        "legal_role": "Cyber assets whose designation as critical triggers specific compliance and operational change obligations under CIP standards.",
+        "confidence": 1.0,
+        "evidence_quote": "If Power Authority determines that the Astoria Annex Substation is a Critical Asset with Critical Cyber Assets, then compliance required by CIP-003 through CIP-009 shall be applied",
+        "properties": {}
+      },
+      {
+        "id": "ent_cip_003_to_009",
+        "entity_type": "NERC CIP Standards",
+        "name": "CIP-003 through CIP-009",
+        "legal_role": "A set of mandatory cybersecurity standards that must be complied with if the facility is designated as a Critical Asset with Critical Cyber Assets.",
+        "confidence": 1.0,
+        "evidence_quote": "compliance required by CIP-003 through CIP-009 shall be applied",
+        "properties": {}
+      },
+      {
+        "id": "ent_power_authority_cost_responsibility",
+        "entity_type": "Cost and Expense Responsibility",
+        "name": "Power Authority's sole cost and expense",
+        "legal_role": "The obligation of the Power Authority to bear all costs related to required design and operational changes for CIP compliance.",
+        "confidence": 1.0,
+        "evidence_quote": "any required changes to the existing design and operation of the Facility shall be the Power Authority's sole responsibility and performed at the Power Authority's sole cost and expense",
+        "properties": {}
+      },
+      {
+        "id": "ent_o_and_m_commencement_date",
+        "entity_type": "Contractual Milestone Date",
+        "name": "O&M Commencement Date",
+        "legal_role": "The date before which certain compliance and operational changes must be completed and after which operational responsibilities transfer.",
+        "confidence": 1.0,
+        "evidence_quote": "Prior to the O&M Commencement Date... must be completed at least sixty (60) days prior to the O&M Commencement Date",
+        "properties": {}
+      },
+      {
+        "id": "ent_con_edison",
+        "entity_type": "Operator and Compliance Manager",
+        "name": "Con Edison",
+        "legal_role": "The party responsible for adhering to policies, performing functional activities related to NERC CIP compliance, and managing compliance audits after certain periods.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall be required to adhere to Con Edison's policies and procedures, and Con Edison shall perform all functional activities related to NERC CIP compliance",
+        "properties": {}
+      },
+      {
+        "id": "ent_compliance_transfer_periods",
+        "entity_type": "Compliance Transfer Periods",
+        "name": "Compliance Transfer Periods",
+        "legal_role": "The period after which Con Edison assumes responsibility for managing protections and compliance evidence.",
+        "confidence": 1.0,
+        "evidence_quote": "After the Compliance Transfer Periods, Con Edison will assume responsibility for managing those protections, maintaining the required compliance evidence",
+        "properties": {}
+      },
+      {
+        "id": "ent_nypa_registered_transmission_owner",
+        "entity_type": "Registered Transmission Owner",
+        "name": "NYPA as registered Transmission Owner",
+        "legal_role": "NYPA's role as the registered Transmission Owner includes retaining responsibility for determining Critical Asset status and existence of Critical Cyber Assets.",
+        "confidence": 1.0,
+        "evidence_quote": "NYPA, as the registered Transmission Owner for the Astoria Annex Substation, will retain responsibility for the determination of whether the Astoria Annex Substation is a Critical Asset",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_nypa",
+        "target_id": "ent_astoria_annex_substation",
+        "relationship_type": "Determination of Critical Asset Status",
+        "legal_significance": "NYPA's determination of whether the Astoria Annex Substation is a Critical Asset triggers compliance obligations under CIP standards.",
+        "confidence": 1.0,
+        "evidence_quote": "NYPA will determine whether the Astoria Annex Substation is a Critical Asset"
+      },
+      {
+        "source_id": "ent_nypa",
+        "target_id": "ent_critical_cyber_assets",
+        "relationship_type": "Determination of Existence of Critical Cyber Assets",
+        "legal_significance": "NYPA's determination of Critical Cyber Assets existence triggers application of CIP compliance requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "NYPA will determine... the existence of Critical Cyber Assets"
+      },
+      {
+        "source_id": "ent_critical_asset",
+        "target_id": "ent_cip_003_to_009",
+        "relationship_type": "Trigger of CIP Compliance Obligations",
+        "legal_significance": "Designation as a Critical Asset with Critical Cyber Assets mandates compliance with CIP-003 through CIP-009 standards.",
+        "confidence": 1.0,
+        "evidence_quote": "If Power Authority determines that the Astoria Annex Substation is a Critical Asset with Critical Cyber Assets, then compliance required by CIP-003 through CIP-009 shall be applied"
+      },
+      {
+        "source_id": "ent_power_authority_cost_responsibility",
+        "target_id": "ent_critical_asset",
+        "relationship_type": "Cost Responsibility for Compliance Changes",
+        "legal_significance": "Power Authority bears sole cost and expense for design and operational changes required for CIP compliance if the facility is a Critical Asset.",
+        "confidence": 1.0,
+        "evidence_quote": "any required changes to the existing design and operation of the Facility shall be the Power Authority's sole responsibility and performed at the Power Authority's sole cost and expense"
+      },
+      {
+        "source_id": "ent_o_and_m_commencement_date",
+        "target_id": "ent_power_authority_cost_responsibility",
+        "relationship_type": "Deadline for Completion of Compliance Changes",
+        "legal_significance": "All design and operational changes required for CIP compliance must be completed at least 60 days prior to the O&M Commencement Date.",
+        "confidence": 1.0,
+        "evidence_quote": "all such design and operational changes required to comply with the obligations of being a Critical Cyber Asset must be completed at least sixty (60) days prior to the O&M Commencement Date"
+      },
+      {
+        "source_id": "ent_con_edison",
+        "target_id": "ent_cip_003_to_009",
+        "relationship_type": "Performance of Functional Activities for CIP Compliance",
+        "legal_significance": "Con Edison is obligated to perform all functional activities related to NERC CIP compliance and provide documentary evidence to NYPA.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall perform all functional activities related to NERC CIP compliance and shall provide the Power Authority with documentary evidence required to demonstrate compliance"
+      },
+      {
+        "source_id": "ent_compliance_transfer_periods",
+        "target_id": "ent_con_edison",
+        "relationship_type": "Transfer of Compliance Management Responsibility",
+        "legal_significance": "After the Compliance Transfer Periods, Con Edison assumes responsibility for managing protections, compliance evidence, and audits.",
+        "confidence": 1.0,
+        "evidence_quote": "After the Compliance Transfer Periods, Con Edison will assume responsibility for managing those protections, maintaining the required compliance evidence, and managing compliance audits"
+      },
+      {
+        "source_id": "ent_nypa_registered_transmission_owner",
+        "target_id": "ent_astoria_annex_substation",
+        "relationship_type": "Retention of Determination Responsibility",
+        "legal_significance": "NYPA retains responsibility for determining Critical Asset and Critical Cyber Asset status as the registered Transmission Owner.",
+        "confidence": 1.0,
+        "evidence_quote": "NYPA, as the registered Transmission Owner for the Astoria Annex Substation, will retain responsibility for the determination of whether the Astoria Annex Substation is a Critical Asset and determining the existence of Critical Cyber Assets"
+      },
+      {
+        "source_id": "ent_nypa",
+        "target_id": "ent_con_edison",
+        "relationship_type": "Delegation of Compliance Establishment and Management",
+        "legal_significance": "If protections are not necessary until after the O&M Commencement Date, NYPA directs Con Edison to establish and manage CIP protections at NYPA's sole cost and expense.",
+        "confidence": 1.0,
+        "evidence_quote": "at Power Authority's direction, Con Edison shall be responsible at Power Authority's sole cost and expense, for establishing and managing the protections required by CIP-002 through CIP-009"
+      }
+    ],
+    "extractor_notes": "The clause clearly delineates responsibilities and cost obligations between NYPA (Power Authority) and Con Edison regarding CIP compliance, with specific timing requirements tied to the O&M Commencement Date and Compliance Transfer Periods. The role of NYPA as registered Transmission Owner is emphasized for determinations of criticality, while Con Edison is assigned operational compliance tasks post-transfer."
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XII:12_1:Release_Reporting_Requirements:c03392",
+    "source_clause_title": "12.1 Release Reporting Requirements:",
+    "contract_id": "Edison_NYPA_OandM_Contract_1",
+    "source_page_start": 32,
+    "source_page_end": 33,
+    "clause_type_hint": "indemnity",
+    "entities": [
+      {
+        "id": "ent_parties",
+        "entity_type": "Contracting Parties",
+        "name": "The Parties",
+        "legal_role": "The Parties are the contractual entities bound by the reporting and indemnity obligations set forth in this clause.",
+        "confidence": 1.0,
+        "evidence_quote": "The Parties agree that in the event that either Party discovers on or about the Easement Area ... the discovering Party shall use commercially reasonable efforts to provide relevant information ...",
+        "properties": {}
+      },
+      {
+        "id": "ent_easement_area",
+        "entity_type": "Easement Area",
+        "name": "Easement Area",
+        "legal_role": "The Easement Area is the geographic location subject to reporting obligations and potential environmental incidents under the contract.",
+        "confidence": 1.0,
+        "evidence_quote": "on or about the Easement Area (as defined in the Easement Grant, as may be amended)",
+        "properties": {}
+      },
+      {
+        "id": "ent_facility",
+        "entity_type": "Facility",
+        "name": "Facility",
+        "legal_role": "The Facility is a defined location subject to environmental condition discovery and reporting obligations under the contract.",
+        "confidence": 1.0,
+        "evidence_quote": "on or about the Easement Area ... or the Facility any condition or incident reasonably believed to trigger any of the reporting obligations",
+        "properties": {}
+      },
+      {
+        "id": "ent_discovering_party",
+        "entity_type": "Discovering Party",
+        "name": "Discovering Party",
+        "legal_role": "The Discovering Party is the Party who identifies a condition or incident triggering reporting obligations and must notify the other Party.",
+        "confidence": 1.0,
+        "evidence_quote": "the discovering Party shall use commercially reasonable efforts to provide relevant information as quickly as practicable to the other Party",
+        "properties": {}
+      },
+      {
+        "id": "ent_power_authority",
+        "entity_type": "Power Authority",
+        "name": "Power Authority",
+        "legal_role": "The Power Authority is the Party responsible for reporting Releases to Governmental Authorities and indemnifying Con Edison for penalties arising from failure to report.",
+        "confidence": 1.0,
+        "evidence_quote": "The Power Authority shall report to the proper Governmental Authorities any reportable Releases ... the Power Authority shall indemnify Con Edison for any such assessed penalties",
+        "properties": {}
+      },
+      {
+        "id": "ent_con_edison",
+        "entity_type": "Con Edison",
+        "name": "Con Edison",
+        "legal_role": "Con Edison is the Party that may discover Releases, provide information to the Power Authority, and may report Releases if the Power Authority fails to do so timely.",
+        "confidence": 1.0,
+        "evidence_quote": "provided that if Con Edison is the discovering party, it provides the Power Authority with relevant information ... Con Edison may report such Release",
+        "properties": {}
+      },
+      {
+        "id": "ent_governmental_authorities",
+        "entity_type": "Governmental Authorities",
+        "name": "Governmental Authorities",
+        "legal_role": "Governmental Authorities are the regulatory bodies to whom reportable Releases must be reported under applicable laws.",
+        "confidence": 1.0,
+        "evidence_quote": "The Power Authority shall report to the proper Governmental Authorities any reportable Releases within the time required by applicable federal, state, local, and Environmental Laws",
+        "properties": {}
+      },
+      {
+        "id": "ent_reportable_release",
+        "entity_type": "Reportable Release",
+        "name": "Reportable Release",
+        "legal_role": "A Reportable Release is an environmental release incident triggering mandatory reporting obligations under applicable laws and this contract.",
+        "confidence": 1.0,
+        "evidence_quote": "any reportable Releases within the time required by applicable federal, state, local, and Environmental Laws",
+        "properties": {}
+      },
+      {
+        "id": "ent_reporting_obligations",
+        "entity_type": "Reporting Obligations",
+        "name": "Reporting Obligations under Section 12.1(b)",
+        "legal_role": "The Reporting Obligations define the duty to notify Governmental Authorities and the other Party about reportable Releases within legally mandated timeframes.",
+        "confidence": 1.0,
+        "evidence_quote": "any condition or incident reasonably believed to trigger any of the reporting obligations set forth in Section 12.1 (b)",
+        "properties": {}
+      },
+      {
+        "id": "ent_indemnity_obligation",
+        "entity_type": "Indemnity Obligation",
+        "name": "Indemnity Obligation of Power Authority to Con Edison",
+        "legal_role": "The Indemnity Obligation requires the Power Authority to compensate Con Edison for penalties assessed due to the Power Authority's failure to timely report Releases.",
+        "confidence": 1.0,
+        "evidence_quote": "the Power Authority shall indemnify Con Edison for any such assessed penalties pursuant to Section 12.5",
+        "properties": {}
+      },
+      {
+        "id": "ent_spill_prevention_plan",
+        "entity_type": "Spill Prevention, Control and Countermeasure Plan",
+        "name": "Spill Prevention, Control and Countermeasure Plan",
+        "legal_role": "The Plan governs the actions Con Edison must take to control and contain Releases consistent with applicable laws and requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "consistent with applicable federal, state, local, and Environmental Laws, or Power Authority requirements and the Spill Prevention, Control and Countermeasure Plan",
+        "properties": {}
+      },
+      {
+        "id": "ent_remediation_obligations",
+        "entity_type": "Remediation Obligations",
+        "name": "Remediation Obligations under Section 12.2",
+        "legal_role": "The Remediation Obligations define the Parties' rights and duties regarding cleanup activities, which are not altered by Section 12.1(c).",
+        "confidence": 1.0,
+        "evidence_quote": "This Section 12.1 (c) does not change any rights or obligations of the Parties with respect to Remediation under Section 12.2",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_discovering_party",
+        "target_id": "ent_parties",
+        "relationship_type": "Notification Duty to Other Party",
+        "legal_significance": "The discovering Party must notify the other Party promptly to ensure timely awareness and compliance with reporting obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "the discovering Party shall use commercially reasonable efforts to provide relevant information as quickly as practicable to the other Party"
+      },
+      {
+        "source_id": "ent_power_authority",
+        "target_id": "ent_governmental_authorities",
+        "relationship_type": "Reporting Duty to Governmental Authorities",
+        "legal_significance": "The Power Authority is legally obligated to report reportable Releases to Governmental Authorities within required timeframes to comply with environmental laws.",
+        "confidence": 1.0,
+        "evidence_quote": "The Power Authority shall report to the proper Governmental Authorities any reportable Releases within the time required by applicable federal, state, local, and Environmental Laws"
+      },
+      {
+        "source_id": "ent_con_edison",
+        "target_id": "ent_power_authority",
+        "relationship_type": "Information Provision Duty",
+        "legal_significance": "Con Edison must provide the Power Authority with relevant information about Releases to enable timely reporting to Governmental Authorities.",
+        "confidence": 1.0,
+        "evidence_quote": "if Con Edison is the discovering party, it provides the Power Authority with relevant information regarding such Release within sufficient time"
+      },
+      {
+        "source_id": "ent_con_edison",
+        "target_id": "ent_governmental_authorities",
+        "relationship_type": "Secondary Reporting Right",
+        "legal_significance": "If the Power Authority fails to report timely, Con Edison may report the Release to Governmental Authorities to ensure compliance with legal requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison may report such Release"
+      },
+      {
+        "source_id": "ent_power_authority",
+        "target_id": "ent_con_edison",
+        "relationship_type": "Indemnity Obligation for Reporting Failures",
+        "legal_significance": "The Power Authority must indemnify Con Edison for penalties assessed due to the Power Authority's failure to report Releases timely, protecting Con Edison from financial harm.",
+        "confidence": 1.0,
+        "evidence_quote": "the Power Authority shall indemnify Con Edison for any such assessed penalties pursuant to Section 12.5"
+      },
+      {
+        "source_id": "ent_con_edison",
+        "target_id": "ent_spill_prevention_plan",
+        "relationship_type": "Obligation to Control and Contain Releases",
+        "legal_significance": "Con Edison must take actions consistent with the Spill Prevention Plan and applicable laws to control and contain Releases, ensuring environmental and safety compliance.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall promptly take all actions reasonably necessary to control and contain the release ... consistent with ... the Spill Prevention, Control and Countermeasure Plan"
+      },
+      {
+        "source_id": "ent_remediation_obligations",
+        "target_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XII:12_1:Release_Reporting_Requirements:c03392",
+        "relationship_type": "Non-Modification of Remediation Rights",
+        "legal_significance": "Section 12.1(c) explicitly states it does not alter the Parties' rights or obligations regarding Remediation under Section 12.2, preserving existing remediation duties.",
+        "confidence": 1.0,
+        "evidence_quote": "This Section 12.1 (c) does not change any rights or obligations of the Parties with respect to Remediation under Section 12.2"
+      }
+    ],
+    "extractor_notes": "The clause establishes a detailed framework for environmental release reporting, including notification duties between the Parties, reporting to Governmental Authorities, indemnity for failure to report, and control and containment obligations. The interplay between Con Edison and the Power Authority is central, with clear allocation of reporting responsibilities and indemnity. The clause also clarifies that remediation obligations under a separate section remain unaffected."
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_II:2_3:Survival_This_Second_Composite_Agreement_shall_con:9f241e",
+    "source_clause_title": "2.3 Survival. This Second Composite Agreement shall continue in effect after termination to the",
+    "contract_id": "Edison_NYPA_OandM_Contract_1",
+    "source_page_start": 11,
+    "source_page_end": 11,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_second_composite_agreement",
+        "entity_type": "Contractual Agreement",
+        "name": "Second Composite Agreement",
+        "legal_role": "This is the primary contract whose terms and obligations continue to have effect even after its termination, ensuring ongoing rights and duties.",
+        "confidence": 1.0,
+        "evidence_quote": "This Second Composite Agreement shall continue in effect after termination",
+        "properties": {}
+      },
+      {
+        "id": "ent_costs_incurred",
+        "entity_type": "Post-Termination Financial Obligation",
+        "name": "Costs incurred hereunder",
+        "legal_role": "Represents financial liabilities that must be accounted for and paid even after the contract terminates.",
+        "confidence": 1.0,
+        "evidence_quote": "extent necessary to provide for costs incurred hereunder; including final billings and payments pursuant to this Composite Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_liability_and_indemnification_obligations",
+        "entity_type": "Post-Termination Liability and Indemnification Obligations",
+        "name": "Liability and indemnification obligations arising from acts or events that occurred while this Second Composite Agreement was in effect",
+        "legal_role": "These obligations survive termination to allow enforcement of responsibility for acts/events during contract term.",
+        "confidence": 1.0,
+        "evidence_quote": "to permit the determination and enforcement of liability and indemnification obligations arising from acts or events that occurred while this Second Composite Agreement was in effect",
+        "properties": {}
+      },
+      {
+        "id": "ent_article_xii_environmental_provisions",
+        "entity_type": "Surviving Contractual Provision",
+        "name": "Article XII - Environmental Provisions",
+        "legal_role": "A specific contractual provision that explicitly survives termination to address environmental responsibilities post-termination.",
+        "confidence": 1.0,
+        "evidence_quote": "including, but not limited to, Article XII - Environmental Provisions",
+        "properties": {}
+      },
+      {
+        "id": "ent_article_xix_indemnification",
+        "entity_type": "Surviving Contractual Provision",
+        "name": "Article XIX, Indemnification",
+        "legal_role": "A specific indemnification provision that survives termination to maintain indemnity rights and obligations beyond contract end.",
+        "confidence": 1.0,
+        "evidence_quote": "including, but not limited to, ... Article XIX, Indemnification",
+        "properties": {}
+      },
+      {
+        "id": "ent_article_xx_no_warranty_disclaimers",
+        "entity_type": "Surviving Contractual Provision",
+        "name": "Article XX - No Warranty/Disclaimers",
+        "legal_role": "A provision disclaiming warranties that survives termination to limit post-termination liability.",
+        "confidence": 1.0,
+        "evidence_quote": "including, but not limited to, ... Article XX - No Warranty/Disclaimers",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_second_composite_agreement",
+        "target_id": "ent_costs_incurred",
+        "relationship_type": "Post-Termination Financial Continuity",
+        "legal_significance": "The contract requires that costs incurred under it continue to be accounted for and paid after termination, ensuring financial obligations survive.",
+        "confidence": 1.0,
+        "evidence_quote": "extent necessary to provide for costs incurred hereunder; including final billings and payments pursuant to this Composite Agreement"
+      },
+      {
+        "source_id": "ent_second_composite_agreement",
+        "target_id": "ent_liability_and_indemnification_obligations",
+        "relationship_type": "Survival of Liability and Indemnification Obligations",
+        "legal_significance": "The contract explicitly preserves liability and indemnification obligations arising during its term beyond termination, allowing enforcement post-termination.",
+        "confidence": 1.0,
+        "evidence_quote": "to permit the determination and enforcement of liability and indemnification obligations arising from acts or events that occurred while this Second Composite Agreement was in effect"
+      },
+      {
+        "source_id": "ent_second_composite_agreement",
+        "target_id": "ent_article_xii_environmental_provisions",
+        "relationship_type": "Survival of Specific Contractual Provision",
+        "legal_significance": "Article XII is specifically identified as surviving termination, ensuring environmental responsibilities continue post-termination.",
+        "confidence": 1.0,
+        "evidence_quote": "including, but not limited to, Article XII - Environmental Provisions"
+      },
+      {
+        "source_id": "ent_second_composite_agreement",
+        "target_id": "ent_article_xix_indemnification",
+        "relationship_type": "Survival of Specific Contractual Provision",
+        "legal_significance": "Article XIX indemnification provisions survive termination to maintain indemnity protections after contract ends.",
+        "confidence": 1.0,
+        "evidence_quote": "including, but not limited to, ... Article XIX, Indemnification"
+      },
+      {
+        "source_id": "ent_second_composite_agreement",
+        "target_id": "ent_article_xx_no_warranty_disclaimers",
+        "relationship_type": "Survival of Specific Contractual Provision",
+        "legal_significance": "Article XX disclaimers of warranty survive termination to limit post-termination liability exposure.",
+        "confidence": 1.0,
+        "evidence_quote": "including, but not limited to, ... Article XX - No Warranty/Disclaimers"
+      }
+    ],
+    "extractor_notes": "The clause explicitly identifies survival of certain provisions post-termination, emphasizing ongoing financial, liability, indemnification, environmental, and warranty-related obligations. The survival of these specific articles is legally significant to preserve rights and responsibilities beyond contract end."
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:5e25a2:4_1_10:Insurance_The_Power_Authority_will_procure_all_ins:8ba4a1",
+    "source_clause_title": "4.1.10 Insurance. The Power Authority will procure all insurance as required by Article",
+    "contract_id": "Edison_NYPA_OandM_Contract_1",
+    "source_page_start": 19,
+    "source_page_end": 19,
+    "clause_type_hint": "liability",
+    "entities": [
+      {
+        "id": "ent_power_authority",
+        "entity_type": "Obligor for Insurance Procurement",
+        "name": "The Power Authority",
+        "legal_role": "The Power Authority is contractually obligated to procure all insurance as required by the contract, ensuring risk coverage for the O&M Services.",
+        "confidence": 1.0,
+        "evidence_quote": "The Power Authority will procure all insurance as required by Article",
+        "properties": {}
+      },
+      {
+        "id": "ent_con_edison",
+        "entity_type": "Service Provider and Obligor for O&M Services",
+        "name": "Con Edison",
+        "legal_role": "Con Edison is the party responsible for performing the O&M Services at the Power Authority's sole cost and expense, adhering to specified standards.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall perform the O&M Services, at the Power Authority's sole cost and expense",
+        "properties": {}
+      },
+      {
+        "id": "ent_om_services",
+        "entity_type": "Contractual Scope of Work",
+        "name": "O&M Services",
+        "legal_role": "The O&M Services collectively refer to the Preparatory Work and Services and the Scope of Work under the Second Composite Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "The Preparatory Work and Services and the Scope of Work shall be referred to collectively in this Second Composite Agreement as the \"O&M Services\"",
+        "properties": {}
+      },
+      {
+        "id": "ent_con_edison_standards",
+        "entity_type": "Performance Standards",
+        "name": "Con Edison Standards",
+        "legal_role": "Con Edison Standards define the performance requirements for the O&M Services, consistent with various reliability standards and criteria.",
+        "confidence": 1.0,
+        "evidence_quote": "in accordance with Con Edison Standards, which are consistent with, NERC Reliability Standards, NPCC Reliability Standards, NPCC Directories and NPCC Criteria Requirements",
+        "properties": {}
+      },
+      {
+        "id": "ent_finalized_pmps",
+        "entity_type": "Performance Management Plans",
+        "name": "Finalized PMPs",
+        "legal_role": "Finalized PMPs are contractual documents that set forth specific performance management plans that govern the O&M Services.",
+        "confidence": 1.0,
+        "evidence_quote": "the Finalized PMPs",
+        "properties": {}
+      },
+      {
+        "id": "ent_updated_pmps",
+        "entity_type": "Performance Management Plans",
+        "name": "Updated PMPs",
+        "legal_role": "Updated PMPs are revised performance management plans that supersede prior Finalized PMPs as specified in the contract.",
+        "confidence": 1.0,
+        "evidence_quote": "any Updated PMPs",
+        "properties": {}
+      },
+      {
+        "id": "ent_power_authority_specific_terms",
+        "entity_type": "Contractual Specific Terms",
+        "name": "Power Authority's specific terms as set forth in Exhibit C",
+        "legal_role": "These specific terms in Exhibit C govern additional contractual requirements for the O&M Services and take precedence over certain standards.",
+        "confidence": 1.0,
+        "evidence_quote": "the Power Authority's specific terms as set forth in Exhibit C",
+        "properties": {}
+      },
+      {
+        "id": "ent_subcontractor",
+        "entity_type": "Subcontractor",
+        "name": "Con Edison Subcontractor(s)",
+        "legal_role": "Subcontractors engaged by Con Edison to perform portions of the O&M Services subject to Power Authority approval and contract standards.",
+        "confidence": 1.0,
+        "evidence_quote": "In the event that Con Edison subcontracts any portion of the O&M Services subject to the Power Authority's approval",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_power_authority",
+        "target_id": "ent_con_edison",
+        "relationship_type": "Payment Obligation for Services",
+        "legal_significance": "The Power Authority bears sole cost and expense for the O&M Services performed by Con Edison, establishing financial responsibility.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall perform the O&M Services, at the Power Authority's sole cost and expense"
+      },
+      {
+        "source_id": "ent_con_edison",
+        "target_id": "ent_om_services",
+        "relationship_type": "Performance Obligation",
+        "legal_significance": "Con Edison is contractually obligated to perform the O&M Services as defined in the agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall perform the O&M Services"
+      },
+      {
+        "source_id": "ent_om_services",
+        "target_id": "ent_con_edison_standards",
+        "relationship_type": "Governing Performance Standards",
+        "legal_significance": "The O&M Services must be performed in accordance with Con Edison Standards, which set the baseline for service quality and compliance.",
+        "confidence": 1.0,
+        "evidence_quote": "in accordance with Con Edison Standards"
+      },
+      {
+        "source_id": "ent_con_edison_standards",
+        "target_id": "ent_finalized_pmps",
+        "relationship_type": "Precedence in Case of Conflict",
+        "legal_significance": "Finalized PMPs take precedence and control over Con Edison Standards if there is a conflict, defining the hierarchy of contractual documents.",
+        "confidence": 1.0,
+        "evidence_quote": "In the event of a conflict between Con Edison Standards and ... the Finalized PMPs ... shall take precedence and control"
+      },
+      {
+        "source_id": "ent_finalized_pmps",
+        "target_id": "ent_updated_pmps",
+        "relationship_type": "Precedence in Case of Conflict",
+        "legal_significance": "Updated PMPs supersede Finalized PMPs in case of conflict, establishing the most current performance requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "In the event of a conflict between a Finalized PMP and any Updated PMP, the Updated PMP shall take precedence and control"
+      },
+      {
+        "source_id": "ent_power_authority_specific_terms",
+        "target_id": "ent_finalized_pmps",
+        "relationship_type": "Precedence Hierarchy",
+        "legal_significance": "Power Authority's specific terms in Exhibit C take precedence over Finalized PMPs and Updated PMPs in case of conflict, defining contractual priority.",
+        "confidence": 1.0,
+        "evidence_quote": "In the event of a conflict between any Finalized PMP or any Updated PMPs and Power Authority's specific terms as set forth in Exhibit C, the Power Authority's specific terms as set forth in Exhibit C shall take precedence and control"
+      },
+      {
+        "source_id": "ent_con_edison",
+        "target_id": "ent_subcontractor",
+        "relationship_type": "Subcontracting with Approval and Standards Flowdown",
+        "legal_significance": "Con Edison may subcontract O&M Services only with Power Authority approval and must provide subcontractors with applicable standards and plans, ensuring compliance and control.",
+        "confidence": 1.0,
+        "evidence_quote": "In the event that Con Edison subcontracts any portion of the O&M Services subject to the Power Authority's approval ... Con Edison shall provide such subcontractor(s) with any applicable Con Edison Standards, Finalized PMPs, Updated PMPs"
+      }
+    ],
+    "extractor_notes": "The clause text is partially fragmented and includes references to other contract articles and exhibits; the insurance procurement obligation is explicitly assigned to the Power Authority, while Con Edison is responsible for performing O&M Services at the Power Authority's expense, subject to a detailed precedence hierarchy among standards and plans."
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_VIII:8_1:The_rates_and_or_prices_set_forth_in_this_Second_C:9dba91",
+    "source_clause_title": "8.1 The rates and/or prices set forth in this Second Composite Agreement do not include any",
+    "contract_id": "Edison_NYPA_OandM_Contract_1",
+    "source_page_start": 30,
+    "source_page_end": 30,
+    "clause_type_hint": "payment",
+    "entities": [
+      {
+        "id": "ent_con_edison",
+        "entity_type": "Service Provider",
+        "name": "Con Edison",
+        "legal_role": "Con Edison is the party responsible for notifying Vendors about the Power Authority's tax exemption and may be required to pay certain taxes and fees which the Power Authority must reimburse.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison will notify Vendors that the Power Authority is exempt from taxes; the Power Authority agrees to reimburse Con Edison for any such taxes which the Power Authority is responsible to pay.",
+        "properties": {}
+      },
+      {
+        "id": "ent_power_authority",
+        "entity_type": "Tax-Exempt Purchaser and Reimburser",
+        "name": "the Power Authority",
+        "legal_role": "The Power Authority is the purchaser exempt from taxes and fees but agrees to reimburse Con Edison for any taxes or fees it is responsible to pay.",
+        "confidence": 1.0,
+        "evidence_quote": "the Power Authority is exempt from taxes; the Power Authority agrees to reimburse Con Edison for any such taxes which the Power Authority is responsible to pay.",
+        "properties": {}
+      },
+      {
+        "id": "ent_vendors",
+        "entity_type": "Third-Party Vendors",
+        "name": "Vendors",
+        "legal_role": "Vendors are third parties who receive notification from Con Edison regarding the Power Authority's tax exemption status.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison will notify Vendors that the Power Authority is exempt from taxes;",
+        "properties": {}
+      },
+      {
+        "id": "ent_taxes",
+        "entity_type": "Applicable Taxes",
+        "name": "federal, state or local license, privilege, sales, use, excise, gross receipts, value added or other like taxes",
+        "legal_role": "These are the various taxes that may be imposed on the services, goods, and materials furnished under the agreement, which are excluded from the rates and prices.",
+        "confidence": 1.0,
+        "evidence_quote": "federal, state or local license, privilege, sales, use, excise, gross receipts, value added or other like taxes which may now or hereafter be applicable to, measured by or imposed upon the services, goods and/or materials furnished hereunder",
+        "properties": {}
+      },
+      {
+        "id": "ent_permits_and_fees",
+        "entity_type": "Permits and Fees",
+        "name": "Permits, Environmental Permits, governmental or non-governmental authorizations, consents or permits, approvals",
+        "legal_role": "These are charges or fees for permits and authorizations required in connection with the services, goods, and materials furnished, which are excluded from the rates and prices and must be paid or reimbursed by the Power Authority.",
+        "confidence": 1.0,
+        "evidence_quote": "The rates and/or prices set forth in this Second Composite Agreement also do not include any charge or fee for any Permits, Environmental Permits, governmental or non-governmental authorizations, consents or permits, approvals that may be required in connection with any services, goods and/or materials furnished hereunder.",
+        "properties": {}
+      },
+      {
+        "id": "ent_second_composite_agreement",
+        "entity_type": "Contract Agreement",
+        "name": "Second Composite Agreement",
+        "legal_role": "The contract under which the rates and prices are set and which excludes taxes and permit fees from those rates and prices.",
+        "confidence": 1.0,
+        "evidence_quote": "The rates and/or prices set forth in this Second Composite Agreement do not include any...",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_con_edison",
+        "target_id": "ent_vendors",
+        "relationship_type": "Notification Obligation",
+        "legal_significance": "Con Edison must notify Vendors that the Power Authority is exempt from taxes, which affects Vendors' invoicing and tax treatment.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison will notify Vendors that the Power Authority is exempt from taxes;"
+      },
+      {
+        "source_id": "ent_power_authority",
+        "target_id": "ent_con_edison",
+        "relationship_type": "Reimbursement Obligation for Taxes",
+        "legal_significance": "The Power Authority agrees to reimburse Con Edison for any taxes that Con Edison is required to pay on the Power Authority's behalf, ensuring Con Edison is not financially burdened.",
+        "confidence": 1.0,
+        "evidence_quote": "the Power Authority agrees to reimburse Con Edison for any such taxes which the Power Authority is responsible to pay."
+      },
+      {
+        "source_id": "ent_power_authority",
+        "target_id": "ent_permits_and_fees",
+        "relationship_type": "Payment and Reimbursement Obligation for Permits and Fees",
+        "legal_significance": "The Power Authority agrees to pay and reimburse Con Edison for any charges or fees related to permits and authorizations required for the services and materials, ensuring these costs are borne by the Power Authority.",
+        "confidence": 1.0,
+        "evidence_quote": "The Power Authority agrees to pay any such charges and fees and to reimburse Con Edison for any such charges and fees which Con Edison is required to pay."
+      },
+      {
+        "source_id": "ent_second_composite_agreement",
+        "target_id": "ent_taxes",
+        "relationship_type": "Exclusion of Taxes from Rates and Prices",
+        "legal_significance": "The contract explicitly excludes taxes from the rates and prices set forth, clarifying the financial responsibilities of the parties.",
+        "confidence": 1.0,
+        "evidence_quote": "The rates and/or prices set forth in this Second Composite Agreement do not include any federal, state or local license, privilege, sales, use, excise, gross receipts, value added or other like taxes..."
+      },
+      {
+        "source_id": "ent_second_composite_agreement",
+        "target_id": "ent_permits_and_fees",
+        "relationship_type": "Exclusion of Permit Charges from Rates and Prices",
+        "legal_significance": "The contract explicitly excludes charges or fees for permits and authorizations from the rates and prices, allocating payment responsibility separately.",
+        "confidence": 1.0,
+        "evidence_quote": "The rates and/or prices set forth in this Second Composite Agreement also do not include any charge or fee for any Permits, Environmental Permits, governmental or non-governmental authorizations..."
+      }
+    ],
+    "extractor_notes": "The clause clearly delineates that taxes and permit-related fees are excluded from the contract rates and prices, establishing the Power Authority's obligation to reimburse Con Edison for such costs. The notification duty of Con Edison to Vendors about tax exemption is also explicitly stated."
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XVII:17_2:Right_to_Terminate_If_a_Breach_is_not_cured_as_pro:435d74",
+    "source_clause_title": "17.2 Right to Terminate. If a Breach is not cured as provided in this Article XVII, or if a Breach is",
+    "contract_id": "Edison_NYPA_OandM_Contract_1",
+    "source_page_start": 38,
+    "source_page_end": 38,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_non_breaching_party",
+        "entity_type": "Non-Breaching Party",
+        "name": "non-Breaching Party",
+        "legal_role": "The party not responsible for the Breach, entitled to declare Default and terminate the agreement if the Breach is not cured.",
+        "confidence": 1.0,
+        "evidence_quote": "the non-Breaching Party shall thereafter have the right to declare a Default and terminate this Second Composite Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_breaching_party",
+        "entity_type": "Breaching Party",
+        "name": "Breaching Party",
+        "legal_role": "The party responsible for the Breach, from whom the non-Breaching Party may recover amounts due and damages.",
+        "confidence": 1.0,
+        "evidence_quote": "to recover from the Breaching Party all amounts due hereunder, plus all other damages and remedies",
+        "properties": {}
+      },
+      {
+        "id": "ent_second_composite_agreement",
+        "entity_type": "Second Composite Agreement",
+        "name": "Second Composite Agreement",
+        "legal_role": "The contract subject to termination upon Default declared by the non-Breaching Party.",
+        "confidence": 1.0,
+        "evidence_quote": "terminate this Second Composite Agreement by written notice",
+        "properties": {}
+      },
+      {
+        "id": "ent_default",
+        "entity_type": "Default",
+        "name": "Default",
+        "legal_role": "A legal status declared by the non-Breaching Party upon uncured Breach, triggering termination rights.",
+        "confidence": 1.0,
+        "evidence_quote": "the non-Breaching Party shall thereafter have the right to declare a Default",
+        "properties": {}
+      },
+      {
+        "id": "ent_breach",
+        "entity_type": "Breach",
+        "name": "Breach",
+        "legal_role": "A failure to perform obligations under the agreement which may be cured or lead to Default and termination.",
+        "confidence": 1.0,
+        "evidence_quote": "If a Breach is not cured as provided in this Article XVII, or if a Breach is not capable of being cured",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_non_breaching_party",
+        "target_id": "ent_default",
+        "relationship_type": "Right to Declare Default",
+        "legal_significance": "The non-Breaching Party has the legal right to declare Default if the Breach is not cured, enabling termination.",
+        "confidence": 1.0,
+        "evidence_quote": "the non-Breaching Party shall thereafter have the right to declare a Default"
+      },
+      {
+        "source_id": "ent_non_breaching_party",
+        "target_id": "ent_second_composite_agreement",
+        "relationship_type": "Right to Terminate Agreement",
+        "legal_significance": "Upon declaring Default, the non-Breaching Party may terminate the Second Composite Agreement by written notice.",
+        "confidence": 1.0,
+        "evidence_quote": "terminate this Second Composite Agreement by written notice at any time until cure occurs"
+      },
+      {
+        "source_id": "ent_non_breaching_party",
+        "target_id": "ent_breaching_party",
+        "relationship_type": "Right to Recover Damages and Amounts Due",
+        "legal_significance": "The non-Breaching Party may recover all amounts due and other damages from the Breaching Party regardless of termination.",
+        "confidence": 1.0,
+        "evidence_quote": "to recover from the Breaching Party all amounts due hereunder, plus all other damages and remedies"
+      },
+      {
+        "source_id": "ent_breach",
+        "target_id": "ent_default",
+        "relationship_type": "Condition Precedent to Default",
+        "legal_significance": "A Breach that is not cured or not capable of being cured within the specified period triggers the right to declare Default.",
+        "confidence": 1.0,
+        "evidence_quote": "If a Breach is not cured as provided in this Article XVII, or if a Breach is not capable of being cured within the period provided for herein"
+      },
+      {
+        "source_id": "ent_default",
+        "target_id": "ent_second_composite_agreement",
+        "relationship_type": "Default Triggers Termination Right",
+        "legal_significance": "Declaration of Default by the non-Breaching Party triggers the right to terminate the Second Composite Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "the non-Breaching Party shall thereafter have the right to declare a Default and terminate this Second Composite Agreement"
+      }
+    ],
+    "extractor_notes": "The clause explicitly defines the rights of the non-Breaching Party to declare Default and terminate the agreement upon an uncured Breach, and to recover damages from the Breaching Party. The clause also clarifies that these rights survive termination."
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XIX:19_1:Indemnification_Limitation_of_Liability_To_the_ful:92233d",
+    "source_clause_title": "19.1 Indemnification/Limitation of Liability. To the fullest extent permitted by law, the Power",
+    "contract_id": "Edison_NYPA_OandM_Contract_1",
+    "source_page_start": 41,
+    "source_page_end": 41,
+    "clause_type_hint": "payment",
+    "entities": [
+      {
+        "id": "ent_authority",
+        "entity_type": "Indemnitor",
+        "name": "Authority",
+        "legal_role": "The party obligated to indemnify, defend, and hold harmless the Protected Parties against claims and liabilities.",
+        "confidence": 1.0,
+        "evidence_quote": "Authority shall indemnify, defend, and hold harmless Con Edison, its trustees, officers, employees, and agents (collectively, the \"Protected Parties\")",
+        "properties": {}
+      },
+      {
+        "id": "ent_con_edison",
+        "entity_type": "Indemnitee and Protected Party",
+        "name": "Con Edison",
+        "legal_role": "The party entitled to indemnification and protection from claims, including its trustees, officers, employees, and agents.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison, its trustees, officers, employees, and agents (collectively, the \"Protected Parties\")",
+        "properties": {}
+      },
+      {
+        "id": "ent_protected_parties",
+        "entity_type": "Protected Parties",
+        "name": "Protected Parties",
+        "legal_role": "The group of persons and entities including Con Edison and its trustees, officers, employees, and agents who are protected by indemnification and release obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison, its trustees, officers, employees, and agents (collectively, the \"Protected Parties\")",
+        "properties": {}
+      },
+      {
+        "id": "ent_power_authority",
+        "entity_type": "Indemnitor and Contracting Party",
+        "name": "Power Authority",
+        "legal_role": "The party responsible for indemnification obligations and releasing the Protected Parties from liability for certain violations and breaches.",
+        "confidence": 1.0,
+        "evidence_quote": "including the Power Authority and the Protected Parties",
+        "properties": {}
+      },
+      {
+        "id": "ent_power_authority_contractors",
+        "entity_type": "Contractors of Indemnitor",
+        "name": "Power Authority's Contractors",
+        "legal_role": "Contractors hired by the Power Authority whose acts or omissions may give rise to indemnification obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "any act or omission of the Power Authority and/or the Power Authority's Contractors",
+        "properties": {}
+      },
+      {
+        "id": "ent_con_edison_contractors",
+        "entity_type": "Contractors of Indemnitee",
+        "name": "Contractors hired by Con Edison",
+        "legal_role": "Contractors hired by Con Edison whose services or goods are related to indemnification claims.",
+        "confidence": 1.0,
+        "evidence_quote": "services, goods and/or materials furnished by Con Edison hereunder or performed by contractors hired by Con Edison",
+        "properties": {}
+      },
+      {
+        "id": "ent_o_and_m_services",
+        "entity_type": "Operational Services",
+        "name": "O&M Services",
+        "legal_role": "Services performed by contractors hired by Con Edison that are a basis for indemnification claims.",
+        "confidence": 1.0,
+        "evidence_quote": "including, but not limited to, the O&M Services",
+        "properties": {}
+      },
+      {
+        "id": "ent_additional_work",
+        "entity_type": "Additional Work",
+        "name": "Additional Work",
+        "legal_role": "Additional work performed that may give rise to indemnification claims.",
+        "confidence": 1.0,
+        "evidence_quote": "(iii) the Additional Work",
+        "properties": {}
+      },
+      {
+        "id": "ent_risks_section_4_1",
+        "entity_type": "Defined Risks",
+        "name": "Risks as defined in section 4.1",
+        "legal_role": "Risks defined elsewhere in the contract that are a basis for indemnification claims.",
+        "confidence": 1.0,
+        "evidence_quote": "(iv) the Risks as defined in the entire section 4.1",
+        "properties": {}
+      },
+      {
+        "id": "ent_compliance_modifications_upgrades",
+        "entity_type": "Compliance Modifications and Upgrades",
+        "name": "Compliance Modifications and Upgrades",
+        "legal_role": "Modifications and upgrades related to compliance that may give rise to indemnification claims.",
+        "confidence": 1.0,
+        "evidence_quote": "(v) Compliance Modifications and Upgrades",
+        "properties": {}
+      },
+      {
+        "id": "ent_nerc_npcc_ferc_violations",
+        "entity_type": "Regulatory Violations",
+        "name": "Violations of NERC Reliability Standards, NPCC Reliability Standards, FERC, NPCC Directories and/or NPCC Criteria Requirements",
+        "legal_role": "Regulatory violations occurring prior to or during the term that are subject to indemnification and release provisions.",
+        "confidence": 1.0,
+        "evidence_quote": "(vi) any and all violations of NERC Reliability Standards, NPCC Reliability Standards, FERC, NPCC Directories and/or NPCC Criteria Requirements",
+        "properties": {}
+      },
+      {
+        "id": "ent_o_and_m_commencement_date",
+        "entity_type": "Contractual Commencement Date",
+        "name": "O&M Commencement Date",
+        "legal_role": "The date before which certain regulatory violations occurred and after which Con Edison assumes compliance obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "that occurred prior to the O&M Commencement Date and/or during the Term",
+        "properties": {}
+      },
+      {
+        "id": "ent_term",
+        "entity_type": "Contract Term",
+        "name": "Term",
+        "legal_role": "The duration of the contract during which indemnification and compliance obligations apply.",
+        "confidence": 1.0,
+        "evidence_quote": "and/or during the Term",
+        "properties": {}
+      },
+      {
+        "id": "ent_section_3_1",
+        "entity_type": "Contractual Compliance Assumption Provision",
+        "name": "Section 3.1",
+        "legal_role": "Contract section that provides for Con Edison assuming the obligation to comply with individual NERC Reliability Standards.",
+        "confidence": 1.0,
+        "evidence_quote": "until Con Edison has assumed the obligation to comply with each individual NERC Reliability Standard, as provided for in section 3.1 herein",
+        "properties": {}
+      },
+      {
+        "id": "ent_second_composite_agreement",
+        "entity_type": "Contract Agreement",
+        "name": "Second Composite Agreement",
+        "legal_role": "The agreement whose breach by the Power Authority triggers indemnification obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "a breach of this Second Composite Agreement by the Power Authority",
+        "properties": {}
+      },
+      {
+        "id": "ent_power_authority_warranties",
+        "entity_type": "Warranties and Representations",
+        "name": "Power Authority's warranties and representation",
+        "legal_role": "Contractual warranties and representations by the Power Authority whose breach triggers indemnification.",
+        "confidence": 1.0,
+        "evidence_quote": "including but not limited to, any breach of Power Authority's warranties and representation contained herein",
+        "properties": {}
+      },
+      {
+        "id": "ent_release_obligation",
+        "entity_type": "Release Obligation",
+        "name": "Release and Discharge of Protected Parties",
+        "legal_role": "The Power Authority's irrevocable and unconditional release and discharge of the Protected Parties from liability for certain regulatory violations.",
+        "confidence": 1.0,
+        "evidence_quote": "the Power Authority hereby irrevocably and unconditionally agrees to release and forever discharge the Protected Parties from any and all liability",
+        "properties": {}
+      },
+      {
+        "id": "ent_waiver_rights",
+        "entity_type": "Waiver of Rights",
+        "name": "Waiver of rights to recover costs, fines and/or penalties",
+        "legal_role": "The Power Authority's waiver of rights to recover costs, fines, and penalties from the Protected Parties for certain periods.",
+        "confidence": 1.0,
+        "evidence_quote": "to waive any and all rights to recover any costs, fines and/or penalties from the Protected Parties or any of them in the future for the period prior to Con Edison assuming the obligation",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_authority",
+        "target_id": "ent_protected_parties",
+        "relationship_type": "Indemnification Obligation",
+        "legal_significance": "The Authority is legally obligated to indemnify, defend, and hold harmless the Protected Parties against claims and liabilities arising from specified causes.",
+        "confidence": 1.0,
+        "evidence_quote": "Authority shall indemnify, defend, and hold harmless Con Edison, its trustees, officers, employees, and agents (collectively, the \"Protected Parties\") from and against any and all direct claims..."
+      },
+      {
+        "source_id": "ent_protected_parties",
+        "target_id": "ent_con_edison_contractors",
+        "relationship_type": "Indemnification Scope Includes Contractors' Work",
+        "legal_significance": "Claims arising from services or goods furnished by Con Edison or its contractors are covered under the indemnification obligation.",
+        "confidence": 1.0,
+        "evidence_quote": "which arise from, relate to, or are connected with (i) the services, goods and/or materials furnished by Con Edison hereunder or performed by contractors hired by Con Edison"
+      },
+      {
+        "source_id": "ent_authority",
+        "target_id": "ent_power_authority_contractors",
+        "relationship_type": "Indemnification for Acts or Omissions",
+        "legal_significance": "The Authority indemnifies for any acts or omissions of itself or its contractors that give rise to claims.",
+        "confidence": 1.0,
+        "evidence_quote": "(ii) any act or omission of the Power Authority and/or the Power Authority's Contractors"
+      },
+      {
+        "source_id": "ent_authority",
+        "target_id": "ent_additional_work",
+        "relationship_type": "Indemnification Related to Additional Work",
+        "legal_significance": "Indemnification covers claims arising from Additional Work performed.",
+        "confidence": 1.0,
+        "evidence_quote": "(iii) the Additional Work"
+      },
+      {
+        "source_id": "ent_authority",
+        "target_id": "ent_risks_section_4_1",
+        "relationship_type": "Indemnification Related to Defined Risks",
+        "legal_significance": "Indemnification includes claims arising from risks defined in section 4.1 of the contract.",
+        "confidence": 1.0,
+        "evidence_quote": "(iv) the Risks as defined in the entire section 4.1"
+      },
+      {
+        "source_id": "ent_authority",
+        "target_id": "ent_compliance_modifications_upgrades",
+        "relationship_type": "Indemnification Related to Compliance Modifications",
+        "legal_significance": "Claims arising from compliance modifications and upgrades are subject to indemnification.",
+        "confidence": 1.0,
+        "evidence_quote": "(v) Compliance Modifications and Upgrades"
+      },
+      {
+        "source_id": "ent_authority",
+        "target_id": "ent_nerc_npcc_ferc_violations",
+        "relationship_type": "Indemnification for Regulatory Violations",
+        "legal_significance": "Indemnification covers violations of specified regulatory standards occurring prior to or during the contract term until Con Edison assumes compliance obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "(vi) any and all violations of NERC Reliability Standards, NPCC Reliability Standards, FERC, NPCC Directories and/or NPCC Criteria Requirements that occurred prior to the O&M Commencement Date and/or during the Term, until Con Edison has assumed the obligation to comply"
+      },
+      {
+        "source_id": "ent_authority",
+        "target_id": "ent_second_composite_agreement",
+        "relationship_type": "Indemnification Triggered by Breach",
+        "legal_significance": "A breach of the Second Composite Agreement by the Power Authority triggers indemnification obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "a breach of this Second Composite Agreement by the Power Authority, including but not limited to, any breach of Power Authority's warranties and representation contained herein"
+      },
+      {
+        "source_id": "ent_power_authority",
+        "target_id": "ent_protected_parties",
+        "relationship_type": "Release and Discharge of Liability",
+        "legal_significance": "The Power Authority irrevocably releases and discharges the Protected Parties from liability for certain regulatory violations prior to Con Edison assuming compliance obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "the Power Authority hereby irrevocably and unconditionally agrees to release and forever discharge the Protected Parties from any and all liability for any violations of NERC Reliability Standards, NPCC Reliability Standards, FERC, NPCC Directories and/or NPCC Criteria Requirements"
+      },
+      {
+        "source_id": "ent_power_authority",
+        "target_id": "ent_protected_parties",
+        "relationship_type": "Waiver of Rights to Recover Costs, Fines, and Penalties",
+        "legal_significance": "The Power Authority waives any rights to recover costs, fines, or penalties from the Protected Parties for the period prior to Con Edison assuming compliance obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "to waive any and all rights to recover any costs, fines and/or penalties from the Protected Parties or any of them in the future for the period prior to Con Edison assuming the obligation to comply"
+      }
+    ],
+    "extractor_notes": "The clause combines indemnification obligations by the Authority (Power Authority) with a release and waiver of liability by the Power Authority in favor of the Protected Parties (Con Edison and affiliates) for regulatory violations occurring before Con Edison assumes compliance obligations. The clause explicitly references multiple regulatory standards and contract sections, and distinguishes between acts of contractors hired by both parties."
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_II:2_2_1:End_of_Term_Transition_In_the_event_that_either_Pa:1ba408",
+    "source_clause_title": "2.2.1 End of Term Transition. In the event that either Party, in whole or in part, terminates",
+    "contract_id": "Edison_NYPA_OandM_Contract_1",
+    "source_page_start": 11,
+    "source_page_end": 11,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_power_authority",
+        "entity_type": "Contracting Party",
+        "name": "Power Authority",
+        "legal_role": "The Power Authority is a party to the Second Composite Agreement and the recipient of certain obligations and rights upon termination or assignment of the agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Power Authority's sole cost and expense, Con Edison shall: (i) turn over test equipment to the Power Authority",
+        "properties": {}
+      },
+      {
+        "id": "ent_con_edison",
+        "entity_type": "Contracting Party",
+        "name": "Con Edison",
+        "legal_role": "Con Edison is a party to the Second Composite Agreement responsible for performing specific obligations upon termination or assignment, including turnover of equipment and training.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall: (i) turn over test equipment to the Power Authority, and (ii) provide reasonable training to the Power Authority's proposed new operator",
+        "properties": {}
+      },
+      {
+        "id": "ent_second_composite_agreement",
+        "entity_type": "Contractual Agreement",
+        "name": "Second Composite Agreement",
+        "legal_role": "The Second Composite Agreement is the operative contract governing the rights and obligations of the parties, subject to termination and assignment provisions.",
+        "confidence": 1.0,
+        "evidence_quote": "this Second Composite Agreement on written notice and/or assigns its rights and obligations under this Second Composite Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_test_equipment",
+        "entity_type": "Contractual Asset",
+        "name": "test equipment",
+        "legal_role": "Test equipment is a physical asset that Con Edison must turn over to the Power Authority upon termination or assignment of the agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall: (i) turn over test equipment to the Power Authority",
+        "properties": {}
+      },
+      {
+        "id": "ent_training",
+        "entity_type": "Contractual Obligation",
+        "name": "reasonable training",
+        "legal_role": "Reasonable training is an obligation of Con Edison to provide knowledge transfer to the Power Authority's proposed new operator under a commercially reasonable schedule.",
+        "confidence": 1.0,
+        "evidence_quote": "provide reasonable training to the Power Authority's proposed new operator, pursuant to a commercially reasonable schedule",
+        "properties": {}
+      },
+      {
+        "id": "ent_new_operator",
+        "entity_type": "Proposed Operator",
+        "name": "Power Authority's proposed new operator",
+        "legal_role": "The proposed new operator is the entity designated by the Power Authority to receive training and take over operations after termination or assignment.",
+        "confidence": 1.0,
+        "evidence_quote": "provide reasonable training to the Power Authority's proposed new operator",
+        "properties": {}
+      },
+      {
+        "id": "ent_applicable_data_and_procedures",
+        "entity_type": "Confidential Information",
+        "name": "applicable data and procedures",
+        "legal_role": "Applicable data and procedures are information assets that Con Edison must turn over in accordance with confidentiality provisions upon termination or assignment.",
+        "confidence": 1.0,
+        "evidence_quote": "turn over applicable data and procedures in accordance with and as permitted by the provisions of Article XXI - Confidentiality",
+        "properties": {}
+      },
+      {
+        "id": "ent_minor_spare_parts",
+        "entity_type": "Physical Asset",
+        "name": "Minor Spare Parts",
+        "legal_role": "Minor Spare Parts are physical assets located within the Astoria Annex Substation that Con Edison must turn over to the Power Authority upon termination or assignment.",
+        "confidence": 1.0,
+        "evidence_quote": "turn over all Minor Spare Parts located within the Astoria Annex Substation to the Power Authority",
+        "properties": {}
+      },
+      {
+        "id": "ent_astoria_annex_substation",
+        "entity_type": "Facility Location",
+        "name": "Astoria Annex Substation",
+        "legal_role": "The Astoria Annex Substation is the physical location where Minor Spare Parts are situated and subject to turnover obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "Minor Spare Parts located within the Astoria Annex Substation",
+        "properties": {}
+      },
+      {
+        "id": "ent_article_xvii_default",
+        "entity_type": "Contractual Termination Provision",
+        "name": "Article XVII - Default",
+        "legal_role": "Article XVII - Default is a contractual provision under which the Second Composite Agreement may terminate, triggering turnover obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "this Second Composite Agreement terminates pursuant to Article XVII - Default",
+        "properties": {}
+      },
+      {
+        "id": "ent_article_xxi_confidentiality",
+        "entity_type": "Confidentiality Provision",
+        "name": "Article XXI - Confidentiality",
+        "legal_role": "Article XXI - Confidentiality governs the conditions under which applicable data and procedures may be turned over upon termination or assignment.",
+        "confidence": 1.0,
+        "evidence_quote": "turn over applicable data and procedures in accordance with and as permitted by the provisions of Article XXI - Confidentiality",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_con_edison",
+        "target_id": "ent_power_authority",
+        "relationship_type": "Turnover Obligation",
+        "legal_significance": "Con Edison is legally obligated to turn over test equipment, Minor Spare Parts, and applicable data and procedures to the Power Authority upon termination or assignment, ensuring continuity of operations.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall: (i) turn over test equipment to the Power Authority ... (iii) turn over applicable data and procedures ... (iv) turn over all Minor Spare Parts ... to the Power Authority"
+      },
+      {
+        "source_id": "ent_con_edison",
+        "target_id": "ent_new_operator",
+        "relationship_type": "Training Obligation",
+        "legal_significance": "Con Edison must provide reasonable training to the Power Authority's proposed new operator, facilitating a smooth transition of operational responsibilities.",
+        "confidence": 1.0,
+        "evidence_quote": "provide reasonable training to the Power Authority's proposed new operator, pursuant to a commercially reasonable schedule"
+      },
+      {
+        "source_id": "ent_second_composite_agreement",
+        "target_id": "ent_article_xvii_default",
+        "relationship_type": "Termination Trigger",
+        "legal_significance": "Termination of the Second Composite Agreement pursuant to Article XVII - Default triggers the turnover and training obligations described in this clause.",
+        "confidence": 1.0,
+        "evidence_quote": "this Second Composite Agreement terminates pursuant to Article XVII - Default"
+      },
+      {
+        "source_id": "ent_applicable_data_and_procedures",
+        "target_id": "ent_article_xxi_confidentiality",
+        "relationship_type": "Confidentiality Compliance",
+        "legal_significance": "The turnover of applicable data and procedures must comply with the confidentiality terms set forth in Article XXI, protecting sensitive information.",
+        "confidence": 1.0,
+        "evidence_quote": "turn over applicable data and procedures in accordance with and as permitted by the provisions of Article XXI - Confidentiality"
+      },
+      {
+        "source_id": "ent_minor_spare_parts",
+        "target_id": "ent_astoria_annex_substation",
+        "relationship_type": "Asset Location",
+        "legal_significance": "Minor Spare Parts subject to turnover are specifically located within the Astoria Annex Substation, defining the scope of assets involved.",
+        "confidence": 1.0,
+        "evidence_quote": "Minor Spare Parts located within the Astoria Annex Substation"
+      }
+    ],
+    "extractor_notes": "The clause outlines specific turnover and training obligations triggered by termination or assignment of the Second Composite Agreement, referencing other Articles for termination and confidentiality conditions. The Power Authority bears sole cost and expense for these obligations, which is a notable allocation of financial responsibility."
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:1176dd:4_2_3_2:Con_Edison_and_any_applicable_subcontractor_s_shal:f1b2b5",
+    "source_clause_title": "4.2.3.2 Con Edison and any applicable subcontractor(s) shall submit proof of",
+    "contract_id": "Edison_NYPA_OandM_Contract_1",
+    "source_page_start": 20,
+    "source_page_end": 20,
+    "clause_type_hint": "reporting_obligation",
+    "entities": [
+      {
+        "id": "ent_con_edison",
+        "entity_type": "Obligor",
+        "name": "Con Edison",
+        "legal_role": "Con Edison is the party obligated to submit proof of compliance and bear all costs and expenses resulting from violations and/or fines from the NYSDEC.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison and any applicable subcontractor(s) shall submit proof of compliance ... Con Edison shall be solely responsible for all such costs and expenses which resulting from violations and/or fines from the NYSDEC.",
+        "properties": {}
+      },
+      {
+        "id": "ent_applicable_subcontractor",
+        "entity_type": "Obligor",
+        "name": "any applicable subcontractor(s)",
+        "legal_role": "Applicable subcontractor(s) share the obligation with Con Edison to submit proof of compliance with 6 NYCRR Part 248.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison and any applicable subcontractor(s) shall submit proof of compliance with 6 NYCRR Part 248",
+        "properties": {}
+      },
+      {
+        "id": "ent_authority",
+        "entity_type": "Regulatory Reviewer",
+        "name": "the Authority",
+        "legal_role": "The Authority is responsible for reviewing and approving the submitted HDV inventory/equipment list before submission to the NYSDEC.",
+        "confidence": 1.0,
+        "evidence_quote": "subject to review and approval by the Authority for submission to the NYSDEC",
+        "properties": {}
+      },
+      {
+        "id": "ent_nysdec",
+        "entity_type": "Regulatory Agency",
+        "name": "NYSDEC",
+        "legal_role": "The New York State Department of Environmental Conservation (NYSDEC) is the regulatory agency to which compliance proof is submitted and which may impose violations and/or fines.",
+        "confidence": 1.0,
+        "evidence_quote": "subject to review and approval by the Authority for submission to the NYSDEC ... resulting from violations and/or fines from the NYSDEC",
+        "properties": {}
+      },
+      {
+        "id": "ent_power_authority",
+        "entity_type": "Information Provider",
+        "name": "Power Authority",
+        "legal_role": "The Power Authority provides an inventory template to Con Edison to assist in compliance reporting, but its use is at Con Edison's sole discretion.",
+        "confidence": 1.0,
+        "evidence_quote": "Power Authority will provide to Con Edison an inventory template, which Con Edison, at its sole discretion, may choose to use.",
+        "properties": {}
+      },
+      {
+        "id": "ent_6_nycrr_part_248",
+        "entity_type": "Regulatory Standard",
+        "name": "6 NYCRR Part 248",
+        "legal_role": "6 NYCRR Part 248 is the regulatory standard with which Con Edison and subcontractors must demonstrate compliance through submission of an HDV inventory/equipment list.",
+        "confidence": 1.0,
+        "evidence_quote": "compliance with 6 NYCRR Part 248, including a complete HDV inventory/equipment list",
+        "properties": {}
+      },
+      {
+        "id": "ent_hdv_inventory_equipment_list",
+        "entity_type": "Compliance Deliverable",
+        "name": "HDV inventory/equipment list",
+        "legal_role": "The HDV inventory/equipment list is the required documentation demonstrating compliance with 6 NYCRR Part 248, subject to review and approval.",
+        "confidence": 1.0,
+        "evidence_quote": "including a complete HDV inventory/equipment list of all vehicles, equipment, etc. subject to review and approval by the Authority",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_con_edison",
+        "target_id": "ent_hdv_inventory_equipment_list",
+        "relationship_type": "Obligation to Submit Compliance Deliverable",
+        "legal_significance": "Con Edison is legally required to submit the HDV inventory/equipment list as proof of compliance with 6 NYCRR Part 248.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison and any applicable subcontractor(s) shall submit proof of compliance with 6 NYCRR Part 248, including a complete HDV inventory/equipment list"
+      },
+      {
+        "source_id": "ent_applicable_subcontractor",
+        "target_id": "ent_hdv_inventory_equipment_list",
+        "relationship_type": "Obligation to Submit Compliance Deliverable",
+        "legal_significance": "Applicable subcontractor(s) share the legal obligation with Con Edison to submit the HDV inventory/equipment list as proof of compliance.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison and any applicable subcontractor(s) shall submit proof of compliance with 6 NYCRR Part 248, including a complete HDV inventory/equipment list"
+      },
+      {
+        "source_id": "ent_hdv_inventory_equipment_list",
+        "target_id": "ent_authority",
+        "relationship_type": "Subject to Review and Approval",
+        "legal_significance": "The HDV inventory/equipment list must be reviewed and approved by the Authority before submission to the NYSDEC, ensuring regulatory compliance.",
+        "confidence": 1.0,
+        "evidence_quote": "subject to review and approval by the Authority for submission to the NYSDEC"
+      },
+      {
+        "source_id": "ent_authority",
+        "target_id": "ent_nysdec",
+        "relationship_type": "Facilitates Submission to Regulatory Agency",
+        "legal_significance": "The Authority acts as an intermediary that reviews and approves the compliance documentation before it is submitted to the NYSDEC.",
+        "confidence": 1.0,
+        "evidence_quote": "subject to review and approval by the Authority for submission to the NYSDEC"
+      },
+      {
+        "source_id": "ent_power_authority",
+        "target_id": "ent_con_edison",
+        "relationship_type": "Provision of Compliance Template",
+        "legal_significance": "The Power Authority provides Con Edison with an inventory template to assist in compliance reporting, though Con Edison may choose whether to use it.",
+        "confidence": 1.0,
+        "evidence_quote": "Power Authority will provide to Con Edison an inventory template, which Con Edison, at its sole discretion, may choose to use."
+      },
+      {
+        "source_id": "ent_con_edison",
+        "target_id": "ent_nysdec",
+        "relationship_type": "Liability for Violations and Fines",
+        "legal_significance": "Con Edison is solely responsible for all costs and expenses resulting from violations and/or fines imposed by the NYSDEC.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall be solely responsible for all such costs and expenses which resulting from violations and/or fines from the NYSDEC."
+      }
+    ],
+    "extractor_notes": "The clause establishes Con Edison and applicable subcontractors' joint obligation to submit compliance proof, with Con Edison bearing sole financial responsibility for any regulatory penalties. The Authority acts as a regulatory reviewer before submission to the NYSDEC. The Power Authority's role is limited to providing an optional template."
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:c45983:6_1_1:Prior_to_the_O_M_Commencement_Date_Con_Edison_will:286caa",
+    "source_clause_title": "6.1.1 Prior to the O&M Commencement Date, Con Edison will provide the Power Authority",
+    "contract_id": "Edison_NYPA_OandM_Contract_1",
+    "source_page_start": 25,
+    "source_page_end": 27,
+    "clause_type_hint": "reporting_obligation",
+    "entities": [
+      {
+        "id": "ent_con_edison",
+        "entity_type": "Service Provider",
+        "name": "Con Edison",
+        "legal_role": "Con Edison is the party obligated to provide estimates, budgets, and perform the O&M Services under the contract.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison will provide the Power Authority a good faith estimate of the anticipated costs and expenses for the Scope of Work",
+        "properties": {}
+      },
+      {
+        "id": "ent_power_authority",
+        "entity_type": "Client / Reimbursing Party",
+        "name": "Power Authority",
+        "legal_role": "The Power Authority is the party entitled to receive cost estimates and obligated to reimburse Con Edison for all costs and expenses incurred in providing the O&M Services.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison will provide the Power Authority a good faith estimate... Power Authority shall reimburse Con Edison for all of the costs and expenses",
+        "properties": {}
+      },
+      {
+        "id": "ent_o_m_commencement_date",
+        "entity_type": "Contractual Milestone Date",
+        "name": "O&M Commencement Date",
+        "legal_role": "The date before which Con Edison must provide the Power Authority with a good faith estimate of anticipated costs and expenses for the Scope of Work.",
+        "confidence": 1.0,
+        "evidence_quote": "Prior to the O&M Commencement Date, Con Edison will provide the Power Authority a good faith estimate",
+        "properties": {}
+      },
+      {
+        "id": "ent_preparatory_work_and_services",
+        "entity_type": "Preparatory Work and Services",
+        "name": "Preparatory Work and Services",
+        "legal_role": "Work and services for which Con Edison must provide a good faith estimate of anticipated costs and expenses, as attached in Exhibit F.",
+        "confidence": 1.0,
+        "evidence_quote": "a good faith estimate of the anticipated costs and expenses for the Preparatory Work and Services, which is attached hereto as Exhibit F",
+        "properties": {}
+      },
+      {
+        "id": "ent_scope_of_work",
+        "entity_type": "Scope of Work",
+        "name": "Scope of Work",
+        "legal_role": "The defined work for which Con Edison must provide monthly and/or annual cost estimates assuming ordinary operating conditions for the first calendar year of O&M Services.",
+        "confidence": 1.0,
+        "evidence_quote": "a good faith estimate of the anticipated costs and expenses for the Scope of Work (on a monthly and/or annual basis), which shall assume ordinary operating conditions for the first calendar year of O&M Services",
+        "properties": {}
+      },
+      {
+        "id": "ent_initial_monthly_estimate",
+        "entity_type": "Initial Monthly Cost Estimate",
+        "name": "Initial Monthly Estimate",
+        "legal_role": "A specifically agreed estimate of $30,000 per month for the first ten years of the Term for operation and maintenance costs of the Astoria Annex Substation, which is non-binding and excludes extraordinary expenses.",
+        "confidence": 1.0,
+        "evidence_quote": "a good faith estimate of the anticipated operation and maintenance costs for the Astoria Annex Substation is Thirty Thousand Dollars ($30,000) per month for the first ten years of the Term (\"Initial Monthly Estimate\")",
+        "properties": {}
+      },
+      {
+        "id": "ent_annual_budget_and_work_plan",
+        "entity_type": "Annual Budget and Work Plan",
+        "name": "Budget and Work Plan/Schedule",
+        "legal_role": "A budget and work plan/schedule for the upcoming calendar year that Con Edison shall endeavor to provide to the Power Authority not later than June 30 each year after the first calendar year of O&M Services.",
+        "confidence": 1.0,
+        "evidence_quote": "Following the first calendar year of its O&M Services, and not later than June 30 of each year thereafter, Con Edison shall endeavor to provide the Power Authority with a budget and work plan/schedule for the upcoming calendar year",
+        "properties": {}
+      },
+      {
+        "id": "ent_reimbursement_obligation",
+        "entity_type": "Reimbursement Obligation",
+        "name": "Power Authority's Obligation to Reimburse",
+        "legal_role": "The Power Authority's contractual obligation to reimburse Con Edison for all costs and expenses incurred in providing the O&M Services, regardless of estimates provided.",
+        "confidence": 1.0,
+        "evidence_quote": "the Power Authority shall reimburse Con Edison for all of the costs and expenses that Con Edison incurs in providing the O&M Services",
+        "properties": {}
+      },
+      {
+        "id": "ent_accommodation_billing_rate",
+        "entity_type": "Billing Rate",
+        "name": "Accommodation Billing Rate",
+        "legal_role": "The billing rate applicable to all labor hours for corrective maintenance and unforeseeable system conditions.",
+        "confidence": 1.0,
+        "evidence_quote": "For corrective maintenance and for system conditions, which may not be foreseeable, all labor hours are to be billed at the \"Accommodation Billing Rate\"",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_con_edison",
+        "target_id": "ent_power_authority",
+        "relationship_type": "Reporting Obligation",
+        "legal_significance": "Con Edison is contractually required to provide the Power Authority with good faith estimates and budgets of anticipated costs and expenses, enabling the Power Authority to plan and budget accordingly.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison will provide the Power Authority a good faith estimate of the anticipated costs and expenses"
+      },
+      {
+        "source_id": "ent_power_authority",
+        "target_id": "ent_con_edison",
+        "relationship_type": "Reimbursement Obligation",
+        "legal_significance": "The Power Authority is obligated to reimburse Con Edison for all costs and expenses incurred in providing the O&M Services, regardless of the estimates provided, ensuring Con Edison is compensated for actual costs.",
+        "confidence": 1.0,
+        "evidence_quote": "the Power Authority shall reimburse Con Edison for all of the costs and expenses that Con Edison incurs in providing the O&M Services"
+      },
+      {
+        "source_id": "ent_o_m_commencement_date",
+        "target_id": "ent_con_edison",
+        "relationship_type": "Deadline for Estimate Delivery",
+        "legal_significance": "The O&M Commencement Date sets the deadline by which Con Edison must provide the initial good faith estimate of anticipated costs and expenses for the Scope of Work to the Power Authority.",
+        "confidence": 1.0,
+        "evidence_quote": "Prior to the O&M Commencement Date, Con Edison will provide the Power Authority a good faith estimate"
+      },
+      {
+        "source_id": "ent_con_edison",
+        "target_id": "ent_annual_budget_and_work_plan",
+        "relationship_type": "Annual Budget Preparation Obligation",
+        "legal_significance": "Con Edison is obligated to endeavor to provide an annual budget and work plan/schedule to the Power Authority by June 30 each year after the first calendar year, facilitating ongoing financial planning.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall endeavor to provide the Power Authority with a budget and work plan/schedule for the upcoming calendar year"
+      },
+      {
+        "source_id": "ent_initial_monthly_estimate",
+        "target_id": "ent_reimbursement_obligation",
+        "relationship_type": "Non-Limiting Estimate Relationship",
+        "legal_significance": "The Initial Monthly Estimate is expressly stated as only an estimate and does not limit the Power Authority's obligation to reimburse Con Edison for all costs and expenses, preserving the Power Authority's full reimbursement duty.",
+        "confidence": 1.0,
+        "evidence_quote": "The parties agree that the Initial Monthly Estimate is only an estimate... nor does it limit Power Authority's obligation in Section 6.1 to reimburse Con Edison for all costs and expenses"
+      },
+      {
+        "source_id": "ent_reimbursement_obligation",
+        "target_id": "ent_accommodation_billing_rate",
+        "relationship_type": "Billing Rate Application",
+        "legal_significance": "The reimbursement obligation includes labor hours billed at the Accommodation Billing Rate for corrective maintenance and unforeseeable system conditions, defining the cost basis for such labor.",
+        "confidence": 1.0,
+        "evidence_quote": "For corrective maintenance and for system conditions... all labor hours are to be billed at the \"Accommodation Billing Rate\""
+      }
+    ],
+    "extractor_notes": "The clause clearly distinguishes between estimates and actual reimbursement obligations, emphasizing that estimates are non-binding and subject to change, while reimbursement covers all actual costs incurred. The Accommodation Billing Rate is introduced as a defined billing metric for specific labor categories."
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_X:10_5:Con_Edison_shall_provide_the_Power_Authority_with_:335a4c",
+    "source_clause_title": "10.5 Con Edison shall provide the Power Authority with the Hazardous Waste Emergency Response",
+    "contract_id": "Edison_NYPA_OandM_Contract_1",
+    "source_page_start": 31,
+    "source_page_end": 32,
+    "clause_type_hint": "notice",
+    "entities": [
+      {
+        "id": "ent_con_edison",
+        "entity_type": "Hazardous Waste Emergency Response Obligor",
+        "name": "Con Edison",
+        "legal_role": "Con Edison is legally obligated to provide hazardous waste emergency response information and actions as specified in the clause.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall provide the Power Authority with the Hazardous Waste Emergency Response",
+        "properties": {}
+      },
+      {
+        "id": "ent_power_authority",
+        "entity_type": "Hazardous Waste Emergency Response Noticee",
+        "name": "Power Authority",
+        "legal_role": "The Power Authority is the recipient of hazardous waste emergency response information and notifications from Con Edison.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall provide the Power Authority with the Hazardous Waste Emergency Response",
+        "properties": {}
+      },
+      {
+        "id": "ent_astoria_annex_substation",
+        "entity_type": "Hazardous Waste Storage Location",
+        "name": "Astoria Annex Substation",
+        "legal_role": "The Astoria Annex Substation is the designated site where hazardous waste emergency preparedness information must be posted and emergency equipment maintained.",
+        "confidence": 1.0,
+        "evidence_quote": "for the Astoria Annex Substation, and shall maintain a current and updated posting of this information on-site adjacent to the designated hazardous waste storage area",
+        "properties": {}
+      },
+      {
+        "id": "ent_preparedness_information",
+        "entity_type": "Statutorily Required Hazardous Waste Preparedness Information",
+        "name": "Preparedness information required in 6 NYCRR Part 372.2 (a) (8) (iii) (e)",
+        "legal_role": "This information is legally mandated by regulation to be prepared and posted to ensure compliance with hazardous waste emergency response requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "Preparedness information required in 6 NYCRR Part 372.2 (a) (8) (iii) (e), (emergency phone numbers, location of nearest fire extinguisher, spill kit, alarms, etc.)",
+        "properties": {}
+      },
+      {
+        "id": "ent_spill_kits_and_emergency_equipment",
+        "entity_type": "Emergency Response Equipment",
+        "name": "spill kits and other emergency response equipment",
+        "legal_role": "These are the physical resources that Con Edison must maintain at the Astoria Annex Substation to respond to hazardous waste releases.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall maintain spill kits and other emergency response equipment, if necessary, at the Astoria Annex Substation.",
+        "properties": {}
+      },
+      {
+        "id": "ent_release_of_hazardous_waste",
+        "entity_type": "Hazardous Waste Release Event",
+        "name": "Release of hazardous waste",
+        "legal_role": "A hazardous waste release triggers Con Edison's immediate response and notification obligations under the clause.",
+        "confidence": 1.0,
+        "evidence_quote": "In the event of a Release of hazardous waste, Con Edison shall take immediate action to contain and control the Release",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_con_edison",
+        "target_id": "ent_power_authority",
+        "relationship_type": "Hazardous Waste Emergency Response Notification Obligation",
+        "legal_significance": "Con Edison must promptly notify the Power Authority of any hazardous waste release and the actions taken, ensuring timely communication and compliance.",
+        "confidence": 1.0,
+        "evidence_quote": "and will promptly notify the Power Authority of the Release and the actions taken."
+      },
+      {
+        "source_id": "ent_con_edison",
+        "target_id": "ent_astoria_annex_substation",
+        "relationship_type": "Hazardous Waste Emergency Preparedness Maintenance Obligation",
+        "legal_significance": "Con Edison is required to maintain preparedness information and emergency response equipment at the Astoria Annex Substation to comply with regulatory requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "shall maintain a current and updated posting of this information on-site adjacent to the designated hazardous waste storage area... Con Edison shall maintain spill kits and other emergency response equipment"
+      },
+      {
+        "source_id": "ent_preparedness_information",
+        "target_id": "ent_astoria_annex_substation",
+        "relationship_type": "Regulatory Compliance Posting Location",
+        "legal_significance": "The preparedness information mandated by 6 NYCRR must be posted on-site at the Astoria Annex Substation to satisfy regulatory posting requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "shall maintain a current and updated posting of this information on-site adjacent to the designated hazardous waste storage area"
+      },
+      {
+        "source_id": "ent_con_edison",
+        "target_id": "ent_release_of_hazardous_waste",
+        "relationship_type": "Immediate Response Obligation",
+        "legal_significance": "Upon a hazardous waste release, Con Edison must take immediate action to contain and control the release, demonstrating a duty to mitigate environmental harm.",
+        "confidence": 1.0,
+        "evidence_quote": "In the event of a Release of hazardous waste, Con Edison shall take immediate action to contain and control the Release"
+      }
+    ],
+    "extractor_notes": "The clause explicitly references regulatory requirements (6 NYCRR Part 372.2) and imposes both maintenance and notification obligations on Con Edison related to hazardous waste emergency response at a specific location."
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XII:12_5:Environmental_Indemnification:6940b2",
+    "source_clause_title": "12.5 Environmental Indemnification:",
+    "contract_id": "Edison_NYPA_OandM_Contract_1",
+    "source_page_start": 35,
+    "source_page_end": 35,
+    "clause_type_hint": "indemnity",
+    "entities": [
+      {
+        "id": "ent_power_authority",
+        "entity_type": "Indemnitor",
+        "name": "The Power Authority",
+        "legal_role": "The party obligated to indemnify, defend, and hold harmless the Con Edison Indemnified Parties against Environmental Liabilities.",
+        "confidence": 1.0,
+        "evidence_quote": "The Power Authority shall indemnify, defend, and hold harmless Con Edison, its affiliates and their respective directors, officers, shareholders, and employees",
+        "properties": {}
+      },
+      {
+        "id": "ent_con_edison_indemnified_parties",
+        "entity_type": "Indemnitees",
+        "name": "Con Edison Indemnified Parties",
+        "legal_role": "The parties entitled to indemnification, defense, and hold harmless protection from the Power Authority for Environmental Liabilities.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison, its affiliates and their respective directors, officers, shareholders, and employees (collectively, the \"Con Edison Indemnified Parties\")",
+        "properties": {}
+      },
+      {
+        "id": "ent_environmental_liabilities",
+        "entity_type": "Environmental Liabilities",
+        "name": "Environmental Liabilities",
+        "legal_role": "The subject matter of indemnification, including liabilities arising from Releases, Remediation, Additional Work, Risks, and waste transportation and disposal related to the Easement Area and Con Edison Lands.",
+        "confidence": 1.0,
+        "evidence_quote": "any and all Environmental Liabilities arising out of or in connection with (i) the existence of or any actual or threatened Release or Discovery ... (iii) Required Remediation; (iv) the Additional Work, (v) the Risks, and (vi) the transportation and disposal of any and all wastes",
+        "properties": {}
+      },
+      {
+        "id": "ent_easement_area",
+        "entity_type": "Real Property Interest Subject to Environmental Conditions",
+        "name": "Easement Area",
+        "legal_role": "The geographic area where Releases, Discoveries, and environmental conditions triggering indemnification occur.",
+        "confidence": 1.0,
+        "evidence_quote": "the existence of or any actual or threatened Release or Discovery on, over, above, under or around the Easement Area",
+        "properties": {}
+      },
+      {
+        "id": "ent_con_edison_lands",
+        "entity_type": "Real Property Interest Subject to Environmental Conditions",
+        "name": "Con Edison Lands",
+        "legal_role": "The lands through which Hazardous Substances may migrate and where wastes subject to Required Remediation may be located, triggering indemnification obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "any migration of such Hazardous Substances on, to or through the Con Edison Lands; ... wastes subject to Required Remediation on the Con Edison Lands",
+        "properties": {}
+      },
+      {
+        "id": "ent_associated_equipment",
+        "entity_type": "Owned Equipment",
+        "name": "Associated Equipment",
+        "legal_role": "Equipment owned by the Power Authority from the date of ownership forward, relevant to the scope of indemnification for environmental liabilities.",
+        "confidence": 1.0,
+        "evidence_quote": "that occurs from the date of the Power Authority ownership of the Associated Equipment forward",
+        "properties": {}
+      },
+      {
+        "id": "ent_release",
+        "entity_type": "Environmental Release Event",
+        "name": "Release",
+        "legal_role": "An actual or threatened discharge or escape of Hazardous Substances triggering indemnification obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "any actual or threatened Release or Discovery on, over, above, under or around the Easement Area",
+        "properties": {}
+      },
+      {
+        "id": "ent_required_remediation",
+        "entity_type": "Remediation Obligation",
+        "name": "Required Remediation",
+        "legal_role": "Environmental remediation activities mandated to address contamination, triggering indemnification.",
+        "confidence": 1.0,
+        "evidence_quote": "Required Remediation",
+        "properties": {}
+      },
+      {
+        "id": "ent_additional_work",
+        "entity_type": "Additional Environmental Work",
+        "name": "Additional Work",
+        "legal_role": "Supplemental environmental work related to the Easement Area or Con Edison Lands that triggers indemnification.",
+        "confidence": 1.0,
+        "evidence_quote": "the Additional Work",
+        "properties": {}
+      },
+      {
+        "id": "ent_risks",
+        "entity_type": "Environmental Risks",
+        "name": "Risks",
+        "legal_role": "Environmental risks associated with the Easement Area and Con Edison Lands that are subject to indemnification.",
+        "confidence": 1.0,
+        "evidence_quote": "the Risks",
+        "properties": {}
+      },
+      {
+        "id": "ent_waste_transportation_disposal",
+        "entity_type": "Waste Transportation and Disposal Activities",
+        "name": "Transportation and disposal of wastes",
+        "legal_role": "The handling of wastes from the Facility and Easement Area, including those subject to remediation, which triggers indemnification obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "the transportation and disposal of any and all wastes from the Facility and the Easement Area, as well as any and all wastes subject to Required Remediation on the Con Edison Lands",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_power_authority",
+        "target_id": "ent_con_edison_indemnified_parties",
+        "relationship_type": "Indemnification Obligation",
+        "legal_significance": "The Power Authority is legally obligated to indemnify, defend, and hold harmless the Con Edison Indemnified Parties against Environmental Liabilities, protecting them from losses and claims.",
+        "confidence": 1.0,
+        "evidence_quote": "The Power Authority shall indemnify, defend, and hold harmless Con Edison, its affiliates and their respective directors, officers, shareholders, and employees"
+      },
+      {
+        "source_id": "ent_environmental_liabilities",
+        "target_id": "ent_con_edison_indemnified_parties",
+        "relationship_type": "Subject Matter of Indemnification",
+        "legal_significance": "Environmental Liabilities are the specific liabilities for which the Con Edison Indemnified Parties are protected under the indemnity obligation.",
+        "confidence": 1.0,
+        "evidence_quote": "for any and all Environmental Liabilities arising out of or in connection with ..."
+      },
+      {
+        "source_id": "ent_environmental_liabilities",
+        "target_id": "ent_easement_area",
+        "relationship_type": "Geographic Scope of Environmental Liabilities",
+        "legal_significance": "Environmental Liabilities arise from conditions and events occurring on or around the Easement Area, defining the spatial scope of indemnification.",
+        "confidence": 1.0,
+        "evidence_quote": "arising out of or in connection with (i) the existence of or any actual or threatened Release or Discovery on, over, above, under or around the Easement Area"
+      },
+      {
+        "source_id": "ent_environmental_liabilities",
+        "target_id": "ent_con_edison_lands",
+        "relationship_type": "Geographic Scope of Environmental Liabilities",
+        "legal_significance": "Environmental Liabilities also arise from migration of Hazardous Substances and wastes on or through the Con Edison Lands, expanding the indemnification scope.",
+        "confidence": 1.0,
+        "evidence_quote": "any migration of such Hazardous Substances on, to or through the Con Edison Lands; ... wastes subject to Required Remediation on the Con Edison Lands"
+      },
+      {
+        "source_id": "ent_environmental_liabilities",
+        "target_id": "ent_release",
+        "relationship_type": "Triggering Environmental Event",
+        "legal_significance": "The occurrence or threat of a Release triggers the indemnification obligation for Environmental Liabilities.",
+        "confidence": 1.0,
+        "evidence_quote": "any actual or threatened Release or Discovery"
+      },
+      {
+        "source_id": "ent_environmental_liabilities",
+        "target_id": "ent_required_remediation",
+        "relationship_type": "Triggering Environmental Obligation",
+        "legal_significance": "Required Remediation activities are included within the scope of Environmental Liabilities indemnified by the Power Authority.",
+        "confidence": 1.0,
+        "evidence_quote": "Required Remediation"
+      },
+      {
+        "source_id": "ent_environmental_liabilities",
+        "target_id": "ent_additional_work",
+        "relationship_type": "Triggering Environmental Obligation",
+        "legal_significance": "Additional Work related to environmental conditions is included within the scope of indemnified Environmental Liabilities.",
+        "confidence": 1.0,
+        "evidence_quote": "the Additional Work"
+      },
+      {
+        "source_id": "ent_environmental_liabilities",
+        "target_id": "ent_risks",
+        "relationship_type": "Triggering Environmental Condition",
+        "legal_significance": "Environmental Risks are part of the liabilities for which indemnification is provided.",
+        "confidence": 1.0,
+        "evidence_quote": "the Risks"
+      },
+      {
+        "source_id": "ent_environmental_liabilities",
+        "target_id": "ent_waste_transportation_disposal",
+        "relationship_type": "Triggering Environmental Activity",
+        "legal_significance": "Transportation and disposal of wastes from the Facility and Easement Area are activities that give rise to indemnifiable Environmental Liabilities.",
+        "confidence": 1.0,
+        "evidence_quote": "the transportation and disposal of any and all wastes from the Facility and the Easement Area"
+      },
+      {
+        "source_id": "ent_power_authority",
+        "target_id": "ent_associated_equipment",
+        "relationship_type": "Ownership Trigger for Indemnification Scope",
+        "legal_significance": "The Power Authority's ownership of the Associated Equipment from a certain date forward defines the temporal scope of indemnification obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "from the date of the Power Authority ownership of the Associated Equipment forward"
+      }
+    ],
+    "extractor_notes": "The clause defines a broad indemnity by the Power Authority to Con Edison and related parties for environmental liabilities connected to specific geographic areas and activities, including Releases, Remediation, and waste handling. The clause explicitly identifies the indemnified parties, the indemnitor, the scope of liabilities, and the temporal scope linked to ownership of equipment."
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XXXIV:34_1:No_delay_or_omission_by_either_party_to_exercise_a:eb059a",
+    "source_clause_title": "34.1 No delay or omission by either party to exercise any right or power accruing upon a non­",
+    "contract_id": "Edison_NYPA_OandM_Contract_1",
+    "source_page_start": 50,
+    "source_page_end": 53,
+    "clause_type_hint": "reporting_obligation",
+    "entities": [
+      {
+        "id": "ent_consolidated_edison",
+        "entity_type": "Contracting Party",
+        "name": "Consolidated Edison Company of New York, Inc.",
+        "legal_role": "This entity is a party to the Second Composite Agreement and is responsible for performing obligations under the contract.",
+        "confidence": 1.0,
+        "evidence_quote": "CONSOLIDATED EDISON COMPANY OF NEW YORK, INC.",
+        "properties": {}
+      },
+      {
+        "id": "ent_new_york_power_authority",
+        "entity_type": "Contracting Party",
+        "name": "New York Power Authority",
+        "legal_role": "This entity is a party to the Second Composite Agreement and holds rights and obligations under the contract.",
+        "confidence": 1.0,
+        "evidence_quote": "NEW YORK POWER AUTHORITY",
+        "properties": {}
+      },
+      {
+        "id": "ent_second_composite_agreement",
+        "entity_type": "Contractual Instrument",
+        "name": "Second Composite Agreement",
+        "legal_role": "This is the overarching agreement executed by the parties that governs their rights and obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "the parties have executed this Second Gomposite Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_sf6_gas",
+        "entity_type": "Regulated Substance",
+        "name": "Sulfur Hexafluoride (SF6) gas",
+        "legal_role": "This substance is subject to tracking and reporting requirements under the contract due to environmental regulations.",
+        "confidence": 1.0,
+        "evidence_quote": "The Astoria Annex Substation will contain Sulfur Hexafluoride (SF6) gas.",
+        "properties": {}
+      },
+      {
+        "id": "ent_astoria_annex_substation",
+        "entity_type": "Facility Subject to Contractual Obligations",
+        "name": "Astoria Annex Substation",
+        "legal_role": "This facility is the location where O&M services are provided and where SF6 gas tracking and reporting obligations apply.",
+        "confidence": 1.0,
+        "evidence_quote": "the Astoria Annex Substation shall be generally kept unstaffed and Con Edison shall provide any staffing",
+        "properties": {}
+      },
+      {
+        "id": "ent_om_services",
+        "entity_type": "Operational Service Obligation",
+        "name": "O&M Services",
+        "legal_role": "These are the operations and maintenance services that Con Edison is obligated to provide at the Astoria Annex Substation.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall provide any staffing at the Astoria Annex Substation for its O&M Services",
+        "properties": {}
+      },
+      {
+        "id": "ent_sf6_tracking_responsibility",
+        "entity_type": "Contractual Duty",
+        "name": "Tracking of SF6 Gas Inventory, Additions and Losses",
+        "legal_role": "This duty requires Con Edison to track SF6 gas usage and emissions in Power Authority equipment, reflecting environmental compliance obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison will be responsible for tracking the inventory, additions and losses of SF6 gas in the Power Authority equipment",
+        "properties": {}
+      },
+      {
+        "id": "ent_power_authority_commitment",
+        "entity_type": "Environmental Compliance Commitment",
+        "name": "Power Authority's commitment to the Climate Registry",
+        "legal_role": "This commitment triggers the need for SF6 gas tracking and reporting under the contract.",
+        "confidence": 1.0,
+        "evidence_quote": "Due to the Power Authority's commitment to the Climate Registry",
+        "properties": {}
+      },
+      {
+        "id": "ent_epa_reporting_rule",
+        "entity_type": "Regulatory Trigger",
+        "name": "Environmental Protection Agency's proposed mandatory gas reporting rule",
+        "legal_role": "This anticipated regulation motivates the contractual obligation to track SF6 gas emissions.",
+        "confidence": 1.0,
+        "evidence_quote": "in anticipation of the Environmental Protection Agency's proposed mandatory gas reporting rule",
+        "properties": {}
+      },
+      {
+        "id": "ent_waiver_clause",
+        "entity_type": "Waiver Provision",
+        "name": "Waiver of Covenants, Conditions or Agreements",
+        "legal_role": "This provision clarifies that delay or omission in exercising rights does not constitute waiver of those rights or future breaches.",
+        "confidence": 1.0,
+        "evidence_quote": "A waiver by either party of any of the covenants, conditions or agreements hereof to be performed by the other party shall not be construed to be a waiver of any subsequent breach hereof",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_consolidated_edison",
+        "target_id": "ent_second_composite_agreement",
+        "relationship_type": "Party to Agreement",
+        "legal_significance": "Consolidated Edison is legally bound by the terms and obligations set forth in the Second Composite Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "the parties have executed this Second Gomposite Agreement"
+      },
+      {
+        "source_id": "ent_new_york_power_authority",
+        "target_id": "ent_second_composite_agreement",
+        "relationship_type": "Party to Agreement",
+        "legal_significance": "New York Power Authority is legally bound by the terms and obligations set forth in the Second Composite Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "the parties have executed this Second Gomposite Agreement"
+      },
+      {
+        "source_id": "ent_consolidated_edison",
+        "target_id": "ent_astoria_annex_substation",
+        "relationship_type": "Service Provider to Facility",
+        "legal_significance": "Con Edison is obligated to provide staffing and O&M services at the Astoria Annex Substation under the contract.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison shall provide any staffing at the Astoria Annex Substation for its O&M Services"
+      },
+      {
+        "source_id": "ent_consolidated_edison",
+        "target_id": "ent_sf6_tracking_responsibility",
+        "relationship_type": "Obligor of Environmental Tracking Duty",
+        "legal_significance": "Con Edison is contractually responsible for tracking SF6 gas inventory and emissions, ensuring compliance with environmental commitments.",
+        "confidence": 1.0,
+        "evidence_quote": "Con Edison will be responsible for tracking the inventory, additions and losses of SF6 gas"
+      },
+      {
+        "source_id": "ent_sf6_tracking_responsibility",
+        "target_id": "ent_sf6_gas",
+        "relationship_type": "Subject Matter of Tracking Obligation",
+        "legal_significance": "The tracking obligation specifically concerns the SF6 gas contained in Power Authority equipment, which is regulated due to environmental concerns.",
+        "confidence": 1.0,
+        "evidence_quote": "tracking the inventory, additions and losses of SF6 gas in the Power Authority equipment"
+      },
+      {
+        "source_id": "ent_power_authority_commitment",
+        "target_id": "ent_sf6_tracking_responsibility",
+        "relationship_type": "Trigger for Tracking Obligation",
+        "legal_significance": "The Power Authority's environmental commitment triggers the contractual requirement for SF6 gas tracking by Con Edison.",
+        "confidence": 1.0,
+        "evidence_quote": "Due to the Power Authority's commitment to the Climate Registry... Accordingly, Con Edison will be responsible for tracking"
+      },
+      {
+        "source_id": "ent_epa_reporting_rule",
+        "target_id": "ent_sf6_tracking_responsibility",
+        "relationship_type": "Anticipated Regulatory Trigger",
+        "legal_significance": "The anticipated EPA gas reporting rule motivates the inclusion of SF6 gas tracking obligations in the contract.",
+        "confidence": 1.0,
+        "evidence_quote": "in anticipation of the Environmental Protection Agency's proposed mandatory gas reporting rule"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XXXIV:34_1:No_delay_or_omission_by_either_party_to_exercise_a:eb059a",
+        "target_id": "ent_waiver_clause",
+        "relationship_type": "Clause Defines Waiver Terms",
+        "legal_significance": "This clause clarifies that failure or delay to exercise rights does not waive those rights or future breaches, preserving parties' legal protections.",
+        "confidence": 1.0,
+        "evidence_quote": "A waiver by either party of any of the covenants, conditions or agreements hereof to be performed by the other party shall not be construed to be a waiver of any subsequent breach hereof"
+      }
+    ],
+    "extractor_notes": "The clause includes a waiver provision clarifying non-waiver of rights despite delay or omission, and detailed environmental compliance obligations related to SF6 gas tracking at the Astoria Annex Substation, with Con Edison as the obligated party and the Power Authority as the environmental commitment holder. The clause also contains execution details of the Second Composite Agreement by authorized representatives."
+  }
+]

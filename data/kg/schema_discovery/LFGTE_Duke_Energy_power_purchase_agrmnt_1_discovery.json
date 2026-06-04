@@ -1,0 +1,2107 @@
+[
+  {
+    "source_clause_id": "clause:LFGTE_Duke_Energy_power_purchase_agrmnt_1:4:4_10:Set_off_In_addition_to_any_rights_of_set_off_a_Par:29dce0",
+    "source_clause_title": "4.10. Set-off.  In addition to any rights of set-off a Party may have as a matter of law or otherwise",
+    "contract_id": "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+    "source_page_start": 9,
+    "source_page_end": 10,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_non_defaulting_party",
+        "entity_type": "Non-Defaulting Party",
+        "name": "Non-Defaulting Party",
+        "legal_role": "The party not in breach of the agreement who gains the right to set off obligations upon an Event of Default.",
+        "confidence": 1.0,
+        "evidence_quote": "the Non-Defaulting Party shall have the right (but shall not be obligated to) without prior notice to the Defaulting Party or any other person to set-off any obligation of the Defaulting Party owed to the Non-Defaulting Party under this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_defaulting_party",
+        "entity_type": "Defaulting Party",
+        "name": "Defaulting Party",
+        "legal_role": "The party in breach of the agreement whose obligations may be set off by the Non-Defaulting Party upon an Event of Default.",
+        "confidence": 1.0,
+        "evidence_quote": "the Defaulting Party owed to the Non-Defaulting Party under this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_event_of_default",
+        "entity_type": "Event of Default",
+        "name": "Event of Default",
+        "legal_role": "A triggering event that enables the Non-Defaulting Party to exercise set-off rights and other remedies.",
+        "confidence": 1.0,
+        "evidence_quote": "upon the occurrence of an Event of Default, the Non-Defaulting Party shall have the right ... to set-off",
+        "properties": {}
+      },
+      {
+        "id": "ent_set_off_right",
+        "entity_type": "Set-Off Right",
+        "name": "Set-Off Right",
+        "legal_role": "The contractual right allowing the Non-Defaulting Party to offset obligations owed by the Defaulting Party against obligations owed to the Defaulting Party.",
+        "confidence": 1.0,
+        "evidence_quote": "the Non-Defaulting Party shall have the right ... to set-off any obligation of the Defaulting Party owed to the Non-Defaulting Party ... against any obligations of the Non-Defaulting Party owing to the Defaulting Party",
+        "properties": {}
+      },
+      {
+        "id": "ent_commercially_reasonable_manner",
+        "entity_type": "Commercially Reasonable Manner",
+        "name": "Commercially Reasonable Manner",
+        "legal_role": "The standard by which the Non-Defaulting Party may estimate unascertained obligations for set-off purposes.",
+        "confidence": 1.0,
+        "evidence_quote": "If any such obligation is unascertained, the Non-Defaulting Party may in a Commercially Reasonable Manner estimate that obligation and set-off in respect of the estimate",
+        "properties": {}
+      },
+      {
+        "id": "ent_performance_assurance",
+        "entity_type": "Performance Assurance",
+        "name": "Performance Assurance",
+        "legal_role": "Security provided by the Seller to ensure performance of obligations under the Agreement, which must remain in full force and effect during the Security Period.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller shall ensure that any Performance Assurance, if required hereunder, remains in full force and effect and outstanding for the duration required by this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_security_period",
+        "entity_type": "Security Period",
+        "name": "Security Period",
+        "legal_role": "The period extending sixty (60) days after the later of the end of the Term or Seller’s full satisfaction of obligations, during which Performance Assurance must remain outstanding for the benefit of Buyer.",
+        "confidence": 1.0,
+        "evidence_quote": "All applicable Performance Assurance ... shall remain in full force and effect and outstanding for the benefit of Buyer until sixty (60) days following the later of (a) the end of the Term or (b) the date on which Seller has fully satisfied all obligations to Buyer",
+        "properties": {}
+      },
+      {
+        "id": "ent_buyer",
+        "entity_type": "Buyer",
+        "name": "Buyer",
+        "legal_role": "The party entitled to benefit from the Performance Assurance and to exercise remedies if Seller fails to maintain Performance Assurance.",
+        "confidence": 1.0,
+        "evidence_quote": "All applicable Performance Assurance ... shall remain in full force and effect and outstanding for the benefit of Buyer",
+        "properties": {}
+      },
+      {
+        "id": "ent_seller",
+        "entity_type": "Seller",
+        "name": "Seller",
+        "legal_role": "The party obligated to provide and maintain Performance Assurance and responsible for costs and replacement if Performance Assurance fails to meet requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller shall ensure that any Performance Assurance ... remains in full force and effect ... Seller will be solely responsible for any and all costs incurred with providing and maintaining any Performance Assurance",
+        "properties": {}
+      },
+      {
+        "id": "ent_event_of_default_notice",
+        "entity_type": "Event of Default Notice Right",
+        "name": "Event of Default Notice Right",
+        "legal_role": "The right of Buyer to notify Seller of an Event of Default if Seller fails to maintain Performance Assurance.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer ... shall be entitled to give Seller notice of an Event of Default",
+        "properties": {}
+      },
+      {
+        "id": "ent_termination_rights_and_remedies",
+        "entity_type": "Termination Rights and Remedies",
+        "name": "Termination Rights and Remedies",
+        "legal_role": "The contractual rights and remedies Buyer may pursue upon Seller’s Event of Default related to Performance Assurance.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer ... shall be entitled to ... pursue the termination rights and remedies provided for in this Agreement",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_non_defaulting_party",
+        "target_id": "ent_defaulting_party",
+        "relationship_type": "Set-Off Right Exercised Upon Event of Default",
+        "legal_significance": "This relationship defines the Non-Defaulting Party’s right to offset obligations owed by the Defaulting Party against obligations owed to the Defaulting Party upon an Event of Default, enabling mitigation of credit risk.",
+        "confidence": 1.0,
+        "evidence_quote": "upon the occurrence of an Event of Default, the Non-Defaulting Party shall have the right ... to set-off any obligation of the Defaulting Party owed to the Non-Defaulting Party ... against any obligations of the Non-Defaulting Party owing to the Defaulting Party"
+      },
+      {
+        "source_id": "ent_non_defaulting_party",
+        "target_id": "ent_commercially_reasonable_manner",
+        "relationship_type": "Estimation Standard for Unascertained Obligations",
+        "legal_significance": "Allows the Non-Defaulting Party to estimate unascertained obligations in a commercially reasonable manner for set-off purposes, ensuring fairness and reasonableness in the absence of exact amounts.",
+        "confidence": 1.0,
+        "evidence_quote": "If any such obligation is unascertained, the Non-Defaulting Party may in a Commercially Reasonable Manner estimate that obligation and set-off in respect of the estimate"
+      },
+      {
+        "source_id": "ent_seller",
+        "target_id": "ent_performance_assurance",
+        "relationship_type": "Obligation to Provide and Maintain Performance Assurance",
+        "legal_significance": "Seller is contractually obligated to provide and maintain Performance Assurance to secure its obligations under the Agreement, ensuring Buyer’s protection.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller shall ensure that any Performance Assurance ... remains in full force and effect ... Seller will be solely responsible for any and all costs incurred with providing and maintaining any Performance Assurance"
+      },
+      {
+        "source_id": "ent_performance_assurance",
+        "target_id": "ent_security_period",
+        "relationship_type": "Duration of Performance Assurance Obligation",
+        "legal_significance": "Performance Assurance must remain outstanding during the Security Period, extending Buyer’s protection beyond the Term or until Seller’s obligations are fully satisfied.",
+        "confidence": 1.0,
+        "evidence_quote": "All applicable Performance Assurance ... shall remain in full force and effect and outstanding for the benefit of Buyer until sixty (60) days following the later of (a) the end of the Term or (b) the date on which Seller has fully satisfied all obligations to Buyer"
+      },
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_event_of_default_notice",
+        "relationship_type": "Right to Notify Event of Default",
+        "legal_significance": "Buyer’s right to notify Seller of an Event of Default upon Seller’s failure to maintain Performance Assurance triggers potential remedies and termination rights.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer ... shall be entitled to give Seller notice of an Event of Default"
+      },
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_termination_rights_and_remedies",
+        "relationship_type": "Right to Pursue Termination Remedies",
+        "legal_significance": "Buyer may pursue termination rights and remedies if Seller fails to maintain Performance Assurance, providing a contractual enforcement mechanism.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer ... shall be entitled to ... pursue the termination rights and remedies provided for in this Agreement"
+      },
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_performance_assurance",
+        "relationship_type": "Beneficiary of Performance Assurance",
+        "legal_significance": "Buyer benefits from the Performance Assurance as security for Seller’s obligations, ensuring financial protection.",
+        "confidence": 1.0,
+        "evidence_quote": "All applicable Performance Assurance ... shall remain in full force and effect and outstanding for the benefit of Buyer"
+      }
+    ],
+    "extractor_notes": "The clause combines two related but distinct legal mechanisms: set-off rights triggered by an Event of Default and Performance Assurance requirements with associated remedies. The set-off right is broad, allowing offset of matured or contingent obligations regardless of currency or place of payment, and includes a mechanism for estimating unascertained obligations. The Performance Assurance provisions impose ongoing security obligations on Seller, with a defined Security Period and explicit remedies for Buyer including drawing on the assurance, withholding payments, and termination rights."
+  },
+  {
+    "source_clause_id": "clause:LFGTE_Duke_Energy_power_purchase_agrmnt_1:5:5_2:Seller_Covenants_Seller_covenants_and_represents_a:ecbd38",
+    "source_clause_title": "5.2. Seller Covenants.  Seller covenants and represents and warrants to Buyer as of the Effective",
+    "contract_id": "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+    "source_page_start": 10,
+    "source_page_end": 10,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_seller",
+        "entity_type": "Seller",
+        "name": "Seller",
+        "legal_role": "The party responsible for providing the covenants, warranties, and obtaining necessary approvals and agreements for the Facility under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller has obtained an approved and valid certificate of public convenience and necessity for the Facility from the Commission; ... Seller has obtained or shall obtain if determined to be necessary by Buyer, an Interconnection Agreement for the Facility ... Seller has secured from the Transmission Provider(s) the firm transmission required to deliver the Product to the Delivery Point; and ... Seller has obtained all applicable certifications and/or approvals for the Facility from FERC.",
+        "properties": {}
+      },
+      {
+        "id": "ent_buyer",
+        "entity_type": "Buyer",
+        "name": "Buyer",
+        "legal_role": "The party relying on Seller's covenants and warranties and entitled to terminate the Agreement and receive indemnification upon Seller's breach or failure.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller agrees and acknowledges that Buyer has entered into this Agreement in reliance upon the covenants and warranties set forth above in this section ... then this Agreement will terminate upon Buyer providing Seller with thirty (30) day’s written notice ... Seller will indemnify and hold Buyer harmless for any breach or failure relating to any of the foregoing covenants and warranties",
+        "properties": {}
+      },
+      {
+        "id": "ent_certificate_of_public_convenience_and_necessity",
+        "entity_type": "Certificate of Public Convenience and Necessity",
+        "name": "approved and valid certificate of public convenience and necessity for the Facility",
+        "legal_role": "A regulatory approval that Seller must obtain from the Commission to lawfully operate the Facility.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller has obtained an approved and valid certificate of public convenience and necessity for the Facility from the Commission",
+        "properties": {}
+      },
+      {
+        "id": "ent_interconnection_agreement",
+        "entity_type": "Interconnection Agreement",
+        "name": "Interconnection Agreement for the Facility",
+        "legal_role": "A contractual agreement that Seller must obtain or will obtain if Buyer determines necessary, to connect the Facility to the grid.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller has obtained or shall obtain if determined to be necessary by Buyer, an Interconnection Agreement for the Facility",
+        "properties": {}
+      },
+      {
+        "id": "ent_firm_transmission",
+        "entity_type": "Firm Transmission Rights",
+        "name": "firm transmission required to deliver the Product to the Delivery Point",
+        "legal_role": "Transmission capacity secured by Seller from Transmission Provider(s) to ensure delivery of the Product to the Delivery Point.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller has secured from the Transmission Provider(s) the firm transmission required to deliver the Product to the Delivery Point",
+        "properties": {}
+      },
+      {
+        "id": "ent_certifications_and_approvals_from_FERC",
+        "entity_type": "Certifications and Approvals from FERC",
+        "name": "applicable certifications and/or approvals for the Facility from FERC",
+        "legal_role": "Regulatory certifications and approvals Seller must obtain from the Federal Energy Regulatory Commission for the Facility.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller has obtained all applicable certifications and/or approvals for the Facility from FERC",
+        "properties": {}
+      },
+      {
+        "id": "ent_termination_right",
+        "entity_type": "Termination Right",
+        "name": "Termination of Agreement by Buyer upon breach",
+        "legal_role": "Buyer's right to terminate the Agreement upon Seller's breach or failure of covenants and warranties after 30 days' written notice and opportunity to cure.",
+        "confidence": 1.0,
+        "evidence_quote": "then this Agreement will terminate upon Buyer providing Seller with thirty (30) day’s written notice, unless such breach or failure has been cured before the end of such thirty (30) day period",
+        "properties": {}
+      },
+      {
+        "id": "ent_indemnification_obligation",
+        "entity_type": "Indemnification Obligation",
+        "name": "Seller's indemnification of Buyer",
+        "legal_role": "Seller's obligation to indemnify and hold Buyer harmless for any breach or failure relating to the covenants and warranties.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller will indemnify and hold Buyer harmless for any breach or failure relating to any of the foregoing covenants and warranties",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_seller",
+        "target_id": "ent_certificate_of_public_convenience_and_necessity",
+        "relationship_type": "Obligation to Obtain Regulatory Approval",
+        "legal_significance": "Seller must obtain this certificate to comply with regulatory requirements and validate the Facility's operation under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller has obtained an approved and valid certificate of public convenience and necessity for the Facility from the Commission"
+      },
+      {
+        "source_id": "ent_seller",
+        "target_id": "ent_interconnection_agreement",
+        "relationship_type": "Conditional Obligation to Obtain Agreement",
+        "legal_significance": "Seller must obtain the Interconnection Agreement if Buyer determines it necessary, affecting the Facility's grid connection and performance.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller has obtained or shall obtain if determined to be necessary by Buyer, an Interconnection Agreement for the Facility"
+      },
+      {
+        "source_id": "ent_seller",
+        "target_id": "ent_firm_transmission",
+        "relationship_type": "Obligation to Secure Transmission Rights",
+        "legal_significance": "Seller must secure firm transmission rights to ensure delivery of the Product to the Delivery Point, which is essential for performance under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller has secured from the Transmission Provider(s) the firm transmission required to deliver the Product to the Delivery Point"
+      },
+      {
+        "source_id": "ent_seller",
+        "target_id": "ent_certifications_and_approvals_from_FERC",
+        "relationship_type": "Obligation to Obtain Federal Regulatory Approvals",
+        "legal_significance": "Seller must obtain all applicable certifications and approvals from FERC to comply with federal regulatory requirements for the Facility.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller has obtained all applicable certifications and/or approvals for the Facility from FERC"
+      },
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_termination_right",
+        "relationship_type": "Right to Terminate Agreement",
+        "legal_significance": "Buyer has the contractual right to terminate the Agreement upon Seller's breach or failure of covenants and warranties after providing 30 days' written notice and opportunity to cure.",
+        "confidence": 1.0,
+        "evidence_quote": "then this Agreement will terminate upon Buyer providing Seller with thirty (30) day’s written notice, unless such breach or failure has been cured before the end of such thirty (30) day period"
+      },
+      {
+        "source_id": "ent_seller",
+        "target_id": "ent_indemnification_obligation",
+        "relationship_type": "Indemnification Obligation to Buyer",
+        "legal_significance": "Seller is contractually obligated to indemnify and hold Buyer harmless for any breach or failure of the covenants and warranties, protecting Buyer from losses.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller will indemnify and hold Buyer harmless for any breach or failure relating to any of the foregoing covenants and warranties"
+      },
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_seller",
+        "relationship_type": "Reliance on Seller's Covenants and Warranties",
+        "legal_significance": "Buyer entered into the Agreement relying on Seller's covenants and warranties, establishing the basis for Buyer's rights upon breach.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller agrees and acknowledges that Buyer has entered into this Agreement in reliance upon the covenants and warranties set forth above in this section"
+      }
+    ],
+    "extractor_notes": "The clause explicitly conditions termination rights on a 30-day cure period and includes an indemnification obligation by Seller to Buyer for breaches of covenants and warranties; the Interconnection Agreement obligation is conditional upon Buyer's determination."
+  },
+  {
+    "source_clause_id": "clause:LFGTE_Duke_Energy_power_purchase_agrmnt_1:15:15_4:Required_Disclosures_Notwithstanding_the_confident:413fe2",
+    "source_clause_title": "15.4. Required Disclosures.  Notwithstanding the confidentiality requirements  set forth herein, a",
+    "contract_id": "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+    "source_page_start": 19,
+    "source_page_end": 19,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_Protected_Information",
+        "entity_type": "Confidential Information Subject to Disclosure Restrictions",
+        "name": "Protected Information",
+        "legal_role": "Protected Information is the confidential data subject to disclosure limitations and exceptions under the agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Party may disclose Protected Information to comply with PURPA, request of any Governmental Authority, applicable Requirements of Law, or any exchange, control area or System operator rule, in response to a court order, or in connection with any court or regulatory proceeding.",
+        "properties": {}
+      },
+      {
+        "id": "ent_Receiving_Party",
+        "entity_type": "Obligated Party Receiving Confidential Information",
+        "name": "Receiving Party",
+        "legal_role": "Receiving Party is the party who receives Protected Information and has obligations to provide notice and limit disclosure under certain conditions.",
+        "confidence": 1.0,
+        "evidence_quote": "To the extent the disclosure of Protected Information is requested or compelled as set forth above, the Receiving Party agrees to give Disclosing Party reasonable notice...",
+        "properties": {}
+      },
+      {
+        "id": "ent_Disclosing_Party",
+        "entity_type": "Obligated Party Disclosing Confidential Information",
+        "name": "Disclosing Party",
+        "legal_role": "Disclosing Party is the party who originally disclosed the Protected Information and has the right to seek protective orders to maintain confidentiality.",
+        "confidence": 1.0,
+        "evidence_quote": "Receiving Party agrees to give Disclosing Party reasonable notice... and the Receiving Party shall not oppose such request or relief.",
+        "properties": {}
+      },
+      {
+        "id": "ent_PURPA",
+        "entity_type": "Statutory Compliance Obligation",
+        "name": "PURPA",
+        "legal_role": "PURPA is a statutory requirement that may compel disclosure of Protected Information despite confidentiality obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "Party may disclose Protected Information to comply with PURPA...",
+        "properties": {}
+      },
+      {
+        "id": "ent_Governmental_Authority",
+        "entity_type": "Governmental Authority with Disclosure Request Power",
+        "name": "Governmental Authority",
+        "legal_role": "Governmental Authority is an official entity whose request may compel disclosure of Protected Information.",
+        "confidence": 1.0,
+        "evidence_quote": "Party may disclose Protected Information to comply with... request of any Governmental Authority...",
+        "properties": {}
+      },
+      {
+        "id": "ent_Requirements_of_Law",
+        "entity_type": "Applicable Legal Requirements",
+        "name": "Requirements of Law",
+        "legal_role": "Requirements of Law are legal mandates that may require disclosure of Protected Information.",
+        "confidence": 1.0,
+        "evidence_quote": "Party may disclose Protected Information to comply with... applicable Requirements of Law...",
+        "properties": {}
+      },
+      {
+        "id": "ent_Exchange_Control_Area_System_Operator_Rule",
+        "entity_type": "Regulatory or Operational Rule",
+        "name": "exchange, control area or System operator rule",
+        "legal_role": "These rules may require disclosure of Protected Information despite confidentiality obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "Party may disclose Protected Information to comply with... any exchange, control area or System operator rule...",
+        "properties": {}
+      },
+      {
+        "id": "ent_Court_Order",
+        "entity_type": "Judicial Disclosure Mandate",
+        "name": "court order",
+        "legal_role": "A court order is a legal mandate that may compel disclosure of Protected Information.",
+        "confidence": 1.0,
+        "evidence_quote": "Party may disclose Protected Information... in response to a court order...",
+        "properties": {}
+      },
+      {
+        "id": "ent_Court_or_Regulatory_Proceeding",
+        "entity_type": "Legal Proceeding Triggering Disclosure",
+        "name": "court or regulatory proceeding",
+        "legal_role": "A court or regulatory proceeding may require disclosure of Protected Information.",
+        "confidence": 1.0,
+        "evidence_quote": "Party may disclose Protected Information... or in connection with any court or regulatory proceeding.",
+        "properties": {}
+      },
+      {
+        "id": "ent_Notice_Requirement",
+        "entity_type": "Notice Obligation",
+        "name": "reasonable notice of any discovery request or order, subpoena, or other legal process",
+        "legal_role": "The Receiving Party must provide reasonable notice to the Disclosing Party of any legal process requiring disclosure, enabling protective actions.",
+        "confidence": 1.0,
+        "evidence_quote": "Receiving Party agrees to give Disclosing Party reasonable notice of any discovery request or order, subpoena, or other legal process requiring disclosure of any Protected Information.",
+        "properties": {}
+      },
+      {
+        "id": "ent_Protective_Order_Right",
+        "entity_type": "Right to Seek Protective Order",
+        "name": "protective order or similar relief",
+        "legal_role": "Disclosing Party has the right, at its sole cost and discretion, to seek a protective order to prevent or limit disclosure.",
+        "confidence": 1.0,
+        "evidence_quote": "Such notice by the Receiving Party shall give Disclosing Party an opportunity, at Disclosing Party’s discretion and sole cost, to seek a protective order or similar relief...",
+        "properties": {}
+      },
+      {
+        "id": "ent_Disclosure_Limitation",
+        "entity_type": "Limitation on Disclosure Scope",
+        "name": "disclose only that portion of the Protected Information that is required or necessary",
+        "legal_role": "If no protective order is obtained within 30 days, the Receiving Party must limit disclosure to only the necessary portion of Protected Information.",
+        "confidence": 1.0,
+        "evidence_quote": "If such protective order or other appropriate remedy is not sought and obtained within at least thirty (30) days... Receiving Party shall disclose only that portion of the Protected Information that is required or necessary...",
+        "properties": {}
+      },
+      {
+        "id": "ent_Confidential_Treatment_Assurance",
+        "entity_type": "Obligation to Seek Confidential Treatment",
+        "name": "reasonable efforts to obtain assurances that confidential treatment will be accorded",
+        "legal_role": "Receiving Party must use reasonable efforts to ensure that any disclosed Protected Information is treated confidentially.",
+        "confidence": 1.0,
+        "evidence_quote": "Receiving Party shall use reasonable efforts to obtain assurances that confidential treatment will be accorded to any Protected Information so disclosed.",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_Receiving_Party",
+        "target_id": "ent_Disclosing_Party",
+        "relationship_type": "Notice Obligation Relationship",
+        "legal_significance": "Receiving Party must notify Disclosing Party of any legal process requiring disclosure, enabling Disclosing Party to protect confidentiality rights.",
+        "confidence": 1.0,
+        "evidence_quote": "Receiving Party agrees to give Disclosing Party reasonable notice of any discovery request or order, subpoena, or other legal process requiring disclosure of any Protected Information."
+      },
+      {
+        "source_id": "ent_Disclosing_Party",
+        "target_id": "ent_Protective_Order_Right",
+        "relationship_type": "Right to Seek Protective Order",
+        "legal_significance": "Disclosing Party has the legal right to seek protective orders or similar relief to prevent or limit disclosure of Protected Information.",
+        "confidence": 1.0,
+        "evidence_quote": "Such notice by the Receiving Party shall give Disclosing Party an opportunity, at Disclosing Party’s discretion and sole cost, to seek a protective order or similar relief..."
+      },
+      {
+        "source_id": "ent_Receiving_Party",
+        "target_id": "ent_Protective_Order_Right",
+        "relationship_type": "Non-Opposition Obligation",
+        "legal_significance": "Receiving Party must not oppose Disclosing Party’s request for protective order or similar relief, facilitating confidentiality protection.",
+        "confidence": 1.0,
+        "evidence_quote": "Receiving Party shall not oppose such request or relief."
+      },
+      {
+        "source_id": "ent_Receiving_Party",
+        "target_id": "ent_Disclosure_Limitation",
+        "relationship_type": "Conditional Disclosure Obligation",
+        "legal_significance": "If no protective order is obtained within 30 days, Receiving Party must limit disclosure to only necessary Protected Information.",
+        "confidence": 1.0,
+        "evidence_quote": "If such protective order or other appropriate remedy is not sought and obtained within at least thirty (30) days... Receiving Party shall disclose only that portion of the Protected Information that is required or necessary..."
+      },
+      {
+        "source_id": "ent_Receiving_Party",
+        "target_id": "ent_Confidential_Treatment_Assurance",
+        "relationship_type": "Obligation to Seek Confidential Treatment",
+        "legal_significance": "Receiving Party must use reasonable efforts to ensure confidential treatment of any disclosed Protected Information.",
+        "confidence": 1.0,
+        "evidence_quote": "Receiving Party shall use reasonable efforts to obtain assurances that confidential treatment will be accorded to any Protected Information so disclosed."
+      }
+    ],
+    "extractor_notes": "This clause establishes the limited exceptions to confidentiality obligations for Protected Information, specifying the procedural steps (notice, opportunity to seek protective order, limitation of disclosure) that Receiving Party must follow when disclosure is compelled by law or legal process."
+  },
+  {
+    "source_clause_id": "clause:LFGTE_Duke_Energy_power_purchase_agrmnt_1:20:20_2:Seller_s_Failure_to_Deliver_If_Seller_fails_to_del:3573f4",
+    "source_clause_title": "20.2. Seller’s Failure to Deliver. If Seller fails to deliver Product that complies with the requirements",
+    "contract_id": "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+    "source_page_start": 23,
+    "source_page_end": 23,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_seller",
+        "entity_type": "Seller Obligor",
+        "name": "Seller",
+        "legal_role": "The party obligated to deliver the Product in accordance with the Agreement and whose failure to deliver triggers remedies.",
+        "confidence": 1.0,
+        "evidence_quote": "If Seller fails to deliver Product that complies with the requirements set forth in this Agreement or fails to deliver all or part of the Contract Quantity",
+        "properties": {}
+      },
+      {
+        "id": "ent_buyer",
+        "entity_type": "Buyer Obligee",
+        "name": "Buyer",
+        "legal_role": "The party entitled to receive the Product and to exercise remedies upon Seller’s failure to deliver.",
+        "confidence": 1.0,
+        "evidence_quote": "then Buyer shall elect in its sole discretion",
+        "properties": {}
+      },
+      {
+        "id": "ent_product",
+        "entity_type": "Contracted Product",
+        "name": "Product",
+        "legal_role": "The goods or services Seller is obligated to deliver under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "If Seller fails to deliver Product that complies with the requirements set forth in this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_contract_quantity",
+        "entity_type": "Contract Quantity",
+        "name": "Contract Quantity",
+        "legal_role": "The specified amount of Product Seller is required to deliver under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "or fails to deliver all or part of the Contract Quantity",
+        "properties": {}
+      },
+      {
+        "id": "ent_permitted_excuse",
+        "entity_type": "Permitted Excuse to Perform",
+        "name": "Permitted Excuse to Perform",
+        "legal_role": "A condition that excuses Seller’s failure to deliver and prevents Buyer’s remedies from triggering.",
+        "confidence": 1.0,
+        "evidence_quote": "such failure is not excused by a Permitted Excuse to Perform",
+        "properties": {}
+      },
+      {
+        "id": "ent_event_of_default",
+        "entity_type": "Event of Default",
+        "name": "Event of Default",
+        "legal_role": "A defined breach event that allows Buyer to terminate and liquidate the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "if such failure is an Event of Default as set forth herein",
+        "properties": {}
+      },
+      {
+        "id": "ent_termination_payment",
+        "entity_type": "Termination Payment",
+        "name": "termination payment",
+        "legal_role": "The payment Buyer calculates and receives upon termination as the Non-Defaulting Party.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer shall calculate its termination payment in accordance with this Agreement as though it were the Non -Defaulting Party",
+        "properties": {}
+      },
+      {
+        "id": "ent_liquidated_damages",
+        "entity_type": "Liquidated Damages Obligation",
+        "name": "liquidated damages",
+        "legal_role": "A pre-agreed monetary remedy Seller must pay Buyer for failure to deliver Product within a specified timeframe.",
+        "confidence": 1.0,
+        "evidence_quote": "to require Seller to pay Buyer within three (3) Business Days of invoice receipt, liquidated damages in the amount obtained by multiplying the number of units of Product ... multiplied by two (2) times the per unit Contract Price",
+        "properties": {}
+      },
+      {
+        "id": "ent_contract_price",
+        "entity_type": "Contract Price",
+        "name": "Contract Price",
+        "legal_role": "The per unit price of the Product used to calculate liquidated damages.",
+        "confidence": 1.0,
+        "evidence_quote": "multiplied by two (2) times the per unit Contract Price",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_seller",
+        "target_id": "ent_product",
+        "relationship_type": "Delivery Obligation",
+        "legal_significance": "Seller is legally obligated to deliver the Product as specified in the Agreement, failure of which triggers remedies.",
+        "confidence": 1.0,
+        "evidence_quote": "If Seller fails to deliver Product that complies with the requirements set forth in this Agreement"
+      },
+      {
+        "source_id": "ent_seller",
+        "target_id": "ent_contract_quantity",
+        "relationship_type": "Quantity Delivery Obligation",
+        "legal_significance": "Seller must deliver the full Contract Quantity; failure to deliver all or part constitutes a failure to deliver.",
+        "confidence": 1.0,
+        "evidence_quote": "or fails to deliver all or part of the Contract Quantity (each will be deemed as a failure to deliver for purposes of calculating damages)"
+      },
+      {
+        "source_id": "ent_seller",
+        "target_id": "ent_permitted_excuse",
+        "relationship_type": "Excuse from Performance",
+        "legal_significance": "Seller’s failure to deliver is excused if a Permitted Excuse to Perform applies, preventing Buyer’s remedies.",
+        "confidence": 1.0,
+        "evidence_quote": "such failure is not excused by a Permitted Excuse to Perform"
+      },
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_seller",
+        "relationship_type": "Remedy Election Right",
+        "legal_significance": "Buyer has sole discretion to elect remedies upon Seller’s failure to deliver, including termination or liquidated damages.",
+        "confidence": 1.0,
+        "evidence_quote": "then Buyer shall elect in its sole discretion: (i) to terminate and liquidate this Agreement ... or, (ii) to require Seller to pay Buyer ... liquidated damages"
+      },
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_event_of_default",
+        "relationship_type": "Termination Trigger",
+        "legal_significance": "Buyer may terminate the Agreement if Seller’s failure to deliver constitutes an Event of Default.",
+        "confidence": 1.0,
+        "evidence_quote": "if such failure is an Event of Default as set forth herein, and in which case Buyer shall calculate its termination payment"
+      },
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_termination_payment",
+        "relationship_type": "Termination Payment Right",
+        "legal_significance": "Upon termination, Buyer is entitled to a termination payment calculated as the Non-Defaulting Party.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer shall calculate its termination payment in accordance with this Agreement as though it were the Non -Defaulting Party"
+      },
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_liquidated_damages",
+        "relationship_type": "Liquidated Damages Claim",
+        "legal_significance": "Buyer may require Seller to pay liquidated damages within three Business Days of invoice receipt as a remedy for failure to deliver.",
+        "confidence": 1.0,
+        "evidence_quote": "to require Seller to pay Buyer within three (3) Business Days of invoice receipt, liquidated damages"
+      },
+      {
+        "source_id": "ent_liquidated_damages",
+        "target_id": "ent_contract_quantity",
+        "relationship_type": "Damages Calculation Base",
+        "legal_significance": "Liquidated damages are calculated based on the number of units of Product Seller failed to deliver.",
+        "confidence": 1.0,
+        "evidence_quote": "multiplying the number of units of Product (or component thereof) that Seller failed to deliver"
+      },
+      {
+        "source_id": "ent_liquidated_damages",
+        "target_id": "ent_contract_price",
+        "relationship_type": "Damages Calculation Multiplier",
+        "legal_significance": "Liquidated damages amount is determined by multiplying the undelivered units by two times the per unit Contract Price.",
+        "confidence": 1.0,
+        "evidence_quote": "multiplied by two (2) times the per unit Contract Price"
+      }
+    ],
+    "extractor_notes": "The clause explicitly provides Buyer with two alternative remedies upon Seller’s failure to deliver: termination with a termination payment or liquidated damages payable within three Business Days. The clause defines failure to deliver broadly, including partial non-delivery, and excludes failures excused by a Permitted Excuse or Buyer’s own failure to perform."
+  },
+  {
+    "source_clause_id": "clause:LFGTE_Duke_Energy_power_purchase_agrmnt_1:10:10_1:Billing_Period_Subj_ect_to_Seller_authorizing_Tran:5c5349",
+    "source_clause_title": "10.1. Billing Period.  Subj ect to Seller authorizing Transmission Provider to provide Buyer with",
+    "contract_id": "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+    "source_page_start": 14,
+    "source_page_end": 14,
+    "clause_type_hint": "payment",
+    "entities": [
+      {
+        "id": "ent_buyer",
+        "entity_type": "Buyer",
+        "name": "Buyer",
+        "legal_role": "The party obligated to read data from the Billing Meter, prepare and send invoices to Seller, and pay invoiced amounts within specified deadlines.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer shall read/obtain data from the Billing Meter at regular intervals... Buyer shall provide Seller with an invoice... Buyer shall pay Seller the invoiced amounts...",
+        "properties": {}
+      },
+      {
+        "id": "ent_seller",
+        "entity_type": "Seller",
+        "name": "Seller",
+        "legal_role": "The party entitled to receive invoices and payment from Buyer for Product delivered during each Billing Period and obligated to cooperate with Buyer in providing data for invoice preparation.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer shall provide Seller with an invoice... subject to Seller cooperating with Buyer and providing Buyer with such information and/or data... Buyer shall pay Seller the invoiced amounts...",
+        "properties": {}
+      },
+      {
+        "id": "ent_billing_meter",
+        "entity_type": "Billing Meter",
+        "name": "Billing Meter",
+        "legal_role": "The device from which Buyer obtains data to determine the amount of Product delivered during each Billing Period for invoicing purposes.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer shall read/obtain data from the Billing Meter at regular intervals...",
+        "properties": {}
+      },
+      {
+        "id": "ent_billing_period",
+        "entity_type": "Billing Period",
+        "name": "Billing Period",
+        "legal_role": "The defined time interval, between 27 and 33 consecutive days, for which Product delivery is measured and invoiced, except for initial and final periods which may be shorter.",
+        "confidence": 1.0,
+        "evidence_quote": "which shall be not less than twenty-seven (27) consecutive days and not more than thirty-three (33) consecutive days (each, a “Billing Period”) except for the initial and final billing periods hereunder which may be shorter...",
+        "properties": {}
+      },
+      {
+        "id": "ent_invoice",
+        "entity_type": "Invoice",
+        "name": "Invoice",
+        "legal_role": "The document prepared by Buyer and provided to Seller detailing the amount of Product delivered and the amount owed for each Billing Period.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer shall provide Seller with an invoice detailing the amount of Product delivered during the relevant Billing Period and the associated amount owed...",
+        "properties": {}
+      },
+      {
+        "id": "ent_payment_deadline",
+        "entity_type": "Payment Deadline",
+        "name": "Payment Deadline",
+        "legal_role": "The date thirty (30) days after the invoice date by which Buyer must pay Seller the invoiced amounts to avoid interest accrual.",
+        "confidence": 1.0,
+        "evidence_quote": "Payment by Buyer shall be due thirty (30) days after the invoice date.",
+        "properties": {}
+      },
+      {
+        "id": "ent_interest_rate",
+        "entity_type": "Interest Rate",
+        "name": "Interest Rate",
+        "legal_role": "The rate at which interest accrues on unpaid amounts from the payment due date until payment is made.",
+        "confidence": 1.0,
+        "evidence_quote": "If such amounts are not paid by the deadline, they shall accrue interest at the Interest Rate from the applicable due date until the date paid.",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_billing_meter",
+        "relationship_type": "Data Reading Obligation",
+        "legal_significance": "Buyer is legally required to read or obtain data from the Billing Meter to determine Product delivery for invoicing.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer shall read/obtain data from the Billing Meter at regular intervals..."
+      },
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_invoice",
+        "relationship_type": "Invoice Preparation and Delivery Obligation",
+        "legal_significance": "Buyer must prepare and provide Seller with an invoice detailing Product delivered and amounts owed within 25 days after reading the Billing Meter data.",
+        "confidence": 1.0,
+        "evidence_quote": "Within twenty-five (25) days after reading/obtaining data from the Billing Meter, Buyer shall provide Seller with an invoice..."
+      },
+      {
+        "source_id": "ent_seller",
+        "target_id": "ent_buyer",
+        "relationship_type": "Cooperation Obligation",
+        "legal_significance": "Seller must cooperate with Buyer and provide requested information or data to enable accurate invoice preparation.",
+        "confidence": 1.0,
+        "evidence_quote": "subject to Seller cooperating with Buyer and providing Buyer with such information and/or data that Buyer may request to accurately prepare the invoice."
+      },
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_seller",
+        "relationship_type": "Payment Obligation",
+        "legal_significance": "Buyer is obligated to pay Seller the invoiced amounts for each Billing Period by the payment deadline.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer shall pay Seller the invoiced amounts for each Billing Period. Payment by Buyer shall be due thirty (30) days after the invoice date."
+      },
+      {
+        "source_id": "ent_payment_deadline",
+        "target_id": "ent_interest_rate",
+        "relationship_type": "Interest Accrual Trigger",
+        "legal_significance": "If Buyer fails to pay by the payment deadline, interest accrues at the Interest Rate from the due date until payment is made.",
+        "confidence": 1.0,
+        "evidence_quote": "If such amounts are not paid by the deadline, they shall accrue interest at the Interest Rate from the applicable due date until the date paid."
+      }
+    ],
+    "extractor_notes": "The clause explicitly defines the Billing Period duration, invoicing and payment obligations, and interest accrual on late payments, with clear roles for Buyer and Seller and their respective duties. The clause also references Seller's cooperation in invoice preparation, which is a key operational and legal relationship."
+  },
+  {
+    "source_clause_id": "clause:LFGTE_Duke_Energy_power_purchase_agrmnt_1:19:19_2:Effectiveness_of_Default_and_Remedies_Where_an_Eve:4d036e",
+    "source_clause_title": "19.2. Effectiveness of Default and Remedies.  Where an Event of Default is specified herein and is",
+    "contract_id": "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+    "source_page_start": 22,
+    "source_page_end": 22,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_event_of_default",
+        "entity_type": "Event of Default",
+        "name": "Event of Default",
+        "legal_role": "An Event of Default triggers the possibility of early termination and other remedies under the agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Where an Event of Default is specified herein",
+        "properties": {}
+      },
+      {
+        "id": "ent_early_termination_date",
+        "entity_type": "Early Termination Date",
+        "name": "Early Termination Date",
+        "legal_role": "The date on which the agreement is deemed terminated early due to an Event of Default.",
+        "confidence": 1.0,
+        "evidence_quote": "an Event of Default and Early Termination Date shall be deemed to have occurred immediately upon any such event",
+        "properties": {}
+      },
+      {
+        "id": "ent_non_defaulting_party",
+        "entity_type": "Non-Defaulting Party",
+        "name": "Non-Defaulting Party",
+        "legal_role": "The party not in default who is entitled to exercise remedies including acceleration, setoff, and early termination.",
+        "confidence": 1.0,
+        "evidence_quote": "All of the remedies and provisions set forth in this section shall be without prejudice to any other right of the Non - Defaulting Party",
+        "properties": {}
+      },
+      {
+        "id": "ent_defaulting_party",
+        "entity_type": "Defaulting Party",
+        "name": "Defaulting Party",
+        "legal_role": "The party in default who is liable to pay the Net Settlement Amount following early termination.",
+        "confidence": 1.0,
+        "evidence_quote": "The Defaulting Party shall pay the Non -Defaulting Party the full amount of the Net Settlement Amount",
+        "properties": {}
+      },
+      {
+        "id": "ent_net_settlement_amount",
+        "entity_type": "Net Settlement Amount",
+        "name": "Net Settlement Amount",
+        "legal_role": "The single net amount calculated by the Non-Defaulting Party representing gains, losses, and costs resulting from early termination.",
+        "confidence": 1.0,
+        "evidence_quote": "a single net amount expressed in U .S . dollars (the “Net Settlement Amount”)",
+        "properties": {}
+      },
+      {
+        "id": "ent_gains_losses_costs",
+        "entity_type": "Gains, Losses and Costs",
+        "name": "Gains or Losses and Costs",
+        "legal_role": "Financial results calculated by the Non-Defaulting Party as a consequence of early termination.",
+        "confidence": 1.0,
+        "evidence_quote": "calculate its Gains or Losses and Costs resulting from the termination as of the Early Termination Date",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_event_of_default",
+        "target_id": "ent_early_termination_date",
+        "relationship_type": "Triggers Early Termination Date",
+        "legal_significance": "The occurrence of an Event of Default causes the Early Termination Date to be deemed to have occurred immediately, enabling termination without prior notice.",
+        "confidence": 1.0,
+        "evidence_quote": "an Event of Default and Early Termination Date shall be deemed to have occurred immediately upon any such event and no prior written notice shall be required"
+      },
+      {
+        "source_id": "ent_non_defaulting_party",
+        "target_id": "ent_net_settlement_amount",
+        "relationship_type": "Calculates",
+        "legal_significance": "The Non-Defaulting Party is responsible for calculating the Net Settlement Amount in a commercially reasonable manner following early termination.",
+        "confidence": 1.0,
+        "evidence_quote": "the Non-Defaulting Party shall calculate its Gains or Losses and Costs resulting from the termination as of the Early Termination Date , in a Commercially Reasonable Manner"
+      },
+      {
+        "source_id": "ent_net_settlement_amount",
+        "target_id": "ent_defaulting_party",
+        "relationship_type": "Payment Obligation",
+        "legal_significance": "The Defaulting Party is obligated to pay the full Net Settlement Amount to the Non-Defaulting Party within five business days of notice.",
+        "confidence": 1.0,
+        "evidence_quote": "The Defaulting Party shall pay the Non -Defaulting Party the full amount of the Net Settlement Amount within five (5) Business Day s of delivery to the Defaulting Party of the notice"
+      },
+      {
+        "source_id": "ent_non_defaulting_party",
+        "target_id": "ent_gains_losses_costs",
+        "relationship_type": "Calculates",
+        "legal_significance": "The Non-Defaulting Party calculates the Gains, Losses and Costs resulting from termination to determine the Net Settlement Amount.",
+        "confidence": 1.0,
+        "evidence_quote": "the Non-Defaulting Party shall calculate its Gains or Losses and Costs resulting from the termination"
+      },
+      {
+        "source_id": "ent_non_defaulting_party",
+        "target_id": "clause:LFGTE_Duke_Energy_power_purchase_agrmnt_1:19:19_2:Effectiveness_of_Default_and_Remedies_Where_an_Eve:4d036e",
+        "relationship_type": "Entitled to Remedies",
+        "legal_significance": "The Non-Defaulting Party retains all remedies including acceleration, recoupment, setoff, liquidation, and early termination rights under this clause.",
+        "confidence": 1.0,
+        "evidence_quote": "All of the remedies and provisions set forth in this section shall be without prejudice to any other right of the Non - Defaulting Party to accelerate amounts owed, net, recoup, setoff, liquidate, and early terminate this Agreement"
+      }
+    ],
+    "extractor_notes": "The clause explicitly defines the immediate effect of an Event of Default on early termination without prior notice, the calculation and payment of a Net Settlement Amount, and preserves the Non-Defaulting Party's broad remedies. The relationships focus on the flow of rights and obligations triggered by default and termination."
+  },
+  {
+    "source_clause_id": "clause:LFGTE_Duke_Energy_power_purchase_agrmnt_1:20:20_3:Buyer_s_Failure_to_Accept_Delivery_If_Buyer_fails_:342db9",
+    "source_clause_title": "20.3. Buyer’s Failure to Accept Delivery.  If Buyer fails to receive all or part of the Contract Quantity",
+    "contract_id": "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+    "source_page_start": 23,
+    "source_page_end": 23,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_seller",
+        "entity_type": "Non-Defaulting Party",
+        "name": "Seller",
+        "legal_role": "Seller is the party entitled to elect remedies and receive payments when Buyer fails to accept delivery, acting as the non-defaulting party in such events.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller shall elect in its sole discretion either to: (i) terminate and liquidate this Agreement if such failure is an Event of Default as set forth herein... or, (ii) require Buyer to pay Seller within three (3) Business Days of invoice receipt, liquidated damages...",
+        "properties": {}
+      },
+      {
+        "id": "ent_buyer",
+        "entity_type": "Defaulting Party",
+        "name": "Buyer",
+        "legal_role": "Buyer is the party obligated to receive the Contract Quantity and liable for damages or termination consequences upon failure to accept delivery.",
+        "confidence": 1.0,
+        "evidence_quote": "If Buyer fails to receive all or part of the Contract Quantity that Seller attempted to deliver to Buyer in accordance with this Agreement...",
+        "properties": {}
+      },
+      {
+        "id": "ent_contract_quantity",
+        "entity_type": "Contract Quantity",
+        "name": "Contract Quantity",
+        "legal_role": "The specific amount of Product that Seller is obligated to deliver and Buyer is obligated to accept under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "If Buyer fails to receive all or part of the Contract Quantity that Seller attempted to deliver to Buyer in accordance with this Agreement...",
+        "properties": {}
+      },
+      {
+        "id": "ent_permitted_excuse",
+        "entity_type": "Permitted Excuse to Perform",
+        "name": "Permitted Excuse to Perform",
+        "legal_role": "A condition that excuses Buyer’s failure to accept delivery, preventing Seller’s remedies from triggering.",
+        "confidence": 1.0,
+        "evidence_quote": "such failure by Buyer is not excused by a Permitted Excuse to Perform or Seller’s failure to perform...",
+        "properties": {}
+      },
+      {
+        "id": "ent_event_of_default",
+        "entity_type": "Event of Default",
+        "name": "Event of Default",
+        "legal_role": "A defined breach condition that, if triggered by Buyer’s failure to accept delivery, allows Seller to terminate and liquidate the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "terminate and liquidate this Agreement if such failure is an Event of Default as set forth herein...",
+        "properties": {}
+      },
+      {
+        "id": "ent_termination_payment",
+        "entity_type": "Termination Payment",
+        "name": "Termination Payment",
+        "legal_role": "The payment Seller calculates and receives upon termination of the Agreement due to Buyer’s Event of Default.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller shall calculate its termination payment in accordance with this Agreement as though it were the Non-Defaulting Party...",
+        "properties": {}
+      },
+      {
+        "id": "ent_liquidated_damages",
+        "entity_type": "Liquidated Damages",
+        "name": "Liquidated Damages",
+        "legal_role": "A pre-agreed monetary remedy Seller may require Buyer to pay for failure to accept delivery, calculated as twice the per unit Contract Price times the units not received.",
+        "confidence": 1.0,
+        "evidence_quote": "require Buyer to pay Seller within three (3) Business Days of invoice receipt, liquidated damages in the amount obtained by multiplying the number of units of Product... multiplied by two (2) times the per unit Contract Price...",
+        "properties": {}
+      },
+      {
+        "id": "ent_contract_price",
+        "entity_type": "Contract Price",
+        "name": "Contract Price",
+        "legal_role": "The per unit price of the Product used to calculate liquidated damages payable by Buyer upon failure to accept delivery.",
+        "confidence": 1.0,
+        "evidence_quote": "liquidated damages in the amount obtained by multiplying... by two (2) times the per unit Contract Price...",
+        "properties": {}
+      },
+      {
+        "id": "ent_invoice_receipt",
+        "entity_type": "Invoice Receipt",
+        "name": "Invoice Receipt",
+        "legal_role": "The triggering event that starts the three (3) Business Days payment period for Buyer to pay liquidated damages to Seller.",
+        "confidence": 1.0,
+        "evidence_quote": "require Buyer to pay Seller within three (3) Business Days of invoice receipt...",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_contract_quantity",
+        "relationship_type": "Obligation to Accept Delivery",
+        "legal_significance": "Buyer is legally obligated to receive all or part of the Contract Quantity delivered by Seller under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "If Buyer fails to receive all or part of the Contract Quantity that Seller attempted to deliver to Buyer in accordance with this Agreement..."
+      },
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_permitted_excuse",
+        "relationship_type": "Failure Excused By",
+        "legal_significance": "Buyer's failure to accept delivery is excused if a Permitted Excuse to Perform applies, preventing Seller’s remedies.",
+        "confidence": 1.0,
+        "evidence_quote": "such failure by Buyer is not excused by a Permitted Excuse to Perform or Seller’s failure to perform..."
+      },
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_event_of_default",
+        "relationship_type": "Failure Constitutes Event of Default",
+        "legal_significance": "Buyer's failure to accept delivery may constitute an Event of Default, triggering Seller’s right to terminate and liquidate the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "terminate and liquidate this Agreement if such failure is an Event of Default as set forth herein..."
+      },
+      {
+        "source_id": "ent_seller",
+        "target_id": "ent_termination_payment",
+        "relationship_type": "Entitlement to Termination Payment",
+        "legal_significance": "Seller is entitled to calculate and receive a termination payment upon termination due to Buyer’s Event of Default.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller shall calculate its termination payment in accordance with this Agreement as though it were the Non-Defaulting Party..."
+      },
+      {
+        "source_id": "ent_seller",
+        "target_id": "ent_liquidated_damages",
+        "relationship_type": "Right to Liquidated Damages",
+        "legal_significance": "Seller has the right to require Buyer to pay liquidated damages within three Business Days of invoice receipt for failure to accept delivery.",
+        "confidence": 1.0,
+        "evidence_quote": "require Buyer to pay Seller within three (3) Business Days of invoice receipt, liquidated damages..."
+      },
+      {
+        "source_id": "ent_liquidated_damages",
+        "target_id": "ent_contract_price",
+        "relationship_type": "Calculation Basis",
+        "legal_significance": "Liquidated damages are calculated based on two times the per unit Contract Price multiplied by the units not received.",
+        "confidence": 1.0,
+        "evidence_quote": "liquidated damages in the amount obtained by multiplying... by two (2) times the per unit Contract Price..."
+      },
+      {
+        "source_id": "ent_liquidated_damages",
+        "target_id": "ent_invoice_receipt",
+        "relationship_type": "Payment Timing Trigger",
+        "legal_significance": "The obligation for Buyer to pay liquidated damages arises within three Business Days after Seller issues an invoice.",
+        "confidence": 1.0,
+        "evidence_quote": "require Buyer to pay Seller within three (3) Business Days of invoice receipt..."
+      }
+    ],
+    "extractor_notes": "The clause explicitly provides Seller with two alternative remedies upon Buyer's failure to accept delivery: termination with a termination payment or liquidated damages payment, with clear timing and calculation methods. The clause also conditions these remedies on the failure not being excused by a Permitted Excuse or Seller’s own failure to perform."
+  },
+  {
+    "source_clause_id": "clause:LFGTE_Duke_Energy_power_purchase_agrmnt_1:21:21_1:Reasonableness_THE_EXPRESS_REMEDIES_AND_MEASURES_O:f59816",
+    "source_clause_title": "21.1. Reasonableness.  THE EXPRESS REMEDIES AND MEASURES OF DAMAGES, INCLUDING",
+    "contract_id": "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+    "source_page_start": 23,
+    "source_page_end": 24,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_liquidated_damages",
+        "entity_type": "Liquidated Damages Provision",
+        "name": "Liquidated Damages",
+        "legal_role": "This provision defines agreed damages as a reasonable approximation of anticipated harm, serving as a predetermined remedy for breach where actual damages are difficult to estimate.",
+        "confidence": 1.0,
+        "evidence_quote": "TO THE EXTENT ANY PROVISION OF THIS AGREEMENT PROVIDES FOR , OR IS DEEMED TO CONSTITUTE  OR INCLUDE, LIQUIDATED DAMAGES, THE PARTIES STIPULATE AND AGREE THAT THE ACTUAL DAMAGES ARE DIFFICULT OR IMPOSSIBLE TO ESTIMATE OR DETERMINE, THE LIQUIDATED AMOUNTS ARE A REASONABLE APPROXIMATION OF AND METHODOLOGY  TO DETERMINE THE ANTICIPATED HARM OR LOSS TO THE PARTY",
+        "properties": {}
+      },
+      {
+        "id": "ent_express_remedy",
+        "entity_type": "Express Remedy or Measure of Damages",
+        "name": "Express Remedy or Measure of Damages",
+        "legal_role": "This entity represents the specific remedies or damages expressly provided in the agreement for breach of provisions, which are intended to be the sole and exclusive remedies.",
+        "confidence": 1.0,
+        "evidence_quote": "SUCH EXPRESS REMEDY OR MEASURE OF DAMAGES SHALL BE THE SOLE AND EXCLUSIVE REMEDY",
+        "properties": {}
+      },
+      {
+        "id": "ent_obligor_liability_limit",
+        "entity_type": "Obligor's Liability Limitation",
+        "name": "Obligor’s Liability Limitation",
+        "legal_role": "This limits the obligor’s liability to the amounts set forth in the express remedy provisions, excluding other remedies or damages at law or equity.",
+        "confidence": 1.0,
+        "evidence_quote": "THE OBLIGOR’S LIABILITY SHALL BE LIMITED AS SET FORTH IN SUCH PROVISIONS",
+        "properties": {}
+      },
+      {
+        "id": "ent_waiver_of_other_remedies",
+        "entity_type": "Waiver of Other Remedies or Damages",
+        "name": "Waiver of Other Remedies or Damages",
+        "legal_role": "This waiver excludes all remedies or damages at law or in equity other than those expressly provided, ensuring exclusivity of the agreed remedies.",
+        "confidence": 1.0,
+        "evidence_quote": "ALL OTHER REMEDIES OR DAMAGES AT LAW OR IN EQUITY ARE WAIVED",
+        "properties": {}
+      },
+      {
+        "id": "ent_penalty_waiver",
+        "entity_type": "Waiver of Penalty Challenge",
+        "name": "Waiver of Right to Contest Liquidated Damages as Penalty",
+        "legal_role": "Each party waives the right to challenge liquidated damages provisions as an unenforceable penalty, ensuring enforceability of such provisions.",
+        "confidence": 1.0,
+        "evidence_quote": "THE PARTIES FURTHER STIPULATE AND AGREE THAT ANY PROVISIONS FOR LIQUIDATED DAMAGES ARE NOT INTENDED AS, AND SHALL NOT BE DEEMED TO CONSTITUTE, A PENALTY, AND EACH PARTY HEREBY WAIVES THE RIGHT TO CONTEST SUCH PROVISIONS AS AN UNREASONABLE PENALTY OR AS UNENFORCEABLE FOR ANY REASON",
+        "properties": {}
+      },
+      {
+        "id": "ent_direct_actual_damages_limit",
+        "entity_type": "Limitation to Direct Actual Damages",
+        "name": "Limitation to Direct Actual Damages",
+        "legal_role": "Where no express remedy is provided, liability is limited to direct actual damages only, which are the sole and exclusive remedy.",
+        "confidence": 1.0,
+        "evidence_quote": "IF NO REMEDY OR MEASURE OF DAMAGES IS EXPRESSLY HEREIN PROVIDED, (i) THE OBLIGOR’S LIABILITY SHALL BE LIMITED TO DIRECT ACTUAL DAMAGES ONLY, SUCH DIRECT ACTUAL DAMAGES SHALL BE THE SOLE AND EXCLUSIVE REMEDY",
+        "properties": {}
+      },
+      {
+        "id": "ent_exclusion_of_consequential_damages",
+        "entity_type": "Exclusion of Consequential and Other Damages",
+        "name": "Exclusion of Consequential, Incidental, Punitive, Exemplary or Indirect Damages",
+        "legal_role": "This excludes liability for consequential, incidental, punitive, exemplary, indirect damages, lost profits, or business interruption damages, even if allowed by law.",
+        "confidence": 1.0,
+        "evidence_quote": "NEITHER PARTY SHALL BE LIABLE FOR CONSEQUENTIAL, INCIDENTAL, PUNITIVE, EXEMPLARY OR INDIRECT DAMAGES, LOST PROFITS OR OTHER BUSINESS INTERRUPTION DAMAGES",
+        "properties": {}
+      },
+      {
+        "id": "ent_damages_stipulation",
+        "entity_type": "Damages Stipulation",
+        "name": "Damages and Payment Obligations under Sections 20 and 21",
+        "legal_role": "This stipulation confirms that the damages and payment terms are a reasonable methodology to approximate harm or loss and waives challenges to enforceability or penalty claims.",
+        "confidence": 1.0,
+        "evidence_quote": "Each Party expressly agrees and stipulates that the terms, conditions, and payment obligations set forth in Sections 20 and 21 are a reasonable methodology to approximate or determine harm or loss... and each Party hereby waives the right to contest such damages and payments as unenforceable, as an unreasonable penalty, or otherwise for any reason",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_liquidated_damages",
+        "target_id": "ent_penalty_waiver",
+        "relationship_type": "Waiver of Penalty Challenge Attached to Liquidated Damages",
+        "legal_significance": "This relationship ensures that the liquidated damages provisions are enforceable and not subject to being invalidated as penalties.",
+        "confidence": 1.0,
+        "evidence_quote": "THE PARTIES FURTHER STIPULATE AND AGREE THAT ANY PROVISIONS FOR LIQUIDATED DAMAGES ARE NOT INTENDED AS, AND SHALL NOT BE DEEMED TO CONSTITUTE, A PENALTY, AND EACH PARTY HEREBY WAIVES THE RIGHT TO CONTEST SUCH PROVISIONS AS AN UNREASONABLE PENALTY OR AS UNENFORCEABLE FOR ANY REASON"
+      },
+      {
+        "source_id": "ent_express_remedy",
+        "target_id": "ent_obligor_liability_limit",
+        "relationship_type": "Express Remedy Limits Obligors Liability",
+        "legal_significance": "The express remedy provisions define and cap the obligor’s liability, limiting exposure to the agreed damages.",
+        "confidence": 1.0,
+        "evidence_quote": "SUCH EXPRESS REMEDY OR MEASURE OF DAMAGES SHALL BE THE SOLE AND EXCLUSIVE REMEDY, THE OBLIGOR’S LIABILITY SHALL BE LIMITED AS SET FORTH IN SUCH PROVISIONS"
+      },
+      {
+        "source_id": "ent_express_remedy",
+        "target_id": "ent_waiver_of_other_remedies",
+        "relationship_type": "Express Remedy Excludes Other Remedies",
+        "legal_significance": "This relationship legally excludes all other remedies or damages beyond the express remedy, ensuring exclusivity.",
+        "confidence": 1.0,
+        "evidence_quote": "SUCH EXPRESS REMEDY OR MEASURE OF DAMAGES SHALL BE THE SOLE AND EXCLUSIVE REMEDY... AND ALL OTHER REMEDIES OR DAMAGES AT LAW OR IN EQUITY ARE WAIVED"
+      },
+      {
+        "source_id": "clause:LFGTE_Duke_Energy_power_purchase_agrmnt_1:21:21_1:Reasonableness_THE_EXPRESS_REMEDIES_AND_MEASURES_O:f59816",
+        "target_id": "ent_direct_actual_damages_limit",
+        "relationship_type": "Fallback Liability Limitation",
+        "legal_significance": "This clause establishes that if no express remedy is provided, liability defaults to direct actual damages only, limiting exposure.",
+        "confidence": 1.0,
+        "evidence_quote": "IF NO REMEDY OR MEASURE OF DAMAGES IS EXPRESSLY HEREIN PROVIDED, (i) THE OBLIGOR’S LIABILITY SHALL BE LIMITED TO DIRECT ACTUAL DAMAGES ONLY"
+      },
+      {
+        "source_id": "clause:LFGTE_Duke_Energy_power_purchase_agrmnt_1:21:21_1:Reasonableness_THE_EXPRESS_REMEDIES_AND_MEASURES_O:f59816",
+        "target_id": "ent_exclusion_of_consequential_damages",
+        "relationship_type": "Exclusion of Certain Damages",
+        "legal_significance": "This clause excludes liability for consequential and other specified damages, limiting the scope of recoverable damages.",
+        "confidence": 1.0,
+        "evidence_quote": "NEITHER PARTY SHALL BE LIABLE FOR CONSEQUENTIAL, INCIDENTAL, PUNITIVE, EXEMPLARY OR INDIRECT DAMAGES, LOST PROFITS OR OTHER BUSINESS INTERRUPTION DAMAGES"
+      },
+      {
+        "source_id": "ent_damages_stipulation",
+        "target_id": "ent_direct_actual_damages_limit",
+        "relationship_type": "Damages Stipulation Confirms Direct Damages as Recoverable",
+        "legal_significance": "This confirms that damages under Sections 20 and 21 are direct damages and not excluded from liability or recovery under limitations.",
+        "confidence": 1.0,
+        "evidence_quote": "damages and payments determined under Sections 20 and 21 are direct damages, will be deemed to be a direct loss, and will not be excluded from liability or recovery under the Limitations of Liabilities provisions"
+      }
+    ],
+    "extractor_notes": "The clause extensively defines the exclusivity and reasonableness of liquidated damages and express remedies, waiving other remedies and challenges to enforceability, and limits liability to direct damages while excluding consequential and punitive damages. The clause also explicitly waives the right to contest liquidated damages as penalties, which is a critical enforceability safeguard."
+  },
+  {
+    "source_clause_id": "clause:LFGTE_Duke_Energy_power_purchase_agrmnt_1:23:23_5:Delivery_of_Assurances_Voidable_Any_Assignment_or_:2cc9ee",
+    "source_clause_title": "23.5. Delivery of Assurances & Voidable .  Any Assignment or Change of Control will not relieve",
+    "contract_id": "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+    "source_page_start": 25,
+    "source_page_end": 26,
+    "clause_type_hint": "reporting_obligation",
+    "entities": [
+      {
+        "id": "ent_seller",
+        "entity_type": "Obligor under Agreement",
+        "name": "Seller",
+        "legal_role": "The party obligated to perform under the Agreement and whose obligations continue despite Assignment unless waived by Buyer.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller of its obligations hereunder, unless Buyer agrees in writing in advance to waive the Seller’s continuing obligations under this Agreement.",
+        "properties": {}
+      },
+      {
+        "id": "ent_buyer",
+        "entity_type": "Obligee under Agreement",
+        "name": "Buyer",
+        "legal_role": "The party entitled to receive performance under the Agreement and whose written consent is required to waive Seller’s continuing obligations or to approve Assignments.",
+        "confidence": 1.0,
+        "evidence_quote": "unless Buyer agrees in writing in advance to waive the Seller’s continuing obligations under this Agreement.",
+        "properties": {}
+      },
+      {
+        "id": "ent_permitted_assignment",
+        "entity_type": "Permitted Assignment",
+        "name": "Permitted Assignment",
+        "legal_role": "An Assignment allowed under the Agreement, requiring the assignee to assume Seller’s obligations and deliver assurances to Buyer.",
+        "confidence": 1.0,
+        "evidence_quote": "In case of a permitted Assignment, such requesting party or parties shall agree in writing to assume all obligations of Seller and to be bound by the terms and conditions of this Agreement and shall deliver to Buyer such tax, credit, performance, and enforceability assurances as Buyer may request",
+        "properties": {}
+      },
+      {
+        "id": "ent_assignee",
+        "entity_type": "Assignee",
+        "name": "Seller’s proposed assignee",
+        "legal_role": "The party proposed to receive an Assignment who must assume Seller’s obligations and obtain required approvals before Buyer’s consent.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller’s proposed assignee having first obtained all approvals that may be required by any Requirements of Law and from all applicable Governmental Authorities.",
+        "properties": {}
+      },
+      {
+        "id": "ent_requirements_of_law",
+        "entity_type": "Legal and Regulatory Requirements",
+        "name": "Requirements of Law",
+        "legal_role": "Statutory or regulatory approvals required for Assignment or Change of Control to be valid.",
+        "confidence": 1.0,
+        "evidence_quote": "all approvals that may be required by any Requirements of Law and from all applicable Governmental Authorities.",
+        "properties": {}
+      },
+      {
+        "id": "ent_governmental_authorities",
+        "entity_type": "Governmental Authorities",
+        "name": "Governmental Authorities",
+        "legal_role": "Regulatory bodies whose approvals are necessary for valid Assignment or Change of Control.",
+        "confidence": 1.0,
+        "evidence_quote": "all approvals that may be required by any Requirements of Law and from all applicable Governmental Authorities.",
+        "properties": {}
+      },
+      {
+        "id": "ent_change_of_control",
+        "entity_type": "Change of Control Event",
+        "name": "Change of Control",
+        "legal_role": "A transfer or sale event affecting ownership or control of the Facility or Agreement, subject to the same requirements as Assignment.",
+        "confidence": 1.0,
+        "evidence_quote": "Any sale, transfer, Change of Control, and/or Assignment of any interest in the Facility or in the Agreement made without fully satisfying the requirements of this Agreement shall be null and void",
+        "properties": {}
+      },
+      {
+        "id": "ent_event_of_default",
+        "entity_type": "Event of Default",
+        "name": "Event of Default",
+        "legal_role": "A breach event triggered by unauthorized Assignment or Change of Control, making Seller the Defaulting Party.",
+        "confidence": 1.0,
+        "evidence_quote": "shall be null and void and will be an Event of Default hereunder with Seller as the Defaulting Party.",
+        "properties": {}
+      },
+      {
+        "id": "ent_defaulting_party",
+        "entity_type": "Defaulting Party",
+        "name": "Seller as Defaulting Party",
+        "legal_role": "The party responsible for the Event of Default resulting from unauthorized Assignment or Change of Control.",
+        "confidence": 1.0,
+        "evidence_quote": "will be an Event of Default hereunder with Seller as the Defaulting Party.",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_permitted_assignment",
+        "target_id": "ent_seller",
+        "relationship_type": "Assumption of Obligations",
+        "legal_significance": "The assignee in a permitted Assignment must assume all obligations of the Seller, ensuring continuity of contractual duties.",
+        "confidence": 1.0,
+        "evidence_quote": "such requesting party or parties shall agree in writing to assume all obligations of Seller and to be bound by the terms and conditions of this Agreement"
+      },
+      {
+        "source_id": "ent_permitted_assignment",
+        "target_id": "ent_buyer",
+        "relationship_type": "Delivery of Assurances to Obligee",
+        "legal_significance": "The assignee must deliver tax, credit, performance, and enforceability assurances to Buyer, protecting Buyer’s interests.",
+        "confidence": 1.0,
+        "evidence_quote": "shall deliver to Buyer such tax, credit, performance, and enforceability assurances as Buyer may request"
+      },
+      {
+        "source_id": "ent_assignee",
+        "target_id": "ent_requirements_of_law",
+        "relationship_type": "Condition Precedent for Consent",
+        "legal_significance": "Buyer’s consent to Assignment is conditioned on the assignee obtaining all required legal and regulatory approvals, ensuring compliance.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer’s consent to any Assignment may be conditioned on and subject to Seller’s proposed assignee having first obtained all approvals that may be required by any Requirements of Law"
+      },
+      {
+        "source_id": "ent_assignee",
+        "target_id": "ent_governmental_authorities",
+        "relationship_type": "Condition Precedent for Consent",
+        "legal_significance": "Buyer’s consent to Assignment is conditioned on the assignee obtaining approvals from applicable Governmental Authorities, ensuring regulatory compliance.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer’s proposed assignee having first obtained all approvals ... from all applicable Governmental Authorities."
+      },
+      {
+        "source_id": "ent_change_of_control",
+        "target_id": "ent_event_of_default",
+        "relationship_type": "Unauthorized Transfer Constitutes Default",
+        "legal_significance": "Any Change of Control without satisfying Agreement requirements is null and void and triggers an Event of Default, protecting contractual integrity.",
+        "confidence": 1.0,
+        "evidence_quote": "Any sale, transfer, Change of Control, and/or Assignment ... made without fully satisfying the requirements of this Agreement shall be null and void and will be an Event of Default"
+      },
+      {
+        "source_id": "ent_event_of_default",
+        "target_id": "ent_defaulting_party",
+        "relationship_type": "Designation of Defaulting Party",
+        "legal_significance": "Seller is designated as the Defaulting Party upon occurrence of an Event of Default due to unauthorized Assignment or Change of Control, assigning liability.",
+        "confidence": 1.0,
+        "evidence_quote": "will be an Event of Default hereunder with Seller as the Defaulting Party."
+      },
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_seller",
+        "relationship_type": "Waiver of Continuing Obligations",
+        "legal_significance": "Buyer’s written agreement is required to waive Seller’s continuing obligations under the Agreement, preserving Buyer’s protections.",
+        "confidence": 1.0,
+        "evidence_quote": "unless Buyer agrees in writing in advance to waive the Seller’s continuing obligations under this Agreement."
+      }
+    ],
+    "extractor_notes": "The clause explicitly conditions Buyer’s consent to Assignment on assignee’s assumption of obligations and regulatory approvals, and establishes that unauthorized Assignment or Change of Control triggers an Event of Default with Seller as Defaulting Party, emphasizing strict control over transfer of interests."
+  },
+  {
+    "source_clause_id": "clause:LFGTE_Duke_Energy_power_purchase_agrmnt_1:6:6_3:Transmission_Provider_Seller_agrees_and_acknowledg:0dabdc",
+    "source_clause_title": "6.3. Transmission Provider.  Seller agrees and acknowledges that the Interconnection Agreement",
+    "contract_id": "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+    "source_page_start": 11,
+    "source_page_end": 11,
+    "clause_type_hint": "reporting_obligation",
+    "entities": [
+      {
+        "id": "ent_seller",
+        "entity_type": "Contracting Party",
+        "name": "Seller",
+        "legal_role": "Seller is a party obligated to perform under both this Agreement and the Interconnection Agreement, bearing sole responsibility for costs and compliance under the Interconnection Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller shall be solely and fully responsible for all costs and expenses for which Seller is responsible for under the Interconnection Agreement.",
+        "properties": {}
+      },
+      {
+        "id": "ent_transmission_provider",
+        "entity_type": "Transmission Provider",
+        "name": "Transmission Provider",
+        "legal_role": "Transmission Provider is a separate party to the Interconnection Agreement with Seller, but is not a party nor bound by this Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Only the Interconnection Agreement will govern all obligations and liabilities set forth in the Interconnection Agreement... the terms of this Agreement are not (and will not) be binding upon the Transmission Provider.",
+        "properties": {}
+      },
+      {
+        "id": "ent_buyer",
+        "entity_type": "Buyer",
+        "name": "Buyer",
+        "legal_role": "Buyer is a party to this Agreement granted the right to obtain information from the Transmission Provider regarding Seller’s performance under the Interconnection Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller hereby grants Buyer the right and entitlement to obtain information from the Transmission Provider in regard to Seller’s performance under the Interconnection Agreement.",
+        "properties": {}
+      },
+      {
+        "id": "ent_interconnection_agreement",
+        "entity_type": "Interconnection Agreement",
+        "name": "Interconnection Agreement",
+        "legal_role": "A separate agreement exclusively governing all requirements, obligations, liabilities, and costs between Seller and Transmission Provider.",
+        "confidence": 1.0,
+        "evidence_quote": "Only the Interconnection Agreement will govern all obligations and liabilities set forth in the Interconnection Agreement.",
+        "properties": {}
+      },
+      {
+        "id": "ent_interconnection_instructions",
+        "entity_type": "Interconnection Instructions",
+        "name": "Interconnection Instructions",
+        "legal_role": "Instructions under the Interconnection Agreement which Seller is obligated to comply with.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller shall comply with all Interconnection Instructions.",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_seller",
+        "target_id": "ent_transmission_provider",
+        "relationship_type": "Interconnection Agreement Contractual Relationship",
+        "legal_significance": "Seller and Transmission Provider are bound exclusively by the Interconnection Agreement which governs all their mutual obligations and liabilities.",
+        "confidence": 1.0,
+        "evidence_quote": "shall be a separate agreement (or agreements) between Seller and Transmission Provider, and will exclusively govern all requirements and obligations between Seller and Transmission Provider."
+      },
+      {
+        "source_id": "ent_seller",
+        "target_id": "ent_interconnection_agreement",
+        "relationship_type": "Obligation and Cost Responsibility",
+        "legal_significance": "Seller is solely responsible for all costs and expenses under the Interconnection Agreement and must comply with its instructions.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller shall be solely and fully responsible for all costs and expenses for which Seller is responsible for under the Interconnection Agreement. Seller shall comply with all Interconnection Instructions."
+      },
+      {
+        "source_id": "ent_interconnection_agreement",
+        "target_id": "ent_transmission_provider",
+        "relationship_type": "Contractual Party Relationship",
+        "legal_significance": "Transmission Provider is a party to the Interconnection Agreement and bound by its terms with Seller.",
+        "confidence": 1.0,
+        "evidence_quote": "Only the Interconnection Agreement will govern all obligations and liabilities set forth in the Interconnection Agreement."
+      },
+      {
+        "source_id": "ent_seller",
+        "target_id": "clause:LFGTE_Duke_Energy_power_purchase_agrmnt_1:6:6_3:Transmission_Provider_Seller_agrees_and_acknowledg:0dabdc",
+        "relationship_type": "Performance Dependency",
+        "legal_significance": "Seller’s performance under this Agreement depends on Seller’s performance under the Interconnection Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller agrees and acknowledges that Seller’s performance under this Agreement depends on Seller’s performance under the Interconnection Agreement."
+      },
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_transmission_provider",
+        "relationship_type": "Information Access Right",
+        "legal_significance": "Buyer is granted the right to obtain information from Transmission Provider regarding Seller’s performance under the Interconnection Agreement, enabling Buyer to monitor performance indirectly.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller hereby grants Buyer the right and entitlement to obtain information from the Transmission Provider in regard to Seller’s performance under the Interconnection Agreement."
+      },
+      {
+        "source_id": "ent_interconnection_agreement",
+        "target_id": "clause:LFGTE_Duke_Energy_power_purchase_agrmnt_1:6:6_3:Transmission_Provider_Seller_agrees_and_acknowledg:0dabdc",
+        "relationship_type": "Exclusive Governing Agreement",
+        "legal_significance": "The Interconnection Agreement exclusively governs all obligations and liabilities between Seller and Transmission Provider, excluding this Agreement from affecting those rights and duties.",
+        "confidence": 1.0,
+        "evidence_quote": "Only the Interconnection Agreement will govern all obligations and liabilities set forth in the Interconnection Agreement... Nothing in the Interconnection Agreement, nor any other agreement between Seller on the one hand and Transmission Provider on the other hand... shall affect, alter, or modify the Parties’ rights, duties, obligation, and liabilities under this Agreement."
+      },
+      {
+        "source_id": "clause:LFGTE_Duke_Energy_power_purchase_agrmnt_1:6:6_3:Transmission_Provider_Seller_agrees_and_acknowledg:0dabdc",
+        "target_id": "ent_transmission_provider",
+        "relationship_type": "Non-Binding Status",
+        "legal_significance": "This Agreement does not create any rights or obligations binding upon the Transmission Provider.",
+        "confidence": 1.0,
+        "evidence_quote": "This Agreement shall not be construed to create any rights between Seller and the Transmission Provider, and the terms of this Agreement are not (and will not) be binding upon the Transmission Provider."
+      }
+    ],
+    "extractor_notes": "The clause clearly distinguishes the Interconnection Agreement as a separate and exclusive contract governing Seller and Transmission Provider relations, while this Agreement governs Seller and Buyer relations. It explicitly denies any binding effect of this Agreement on the Transmission Provider and grants Buyer rights to information from the Transmission Provider, which is a notable cross-contractual information right."
+  },
+  {
+    "source_clause_id": "clause:LFGTE_Duke_Energy_power_purchase_agrmnt_1:8:8_1:Accounting_Information_Generally_Accepted_Accounti:166426",
+    "source_clause_title": "8.1. Accounting Information.  Generally Accepted Accounting Principles (“GAAP”) and SEC rules",
+    "contract_id": "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+    "source_page_start": 13,
+    "source_page_end": 14,
+    "clause_type_hint": "confidentiality",
+    "entities": [
+      {
+        "id": "ent_buyer",
+        "entity_type": "Buyer",
+        "name": "Buyer",
+        "legal_role": "The party obligated to evaluate the economic relationship with Seller and to require financial information and access for accounting and audit purposes under GAAP.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer may need access to Seller’s financial records and personnel in a timely manner.",
+        "properties": {}
+      },
+      {
+        "id": "ent_seller",
+        "entity_type": "Seller",
+        "name": "Seller",
+        "legal_role": "The party obligated to provide financial statements, schedules, and access to records and personnel to Buyer for audit and accounting purposes.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller shall grant Buyer access to records and personnel to enable Buyer’s independent auditor to conduct financial audits",
+        "properties": {}
+      },
+      {
+        "id": "ent_gaap",
+        "entity_type": "Generally Accepted Accounting Principles (GAAP)",
+        "name": "GAAP",
+        "legal_role": "The accounting standards that govern the preparation and consolidation of financial information required under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "In the event that Buyer determines that consolidation or other incorporation of Seller’s financial information is necessary under GAAP",
+        "properties": {}
+      },
+      {
+        "id": "ent_financial_statements",
+        "entity_type": "Financial Statements",
+        "name": "complete financial statements, including notes",
+        "legal_role": "The quarterly financial reports Seller must provide to Buyer on a GAAP basis within 90 days after quarter end.",
+        "confidence": 1.0,
+        "evidence_quote": "(a) complete financial statements, including notes, for such quarter on a GAAP basis",
+        "properties": {}
+      },
+      {
+        "id": "ent_financial_schedules",
+        "entity_type": "Financial Schedules",
+        "name": "financial schedules underlying the financial statements",
+        "legal_role": "Supporting documentation for the financial statements that Seller must provide to Buyer quarterly.",
+        "confidence": 1.0,
+        "evidence_quote": "(b) financial schedules underlying the financial statements",
+        "properties": {}
+      },
+      {
+        "id": "ent_independent_auditor",
+        "entity_type": "Independent Auditor",
+        "name": "Buyer’s independent auditor",
+        "legal_role": "The auditor authorized by Buyer to conduct financial and internal control audits of Seller’s records in accordance with GAAP and Sarbanes-Oxley Act standards.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer’s independent auditor to conduct financial audits (in accordance with GAAP standards) and internal control audits (in accordance with Section 404 of the Sarbanes-Oxley Act of 2002)",
+        "properties": {}
+      },
+      {
+        "id": "ent_sarbanes_oxley_section_404",
+        "entity_type": "Sarbanes-Oxley Act Section 404",
+        "name": "Section 404 of the Sarbanes-Oxley Act of 2002",
+        "legal_role": "The regulatory standard governing internal control audits that Buyer’s independent auditor must follow.",
+        "confidence": 1.0,
+        "evidence_quote": "internal control audits (in accordance with Section 404 of the Sarbanes-Oxley Act of 2002)",
+        "properties": {}
+      },
+      {
+        "id": "ent_confidential_information",
+        "entity_type": "Confidential Information",
+        "name": "Information provided to Buyer pursuant to this section",
+        "legal_role": "Information subject to confidentiality obligations under the Agreement, limiting disclosure except as required by GAAP.",
+        "confidence": 1.0,
+        "evidence_quote": "Any information provided to Buyer pursuant to this section shall be considered confidential in accordance with the terms of this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_power_purchase_agreements",
+        "entity_type": "Power Purchase Agreements",
+        "name": "other similar entities for which Buyer has power purchase agreements",
+        "legal_role": "Entities aggregated with Seller for disclosure purposes as required by GAAP.",
+        "confidence": 1.0,
+        "evidence_quote": "shall only be disclosed, as required by GAAP, on an aggregate basis with other similar entities for which Buyer has power purchase agreements",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_seller",
+        "relationship_type": "Right to Access Financial Records and Personnel",
+        "legal_significance": "Buyer’s right to timely access Seller’s financial records and personnel is essential for evaluating GAAP consolidation requirements and conducting audits.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer may need access to Seller’s financial records and personnel in a timely manner."
+      },
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_financial_statements",
+        "relationship_type": "Obligation to Receive Quarterly Financial Statements",
+        "legal_significance": "Buyer requires Seller to provide complete quarterly financial statements to comply with GAAP consolidation requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer shall require the following for each calendar quarter during the term of this Agreement, within 90 days after quarter end: (a) complete financial statements"
+      },
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_financial_schedules",
+        "relationship_type": "Obligation to Receive Financial Schedules",
+        "legal_significance": "Buyer requires Seller to provide underlying financial schedules to support the quarterly financial statements.",
+        "confidence": 1.0,
+        "evidence_quote": "(b) financial schedules underlying the financial statements"
+      },
+      {
+        "source_id": "ent_seller",
+        "target_id": "ent_independent_auditor",
+        "relationship_type": "Granting Access for Audits",
+        "legal_significance": "Seller must grant Buyer’s independent auditor access to records and personnel to conduct required financial and internal control audits.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller shall grant Buyer access to records and personnel to enable Buyer’s independent auditor to conduct financial audits"
+      },
+      {
+        "source_id": "ent_independent_auditor",
+        "target_id": "ent_sarbanes_oxley_section_404",
+        "relationship_type": "Audit Compliance Obligation",
+        "legal_significance": "Buyer’s independent auditor must conduct internal control audits in compliance with Section 404 of the Sarbanes-Oxley Act, ensuring regulatory adherence.",
+        "confidence": 1.0,
+        "evidence_quote": "internal control audits (in accordance with Section 404 of the Sarbanes-Oxley Act of 2002)"
+      },
+      {
+        "source_id": "ent_confidential_information",
+        "target_id": "clause:LFGTE_Duke_Energy_power_purchase_agrmnt_1:8:8_1:Accounting_Information_Generally_Accepted_Accounti:166426",
+        "relationship_type": "Confidentiality Obligation",
+        "legal_significance": "Information provided under this section is protected by confidentiality terms of the Agreement, limiting disclosure to what GAAP requires.",
+        "confidence": 1.0,
+        "evidence_quote": "Any information provided to Buyer pursuant to this section shall be considered confidential in accordance with the terms of this Agreement"
+      },
+      {
+        "source_id": "ent_confidential_information",
+        "target_id": "ent_power_purchase_agreements",
+        "relationship_type": "Permitted Disclosure Aggregation",
+        "legal_significance": "Confidential information may only be disclosed on an aggregate basis with other similar entities under Buyer’s power purchase agreements as required by GAAP.",
+        "confidence": 1.0,
+        "evidence_quote": "shall only be disclosed, as required by GAAP, on an aggregate basis with other similar entities for which Buyer has power purchase agreements"
+      }
+    ],
+    "extractor_notes": "The clause establishes Buyer’s rights to access Seller’s financial information and personnel for GAAP compliance and audit purposes, Seller’s obligations to provide quarterly financial statements and schedules, and confidentiality protections limiting disclosure except as required by GAAP on an aggregated basis. The clause explicitly references compliance with Section 404 of the Sarbanes-Oxley Act for internal control audits."
+  },
+  {
+    "source_clause_id": "clause:LFGTE_Duke_Energy_power_purchase_agrmnt_1:13:13_1_1:Notwithstanding_anything_to_the_contrary_herein_Fo:1b1bd7",
+    "source_clause_title": "13.1.1. Notwithstanding anything to the contrary herein, Force Majeure will not include",
+    "contract_id": "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+    "source_page_start": 16,
+    "source_page_end": 17,
+    "clause_type_hint": "notice",
+    "entities": [
+      {
+        "id": "ent_force_majeure",
+        "entity_type": "Force Majeure Definition",
+        "name": "Force Majeure",
+        "legal_role": "Defines the scope and limitations of events that qualify as Force Majeure under the Agreement, which affects parties' obligations and rights during such events.",
+        "confidence": 1.0,
+        "evidence_quote": "Notwithstanding anything to the contrary herein, Force Majeure will not include the following: (a) any strike or labor dispute of the employees of either Party or any subcontractor that is not part of a regional or nationwide strike or labor dispute; (b) any difficulty in obtaining or maintaining sufficient, or appropriately skilled, personnel to perform the work in accordance with the requirements of this Agreement; (c) normal wear and tear or obsolescence of any equipment; (d) Buyer’s inability to economically use or resell the Product delivered and purchased hereunder; (e) Seller’s ability to sell the Product (or any component of the Product) at a more advantageous price; (f) loss by Seller of any contractual arrangement; (g) any Regulatory Event; (h) loss or failure of Seller’s supply of the Product or inability to generate the Product that is not caused by an independent Force Majeure event ; (i) the cost or availability or unavailability of fuel, solar energy, wind, or motive force, as applicable, to operate the Facility; (j) economic hardship, including, without limitation, lack of money or financing or Seller’s inability to economically generate the Product or operate the Facility; (k) any breakdown or malfunction of Facility equipment (including any serial equipment defect) that is not directly caused by an independent event of Force Majeure; (l) the imposition upon Seller of costs or taxes allocated to Seller hereunder or Seller’s failure to obtain or qualify for any tax incentive, preference, or credit; (m) delay or failure of Seller to obtain or perform any Permit; (n) any delay, alleged breach of contract, or failure under any other agreement or arrangement between Seller and another entity, including without limitation, an agent or sub-contractor of Seller (except as a direct result of an event of Force Majeure defined in 14.1(E)); (o) Seller’s failure to obtain, or perform under, the Interconnection Agreement, or its other contracts and obligations to Transmission Provider; or (p) increased cost of electricity, steel, materials, equipment, labor, or transportation.",
+        "properties": {}
+      },
+      {
+        "id": "ent_party",
+        "entity_type": "Contracting Party",
+        "name": "Party",
+        "legal_role": "A signatory to the Agreement who may be affected by or claim Force Majeure events impacting their contractual obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "any strike or labor dispute of the employees of either Party or any subcontractor",
+        "properties": {}
+      },
+      {
+        "id": "ent_buyer",
+        "entity_type": "Buyer",
+        "name": "Buyer",
+        "legal_role": "The party purchasing the Product under the Agreement, whose inability to economically use or resell the Product is excluded from Force Majeure.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer’s inability to economically use or resell the Product delivered and purchased hereunder",
+        "properties": {}
+      },
+      {
+        "id": "ent_seller",
+        "entity_type": "Seller",
+        "name": "Seller",
+        "legal_role": "The party selling the Product under the Agreement, whose various failures or losses are excluded from Force Majeure except when caused by an independent Force Majeure event.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller’s ability to sell the Product (or any component of the Product) at a more advantageous price; ... loss by Seller of any contractual arrangement; ... loss or failure of Seller’s supply of the Product or inability to generate the Product that is not caused by an independent Force Majeure event",
+        "properties": {}
+      },
+      {
+        "id": "ent_regulatory_event",
+        "entity_type": "Regulatory Event",
+        "name": "Regulatory Event",
+        "legal_role": "An event related to regulation explicitly excluded from the definition of Force Majeure.",
+        "confidence": 1.0,
+        "evidence_quote": "(g) any Regulatory Event",
+        "properties": {}
+      },
+      {
+        "id": "ent_facility",
+        "entity_type": "Facility",
+        "name": "Facility",
+        "legal_role": "The physical site or installation where the Product is generated or operated, whose equipment breakdowns not caused by Force Majeure are excluded from Force Majeure.",
+        "confidence": 1.0,
+        "evidence_quote": "(k) any breakdown or malfunction of Facility equipment (including any serial equipment defect) that is not directly caused by an independent event of Force Majeure",
+        "properties": {}
+      },
+      {
+        "id": "ent_permit",
+        "entity_type": "Permit",
+        "name": "Permit",
+        "legal_role": "A governmental or regulatory authorization required for Seller to perform obligations, whose delay or failure to obtain is excluded from Force Majeure.",
+        "confidence": 1.0,
+        "evidence_quote": "(m) delay or failure of Seller to obtain or perform any Permit",
+        "properties": {}
+      },
+      {
+        "id": "ent_interconnection_agreement",
+        "entity_type": "Interconnection Agreement",
+        "name": "Interconnection Agreement",
+        "legal_role": "A contract or obligation between Seller and Transmission Provider, whose failure to obtain or perform is excluded from Force Majeure.",
+        "confidence": 1.0,
+        "evidence_quote": "(o) Seller’s failure to obtain, or perform under, the Interconnection Agreement, or its other contracts and obligations to Transmission Provider",
+        "properties": {}
+      },
+      {
+        "id": "ent_notice_obligation",
+        "entity_type": "Force Majeure Notice Obligation",
+        "name": "Notice of Force Majeure Event",
+        "legal_role": "The obligation of a Party rendered unable to perform due to Force Majeure to notify the other Party with details within specified timeframes, affecting rights and remedies.",
+        "confidence": 1.0,
+        "evidence_quote": "If either Party is rendered unable by Force Majeure to carry out, in whole or in part, any material obligation hereunder, such Party shall provide notice and reasonably full details of the event to the other Party as soon as reasonably practicable after becoming aware of the occurrence of the event (but in no event later than three (3) Business Days of the initial occurrence of the event of Force Majeure). Such notice may be given orally but shall be confirmed in writing as soon as practicable thereafter (and in any event within ten (10) days of the initial occurrence of the event of Force Majeure)",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_force_majeure",
+        "target_id": "ent_party",
+        "relationship_type": "Force Majeure Event Applicability to Party",
+        "legal_significance": "Specifies that Force Majeure events affect the Parties' ability to perform obligations and trigger notice requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "If either Party is rendered unable by Force Majeure to carry out, in whole or in part, any material obligation hereunder"
+      },
+      {
+        "source_id": "ent_force_majeure",
+        "target_id": "ent_buyer",
+        "relationship_type": "Exclusion of Buyer Economic Inability from Force Majeure",
+        "legal_significance": "Clarifies that Buyer's economic inability to use or resell Product is not a Force Majeure event, limiting Buyer's claims for relief.",
+        "confidence": 1.0,
+        "evidence_quote": "(d) Buyer’s inability to economically use or resell the Product delivered and purchased hereunder"
+      },
+      {
+        "source_id": "ent_force_majeure",
+        "target_id": "ent_seller",
+        "relationship_type": "Exclusion of Seller Economic and Contractual Failures from Force Majeure",
+        "legal_significance": "Limits Seller's ability to claim Force Majeure for economic hardships or contractual losses unless caused by an independent Force Majeure event.",
+        "confidence": 1.0,
+        "evidence_quote": "(e) Seller’s ability to sell the Product (or any component of the Product) at a more advantageous price; (f) loss by Seller of any contractual arrangement; (h) loss or failure of Seller’s supply of the Product or inability to generate the Product that is not caused by an independent Force Majeure event"
+      },
+      {
+        "source_id": "ent_force_majeure",
+        "target_id": "ent_regulatory_event",
+        "relationship_type": "Exclusion of Regulatory Event from Force Majeure",
+        "legal_significance": "Explicitly excludes Regulatory Events from qualifying as Force Majeure, affecting parties' rights and obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "(g) any Regulatory Event"
+      },
+      {
+        "source_id": "ent_force_majeure",
+        "target_id": "ent_facility",
+        "relationship_type": "Exclusion of Facility Equipment Malfunction from Force Majeure",
+        "legal_significance": "Excludes equipment breakdowns not caused by independent Force Majeure events from Force Majeure relief, limiting Seller's claims.",
+        "confidence": 1.0,
+        "evidence_quote": "(k) any breakdown or malfunction of Facility equipment (including any serial equipment defect) that is not directly caused by an independent event of Force Majeure"
+      },
+      {
+        "source_id": "ent_force_majeure",
+        "target_id": "ent_permit",
+        "relationship_type": "Exclusion of Permit Delay or Failure from Force Majeure",
+        "legal_significance": "Excludes Seller's delay or failure to obtain or perform any Permit from Force Majeure, affecting Seller's obligations and remedies.",
+        "confidence": 1.0,
+        "evidence_quote": "(m) delay or failure of Seller to obtain or perform any Permit"
+      },
+      {
+        "source_id": "ent_force_majeure",
+        "target_id": "ent_interconnection_agreement",
+        "relationship_type": "Exclusion of Interconnection Agreement Failure from Force Majeure",
+        "legal_significance": "Excludes Seller's failure to obtain or perform under the Interconnection Agreement from Force Majeure, limiting Seller's relief options.",
+        "confidence": 1.0,
+        "evidence_quote": "(o) Seller’s failure to obtain, or perform under, the Interconnection Agreement, or its other contracts and obligations to Transmission Provider"
+      },
+      {
+        "source_id": "ent_party",
+        "target_id": "ent_notice_obligation",
+        "relationship_type": "Party's Obligation to Provide Notice of Force Majeure Event",
+        "legal_significance": "Requires a Party affected by Force Majeure to notify the other Party within specified timeframes, which is critical for triggering contractual rights and remedies.",
+        "confidence": 1.0,
+        "evidence_quote": "such Party shall provide notice and reasonably full details of the event to the other Party as soon as reasonably practicable after becoming aware of the occurrence of the event (but in no event later than three (3) Business Days of the initial occurrence of the event of Force Majeure)"
+      }
+    ],
+    "extractor_notes": "The clause explicitly excludes a broad list of events from the definition of Force Majeure, which narrows the scope of Force Majeure relief. It also imposes detailed notice requirements on Parties claiming Force Majeure, including timing and form of notice, which are critical for enforcement of rights and obligations."
+  },
+  {
+    "source_clause_id": "clause:LFGTE_Duke_Energy_power_purchase_agrmnt_1:13:13_5:Termination_Unless_otherwise_agreed_upon_by_the_Pa:01f10e",
+    "source_clause_title": "13.5. Termination.  Unless otherwise agreed upon by the Parties in writing and in each Party’s sole",
+    "contract_id": "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+    "source_page_start": 17,
+    "source_page_end": 18,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_agreement",
+        "entity_type": "Power Purchase Agreement",
+        "name": "this Agreement",
+        "legal_role": "The central contract governing the rights and obligations between the Parties, subject to termination and Force Majeure provisions.",
+        "confidence": 1.0,
+        "evidence_quote": "this Agreement may be terminated without any further notice and further opportunity to cure any non-performance.",
+        "properties": {}
+      },
+      {
+        "id": "ent_party_1",
+        "entity_type": "Contracting Party",
+        "name": "Party",
+        "legal_role": "One of the contractual parties bound by the Agreement, entitled to rights and subject to obligations including termination and liability provisions.",
+        "confidence": 1.0,
+        "evidence_quote": "neither Party will have any liability to the other Party or recourse against the other Party",
+        "properties": {}
+      },
+      {
+        "id": "ent_party_2",
+        "entity_type": "Contracting Party",
+        "name": "Party",
+        "legal_role": "The counterparty to the other Party, similarly bound by the Agreement and subject to the same rights and obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "neither Party will have any liability to the other Party or recourse against the other Party",
+        "properties": {}
+      },
+      {
+        "id": "ent_force_majeure_event",
+        "entity_type": "Force Majeure Event",
+        "name": "Force Majeure under Section 14",
+        "legal_role": "An extraordinary event or circumstance excusing performance and triggering termination rights without liability for the Parties.",
+        "confidence": 1.0,
+        "evidence_quote": "Upon termination becoming effective pursuant to a Force Majeure under Section 14",
+        "properties": {}
+      },
+      {
+        "id": "ent_event_of_default",
+        "entity_type": "Event of Default",
+        "name": "Event of Default not excused by the Force Majeure event",
+        "legal_role": "A breach or failure by a Party that is not excused by Force Majeure, permitting the other Party to liquidate and early terminate the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "including, without limitation, the right to liquidate and early terminate the Agreement for any Event of Default not excused by the Force Majeure event",
+        "properties": {}
+      },
+      {
+        "id": "ent_cure_periods",
+        "entity_type": "Cure Periods",
+        "name": "periods set forth above in Sections 14.4",
+        "legal_role": "Specified timeframes within which a Party may cure non-performance before termination can occur without further notice.",
+        "confidence": 1.0,
+        "evidence_quote": "upon the expiration of the periods set forth above in Sections 14.4, this Agreement may be terminated without any further notice and further opportunity to cure any non-performance",
+        "properties": {}
+      },
+      {
+        "id": "ent_rights_and_remedies",
+        "entity_type": "Contractual Rights and Remedies",
+        "name": "any right or remedy provided under this Agreement",
+        "legal_role": "The legal entitlements and actions available to a Party to enforce obligations or seek redress, even in the context of a Force Majeure event.",
+        "confidence": 1.0,
+        "evidence_quote": "nothing herein shall relieve any Party from exercising any right or remedy provided under this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_labor_dispute",
+        "entity_type": "Labor Dispute or Disturbance",
+        "name": "strike, work stoppage or other labor dispute or disturbance",
+        "legal_role": "Events causing operational difficulties that do not obligate a Party to settle or make capital expenditures except at its sole discretion.",
+        "confidence": 1.0,
+        "evidence_quote": "Nothing herein shall be construed so as to obligate any Party to settle any strike, work stoppage or other labor dispute or disturbance or to make significant capital expenditures",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_agreement",
+        "target_id": "ent_cure_periods",
+        "relationship_type": "Termination Condition",
+        "legal_significance": "The Agreement may be terminated upon expiration of the cure periods without further notice, defining a condition precedent to termination.",
+        "confidence": 1.0,
+        "evidence_quote": "upon the expiration of the periods set forth above in Sections 14.4, this Agreement may be terminated without any further notice and further opportunity to cure any non-performance"
+      },
+      {
+        "source_id": "ent_force_majeure_event",
+        "target_id": "ent_agreement",
+        "relationship_type": "Termination Trigger",
+        "legal_significance": "A Force Majeure event under Section 14 triggers termination of the Agreement without liability between the Parties for post-termination obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "Upon termination becoming effective pursuant to a Force Majeure under Section 14, neither Party will have any liability to the other Party or recourse against the other Party"
+      },
+      {
+        "source_id": "ent_force_majeure_event",
+        "target_id": "ent_rights_and_remedies",
+        "relationship_type": "Limitation on Excuse",
+        "legal_significance": "Force Majeure does not excuse or suspend liabilities or obligations not covered by the event, preserving Parties’ rights and remedies under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "nothing herein shall relieve any Party from exercising any right or remedy provided under this Agreement with respect to any liability or obligation of the other Party that is not excused or suspended by the Force Majeure event"
+      },
+      {
+        "source_id": "ent_event_of_default",
+        "target_id": "ent_rights_and_remedies",
+        "relationship_type": "Right to Early Termination",
+        "legal_significance": "The existence of an Event of Default not excused by Force Majeure entitles a Party to liquidate and early terminate the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "including, without limitation, the right to liquidate and early terminate the Agreement for any Event of Default not excused by the Force Majeure event"
+      },
+      {
+        "source_id": "ent_labor_dispute",
+        "target_id": "ent_party_1",
+        "relationship_type": "Discretionary Obligation",
+        "legal_significance": "A Party experiencing labor disputes is not obligated to settle or make significant capital expenditures except at its sole discretion, limiting mandatory operational burdens.",
+        "confidence": 1.0,
+        "evidence_quote": "Nothing herein shall be construed so as to obligate any Party to settle any strike, work stoppage or other labor dispute or disturbance or to make significant capital expenditures, except in the sole discretion of the Party experiencing such difficulty"
+      }
+    ],
+    "extractor_notes": "The clause explicitly limits liability upon termination due to Force Majeure and preserves rights for non-excused defaults, while clarifying that labor disputes do not impose mandatory settlement or capital expenditure obligations except at the affected Party's discretion."
+  },
+  {
+    "source_clause_id": "clause:LFGTE_Duke_Energy_power_purchase_agrmnt_1:15:15_5:Regulatory_Disclosures_by_Buyer_This_Section_16_5_:a83695",
+    "source_clause_title": "15.5. Regulatory Disclosures by Buyer.  This Section 16.5 will apply notwithstanding anything to the",
+    "contract_id": "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+    "source_page_start": 19,
+    "source_page_end": 20,
+    "clause_type_hint": "confidentiality",
+    "entities": [
+      {
+        "id": "ent_buyer",
+        "entity_type": "Regulated Party",
+        "name": "Buyer",
+        "legal_role": "The Buyer is a regulated entity subject to oversight by various regulatory and market monitoring bodies, with discretion to disclose Protected Information without Seller's consent.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer is regulated by various regulatory and market monitoring entities.",
+        "properties": {}
+      },
+      {
+        "id": "ent_seller",
+        "entity_type": "Counterparty",
+        "name": "Seller",
+        "legal_role": "The Seller is the counterparty to the Buyer who provides information that may be disclosed by Buyer under regulatory requirements without prior notice or consent.",
+        "confidence": 1.0,
+        "evidence_quote": "Seller understands and acknowledges that Buyer is regulated...",
+        "properties": {}
+      },
+      {
+        "id": "ent_protected_information",
+        "entity_type": "Protected Information",
+        "name": "Protected Information",
+        "legal_role": "Information designated as confidential or sensitive under the Agreement, which Buyer may disclose or retain under regulatory obligations without Seller's consent.",
+        "confidence": 1.0,
+        "evidence_quote": "any information (including Protected Information)...",
+        "properties": {}
+      },
+      {
+        "id": "ent_regulatory_commissions",
+        "entity_type": "Regulatory Commissions",
+        "name": "NCUC, SCPSC, FERC",
+        "legal_role": "Specific regulatory commissions to which Buyer may disclose Protected Information without prior notice or consent from Seller.",
+        "confidence": 1.0,
+        "evidence_quote": "any regulatory commission (inclusive of the NCUC, SCPSC, FERC)",
+        "properties": {}
+      },
+      {
+        "id": "ent_other_regulators",
+        "entity_type": "Regulatory and Legislative Bodies",
+        "name": "NERC, market monitor, office of regulatory staff, public staff, or any other regulator or legislative body",
+        "legal_role": "Additional regulatory and legislative entities to which Buyer may disclose Protected Information without Seller's prior notice or consent.",
+        "confidence": 1.0,
+        "evidence_quote": "NERC, market monitor, office of regulatory staff, and/or public staff, or any other regulator or legislative body",
+        "properties": {}
+      },
+      {
+        "id": "ent_regulatory_proceeding",
+        "entity_type": "Regulatory Proceeding",
+        "name": "Docket or proceeding before regulatory commission or tribunal",
+        "legal_role": "A formal regulatory or judicial proceeding where Protected Information is governed by the rules of that proceeding, potentially superseding Agreement confidentiality terms.",
+        "confidence": 1.0,
+        "evidence_quote": "In the event of the establishment of any docket or proceeding before any regulatory commission, public service commission, public utility commission, or other agency, tribunal, or court having jurisdiction over Buyer...",
+        "properties": {}
+      },
+      {
+        "id": "ent_law_or_regulation",
+        "entity_type": "Legal or Regulatory Reporting Obligation",
+        "name": "Law or regulation requiring reporting",
+        "legal_role": "Legal or regulatory mandates that require Buyer to report certain information, including Protected Information, without prior notice or consent from Seller.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer is required by law or regulation to report certain information that could embody Protected Information",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_protected_information",
+        "relationship_type": "Disclosure Right",
+        "legal_significance": "Buyer has the unilateral right to disclose or retain Protected Information without Seller's prior notice or consent, using its business judgment and discretion.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer is permitted, in its sole discretion, to disclose or to retain and not destroy... any information (including Protected Information)... without providing prior notice to the Seller or having obtained the consent from the Seller"
+      },
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_regulatory_commissions",
+        "relationship_type": "Permitted Disclosure Recipients",
+        "legal_significance": "Buyer may disclose Protected Information to specified regulatory commissions without Seller's consent or notice.",
+        "confidence": 1.0,
+        "evidence_quote": "to any regulatory commission (inclusive of the NCUC, SCPSC, FERC)... without providing prior notice to the Seller or having obtained the consent from the Seller"
+      },
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_other_regulators",
+        "relationship_type": "Permitted Disclosure Recipients",
+        "legal_significance": "Buyer may disclose Protected Information to other regulatory and legislative bodies without Seller's consent or notice.",
+        "confidence": 1.0,
+        "evidence_quote": "NERC, market monitor, office of regulatory staff, and/or public staff, or any other regulator or legislative body without providing prior notice to the Seller or having obtained the consent from the Seller"
+      },
+      {
+        "source_id": "ent_regulatory_proceeding",
+        "target_id": "ent_protected_information",
+        "relationship_type": "Governing Rules Superseding Agreement",
+        "legal_significance": "Protected Information disclosed in regulatory proceedings is governed by the rules and procedures of that proceeding, which may override confidentiality provisions in the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "the Protected Information shall automatically be governed solely by the rules and procedures governing such docket or proceeding to the extent such rules or procedures are additional to, different from, or inconsistent with this Agreement"
+      },
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_law_or_regulation",
+        "relationship_type": "Mandatory Reporting Obligation",
+        "legal_significance": "Buyer is legally required to report certain information, including Protected Information, without prior notice or consent from Seller.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer is required by law or regulation to report certain information that could embody Protected Information from time-to-time, and Buyer may from time-to-time make such reports, without providing prior notice to Seller or consent from Seller"
+      },
+      {
+        "source_id": "ent_buyer",
+        "target_id": "ent_seller",
+        "relationship_type": "Notice and Consent Waiver",
+        "legal_significance": "Buyer may disclose Protected Information without providing prior notice to or obtaining consent from Seller, which waives Seller's usual confidentiality protections in these contexts.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer may do so without prior notice to Seller or consent from Seller, using Buyer’s business judgment"
+      }
+    ],
+    "extractor_notes": "The clause explicitly grants Buyer broad discretion to disclose Protected Information to regulators and in regulatory proceedings without Seller's prior notice or consent, overriding confidentiality obligations in the Agreement. The clause also clarifies that regulatory rules governing proceedings supersede Agreement confidentiality terms to the extent of inconsistency."
+  },
+  {
+    "source_clause_id": "clause:LFGTE_Duke_Energy_power_purchase_agrmnt_1:19:19_4:Payment_Any_Net_Settlement_Amount_will_only_be_due:e5d9c1",
+    "source_clause_title": "19.4. Payment.  Any Net Settlement Amount will only be due and payable only to the Non-Defaulting",
+    "contract_id": "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+    "source_page_start": 22,
+    "source_page_end": 23,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_Non_Defaulting_Party",
+        "entity_type": "Non-Defaulting Party",
+        "name": "Non-Defaulting Party",
+        "legal_role": "The party not in breach of the agreement, entitled to receive any Net Settlement Amount and recover damages upon termination.",
+        "confidence": 1.0,
+        "evidence_quote": "Any Net Settlement Amount will only be due and payable only to the Non-Defaulting Party.",
+        "properties": {}
+      },
+      {
+        "id": "ent_Defaulting_Party",
+        "entity_type": "Defaulting Party",
+        "name": "Defaulting Party",
+        "legal_role": "The party in breach of the agreement whose default triggers payment obligations and potential recovery by the Non-Defaulting Party.",
+        "confidence": 1.0,
+        "evidence_quote": "Party from and by the Defaulting Party.",
+        "properties": {}
+      },
+      {
+        "id": "ent_Net_Settlement_Amount",
+        "entity_type": "Net Settlement Amount",
+        "name": "Net Settlement Amount",
+        "legal_role": "The monetary amount calculated upon termination representing net gains or losses, payable only to the Non-Defaulting Party under specified conditions.",
+        "confidence": 1.0,
+        "evidence_quote": "Any Net Settlement Amount will only be due and payable only to the Non-Defaulting Party.",
+        "properties": {}
+      },
+      {
+        "id": "ent_Gains",
+        "entity_type": "Aggregate Gains",
+        "name": "Non-Defaulting Party’s aggregate Gains",
+        "legal_role": "The total positive financial benefits realized by the Non-Defaulting Party resulting from termination.",
+        "confidence": 1.0,
+        "evidence_quote": "If the Non-Defaulting Party’s aggregate Gains exceed its aggregate Losses and Costs, if any, resulting from the termination of this Agreement...",
+        "properties": {}
+      },
+      {
+        "id": "ent_Losses_and_Costs",
+        "entity_type": "Aggregate Losses and Costs",
+        "name": "Non-Defaulting Party’s aggregate Losses and Costs",
+        "legal_role": "The total negative financial impacts incurred by the Non-Defaulting Party resulting from termination.",
+        "confidence": 1.0,
+        "evidence_quote": "If the Non-Defaulting Party’s aggregate Gains exceed its aggregate Losses and Costs, if any, resulting from the termination of this Agreement...",
+        "properties": {}
+      },
+      {
+        "id": "ent_Performance_Assurance",
+        "entity_type": "Performance Assurance",
+        "name": "Performance Assurance",
+        "legal_role": "Security or collateral that Buyer may draw upon to recover any Net Settlement Amount.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer will be entitled to recover any Net Settlement Amount by drawing upon any Performance Assurance...",
+        "properties": {}
+      },
+      {
+        "id": "ent_Buyer",
+        "entity_type": "Buyer",
+        "name": "Buyer",
+        "legal_role": "The party purchasing power, entitled to recover Net Settlement Amounts and overpayments, including by drawing on Performance Assurance.",
+        "confidence": 1.0,
+        "evidence_quote": "Additionally, Buyer will be entitled to recover any Net Settlement Amount by drawing upon any Performance Assurance...",
+        "properties": {}
+      },
+      {
+        "id": "ent_Seller",
+        "entity_type": "Seller",
+        "name": "Seller",
+        "legal_role": "The party selling power, obligated to reimburse Buyer for overpayments pursuant to Section 20.6.",
+        "confidence": 1.0,
+        "evidence_quote": "Any calculation and payment of the Net Settlement Amount will be independent of and in addition to Seller’s obligation to reimburse Buyer for overpayments pursuant to Section 20.6.",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_Net_Settlement_Amount",
+        "target_id": "ent_Non_Defaulting_Party",
+        "relationship_type": "Payment Obligation",
+        "legal_significance": "The Net Settlement Amount is payable only to the Non-Defaulting Party, establishing their right to receive payment upon termination.",
+        "confidence": 1.0,
+        "evidence_quote": "Any Net Settlement Amount will only be due and payable only to the Non-Defaulting Party."
+      },
+      {
+        "source_id": "ent_Non_Defaulting_Party",
+        "target_id": "ent_Defaulting_Party",
+        "relationship_type": "No Obligation to Credit Economic Benefits",
+        "legal_significance": "The Non-Defaulting Party is not required to account for or pay the Defaulting Party for economic benefits resulting from the Defaulting Party’s default, protecting the Non-Defaulting Party’s financial interests.",
+        "confidence": 1.0,
+        "evidence_quote": "The Non-Defaulting Party shall under no circumstances be required to account for or otherwise credit or pay the Defaulting Party for economic benefits accruing to the Non-Defaulting Party as a result of the Defaulting Party’s default."
+      },
+      {
+        "source_id": "ent_Non_Defaulting_Party",
+        "target_id": "ent_Net_Settlement_Amount",
+        "relationship_type": "Right to Recover",
+        "legal_significance": "The Non-Defaulting Party has the right to recover the Net Settlement Amount by netting, set-off, or pursuing damages, enabling enforcement of payment rights.",
+        "confidence": 1.0,
+        "evidence_quote": "The Non-Defaulting Party shall be entitled to recover any Net Settlement Amount by netting or set-off or to otherwise pursue recovery of damages."
+      },
+      {
+        "source_id": "ent_Buyer",
+        "target_id": "ent_Net_Settlement_Amount",
+        "relationship_type": "Right to Recover",
+        "legal_significance": "Buyer is entitled to recover any Net Settlement Amount by drawing upon Performance Assurance, netting, set-off, or pursuing damages, providing multiple enforcement mechanisms.",
+        "confidence": 1.0,
+        "evidence_quote": "Additionally, Buyer will be entitled to recover any Net Settlement Amount by drawing upon any Performance Assurance or by netting or set-off, or to otherwise pursue recovery of damages."
+      },
+      {
+        "source_id": "ent_Buyer",
+        "target_id": "ent_Performance_Assurance",
+        "relationship_type": "Right to Draw Upon",
+        "legal_significance": "Buyer may draw upon Performance Assurance to recover Net Settlement Amounts, ensuring security for payment obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "Buyer will be entitled to recover any Net Settlement Amount by drawing upon any Performance Assurance..."
+      },
+      {
+        "source_id": "ent_Seller",
+        "target_id": "ent_Buyer",
+        "relationship_type": "Reimbursement Obligation",
+        "legal_significance": "Seller is obligated to reimburse Buyer for overpayments pursuant to Section 20.6, establishing a separate financial obligation beyond Net Settlement Amounts.",
+        "confidence": 1.0,
+        "evidence_quote": "Any calculation and payment of the Net Settlement Amount will be independent of and in addition to Seller’s obligation to reimburse Buyer for overpayments pursuant to Section 20.6."
+      }
+    ],
+    "extractor_notes": "The clause explicitly distinguishes payment rights and recovery mechanisms for the Non-Defaulting Party and Buyer, and clarifies that economic benefits accruing to the Non-Defaulting Party from the Defaulting Party’s default need not be credited back. It also separates the Net Settlement Amount payment from Seller’s reimbursement obligations under a different section."
+  }
+]

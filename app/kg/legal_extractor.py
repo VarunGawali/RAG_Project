@@ -81,7 +81,8 @@ Allowed relationship types:
 
 Rules:
 1. Extract only information explicitly supported by the text.
-2. Every entity must have a stable id_id must refer to extracted entity ids or the source clause id.2. Every entity must have a stable id.
+2. Every entity must have a stable id.
+3. Every relationship source_id and target_id must refer to extracted entity ids or the source clause id.
 4. The source clause id is: {clause.kgId}
 5. Include confidence from 0 to 1.
 6. Include exact evidence quote where possible.

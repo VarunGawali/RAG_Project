@@ -33,16 +33,17 @@ logs/
 data/kg/logs/
 
 # Large/generated data - default ignore all data
-data/**
+# data/**
 
 # Allow selected demo artifacts
-!data/processed/
+data/processed/
+data/uploads/
 !data/processed/Edison_NYPA_OandM_Contract_1/
 !data/processed/Edison_NYPA_OandM_Contract_1/tree.json
 
 !data/kg/
-!data/kg/normalized/
-!data/kg/normalized/Edison_NYPA_OandM_Contract_1_kg_ready.json
+!data/kg/normalized/**
+# !data/kg/normalized/Edison_NYPA_OandM_Contract_1_kg_ready.json
 !data/kg/extractions/
 !data/kg/extractions/Edison_NYPA_OandM_Contract_1_legal_extractions.json
 
@@ -55,3 +56,5 @@ samples/**/*.docx
 # Azure/search generated bulk files
 *_index_docs.json
 corpus_index_docs.json
+
+node_modules/
