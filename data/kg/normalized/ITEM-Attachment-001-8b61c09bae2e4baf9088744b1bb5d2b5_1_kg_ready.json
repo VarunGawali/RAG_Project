@@ -1,0 +1,80 @@
+{
+  "contractId": "ITEM-Attachment-001-8b61c09bae2e4baf9088744b1bb5d2b5_1",
+  "tenantId": "contract360-dev",
+  "nodes": [
+    {
+      "kgId": "contract:ITEM-Attachment-001-8b61c09bae2e4baf9088744b1bb5d2b5_1",
+      "rawNodeId": "doc_ITEM-Attachment-001-8b61c09bae2e4baf9088744b1bb5d2b5_1",
+      "contractId": "ITEM-Attachment-001-8b61c09bae2e4baf9088744b1bb5d2b5_1",
+      "tenantId": "contract360-dev",
+      "nodeType": "contract",
+      "label": "Contract",
+      "title": "ITEM-Attachment-001-8b61c09bae2e4baf9088744b1bb5d2b5_1",
+      "text": "",
+      "sectionNumber": null,
+      "pageStart": 1,
+      "pageEnd": 1,
+      "sourcePath": "ITEM-Attachment-001-8b61c09bae2e4baf9088744b1bb5d2b5_1",
+      "parentKgId": null,
+      "childrenKgIds": [
+        "section:ITEM-Attachment-001-8b61c09bae2e4baf9088744b1bb5d2b5_1:d96a64aa"
+      ],
+      "siblingKgIds": [],
+      "clauseTypeHint": null,
+      "extractionReady": false,
+      "properties": {
+        "rawNodeId": "doc_ITEM-Attachment-001-8b61c09bae2e4baf9088744b1bb5d2b5_1",
+        "itemType": null,
+        "documentId": null,
+        "parentNodeId": null
+      }
+    },
+    {
+      "kgId": "section:ITEM-Attachment-001-8b61c09bae2e4baf9088744b1bb5d2b5_1:d96a64aa",
+      "rawNodeId": "section_ITEM-Attachment-001-8b61c09bae2e4baf9088744b1bb5d2b5_1_full_document",
+      "contractId": "ITEM-Attachment-001-8b61c09bae2e4baf9088744b1bb5d2b5_1",
+      "tenantId": "contract360-dev",
+      "nodeType": "section",
+      "label": "Section",
+      "title": "Full Document",
+      "text": "[PAGE 1]\n\n\n[PAGE 2]\n\n\n[PAGE 3]\n\n\n[PAGE 4]\n\n\n[PAGE 5]\n\n\n[PAGE 6]\n\n\n[PAGE 7]\n\n\n[PAGE 8]\n\n\n[PAGE 9]\n\n\n[PAGE 10]\n\n\n[PAGE 11]\n\n\n[PAGE 12]\n\n\n[PAGE 13]\n\n\n[PAGE 14]\n\n\n[PAGE 15]\n\n\n[PAGE 16]\n\n\n[PAGE 17]\n\n\n[PAGE 18]\n\n\n[PAGE 19]\n\n\n[PAGE 20]\n\n\n[PAGE 21]\n\n\n[PAGE 22]\n\n\n[PAGE 23]\n\n\n[PAGE 24]\n\n\n[PAGE 25]\n\n\n[PAGE 26]\n\n\n[PAGE 27]\n\n\n[PAGE 28]\n\n\n[PAGE 29]\n\n\n[PAGE 30]\n\n\n[PAGE 31]\n\n\n[PAGE 32]\n\n\n[PAGE 33]\n\n\n[PAGE 34]\n\n\n[PAGE 35]\n\n\n[PAGE 36]\n\n\n[PAGE 37]\n\n\n[PAGE 38]\n\n\n[PAGE 39]\n\n\n[PAGE 40]\n\n\n[PAGE 41]\n\n\n[PAGE 42]\n\n\n[PAGE 43]\n\n\n[PAGE 44]\n\n\n[PAGE 45]\n\n\n[PAGE 46]\n\n\n[PAGE 47]\n\n\n[PAGE 48]\n\n\n[PAGE 49]\n\n\n[PAGE 50]\n\n\n[PAGE 51]\n\n\n[PAGE 52]\n\n\n[PAGE 53]\n\n\n[PAGE 54]\n\n\n[PAGE 55]\n\n\n[PAGE 56]\n\n\n[PAGE 57]\n\n\n[PAGE 58]\n\n\n[PAGE 59]\n\n\n[PAGE 60]\n\n\n[PAGE 61]",
+      "sectionNumber": null,
+      "pageStart": 1,
+      "pageEnd": 1,
+      "sourcePath": "ITEM-Attachment-001-8b61c09bae2e4baf9088744b1bb5d2b5_1 > Full Document",
+      "parentKgId": "contract:ITEM-Attachment-001-8b61c09bae2e4baf9088744b1bb5d2b5_1",
+      "childrenKgIds": [],
+      "siblingKgIds": [],
+      "clauseTypeHint": null,
+      "extractionReady": true,
+      "properties": {
+        "rawNodeId": "section_ITEM-Attachment-001-8b61c09bae2e4baf9088744b1bb5d2b5_1_full_document",
+        "itemType": null,
+        "documentId": null,
+        "parentNodeId": "doc_ITEM-Attachment-001-8b61c09bae2e4baf9088744b1bb5d2b5_1"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "edgeId": "edge:f10622c2",
+      "sourceKgId": "contract:ITEM-Attachment-001-8b61c09bae2e4baf9088744b1bb5d2b5_1",
+      "targetKgId": "section:ITEM-Attachment-001-8b61c09bae2e4baf9088744b1bb5d2b5_1:d96a64aa",
+      "label": "CONTAINS_SECTION",
+      "tenantId": "contract360-dev",
+      "properties": {
+        "edgeType": "structural"
+      }
+    },
+    {
+      "edgeId": "edge:05e187a0",
+      "sourceKgId": "section:ITEM-Attachment-001-8b61c09bae2e4baf9088744b1bb5d2b5_1:d96a64aa",
+      "targetKgId": "contract:ITEM-Attachment-001-8b61c09bae2e4baf9088744b1bb5d2b5_1",
+      "label": "HAS_PARENT",
+      "tenantId": "contract360-dev",
+      "properties": {
+        "edgeType": "structural"
+      }
+    }
+  ]
+}
