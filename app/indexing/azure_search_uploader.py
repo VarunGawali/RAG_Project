@@ -28,6 +28,52 @@ def _sanitize_key(value: str) -> str:
     return re.sub(r"[^A-Za-z0-9_\-]", "_", value)
 
 
+def load_kg_lookup(kg_path: Optional[str]) -> Dict[str, Dict]:
+    """
+    Load normalized KG JSON and build rawNodeId -> KG metadata lookup.
+
+    Expected shape:
+    {
+      "nodes": [
+        {
+          "rawNodeId": "...",
+          "kgId": "...",
+          "parentKgId": "...",
+          "nodeType": "...",
+          "label": "Clause"
+        }
+      ]
+    }
+    """
+    if not kg_path:
+        return {}
+
+    path = Path(kg_path)
+
+    if not path.exists():
+        raise FileNotFoundError(f"KG lookup file not found: {kg_path}")
+
+    with open(path, "r", encoding="utf-8") as f:
+        kg = json.load(f)
+
+    lookup: Dict[str, Dict] = {}
+
+    for node in kg.get("nodes", []):
+        raw_node_id = node.get("rawNodeId")
+
+        if not raw_node_id:
+            continue
+
+        lookup[raw_node_id] = {
+            "kgId": node.get("kgId") or "",
+            "parentKgId": node.get("parentKgId") or "",
+            "nodeType": node.get("nodeType") or "",
+            "graphLabel": node.get("label") or "",
+        }
+
+    return lookup
+
+
 class AzureSearchIndexer:
     def __init__(
         self,
@@ -101,6 +147,41 @@ class AzureSearchIndexer:
                 type=SearchFieldDataType.String,
                 filterable=True,
             ),
+
+            # ------------------------------------------------
+            # Graph bridge fields
+            # ------------------------------------------------
+            SimpleField(
+                name="kgId",
+                type=SearchFieldDataType.String,
+                filterable=True,
+            ),
+            SimpleField(
+                name="parentKgId",
+                type=SearchFieldDataType.String,
+                filterable=True,
+            ),
+            SimpleField(
+                name="graphReady",
+                type=SearchFieldDataType.Boolean,
+                filterable=True,
+                facetable=True,
+            ),
+            SearchableField(
+                name="nodeType",
+                type=SearchFieldDataType.String,
+                searchable=True,
+                filterable=True,
+                facetable=True,
+            ),
+            SearchableField(
+                name="graphLabel",
+                type=SearchFieldDataType.String,
+                searchable=True,
+                filterable=True,
+                facetable=True,
+            ),
+
             SearchableField(
                 name="title",
                 type=SearchFieldDataType.String,
@@ -121,9 +202,10 @@ class AzureSearchIndexer:
                 filterable=True,
                 facetable=True,
             ),
-            SimpleField(
+            SearchableField(
                 name="clauseType",
                 type=SearchFieldDataType.String,
+                searchable=True,
                 filterable=True,
                 facetable=True,
             ),
@@ -187,6 +269,8 @@ class AzureSearchIndexer:
                             SemanticField(field_name="sectionTitle"),
                             SemanticField(field_name="clauseTitle"),
                             SemanticField(field_name="clauseType"),
+                            SemanticField(field_name="nodeType"),
+                            SemanticField(field_name="graphLabel"),
                         ],
                     ),
                 )
@@ -204,14 +288,36 @@ class AzureSearchIndexer:
 
         print(f"[Azure AI Search] Index created/updated: {self.index_name}")
 
-    def _prepare_doc(self, d: Dict) -> Dict:
+    def _prepare_doc(
+        self,
+        d: Dict,
+        kg_lookup: Optional[Dict[str, Dict]] = None,
+    ) -> Dict:
+        kg_lookup = kg_lookup or {}
+
+        raw_node_id = d.get("nodeId") or ""
+        kg_meta = kg_lookup.get(raw_node_id, {})
+
+        kg_id = d.get("kgId") or kg_meta.get("kgId") or ""
+        parent_kg_id = d.get("parentKgId") or kg_meta.get("parentKgId") or ""
+        node_type = d.get("nodeType") or kg_meta.get("nodeType") or ""
+        graph_label = d.get("graphLabel") or kg_meta.get("graphLabel") or ""
+
         prepared = {
             "id": _sanitize_key(str(d.get("id"))),
             "contractId": d.get("contractId") or "",
             "documentId": d.get("documentId") or "",
             "itemType": d.get("itemType") or "",
-            "nodeId": d.get("nodeId") or "",
+            "nodeId": raw_node_id,
             "parentNodeId": d.get("parentNodeId") or "",
+
+            # Graph bridge fields
+            "kgId": kg_id,
+            "parentKgId": parent_kg_id,
+            "graphReady": bool(kg_id),
+            "nodeType": node_type,
+            "graphLabel": graph_label,
+
             "title": d.get("title") or "",
             "sectionTitle": d.get("sectionTitle") or "",
             "clauseTitle": d.get("clauseTitle") or "",
@@ -229,6 +335,7 @@ class AzureSearchIndexer:
         self,
         corpus_path: str,
         batch_size: int = 500,
+        kg_path: Optional[str] = None,
     ) -> int:
         path = Path(corpus_path)
 
@@ -238,7 +345,28 @@ class AzureSearchIndexer:
         with open(path, "r", encoding="utf-8") as f:
             docs = json.load(f)
 
-        prepared_docs = [self._prepare_doc(d) for d in docs]
+        kg_lookup = load_kg_lookup(kg_path)
+
+        if kg_lookup:
+            print(
+                f"[Azure AI Search] Loaded KG lookup with "
+                f"{len(kg_lookup)} rawNodeId mappings"
+            )
+
+        prepared_docs = [
+            self._prepare_doc(d, kg_lookup=kg_lookup)
+            for d in docs
+        ]
+
+        graph_ready_count = sum(
+            1 for d in prepared_docs
+            if d.get("graphReady")
+        )
+
+        print(
+            f"[Azure AI Search] Graph-ready docs: "
+            f"{graph_ready_count}/{len(prepared_docs)}"
+        )
 
         total = 0
 
