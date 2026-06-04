@@ -11,3 +11,4 @@ azure-core>=1.30.0
 
 gremlinpython
 tenacity
+streamlit

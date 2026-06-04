@@ -45,6 +45,27 @@ def roman_to_int(value: str):
 
     return roman.get(value.upper())
 
+def list_contract_ids(self, top: int = 1000):
+    """
+    Return unique contract IDs currently present in Azure AI Search.
+    """
+
+    results = self.client.search(
+        search_text="*",
+        select=["contractId"],
+        top=top,
+    )
+
+    contract_ids = sorted(
+        {
+            r.get("contractId")
+            for r in results
+            if r.get("contractId")
+        }
+    )
+
+    return contract_ids
+
 
 def is_doc_in_article_scope(doc: dict, article_identifier: str) -> bool:
     """
