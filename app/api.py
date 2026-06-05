@@ -8,6 +8,10 @@ GET    /sessions                     List sessions for a user
 GET    /sessions/{session_id}        Get session metadata + messages
 DELETE /sessions/{session_id}        Delete a session
 POST   /sessions/{session_id}/ask    Ask a question (saves history, returns answer)
+
+POST   /ingest                       Upload one or more files (multipart); returns job IDs
+GET    /ingest/{job_id}/status       Poll ingestion job status
+
 GET    /health                       Liveness check
 
 Authentication
@@ -17,14 +21,19 @@ This is intentionally minimal — swap in Azure Entra ID when auth is added.
 """
 
 import logging
-from typing import List, Optional
+import re
+from typing import Any, Dict, List, Optional
 
-from fastapi import FastAPI, Header, HTTPException, status
+from fastapi import FastAPI, File, Header, HTTPException, UploadFile, status
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from app.chat_history.session_service import SessionService
+from app.ingestion.job_store import JobStore
+from app.ingestion import worker as ingestion_worker
 from app.rag.query_service import answer_question
+from app.services.frontend_ingestion_service import sanitize_contract_id
+from app.storage.blob_store import BlobStore
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
@@ -42,6 +51,11 @@ app.add_middleware(
 )
 
 _session_svc = SessionService()
+_job_store   = JobStore()
+_blob_store  = BlobStore()
+
+_MAX_FILE_BYTES = 50 * 1024 * 1024   # 50 MB per file
+_ALLOWED_EXTS   = {".pdf", ".txt", ".md"}
 
 
 # ──────────────────────────────────────────────
@@ -198,3 +212,177 @@ def ask(
         answer=result["answer"],
         context=result.get("context"),
     )
+
+
+# ──────────────────────────────────────────────
+# Ingestion routes
+# ──────────────────────────────────────────────
+
+class IngestJobResponse(BaseModel):
+    jobId: str
+    contractId: str
+    fileName: str
+    status: str
+    stage: str
+    progress: int
+
+
+class IngestJobStatusResponse(BaseModel):
+    jobId: str
+    contractId: str
+    fileName: str
+    status: str
+    stage: str
+    progress: int
+    error: Optional[str] = None
+    result: Optional[Dict[str, Any]] = None
+
+
+@app.post("/ingest", status_code=status.HTTP_202_ACCEPTED)
+async def ingest_files(
+    files: List[UploadFile] = File(...),
+    x_user_id: Optional[str] = Header(default=None),
+) -> List[IngestJobResponse]:
+    """
+    Accept one or more documents, upload raw bytes to Azure Blob Storage,
+    create a job record in Cosmos, enqueue background ingestion, and return
+    job IDs immediately (HTTP 202 Accepted).
+
+    The caller polls GET /ingest/{jobId}/status to track progress.
+    """
+    user_id = _get_user(x_user_id)
+
+    if not files:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="No files provided.",
+        )
+
+    responses: List[IngestJobResponse] = []
+
+    for upload in files:
+        filename = upload.filename or "document"
+        ext = _file_extension(filename)
+
+        if ext not in _ALLOWED_EXTS:
+            raise HTTPException(
+                status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+                detail=f"Unsupported file type '{ext}'. Allowed: PDF, TXT, MD.",
+            )
+
+        raw_bytes = await upload.read()
+
+        if len(raw_bytes) > _MAX_FILE_BYTES:
+            raise HTTPException(
+                status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE,
+                detail=f"'{filename}' exceeds the 50 MB limit.",
+            )
+
+        # Derive contract ID from filename
+        contract_id = sanitize_contract_id(
+            re.sub(r"\.[^.]+$", "", filename)
+        )
+
+        # Upload raw file to Blob Storage
+        job_id_placeholder = _blob_store._client.get_container_client(
+            _blob_store._container
+        )   # just to get the client reference — actual job_id comes next
+
+        # Create job record first to get the real job ID
+        job = _job_store.create_job(
+            user_id=user_id,
+            contract_id=contract_id,
+            file_name=filename,
+            blob_path="",   # filled in below after we have the job ID
+        )
+        job_id = job["id"]
+
+        # Now upload with the real job ID in the path
+        content_type = upload.content_type or "application/octet-stream"
+        blob_path = _blob_store.upload_raw_file(
+            user_id=user_id,
+            job_id=job_id,
+            filename=filename,
+            data=raw_bytes,
+            content_type=content_type,
+        )
+
+        # Patch blob_path into job record
+        job["blobPath"] = blob_path
+        _job_store._container.replace_item(item=job_id, body=job)
+
+        # Enqueue background worker
+        ingestion_worker.enqueue(
+            job_id=job_id,
+            user_id=user_id,
+            contract_id=contract_id,
+            blob_path=blob_path,
+            file_name=filename,
+        )
+
+        responses.append(
+            IngestJobResponse(
+                jobId=job_id,
+                contractId=contract_id,
+                fileName=filename,
+                status=job["status"],
+                stage=job["stage"],
+                progress=job["progress"],
+            )
+        )
+
+    return responses
+
+
+@app.get("/ingest/{job_id}/status")
+def get_ingest_status(
+    job_id: str,
+    x_user_id: Optional[str] = Header(default=None),
+) -> IngestJobStatusResponse:
+    user_id = _get_user(x_user_id)
+    job = _job_store.get_job(job_id, user_id)
+    if job is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Job '{job_id}' not found.",
+        )
+    return IngestJobStatusResponse(
+        jobId=job["id"],
+        contractId=job["contractId"],
+        fileName=job["fileName"],
+        status=job["status"],
+        stage=job["stage"],
+        progress=job["progress"],
+        error=job.get("error"),
+        result=job.get("result"),
+    )
+
+
+@app.get("/ingest")
+def list_ingest_jobs(
+    x_user_id: Optional[str] = Header(default=None),
+) -> List[IngestJobStatusResponse]:
+    user_id = _get_user(x_user_id)
+    jobs = _job_store.list_jobs(user_id)
+    return [
+        IngestJobStatusResponse(
+            jobId=j["id"],
+            contractId=j["contractId"],
+            fileName=j["fileName"],
+            status=j["status"],
+            stage=j["stage"],
+            progress=j["progress"],
+            error=j.get("error"),
+            result=j.get("result"),
+        )
+        for j in jobs
+    ]
+
+
+# ──────────────────────────────────────────────
+# Helpers
+# ──────────────────────────────────────────────
+
+def _file_extension(filename: str) -> str:
+    from pathlib import Path
+    return Path(filename).suffix.lower()

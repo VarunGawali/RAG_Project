@@ -128,3 +128,48 @@ export async function askQuestion(
   })
   return handleResponse<AskResult>(res)
 }
+
+// ──────────────────────────────────────────────
+// Ingestion API
+// ──────────────────────────────────────────────
+
+export interface IngestJob {
+  jobId: string
+  contractId: string
+  fileName: string
+  status: 'queued' | 'processing' | 'done' | 'failed'
+  stage: 'uploading' | 'parsing' | 'embedding' | 'indexing' | 'done' | 'error'
+  progress: number
+  error?: string | null
+  result?: Record<string, unknown> | null
+}
+
+/** Upload one or more files. Returns one IngestJob per file (HTTP 202). */
+export async function uploadFiles(
+  files: File[],
+  userId?: string,
+): Promise<IngestJob[]> {
+  const form = new FormData()
+  for (const file of files) {
+    form.append('files', file, file.name)
+  }
+  // Don't set Content-Type — browser sets it with the correct boundary
+  const res = await fetch(`${BASE}/ingest`, {
+    method: 'POST',
+    headers: { 'X-User-Id': userId ?? DEFAULT_USER },
+    body: form,
+  })
+  return handleResponse<IngestJob[]>(res)
+}
+
+/** Poll status for a single ingestion job. */
+export async function getIngestStatus(
+  jobId: string,
+  userId?: string,
+): Promise<IngestJob> {
+  const res = await fetch(`${BASE}/ingest/${jobId}/status`, {
+    headers: headers(userId),
+  })
+  return handleResponse<IngestJob>(res)
+}
+

@@ -87,6 +87,14 @@ AZURE_SEARCH_VECTOR_DIMENSIONS = int(os.getenv("AZURE_SEARCH_VECTOR_DIMENSIONS",
 
 
 # ---------------------------------------------------------------------
+# Azure Blob Storage (raw file + artifact persistence)
+# ---------------------------------------------------------------------
+
+AZURE_BLOB_CONNECTION_STRING = os.getenv("AZURE_BLOB_CONNECTION_STRING", "")
+AZURE_BLOB_CONTAINER = os.getenv("AZURE_BLOB_CONTAINER", "contract360-artifacts")
+
+
+# ---------------------------------------------------------------------
 # Cosmos DB NoSQL (chat history)
 # ---------------------------------------------------------------------
 

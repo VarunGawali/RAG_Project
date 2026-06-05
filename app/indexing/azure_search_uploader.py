@@ -331,6 +331,44 @@ class AzureSearchIndexer:
 
         return prepared
 
+    def upload_documents(
+        self,
+        docs: list,
+        batch_size: int = 500,
+        kg_lookup: Optional[Dict[str, Dict]] = None,
+    ) -> int:
+        """
+        Upload an already-loaded list of document dicts to Azure AI Search.
+        Preferred over upload_documents_from_file for in-memory pipelines.
+        """
+        kg_lookup = kg_lookup or {}
+
+        prepared_docs = [
+            self._prepare_doc(d, kg_lookup=kg_lookup)
+            for d in docs
+        ]
+
+        graph_ready_count = sum(1 for d in prepared_docs if d.get("graphReady"))
+        print(
+            f"[Azure AI Search] Graph-ready docs: "
+            f"{graph_ready_count}/{len(prepared_docs)}"
+        )
+
+        total = 0
+        for i in range(0, len(prepared_docs), batch_size):
+            batch = prepared_docs[i : i + batch_size]
+            result = self.search_client.upload_documents(batch)
+            failed = [r for r in result if not r.succeeded]
+            if failed:
+                print("[Azure AI Search] Upload failures:")
+                for f in failed[:10]:
+                    print(f)
+                raise RuntimeError("Some documents failed to upload")
+            total += len(batch)
+            print(f"[Azure AI Search] Uploaded {total}/{len(prepared_docs)}")
+
+        return total
+
     def upload_documents_from_file(
         self,
         corpus_path: str,
