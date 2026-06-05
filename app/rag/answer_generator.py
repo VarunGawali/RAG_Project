@@ -3,6 +3,7 @@ Answer generator for Contract360 GraphRAG demo.
 """
 
 import logging
+from typing import List, Dict
 
 from openai import AzureOpenAI
 
@@ -54,10 +55,23 @@ class AnswerGenerator:
             api_version=config.AZURE_OPENAI_API_VERSION,
         )
 
-    def generate(self, question: str, context: str, route: str) -> str:
-        prompt = f"""
-{SYSTEM_PROMPT}
+    def generate(
+        self,
+        question: str,
+        context: str,
+        route: str,
+        chat_history: List[Dict[str, str]] | None = None,
+    ) -> str:
+        """
+        Generate an answer.
 
+        chat_history: list of {"role": "user"|"assistant", "content": "..."}
+                      representing prior turns in this session. These are
+                      injected between the system prompt and the current
+                      retrieval context so the model can resolve follow-up
+                      references ("it", "that clause", "the party above", etc.).
+        """
+        current_prompt = f"""
 ============================================================
 ROUTE
 ============================================================
@@ -81,20 +95,24 @@ ANSWER
 ============================================================
 """
 
+        messages = [
+            {
+                "role": "system",
+                "content": SYSTEM_PROMPT,
+            }
+        ]
+
+        # Inject prior turns so the model can resolve follow-up references
+        if chat_history:
+            messages.extend(chat_history)
+
+        messages.append({"role": "user", "content": current_prompt})
+
         response = self.client.chat.completions.create(
             model=config.AZURE_OPENAI_CHAT_DEPLOYMENT,
             temperature=0,
             max_tokens=1200,
-            messages=[
-                {
-                    "role": "system",
-                    "content": "You answer contract questions using only provided retrieval context.",
-                },
-                {
-                    "role": "user",
-                    "content": prompt,
-                },
-            ],
+            messages=messages,
         )
 
         return response.choices[0].message.content

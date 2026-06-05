@@ -87,6 +87,15 @@ AZURE_SEARCH_VECTOR_DIMENSIONS = int(os.getenv("AZURE_SEARCH_VECTOR_DIMENSIONS",
 
 
 # ---------------------------------------------------------------------
+# Cosmos DB NoSQL (chat history)
+# ---------------------------------------------------------------------
+
+COSMOS_NOSQL_ENDPOINT = os.getenv("COSMOS_NOSQL_ENDPOINT")
+COSMOS_NOSQL_KEY = os.getenv("COSMOS_NOSQL_KEY")
+COSMOS_NOSQL_DATABASE = os.getenv("COSMOS_NOSQL_DATABASE", "contract360")
+
+
+# ---------------------------------------------------------------------
 # Cosmos DB for Apache Gremlin
 # ---------------------------------------------------------------------
 

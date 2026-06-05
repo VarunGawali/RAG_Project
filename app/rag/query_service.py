@@ -170,6 +170,7 @@ def answer_question(
     top: int = 4,
     route_override: str = "auto",
     return_context: bool = False,
+    chat_history: Optional[list] = None,
 ) -> Dict:
     """
     Main query service.
@@ -224,6 +225,7 @@ def answer_question(
         question=question,
         context=context,
         route=route,
+        chat_history=chat_history or [],
     )
 
     result = {
