@@ -38,7 +38,8 @@ class EmbeddingClient:
 
         response = self._azure_client.embeddings.create(
             model=config.AZURE_OPENAI_EMBEDDING_DEPLOYMENT,
-            input=safe_text
+            input=safe_text,
+            dimensions=1536
         )
 
         return response.data[0].embedding

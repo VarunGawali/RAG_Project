@@ -1,6 +1,7 @@
-import { useState, useRef, useCallback } from 'react'
+import { useState, useRef, useCallback, useEffect } from 'react'
 import { X, CheckCircle2, AlertCircle, Loader2, CloudUpload, Trash2 } from 'lucide-react'
 import type { UploadJob, UploadStage } from '../types'
+import * as api from '../api/client'
 
 interface Props {
   onClose: () => void
@@ -16,6 +17,19 @@ const STAGES: { key: UploadStage; label: string }[] = [
 ]
 
 const STAGE_ORDER: UploadStage[] = ['uploading', 'parsing', 'embedding', 'indexing', 'done']
+
+// Map backend stage strings to UploadStage type
+function toUploadStage(backendStage: string): UploadStage {
+  const map: Record<string, UploadStage> = {
+    uploading: 'uploading',
+    parsing:   'parsing',
+    embedding: 'embedding',
+    indexing:  'indexing',
+    done:      'done',
+    error:     'error',
+  }
+  return map[backendStage] ?? 'uploading'
+}
 
 function stageIndex(stage: UploadStage) {
   return STAGE_ORDER.indexOf(stage)
@@ -103,30 +117,33 @@ function UploadJobRow({ job }: { job: UploadJob }) {
 
 // ─── Drop zone ────────────────────────────────────────────────────────────────
 
-function DropZone({ onFiles }: { onFiles: (files: File[]) => void }) {
+function DropZone({ onFiles, disabled }: { onFiles: (files: File[]) => void; disabled?: boolean }) {
   const [dragging, setDragging] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
 
   const handleDrop = useCallback((e: React.DragEvent) => {
     e.preventDefault()
     setDragging(false)
+    if (disabled) return
     const files = Array.from(e.dataTransfer.files).filter(
       f => f.type === 'application/pdf' || f.name.endsWith('.txt') || f.name.endsWith('.md')
     )
     if (files.length) onFiles(files)
-  }, [onFiles])
+  }, [onFiles, disabled])
 
   return (
     <div
-      onDragEnter={e => { e.preventDefault(); setDragging(true) }}
-      onDragOver={e => { e.preventDefault(); setDragging(true) }}
+      onDragEnter={e => { e.preventDefault(); if (!disabled) setDragging(true) }}
+      onDragOver={e => { e.preventDefault(); if (!disabled) setDragging(true) }}
       onDragLeave={() => setDragging(false)}
       onDrop={handleDrop}
-      onClick={() => inputRef.current?.click()}
-      className={`border-2 border-dashed rounded-lg p-10 text-center cursor-pointer transition-all ${
-        dragging
-          ? 'border-ey-yellow bg-ey-yellow/5'
-          : 'border-ey-border hover:border-ey-yellow/50 hover:bg-ey-surface/50'
+      onClick={() => !disabled && inputRef.current?.click()}
+      className={`border-2 border-dashed rounded-lg p-10 text-center transition-all ${
+        disabled
+          ? 'border-ey-border opacity-50 cursor-not-allowed'
+          : dragging
+            ? 'border-ey-yellow bg-ey-yellow/5 cursor-pointer'
+            : 'border-ey-border hover:border-ey-yellow/50 hover:bg-ey-surface/50 cursor-pointer'
       }`}
     >
       <input
@@ -135,6 +152,7 @@ function DropZone({ onFiles }: { onFiles: (files: File[]) => void }) {
         accept=".pdf,.txt,.md"
         multiple
         className="hidden"
+        disabled={disabled}
         onChange={e => {
           const files = Array.from(e.target.files ?? [])
           if (files.length) onFiles(files)
@@ -145,7 +163,7 @@ function DropZone({ onFiles }: { onFiles: (files: File[]) => void }) {
       <p className="text-sm font-medium text-white mb-1">
         {dragging ? 'Drop to upload' : 'Drag & drop contracts here'}
       </p>
-      <p className="text-xs text-ey-muted mb-4">or click to browse</p>
+      <p className="text-xs text-ey-muted mb-4">or click to browse — multiple files supported</p>
       <p className="text-[11px] text-ey-muted">PDF, TXT, or MD · Max 50 MB per file</p>
     </div>
   )
@@ -154,55 +172,117 @@ function DropZone({ onFiles }: { onFiles: (files: File[]) => void }) {
 // ─── Main panel ───────────────────────────────────────────────────────────────
 
 export default function UploadPanel({ onClose, onContractAdded }: Props) {
-  const [jobs, setJobs] = useState<UploadJob[]>([])
+  const [jobs, setJobs]         = useState<UploadJob[]>([])
+  const [uploading, setUploading] = useState(false)
+  const [apiError, setApiError] = useState<string | null>(null)
+
+  // Map jobId → polling interval handle
+  const pollers = useRef<Map<string, ReturnType<typeof setInterval>>>(new Map())
 
   const updateJob = (id: string, patch: Partial<UploadJob>) =>
     setJobs(prev => prev.map(j => j.id === id ? { ...j, ...patch } : j))
 
-  const simulateUpload = (file: File, jobId: string) => {
-    const stages: Array<{ stage: UploadStage; duration: number; endProgress: number }> = [
-      { stage: 'uploading',  duration: 1000, endProgress: 25 },
-      { stage: 'parsing',    duration: 1800, endProgress: 50 },
-      { stage: 'embedding',  duration: 2200, endProgress: 75 },
-      { stage: 'indexing',   duration: 1500, endProgress: 95 },
-    ]
+  // Start polling status for a job every 2.5s until done or failed
+  const startPolling = useCallback((jobId: string, contractId: string, fileName: string) => {
+    const handle = setInterval(async () => {
+      try {
+        const status = await api.getIngestStatus(jobId)
+        const stage = toUploadStage(status.stage)
 
-    let elapsed = 0
-    stages.forEach(({ stage, duration, endProgress }) => {
-      const startProgress = endProgress - 25
-      setTimeout(() => {
-        updateJob(jobId, { stage, progress: startProgress })
-        const steps = 10
-        for (let s = 1; s <= steps; s++) {
-          setTimeout(() => {
-            updateJob(jobId, {
-              progress: startProgress + Math.round((endProgress - startProgress) * s / steps),
-            })
-          }, (duration / steps) * s)
+        updateJob(jobId, {
+          stage,
+          progress: status.progress,
+          error: status.error ?? undefined,
+        })
+
+        if (status.status === 'done') {
+          clearInterval(handle)
+          pollers.current.delete(jobId)
+          onContractAdded(contractId, fileName)
+        } else if (status.status === 'failed') {
+          clearInterval(handle)
+          pollers.current.delete(jobId)
+          updateJob(jobId, { stage: 'error', error: status.error ?? 'Ingestion failed.' })
         }
-      }, elapsed)
-      elapsed += duration
-    })
+      } catch (err) {
+        clearInterval(handle)
+        pollers.current.delete(jobId)
+        updateJob(jobId, { stage: 'error', error: 'Could not reach API.' })
+      }
+    }, 2500)
 
-    setTimeout(() => {
-      const contractId = sanitizeId(file.name)
-      updateJob(jobId, { stage: 'done', progress: 100, contractId })
-      onContractAdded(contractId, file.name)
-    }, elapsed + 300)
+    pollers.current.set(jobId, handle)
+  }, [onContractAdded])
+
+  // Cleanup all pollers on unmount
+  useEffect(() => {
+    return () => {
+      pollers.current.forEach(h => clearInterval(h))
+    }
+  }, [])
+
+  const handleFiles = useCallback(async (files: File[]) => {
+    setApiError(null)
+    setUploading(true)
+
+    // Create optimistic job rows immediately
+    const localJobs: UploadJob[] = files.map(file => ({
+      id: `tmp_${Date.now()}_${Math.random().toString(36).slice(2)}`,
+      fileName: file.name,
+      fileSize: formatBytes(file.size),
+      stage: 'uploading' as UploadStage,
+      progress: 2,
+    }))
+    setJobs(prev => [...prev, ...localJobs])
+
+    try {
+      const serverJobs = await api.uploadFiles(files)
+
+      // Replace temporary job rows with real server job IDs
+      setJobs(prev => {
+        const updated = [...prev]
+        serverJobs.forEach((sj, i) => {
+          const tmpId = localJobs[i]?.id
+          if (!tmpId) return
+          const idx = updated.findIndex(j => j.id === tmpId)
+          if (idx === -1) return
+          updated[idx] = {
+            ...updated[idx],
+            id: sj.jobId,
+            stage: toUploadStage(sj.stage),
+            progress: sj.progress,
+          }
+        })
+        return updated
+      })
+
+      // Begin polling for each job
+      serverJobs.forEach(sj => {
+        startPolling(sj.jobId, sj.contractId, sj.fileName)
+      })
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : 'Upload failed.'
+      setApiError(msg)
+      // Mark temporary jobs as errors
+      setJobs(prev => prev.map(j =>
+        localJobs.some(lj => lj.id === j.id)
+          ? { ...j, stage: 'error' as UploadStage, error: msg }
+          : j
+      ))
+    } finally {
+      setUploading(false)
+    }
+  }, [startPolling])
+
+  const removeJob = (id: string) => {
+    // Stop polling if still active
+    const handle = pollers.current.get(id)
+    if (handle) {
+      clearInterval(handle)
+      pollers.current.delete(id)
+    }
+    setJobs(prev => prev.filter(j => j.id !== id))
   }
-
-  const handleFiles = (files: File[]) => {
-    files.forEach(file => {
-      const id = `job_${Date.now()}_${Math.random().toString(36).slice(2)}`
-      setJobs(prev => [...prev, {
-        id, fileName: file.name, fileSize: formatBytes(file.size),
-        stage: 'uploading', progress: 0,
-      }])
-      simulateUpload(file, id)
-    })
-  }
-
-  const removeJob = (id: string) => setJobs(prev => prev.filter(j => j.id !== id))
 
   const activeCount = jobs.filter(j => j.stage !== 'done' && j.stage !== 'error').length
   const doneCount   = jobs.filter(j => j.stage === 'done').length
@@ -212,7 +292,7 @@ export default function UploadPanel({ onClose, onContractAdded }: Props) {
       {/* Backdrop */}
       <div
         className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 animate-fade-in"
-        onClick={onClose}
+        onClick={activeCount > 0 ? undefined : onClose}
       />
 
       {/* Panel */}
@@ -224,7 +304,7 @@ export default function UploadPanel({ onClose, onContractAdded }: Props) {
           <div>
             <h2 className="text-base font-semibold text-white">Upload Contracts</h2>
             <p className="text-xs text-ey-muted mt-0.5">
-              Uploaded contracts will be available for querying immediately
+              Files are uploaded to Azure Blob and indexed asynchronously
             </p>
           </div>
           <button
@@ -238,7 +318,14 @@ export default function UploadPanel({ onClose, onContractAdded }: Props) {
 
         {/* Body */}
         <div className="flex-1 overflow-y-auto px-6 py-5 space-y-5">
-          <DropZone onFiles={handleFiles} />
+          {apiError && (
+            <div className="bg-red-900/40 border border-red-700/50 rounded p-3 text-xs text-red-300 flex items-start gap-2">
+              <AlertCircle size={14} className="flex-shrink-0 mt-0.5" />
+              <span>{apiError}</span>
+            </div>
+          )}
+
+          <DropZone onFiles={handleFiles} disabled={uploading} />
 
           {jobs.length > 0 && (
             <div>

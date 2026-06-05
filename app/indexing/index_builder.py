@@ -10,5 +10,8 @@ class IndexBuilder:
         docs = []
         for ch in chunks:
             ch.embedding = self.embedder.embed(ch.text)
+            print("INDEX BUILDER EMBEDDING LENGTH:", len(ch.embedding),flush=True)
             docs.append(ch.to_dict())
         return docs
+    
+

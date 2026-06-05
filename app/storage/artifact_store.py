@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Union
 from app import config
 
 class ArtifactStore:
@@ -66,3 +66,22 @@ class ArtifactStore:
 
     def _write_json(self, path: Path, data: Any) -> None:
         path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding='utf-8')
+
+
+def get_artifact_store() -> Union["ArtifactStore", "BlobArtifactStore"]:
+    """
+    Return the appropriate artifact store based on configuration.
+
+    USE_BLOB_ARTIFACTS=true  → BlobArtifactStore (Azure Blob, no local disk)
+    USE_BLOB_ARTIFACTS=false → ArtifactStore     (local disk, for dev/testing)
+    """
+    if config.USE_BLOB_ARTIFACTS:
+        from app.storage.blob_artifact_store import BlobArtifactStore
+        return BlobArtifactStore()
+    return ArtifactStore()
+
+
+# Type alias for callers that want to hint the return type
+from typing import TYPE_CHECKING
+if TYPE_CHECKING:
+    from app.storage.blob_artifact_store import BlobArtifactStore

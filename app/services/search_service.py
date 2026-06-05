@@ -22,6 +22,6 @@ search_client = SearchClient(
     ),
 
     credential=AzureKeyCredential(
-        os.getenv("AZURE_SEARCH_KEY")
+        os.getenv("AZURE_SEARCH_ADMIN_KEY")
     )
 )
