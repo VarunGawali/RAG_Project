@@ -78,6 +78,7 @@ class AskResponse(BaseModel):
     message_id: str
     route: str
     reason: str
+    rewritten_query: Optional[str] = None
     answer: str
     context: Optional[str] = None
 
@@ -209,6 +210,7 @@ def ask(
         message_id=assistant_msg["id"],
         route=result["route"],
         reason=result["reason"],
+        rewritten_query=result.get("rewritten_query"),
         answer=result["answer"],
         context=result.get("context"),
     )

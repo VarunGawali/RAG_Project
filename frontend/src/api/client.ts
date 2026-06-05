@@ -64,6 +64,7 @@ export interface AskResult {
   message_id: string
   route: string
   reason: string
+  rewritten_query?: string
   answer: string
   context?: string
 }

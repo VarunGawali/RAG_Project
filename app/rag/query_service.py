@@ -1,18 +1,19 @@
 """
-Query service for Streamlit and CLI.
+Query service for Contract360.
 
-Routes a question to:
-- graph route
-- search route
-- hybrid route
+Routes a question to one of four retrieval paths:
+  search  — Azure AI Search (text / structural)
+  graph   — Cosmos Gremlin native facts
+  hybrid  — Azure AI Search + Cosmos Gremlin expansion
+  tree    — Azure AI Search + hierarchical tree context (TreeRAG)
 
-For demo:
-- Edison contract supports graph/hybrid.
-- Newly uploaded contracts support search-only unless graph is later built.
+Routing is performed by an LLM classifier (query_router.py) with a
+keyword-based fallback. The router also produces a rewritten_query
+(pronouns resolved, context from chat history folded in) and a
+structural_scope that replaces the old extract_structural_scope regex.
 """
 
-import re
-from typing import Dict, Optional
+from typing import Dict, List, Optional
 
 from app.indexing.search_tester import AzureSearchTester
 from app.rag.query_router import route_question
@@ -28,159 +29,65 @@ GRAPH_ENABLED_CONTRACTS = {
 }
 
 
-ROMAN_MAP = {
-    "1": "I",
-    "2": "II",
-    "3": "III",
-    "4": "IV",
-    "5": "V",
-    "6": "VI",
-    "7": "VII",
-    "8": "VIII",
-    "9": "IX",
-    "10": "X",
-    "11": "XI",
-    "12": "XII",
-    "13": "XIII",
-    "14": "XIV",
-    "15": "XV",
-    "16": "XVI",
-    "17": "XVII",
-    "18": "XVIII",
-    "19": "XIX",
-    "20": "XX",
-    "21": "XXI",
-    "22": "XXII",
-    "23": "XXIII",
-    "24": "XXIV",
-    "25": "XXV",
-    "26": "XXVI",
-    "27": "XXVII",
-    "28": "XXVIII",
-    "29": "XXIX",
-    "30": "XXX",
-    "31": "XXXI",
-    "32": "XXXII",
-    "33": "XXXIII",
-    "34": "XXXIV",
-}
+# ── Retrieval helpers ──────────────────────────────────────────────────────────
 
-
-def extract_structural_scope(question: str):
-    """
-    Detect structural scope like Article XII / Article 12.
-    Later this can be replaced by LLM QueryPlan.
-    """
-
-    article_match = re.search(
-        r"\barticle\s+([ivxlcdm]+|\d+)\b",
-        question,
-        re.IGNORECASE,
-    )
-
-    if article_match:
-        value = article_match.group(1).upper()
-
-        if value.isdigit():
-            value = ROMAN_MAP.get(value, value)
-
-        return {
-            "structure_type": "Article",
-            "identifier": value,
-        }
-
-    section_match = re.search(
-        r"\bsection\s+([0-9]+(?:\.[0-9]+)*)\b",
-        question,
-        re.IGNORECASE,
-    )
-
-    if section_match:
-        return {
-            "structure_type": "Section",
-            "identifier": section_match.group(1),
-        }
-
-    clause_match = re.search(
-        r"\bclause\s+([0-9]+(?:\.[0-9]+)*)\b",
-        question,
-        re.IGNORECASE,
-    )
-
-    if clause_match:
-        return {
-            "structure_type": "Clause",
-            "identifier": clause_match.group(1),
-        }
-
-    return None
-
-
-def format_search_docs(docs):
+def _format_search_docs(docs: list) -> str:
     if not docs:
         return "No Azure AI Search results found."
-
     parts = []
-
     for idx, doc in enumerate(docs, start=1):
-        parts.append("=" * 80)
-        parts.append(f"SEARCH RESULT {idx}")
-        parts.append("=" * 80)
-        parts.append(f"Title: {doc.get('title')}")
-        parts.append(f"Section: {doc.get('sectionTitle')}")
-        parts.append(f"Pages: {doc.get('pageStart')}-{doc.get('pageEnd')}")
-        parts.append(f"Source path: {doc.get('sourcePath')}")
-        parts.append(f"kgId: {doc.get('kgId')}")
-        parts.append("")
-        parts.append(doc.get("text") or "")
-        parts.append("")
-
+        parts += [
+            "=" * 80,
+            f"SEARCH RESULT {idx}",
+            "=" * 80,
+            f"Title: {doc.get('title')}",
+            f"Section: {doc.get('sectionTitle')}",
+            f"Pages: {doc.get('pageStart')}-{doc.get('pageEnd')}",
+            f"Source path: {doc.get('sourcePath')}",
+            f"kgId: {doc.get('kgId')}",
+            "",
+            doc.get("text") or "",
+            "",
+        ]
     return "\n".join(parts)
 
 
-def search_only_retrieve(
+def _search_retrieve(
     question: str,
     contract_id: Optional[str],
-    top: int = 5,
+    top: int,
+    structural_scope: Optional[Dict],
 ) -> str:
     searcher = AzureSearchTester()
 
-    scope = extract_structural_scope(question)
-
-    if scope:
+    if structural_scope:
         docs = searcher.retrieve_structural_scope(
-            structure_type=scope["structure_type"],
-            identifier=scope["identifier"],
+            structure_type=structural_scope["type"],
+            identifier=structural_scope["identifier"],
             contract_id=contract_id,
             top=100,
         )
-
-        return format_search_docs(docs)
+        return _format_search_docs(docs)
 
     docs = searcher.hybrid_search(
         query=question,
         contract_id=contract_id,
         top=top,
     )
+    return _format_search_docs(docs)
 
-    return format_search_docs(docs)
 
-
-def tree_retrieve(
+def _tree_retrieve(
     question: str,
     contract_id: Optional[str],
-    top: int = 5,
+    top: int,
 ) -> str:
-    """
-    TreeRAG retrieval: vector search + hierarchical tree context expansion.
-
-    Returns a formatted context string (no LLM call here — that happens
-    in AnswerGenerator so chat_history support is unified).
-    """
     retriever = SemanticRetriever(contract_id=contract_id)
     chunks = retriever.retrieve(query=question, top_k=top, contract_id=contract_id)
     return build_rag_prompt(query=question, retrieved_chunks=chunks)
 
+
+# ── Main entry point ───────────────────────────────────────────────────────────
 
 def answer_question(
     question: str,
@@ -188,77 +95,86 @@ def answer_question(
     top: int = 4,
     route_override: str = "auto",
     return_context: bool = False,
-    chat_history: Optional[list] = None,
+    chat_history: Optional[List[Dict[str, str]]] = None,
 ) -> Dict:
     """
-    Main query service.
+    Route, retrieve, and answer a question.
 
-    Returns:
+    Returns
+    -------
     {
-      "route": "...",
-      "reason": "...",
-      "context": "...",
-      "answer": "..."
+      "route":   str,
+      "reason":  str,
+      "answer":  str,
+      "context": str   (only when return_context=True)
     }
     """
+    # ── 1. Route ───────────────────────────────────────────────────────
+    # Pass chat_history so the LLM router can resolve follow-up references.
+    query_plan = route_question(question, chat_history=chat_history)
 
-    routing = route_question(question)
-    route = routing["route"]
-    reason = routing["reason"]
+    route            = query_plan["route"]
+    reason           = query_plan["reasoning"]
+    rewritten_query  = query_plan["rewritten_query"]
+    structural_scope = query_plan["structural_scope"]
 
+    # Manual override from the UI or API caller
     if route_override and route_override != "auto":
         route = route_override
         reason = f"User override: {route_override}"
 
+    # Downgrade graph/hybrid if the contract has no KG yet
     graph_available = contract_id in GRAPH_ENABLED_CONTRACTS
-
-    if route in ["graph", "hybrid"] and not graph_available:
+    if route in {"graph", "hybrid"} and not graph_available:
         route = "search"
         reason = (
-            "Graph is not available for this contract yet. "
-            "Falling back to Azure AI Search route."
+            "Graph is not available for this contract yet — "
+            "falling back to Azure AI Search."
         )
 
+    # ── 2. Retrieve ────────────────────────────────────────────────────
+    # Use rewritten_query for retrieval so pronouns/references are resolved.
     if route == "graph":
-        context = graph_native_retrieve(question)
+        context = graph_native_retrieve(rewritten_query)
 
     elif route == "tree":
-        context = tree_retrieve(
-            question=question,
+        context = _tree_retrieve(
+            question=rewritten_query,
             contract_id=contract_id,
             top=top,
         )
 
     elif route == "search":
-        context = search_only_retrieve(
-            question=question,
+        context = _search_retrieve(
+            question=rewritten_query,
             contract_id=contract_id,
             top=top,
+            structural_scope=structural_scope,
         )
 
-    else:
+    else:   # hybrid
         context = graph_rag_retrieve(
-            question=question,
+            question=rewritten_query,
             k=top,
             contract_id=contract_id,
             graph_ready_only=True,
         )
 
+    # ── 3. Generate ────────────────────────────────────────────────────
     generator = AnswerGenerator()
-
     answer = generator.generate(
-        question=question,
+        question=question,          # original question for the LLM answer
         context=context,
         route=route,
         chat_history=chat_history or [],
     )
 
-    result = {
-        "route": route,
-        "reason": reason,
-        "answer": answer,
+    result: Dict = {
+        "route":           route,
+        "reason":          reason,
+        "rewritten_query": rewritten_query,
+        "answer":          answer,
     }
-
     if return_context:
         result["context"] = context
 
