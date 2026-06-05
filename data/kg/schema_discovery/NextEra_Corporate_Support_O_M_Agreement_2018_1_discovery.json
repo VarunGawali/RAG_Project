@@ -1,0 +1,1925 @@
+[
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_6:6_2:Billing:d692f1",
+    "source_clause_title": "6.2 Billing.",
+    "contract_id": "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+    "source_page_start": 8,
+    "source_page_end": 8,
+    "clause_type_hint": "payment",
+    "entities": [
+      {
+        "id": "ent_parties",
+        "entity_type": "Contracting Parties",
+        "name": "The Parties",
+        "legal_role": "The Parties are the contractual entities obligated to maintain accurate records and comply with billing procedures under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "The Parties will maintain accurate records of all direct and indirect costs and expenses incurred in the performance of the Services under this Agreement.",
+        "properties": {}
+      },
+      {
+        "id": "ent_provider",
+        "entity_type": "Service Provider",
+        "name": "A Provider",
+        "legal_role": "The Provider is the party responsible for rendering Services and submitting monthly invoices or reports for costs and expenses incurred.",
+        "confidence": 1.0,
+        "evidence_quote": "A Provider providing any such Services shall render a monthly invoice or accounting system generated report summarizing the direct and allocated costs and expenses for that month.",
+        "properties": {}
+      },
+      {
+        "id": "ent_services",
+        "entity_type": "Contracted Services",
+        "name": "Services",
+        "legal_role": "The Services are the subject matter of the Agreement for which costs and expenses are incurred and billed.",
+        "confidence": 1.0,
+        "evidence_quote": "costs and expenses incurred in the performance of the Services under this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_monthly_invoice",
+        "entity_type": "Monthly Invoice or Accounting Report",
+        "name": "Monthly invoice or accounting system generated report",
+        "legal_role": "The monthly invoice or report is the formal billing document submitted by the Provider to summarize costs and expenses for approval and payment.",
+        "confidence": 1.0,
+        "evidence_quote": "A Provider providing any such Services shall render a monthly invoice or accounting system generated report summarizing the direct and allocated costs and expenses for that month.",
+        "properties": {}
+      },
+      {
+        "id": "ent_company",
+        "entity_type": "Company (Receiving Party)",
+        "name": "Company",
+        "legal_role": "The Company is the receiving Party entitled to request supporting documentation and reimburse the Provider for out-of-pocket expenses.",
+        "confidence": 1.0,
+        "evidence_quote": "shall provide supporting documentation of such payments as requested by Company.",
+        "properties": {}
+      },
+      {
+        "id": "ent_third_parties",
+        "entity_type": "Third Party Vendors",
+        "name": "third parties",
+        "legal_role": "Third parties are external vendors or suppliers from whom products or services are procured under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "pays third parties for products or services provided under this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_out_of_pocket_expenses",
+        "entity_type": "Reimbursable Out-of-Pocket Expenses",
+        "name": "reasonable, ordinary, and necessary out-of-pocket expenses",
+        "legal_role": "These expenses are costs actually incurred by the Provider on behalf of the receiving Party and are subject to reimbursement upon documentation.",
+        "confidence": 1.0,
+        "evidence_quote": "the Provider shall be reimbursed for any and all reasonable, ordinary, and necessary out-of-pocket expenses actually incurred",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_provider",
+        "target_id": "ent_monthly_invoice",
+        "relationship_type": "Billing Obligation",
+        "legal_significance": "The Provider is legally obligated to submit monthly invoices or reports summarizing costs and expenses to enable review and approval of charges.",
+        "confidence": 1.0,
+        "evidence_quote": "A Provider providing any such Services shall render a monthly invoice or accounting system generated report summarizing the direct and allocated costs and expenses for that month."
+      },
+      {
+        "source_id": "ent_monthly_invoice",
+        "target_id": "ent_parties",
+        "relationship_type": "Invoice Review and Approval",
+        "legal_significance": "The Parties must review and approve the monthly invoices or reports to ensure charges are properly billed before payment.",
+        "confidence": 1.0,
+        "evidence_quote": "Each monthly invoice or accounting system generated report will be reviewed before approval of the charges"
+      },
+      {
+        "source_id": "ent_provider",
+        "target_id": "ent_third_parties",
+        "relationship_type": "Payment Agent Role",
+        "legal_significance": "The Provider may act as a paying agent for third parties on behalf of the receiving Party, incurring reimbursable expenses.",
+        "confidence": 1.0,
+        "evidence_quote": "In cases in which a Provider renders no Services itself but merely pays third parties for products or services provided under this Agreement (as a matter of convenience to the receiving Party)"
+      },
+      {
+        "source_id": "ent_provider",
+        "target_id": "ent_out_of_pocket_expenses",
+        "relationship_type": "Reimbursement Right",
+        "legal_significance": "The Provider has the right to be reimbursed for reasonable, ordinary, and necessary out-of-pocket expenses actually incurred when paying third parties.",
+        "confidence": 1.0,
+        "evidence_quote": "the Provider shall be reimbursed for any and all reasonable, ordinary, and necessary out-of-pocket expenses actually incurred"
+      },
+      {
+        "source_id": "ent_provider",
+        "target_id": "ent_company",
+        "relationship_type": "Documentation Provision Obligation",
+        "legal_significance": "The Provider must provide supporting documentation of payments to third parties upon request by the Company to substantiate reimbursement claims.",
+        "confidence": 1.0,
+        "evidence_quote": "shall provide supporting documentation of such payments as requested by Company."
+      }
+    ],
+    "extractor_notes": "The clause clearly distinguishes between Providers who perform Services and those who only pay third parties, establishing distinct billing and reimbursement obligations. The term 'Company' is used as the receiving Party entitled to request documentation, implying a defined party role within the Agreement."
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_7:7_2:Indemnification:b9ebbd",
+    "source_clause_title": "7.2 Indemnification.",
+    "contract_id": "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+    "source_page_start": 9,
+    "source_page_end": 9,
+    "clause_type_hint": "indemnity",
+    "entities": [
+      {
+        "id": "ent_company",
+        "entity_type": "Indemnitor",
+        "name": "Company",
+        "legal_role": "The party obligated to defend, indemnify, and hold harmless the Provider and its Affiliates against third-party liabilities arising from the Company's failure to perform under the Agreement, except for specified exclusions.",
+        "confidence": 1.0,
+        "evidence_quote": "Company shall, to the fullest extent permitted by law, defend, indemnify, and hold harmless Provider and its Affiliates from and against any and all Liabilities claimed or asserted against Provider or its Affiliates by a third party arising as a result of or in any way connected with the Company’s failure to perform under this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_provider",
+        "entity_type": "Indemnitor",
+        "name": "Provider",
+        "legal_role": "The party obligated to defend, indemnify, and hold harmless the Company against third-party liabilities arising from the Provider’s or its Affiliates’ failure to perform under the Agreement, except for specified exclusions.",
+        "confidence": 1.0,
+        "evidence_quote": "Provider shall, to the fullest extent permitted by Applicable Law, defend, indemnify, and hold harmless Company from and against any and all Liabilities claimed or asserted against Company by a third party arising as a result of Provider’s (or any of its Affiliates’) failure to perform under this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_provider_affiliates",
+        "entity_type": "Indemnified Party Affiliate",
+        "name": "Provider and its Affiliates",
+        "legal_role": "Entities protected by the Company’s indemnification obligations against third-party claims related to the Company’s failure to perform.",
+        "confidence": 1.0,
+        "evidence_quote": "defend, indemnify, and hold harmless Provider and its Affiliates from and against any and all Liabilities claimed or asserted against Provider or its Affiliates by a third party",
+        "properties": {}
+      },
+      {
+        "id": "ent_company_affiliates",
+        "entity_type": "Indemnitor Affiliate",
+        "name": "Provider’s (or any of its Affiliates’)",
+        "legal_role": "Entities whose failure to perform triggers Provider’s indemnification obligations to the Company.",
+        "confidence": 1.0,
+        "evidence_quote": "arising as a result of Provider’s (or any of its Affiliates’) failure to perform under this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_indemnified_party",
+        "entity_type": "Indemnified Party",
+        "name": "Indemnified Party",
+        "legal_role": "A party receiving notice or knowledge of a claim that may result in an indemnification claim under Section 7.2.",
+        "confidence": 1.0,
+        "evidence_quote": "If any Party hereto (each, an “Indemnified Party”) shall receive notice or have knowledge of any claim that may result in a claim for indemnification by such Indemnified Party against a Party pursuant to this Section 7.2",
+        "properties": {}
+      },
+      {
+        "id": "ent_indemnifying_party",
+        "entity_type": "Indemnifying Party",
+        "name": "Indemnifying Party",
+        "legal_role": "The party obligated to indemnify the Indemnified Party upon notice of a claim, including the right to assume defense and control of legal proceedings.",
+        "confidence": 1.0,
+        "evidence_quote": "the indemnifying Party shall, upon its acknowledgement in writing of its obligation to indemnify the Indemnified Party seeking indemnification, be entitled to assume the defense or to represent the interests of the Indemnified Party",
+        "properties": {}
+      },
+      {
+        "id": "ent_liabilities",
+        "entity_type": "Third-Party Liabilities",
+        "name": "Liabilities",
+        "legal_role": "Claims or asserted liabilities by third parties that trigger indemnification obligations under this clause.",
+        "confidence": 1.0,
+        "evidence_quote": "any and all Liabilities claimed or asserted against Provider or its Affiliates by a third party ... any and all Liabilities claimed or asserted against Company by a third party",
+        "properties": {}
+      },
+      {
+        "id": "ent_exceptions",
+        "entity_type": "Indemnification Exceptions",
+        "name": "Exceptions to Indemnification",
+        "legal_role": "Specified circumstances (fraud, willful misconduct, violation of Applicable Law, gross negligence) that exclude indemnification obligations for the failing party.",
+        "confidence": 1.0,
+        "evidence_quote": "except to the extent such failure was the result of fraud, willful misconduct, violation of Applicable Law, or gross negligence on the part of Provider ... except to the extent such Liabilities are caused by fraud, willful misconduct, violation of Applicable Law, or gross negligence by Company",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_company",
+        "target_id": "ent_provider_affiliates",
+        "relationship_type": "Indemnification Obligation",
+        "legal_significance": "Company is legally obligated to defend, indemnify, and hold harmless Provider and its Affiliates against third-party claims arising from the Company’s failure to perform under the Agreement, except for specified exceptions.",
+        "confidence": 1.0,
+        "evidence_quote": "Company shall, to the fullest extent permitted by law, defend, indemnify, and hold harmless Provider and its Affiliates from and against any and all Liabilities claimed or asserted against Provider or its Affiliates by a third party arising as a result of or in any way connected with the Company’s failure to perform under this Agreement"
+      },
+      {
+        "source_id": "ent_provider",
+        "target_id": "ent_company",
+        "relationship_type": "Indemnification Obligation",
+        "legal_significance": "Provider is legally obligated to defend, indemnify, and hold harmless Company against third-party claims arising from Provider’s or its Affiliates’ failure to perform under the Agreement, except for specified exceptions.",
+        "confidence": 1.0,
+        "evidence_quote": "Provider shall, to the fullest extent permitted by Applicable Law, defend, indemnify, and hold harmless Company from and against any and all Liabilities claimed or asserted against Company by a third party arising as a result of Provider’s (or any of its Affiliates’) failure to perform under this Agreement"
+      },
+      {
+        "source_id": "ent_indemnified_party",
+        "target_id": "ent_indemnifying_party",
+        "relationship_type": "Notice and Defense Right",
+        "legal_significance": "The Indemnified Party must promptly notify the Indemnifying Party of claims, enabling the Indemnifying Party to assume defense and control of the claim, which is critical for managing legal risk and costs.",
+        "confidence": 1.0,
+        "evidence_quote": "such Indemnified Party shall, as promptly as possible, give the indemnifying Party notice of such claim ... The Party against whom indemnification is claimed shall, upon its acknowledgement in writing of its obligation to indemnify the Indemnified Party seeking indemnification, be entitled to assume the defense or to represent the interests of the Indemnified Party"
+      },
+      {
+        "source_id": "ent_indemnifying_party",
+        "target_id": "ent_indemnified_party",
+        "relationship_type": "Defense Control and Settlement Authority",
+        "legal_significance": "The Indemnifying Party has the right to select counsel, direct defense, and propose or accept settlements on behalf of the Indemnified Party, subject to the Indemnified Party’s consent for nonmonetary relief, which affects control over litigation and settlement outcomes.",
+        "confidence": 1.0,
+        "evidence_quote": "be entitled to assume the defense or to represent the interests of the Indemnified Party ... which shall include the right to select and direct legal counsel and other consultants ... to propose, accept, or reject offers of settlement ... provided, however, that without the Indemnified Party’s consent ... the indemnifying Party may not consent to entry of a judgment or settlement if such judgment or settlement provides for injunctive or other nonmonetary relief affecting the Indemnified Party"
+      },
+      {
+        "source_id": "ent_exceptions",
+        "target_id": "ent_company",
+        "relationship_type": "Exclusion from Indemnification",
+        "legal_significance": "The Company is not obligated to indemnify the Provider for liabilities resulting from the Provider’s fraud, willful misconduct, violation of Applicable Law, or gross negligence, limiting the scope of indemnification.",
+        "confidence": 1.0,
+        "evidence_quote": "except to the extent such failure was the result of fraud, willful misconduct, violation of Applicable Law, or gross negligence on the part of Provider"
+      },
+      {
+        "source_id": "ent_exceptions",
+        "target_id": "ent_provider",
+        "relationship_type": "Exclusion from Indemnification",
+        "legal_significance": "The Provider is not obligated to indemnify the Company for liabilities caused by the Company’s fraud, willful misconduct, violation of Applicable Law, or gross negligence, limiting the scope of indemnification.",
+        "confidence": 1.0,
+        "evidence_quote": "except to the extent such Liabilities are caused by fraud, willful misconduct, violation of Applicable Law, or gross negligence by Company"
+      }
+    ],
+    "extractor_notes": "The clause establishes reciprocal indemnification obligations between Company and Provider, with detailed procedures for notice, defense, and settlement control, and includes standard carve-outs for fraud, willful misconduct, violation of law, and gross negligence. The clause carefully balances control over defense and settlement with the Indemnified Party's consent rights for nonmonetary relief."
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_10:10_2:Assignment_The_rights_under_this_Agreement_shall_n:26b374",
+    "source_clause_title": "10.2 Assignment.   The rights under this Agreement shall not be assignable or",
+    "contract_id": "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+    "source_page_start": 11,
+    "source_page_end": 12,
+    "clause_type_hint": "notice",
+    "entities": [
+      {
+        "id": "ent_parties",
+        "entity_type": "Contracting Parties",
+        "name": "the Parties",
+        "legal_role": "The Parties are the primary obligors and beneficiaries under the Agreement, whose rights and duties are governed by the clause.",
+        "confidence": 1.0,
+        "evidence_quote": "any Person or entity, other than the Parties hereto and their permitted successors-in-interest and permitted assignees, any rights or remedies under or by reason of this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_permitted_successors",
+        "entity_type": "Permitted Successors-in-Interest",
+        "name": "permitted successors-in-interest",
+        "legal_role": "Permitted successors-in-interest are entities legally entitled to succeed the Parties and assume their rights and obligations under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "the Parties hereto and their permitted successors-in-interest and permitted assignees",
+        "properties": {}
+      },
+      {
+        "id": "ent_permitted_assignees",
+        "entity_type": "Permitted Assignees",
+        "name": "permitted assignees",
+        "legal_role": "Permitted assignees are entities authorized to receive rights and obligations under the Agreement through assignment.",
+        "confidence": 1.0,
+        "evidence_quote": "the Parties hereto and their permitted successors-in-interest and permitted assignees",
+        "properties": {}
+      },
+      {
+        "id": "ent_secured_party",
+        "entity_type": "Secured Party",
+        "name": "Secured Party",
+        "legal_role": "A Secured Party is a creditor or entity granted a security interest in a Party's rights under the Agreement to secure obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "Company or Provider may grant to a Secured Party a security interest in its rights under this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_company_provider",
+        "entity_type": "Obligor Party",
+        "name": "Company or Provider",
+        "legal_role": "Company or Provider is a Party to the Agreement who may grant security interests and assign rights under specified conditions.",
+        "confidence": 1.0,
+        "evidence_quote": "Company or Provider may grant to a Secured Party a security interest in its rights under this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_successor",
+        "entity_type": "Successor Affiliate",
+        "name": "successor of the assigning Party",
+        "legal_role": "A successor Affiliate is an entity that may receive an assignment of the Agreement rights from a Party, subject to notice and conditions.",
+        "confidence": 1.0,
+        "evidence_quote": "to the successor of the assigning Party, if such successor is an Affiliate of such Party",
+        "properties": {}
+      },
+      {
+        "id": "ent_affiliate",
+        "entity_type": "Affiliate",
+        "name": "Affiliate of the assigning Party",
+        "legal_role": "An Affiliate is an entity related to a Party that may acquire all or controlling interest in the Party's business assets and receive an assignment.",
+        "confidence": 1.0,
+        "evidence_quote": "to an Affiliate of the assigning Party acquiring all or a controlling interest in the business assets of such Party",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_company_provider",
+        "target_id": "ent_secured_party",
+        "relationship_type": "Grant of Security Interest",
+        "legal_significance": "This relationship allows the Company or Provider to secure obligations by granting a security interest in its Agreement rights to a Secured Party, without releasing obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "Company or Provider may grant to a Secured Party a security interest in its rights under this Agreement, provided that neither the grant of any such interest, nor the foreclosure of any such interest, shall in any way release, reduce, or diminish the obligations of such Party hereunder."
+      },
+      {
+        "source_id": "ent_company_provider",
+        "target_id": "ent_successor",
+        "relationship_type": "Assignment to Successor Affiliate",
+        "legal_significance": "The Company or Provider may assign the Agreement to a successor Affiliate with 90 days prior written notice, enabling continuity of rights and obligations within affiliated entities.",
+        "confidence": 1.0,
+        "evidence_quote": "This Agreement may be assigned by a Party, with ninety (90) days’ prior written notice to the other Parties: (i) to the successor of the assigning Party, if such successor is an Affiliate of such Party"
+      },
+      {
+        "source_id": "ent_company_provider",
+        "target_id": "ent_affiliate",
+        "relationship_type": "Assignment to Affiliate Acquiring Business Assets",
+        "legal_significance": "The Company or Provider may assign the Agreement to an Affiliate acquiring all or controlling interest in its business assets, ensuring the transfer of contractual rights and duties upon such acquisition.",
+        "confidence": 1.0,
+        "evidence_quote": "This Agreement may be assigned by a Party, with ninety (90) days’ prior written notice to the other Parties: ... (ii) to an Affiliate of the assigning Party acquiring all or a controlling interest in the business assets of such Party."
+      },
+      {
+        "source_id": "ent_secured_party",
+        "target_id": "ent_company_provider",
+        "relationship_type": "Consent and Agreement Execution",
+        "legal_significance": "Upon security assignment, the assigning Party must execute a consent and agreement for the benefit of the Secured Party, formalizing the security interest and protecting the Secured Party's rights.",
+        "confidence": 1.0,
+        "evidence_quote": "In the event of such security assignment, the assigning Party will execute for the benefit of such Secured Party a consent and agreement."
+      },
+      {
+        "source_id": "ent_parties",
+        "target_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_10:10_2:Assignment_The_rights_under_this_Agreement_shall_n:26b374",
+        "relationship_type": "Consent Requirement for Assignment or Delegation",
+        "legal_significance": "The Parties must provide prior written consent for any assignment or delegation of rights or duties, which cannot be unreasonably withheld or delayed, ensuring control over contractual relationships.",
+        "confidence": 1.0,
+        "evidence_quote": "The rights under this Agreement shall not be assignable or transferrable nor the duties delegable by any Party without prior written consent of the other Parties, which consent shall not be unreasonably withheld or delayed"
+      }
+    ],
+    "extractor_notes": "The clause explicitly prohibits assignment or delegation without prior written consent, but provides specific exceptions for security interests and assignments to Affiliates or successors with notice. The clause also clarifies that security interests do not diminish obligations. The legal entities and relationships are clearly defined with no ambiguity."
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_2:Confidentiality:43c68a",
+    "source_clause_title": "4.2 Confidentiality.",
+    "contract_id": "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+    "source_page_start": 6,
+    "source_page_end": 7,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_party",
+        "entity_type": "Contracting Party",
+        "name": "Each Party",
+        "legal_role": "A Party is a signatory to the Agreement obligated to maintain confidentiality and abide by the terms of the contract.",
+        "confidence": 1.0,
+        "evidence_quote": "Each Party shall keep any information not intended for public disclosure and considered to be confidential or proprietary...",
+        "properties": {}
+      },
+      {
+        "id": "ent_confidential_information",
+        "entity_type": "Confidential Information",
+        "name": "Confidential Information",
+        "legal_role": "Confidential Information is the protected data or knowledge that Parties must keep secret and not disclose or misuse under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "information relating to the interconnection of customers to a utility's transmission or distribution systems, proprietary customer information, trade secrets, competitive information, and information about a utility's transmission or distribution system, operations, or plans for expansion (“Confidential Information”)",
+        "properties": {}
+      },
+      {
+        "id": "ent_disclosing_party",
+        "entity_type": "Disclosing Party",
+        "name": "Disclosing Party",
+        "legal_role": "The Party who provides Confidential Information to another Party and whose rights to confidentiality must be protected.",
+        "confidence": 1.0,
+        "evidence_quote": "no Party shall disclose another Party’s Confidential Information to others... unless... the receiving Party obtains the prior written consent of the disclosing Party.",
+        "properties": {}
+      },
+      {
+        "id": "ent_receiving_party",
+        "entity_type": "Receiving Party",
+        "name": "Receiving Party",
+        "legal_role": "The Party who receives Confidential Information and is bound to keep it confidential and use it only as permitted under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "no Party shall disclose another Party’s Confidential Information to others, nor shall a Party use the other Party’s Confidential Information for its own benefit... unless... the receiving Party obtains the prior written consent of the disclosing Party.",
+        "properties": {}
+      },
+      {
+        "id": "ent_governmental_authority",
+        "entity_type": "Governmental Authority",
+        "name": "Governmental Authority",
+        "legal_role": "An official body that may validly order or request disclosure of Confidential Information under applicable law.",
+        "confidence": 1.0,
+        "evidence_quote": "Confidential Information may be disclosed by a receiving Party in response to a valid order or request of a Governmental Authority...",
+        "properties": {}
+      },
+      {
+        "id": "ent_applicable_law",
+        "entity_type": "Applicable Law",
+        "name": "Applicable Law",
+        "legal_role": "The legal framework that may require disclosure of Confidential Information despite confidentiality obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "or if it is otherwise required to be disclosed by Applicable Law...",
+        "properties": {}
+      },
+      {
+        "id": "ent_internal_document_retention_policies",
+        "entity_type": "Internal Document Retention Policies",
+        "name": "Internal Document Retention Policies",
+        "legal_role": "Policies that may permit the Receiving Party to retain Confidential Information for legal, corporate governance, or regulatory compliance purposes.",
+        "confidence": 1.0,
+        "evidence_quote": "Confidential Information may be retained by the receiving Party to the extent that retention of such Confidential Information is necessary to comply with the receiving Party’s internal document retention policies aimed at legal, corporate governance, or regulatory compliance...",
+        "properties": {}
+      },
+      {
+        "id": "ent_certification_by_authorized_officer",
+        "entity_type": "Certification by Authorized Officer",
+        "name": "Certification by Authorized Officer",
+        "legal_role": "A written certification by a duly authorized officer of the Receiving Party confirming compliance with return or destruction obligations of Confidential Information.",
+        "confidence": 1.0,
+        "evidence_quote": "The receiving Party shall, upon written request of the disclosing Party, cause one of its duly authorized officers to certify in writing to the disclosing Party that the requirements... have been satisfied in full.",
+        "properties": {}
+      },
+      {
+        "id": "ent_equitable_relief",
+        "entity_type": "Equitable Relief",
+        "name": "Equitable Relief",
+        "legal_role": "A remedy available to the Disclosing Party to prevent or stop violations of confidentiality obligations, including injunctive relief.",
+        "confidence": 1.0,
+        "evidence_quote": "the disclosing Party is entitled to seek immediate equitable relief including injunctive relief prohibiting any violation of this Section 4.2...",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_party",
+        "target_id": "ent_confidential_information",
+        "relationship_type": "Obligation to Maintain Confidentiality",
+        "legal_significance": "Each Party is legally obligated to keep Confidential Information secret and not disclose or misuse it, ensuring protection of sensitive data.",
+        "confidence": 1.0,
+        "evidence_quote": "Each Party shall keep any information... considered to be confidential or proprietary... in strict confidence at all times..."
+      },
+      {
+        "source_id": "ent_receiving_party",
+        "target_id": "ent_disclosing_party",
+        "relationship_type": "Duty to Obtain Prior Written Consent",
+        "legal_significance": "The Receiving Party must obtain the Disclosing Party’s prior written consent before disclosing or using Confidential Information beyond permitted purposes.",
+        "confidence": 1.0,
+        "evidence_quote": "no Party shall disclose another Party’s Confidential Information... unless... the receiving Party obtains the prior written consent of the disclosing Party."
+      },
+      {
+        "source_id": "ent_confidential_information",
+        "target_id": "ent_governmental_authority",
+        "relationship_type": "Permitted Disclosure under Valid Governmental Order",
+        "legal_significance": "Confidential Information may be disclosed if required by a valid order or request of a Governmental Authority, providing a lawful exception to confidentiality.",
+        "confidence": 1.0,
+        "evidence_quote": "Confidential Information may be disclosed by a receiving Party in response to a valid order or request of a Governmental Authority..."
+      },
+      {
+        "source_id": "ent_confidential_information",
+        "target_id": "ent_applicable_law",
+        "relationship_type": "Permitted Disclosure under Applicable Law",
+        "legal_significance": "Applicable Law may require disclosure of Confidential Information, creating a legal exception to confidentiality obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "or if it is otherwise required to be disclosed by Applicable Law..."
+      },
+      {
+        "source_id": "ent_receiving_party",
+        "target_id": "ent_internal_document_retention_policies",
+        "relationship_type": "Retention Exception for Compliance",
+        "legal_significance": "The Receiving Party may retain Confidential Information to comply with internal policies related to legal, governance, or regulatory compliance, subject to confidentiality restrictions.",
+        "confidence": 1.0,
+        "evidence_quote": "Confidential Information may be retained by the receiving Party to the extent that retention... is necessary to comply with the receiving Party’s internal document retention policies..."
+      },
+      {
+        "source_id": "ent_receiving_party",
+        "target_id": "ent_certification_by_authorized_officer",
+        "relationship_type": "Certification Obligation upon Return or Destruction",
+        "legal_significance": "Upon written request, the Receiving Party must have an authorized officer certify in writing that Confidential Information has been returned or destroyed as required.",
+        "confidence": 1.0,
+        "evidence_quote": "The receiving Party shall... cause one of its duly authorized officers to certify in writing to the disclosing Party that the requirements... have been satisfied in full."
+      },
+      {
+        "source_id": "ent_disclosing_party",
+        "target_id": "ent_equitable_relief",
+        "relationship_type": "Right to Seek Equitable Relief",
+        "legal_significance": "The Disclosing Party has the right to seek immediate equitable remedies, including injunctive relief, to prevent or stop breaches of confidentiality.",
+        "confidence": 1.0,
+        "evidence_quote": "the disclosing Party is entitled to seek immediate equitable relief including injunctive relief prohibiting any violation of this Section 4.2..."
+      }
+    ],
+    "extractor_notes": "The clause comprehensively defines Confidential Information and sets strict confidentiality obligations on the Parties, including exceptions for legal requirements and internal compliance. It also establishes procedural rights such as certification of destruction and equitable remedies for breaches."
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_1:Code_of_Conduct:b6312d",
+    "source_clause_title": "4.1 Code of Conduct.",
+    "contract_id": "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+    "source_page_start": 5,
+    "source_page_end": 6,
+    "clause_type_hint": "confidentiality",
+    "entities": [
+      {
+        "id": "ent_providers",
+        "entity_type": "Service Provider Party",
+        "name": "Providers",
+        "legal_role": "Providers are the parties obligated to comply with the Company's Code of Conduct and to provide services under the contract, making them subject to specific conduct and training requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "Providers shall, at the Company’s expense, (i) comply with the Company’s instructions relating to adherence to Company’s Code of Conduct...",
+        "properties": {}
+      },
+      {
+        "id": "ent_company",
+        "entity_type": "Contracting Company Party",
+        "name": "Company",
+        "legal_role": "The Company is the party receiving services from Providers and is responsible for instructing Providers on the Code of Conduct and ensuring compliance with applicable laws and training.",
+        "confidence": 1.0,
+        "evidence_quote": "Providers shall, at the Company’s expense, (i) comply with the Company’s instructions relating to adherence to Company’s Code of Conduct...",
+        "properties": {}
+      },
+      {
+        "id": "ent_company_code_of_conduct",
+        "entity_type": "Code of Conduct Document",
+        "name": "Company’s Code of Conduct",
+        "legal_role": "The Company’s Code of Conduct is a binding set of behavioral and compliance standards that Providers must adhere to when performing services.",
+        "confidence": 1.0,
+        "evidence_quote": "comply with the Company’s instructions relating to adherence to Company’s Code of Conduct, if any, (a copy of which has been or will be delivered to Providers)...",
+        "properties": {}
+      },
+      {
+        "id": "ent_provider_code_of_conduct",
+        "entity_type": "Code of Conduct Document",
+        "name": "Provider’s Code of Conduct",
+        "legal_role": "The Provider’s Code of Conduct is a binding set of behavioral and compliance standards that the Company must adhere to when receiving services from Providers.",
+        "confidence": 1.0,
+        "evidence_quote": "Company shall, at the Provider’s expense, (i) comply with each Provider’s instructions relating to adherence to the Provider’s Code of Conduct (a copy of which has been or will be delivered to Company)...",
+        "properties": {}
+      },
+      {
+        "id": "ent_jurisdictional_governmental_authority",
+        "entity_type": "Jurisdictional Governmental Authority",
+        "name": "jurisdictional Governmental Authority",
+        "legal_role": "A governmental authority that may impose additional Code of Conduct requirements on either the Company or Providers, triggering compliance obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "work with the Company to comply with all additional Code of Conduct requirements imposed upon Company by a jurisdictional Governmental Authority or by Applicable Law...",
+        "properties": {}
+      },
+      {
+        "id": "ent_applicable_law",
+        "entity_type": "Applicable Law",
+        "name": "Applicable Law",
+        "legal_role": "Applicable Law refers to the legal requirements that may impose additional Code of Conduct obligations on the Company or Providers.",
+        "confidence": 1.0,
+        "evidence_quote": "work with the Company to comply with all additional Code of Conduct requirements imposed upon Company by a jurisdictional Governmental Authority or by Applicable Law...",
+        "properties": {}
+      },
+      {
+        "id": "ent_training_requirement",
+        "entity_type": "Training Obligation",
+        "name": "Training in Code of Conduct requirements",
+        "legal_role": "A contractual obligation requiring employees of Providers or Company to receive training on the applicable Code of Conduct, including handling confidential information and avoiding inappropriate cross-subsidization.",
+        "confidence": 1.0,
+        "evidence_quote": "at Company’s request, ensure that each employee of Providers that are providing Services receives training in the Company’s Code of Conduct requirements, including training with respect to handling of confidential information and avoidance of inappropriate cross subsidization...",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_providers",
+        "target_id": "ent_company_code_of_conduct",
+        "relationship_type": "Obligation to Comply with Code of Conduct",
+        "legal_significance": "Providers are contractually obligated to comply with the Company’s Code of Conduct, which governs their conduct while providing services.",
+        "confidence": 1.0,
+        "evidence_quote": "Providers shall, at the Company’s expense, (i) comply with the Company’s instructions relating to adherence to Company’s Code of Conduct..."
+      },
+      {
+        "source_id": "ent_company",
+        "target_id": "ent_provider_code_of_conduct",
+        "relationship_type": "Obligation to Comply with Code of Conduct",
+        "legal_significance": "The Company is contractually obligated to comply with the Provider’s Code of Conduct when receiving services, ensuring mutual adherence to conduct standards.",
+        "confidence": 1.0,
+        "evidence_quote": "Company shall, at the Provider’s expense, (i) comply with each Provider’s instructions relating to adherence to the Provider’s Code of Conduct..."
+      },
+      {
+        "source_id": "ent_company",
+        "target_id": "ent_providers",
+        "relationship_type": "Duty to Inform of Additional Code of Conduct Requirements",
+        "legal_significance": "The Company must inform Providers of any additional Code of Conduct requirements imposed by Governmental Authorities or Applicable Law, enabling Providers to comply accordingly.",
+        "confidence": 1.0,
+        "evidence_quote": "work with the Company to comply with all additional Code of Conduct requirements imposed upon Company by a jurisdictional Governmental Authority or by Applicable Law (provided Company informs Providers of such additional requirements)..."
+      },
+      {
+        "source_id": "ent_providers",
+        "target_id": "ent_company",
+        "relationship_type": "Duty to Inform of Additional Code of Conduct Requirements",
+        "legal_significance": "Providers must inform the Company of any additional Code of Conduct requirements imposed by Governmental Authorities or Applicable Law, enabling the Company to comply accordingly.",
+        "confidence": 1.0,
+        "evidence_quote": "work with the Provider to comply with all additional Code of Conduct requirements imposed upon Provider by a jurisdictional Governmental Authority or by other Applicable Law (provided Provider informs Company of such additional requirements)..."
+      },
+      {
+        "source_id": "ent_company",
+        "target_id": "ent_training_requirement",
+        "relationship_type": "Right to Request Employee Training",
+        "legal_significance": "The Company has the right to require Providers to train their employees on the Company’s Code of Conduct, ensuring compliance and proper handling of confidential information.",
+        "confidence": 1.0,
+        "evidence_quote": "at Company’s request, ensure that each employee of Providers that are providing Services receives training in the Company’s Code of Conduct requirements..."
+      },
+      {
+        "source_id": "ent_providers",
+        "target_id": "ent_training_requirement",
+        "relationship_type": "Right to Request Employee Training",
+        "legal_significance": "Providers have the right to require the Company to train its employees on the Provider’s Code of Conduct, ensuring compliance and proper handling of confidential information.",
+        "confidence": 1.0,
+        "evidence_quote": "at the Provider’s request, ensure that each employee of Company receiving Services receives training in the Providers’ applicable Code of Conduct requirements..."
+      },
+      {
+        "source_id": "ent_company",
+        "target_id": "ent_providers",
+        "relationship_type": "Payment Obligation for Compliance Costs",
+        "legal_significance": "The Company is responsible for paying the expenses related to Providers’ compliance with the Company’s Code of Conduct and related training.",
+        "confidence": 1.0,
+        "evidence_quote": "Providers shall, at the Company’s expense, (i) comply with the Company’s instructions..."
+      },
+      {
+        "source_id": "ent_providers",
+        "target_id": "ent_company",
+        "relationship_type": "Payment Obligation for Compliance Costs",
+        "legal_significance": "Providers are responsible for paying the expenses related to the Company’s compliance with the Provider’s Code of Conduct and related training.",
+        "confidence": 1.0,
+        "evidence_quote": "Company shall, at the Provider’s expense, (i) comply with each Provider’s instructions..."
+      }
+    ],
+    "extractor_notes": "The clause establishes reciprocal obligations between the Company and Providers to comply with each other's Codes of Conduct, including mutual rights to require employee training and reciprocal payment obligations for compliance costs. The clause also includes a duty to inform the other party of additional legal or governmental Code of Conduct requirements, ensuring ongoing compliance."
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_9:9_1:Notices_All_notices_required_or_permitted_under_th:647234",
+    "source_clause_title": "9.1 Notices.  All notices required or permitted  under this Agreement shall be in",
+    "contract_id": "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+    "source_page_start": 10,
+    "source_page_end": 11,
+    "clause_type_hint": "notice",
+    "entities": [
+      {
+        "id": "ent_company_NextEraEnergyTransmissionMidAtlanticLLC",
+        "entity_type": "Notified Party",
+        "name": "NextEra Energy Transmission MidAtlantic, LLC",
+        "legal_role": "This entity is a party to the Agreement designated to receive notices, making it legally significant for communication and contractual obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "Company: NextEra Energy Transmission MidAtlantic, LLC \n700 Universe Boulevard \nJuno Beach, Florida 33408-0428 \nAttention: President",
+        "properties": {}
+      },
+      {
+        "id": "ent_copy_recipient_NextEraEnergyTransmissionMidAtlanticLLC_GeneralCounsel",
+        "entity_type": "Copy Notice Recipient",
+        "name": "NextEra Energy Transmission MidAtlantic, LLC General Counsel",
+        "legal_role": "This entity is designated to receive copies of notices, ensuring proper internal communication and legal oversight.",
+        "confidence": 1.0,
+        "evidence_quote": "With copy to: NextEra Energy Transmission MidAtlantic, LLC \n700 Universe Boulevard. \nJuno Beach, Florida 33408-0428 \nAttention: General Counsel \nTelephone: 561-691-7126",
+        "properties": {}
+      },
+      {
+        "id": "ent_company_NEER",
+        "entity_type": "Notified Party",
+        "name": "NextEra Energy Resources, LLC",
+        "legal_role": "This entity is a party to the Agreement designated to receive notices, which is legally significant for contractual communication.",
+        "confidence": 1.0,
+        "evidence_quote": "NEER: NextEra Energy Resources, LLC \n700 Universe Boulevard \nJuno Beach, Florida 33408-0428 \nAttention: Vice President, Business Management",
+        "properties": {}
+      },
+      {
+        "id": "ent_copy_recipient_NEER_GeneralCounsel",
+        "entity_type": "Copy Notice Recipient",
+        "name": "NextEra Energy Energy Resources, LLC General Counsel",
+        "legal_role": "This entity is designated to receive copies of notices, ensuring legal oversight and proper communication within the company.",
+        "confidence": 1.0,
+        "evidence_quote": "With copy to: NextEra Energy Energy Resources, LLC \n700 Universe Boulevard. \nJuno Beach, Florida 33408-0428 \nAttention: General Counsel \nTelephone: 561-691-7126",
+        "properties": {}
+      },
+      {
+        "id": "ent_company_NEET",
+        "entity_type": "Notified Party",
+        "name": "NextEra Energy Transmission, LLC",
+        "legal_role": "This entity is a party to the Agreement designated to receive notices, which is legally significant for contractual communication.",
+        "confidence": 1.0,
+        "evidence_quote": "NEET: NextEra Energy Transmission, LLC \n700 Universe Boulevard \nJuno Beach, Florida 33408-0428 \nAttention: President",
+        "properties": {}
+      },
+      {
+        "id": "ent_copy_recipient_NEET_GeneralCounsel",
+        "entity_type": "Copy Notice Recipient",
+        "name": "NextEra Energy Transmission, LLC General Counsel",
+        "legal_role": "This entity is designated to receive copies of notices, ensuring legal oversight and proper communication within the company.",
+        "confidence": 1.0,
+        "evidence_quote": "With copy to: \nNextEra Energy Transmission, LLC \n700 Universe Boulevard. \nJuno Beach, Florida 33408-0428 \nAttention: General Counsel \nTelephone: 561-691-7126",
+        "properties": {}
+      },
+      {
+        "id": "ent_company_FPL",
+        "entity_type": "Notified Party",
+        "name": "Florida Power & Light Company",
+        "legal_role": "This entity is a party to the Agreement designated to receive notices, which is legally significant for contractual communication.",
+        "confidence": 1.0,
+        "evidence_quote": "FPL: Florida Power & Light Company \n700 Universe Boulevard \nJuno Beach, Florida 33408-0428 \nAttention:  Vice President, Transmission & Substation \nTelephone: 561-904-3406",
+        "properties": {}
+      },
+      {
+        "id": "ent_copy_recipient_FPL_GeneralCounsel",
+        "entity_type": "Copy Notice Recipient",
+        "name": "Florida Power & Light Company General Counsel",
+        "legal_role": "This entity is designated to receive copies of notices, ensuring legal oversight and proper communication within the company.",
+        "confidence": 1.0,
+        "evidence_quote": "With copy to: Florida Power & Light Company \n700 Universe Boulevard \nJuno Beach, Florida 33408-0428 \nAttention: General Counsel \nTelephone: 561-691-7101",
+        "properties": {}
+      },
+      {
+        "id": "ent_company_LoneStar",
+        "entity_type": "Notified Party",
+        "name": "Lone Star Transmission, LLC",
+        "legal_role": "This entity is a party to the Agreement designated to receive notices, which is legally significant for contractual communication.",
+        "confidence": 1.0,
+        "evidence_quote": "Lone Star:  Lone Star Transmission, LLC \n5920 West William Cannon Drive, Building 2 \nAustin, Texas 78749 \nAttention: President \nTelephone: 512-236-3142",
+        "properties": {}
+      },
+      {
+        "id": "ent_copy_recipient_LoneStar_GeneralCounsel",
+        "entity_type": "Copy Notice Recipient",
+        "name": "Lone Star Transmission, LLC General Counsel",
+        "legal_role": "This entity is designated to receive copies of notices, ensuring legal oversight and proper communication within the company.",
+        "confidence": 1.0,
+        "evidence_quote": "With copy to: Lone Star Transmission Transmission, LLC \n700 Universe Boulevard. \nJuno Beach, Florida 33408-0428 \nAttention: General Counsel \nTelephone: 561-691-7126",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_9:9_1:Notices_All_notices_required_or_permitted_under_th:647234",
+        "target_id": "ent_company_NextEraEnergyTransmissionMidAtlanticLLC",
+        "relationship_type": "Notice Recipient Designation",
+        "legal_significance": "This clause designates NextEra Energy Transmission MidAtlantic, LLC as a party to receive notices, which is essential for valid communication under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "All notices required or permitted under this Agreement shall be ... to Company or Provider, as the case may be, at their respective addresses set forth below"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_9:9_1:Notices_All_notices_required_or_permitted_under_th:647234",
+        "target_id": "ent_copy_recipient_NextEraEnergyTransmissionMidAtlanticLLC_GeneralCounsel",
+        "relationship_type": "Copy Notice Recipient Designation",
+        "legal_significance": "The clause requires copies of notices to be sent to the General Counsel of NextEra Energy Transmission MidAtlantic, LLC, ensuring legal oversight.",
+        "confidence": 1.0,
+        "evidence_quote": "With copy to: NextEra Energy Transmission MidAtlantic, LLC ... Attention: General Counsel"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_9:9_1:Notices_All_notices_required_or_permitted_under_th:647234",
+        "target_id": "ent_company_NEER",
+        "relationship_type": "Notice Recipient Designation",
+        "legal_significance": "This clause designates NextEra Energy Resources, LLC as a party to receive notices, which is essential for valid communication under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "All notices required or permitted under this Agreement shall be ... to Company or Provider, as the case may be, at their respective addresses set forth below"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_9:9_1:Notices_All_notices_required_or_permitted_under_th:647234",
+        "target_id": "ent_copy_recipient_NEER_GeneralCounsel",
+        "relationship_type": "Copy Notice Recipient Designation",
+        "legal_significance": "The clause requires copies of notices to be sent to the General Counsel of NextEra Energy Resources, LLC, ensuring legal oversight.",
+        "confidence": 1.0,
+        "evidence_quote": "With copy to: NextEra Energy Energy Resources, LLC ... Attention: General Counsel"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_9:9_1:Notices_All_notices_required_or_permitted_under_th:647234",
+        "target_id": "ent_company_NEET",
+        "relationship_type": "Notice Recipient Designation",
+        "legal_significance": "This clause designates NextEra Energy Transmission, LLC as a party to receive notices, which is essential for valid communication under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "All notices required or permitted under this Agreement shall be ... to Company or Provider, as the case may be, at their respective addresses set forth below"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_9:9_1:Notices_All_notices_required_or_permitted_under_th:647234",
+        "target_id": "ent_copy_recipient_NEET_GeneralCounsel",
+        "relationship_type": "Copy Notice Recipient Designation",
+        "legal_significance": "The clause requires copies of notices to be sent to the General Counsel of NextEra Energy Transmission, LLC, ensuring legal oversight.",
+        "confidence": 1.0,
+        "evidence_quote": "With copy to: NextEra Energy Transmission, LLC ... Attention: General Counsel"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_9:9_1:Notices_All_notices_required_or_permitted_under_th:647234",
+        "target_id": "ent_company_FPL",
+        "relationship_type": "Notice Recipient Designation",
+        "legal_significance": "This clause designates Florida Power & Light Company as a party to receive notices, which is essential for valid communication under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "All notices required or permitted under this Agreement shall be ... to Company or Provider, as the case may be, at their respective addresses set forth below"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_9:9_1:Notices_All_notices_required_or_permitted_under_th:647234",
+        "target_id": "ent_copy_recipient_FPL_GeneralCounsel",
+        "relationship_type": "Copy Notice Recipient Designation",
+        "legal_significance": "The clause requires copies of notices to be sent to the General Counsel of Florida Power & Light Company, ensuring legal oversight.",
+        "confidence": 1.0,
+        "evidence_quote": "With copy to: Florida Power & Light Company ... Attention: General Counsel"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_9:9_1:Notices_All_notices_required_or_permitted_under_th:647234",
+        "target_id": "ent_company_LoneStar",
+        "relationship_type": "Notice Recipient Designation",
+        "legal_significance": "This clause designates Lone Star Transmission, LLC as a party to receive notices, which is essential for valid communication under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "All notices required or permitted under this Agreement shall be ... to Company or Provider, as the case may be, at their respective addresses set forth below"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_9:9_1:Notices_All_notices_required_or_permitted_under_th:647234",
+        "target_id": "ent_copy_recipient_LoneStar_GeneralCounsel",
+        "relationship_type": "Copy Notice Recipient Designation",
+        "legal_significance": "The clause requires copies of notices to be sent to the General Counsel of Lone Star Transmission, LLC, ensuring legal oversight.",
+        "confidence": 1.0,
+        "evidence_quote": "With copy to: Lone Star Transmission Transmission, LLC ... Attention: General Counsel"
+      }
+    ],
+    "extractor_notes": "The clause explicitly defines the method and addresses for notices, including primary recipients and copy recipients, which is critical for ensuring valid and effective communication under the Agreement. Multiple entities are designated as notice recipients and copy recipients, each with specific attention lines and contact details."
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_2:2_2:Termination_This_Agreement_may_be_terminated_witho:c603e9",
+    "source_clause_title": "2.2 Termination.  This Agreement may be terminated without Cause by",
+    "contract_id": "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+    "source_page_start": 4,
+    "source_page_end": 4,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_company",
+        "entity_type": "Contracting Party - Company",
+        "name": "Company",
+        "legal_role": "The Company is a contracting party with the right to terminate the Agreement without cause upon 180 days’ prior written notice to Providers.",
+        "confidence": 1.0,
+        "evidence_quote": "Company upon 180 days’ prior writ ten notice to Providers.",
+        "properties": {}
+      },
+      {
+        "id": "ent_providers",
+        "entity_type": "Contracting Party - Providers",
+        "name": "Providers",
+        "legal_role": "Providers are contracting parties who may terminate the Agreement under specified conditions upon 60 days’ prior written notice.",
+        "confidence": 1.0,
+        "evidence_quote": "Providers may only terminate upon sixty (60) days prior written notice, if, and only if: ...",
+        "properties": {}
+      },
+      {
+        "id": "ent_affiliate_relationship",
+        "entity_type": "Affiliate Relationship",
+        "name": "Affiliate Relationship between Company and Providers",
+        "legal_role": "The existence or cessation of an Affiliate relationship between Company and Providers is a condition precedent for Providers’ termination right.",
+        "confidence": 1.0,
+        "evidence_quote": "(i) Company is no longer an Affiliate of Providers",
+        "properties": {}
+      },
+      {
+        "id": "ent_secured_parties",
+        "entity_type": "Secured Parties under Financing Agreements",
+        "name": "Secured Parties",
+        "legal_role": "Secured Parties have remedies under Financing Agreements that, if exercised causing Company to cease ownership of assets covered by the Agreement, trigger Providers’ termination right.",
+        "confidence": 1.0,
+        "evidence_quote": "(ii) by reason of an exercise of any remedies by the Secured Parties under any Financing Agreements, Company ceases to own all of the assets and properties covered by this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_financing_agreements",
+        "entity_type": "Financing Agreements",
+        "name": "Financing Agreements",
+        "legal_role": "Financing Agreements grant Secured Parties remedies that can affect Company’s ownership of assets covered by the Agreement, impacting termination rights.",
+        "confidence": 1.0,
+        "evidence_quote": "exercise of any remedies by the Secured Parties under any Financing Agreements",
+        "properties": {}
+      },
+      {
+        "id": "ent_applicable_law",
+        "entity_type": "Applicable Law",
+        "name": "Applicable Law",
+        "legal_role": "Applicable Law may require a Provider to terminate the Agreement, constituting a lawful ground for termination by Providers.",
+        "confidence": 1.0,
+        "evidence_quote": "(iii) a Provider is required to terminate due to Applicable Law",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_company",
+        "target_id": "ent_providers",
+        "relationship_type": "Termination Notice Obligation",
+        "legal_significance": "Company must provide 180 days’ prior written notice to Providers to terminate the Agreement without cause, establishing a procedural requirement for termination.",
+        "confidence": 1.0,
+        "evidence_quote": "Company upon 180 days’ prior writ ten notice to Providers."
+      },
+      {
+        "source_id": "ent_providers",
+        "target_id": "ent_company",
+        "relationship_type": "Conditional Termination Right",
+        "legal_significance": "Providers may terminate the Agreement upon 60 days’ prior written notice only if one of three specific conditions related to Company’s status or law applies, limiting Providers’ termination rights.",
+        "confidence": 1.0,
+        "evidence_quote": "Providers may only terminate upon sixty (60) days prior written notice, if, and only if: (i) Company is no longer an Affiliate of Providers, or (ii) ... or (iii) a Provider is required to terminate due to Applicable Law."
+      },
+      {
+        "source_id": "ent_secured_parties",
+        "target_id": "ent_company",
+        "relationship_type": "Remedies Impacting Asset Ownership",
+        "legal_significance": "Exercise of remedies by Secured Parties under Financing Agreements can cause Company to cease ownership of assets covered by the Agreement, triggering Providers’ termination right.",
+        "confidence": 1.0,
+        "evidence_quote": "by reason of an exercise of any remedies by the Secured Parties under any Financing Agreements, Company ceases to own all of the assets and properties covered by this Agreement"
+      },
+      {
+        "source_id": "ent_financing_agreements",
+        "target_id": "ent_secured_parties",
+        "relationship_type": "Grant of Remedies",
+        "legal_significance": "Financing Agreements grant Secured Parties remedies that can affect Company’s ownership of assets, which is relevant to termination conditions.",
+        "confidence": 1.0,
+        "evidence_quote": "exercise of any remedies by the Secured Parties under any Financing Agreements"
+      },
+      {
+        "source_id": "ent_applicable_law",
+        "target_id": "ent_providers",
+        "relationship_type": "Mandatory Termination Trigger",
+        "legal_significance": "Applicable Law may require a Provider to terminate the Agreement, creating a mandatory legal ground for termination by Providers.",
+        "confidence": 1.0,
+        "evidence_quote": "a Provider is required to terminate due to Applicable Law"
+      }
+    ],
+    "extractor_notes": "The clause explicitly sets asymmetric termination rights: Company may terminate without cause with longer notice, while Providers’ termination rights are conditional and limited to specific events, including changes in affiliation, asset ownership due to secured party remedies, or legal requirements."
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_3:3_1:Corporate_Support_Services_Shared_Resources_and_Op:883122",
+    "source_clause_title": "3.1 Corporate Support Services, Shared Resources, and Operations and",
+    "contract_id": "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+    "source_page_start": 4,
+    "source_page_end": 5,
+    "clause_type_hint": "liability",
+    "entities": [
+      {
+        "id": "ent_corporate_support_services",
+        "entity_type": "Contractual Service Obligation",
+        "name": "Corporate Support Services",
+        "legal_role": "These are the services that Providers are contractually obligated to perform under the Agreement as described in Exhibit A.",
+        "confidence": 1.0,
+        "evidence_quote": "The Corporate Support Services to be performed under this Agreement shall be as set forth and described in Exhibit A to this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_shared_resources",
+        "entity_type": "Contractual Resource Provision Obligation",
+        "name": "Shared Resources",
+        "legal_role": "These are the resources that Providers are contractually obligated to provide under the Agreement as described in Exhibit B.",
+        "confidence": 1.0,
+        "evidence_quote": "The Shared Resources to be provided under this Agreement shall be as set forth and described in Exhibit B to this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_operations_and_maintenance_services",
+        "entity_type": "Contractual Service Obligation",
+        "name": "Operations and Maintenance Services",
+        "legal_role": "These are the operations and maintenance services that Providers are contractually obligated to provide under the Agreement as described in Exhibit C.",
+        "confidence": 1.0,
+        "evidence_quote": "Operations and Maintenance Services to be provided under this Agreement shall be as set forth and described in Exhibit C to this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_providers",
+        "entity_type": "Contractual Service Provider",
+        "name": "Providers",
+        "legal_role": "The party or parties obligated to provide the Corporate Support Services, Shared Resources, and Operations and Maintenance Services under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Providers shall provide and perform the Corporate Support Services consistent with the terms hereof.",
+        "properties": {}
+      },
+      {
+        "id": "ent_company",
+        "entity_type": "Contractual Service Recipient",
+        "name": "Company",
+        "legal_role": "The party entitled to obtain the Services under the Agreement on an as-needed basis.",
+        "confidence": 1.0,
+        "evidence_quote": "Company may obtain the Services to be performed and provided under this Agreement from time to time on an as-needed basis.",
+        "properties": {}
+      },
+      {
+        "id": "ent_services",
+        "entity_type": "Contractual Services",
+        "name": "Services",
+        "legal_role": "The collective term for Corporate Support Services, Shared Resources, and Operations and Maintenance Services to be performed or provided under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "The Parties shall perform and provide the Services under this Agreement in a professional and prudent manner",
+        "properties": {}
+      },
+      {
+        "id": "ent_effective_date",
+        "entity_type": "Contractual Commencement Date",
+        "name": "Effective Date",
+        "legal_role": "The date from which Providers must begin providing the Services and Shared Resources under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "From and after the Effective Date, Providers shall provide and perform the Corporate Support Services consistent with the terms hereof.",
+        "properties": {}
+      },
+      {
+        "id": "ent_article_7",
+        "entity_type": "Contractual Liability Limitation Provision",
+        "name": "Article 7",
+        "legal_role": "The provision that limits Liability under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Liability under this Agreement is limited as provided in Article 7 of this Agreement.",
+        "properties": {}
+      },
+      {
+        "id": "ent_applicable_law",
+        "entity_type": "Legal Compliance Requirement",
+        "name": "Applicable Law or Governmental Authority",
+        "legal_role": "The legal framework and authorities that govern and may restrict the performance or provision of Services under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "any Services performed or provided under this Agreement are not prohibited by Applicable Law or Governmental Authority",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_providers",
+        "target_id": "ent_corporate_support_services",
+        "relationship_type": "Service Performance Obligation",
+        "legal_significance": "Providers are contractually obligated to perform the Corporate Support Services as described in Exhibit A, establishing their duty under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Providers shall provide and perform the Corporate Support Services consistent with the terms hereof."
+      },
+      {
+        "source_id": "ent_providers",
+        "target_id": "ent_shared_resources",
+        "relationship_type": "Resource Provision Obligation",
+        "legal_significance": "Providers are contractually obligated to provide the Shared Resources as described in Exhibit B, defining their resource provision duties.",
+        "confidence": 1.0,
+        "evidence_quote": "Providers shall provide the Shared Resources consistent with the terms hereof."
+      },
+      {
+        "source_id": "ent_providers",
+        "target_id": "ent_operations_and_maintenance_services",
+        "relationship_type": "Service Performance Obligation",
+        "legal_significance": "Providers are contractually obligated to provide the Operations and Maintenance Services as described in Exhibit C, specifying their operational duties.",
+        "confidence": 1.0,
+        "evidence_quote": "Providers shall provide the Operations and Maintenance Services consistent with the terms hereof."
+      },
+      {
+        "source_id": "ent_company",
+        "target_id": "ent_services",
+        "relationship_type": "Service Procurement Right",
+        "legal_significance": "Company has the right to obtain Services on an as-needed basis but is not obligated to procure any minimum amount, defining the flexibility of service procurement.",
+        "confidence": 1.0,
+        "evidence_quote": "Company may obtain the Services to be performed and provided under this Agreement from time to time on an as-needed basis."
+      },
+      {
+        "source_id": "ent_parties",
+        "target_id": "ent_services",
+        "relationship_type": "Service Performance Standard Obligation",
+        "legal_significance": "The Parties must perform and provide the Services in a professional and prudent manner consistent with standard industry practices, establishing the quality standard for performance.",
+        "confidence": 1.0,
+        "evidence_quote": "The Parties shall perform and provide the Services under this Agreement in a professional and prudent manner in accordance with standard industry practices"
+      },
+      {
+        "source_id": "ent_liability",
+        "target_id": "ent_article_7",
+        "relationship_type": "Liability Limitation Reference",
+        "legal_significance": "Liability under the Agreement is limited as set forth in Article 7, which legally caps or restricts the extent of liability.",
+        "confidence": 1.0,
+        "evidence_quote": "Liability under this Agreement is limited as provided in Article 7 of this Agreement."
+      },
+      {
+        "source_id": "ent_services",
+        "target_id": "ent_applicable_law",
+        "relationship_type": "Legal Compliance Condition",
+        "legal_significance": "Services performed or provided must not violate Applicable Law or Governmental Authority restrictions, ensuring lawful performance.",
+        "confidence": 1.0,
+        "evidence_quote": "any Services performed or provided under this Agreement are not prohibited by Applicable Law or Governmental Authority"
+      }
+    ],
+    "extractor_notes": "The clause defines multiple categories of services and resources to be provided by Providers, references Exhibits for detailed descriptions, and establishes performance standards and legal compliance requirements. It also clarifies that no minimum service procurement is required and that liability is limited per Article 7."
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_3:Compliance_with_Law_In_the_performance_of_this_Agr:adbbf3",
+    "source_clause_title": "4.3  Compliance with Law.   In the performance of this Agreement, each Party",
+    "contract_id": "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+    "source_page_start": 7,
+    "source_page_end": 7,
+    "clause_type_hint": "reporting_obligation",
+    "entities": [
+      {
+        "id": "ent_party",
+        "entity_type": "Contracting Party",
+        "name": "each Party",
+        "legal_role": "Each Party is a contracting entity obligated to comply with applicable laws and bear costs for compliance with its own interpretations of such laws.",
+        "confidence": 1.0,
+        "evidence_quote": "each Party shall comply with all Applicable Laws, Governmental Authority, and Governmental Approvals",
+        "properties": {}
+      },
+      {
+        "id": "ent_applicable_laws",
+        "entity_type": "Applicable Laws",
+        "name": "Applicable Laws",
+        "legal_role": "Applicable Laws are the legal requirements that each Party must comply with in performing the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "shall comply with all Applicable Laws",
+        "properties": {}
+      },
+      {
+        "id": "ent_governmental_authority",
+        "entity_type": "Governmental Authority",
+        "name": "Governmental Authority",
+        "legal_role": "Governmental Authority refers to the official bodies whose laws and approvals govern the Parties' performance under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "shall comply with all Applicable Laws, Governmental Authority",
+        "properties": {}
+      },
+      {
+        "id": "ent_governmental_approvals",
+        "entity_type": "Governmental Approvals",
+        "name": "Governmental Approvals",
+        "legal_role": "Governmental Approvals are the official permissions required from authorities that the Parties must obtain or comply with.",
+        "confidence": 1.0,
+        "evidence_quote": "shall comply with all Applicable Laws, Governmental Authority, and Governmental Approvals",
+        "properties": {}
+      },
+      {
+        "id": "ent_code_of_conduct",
+        "entity_type": "Code of Conduct Interpretation",
+        "name": "interpretation of Applicable Laws as they pertain to the Code of Conduct",
+        "legal_role": "The interpretation of Applicable Laws related to the Code of Conduct is exclusively the responsibility of the relevant Party, affecting compliance obligations and cost allocation.",
+        "confidence": 1.0,
+        "evidence_quote": "interpretation of Applicable Laws as they pert ain to the Code of Conduct or the operation of a Party shall be the ex clusive responsibility of such Party",
+        "properties": {}
+      },
+      {
+        "id": "ent_company_or_providers",
+        "entity_type": "Company or Providers",
+        "name": "Company or Providers",
+        "legal_role": "Company or Providers are entities that may be requested by a Party to comply with that Party's interpretation of Applicable Laws, with the requesting Party bearing associated costs.",
+        "confidence": 1.0,
+        "evidence_quote": "to the extent a Party requests that Company or Providers, as applicable, comply with any such interpretation, such Party shall bear the expense of all costs associated with such compliance",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_party",
+        "target_id": "ent_applicable_laws",
+        "relationship_type": "Compliance Obligation",
+        "legal_significance": "Each Party is legally obligated to comply with all Applicable Laws in performing the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "each Party shall comply with all Applicable Laws"
+      },
+      {
+        "source_id": "ent_party",
+        "target_id": "ent_governmental_authority",
+        "relationship_type": "Compliance Obligation",
+        "legal_significance": "Each Party must comply with requirements imposed by Governmental Authorities as part of their contractual obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "shall comply with all Applicable Laws, Governmental Authority"
+      },
+      {
+        "source_id": "ent_party",
+        "target_id": "ent_governmental_approvals",
+        "relationship_type": "Compliance Obligation",
+        "legal_significance": "Each Party must obtain or comply with Governmental Approvals necessary for performance under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "shall comply with all Applicable Laws, Governmental Authority, and Governmental Approvals"
+      },
+      {
+        "source_id": "ent_party",
+        "target_id": "ent_code_of_conduct",
+        "relationship_type": "Exclusive Interpretation Responsibility",
+        "legal_significance": "Each Party exclusively controls the interpretation of Applicable Laws as they relate to its Code of Conduct or operations, defining its own compliance scope.",
+        "confidence": 1.0,
+        "evidence_quote": "interpretation of Applicable Laws as they pert ain to the Code of Conduct or the operation of a Party shall be the ex clusive responsibility of such Party"
+      },
+      {
+        "source_id": "ent_party",
+        "target_id": "ent_company_or_providers",
+        "relationship_type": "Cost Bearing for Requested Compliance",
+        "legal_significance": "If a Party requests Company or Providers to comply with its interpretation of Applicable Laws, that Party must bear all associated costs, allocating financial responsibility.",
+        "confidence": 1.0,
+        "evidence_quote": "to the extent a Party requests that Company or Providers, as applicable, comply with any such interpretation, such Party shall bear the expense of all costs associated with such compliance"
+      },
+      {
+        "source_id": "ent_party",
+        "target_id": "ent_applicable_laws",
+        "relationship_type": "Self-Determination of Legal Requirements",
+        "legal_significance": "Each Party is responsible for determining the laws and legal requirements applicable to its own activities under the Agreement, ensuring independent legal compliance assessment.",
+        "confidence": 1.0,
+        "evidence_quote": "each Party hereto shall be responsible to determin e for itself the laws, ordinances, regulations, or other legal requirements imposed upon its activities hereunder"
+      }
+    ],
+    "extractor_notes": "The clause emphasizes each Party's independent responsibility for legal compliance and cost bearing for compliance with its own interpretations, highlighting a decentralized compliance framework."
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_6:6_1:Compensation:c76494",
+    "source_clause_title": "6.1 Compensation.",
+    "contract_id": "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+    "source_page_start": 7,
+    "source_page_end": 8,
+    "clause_type_hint": "payment",
+    "entities": [
+      {
+        "id": "ent_services",
+        "entity_type": "Contracted Services",
+        "name": "Services provided under this Agreement",
+        "legal_role": "These are the specific services to be performed under the Agreement, which determine the scope of compensation and obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "The Services provided under this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_company",
+        "entity_type": "Company (Service Recipient)",
+        "name": "Company",
+        "legal_role": "The party receiving the Services and responsible for paying compensation under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "The Services provided under this Agreement, and the compensation paid therefor, shall not result in subsidization of the Providers by the Company nor a subsidization of the Company by the Providers.",
+        "properties": {}
+      },
+      {
+        "id": "ent_providers",
+        "entity_type": "Providers (Service Providers)",
+        "name": "Providers",
+        "legal_role": "The party or parties providing the Services under the Agreement and entitled to receive compensation.",
+        "confidence": 1.0,
+        "evidence_quote": "The Services provided under this Agreement, and the compensation paid therefor, shall not result in subsidization of the Providers by the Company nor a subsidization of the Company by the Providers.",
+        "properties": {}
+      },
+      {
+        "id": "ent_term",
+        "entity_type": "Contract Term",
+        "name": "Term of this Agreement",
+        "legal_role": "The duration during which Services are performed and compensation is calculated.",
+        "confidence": 1.0,
+        "evidence_quote": "As compensation for performing any Services prior to the end of the Term of this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_actual_direct_costs",
+        "entity_type": "Actual Direct Costs",
+        "name": "actual direct costs of the Service",
+        "legal_role": "The measurable direct expenses incurred in providing the Services, which form the basis for compensation.",
+        "confidence": 1.0,
+        "evidence_quote": "Company shall be charged the actual direct costs of the Service",
+        "properties": {}
+      },
+      {
+        "id": "ent_indirect_and_overhead_costs",
+        "entity_type": "Indirect and Overhead Costs",
+        "name": "reasonable allocation of indirect and overhead costs",
+        "legal_role": "Allocated indirect and overhead expenses related to providing the Services, included in compensation calculation.",
+        "confidence": 1.0,
+        "evidence_quote": "plus a reasonable allocation of indirect and overhead costs in accordance with Exhibits A1, B1, C1, and D",
+        "properties": {}
+      },
+      {
+        "id": "ent_exhibits",
+        "entity_type": "Contract Exhibits",
+        "name": "Exhibits A1, B1, C1, and D",
+        "legal_role": "Contract attachments that specify the methodology for allocating indirect and overhead costs.",
+        "confidence": 1.0,
+        "evidence_quote": "in accordance with Exhibits A1, B1, C1, and D",
+        "properties": {}
+      },
+      {
+        "id": "ent_applicable_law",
+        "entity_type": "Applicable Law or Governmental Authority",
+        "name": "Applicable Law or Governmental Authority",
+        "legal_role": "Legal or regulatory requirements that govern the calculation and payment of compensation.",
+        "confidence": 1.0,
+        "evidence_quote": "and as required by Applicable Law or Governmental Authority",
+        "properties": {}
+      },
+      {
+        "id": "ent_per_unit_charges",
+        "entity_type": "Per Unit Charges",
+        "name": "per unit charges for certain Services",
+        "legal_role": "Alternative pricing method for Services that must be reconciled to actual costs annually.",
+        "confidence": 1.0,
+        "evidence_quote": "Nothing in this Section 6.1 is intended to prohibit the Parties from agreeing to per unit charges for certain Services",
+        "properties": {}
+      },
+      {
+        "id": "ent_true_up",
+        "entity_type": "Annual True-Up Mechanism",
+        "name": "true-up to actual costs on at least an annual basis",
+        "legal_role": "A reconciliation process ensuring that payments equal actual costs annually, preventing over- or under-payment.",
+        "confidence": 1.0,
+        "evidence_quote": "the per unit prices billed shall be trued-up to actual costs on at least an annual basis",
+        "properties": {}
+      },
+      {
+        "id": "ent_party_receiving_services",
+        "entity_type": "Party Receiving Services",
+        "name": "Party receiving the Services",
+        "legal_role": "The party obligated to pay compensation equal to actual costs for the Services received.",
+        "confidence": 1.0,
+        "evidence_quote": "so that, on an annual basis, the Party receiving the Services shall pay no more and no less than the actual direct and indirect costs and expenses",
+        "properties": {}
+      },
+      {
+        "id": "ent_affiliates",
+        "entity_type": "Affiliates of Provider",
+        "name": "other Affiliates",
+        "legal_role": "Entities related to the Provider to whom comparable service charges apply, used as a benchmark for pricing.",
+        "confidence": 1.0,
+        "evidence_quote": "the amounts charged for the Services provided under this Agreement shall be no higher than the amounts charged by a Provider to its other Affiliates",
+        "properties": {}
+      },
+      {
+        "id": "ent_non_affiliated_person",
+        "entity_type": "Non-Affiliated Person",
+        "name": "non-affiliated Person",
+        "legal_role": "Independent third parties in the same market area or conditions, used as a pricing benchmark.",
+        "confidence": 1.0,
+        "evidence_quote": "or to a non-affiliated Person (within the same market area or having the same market conditions) for the same service or class of services",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_company",
+        "target_id": "ent_providers",
+        "relationship_type": "Compensation Payment Obligation",
+        "legal_significance": "The Company is obligated to pay the Providers for Services without subsidization either way, ensuring fair compensation.",
+        "confidence": 1.0,
+        "evidence_quote": "The Services provided under this Agreement, and the compensation paid therefor, shall not result in subsidization of the Providers by the Company nor a subsidization of the Company by the Providers."
+      },
+      {
+        "source_id": "ent_company",
+        "target_id": "ent_actual_direct_costs",
+        "relationship_type": "Compensation Basis",
+        "legal_significance": "The Company must pay the actual direct costs of the Services performed prior to the end of the Term.",
+        "confidence": 1.0,
+        "evidence_quote": "Company shall be charged the actual direct costs of the Service"
+      },
+      {
+        "source_id": "ent_company",
+        "target_id": "ent_indirect_and_overhead_costs",
+        "relationship_type": "Compensation Basis",
+        "legal_significance": "The Company must also pay a reasonable allocation of indirect and overhead costs as part of compensation.",
+        "confidence": 1.0,
+        "evidence_quote": "plus a reasonable allocation of indirect and overhead costs in accordance with Exhibits A1, B1, C1, and D"
+      },
+      {
+        "source_id": "ent_indirect_and_overhead_costs",
+        "target_id": "ent_exhibits",
+        "relationship_type": "Cost Allocation Methodology",
+        "legal_significance": "The allocation of indirect and overhead costs must follow the methodologies set forth in the specified Exhibits.",
+        "confidence": 1.0,
+        "evidence_quote": "in accordance with Exhibits A1, B1, C1, and D"
+      },
+      {
+        "source_id": "ent_company",
+        "target_id": "ent_applicable_law",
+        "relationship_type": "Compliance Obligation",
+        "legal_significance": "Compensation must comply with requirements imposed by Applicable Law or Governmental Authority.",
+        "confidence": 1.0,
+        "evidence_quote": "and as required by Applicable Law or Governmental Authority"
+      },
+      {
+        "source_id": "ent_per_unit_charges",
+        "target_id": "ent_true_up",
+        "relationship_type": "Pricing Adjustment Mechanism",
+        "legal_significance": "Per unit charges agreed by the Parties must be reconciled annually to actual costs to prevent over- or under-charging.",
+        "confidence": 1.0,
+        "evidence_quote": "the per unit prices billed shall be trued-up to actual costs on at least an annual basis"
+      },
+      {
+        "source_id": "ent_party_receiving_services",
+        "target_id": "ent_actual_direct_costs",
+        "relationship_type": "Payment Obligation",
+        "legal_significance": "The Party receiving Services must pay no more and no less than the actual direct and indirect costs annually.",
+        "confidence": 1.0,
+        "evidence_quote": "on an annual basis, the Party receiving the Services shall pay no more and no less than the actual direct and indirect costs and expenses"
+      },
+      {
+        "source_id": "ent_providers",
+        "target_id": "ent_affiliates",
+        "relationship_type": "Pricing Benchmark",
+        "legal_significance": "Amounts charged under this Agreement cannot exceed amounts charged by Providers to their Affiliates for the same services.",
+        "confidence": 1.0,
+        "evidence_quote": "the amounts charged for the Services provided under this Agreement shall be no higher than the amounts charged by a Provider to its other Affiliates"
+      },
+      {
+        "source_id": "ent_providers",
+        "target_id": "ent_non_affiliated_person",
+        "relationship_type": "Pricing Benchmark",
+        "legal_significance": "Amounts charged cannot exceed those charged to non-affiliated Persons in the same market or conditions for the same services.",
+        "confidence": 1.0,
+        "evidence_quote": "or to a non-affiliated Person (within the same market area or having the same market conditions) for the same service or class of services"
+      }
+    ],
+    "extractor_notes": "The clause carefully establishes a cost-based compensation framework with annual true-ups and pricing caps based on comparable transactions to prevent cross-subsidization and ensure compliance with applicable law."
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_7:7_1:Limitation_of_Liability_Notwithstanding_any_provi_:aae9b9",
+    "source_clause_title": "7.1 Limitation of Liability.  Notwithstanding any provi sion herein to the",
+    "contract_id": "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+    "source_page_start": 8,
+    "source_page_end": 9,
+    "clause_type_hint": "payment",
+    "entities": [
+      {
+        "id": "ent_company",
+        "entity_type": "Contracting Party",
+        "name": "Company",
+        "legal_role": "The Company is a primary party to the contract and is protected from certain categories of damages under this limitation of liability clause.",
+        "confidence": 1.0,
+        "evidence_quote": "none of Company or Providers nor any of their respective officers, members, shareholders, partners, principals, Affiliates, agents subcontractors, vendors, or employees shall be liable hereunder for punitive, indirect, consequential, or exemplary losses or damages",
+        "properties": {}
+      },
+      {
+        "id": "ent_providers",
+        "entity_type": "Contracting Party",
+        "name": "Providers",
+        "legal_role": "Providers are the other primary party or parties to the contract, also shielded from liability for certain types of damages under this clause.",
+        "confidence": 1.0,
+        "evidence_quote": "none of Company or Providers nor any of their respective officers, members, shareholders, partners, principals, Affiliates, agents subcontractors, vendors, or employees shall be liable hereunder for punitive, indirect, consequential, or exemplary losses or damages",
+        "properties": {}
+      },
+      {
+        "id": "ent_officers_members_shareholders_partners_principals_affiliates_agents_subcontractors_vendors_employees",
+        "entity_type": "Related Persons and Entities",
+        "name": "officers, members, shareholders, partners, principals, Affiliates, agents subcontractors, vendors, or employees of Company or Providers",
+        "legal_role": "These related persons and entities are explicitly included in the limitation of liability protection, extending the shield beyond the primary contracting parties.",
+        "confidence": 1.0,
+        "evidence_quote": "none of Company or Providers nor any of their respective officers, members, shareholders, partners, principals, Affiliates, agents subcontractors, vendors, or employees shall be liable hereunder",
+        "properties": {}
+      },
+      {
+        "id": "ent_punitive_indirect_consequential_exemplary_losses_or_damages",
+        "entity_type": "Excluded Damage Types",
+        "name": "punitive, indirect, consequential, or exemplary losses or damages",
+        "legal_role": "These categories of damages are expressly excluded from liability, limiting the scope of recoverable damages under the contract.",
+        "confidence": 1.0,
+        "evidence_quote": "shall be liable hereunder for punitive, indirect, consequential, or exemplary losses or damages of any nature",
+        "properties": {}
+      },
+      {
+        "id": "ent_lost_profits_or_revenues",
+        "entity_type": "Excluded Damage Subcategory",
+        "name": "damages for lost profits or revenues or the loss or use of such profits or anticipated revenues",
+        "legal_role": "Damages related to lost or anticipated profits or revenues are specifically excluded from recoverable damages, limiting financial exposure.",
+        "confidence": 1.0,
+        "evidence_quote": "including damages for lost profits or revenues or the loss or use of such profits or anticipated revenues",
+        "properties": {}
+      },
+      {
+        "id": "ent_cost_of_capital_loss_of_goodwill_increased_operating_expenses",
+        "entity_type": "Excluded Damage Subcategories",
+        "name": "cost of capital, loss of goodwill, increased operating expenses of plant or equipment",
+        "legal_role": "These economic and reputational damages are excluded from liability, further limiting the types of recoverable damages.",
+        "confidence": 1.0,
+        "evidence_quote": "cost of capital, loss of goodwill, increased operating expenses of plant or equipment",
+        "properties": {}
+      },
+      {
+        "id": "ent_increased_costs_of_purchasing_or_providing_equipment_materials_labor_services_costs_of_replacement_power_or_capital",
+        "entity_type": "Excluded Damage Subcategories",
+        "name": "increased costs of purchasing or providing equipment, materials, labor, services, costs of replacement power or capital",
+        "legal_role": "These operational and replacement costs are excluded from damages, limiting claims for additional expenses incurred.",
+        "confidence": 1.0,
+        "evidence_quote": "increased costs of purchasing or providing equipment, materials, labor, services, costs of replacement power or capital",
+        "properties": {}
+      },
+      {
+        "id": "ent_penalties_inventory_or_use_charges_damages_to_reputation_damages_for_lost_opportunities_other_special_or_incidental_damages",
+        "entity_type": "Excluded Damage Subcategories",
+        "name": "penalties, inventory or use charges, damages to reputation or damages for lost opportunities, or any other special or incidental damages",
+        "legal_role": "These additional categories of damages are excluded, further restricting the scope of liability.",
+        "confidence": 1.0,
+        "evidence_quote": "penalties, inventory or use charges, damages to reputation or damages for lost opportunities, or any other special or incidental damages",
+        "properties": {}
+      },
+      {
+        "id": "ent_claims_based_on_contract_warranty_tort_or_other_theory_of_law",
+        "entity_type": "Claims Basis",
+        "name": "claims based upon contract, warranty, tort (including negligence and strict liability), or other theory of law",
+        "legal_role": "The limitation of liability applies regardless of the legal theory on which a claim is based, broadening the protection.",
+        "confidence": 1.0,
+        "evidence_quote": "regardless of whether said claim is based upon contract, warranty, tort (including negligence and strict liability), or other theory of law",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_company",
+        "target_id": "ent_punitive_indirect_consequential_exemplary_losses_or_damages",
+        "relationship_type": "Liability Exclusion",
+        "legal_significance": "The Company is contractually excluded from liability for punitive, indirect, consequential, or exemplary damages, limiting its financial exposure.",
+        "confidence": 1.0,
+        "evidence_quote": "none of Company ... shall be liable hereunder for punitive, indirect, consequential, or exemplary losses or damages"
+      },
+      {
+        "source_id": "ent_providers",
+        "target_id": "ent_punitive_indirect_consequential_exemplary_losses_or_damages",
+        "relationship_type": "Liability Exclusion",
+        "legal_significance": "Providers are similarly excluded from liability for these categories of damages, limiting their financial exposure under the contract.",
+        "confidence": 1.0,
+        "evidence_quote": "none of ... Providers ... shall be liable hereunder for punitive, indirect, consequential, or exemplary losses or damages"
+      },
+      {
+        "source_id": "ent_officers_members_shareholders_partners_principals_affiliates_agents_subcontractors_vendors_employees",
+        "target_id": "ent_punitive_indirect_consequential_exemplary_losses_or_damages",
+        "relationship_type": "Liability Exclusion",
+        "legal_significance": "The limitation of liability extends to all related persons and entities of Company and Providers, protecting them from these damages.",
+        "confidence": 1.0,
+        "evidence_quote": "nor any of their respective officers, members, shareholders, partners, principals, Affiliates, agents subcontractors, vendors, or employees shall be liable hereunder for punitive, indirect, consequential, or exemplary losses or damages"
+      },
+      {
+        "source_id": "ent_punitive_indirect_consequential_exemplary_losses_or_damages",
+        "target_id": "ent_claims_based_on_contract_warranty_tort_or_other_theory_of_law",
+        "relationship_type": "Applicability Across Legal Theories",
+        "legal_significance": "The exclusion of these damages applies regardless of the legal theory of the claim, ensuring broad protection.",
+        "confidence": 1.0,
+        "evidence_quote": "regardless of whether said claim is based upon contract, warranty, tort (including negligence and strict liability), or other theory of law"
+      }
+    ],
+    "extractor_notes": "The clause broadly limits liability for a wide range of damages and explicitly extends this protection to related persons and entities of the contracting parties, applying regardless of the legal theory of the claim."
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_2:2_1:Term_The_term_Term_of_this_Agreement_shall_commenc:72e3e0",
+    "source_clause_title": "2.1 Term.  The term (“Term ”) of this Agreement shall commence on the",
+    "contract_id": "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+    "source_page_start": 4,
+    "source_page_end": 4,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_effective_date",
+        "entity_type": "Effective Date",
+        "name": "Effective Date",
+        "legal_role": "The Effective Date marks the commencement of the Agreement's Term, establishing the starting point for all timing obligations and rights under the contract.",
+        "confidence": 1.0,
+        "evidence_quote": "Effective Date (or, with respect to any Party joining by Joinder Addendum, on the effective date of such Joinder Addendum)",
+        "properties": {}
+      },
+      {
+        "id": "ent_joinder_addendum_effective_date",
+        "entity_type": "Joinder Addendum Effective Date",
+        "name": "effective date of such Joinder Addendum",
+        "legal_role": "The effective date of a Joinder Addendum determines the commencement of the Term for any Party joining the Agreement through such Addendum.",
+        "confidence": 1.0,
+        "evidence_quote": "with respect to any Party joining by Joinder Addendum, on the effective date of such Joinder Addendum",
+        "properties": {}
+      },
+      {
+        "id": "ent_initial_expiration_date",
+        "entity_type": "Initial Expiration Date",
+        "name": "Initial Expiration Date",
+        "legal_role": "The Initial Expiration Date defines the first fixed expiration point of the Agreement, twenty years after the Effective Date, setting the baseline for the Term's duration.",
+        "confidence": 1.0,
+        "evidence_quote": "shall expire on the twentieth (20 th) anniversary of the Effective Date (the “Initial Expiration Date”)",
+        "properties": {}
+      },
+      {
+        "id": "ent_extended_expiration_date",
+        "entity_type": "Extended Expiration Date",
+        "name": "Extended Expiration Date",
+        "legal_role": "The Extended Expiration Date is the last day of any automatic five-year extension period, marking subsequent expiration points beyond the Initial Expiration Date.",
+        "confidence": 1.0,
+        "evidence_quote": "the last day of any extension period shall be referred to as the “Extended Expiration Date”",
+        "properties": {}
+      },
+      {
+        "id": "ent_company",
+        "entity_type": "Company",
+        "name": "Company",
+        "legal_role": "The Company holds the right to notify Providers in writing to decline extension of the Agreement's Term, thereby controlling continuation beyond expiration dates.",
+        "confidence": 1.0,
+        "evidence_quote": "unless Company informs Providers in writing at least three (3) months prior to the Initial Expiration Date or any Extended Expiration Date that it does not intend to extend the Term",
+        "properties": {}
+      },
+      {
+        "id": "ent_providers",
+        "entity_type": "Providers",
+        "name": "Providers",
+        "legal_role": "Providers are the recipients of the Company's extension or non-extension notice, whose contractual relationship depends on the Term's continuation or expiration.",
+        "confidence": 1.0,
+        "evidence_quote": "unless Company informs Providers in writing at least three (3) months prior to the Initial Expiration Date or any Extended Expiration Date",
+        "properties": {}
+      },
+      {
+        "id": "ent_term",
+        "entity_type": "Term",
+        "name": "Term",
+        "legal_role": "The Term defines the duration of the Agreement, starting at the Effective Date and subject to expiration and extension provisions.",
+        "confidence": 1.0,
+        "evidence_quote": "The term (“Term ”) of this Agreement shall commence on the Effective Date ... and shall expire on the twentieth (20 th) anniversary of the Effective Date",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_term",
+        "target_id": "ent_effective_date",
+        "relationship_type": "commencement date",
+        "legal_significance": "The Term legally begins on the Effective Date, establishing the start of contractual obligations and rights.",
+        "confidence": 1.0,
+        "evidence_quote": "The term (“Term ”) of this Agreement shall commence on the Effective Date"
+      },
+      {
+        "source_id": "ent_term",
+        "target_id": "ent_initial_expiration_date",
+        "relationship_type": "initial expiration date",
+        "legal_significance": "The Term is initially set to expire on the Initial Expiration Date, defining the first fixed endpoint of the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "shall expire on the twentieth (20 th) anniversary of the Effective Date (the “Initial Expiration Date”)"
+      },
+      {
+        "source_id": "ent_term",
+        "target_id": "ent_extended_expiration_date",
+        "relationship_type": "automatic extension expiration date",
+        "legal_significance": "The Term may be automatically extended in five-year increments, with each extension ending on an Extended Expiration Date.",
+        "confidence": 1.0,
+        "evidence_quote": "This Agreement shall be subject to automatic extensions for additional five (5) year periods ... the last day of any extension period shall be referred to as the “Extended Expiration Date”"
+      },
+      {
+        "source_id": "ent_company",
+        "target_id": "ent_providers",
+        "relationship_type": "notice of non-extension obligation",
+        "legal_significance": "The Company must notify Providers in writing at least three months before expiration dates if it chooses not to extend the Term, affecting continuation of the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "unless Company informs Providers in writing at least three (3) months prior to the Initial Expiration Date or any Extended Expiration Date that it does not intend to extend the Term"
+      },
+      {
+        "source_id": "ent_joinder_addendum_effective_date",
+        "target_id": "ent_term",
+        "relationship_type": "alternative commencement date for joining Party",
+        "legal_significance": "For any Party joining by Joinder Addendum, the Term commences on the effective date of that Addendum rather than the original Effective Date.",
+        "confidence": 1.0,
+        "evidence_quote": "with respect to any Party joining by Joinder Addendum, on the effective date of such Joinder Addendum"
+      }
+    ],
+    "extractor_notes": "The clause defines a fixed initial Term of twenty years with automatic five-year extensions unless the Company provides timely written notice not to extend. It explicitly contemplates Parties joining later via Joinder Addendum, whose Term commencement dates differ. The clause also references earlier termination rights under Article 2 but does not detail them here."
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_2:2_3:Transition_to_New_Provider_Subject_to_any_limitati:4a6967",
+    "source_clause_title": "2.3 Transition to New Provider .  Subject to any limitations resulting from a",
+    "contract_id": "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+    "source_page_start": 4,
+    "source_page_end": 4,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_providers",
+        "entity_type": "Service Provider",
+        "name": "Providers",
+        "legal_role": "Providers are the parties obligated to cooperate in transitioning services and are entitled to reimbursement for costs incurred after termination.",
+        "confidence": 1.0,
+        "evidence_quote": "Providers shall cooperate with Company to effect an orderly transition of the Services being provided to Company to any new provider designated by Company.",
+        "properties": {}
+      },
+      {
+        "id": "ent_company",
+        "entity_type": "Service Recipient",
+        "name": "Company",
+        "legal_role": "Company is the party receiving services, entitled to designate a new provider, and obligated to reimburse Providers for transition costs after termination.",
+        "confidence": 1.0,
+        "evidence_quote": "Providers shall cooperate with Company to effect an orderly transition of the Services being provided to Company to any new provider designated by Company. Company shall reimburse Providers for costs incurred in connection with such termination after the effective date of such termination.",
+        "properties": {}
+      },
+      {
+        "id": "ent_new_provider",
+        "entity_type": "Successor Service Provider",
+        "name": "new provider designated by Company",
+        "legal_role": "The new provider is the party designated by Company to receive the transitioned services after termination of the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Providers shall cooperate with Company to effect an orderly transition of the Services being provided to Company to any new provider designated by Company.",
+        "properties": {}
+      },
+      {
+        "id": "ent_termination_event",
+        "entity_type": "Termination Event",
+        "name": "termination under Section 2.2",
+        "legal_role": "The termination event triggers the Providers' obligation to cooperate in transitioning services and the Company's obligation to reimburse costs.",
+        "confidence": 1.0,
+        "evidence_quote": "termination under Section 2.2, prior to or upon termination or expiration of this Agreement",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_providers",
+        "target_id": "ent_company",
+        "relationship_type": "Service Provision and Cooperation Obligation",
+        "legal_significance": "Providers must cooperate with Company to ensure an orderly transition of services, which is essential to maintain service continuity and fulfill contractual duties upon termination.",
+        "confidence": 1.0,
+        "evidence_quote": "Providers shall cooperate with Company to effect an orderly transition of the Services being provided to Company"
+      },
+      {
+        "source_id": "ent_company",
+        "target_id": "ent_new_provider",
+        "relationship_type": "Designation of Successor Provider",
+        "legal_significance": "Company has the right to designate a new provider to receive services, which controls the succession of service provision after termination.",
+        "confidence": 1.0,
+        "evidence_quote": "to any new provider designated by Company"
+      },
+      {
+        "source_id": "ent_company",
+        "target_id": "ent_providers",
+        "relationship_type": "Reimbursement Obligation",
+        "legal_significance": "Company is obligated to reimburse Providers for costs incurred in connection with termination after its effective date, ensuring Providers are compensated for transition-related expenses.",
+        "confidence": 1.0,
+        "evidence_quote": "Company shall reimburse Providers for costs incurred in connection with such termination after the effective date of such termination."
+      },
+      {
+        "source_id": "ent_termination_event",
+        "target_id": "ent_providers",
+        "relationship_type": "Trigger of Cooperation Obligation",
+        "legal_significance": "The termination event under Section 2.2 triggers Providers' duty to cooperate in transitioning services to a new provider.",
+        "confidence": 1.0,
+        "evidence_quote": "termination under Section 2.2, prior to or upon termination or expiration of this Agreement, Providers shall cooperate"
+      },
+      {
+        "source_id": "ent_termination_event",
+        "target_id": "ent_company",
+        "relationship_type": "Trigger of Reimbursement Obligation",
+        "legal_significance": "The termination event triggers Company's obligation to reimburse Providers for costs incurred after termination.",
+        "confidence": 1.0,
+        "evidence_quote": "Company shall reimburse Providers for costs incurred in connection with such termination after the effective date of such termination."
+      }
+    ],
+    "extractor_notes": "The clause explicitly links the termination event under Section 2.2 to the Providers' cooperation duty and Company's reimbursement obligation, establishing clear post-termination responsibilities."
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_3:3_2:Budget_The_Parties_will_cooperate_reasonably_to_de:820426",
+    "source_clause_title": "3.2 Budget.   The Parties will cooperate reasonably to develop a budget for the",
+    "contract_id": "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+    "source_page_start": 5,
+    "source_page_end": 5,
+    "clause_type_hint": "reporting_obligation",
+    "entities": [
+      {
+        "id": "ent_budget",
+        "entity_type": "Contractual Budget",
+        "name": "Budget",
+        "legal_role": "The Budget defines the planned financial allocation for Services each calendar year, serving as a reference for cooperation but not limiting the scope of Services the Company may request.",
+        "confidence": 1.0,
+        "evidence_quote": "Services for each calendar year (the “Budget”), provided that the Budget shall not be a limitation on the Services that the Company may request under this Agreement.",
+        "properties": {}
+      },
+      {
+        "id": "ent_company",
+        "entity_type": "Contracting Party - Company",
+        "name": "Company",
+        "legal_role": "The Company is a contracting party with the right to request Services under the Agreement, potentially beyond the Budget.",
+        "confidence": 1.0,
+        "evidence_quote": "the Services that the Company may request under this Agreement.",
+        "properties": {}
+      },
+      {
+        "id": "ent_parties",
+        "entity_type": "Contracting Parties",
+        "name": "The Parties",
+        "legal_role": "The Parties are the contracting entities obligated to cooperate reasonably to develop the Budget for Services each calendar year.",
+        "confidence": 1.0,
+        "evidence_quote": "The Parties will cooperate reasonably to develop a budget for the Services for each calendar year (the “Budget”)",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_parties",
+        "target_id": "ent_budget",
+        "relationship_type": "Obligation to Cooperate in Budget Development",
+        "legal_significance": "The Parties' obligation to cooperate reasonably to develop the Budget establishes a mutual duty to agree on financial planning for Services, which guides but does not restrict the scope of Services.",
+        "confidence": 1.0,
+        "evidence_quote": "The Parties will cooperate reasonably to develop a budget for the Services for each calendar year (the “Budget”)"
+      },
+      {
+        "source_id": "ent_budget",
+        "target_id": "ent_company",
+        "relationship_type": "Non-Limitation of Service Requests",
+        "legal_significance": "The Budget explicitly does not limit the Services that the Company may request, preserving the Company's right to request Services beyond the agreed Budget.",
+        "confidence": 1.0,
+        "evidence_quote": "provided that the Budget shall not be a limitation on the Services that the Company may request under this Agreement."
+      }
+    ],
+    "extractor_notes": "The clause establishes a cooperative obligation to develop a Budget but explicitly clarifies that the Budget is not a cap on the Company's rights to request Services, which is important for understanding the scope of financial and service obligations."
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_8:8_2:Audits:f047c7",
+    "source_clause_title": "8.2 Audits.",
+    "contract_id": "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+    "source_page_start": 9,
+    "source_page_end": 10,
+    "clause_type_hint": "payment",
+    "entities": [
+      {
+        "id": "ent_parties",
+        "entity_type": "Contracting Parties",
+        "name": "The Parties",
+        "legal_role": "The Parties are the contractual entities granted rights and obligations under the Agreement, including audit rights and payment adjustments.",
+        "confidence": 1.0,
+        "evidence_quote": "The Parities shall have the right, at their expense, to engage independent auditors to perform a periodic audit of the records and books for the Services provided pursuant to this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_independent_auditors",
+        "entity_type": "Independent Auditors",
+        "name": "independent auditors",
+        "legal_role": "Independent auditors are third-party professionals engaged by the Parties to verify compliance with the Agreement and Applicable Law through audits.",
+        "confidence": 1.0,
+        "evidence_quote": "to engage independent auditors to perform a periodic audit of the records and books for the Services provided pursuant to this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_services",
+        "entity_type": "Contracted Services",
+        "name": "the Services",
+        "legal_role": "The Services are the subject matter of the Agreement for which records and books are audited to verify compliance and correct billing.",
+        "confidence": 1.0,
+        "evidence_quote": "records and books for the Services provided pursuant to this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_applicable_law",
+        "entity_type": "Applicable Law",
+        "name": "Applicable Law",
+        "legal_role": "Applicable Law defines the legal standards and requirements with which the Services and related billing must comply.",
+        "confidence": 1.0,
+        "evidence_quote": "to verify compliance with Applicable Law",
+        "properties": {}
+      },
+      {
+        "id": "ent_allocated_charge",
+        "entity_type": "Allocated Charge",
+        "name": "allocated charge billed for the Services",
+        "legal_role": "The Allocated Charge is the monetary amount billed for the Services, subject to verification and adjustment if inconsistent with the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "the allocated charge billed for the Services is not consistent with this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_overpayment_underpayment",
+        "entity_type": "Payment Discrepancy",
+        "name": "overpayment or underpayment",
+        "legal_role": "Payment Discrepancy represents any monetary difference identified by audit that must be corrected by prompt payment between the Parties.",
+        "confidence": 1.0,
+        "evidence_quote": "such that an overpayment or an underpayment has been made, the amount of such overpayment or underpayment shall promptly be paid to the Party to which it is owed by the other Party",
+        "properties": {}
+      },
+      {
+        "id": "ent_audit_period",
+        "entity_type": "Audit Period",
+        "name": "period being reviewed",
+        "legal_role": "The Audit Period limits the timeframe for which records may be audited, ensuring audits cover no more than three years prior to initiation.",
+        "confidence": 1.0,
+        "evidence_quote": "the period being reviewed shall be no more than three years prior to the date of the initiation of the audit",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_parties",
+        "target_id": "ent_independent_auditors",
+        "relationship_type": "Right to Engage Auditors",
+        "legal_significance": "The Parties have the contractual right to engage independent auditors at their own expense to verify compliance, which enables enforcement of audit rights.",
+        "confidence": 1.0,
+        "evidence_quote": "The Parities shall have the right, at their expense, to engage independent auditors to perform a periodic audit"
+      },
+      {
+        "source_id": "ent_independent_auditors",
+        "target_id": "ent_services",
+        "relationship_type": "Audit Subject",
+        "legal_significance": "Independent auditors are authorized to audit the records and books related to the Services, ensuring transparency and compliance with contractual terms.",
+        "confidence": 1.0,
+        "evidence_quote": "to perform a periodic audit of the records and books for the Services provided pursuant to this Agreement"
+      },
+      {
+        "source_id": "ent_independent_auditors",
+        "target_id": "ent_applicable_law",
+        "relationship_type": "Compliance Verification",
+        "legal_significance": "Auditors verify that the Services and related billing comply with Applicable Law, which is essential for lawful performance and risk mitigation.",
+        "confidence": 1.0,
+        "evidence_quote": "to verify compliance with Applicable Law"
+      },
+      {
+        "source_id": "ent_audit_period",
+        "target_id": "ent_independent_auditors",
+        "relationship_type": "Audit Timeframe Restriction",
+        "legal_significance": "The audit must be conducted timely, limiting the review period to no more than three years prior to audit initiation, which restricts retroactive liability.",
+        "confidence": 1.0,
+        "evidence_quote": "Any audit to be conducted shall be performed timely such that the period being reviewed shall be no more than three years prior to the date of the initiation of the audit"
+      },
+      {
+        "source_id": "ent_allocated_charge",
+        "target_id": "ent_overpayment_underpayment",
+        "relationship_type": "Billing Adjustment Trigger",
+        "legal_significance": "If the allocated charge is inconsistent with the Agreement, it triggers a payment discrepancy that must be promptly corrected between the Parties.",
+        "confidence": 1.0,
+        "evidence_quote": "If any audit or review of a Party’s books and records discloses that the allocated charge billed for the Services is not consistent with this Agreement such that an overpayment or an underpayment has been made"
+      },
+      {
+        "source_id": "ent_overpayment_underpayment",
+        "target_id": "ent_parties",
+        "relationship_type": "Payment Obligation",
+        "legal_significance": "The Party owing the overpayment or underpayment must promptly pay the other Party, ensuring financial reconciliation and enforcement of payment terms.",
+        "confidence": 1.0,
+        "evidence_quote": "the amount of such overpayment or underpayment shall promptly be paid to the Party to which it is owed by the other Party"
+      }
+    ],
+    "extractor_notes": "The clause explicitly defines audit rights, audit scope, time limitations, and payment reconciliation obligations without ambiguity. The term 'Parities' appears to be a typographical error for 'Parties'."
+  }
+]

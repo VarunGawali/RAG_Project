@@ -1,0 +1,2137 @@
+[
+  {
+    "source_clause_id": "clause:Solar_System_Operations_and_Maintenance_Agreement_1:19:23_3:ACCEPTABILITY_OF_INSURERS_Insurance_is_to_be_place:53d1b1",
+    "source_clause_title": "23.3. ACCEPTABILITY OF INSURERS:  Insurance is to be placed with insurers with a current",
+    "contract_id": "Solar_System_Operations_and_Maintenance_Agreement_1",
+    "source_page_start": 10,
+    "source_page_end": 10,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_AM_Best_rating",
+        "entity_type": "Insurance Underwriter Rating Requirement",
+        "name": "A.M. Best’s rating of no less than A: VII",
+        "legal_role": "Specifies the minimum financial strength and reliability rating required for insurers providing coverage under the contract, ensuring insurer acceptability and risk mitigation for the District.",
+        "confidence": 1.0,
+        "evidence_quote": "A.M. Best’s rating of no less than A: VII, unless otherwise acceptable to the District.",
+        "properties": {}
+      },
+      {
+        "id": "ent_District",
+        "entity_type": "Contracting Public Entity",
+        "name": "District",
+        "legal_role": "The public entity contracting for services, with rights to approve insurers, occupy sites, and limit liability under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "unless otherwise acceptable to the District.",
+        "properties": {}
+      },
+      {
+        "id": "ent_Contractor",
+        "entity_type": "Service Provider",
+        "name": "Contractor",
+        "legal_role": "The party responsible for performing the work, guaranteeing workmanship and materials, complying with laws, and subject to warranty and labor code obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "the Contractor, manufacturer, or their assigned agents shall guarantee the workmanship, product or service performed...",
+        "properties": {}
+      },
+      {
+        "id": "ent_Warranty_Period",
+        "entity_type": "Warranty Duration",
+        "name": "minimum period of one (1) year from filing the Notice of Completion",
+        "legal_role": "Defines the minimum time period during which the Contractor guarantees workmanship and materials against defects, establishing the timeframe for warranty claims.",
+        "confidence": 1.0,
+        "evidence_quote": "for a minimum period of one (1) year from filing the Notice of Completion with the county in which the Site is located.",
+        "properties": {}
+      },
+      {
+        "id": "ent_Notice_of_Completion",
+        "entity_type": "Project Completion Filing",
+        "name": "Notice of Completion",
+        "legal_role": "The official filing that triggers the start of the warranty period for workmanship and materials.",
+        "confidence": 1.0,
+        "evidence_quote": "from filing the Notice of Completion with the county in which the Site is located.",
+        "properties": {}
+      },
+      {
+        "id": "ent_Confidential_Information",
+        "entity_type": "Confidential Information",
+        "name": "all information, documents, programs, procedures, and all other items received from the other Party that is marked or otherwise designated as confidential",
+        "legal_role": "Information protected under the confidentiality obligations of the Parties, subject to survival beyond termination and exceptions for legal compliance.",
+        "confidence": 1.0,
+        "evidence_quote": "Each Party shall maintain the confidentiality of all information, documents, programs, procedures, and all other items received from the other Party that is marked or otherwise designated as confidential.",
+        "properties": {}
+      },
+      {
+        "id": "ent_Parties",
+        "entity_type": "Contracting Parties",
+        "name": "Each Party",
+        "legal_role": "The entities bound by confidentiality, compliance, and other contractual obligations under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Each Party shall maintain the confidentiality...",
+        "properties": {}
+      },
+      {
+        "id": "ent_California_Public_Records_Act_and_Brown_Act",
+        "entity_type": "Statutory Compliance Obligations",
+        "name": "California Public Records Act and Brown Act open meeting requirements",
+        "legal_role": "Legal statutes that impose transparency and disclosure obligations on the District, affecting confidentiality and information disclosure under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "The Parties understand that the District is subject to compliance with the California Public Records Act and Brown Act open meeting requirements...",
+        "properties": {}
+      },
+      {
+        "id": "ent_Limitation_of_District_Liability",
+        "entity_type": "Liability Limitation Clause",
+        "name": "District’s financial obligations under this Agreement shall be limited to the payment of the compensation provided in this Agreement",
+        "legal_role": "Caps the District’s financial exposure to the contract price and excludes liability for consequential damages, protecting the District from extended financial risk.",
+        "confidence": 1.0,
+        "evidence_quote": "District’s financial obligations under this Agreement shall be limited to the payment of the compensation provided in this Agreement.",
+        "properties": {}
+      },
+      {
+        "id": "ent_Compliance_with_Laws_Obligation",
+        "entity_type": "Legal Compliance Obligation",
+        "name": "Contractor shall give all notices and comply with all laws, ordinance, rules and regulations bearing on conduct of the Work",
+        "legal_role": "Mandates the Contractor’s duty to comply with applicable laws and notify the District of any legal conflicts, enabling contract amendments or termination.",
+        "confidence": 1.0,
+        "evidence_quote": "Contractor shall give all notices and comply with all laws, ordinance, rules and regulations bearing on conduct of the Work as indicated or specified.",
+        "properties": {}
+      },
+      {
+        "id": "ent_Termination_Right_for_Legal_Violation",
+        "entity_type": "Termination Right",
+        "name": "this Agreement shall be terminated effective upon Contractor’s receipt of a written termination notice from the District",
+        "legal_role": "Grants the District the right to terminate the Agreement if the Contractor fails to comply with laws and does not notify the District of violations.",
+        "confidence": 1.0,
+        "evidence_quote": "this Agreement shall be terminated effective upon Contractor’s receipt of a written termination notice from the District.",
+        "properties": {}
+      },
+      {
+        "id": "ent_Labor_Code_Compliance",
+        "entity_type": "Labor Code Compliance Obligation",
+        "name": "The Contractor shall comply with all applicable provisions of the California Labor Code, Division 3, Part 7, Chapter 1, Articles 1 – 5",
+        "legal_role": "Requires the Contractor and subcontractors to comply with wage, discrimination, and apprenticeship laws, with penalties for willful noncompliance.",
+        "confidence": 1.0,
+        "evidence_quote": "The Contractor shall comply with all applicable provisions of the California Labor Code, Division 3, Part 7, Chapter 1, Articles 1 – 5...",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_AM_Best_rating",
+        "target_id": "ent_District",
+        "relationship_type": "Insurer Acceptability Approval",
+        "legal_significance": "The District reserves the right to accept insurers with ratings lower than A: VII, giving it control over insurer selection and risk exposure.",
+        "confidence": 1.0,
+        "evidence_quote": "A.M. Best’s rating of no less than A: VII, unless otherwise acceptable to the District."
+      },
+      {
+        "source_id": "ent_Contractor",
+        "target_id": "ent_Warranty_Period",
+        "relationship_type": "Warranty Obligation Duration",
+        "legal_significance": "The Contractor is legally obligated to guarantee workmanship and materials for at least one year from the Notice of Completion, defining the warranty period.",
+        "confidence": 1.0,
+        "evidence_quote": "the Contractor... shall guarantee the workmanship, product or service performed against defective workmanship, defects or failures of materials for a minimum period of one (1) year from filing the Notice of Completion..."
+      },
+      {
+        "source_id": "ent_Warranty_Period",
+        "target_id": "ent_Notice_of_Completion",
+        "relationship_type": "Warranty Period Trigger",
+        "legal_significance": "The filing of the Notice of Completion triggers the start of the warranty period, establishing a clear temporal boundary for warranty claims.",
+        "confidence": 1.0,
+        "evidence_quote": "for a minimum period of one (1) year from filing the Notice of Completion with the county in which the Site is located."
+      },
+      {
+        "source_id": "ent_Parties",
+        "target_id": "ent_Confidential_Information",
+        "relationship_type": "Confidentiality Obligation",
+        "legal_significance": "Each Party is legally bound to maintain the confidentiality of designated information, protecting sensitive data exchanged under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Each Party shall maintain the confidentiality of all information, documents, programs, procedures, and all other items received from the other Party that is marked or otherwise designated as confidential."
+      },
+      {
+        "source_id": "ent_District",
+        "target_id": "ent_California_Public_Records_Act_and_Brown_Act",
+        "relationship_type": "Statutory Compliance Obligation",
+        "legal_significance": "The District must comply with public records and open meeting laws, which may limit confidentiality and require disclosure of information.",
+        "confidence": 1.0,
+        "evidence_quote": "The Parties understand that the District is subject to compliance with the California Public Records Act and Brown Act open meeting requirements..."
+      },
+      {
+        "source_id": "ent_Limitation_of_District_Liability",
+        "target_id": "ent_District",
+        "relationship_type": "Liability Cap",
+        "legal_significance": "Limits the District’s financial liability strictly to contract compensation, excluding consequential damages, thereby reducing financial risk.",
+        "confidence": 1.0,
+        "evidence_quote": "District’s financial obligations under this Agreement shall be limited to the payment of the compensation provided in this Agreement."
+      },
+      {
+        "source_id": "ent_Compliance_with_Laws_Obligation",
+        "target_id": "ent_Contractor",
+        "relationship_type": "Legal Compliance Duty",
+        "legal_significance": "The Contractor must comply with all applicable laws and notify the District of any violations, ensuring lawful performance of work.",
+        "confidence": 1.0,
+        "evidence_quote": "Contractor shall give all notices and comply with all laws, ordinance, rules and regulations bearing on conduct of the Work..."
+      },
+      {
+        "source_id": "ent_Termination_Right_for_Legal_Violation",
+        "target_id": "ent_District",
+        "relationship_type": "Termination Right Exercisable by District",
+        "legal_significance": "Allows the District to terminate the Agreement if the Contractor violates laws and fails to notify the District, protecting the District from unlawful work.",
+        "confidence": 1.0,
+        "evidence_quote": "this Agreement shall be terminated effective upon Contractor’s receipt of a written termination notice from the District."
+      },
+      {
+        "source_id": "ent_Labor_Code_Compliance",
+        "target_id": "ent_Contractor",
+        "relationship_type": "Labor Law Compliance Obligation",
+        "legal_significance": "Imposes on the Contractor and subcontractors the duty to comply with California labor laws, including wage and anti-discrimination provisions, with penalties for noncompliance.",
+        "confidence": 1.0,
+        "evidence_quote": "The Contractor shall comply with all applicable provisions of the California Labor Code..."
+      }
+    ],
+    "extractor_notes": "The clause text includes multiple distinct provisions beyond insurer acceptability, covering warranty, confidentiality, liability limitation, compliance with laws, termination rights, and labor code compliance, reflecting a composite of contract obligations rather than a single focused clause."
+  },
+  {
+    "source_clause_id": "clause:Solar_System_Operations_and_Maintenance_Agreement_1:EXHIBIT_C:3:Contractor_s_Liability:9e071f",
+    "source_clause_title": "3. Contractor’s Liability",
+    "contract_id": "Solar_System_Operations_and_Maintenance_Agreement_1",
+    "source_page_start": 27,
+    "source_page_end": 28,
+    "clause_type_hint": "liability",
+    "entities": [
+      {
+        "id": "ent_contractor",
+        "entity_type": "Contractor",
+        "name": "Contractor",
+        "legal_role": "The party responsible for performing the Work and liable for compliance with laws, proper disposal of waste, and indemnification obligations under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "If the Contractor fails to comply with any applicable laws, rules, or regulations... the Contractor will be held solely responsible...",
+        "properties": {}
+      },
+      {
+        "id": "ent_district",
+        "entity_type": "Indemnitee District",
+        "name": "District",
+        "legal_role": "The party entitled to indemnification and protection from damages and claims arising from the Contractor's failure to comply with laws or contamination events.",
+        "confidence": 1.0,
+        "evidence_quote": "shall defend, indemnify, and hold harmless the District, pursuant to the indemnification provisions of the Agreement...",
+        "properties": {}
+      },
+      {
+        "id": "ent_indemnification_provisions",
+        "entity_type": "Indemnification Provisions of the Agreement",
+        "name": "Indemnification provisions",
+        "legal_role": "Contractual provisions that govern the Contractor's obligation to defend, indemnify, and hold harmless the District from damages and claims.",
+        "confidence": 1.0,
+        "evidence_quote": "shall defend, indemnify, and hold harmless the District, pursuant to the indemnification provisions of the Agreement...",
+        "properties": {}
+      },
+      {
+        "id": "ent_lead_disturbance_work",
+        "entity_type": "Lead Disturbance Work",
+        "name": "Work involving lead disturbance",
+        "legal_role": "Specific scope of Work requiring persons with appropriate accreditation, registrations, licenses, and training to perform it.",
+        "confidence": 1.0,
+        "evidence_quote": "If lead disturbance is anticipated in the Work, only persons with appropriate accreditation, registrations, licenses, and training shall conduct this Work.",
+        "properties": {}
+      },
+      {
+        "id": "ent_hazardous_waste_hauler",
+        "entity_type": "Certified Hazardous Waste Hauler",
+        "name": "Certified hazardous waste hauler",
+        "legal_role": "Entity responsible for proper disposal of hazardous waste, required to be certified and registered with DOT, and able to issue a current manifest number.",
+        "confidence": 1.0,
+        "evidence_quote": "It will be the responsibility of the Contractor to provide the proper disposal of any hazardous waste by a certified hazardous waste hauler. This company shall be registered with the Department of Transportation (DOT) and shall be able to issue a current manifest number...",
+        "properties": {}
+      },
+      {
+        "id": "ent_sample_results",
+        "entity_type": "Sample Results",
+        "name": "Sample results",
+        "legal_role": "Data or reports that the Contractor must provide to the District before, during, and after the Work to demonstrate compliance or conditions.",
+        "confidence": 1.0,
+        "evidence_quote": "The Contractor shall provide the District with any sample results prior to beginning Work, during the Work, and after the completion of the Work.",
+        "properties": {}
+      },
+      {
+        "id": "ent_lead_training_records",
+        "entity_type": "Lead Training Records",
+        "name": "Lead training records",
+        "legal_role": "Records of employee training related to lead disturbance that the District may request to examine prior to Work commencement.",
+        "confidence": 1.0,
+        "evidence_quote": "The District may request to examine, prior to the commencement of the Work, the lead training records of each employee of the Contractor.",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_district",
+        "relationship_type": "Indemnification Obligation",
+        "legal_significance": "The Contractor is legally obligated to defend, indemnify, and hold harmless the District for damages and claims arising from the Contractor's failure to comply with laws causing contamination.",
+        "confidence": 1.0,
+        "evidence_quote": "the Contractor will be held solely responsible for all costs involved in any required corrective actions, and shall defend, indemnify, and hold harmless the District..."
+      },
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_indemnification_provisions",
+        "relationship_type": "Indemnification Obligation Governed By",
+        "legal_significance": "The Contractor's indemnification duties are governed by the indemnification provisions of the Agreement, defining the scope and manner of indemnity.",
+        "confidence": 1.0,
+        "evidence_quote": "shall defend, indemnify, and hold harmless the District, pursuant to the indemnification provisions of the Agreement..."
+      },
+      {
+        "source_id": "ent_lead_disturbance_work",
+        "target_id": "ent_contractor",
+        "relationship_type": "Qualification Requirement",
+        "legal_significance": "Only Contractor personnel with appropriate accreditation, registrations, licenses, and training may perform Work involving lead disturbance, limiting liability and ensuring compliance.",
+        "confidence": 1.0,
+        "evidence_quote": "only persons with appropriate accreditation, registrations, licenses, and training shall conduct this Work."
+      },
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_hazardous_waste_hauler",
+        "relationship_type": "Disposal Responsibility Delegation",
+        "legal_significance": "The Contractor must ensure hazardous waste is disposed of by a certified hazardous waste hauler registered with DOT, ensuring legal compliance in waste transport and disposal.",
+        "confidence": 1.0,
+        "evidence_quote": "It will be the responsibility of the Contractor to provide the proper disposal of any hazardous waste by a certified hazardous waste hauler. This company shall be registered with the Department of Transportation (DOT)..."
+      },
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_sample_results",
+        "relationship_type": "Reporting Obligation",
+        "legal_significance": "The Contractor must provide sample results to the District before, during, and after the Work, enabling the District to monitor compliance and site conditions.",
+        "confidence": 1.0,
+        "evidence_quote": "The Contractor shall provide the District with any sample results prior to beginning Work, during the Work, and after the completion of the Work."
+      },
+      {
+        "source_id": "ent_district",
+        "target_id": "ent_lead_training_records",
+        "relationship_type": "Right to Examine Training Records",
+        "legal_significance": "The District has the right to request and examine the lead training records of each Contractor employee prior to Work commencement to verify qualifications and compliance.",
+        "confidence": 1.0,
+        "evidence_quote": "The District may request to examine, prior to the commencement of the Work, the lead training records of each employee of the Contractor."
+      }
+    ],
+    "extractor_notes": "The clause explicitly defines the Contractor's liability for contamination and regulatory non-compliance, including indemnification obligations, qualifications for lead disturbance work, hazardous waste disposal requirements, and reporting duties to the District. The indemnification relationship is explicitly tied to the Agreement's indemnification provisions."
+  },
+  {
+    "source_clause_id": "clause:Solar_System_Operations_and_Maintenance_Agreement_1:EXHIBIT_C:6:Materials_charges_will_be_billed_according_to_the_:bb8c13",
+    "source_clause_title": "6. Materials charges will be billed according to the Contractor list price in effect at the",
+    "contract_id": "Solar_System_Operations_and_Maintenance_Agreement_1",
+    "source_page_start": 19,
+    "source_page_end": 25,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_contractor",
+        "entity_type": "Contractor",
+        "name": "Omnidian Inc.",
+        "legal_role": "The party responsible for performing the Work under the Agreement and complying with all labor, safety, and certification requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "Proper Name of Contractor: Omnidian Inc.",
+        "properties": {}
+      },
+      {
+        "id": "ent_district",
+        "entity_type": "District",
+        "name": "District",
+        "legal_role": "The contracting public entity that oversees the Project and enforces compliance with contract terms and legal requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "The undersigned does hereby certify to the District that I am a representative of the Contractor currently under contract with the District",
+        "properties": {}
+      },
+      {
+        "id": "ent_state_of_california_public_works_contract_requirements",
+        "entity_type": "State of California Public Works Contract Requirements",
+        "name": "State of California Public Works Contract requirements regarding prevailing wages, benefits, on-site audits, payroll records, and apprentice and trainee employment requirements",
+        "legal_role": "Statutory and regulatory labor standards that the Contractor must comply with for the Project.",
+        "confidence": 1.0,
+        "evidence_quote": "I hereby certify that I will conform to the State of California Public Works Contract requirements regarding prevailing wages, benefits, on -site audits with 48 -hours’ notice, payroll records, and apprentice and trainee employment requirements",
+        "properties": {}
+      },
+      {
+        "id": "ent_labor_code_section_3700",
+        "entity_type": "Labor Code Section 3700",
+        "name": "Labor Code section 3700",
+        "legal_role": "Statutory provision requiring employers to secure workers' compensation insurance or self-insure before commencing work.",
+        "confidence": 1.0,
+        "evidence_quote": "Labor Code section 3700 in relevant part provides: Every employer except the State shall secure the payment of compensation in one or more of the following ways",
+        "properties": {}
+      },
+      {
+        "id": "ent_workers_compensation_certification",
+        "entity_type": "Workers’ Compensation Certification",
+        "name": "Workers’ Compensation Certification",
+        "legal_role": "Certification by the Contractor that it will comply with workers' compensation insurance or self-insurance requirements before starting work.",
+        "confidence": 1.0,
+        "evidence_quote": "I am aware of the provisions of section 3700 of the Labor Code which require every employer to be insured against liability for workers' compensation or to undertake self -insurance in accordance with the provisions of that code, and I will comply with such provisions before commencing the performance of the Work of this Agreement.",
+        "properties": {}
+      },
+      {
+        "id": "ent_education_code_section_45125_2a",
+        "entity_type": "Education Code Section 45125.2(a)",
+        "name": "Education Code section 45125.2(a)",
+        "legal_role": "Statutory provision governing fingerprinting and criminal background checks for employees working on school sites.",
+        "confidence": 1.0,
+        "evidence_quote": "Pursuant to Education Code section 45125.2(a), Contractor has installed or will install, prior to commencement of Work, a physical barrier at the Work Site",
+        "properties": {}
+      },
+      {
+        "id": "ent_education_code_section_45125_1h",
+        "entity_type": "Education Code Section 45125.1(h)",
+        "name": "Education Code section 45125.1(h)",
+        "legal_role": "Statutory provision requiring fingerprinting and DOJ submission for sole proprietors working on school projects.",
+        "confidence": 1.0,
+        "evidence_quote": "If Contractor is a sole proprietor, and elects the above option, Contractor must have the above-named employee’s fingerprints prepared and submitted by District for submission to the DOJ, in accordance with Education Code section 45125.1(h).",
+        "properties": {}
+      },
+      {
+        "id": "ent_department_of_justice",
+        "entity_type": "Department of Justice (DOJ)",
+        "name": "California Department of Justice",
+        "legal_role": "State agency responsible for ascertaining criminal background and fingerprint clearance for Contractor’s employees and subcontractors.",
+        "confidence": 1.0,
+        "evidence_quote": "No work shall commence until such determination by DOJ has been made.",
+        "properties": {}
+      },
+      {
+        "id": "ent_contract_employees_and_subcontractors",
+        "entity_type": "Contractor’s Employees and Subcontractors’ Employees",
+        "name": "Contractor’s employees and all of its Subcontractors’ employees who may have contact with District pupils",
+        "legal_role": "Individuals subject to fingerprinting and criminal background checks under Education Code requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "Contractor certifies that it has taken at least one of the following actions... The Contractor, who is not a sole proprietor, has complied with the fingerprinting requirements... with respect to all Contractor’s employees and all of its Subcontractors’ employees who may have contact with District pupils",
+        "properties": {}
+      },
+      {
+        "id": "ent_attachment_a",
+        "entity_type": "Attachment A - List of Employees/Subcontractors",
+        "name": "ATTACHMENT “A”",
+        "legal_role": "Document listing all employees and subcontractors who may come in contact with District pupils, used for compliance with background check requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "A complete and accurate list of Contractor's employees and of all of its subcontractors' employees who may come in contact with District pupils during the course and scope of the Contract is attached hereto as ATTACHMENT “A ;”",
+        "properties": {}
+      },
+      {
+        "id": "ent_hazardous_materials_certification",
+        "entity_type": "Hazardous Materials Certification",
+        "name": "Hazardous Materials Certification",
+        "legal_role": "Contractor’s certification that no asbestos, PCB, or other hazardous materials will be used or incorporated in the Project or related equipment.",
+        "confidence": 1.0,
+        "evidence_quote": "Contractor hereby certifies that no asbestos, or asbestos- containing materials, polychlorinated biphenyl (PCB), or any material listed by the federal or state Environmental Protection Agency or federal or state health agencies as a hazardous material... shall be furnished, installed, or incorporated in any way into the Project",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_state_of_california_public_works_contract_requirements",
+        "relationship_type": "Obligation to Comply with Labor Requirements",
+        "legal_significance": "The Contractor is legally bound to conform to prevailing wage and labor compliance requirements under California Public Works laws.",
+        "confidence": 1.0,
+        "evidence_quote": "I hereby certify that I will conform to the State of California Public Works Contract requirements regarding prevailing wages, benefits, on -site audits with 48 -hours’ notice, payroll records, and apprentice and trainee employment requirements"
+      },
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_workers_compensation_certification",
+        "relationship_type": "Certification of Workers’ Compensation Compliance",
+        "legal_significance": "The Contractor certifies it will secure workers' compensation insurance or self-insure as required by law before starting work.",
+        "confidence": 1.0,
+        "evidence_quote": "I am aware of the provisions of section 3700 of the Labor Code... and I will comply with such provisions before commencing the performance of the Work of this Agreement."
+      },
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_department_of_justice",
+        "relationship_type": "Subject to DOJ Criminal Background Clearance",
+        "legal_significance": "The Contractor’s employees and subcontractors must be cleared by the DOJ before commencing work to ensure no felony convictions as defined by Education Code.",
+        "confidence": 1.0,
+        "evidence_quote": "No work shall commence until the Department of Justice ascertains that Contractor’s employees and any subcontractors’ employees have not been convicted of a felony"
+      },
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_attachment_a",
+        "relationship_type": "Provision of Employee/Subcontractor List",
+        "legal_significance": "The Contractor must provide a complete and accurate list of employees and subcontractors who may contact District pupils to ensure compliance with background check requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "A complete and accurate list of Contractor's employees and of all of its subcontractors' employees who may come in contact with District pupils during the course and scope of the Contract is attached hereto as ATTACHMENT “A ;”"
+      },
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_hazardous_materials_certification",
+        "relationship_type": "Certification of Non-Use of Hazardous Materials",
+        "legal_significance": "The Contractor certifies that no hazardous materials will be used or incorporated in the Project, ensuring compliance with environmental and safety laws.",
+        "confidence": 1.0,
+        "evidence_quote": "Contractor hereby certifies that no asbestos, or asbestos- containing materials, polychlorinated biphenyl (PCB), or any material listed by the federal or state Environmental Protection Agency or federal or state health agencies as a hazardous material... shall be furnished, installed, or incorporated in any way into the Project"
+      },
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_district",
+        "relationship_type": "Contractual Relationship",
+        "legal_significance": "The Contractor is under contract with the District to perform the Work and comply with all contract terms and legal requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "The undersigned does hereby certify to the District that I am a representative of the Contractor currently under contract with the District"
+      }
+    ],
+    "extractor_notes": "This clause bundle contains multiple certifications and declarations by the Contractor Omnidian Inc. related to labor compliance, workers' compensation, criminal background checks, and hazardous materials. The legal entities and relationships focus on statutory compliance certifications and the Contractor's obligations to the District and regulatory bodies such as the Department of Industrial Relations and Department of Justice. The clause text includes references to specific California Labor and Education Code sections, emphasizing the Contractor's legal duties before commencing work."
+  },
+  {
+    "source_clause_id": "clause:Solar_System_Operations_and_Maintenance_Agreement_1:19:28_3:Labor_Compliance_Contractor_shall_perform_the_Work:5d2fcf",
+    "source_clause_title": "28.3. Labor Compliance:  Contractor shall perform the Work of the Project while complying with",
+    "contract_id": "Solar_System_Operations_and_Maintenance_Agreement_1",
+    "source_page_start": 11,
+    "source_page_end": 13,
+    "clause_type_hint": "payment",
+    "entities": [
+      {
+        "id": "ent_contractor",
+        "entity_type": "Contractor",
+        "name": "Contractor",
+        "legal_role": "The party obligated to perform the Work of the Project and comply with all applicable labor, anti-discrimination, and other legal requirements under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Contractor shall perform the Work of the Project while complying with all the applicable regulations...",
+        "properties": {}
+      },
+      {
+        "id": "ent_subcontractors",
+        "entity_type": "Subcontractors",
+        "name": "Contractor's subcontractor(s)",
+        "legal_role": "Entities engaged by the Contractor who must also comply with the same legal provisions as the Contractor under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Contractor agrees to require like compliance by all its subcontractor(s).",
+        "properties": {}
+      },
+      {
+        "id": "ent_district",
+        "entity_type": "District",
+        "name": "District",
+        "legal_role": "The party receiving the Work and holding rights such as assignment of anti-trust claims and control over assignment of the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "District reserves the right to occupy the Sites...; Contractor shall not assign... without the prior written consent of the District.",
+        "properties": {}
+      },
+      {
+        "id": "ent_department_of_industrial_relations",
+        "entity_type": "Regulatory Authority",
+        "name": "Department of Industrial Relations",
+        "legal_role": "The governmental body responsible for labor compliance monitoring and enforcement over the Contractor's performance.",
+        "confidence": 1.0,
+        "evidence_quote": "subject to labor compliance monitoring and enforcement by the Department of Industrial Relations.",
+        "properties": {}
+      },
+      {
+        "id": "ent_california_fair_employment_and_housing_act",
+        "entity_type": "Statutory Labor Compliance Requirement",
+        "name": "California Fair Employment and Housing Act",
+        "legal_role": "A statutory framework that the Contractor and its subcontractors must comply with to prevent discrimination.",
+        "confidence": 1.0,
+        "evidence_quote": "Contractor herein agrees to comply with the provisions of the California Fair Employment and Housing Act...",
+        "properties": {}
+      },
+      {
+        "id": "ent_federal_civil_rights_act_1964",
+        "entity_type": "Federal Anti-Discrimination Law",
+        "name": "Federal Civil Rights Act of 1964",
+        "legal_role": "Federal statute mandating non-discrimination compliance by the Contractor and subcontractors.",
+        "confidence": 1.0,
+        "evidence_quote": "the Federal Civil Rights Act of 1964, as set forth in Public Law 88-352, and all amendments thereto",
+        "properties": {}
+      },
+      {
+        "id": "ent_executive_order_11246",
+        "entity_type": "Executive Order",
+        "name": "Executive Order 11246",
+        "legal_role": "An executive mandate requiring non-discrimination compliance by the Contractor and subcontractors.",
+        "confidence": 1.0,
+        "evidence_quote": "Executive Order 11246; and all administrative rules and regulations found to be applicable to Contractor and all of its subcontractors.",
+        "properties": {}
+      },
+      {
+        "id": "ent_clayton_act_section_4",
+        "entity_type": "Federal Anti-Trust Statutory Right",
+        "name": "Section 4 of the Clayton Act (15 U.S.C. Sec. 15)",
+        "legal_role": "A federal statutory cause of action for anti-trust claims that Contractor and subcontractors assign to the District.",
+        "confidence": 1.0,
+        "evidence_quote": "all causes of action they may have under Section 4 of the Clayton Act (15 U.S.C. Sec. 15)...",
+        "properties": {}
+      },
+      {
+        "id": "ent_cartwright_act",
+        "entity_type": "State Anti-Trust Statutory Right",
+        "name": "Cartwright Act (Chapter 2 of Part 2 of Division 7 of the Business and Professions Code)",
+        "legal_role": "A California statutory cause of action for anti-trust claims that Contractor and subcontractors assign to the District.",
+        "confidence": 1.0,
+        "evidence_quote": "or under the Cartwright Act (Chapter 2 (commencing with Section 16700) of Part 2 of Division 7 of the Business and Professions Code)",
+        "properties": {}
+      },
+      {
+        "id": "ent_final_payment",
+        "entity_type": "Payment Event",
+        "name": "Final Payment",
+        "legal_role": "The event triggering the automatic assignment of anti-trust claims from Contractor and subcontractors to the District.",
+        "confidence": 1.0,
+        "evidence_quote": "This assignment shall be made and become effective at the time the District tenders final payment to the Contractor",
+        "properties": {}
+      },
+      {
+        "id": "ent_claim_presentation_requirements",
+        "entity_type": "Claims Presentation Condition Precedent",
+        "name": "Claims Presentation Requirements under Government Code Chapters 1 and 2 of Part 3 of Division 3.6 of Title 1",
+        "legal_role": "Procedural requirements that the Contractor must satisfy before bringing civil action against the District.",
+        "confidence": 1.0,
+        "evidence_quote": "Contractor shall comply with all claims presentation requirements as provided in Chapter 1... and Chapter 2... as a condition precedent to the Contractor’s right to bring a civil action against the District.",
+        "properties": {}
+      },
+      {
+        "id": "ent_dispute_resolution_tolling",
+        "entity_type": "Dispute Resolution Tolling Provision",
+        "name": "Tolling of claim presentation time during dispute resolution",
+        "legal_role": "Suspends the running of the time to present claims while the claim is under dispute and during meet and confer processes.",
+        "confidence": 1.0,
+        "evidence_quote": "the running of the time within which a claim must be presented to the District shall be tolled from the time the Contractor submits its written claim until the time the claim is denied",
+        "properties": {}
+      },
+      {
+        "id": "ent_work_performance_during_dispute",
+        "entity_type": "Work Continuation Obligation",
+        "name": "Obligation to continue Work during dispute",
+        "legal_role": "Requires Contractor and subcontractors to continue performing Work without delay during disputes unless District agrees in writing.",
+        "confidence": 1.0,
+        "evidence_quote": "Pending resolution of the dispute, Contractor and its subcontractors shall continue to perform the Work... and shall not cause a delay of the Work during any dispute... except by written agreement of the District.",
+        "properties": {}
+      },
+      {
+        "id": "ent_litigation_costs_allocation",
+        "entity_type": "Litigation Costs Allocation Clause",
+        "name": "Each party bears its own litigation costs",
+        "legal_role": "Specifies that each party is responsible for its own litigation and related expenses if enforcement of the Agreement is necessary.",
+        "confidence": 1.0,
+        "evidence_quote": "each party shall bear its own litigation and collection expenses, witness fees, court costs, and attorney’s fees.",
+        "properties": {}
+      },
+      {
+        "id": "ent_assignment_restriction",
+        "entity_type": "Assignment Restriction",
+        "name": "Restriction on Contractor's assignment rights",
+        "legal_role": "Prohibits Contractor from assigning or transferring rights or obligations under the Agreement without District's prior written consent.",
+        "confidence": 1.0,
+        "evidence_quote": "Contractor shall not assign or transfer in any way any or all of its rights, burdens, duties, or obligations under this Agreement without the prior written consent of the District.",
+        "properties": {}
+      },
+      {
+        "id": "ent_time_is_of_essence_clause",
+        "entity_type": "Time is of the Essence Clause",
+        "name": "Time is of the essence",
+        "legal_role": "Establishes that timely performance and compliance with Agreement provisions are essential and material terms.",
+        "confidence": 1.0,
+        "evidence_quote": "Time is of the essence in the performance of and compliance with each of the provisions and conditions of this Agreement.",
+        "properties": {}
+      },
+      {
+        "id": "ent_governing_law_clause",
+        "entity_type": "Governing Law and Venue Clause",
+        "name": "Governing law and venue",
+        "legal_role": "Specifies that the Agreement is governed by California law and venue for disputes is in the County of the District's administration office.",
+        "confidence": 1.0,
+        "evidence_quote": "This Agreement shall be governed by and construed in accordance with the laws of the State of California with venue of any action in a County in which the District administration office is located.",
+        "properties": {}
+      },
+      {
+        "id": "ent_binding_contract_clause",
+        "entity_type": "Binding Effect Clause",
+        "name": "Binding upon Parties and their successors and assigns",
+        "legal_role": "Makes the Agreement binding on the Parties and their successors and assigns, ensuring continuity of obligations and benefits.",
+        "confidence": 1.0,
+        "evidence_quote": "This Agreement shall be binding upon the Parties and upon their successors and assigns and shall inure to the benefit of said Parties and their successors and assigns.",
+        "properties": {}
+      },
+      {
+        "id": "ent_district_waiver_clause",
+        "entity_type": "Waiver Clause",
+        "name": "District waiver limitations",
+        "legal_role": "Clarifies that waiver of one term or breach by the District does not waive other terms or breaches.",
+        "confidence": 1.0,
+        "evidence_quote": "District's waiver of any term... shall not constitute the waiver of any other term... or the waiver of a breach of any other term...",
+        "properties": {}
+      },
+      {
+        "id": "ent_invalid_term_clause",
+        "entity_type": "Severability Clause",
+        "name": "Invalid term severability",
+        "legal_role": "Provides that if any provision is found illegal or unenforceable, the remainder of the Agreement remains valid and enforceable.",
+        "confidence": 1.0,
+        "evidence_quote": "If any provision of this Agreement is declared... to be illegal, invalid or unenforceable... the remaining parts... shall not be affected thereby...",
+        "properties": {}
+      },
+      {
+        "id": "ent_entire_contract_clause",
+        "entity_type": "Entire Agreement Clause",
+        "name": "Entire contract integration",
+        "legal_role": "Declares that this Agreement supersedes all prior agreements and constitutes the full understanding between the Parties.",
+        "confidence": 1.0,
+        "evidence_quote": "This Agreement sets forth the entire agreement between the Parties and fully supersedes any and all prior agreements...",
+        "properties": {}
+      },
+      {
+        "id": "ent_no_oral_modifications_clause",
+        "entity_type": "No Oral Modification Clause",
+        "name": "No oral modifications",
+        "legal_role": "Prevents any oral agreements or conversations from modifying the written terms of the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "No oral agreement or conversation... shall affect or modify any of the terms or obligations contained in any of the documents comprising the Agreement.",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_department_of_industrial_relations",
+        "relationship_type": "Subject to Labor Compliance Monitoring and Enforcement",
+        "legal_significance": "The Contractor's performance is legally monitored and enforced by the Department of Industrial Relations to ensure compliance with labor regulations.",
+        "confidence": 1.0,
+        "evidence_quote": "and is subject to labor compliance monitoring and enforcement by the Department of Industrial Relations."
+      },
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_california_fair_employment_and_housing_act",
+        "relationship_type": "Obligation to Comply with Anti-Discrimination Law",
+        "legal_significance": "Contractor must comply with the California Fair Employment and Housing Act to prevent discrimination in performing the Work.",
+        "confidence": 1.0,
+        "evidence_quote": "Contractor herein agrees to comply with the provisions of the California Fair Employment and Housing Act..."
+      },
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_federal_civil_rights_act_1964",
+        "relationship_type": "Obligation to Comply with Federal Anti-Discrimination Law",
+        "legal_significance": "Contractor must comply with the Federal Civil Rights Act of 1964 to ensure non-discriminatory practices.",
+        "confidence": 1.0,
+        "evidence_quote": "the Federal Civil Rights Act of 1964, as set forth in Public Law 88-352..."
+      },
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_executive_order_11246",
+        "relationship_type": "Obligation to Comply with Executive Order",
+        "legal_significance": "Contractor must comply with Executive Order 11246 and applicable administrative rules to maintain lawful employment practices.",
+        "confidence": 1.0,
+        "evidence_quote": "Executive Order 11246; and all administrative rules and regulations found to be applicable to Contractor and all of its subcontractors."
+      },
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_subcontractors",
+        "relationship_type": "Obligation to Require Subcontractor Compliance",
+        "legal_significance": "Contractor must ensure that all subcontractors comply with the same anti-discrimination and labor laws applicable to Contractor.",
+        "confidence": 1.0,
+        "evidence_quote": "Contractor agrees to require like compliance by all its subcontractor(s)."
+      },
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_district",
+        "relationship_type": "Assignment of Anti-Trust Claims to District",
+        "legal_significance": "Contractor and subcontractors assign all anti-trust claims arising under specified statutes to the District upon final payment, transferring legal rights.",
+        "confidence": 1.0,
+        "evidence_quote": "Contractor and its subcontractor(s) agree to assign to the District all rights, title, and interest in and to all causes of action... This assignment shall be made and become effective at the time the District tenders final payment to the Contractor"
+      },
+      {
+        "source_id": "ent_final_payment",
+        "target_id": "ent_district",
+        "relationship_type": "Triggering Event for Assignment of Claims",
+        "legal_significance": "The District's tender of final payment triggers the automatic assignment of anti-trust claims from Contractor to District.",
+        "confidence": 1.0,
+        "evidence_quote": "This assignment shall be made and become effective at the time the District tenders final payment to the Contractor"
+      },
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_claim_presentation_requirements",
+        "relationship_type": "Condition Precedent to Civil Action",
+        "legal_significance": "Contractor must comply with statutory claims presentation requirements before initiating civil litigation against the District.",
+        "confidence": 1.0,
+        "evidence_quote": "Contractor shall comply with all claims presentation requirements... as a condition precedent to the Contractor’s right to bring a civil action against the District."
+      },
+      {
+        "source_id": "ent_claim_presentation_requirements",
+        "target_id": "ent_dispute_resolution_tolling",
+        "relationship_type": "Tolling of Claim Presentation Time",
+        "legal_significance": "The time to present claims is paused during dispute resolution processes, affecting Contractor's rights and deadlines.",
+        "confidence": 1.0,
+        "evidence_quote": "the running of the time within which a claim must be presented to the District shall be tolled from the time the Contractor submits its written claim until the time the claim is denied"
+      },
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_work_performance_during_dispute",
+        "relationship_type": "Obligation to Continue Work During Disputes",
+        "legal_significance": "Contractor and subcontractors must continue performing the Work without delay during disputes unless the District agrees otherwise in writing, ensuring project continuity.",
+        "confidence": 1.0,
+        "evidence_quote": "Pending resolution of the dispute, Contractor and its subcontractors shall continue to perform the Work... and shall not cause a delay of the Work during any dispute... except by written agreement of the District."
+      },
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_litigation_costs_allocation",
+        "relationship_type": "Allocation of Litigation Costs",
+        "legal_significance": "Each party bears its own costs in litigation enforcing the Agreement, affecting financial risk and recovery.",
+        "confidence": 1.0,
+        "evidence_quote": "each party shall bear its own litigation and collection expenses, witness fees, court costs, and attorney’s fees."
+      },
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_assignment_restriction",
+        "relationship_type": "Restriction on Assignment Without District Consent",
+        "legal_significance": "Contractor cannot assign or transfer rights or obligations under the Agreement without prior written consent from the District, protecting District's interests.",
+        "confidence": 1.0,
+        "evidence_quote": "Contractor shall not assign or transfer in any way any or all of its rights... without the prior written consent of the District."
+      },
+      {
+        "source_id": "clause:Solar_System_Operations_and_Maintenance_Agreement_1:19:28_3:Labor_Compliance_Contractor_shall_perform_the_Work:5d2fcf",
+        "target_id": "ent_time_is_of_essence_clause",
+        "relationship_type": "Incorporation of Time is of the Essence",
+        "legal_significance": "The clause incorporates the 'Time is of the Essence' provision, emphasizing the critical nature of timely performance under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Time is of the essence in the performance of and compliance with each of the provisions and conditions of this Agreement."
+      },
+      {
+        "source_id": "clause:Solar_System_Operations_and_Maintenance_Agreement_1:19:28_3:Labor_Compliance_Contractor_shall_perform_the_Work:5d2fcf",
+        "target_id": "ent_governing_law_clause",
+        "relationship_type": "Governing Law and Venue Specification",
+        "legal_significance": "The clause specifies that the Agreement is governed by California law and venue is in the County of the District's administration office, guiding dispute resolution.",
+        "confidence": 1.0,
+        "evidence_quote": "This Agreement shall be governed by and construed in accordance with the laws of the State of California with venue of any action in a County in which the District administration office is located."
+      },
+      {
+        "source_id": "clause:Solar_System_Operations_and_Maintenance_Agreement_1:19:28_3:Labor_Compliance_Contractor_shall_perform_the_Work:5d2fcf",
+        "target_id": "ent_binding_contract_clause",
+        "relationship_type": "Binding Effect on Successors and Assigns",
+        "legal_significance": "The clause binds the Parties and their successors and assigns, ensuring continuity of obligations and benefits beyond original signatories.",
+        "confidence": 1.0,
+        "evidence_quote": "This Agreement shall be binding upon the Parties and upon their successors and assigns and shall inure to the benefit of said Parties and their successors and assigns."
+      },
+      {
+        "source_id": "ent_district",
+        "target_id": "ent_district_waiver_clause",
+        "relationship_type": "Limitation on District's Waiver Effect",
+        "legal_significance": "District's waiver of any term or breach does not waive other terms or breaches, preserving District's rights under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "District's waiver of any term... shall not constitute the waiver of any other term... or the waiver of a breach of any other term..."
+      },
+      {
+        "source_id": "clause:Solar_System_Operations_and_Maintenance_Agreement_1:19:28_3:Labor_Compliance_Contractor_shall_perform_the_Work:5d2fcf",
+        "target_id": "ent_invalid_term_clause",
+        "relationship_type": "Severability of Invalid Terms",
+        "legal_significance": "The clause ensures that if any provision is invalid, the rest of the Agreement remains enforceable, maintaining contractual integrity.",
+        "confidence": 1.0,
+        "evidence_quote": "If any provision of this Agreement is declared... to be illegal, invalid or unenforceable... the remaining parts... shall not be affected thereby..."
+      },
+      {
+        "source_id": "clause:Solar_System_Operations_and_Maintenance_Agreement_1:19:28_3:Labor_Compliance_Contractor_shall_perform_the_Work:5d2fcf",
+        "target_id": "ent_entire_contract_clause",
+        "relationship_type": "Integration of Entire Agreement",
+        "legal_significance": "The clause integrates the entire agreement, superseding prior understandings and preventing reliance on external agreements.",
+        "confidence": 1.0,
+        "evidence_quote": "This Agreement sets forth the entire agreement between the Parties and fully supersedes any and all prior agreements..."
+      },
+      {
+        "source_id": "clause:Solar_System_Operations_and_Maintenance_Agreement_1:19:28_3:Labor_Compliance_Contractor_shall_perform_the_Work:5d2fcf",
+        "target_id": "ent_no_oral_modifications_clause",
+        "relationship_type": "Prohibition of Oral Modifications",
+        "legal_significance": "The clause prohibits oral modifications to the Agreement, ensuring that changes are only effective if in writing.",
+        "confidence": 1.0,
+        "evidence_quote": "No oral agreement or conversation... shall affect or modify any of the terms or obligations contained in any of the documents comprising the Agreement."
+      }
+    ],
+    "extractor_notes": "This clause contains multiple distinct legal provisions beyond labor compliance, including anti-discrimination, anti-trust claim assignment, dispute resolution, litigation cost allocation, assignment restrictions, and standard contract boilerplate clauses such as governing law, severability, entire agreement, and no oral modification. The extraction treats each separately as entities and relationships to capture the full legal framework explicitly stated."
+  },
+  {
+    "source_clause_id": "clause:Solar_System_Operations_and_Maintenance_Agreement_1:EXHIBIT_A:2:Preventative_Maintenance_Inspections_Testing:2c17b8",
+    "source_clause_title": "2. Preventative Maintenance, Inspections & Testing:",
+    "contract_id": "Solar_System_Operations_and_Maintenance_Agreement_1",
+    "source_page_start": 13,
+    "source_page_end": 14,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_OandM_Contractor",
+        "entity_type": "Operations and Maintenance Contractor",
+        "name": "O&M Contractor",
+        "legal_role": "The party responsible for performing preventative maintenance, inspections, testing, and sensor calibration as specified in the agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "O&M Contractor will have the pyranometer calibrated by the manufacturer of each sensor.",
+        "properties": {}
+      },
+      {
+        "id": "ent_Customer",
+        "entity_type": "Customer",
+        "name": "Customer",
+        "legal_role": "The party receiving the maintenance services and to whom deficiencies and recommendations must be reported.",
+        "confidence": 1.0,
+        "evidence_quote": "Inform Customer and warranty providers of all deficiencies identified. Provide Customer with recommendations for corrective action.",
+        "properties": {}
+      },
+      {
+        "id": "ent_Photovoltaic_Modules",
+        "entity_type": "Photovoltaic Modules",
+        "name": "photovoltaic (PV) modules",
+        "legal_role": "Equipment subject to inspection for damage, discoloration, or delamination as part of preventative maintenance.",
+        "confidence": 1.0,
+        "evidence_quote": "Inspect photovoltaic (PV) modules for damage, discoloration or delamination.",
+        "properties": {}
+      },
+      {
+        "id": "ent_Mounting_System",
+        "entity_type": "Mounting System",
+        "name": "mounting system",
+        "legal_role": "Structural component subject to inspection for damage or corrosion.",
+        "confidence": 1.0,
+        "evidence_quote": "Inspect mounting system for damage or corrosion.",
+        "properties": {}
+      },
+      {
+        "id": "ent_Inverter",
+        "entity_type": "Inverter",
+        "name": "Inverter",
+        "legal_role": "Electrical equipment subject to cleaning, inspection, tightening, and other preventive maintenance per OEM warranty.",
+        "confidence": 1.0,
+        "evidence_quote": "Clean all filters and fans. Inspect inverter pad and container. Tighten wire terminations inside inverter. All other preventive maintenance required by original equipment manufacturer (OEM) warranty.",
+        "properties": {}
+      },
+      {
+        "id": "ent_Electrical_Balance_of_System",
+        "entity_type": "Electrical Balance of System (BOS)",
+        "name": "Electrical Balance of System (BOS)",
+        "legal_role": "Electrical components subject to inspection, thermo-graphic analysis, testing, and repair.",
+        "confidence": 1.0,
+        "evidence_quote": "Inspect ground braids, electrodes and conductors for damage. Perform thermo-graphic analysis of combiner boxes, inverters, transformers, and conductor connections to buses, breakers or disconnects. Test and record all circuits, open circuit voltage and short circuit current and repair any fault circuits. Inspection of all terminal connections for torque.",
+        "properties": {}
+      },
+      {
+        "id": "ent_Meteorological_Station",
+        "entity_type": "Meteorological Station",
+        "name": "Meteorological Station",
+        "legal_role": "Optional equipment subject to inspection and cleaning if present at the site.",
+        "confidence": 1.0,
+        "evidence_quote": "Meteorological Station (if present) Inspect weather measurement equipment for damage. Clean pyranometers and reference cells.",
+        "properties": {}
+      },
+      {
+        "id": "ent_Site_Conditions",
+        "entity_type": "Site Conditions",
+        "name": "Site Conditions",
+        "legal_role": "Physical site elements subject to inspection for drainage, vegetation hazards, safety conditions, and signage.",
+        "confidence": 1.0,
+        "evidence_quote": "Inspect drainage conditions. Inspect vegetation for array shading or fire hazards, and remove any obstructions causing shade or hazard issues, including ongoing tree trimming as needed. Inspect safety conditions and proper signage.",
+        "properties": {}
+      },
+      {
+        "id": "ent_Maintenance_Reporting",
+        "entity_type": "Maintenance Reporting Obligation",
+        "name": "Maintenance Reporting",
+        "legal_role": "Obligation to record inspection results, document damage, notify Customer and warranty providers of deficiencies, and provide corrective recommendations.",
+        "confidence": 1.0,
+        "evidence_quote": "Record results of all inspections. Take photographs of any damage or defects identified. Inform Customer and warranty providers of all deficiencies identified. Provide Customer with recommendations for corrective action.",
+        "properties": {}
+      },
+      {
+        "id": "ent_Sensor_Calibration",
+        "entity_type": "Sensor Calibration Obligation",
+        "name": "Sensor Calibration",
+        "legal_role": "Obligation to calibrate pyranometers every 24 months, perform field comparisons, adjust sensors, and optionally replace sensors.",
+        "confidence": 1.0,
+        "evidence_quote": "Every twenty-four (24) months, O&M Contractor will have the pyranometer calibrated by the manufacturer of each sensor. Field comparison of pyranometers and reference cells to calibrated sensor. Adjust field sensor to within ±3% of calibrated sensor and record changed parameters. O&M Contractor may replace pyranometers in lieu of field calibration.",
+        "properties": {}
+      },
+      {
+        "id": "ent_OEM_Warranty",
+        "entity_type": "Original Equipment Manufacturer Warranty",
+        "name": "OEM warranty",
+        "legal_role": "Warranty under which preventive maintenance requirements for the inverter must be performed.",
+        "confidence": 1.0,
+        "evidence_quote": "All other preventive maintenance required by original equipment manufacturer (OEM) warranty.",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_OandM_Contractor",
+        "target_id": "ent_Photovoltaic_Modules",
+        "relationship_type": "Maintenance Obligation",
+        "legal_significance": "The O&M Contractor is legally obligated to inspect the photovoltaic modules for damage, discoloration, or delamination as part of preventative maintenance.",
+        "confidence": 1.0,
+        "evidence_quote": "Inspect photovoltaic (PV) modules for damage, discoloration or delamination."
+      },
+      {
+        "source_id": "ent_OandM_Contractor",
+        "target_id": "ent_Mounting_System",
+        "relationship_type": "Maintenance Obligation",
+        "legal_significance": "The O&M Contractor must inspect the mounting system for damage or corrosion, ensuring structural integrity is maintained.",
+        "confidence": 1.0,
+        "evidence_quote": "Inspect mounting system for damage or corrosion."
+      },
+      {
+        "source_id": "ent_OandM_Contractor",
+        "target_id": "ent_Inverter",
+        "relationship_type": "Maintenance Obligation",
+        "legal_significance": "The O&M Contractor is required to perform cleaning, inspection, tightening, and other preventive maintenance on the inverter as mandated by the OEM warranty.",
+        "confidence": 1.0,
+        "evidence_quote": "Clean all filters and fans. Inspect inverter pad and container. Tighten wire terminations inside inverter. All other preventive maintenance required by original equipment manufacturer (OEM) warranty."
+      },
+      {
+        "source_id": "ent_OandM_Contractor",
+        "target_id": "ent_Electrical_Balance_of_System",
+        "relationship_type": "Maintenance Obligation",
+        "legal_significance": "The O&M Contractor must inspect, analyze, test, and repair the Electrical Balance of System components to ensure proper operation and safety.",
+        "confidence": 1.0,
+        "evidence_quote": "Inspect ground braids, electrodes and conductors for damage. Perform thermo-graphic analysis of combiner boxes, inverters, transformers, and conductor connections to buses, breakers or disconnects. Test and record all circuits, open circuit voltage and short circuit current and repair any fault circuits. Inspection of all terminal connections for torque."
+      },
+      {
+        "source_id": "ent_OandM_Contractor",
+        "target_id": "ent_Meteorological_Station",
+        "relationship_type": "Maintenance Obligation Conditional on Presence",
+        "legal_significance": "If a meteorological station is present, the O&M Contractor must inspect and clean its equipment, ensuring accurate weather data collection.",
+        "confidence": 1.0,
+        "evidence_quote": "Meteorological Station (if present) Inspect weather measurement equipment for damage. Clean pyranometers and reference cells."
+      },
+      {
+        "source_id": "ent_OandM_Contractor",
+        "target_id": "ent_Site_Conditions",
+        "relationship_type": "Maintenance Obligation",
+        "legal_significance": "The O&M Contractor must inspect site conditions including drainage, vegetation hazards, and safety signage, and remove obstructions to maintain safe and efficient operation.",
+        "confidence": 1.0,
+        "evidence_quote": "Inspect drainage conditions. Inspect vegetation for array shading or fire hazards, and remove any obstructions causing shade or hazard issues, including ongoing tree trimming as needed. Inspect safety conditions and proper signage."
+      },
+      {
+        "source_id": "ent_OandM_Contractor",
+        "target_id": "ent_Maintenance_Reporting",
+        "relationship_type": "Reporting Obligation",
+        "legal_significance": "The O&M Contractor must document inspection results, photograph defects, notify the Customer and warranty providers of deficiencies, and provide corrective recommendations, ensuring transparency and accountability.",
+        "confidence": 1.0,
+        "evidence_quote": "Record results of all inspections. Take photographs of any damage or defects identified. Inform Customer and warranty providers of all deficiencies identified. Provide Customer with recommendations for corrective action."
+      },
+      {
+        "source_id": "ent_OandM_Contractor",
+        "target_id": "ent_Sensor_Calibration",
+        "relationship_type": "Calibration Obligation",
+        "legal_significance": "The O&M Contractor is obligated to calibrate pyranometer sensors every 24 months or replace them, ensuring measurement accuracy as required by the agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Every twenty-four (24) months, O&M Contractor will have the pyranometer calibrated by the manufacturer of each sensor. Field comparison of pyranometers and reference cells to calibrated sensor. Adjust field sensor to within ±3% of calibrated sensor and record changed parameters. O&M Contractor may replace pyranometers in lieu of field calibration."
+      },
+      {
+        "source_id": "ent_Inverter",
+        "target_id": "ent_OEM_Warranty",
+        "relationship_type": "Maintenance Requirement Reference",
+        "legal_significance": "Preventive maintenance on the inverter must comply with the requirements set forth by the OEM warranty, linking maintenance obligations to warranty conditions.",
+        "confidence": 1.0,
+        "evidence_quote": "All other preventive maintenance required by original equipment manufacturer (OEM) warranty."
+      },
+      {
+        "source_id": "ent_Maintenance_Reporting",
+        "target_id": "ent_Customer",
+        "relationship_type": "Notification Obligation",
+        "legal_significance": "The O&M Contractor must inform the Customer of all deficiencies and provide recommendations, enabling the Customer to take corrective action and enforce warranty rights.",
+        "confidence": 1.0,
+        "evidence_quote": "Inform Customer and warranty providers of all deficiencies identified. Provide Customer with recommendations for corrective action."
+      }
+    ],
+    "extractor_notes": "This clause details the specific preventative maintenance, inspection, testing, and reporting obligations of the O&M Contractor, including sensor calibration frequency and conditions. The clause explicitly ties inverter maintenance to OEM warranty requirements and establishes notification duties to the Customer and warranty providers. The clause is labeled as 'termination' type but contains no explicit termination rights or conditions."
+  },
+  {
+    "source_clause_id": "clause:Solar_System_Operations_and_Maintenance_Agreement_1:2:2_1:This_Agreement_shall_become_effective_on_the_Effec:070d22",
+    "source_clause_title": "2.1. This Agreement shall become effective on the Effective Date and shall remain",
+    "contract_id": "Solar_System_Operations_and_Maintenance_Agreement_1",
+    "source_page_start": 1,
+    "source_page_end": 2,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_initial_term",
+        "entity_type": "Initial Contract Term",
+        "name": "initial term of five (5) years",
+        "legal_role": "Defines the first fixed duration during which the Agreement is effective unless terminated earlier.",
+        "confidence": 1.0,
+        "evidence_quote": "for an initial term of five (5) years.",
+        "properties": {}
+      },
+      {
+        "id": "ent_renewal_term",
+        "entity_type": "Renewal Contract Term",
+        "name": "additional five (5) year term (i.e., the renewal term)",
+        "legal_role": "Specifies the automatic extension period of the Agreement following the initial term unless terminated by the District.",
+        "confidence": 1.0,
+        "evidence_quote": "The initial term shall automatically renew for an additional five (5) year term (i.e., the renewal term)",
+        "properties": {}
+      },
+      {
+        "id": "ent_additional_terms",
+        "entity_type": "Additional Contract Terms",
+        "name": "minimum of three (3) additional five (5) year terms",
+        "legal_role": "Represents further optional extension periods offered to the District after the renewal term, exercisable at the District’s sole discretion.",
+        "confidence": 1.0,
+        "evidence_quote": "At the conclusion of the renewal term, a minimum of three (3) additional five (5) year terms shall be offered to the District and District will accept the additional terms at its sole discretion.",
+        "properties": {}
+      },
+      {
+        "id": "ent_district",
+        "entity_type": "Contracting Party - District",
+        "name": "District",
+        "legal_role": "The party with the right to provide written notice of termination and discretion to accept additional terms.",
+        "confidence": 1.0,
+        "evidence_quote": "unless the District provides written notice of termination prior to the end of the initial term.",
+        "properties": {}
+      },
+      {
+        "id": "ent_term_definition",
+        "entity_type": "Defined Contract Term Period",
+        "name": "Term",
+        "legal_role": "Collective term referring to the initial term, renewal term, and any additional terms thereafter.",
+        "confidence": 1.0,
+        "evidence_quote": "The initial term, renewal term, and any additional term thereafter are collectively referenced as “Term.”",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_initial_term",
+        "target_id": "ent_renewal_term",
+        "relationship_type": "Automatic Renewal Condition",
+        "legal_significance": "The Agreement automatically extends from the initial term to the renewal term unless the District terminates it in writing before the initial term ends.",
+        "confidence": 1.0,
+        "evidence_quote": "The initial term shall automatically renew for an additional five (5) year term (i.e., the renewal term) unless the District provides written notice of termination prior to the end of the initial term."
+      },
+      {
+        "source_id": "ent_renewal_term",
+        "target_id": "ent_additional_terms",
+        "relationship_type": "Offer of Additional Terms Post-Renewal",
+        "legal_significance": "After the renewal term ends, the District is offered further extension terms, which it may accept or reject at its sole discretion.",
+        "confidence": 1.0,
+        "evidence_quote": "At the conclusion of the renewal term, a minimum of three (3) additional five (5) year terms shall be offered to the District and District will accept the additional terms at its sole discretion."
+      },
+      {
+        "source_id": "ent_district",
+        "target_id": "ent_initial_term",
+        "relationship_type": "Termination Right Prior to Initial Term Expiry",
+        "legal_significance": "The District holds the right to terminate the Agreement by providing written notice before the initial term expires, preventing automatic renewal.",
+        "confidence": 1.0,
+        "evidence_quote": "unless the District provides written notice of termination prior to the end of the initial term."
+      },
+      {
+        "source_id": "ent_term_definition",
+        "target_id": "ent_initial_term",
+        "relationship_type": "Component Term Inclusion",
+        "legal_significance": "The defined 'Term' includes the initial term as one of its constituent periods.",
+        "confidence": 1.0,
+        "evidence_quote": "The initial term, renewal term, and any additional term thereafter are collectively referenced as “Term.”"
+      },
+      {
+        "source_id": "ent_term_definition",
+        "target_id": "ent_renewal_term",
+        "relationship_type": "Component Term Inclusion",
+        "legal_significance": "The defined 'Term' includes the renewal term as one of its constituent periods.",
+        "confidence": 1.0,
+        "evidence_quote": "The initial term, renewal term, and any additional term thereafter are collectively referenced as “Term.”"
+      },
+      {
+        "source_id": "ent_term_definition",
+        "target_id": "ent_additional_terms",
+        "relationship_type": "Component Term Inclusion",
+        "legal_significance": "The defined 'Term' includes any additional terms exercised after the renewal term.",
+        "confidence": 1.0,
+        "evidence_quote": "The initial term, renewal term, and any additional term thereafter are collectively referenced as “Term.”"
+      }
+    ],
+    "extractor_notes": "The clause defines a multi-stage contract term structure with an initial fixed term, an automatic renewal term subject to District's termination right, and multiple additional optional terms exercisable at District's sole discretion. The District's rights to terminate and accept additional terms are explicitly stated, emphasizing its control over contract continuation."
+  },
+  {
+    "source_clause_id": "clause:Solar_System_Operations_and_Maintenance_Agreement_1:19:21_4:The_District_may_retain_so_much_of_the_moneys_due_:90e1c8",
+    "source_clause_title": "21.4. The District may retain so much of the moneys due the Contractor as shall be considered",
+    "contract_id": "Solar_System_Operations_and_Maintenance_Agreement_1",
+    "source_page_start": 8,
+    "source_page_end": 9,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_district",
+        "entity_type": "Obligor with Retention Right",
+        "name": "District",
+        "legal_role": "The District holds the right to retain payments due to the Contractor under certain conditions, affecting the Contractor's receipt of funds.",
+        "confidence": 1.0,
+        "evidence_quote": "The District may retain so much of the moneys due the Contractor as shall be considered necessary",
+        "properties": {}
+      },
+      {
+        "id": "ent_contractor",
+        "entity_type": "Obligee Subject to Payment Retention",
+        "name": "Contractor",
+        "legal_role": "The Contractor is the party entitled to receive payments which may be retained by the District pending certain conditions.",
+        "confidence": 1.0,
+        "evidence_quote": "The District may retain so much of the moneys due the Contractor",
+        "properties": {}
+      },
+      {
+        "id": "ent_indemnified_parties",
+        "entity_type": "Indemnified Parties",
+        "name": "Indemnified Parties",
+        "legal_role": "Parties protected by the Contractor's obligation to defend and pay damages, whose interests justify the District's retention of funds.",
+        "confidence": 1.0,
+        "evidence_quote": "until the District has received written agreement from the Contractor that it will unconditionally defend the Indemnified Parties",
+        "properties": {}
+      },
+      {
+        "id": "ent_defense_and_indemnification_obligations",
+        "entity_type": "Surviving Defense and Indemnification Obligations",
+        "name": "Defense and Indemnification Obligations",
+        "legal_role": "Contractor's continuing obligations to defend and indemnify the Indemnified Parties, surviving completion and termination of the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "The defense and indemnification obligations hereunder shall survive the completion of Work, including the warranty/guarantee period, and/or the termination of the Agreement.",
+        "properties": {}
+      },
+      {
+        "id": "ent_claims_or_actions",
+        "entity_type": "Pending Claims or Actions for Damages",
+        "name": "suit, claims or actions for damages",
+        "legal_role": "Legal proceedings or claims that justify the District's retention of funds until their disposition or settlement.",
+        "confidence": 1.0,
+        "evidence_quote": "until disposition of any such suit, claims or actions for damages",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_district",
+        "target_id": "ent_contractor",
+        "relationship_type": "Payment Retention Right",
+        "legal_significance": "The District's right to retain payments due to the Contractor legally affects the timing and certainty of the Contractor's compensation.",
+        "confidence": 1.0,
+        "evidence_quote": "The District may retain so much of the moneys due the Contractor as shall be considered necessary"
+      },
+      {
+        "source_id": "ent_district",
+        "target_id": "ent_claims_or_actions",
+        "relationship_type": "Retention Condition Based on Pending Claims",
+        "legal_significance": "The District's retention of payments is conditioned on the existence and disposition of pending claims or actions for damages.",
+        "confidence": 1.0,
+        "evidence_quote": "until disposition of any such suit, claims or actions for damages"
+      },
+      {
+        "source_id": "ent_district",
+        "target_id": "ent_indemnified_parties",
+        "relationship_type": "Conditioned on Contractor's Indemnification Agreement",
+        "legal_significance": "The District will retain payments until it receives the Contractor's written agreement to defend and indemnify the Indemnified Parties, ensuring protection against liability.",
+        "confidence": 1.0,
+        "evidence_quote": "until the District has received written agreement from the Contractor that it will unconditionally defend the Indemnified Parties, and pay any damages due by reason of settlement or judgment."
+      },
+      {
+        "source_id": "ent_defense_and_indemnification_obligations",
+        "target_id": "Solar_System_Operations_and_Maintenance_Agreement_1:19:21_4:The_District_may_retain_so_much_of_the_moneys_due_:90e1c8",
+        "relationship_type": "Survival of Obligations Post-Termination",
+        "legal_significance": "The defense and indemnification obligations survive the completion and termination of the Agreement, impacting the District's rights and Contractor's liabilities beyond contract end.",
+        "confidence": 1.0,
+        "evidence_quote": "The defense and indemnification obligations hereunder shall survive the completion of Work, including the warranty/guarantee period, and/or the termination of the Agreement."
+      }
+    ],
+    "extractor_notes": "The clause text is partial and appears to be a continuation; the key legal entities and relationships relate to the District's right to retain payments pending indemnification and resolution of claims, and the survival of indemnification obligations beyond contract termination."
+  },
+  {
+    "source_clause_id": "clause:Solar_System_Operations_and_Maintenance_Agreement_1:EXHIBIT_A:1:Performance_Monitoring_Website:fe1af4",
+    "source_clause_title": "1. Performance Monitoring Website:",
+    "contract_id": "Solar_System_Operations_and_Maintenance_Agreement_1",
+    "source_page_start": 15,
+    "source_page_end": 15,
+    "clause_type_hint": "payment",
+    "entities": [
+      {
+        "id": "ent_pv_production_meter",
+        "entity_type": "Measurement Device for PV System Production",
+        "name": "PV production meter",
+        "legal_role": "This device is legally significant as it provides the official measurement of the photovoltaic system's electricity production, which is essential for performance monitoring and contractual compliance.",
+        "confidence": 1.0,
+        "evidence_quote": "Separate PV production and consumption meters to measure PV system production and on-site consumption of electricity (separate from net consumption).",
+        "properties": {}
+      },
+      {
+        "id": "ent_consumption_meter",
+        "entity_type": "Measurement Device for On-Site Electricity Consumption",
+        "name": "Consumption meter",
+        "legal_role": "This device is legally significant as it measures the on-site electricity consumption separately from net consumption, enabling accurate monitoring and reporting under the contract.",
+        "confidence": 1.0,
+        "evidence_quote": "Separate PV production and consumption meters to measure PV system production and on-site consumption of electricity (separate from net consumption).",
+        "properties": {}
+      },
+      {
+        "id": "ent_customer_website",
+        "entity_type": "Customer Access Portal",
+        "name": "Customer website",
+        "legal_role": "This website is legally significant as it provides the Customer with updated operational performance data every 15 minutes, fulfilling the Contractor's obligation to provide timely performance information.",
+        "confidence": 1.0,
+        "evidence_quote": "Customer website updated every 15 minutes with operational performance from the beginning of operation.",
+        "properties": {}
+      },
+      {
+        "id": "ent_cellular_data_connection",
+        "entity_type": "Data Transmission Infrastructure Maintained by Contractor",
+        "name": "Cellular data connection or other data connection",
+        "legal_role": "This data connection is legally significant because it ensures the Contractor's responsibility to maintain independent data transmission infrastructure, excluding use of the Customer’s internet connection.",
+        "confidence": 1.0,
+        "evidence_quote": "Cellular data connection or other data connection maintained by the Contractor. System may not use Customer’s internet connection.",
+        "properties": {}
+      },
+      {
+        "id": "ent_monitoring_reporting_portal",
+        "entity_type": "Internet-Based Monitoring and Reporting Portal",
+        "name": "Internet-based monitoring and reporting portal",
+        "legal_role": "This portal is legally significant as it grants the Customer full data access, including weather parameters, fulfilling transparency and data access obligations under the contract.",
+        "confidence": 1.0,
+        "evidence_quote": "Internet-based monitoring and reporting portal with full data access to Customer, including weather parameters.",
+        "properties": {}
+      },
+      {
+        "id": "ent_synchronized_clock_intervals",
+        "entity_type": "Time Synchronization Standard for Site Meters",
+        "name": "Synchronized clock intervals",
+        "legal_role": "This synchronization requirement is legally significant as it ensures data consistency and comparability across site meters and utility meters, which is critical for accurate performance measurement.",
+        "confidence": 1.0,
+        "evidence_quote": "Synchronized clock intervals for all site meters, including production and consumption meter. Clock intervals shall be synchronized with utility meters where feasible.",
+        "properties": {}
+      },
+      {
+        "id": "ent_data_download_format",
+        "entity_type": "Data Export Format Requirement",
+        "name": "Microsoft Excel format",
+        "legal_role": "This requirement is legally significant as it mandates that all site data must be downloadable in a widely accessible format, ensuring the Customer’s ability to analyze and use the data.",
+        "confidence": 1.0,
+        "evidence_quote": "All site data must be able to be downloaded to Customer’s computer in Microsoft Excel format.",
+        "properties": {}
+      },
+      {
+        "id": "ent_login_credentials",
+        "entity_type": "Customer Access Credentials",
+        "name": "Login credentials",
+        "legal_role": "These credentials are legally significant as they provide the Customer with authorized access to the monitoring system during the term of the O&M Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Customer will be provided with login credentials for use during the term of the O&M Agreement.",
+        "properties": {}
+      },
+      {
+        "id": "ent_monitoring_software_fees",
+        "entity_type": "Fees for Monitoring Software and Data Services",
+        "name": "All fees for monitoring software and cellular/data fees",
+        "legal_role": "These fees are legally significant as they are included within the scope of the contract, defining the Contractor’s financial obligations and the Customer’s cost responsibilities.",
+        "confidence": 1.0,
+        "evidence_quote": "All fees for monitoring software and cellular/data fees included under this scope.",
+        "properties": {}
+      },
+      {
+        "id": "ent_contractor",
+        "entity_type": "Contractor",
+        "name": "Contractor",
+        "legal_role": "The Contractor is legally significant as the party responsible for maintaining the data connection and providing the monitoring services as specified in the clause.",
+        "confidence": 1.0,
+        "evidence_quote": "Cellular data connection or other data connection maintained by the Contractor.",
+        "properties": {}
+      },
+      {
+        "id": "ent_customer",
+        "entity_type": "Customer",
+        "name": "Customer",
+        "legal_role": "The Customer is legally significant as the recipient of the monitoring data, access credentials, and the party entitled to use the monitoring website and data under the contract.",
+        "confidence": 1.0,
+        "evidence_quote": "Customer website updated every 15 minutes with operational performance from the beginning of operation.",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_cellular_data_connection",
+        "relationship_type": "Maintenance Obligation",
+        "legal_significance": "The Contractor’s obligation to maintain the cellular or other data connection ensures continuous and independent data transmission for monitoring, which is critical for contract performance.",
+        "confidence": 1.0,
+        "evidence_quote": "Cellular data connection or other data connection maintained by the Contractor."
+      },
+      {
+        "source_id": "ent_customer",
+        "target_id": "ent_customer_website",
+        "relationship_type": "Access Right",
+        "legal_significance": "The Customer’s right to access the website updated every 15 minutes provides them with timely operational performance data, enabling oversight and verification of the Contractor’s performance.",
+        "confidence": 1.0,
+        "evidence_quote": "Customer website updated every 15 minutes with operational performance from the beginning of operation."
+      },
+      {
+        "source_id": "ent_customer",
+        "target_id": "ent_login_credentials",
+        "relationship_type": "Credential Provision",
+        "legal_significance": "Providing login credentials to the Customer legally enables their authorized access to the monitoring system during the contract term, ensuring data security and controlled access.",
+        "confidence": 1.0,
+        "evidence_quote": "Customer will be provided with login credentials for use during the term of the O&M Agreement."
+      },
+      {
+        "source_id": "ent_monitoring_software_fees",
+        "target_id": "clause:Solar_System_Operations_and_Maintenance_Agreement_1:EXHIBIT_A:1:Performance_Monitoring_Website:fe1af4",
+        "relationship_type": "Fee Inclusion in Contract Scope",
+        "legal_significance": "Including all fees for monitoring software and cellular/data fees within this scope defines the financial responsibilities and prevents additional charges outside the contract terms.",
+        "confidence": 1.0,
+        "evidence_quote": "All fees for monitoring software and cellular/data fees included under this scope."
+      },
+      {
+        "source_id": "ent_synchronized_clock_intervals",
+        "target_id": "ent_pv_production_meter",
+        "relationship_type": "Time Synchronization Requirement",
+        "legal_significance": "Synchronizing clock intervals of the production meter ensures data accuracy and comparability with utility meters, which is essential for reliable performance measurement.",
+        "confidence": 1.0,
+        "evidence_quote": "Synchronized clock intervals for all site meters, including production and consumption meter. Clock intervals shall be synchronized with utility meters where feasible."
+      },
+      {
+        "source_id": "ent_synchronized_clock_intervals",
+        "target_id": "ent_consumption_meter",
+        "relationship_type": "Time Synchronization Requirement",
+        "legal_significance": "Synchronizing clock intervals of the consumption meter ensures data accuracy and comparability with utility meters, which is essential for reliable performance measurement.",
+        "confidence": 1.0,
+        "evidence_quote": "Synchronized clock intervals for all site meters, including production and consumption meter. Clock intervals shall be synchronized with utility meters where feasible."
+      },
+      {
+        "source_id": "ent_monitoring_reporting_portal",
+        "target_id": "ent_customer",
+        "relationship_type": "Data Access Right",
+        "legal_significance": "Granting the Customer full data access, including weather parameters, through the portal ensures transparency and enables the Customer to monitor system performance effectively.",
+        "confidence": 1.0,
+        "evidence_quote": "Internet-based monitoring and reporting portal with full data access to Customer, including weather parameters."
+      },
+      {
+        "source_id": "ent_data_download_format",
+        "target_id": "ent_customer",
+        "relationship_type": "Data Export Capability",
+        "legal_significance": "Requiring data to be downloadable in Microsoft Excel format ensures the Customer can use and analyze the data conveniently, supporting their operational and reporting needs.",
+        "confidence": 1.0,
+        "evidence_quote": "All site data must be able to be downloaded to Customer’s computer in Microsoft Excel format."
+      }
+    ],
+    "extractor_notes": "The clause defines detailed technical and operational requirements for performance monitoring, specifying the Contractor's maintenance obligations, Customer's access rights, and data handling standards, but does not specify any payment amounts or penalties despite the clause type hint 'payment'."
+  },
+  {
+    "source_clause_id": "clause:Solar_System_Operations_and_Maintenance_Agreement_1:EXHIBIT_A:3:Performance_Review_and_Reports:7b9dfa",
+    "source_clause_title": "3. Performance Review and Reports:",
+    "contract_id": "Solar_System_Operations_and_Maintenance_Agreement_1",
+    "source_page_start": 15,
+    "source_page_end": 17,
+    "clause_type_hint": "reporting_obligation",
+    "entities": [
+      {
+        "id": "ent_system_performance_data",
+        "entity_type": "Contractual Performance Data Set",
+        "name": "System performance data",
+        "legal_role": "This data set defines the specific performance metrics that the O&M Contractor must review and report, forming the basis for performance evaluation and potential remedial actions.",
+        "confidence": 1.0,
+        "evidence_quote": "Review of the following System performance data with an O&M Contractor performance engineer and proposal of a recommended action plan where applicable: i. Expected vs. Actual system production (kWh) ii. System Availability iii. Recoverable Degradation iv. Performance Index v. Operation and Maintenance Records vi. Safety, Accidents and Environmental Reporting vii. Proposal of Recommended Actions",
+        "properties": {}
+      },
+      {
+        "id": "ent_o&m_contractor_performance_engineer",
+        "entity_type": "Designated Performance Engineer",
+        "name": "O&M Contractor performance engineer",
+        "legal_role": "This individual is responsible for reviewing system performance data and proposing recommended action plans, thus playing a key role in monitoring and managing contract performance.",
+        "confidence": 1.0,
+        "evidence_quote": "Review of the following System performance data with an O&M Contractor performance engineer and proposal of a recommended action plan where applicable",
+        "properties": {}
+      },
+      {
+        "id": "ent_customer",
+        "entity_type": "Contracting Customer",
+        "name": "Customer",
+        "legal_role": "The party entitled to receive performance reports, request custom reports, and obtain O&M records, thereby holding rights to monitor and verify contract performance.",
+        "confidence": 1.0,
+        "evidence_quote": "Optional custom reports can be supplied, upon Customer request, at added cost. ... Annual Performance Review Report provided to Customer within sixty (60) days of each anniversary of the Commercial Operation Date (COD) ... O&M Records must be provided to Customer upon request.",
+        "properties": {}
+      },
+      {
+        "id": "ent_annual_performance_review_report",
+        "entity_type": "Mandatory Annual Performance Report",
+        "name": "Annual Performance Review Report",
+        "legal_role": "A required periodic report that must be delivered to the Customer within a specified timeframe, serving as a formal mechanism for performance accountability.",
+        "confidence": 1.0,
+        "evidence_quote": "Annual Performance Review Report provided to Customer within sixty (60) days of each anniversary of the Commercial Operation Date (COD)",
+        "properties": {}
+      },
+      {
+        "id": "ent_commercial_operation_date",
+        "entity_type": "Contractual Reference Date",
+        "name": "Commercial Operation Date (COD)",
+        "legal_role": "A defined contractual milestone used as the reference point for timing the delivery of annual performance reports.",
+        "confidence": 1.0,
+        "evidence_quote": "Annual Performance Review Report provided to Customer within sixty (60) days of each anniversary of the Commercial Operation Date (COD) as defined in the ESA.",
+        "properties": {}
+      },
+      {
+        "id": "ent_optional_custom_reports",
+        "entity_type": "Optional Custom Reporting Service",
+        "name": "Optional custom reports",
+        "legal_role": "Additional reporting services that the Customer may request at extra cost, creating a potential additional obligation and cost under the contract.",
+        "confidence": 1.0,
+        "evidence_quote": "Optional custom reports can be supplied, upon Customer request, at added cost.",
+        "properties": {}
+      },
+      {
+        "id": "ent_o&m_records",
+        "entity_type": "Operations and Maintenance Records",
+        "name": "O&M Records",
+        "legal_role": "Records documenting operations and maintenance activities that must be provided to the Customer upon request, supporting transparency and verification of contract performance.",
+        "confidence": 1.0,
+        "evidence_quote": "O&M Records must be provided to Customer upon request.",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_o&m_contractor_performance_engineer",
+        "target_id": "ent_system_performance_data",
+        "relationship_type": "Performance Data Review and Analysis Obligation",
+        "legal_significance": "The O&M Contractor performance engineer is contractually obligated to review the specified system performance data, which is essential for assessing compliance and operational status.",
+        "confidence": 1.0,
+        "evidence_quote": "Review of the following System performance data with an O&M Contractor performance engineer and proposal of a recommended action plan where applicable"
+      },
+      {
+        "source_id": "ent_o&m_contractor_performance_engineer",
+        "target_id": "ent_customer",
+        "relationship_type": "Reporting and Recommendation Duty",
+        "legal_significance": "The performance engineer must propose recommended action plans to the Customer based on the data review, enabling the Customer to monitor and enforce performance standards.",
+        "confidence": 1.0,
+        "evidence_quote": "Review of the following System performance data with an O&M Contractor performance engineer and proposal of a recommended action plan where applicable"
+      },
+      {
+        "source_id": "ent_annual_performance_review_report",
+        "target_id": "ent_customer",
+        "relationship_type": "Report Delivery Obligation",
+        "legal_significance": "The contract mandates delivery of the Annual Performance Review Report to the Customer, establishing a formal communication and accountability mechanism.",
+        "confidence": 1.0,
+        "evidence_quote": "Annual Performance Review Report provided to Customer within sixty (60) days of each anniversary of the Commercial Operation Date (COD)"
+      },
+      {
+        "source_id": "ent_annual_performance_review_report",
+        "target_id": "ent_commercial_operation_date",
+        "relationship_type": "Timing Reference",
+        "legal_significance": "The Commercial Operation Date serves as the contractual reference point for calculating the deadline for the Annual Performance Review Report, ensuring temporal clarity.",
+        "confidence": 1.0,
+        "evidence_quote": "Annual Performance Review Report provided to Customer within sixty (60) days of each anniversary of the Commercial Operation Date (COD)"
+      },
+      {
+        "source_id": "ent_optional_custom_reports",
+        "target_id": "ent_customer",
+        "relationship_type": "Optional Service Provision Upon Customer Request",
+        "legal_significance": "The Customer has the right to request additional custom reports, which the Contractor may provide at an added cost, creating optional contractual obligations and potential additional fees.",
+        "confidence": 1.0,
+        "evidence_quote": "Optional custom reports can be supplied, upon Customer request, at added cost."
+      },
+      {
+        "source_id": "ent_o&m_records",
+        "target_id": "ent_customer",
+        "relationship_type": "Records Access Right",
+        "legal_significance": "The Customer is entitled to access O&M Records upon request, which supports oversight and verification of the Contractor’s performance under the agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "O&M Records must be provided to Customer upon request."
+      }
+    ],
+    "extractor_notes": "The clause explicitly defines specific performance data categories, reporting obligations including timing tied to the Commercial Operation Date, optional reporting services at additional cost, and Customer rights to access records, all of which establish clear monitoring and accountability mechanisms under the O&M Agreement."
+  },
+  {
+    "source_clause_id": "clause:Solar_System_Operations_and_Maintenance_Agreement_1:3:3_2:Contractor_shall_bill_District_for_the_Services_re:69fe8a",
+    "source_clause_title": "3.2. Contractor shall bill District for the Services rendered on an annual basis and",
+    "contract_id": "Solar_System_Operations_and_Maintenance_Agreement_1",
+    "source_page_start": 2,
+    "source_page_end": 2,
+    "clause_type_hint": "payment",
+    "entities": [
+      {
+        "id": "ent_contractor",
+        "entity_type": "Obligor (Service Provider)",
+        "name": "Contractor",
+        "legal_role": "The party obligated to provide services and submit payment applications to the District, establishing the basis for payment.",
+        "confidence": 1.0,
+        "evidence_quote": "Contractor shall bill District for the Services rendered on an annual basis",
+        "properties": {}
+      },
+      {
+        "id": "ent_district",
+        "entity_type": "Obligee (Payor)",
+        "name": "District",
+        "legal_role": "The party obligated to pay undisputed sums to the Contractor within a specified timeframe upon receipt of payment applications.",
+        "confidence": 1.0,
+        "evidence_quote": "The District shall pay all undisputed sums due to Contractor within sixty (60) days after receipt of the payment application.",
+        "properties": {}
+      },
+      {
+        "id": "ent_payment_application",
+        "entity_type": "Payment Application Document",
+        "name": "Payment Application",
+        "legal_role": "A formal document submitted by Contractor to District detailing dates, specific services rendered, maintenance reports, and annual performance review report, which triggers payment obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "shall ensure that each payment application contains the dates and specific Services rendered, along with the maintenance reports and annual performance review report described in EXHIBIT A.",
+        "properties": {}
+      },
+      {
+        "id": "ent_services",
+        "entity_type": "Contracted Services",
+        "name": "Services rendered",
+        "legal_role": "The specific services performed by Contractor that form the basis for billing and payment under the contract.",
+        "confidence": 1.0,
+        "evidence_quote": "each payment application contains the dates and specific Services rendered",
+        "properties": {}
+      },
+      {
+        "id": "ent_maintenance_reports",
+        "entity_type": "Contractual Deliverable",
+        "name": "Maintenance Reports",
+        "legal_role": "Reports documenting maintenance activities that must be included in the payment application as a condition precedent to payment.",
+        "confidence": 1.0,
+        "evidence_quote": "along with the maintenance reports ... described in EXHIBIT A",
+        "properties": {}
+      },
+      {
+        "id": "ent_annual_performance_review_report",
+        "entity_type": "Contractual Deliverable",
+        "name": "Annual Performance Review Report",
+        "legal_role": "A required report included in the payment application that reviews annual performance, serving as a condition precedent to payment.",
+        "confidence": 1.0,
+        "evidence_quote": "along with the ... annual performance review report described in EXHIBIT A",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_payment_application",
+        "relationship_type": "Obligation to Submit Payment Application",
+        "legal_significance": "Contractor must submit a payment application containing specified information to trigger District's payment obligation.",
+        "confidence": 1.0,
+        "evidence_quote": "shall ensure that each payment application contains the dates and specific Services rendered, along with the maintenance reports and annual performance review report described in EXHIBIT A."
+      },
+      {
+        "source_id": "ent_payment_application",
+        "target_id": "ent_district",
+        "relationship_type": "Trigger for Payment Obligation",
+        "legal_significance": "Receipt of a proper payment application by District triggers the obligation to pay undisputed sums within 60 days.",
+        "confidence": 1.0,
+        "evidence_quote": "The District shall pay all undisputed sums due to Contractor within sixty (60) days after receipt of the payment application."
+      },
+      {
+        "source_id": "ent_services",
+        "target_id": "ent_payment_application",
+        "relationship_type": "Inclusion in Payment Application",
+        "legal_significance": "The specific services rendered must be detailed in the payment application to justify payment.",
+        "confidence": 1.0,
+        "evidence_quote": "each payment application contains the dates and specific Services rendered"
+      },
+      {
+        "source_id": "ent_maintenance_reports",
+        "target_id": "ent_payment_application",
+        "relationship_type": "Inclusion in Payment Application",
+        "legal_significance": "Maintenance reports are required deliverables included in the payment application, affecting payment processing.",
+        "confidence": 1.0,
+        "evidence_quote": "along with the maintenance reports ... described in EXHIBIT A"
+      },
+      {
+        "source_id": "ent_annual_performance_review_report",
+        "target_id": "ent_payment_application",
+        "relationship_type": "Inclusion in Payment Application",
+        "legal_significance": "The annual performance review report must be included in the payment application as a condition precedent to payment.",
+        "confidence": 1.0,
+        "evidence_quote": "along with the ... annual performance review report described in EXHIBIT A"
+      }
+    ],
+    "extractor_notes": "The clause explicitly conditions payment on submission of a payment application containing detailed service information and specified reports, and sets a 60-day payment period for undisputed sums, establishing clear procedural and timing obligations."
+  },
+  {
+    "source_clause_id": "clause:Solar_System_Operations_and_Maintenance_Agreement_1:f19de9:23_1_2:Workers_Compensation_and_Employers_Liability_Insur:e277c5",
+    "source_clause_title": "23.1.2. Workers’ Compensation and Employers’ Liability Insurance .  Workers’",
+    "contract_id": "Solar_System_Operations_and_Maintenance_Agreement_1",
+    "source_page_start": 9,
+    "source_page_end": 9,
+    "clause_type_hint": "payment",
+    "entities": [
+      {
+        "id": "ent_contractor",
+        "entity_type": "Obligor under Insurance Procurement Obligation",
+        "name": "Contractor",
+        "legal_role": "The party obligated to procure and maintain workers’ compensation and employers’ liability insurance for its employees performing the Services, ensuring compliance with statutory requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "The Contractor shall procure and maintain at all times ... Workers’ Compensation and Employers’ Liability Insurance for all of its employees performing any portion of the Services.",
+        "properties": {}
+      },
+      {
+        "id": "ent_workers_compensation_insurance",
+        "entity_type": "Statutorily Mandated Insurance Coverage",
+        "name": "Workers’ Compensation Insurance",
+        "legal_role": "Insurance coverage required by California Labor Code section 3700 to protect employees against work-related injuries or illnesses.",
+        "confidence": 1.0,
+        "evidence_quote": "In accordance with provisions of section 3700 of the California Labor Code, the Contractor shall be required to secure workers’ compensation coverage for its employees.",
+        "properties": {}
+      },
+      {
+        "id": "ent_employers_liability_insurance",
+        "entity_type": "Supplemental Employer Insurance Coverage",
+        "name": "Employers’ Liability Insurance",
+        "legal_role": "Insurance coverage protecting the employer against liability claims from employees not covered under workers’ compensation statutes.",
+        "confidence": 1.0,
+        "evidence_quote": "Compensation Insurance and Employers’ Liability Insurance for all of its employees performing any portion of the Services.",
+        "properties": {}
+      },
+      {
+        "id": "ent_employees",
+        "entity_type": "Covered Individuals under Insurance Policies",
+        "name": "Employees performing any portion of the Services",
+        "legal_role": "Individuals whose work activities trigger the Contractor’s obligation to maintain insurance coverage for their protection.",
+        "confidence": 1.0,
+        "evidence_quote": "all of its employees performing any portion of the Services",
+        "properties": {}
+      },
+      {
+        "id": "ent_unprotected_employees",
+        "entity_type": "Employees Not Covered by Workers’ Compensation Statute",
+        "name": "Employee(s) not protected under the Workers’ Compensation Statute",
+        "legal_role": "Employees who are not covered by statutory workers’ compensation protections and thus require alternative insurance coverage before commencing work.",
+        "confidence": 1.0,
+        "evidence_quote": "If any class of employee or employees engaged in performing any portion of the Services under this Agreement are not protected under the Workers’ Compensation Statute",
+        "properties": {}
+      },
+      {
+        "id": "ent_insurance_coverage_for_unprotected",
+        "entity_type": "Alternative Insurance Coverage for Unprotected Employees",
+        "name": "Adequate insurance coverage for employees not otherwise protected",
+        "legal_role": "Insurance that must be obtained to protect employees not covered by the Workers’ Compensation Statute prior to their commencement of work.",
+        "confidence": 1.0,
+        "evidence_quote": "adequate insurance coverage for the protection of any employee(s) not otherwise protected must be obtained before any of those employee(s) commence performing any portion of the Services.",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_workers_compensation_insurance",
+        "relationship_type": "Insurance Procurement Obligation",
+        "legal_significance": "The Contractor is legally required to secure workers’ compensation insurance to comply with California Labor Code section 3700 and protect its employees.",
+        "confidence": 1.0,
+        "evidence_quote": "In accordance with provisions of section 3700 of the California Labor Code, the Contractor shall be required to secure workers’ compensation coverage for its employees."
+      },
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_employers_liability_insurance",
+        "relationship_type": "Insurance Procurement Obligation",
+        "legal_significance": "The Contractor must procure employers’ liability insurance to cover liabilities arising from employee claims not protected by workers’ compensation.",
+        "confidence": 1.0,
+        "evidence_quote": "Compensation Insurance and Employers’ Liability Insurance for all of its employees performing any portion of the Services."
+      },
+      {
+        "source_id": "ent_employees",
+        "target_id": "ent_workers_compensation_insurance",
+        "relationship_type": "Coverage Relationship",
+        "legal_significance": "Employees performing the Services are the insured parties under the workers’ compensation insurance procured by the Contractor.",
+        "confidence": 1.0,
+        "evidence_quote": "Workers’ Compensation and Employers’ Liability Insurance for all of its employees performing any portion of the Services."
+      },
+      {
+        "source_id": "ent_unprotected_employees",
+        "target_id": "ent_insurance_coverage_for_unprotected",
+        "relationship_type": "Mandatory Alternative Insurance Coverage Requirement",
+        "legal_significance": "Employees not covered by the Workers’ Compensation Statute must be protected by adequate insurance before starting work, ensuring no gap in coverage.",
+        "confidence": 1.0,
+        "evidence_quote": "If any class of employee or employees ... are not protected under the Workers’ Compensation Statute, adequate insurance coverage ... must be obtained before any of those employee(s) commence performing any portion of the Services."
+      },
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_insurance_coverage_for_unprotected",
+        "relationship_type": "Insurance Procurement Obligation for Unprotected Employees",
+        "legal_significance": "The Contractor is obligated to obtain adequate insurance coverage for employees not protected by the Workers’ Compensation Statute before they begin work.",
+        "confidence": 1.0,
+        "evidence_quote": "adequate insurance coverage for the protection of any employee(s) not otherwise protected must be obtained before any of those employee(s) commence performing any portion of the Services."
+      }
+    ],
+    "extractor_notes": "The clause explicitly references statutory compliance with California Labor Code section 3700 and distinguishes between employees covered and not covered by the Workers’ Compensation Statute, imposing specific insurance procurement obligations on the Contractor."
+  },
+  {
+    "source_clause_id": "clause:Solar_System_Operations_and_Maintenance_Agreement_1:EXHIBIT_C:2:Renovation_Repair_and_Painting_Rule_Section_402_c_:d68ddb",
+    "source_clause_title": "2. Renovation, Repair and Painting Rule, Section 402(c)(3) of the Toxic",
+    "contract_id": "Solar_System_Operations_and_Maintenance_Agreement_1",
+    "source_page_start": 27,
+    "source_page_end": 27,
+    "clause_type_hint": "reporting_obligation",
+    "entities": [
+      {
+        "id": "ent_epa",
+        "entity_type": "Regulatory Agency",
+        "name": "EPA",
+        "legal_role": "The EPA is the federal agency that imposes regulatory requirements for lead safe work practices under the Renovation, Repair and Painting Rule.",
+        "confidence": 1.0,
+        "evidence_quote": "The EPA requires lead safe work practices to reduce exposure to lead hazards created by renovation, repair and painting activities that disturb lead -based paint.",
+        "properties": {}
+      },
+      {
+        "id": "ent_renovation_repair_and_painting_rule",
+        "entity_type": "Federal Regulatory Rule",
+        "name": "Renovation, Repair and Painting Rule (RRP)",
+        "legal_role": "The RRP is a federal regulatory rule mandating certified lead-safe work practices for renovations disturbing lead-based paint in certain buildings.",
+        "confidence": 1.0,
+        "evidence_quote": "Pursuant to the Renovation, Repair and Painting Rule (RRP), renovations in homes, childcare facilities, and schools built prior to 1978 must be conducted by certified renovations firms...",
+        "properties": {}
+      },
+      {
+        "id": "ent_certified_renovations_firms",
+        "entity_type": "Certified Contractor Entity",
+        "name": "certified renovations firms",
+        "legal_role": "Certified renovations firms are legally authorized entities required to conduct renovations disturbing lead-based paint under the RRP.",
+        "confidence": 1.0,
+        "evidence_quote": "renovations in homes, childcare facilities, and schools built prior to 1978 must be conducted by certified renovations firms",
+        "properties": {}
+      },
+      {
+        "id": "ent_renovators",
+        "entity_type": "Certified Individual Renovator",
+        "name": "renovators with training by a EPA-accredited training provider",
+        "legal_role": "Renovators trained by EPA-accredited providers are individuals legally required to perform renovation work under the RRP.",
+        "confidence": 1.0,
+        "evidence_quote": "using renovators with training by a EPA- accredited training provider",
+        "properties": {}
+      },
+      {
+        "id": "ent_title_40_cfr_745",
+        "entity_type": "Federal Regulatory Code",
+        "name": "title 40 of the Code of Federal Regulations as part 745 (40 CFR 745)",
+        "legal_role": "40 CFR 745 contains the federal regulations governing lead-based materials compliance relevant to the RRP.",
+        "confidence": 1.0,
+        "evidence_quote": "including those rules and regulations appearing within title 40 of the Code of Federal Regulations as part 745 (40 CFR 745)",
+        "properties": {}
+      },
+      {
+        "id": "ent_contractors_disturbing_lead_paint",
+        "entity_type": "Contractor Subject to RRP",
+        "name": "contractors who disturb lead-based paint",
+        "legal_role": "Contractors disturbing lead-based paint in specified areas are legally obligated to comply with RRP requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "The RRP requirements apply to all contractors who disturb lead- based paint in a six -square-foot or greater area indoors or a 20 -square-foot or greater area outdoors.",
+        "properties": {}
+      },
+      {
+        "id": "ent_dph_certified_inspector_or_risk_assessor",
+        "entity_type": "Certified Inspector or Risk Assessor",
+        "name": "DPH-certified inspector or risk assessor",
+        "legal_role": "DPH-certified inspectors or risk assessors have the legal authority to determine lead-free status of pre-1978 homes, affecting certification requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "If a DPH-certified inspector or risk assessor determines that a home constructed before 1978 is lead-free, the federal certification is not required",
+        "properties": {}
+      },
+      {
+        "id": "ent_pre_1978_buildings",
+        "entity_type": "Covered Building Subject to RRP",
+        "name": "homes, childcare facilities, and schools built prior to 1978",
+        "legal_role": "Buildings constructed prior to 1978 are legally subject to RRP requirements when renovations disturb lead-based paint.",
+        "confidence": 1.0,
+        "evidence_quote": "renovations in homes, childcare facilities, and schools built prior to 1978 must be conducted by certified renovations firms",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_epa",
+        "target_id": "ent_renovation_repair_and_painting_rule",
+        "relationship_type": "Regulatory Issuance",
+        "legal_significance": "The EPA issues the Renovation, Repair and Painting Rule, establishing the regulatory framework for lead-safe renovation practices.",
+        "confidence": 1.0,
+        "evidence_quote": "The EPA requires lead safe work practices... Pursuant to the Renovation, Repair and Painting Rule (RRP)"
+      },
+      {
+        "source_id": "ent_renovation_repair_and_painting_rule",
+        "target_id": "ent_certified_renovations_firms",
+        "relationship_type": "Certification Requirement",
+        "legal_significance": "The RRP mandates that renovations disturbing lead-based paint in covered buildings must be performed by certified renovations firms.",
+        "confidence": 1.0,
+        "evidence_quote": "renovations... must be conducted by certified renovations firms"
+      },
+      {
+        "source_id": "ent_renovation_repair_and_painting_rule",
+        "target_id": "ent_renovators",
+        "relationship_type": "Training Requirement",
+        "legal_significance": "The RRP requires renovators to have training from EPA-accredited providers to ensure compliance with lead-safe work practices.",
+        "confidence": 1.0,
+        "evidence_quote": "using renovators with training by a EPA- accredited training provider"
+      },
+      {
+        "source_id": "ent_renovation_repair_and_painting_rule",
+        "target_id": "ent_title_40_cfr_745",
+        "relationship_type": "Incorporation by Reference",
+        "legal_significance": "The RRP incorporates compliance with lead-based material regulations found in 40 CFR 745 as part of its legal requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "including those rules and regulations appearing within title 40 of the Code of Federal Regulations as part 745 (40 CFR 745)"
+      },
+      {
+        "source_id": "ent_renovation_repair_and_painting_rule",
+        "target_id": "ent_contractors_disturbing_lead_paint",
+        "relationship_type": "Scope of Application",
+        "legal_significance": "The RRP applies to contractors disturbing lead-based paint in specified minimum areas, defining the scope of regulated activities.",
+        "confidence": 1.0,
+        "evidence_quote": "The RRP requirements apply to all contractors who disturb lead- based paint in a six -square-foot or greater area indoors or a 20 -square-foot or greater area outdoors."
+      },
+      {
+        "source_id": "ent_dph_certified_inspector_or_risk_assessor",
+        "target_id": "ent_pre_1978_buildings",
+        "relationship_type": "Lead-Free Determination Authority",
+        "legal_significance": "DPH-certified inspectors or risk assessors can legally determine that a pre-1978 building is lead-free, exempting it from federal certification requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "If a DPH-certified inspector or risk assessor determines that a home constructed before 1978 is lead-free, the federal certification is not required"
+      }
+    ],
+    "extractor_notes": "The clause explicitly defines the regulatory framework and certification requirements under the EPA's Renovation, Repair and Painting Rule, including the scope of application and exceptions based on lead-free determinations by DPH-certified inspectors or risk assessors."
+  },
+  {
+    "source_clause_id": "clause:Solar_System_Operations_and_Maintenance_Agreement_1:2:2_3:District_may_at_any_time_with_our_without_reason_t:77f65b",
+    "source_clause_title": "2.3. District may, at any time, with our without reason, terminate this Agreement",
+    "contract_id": "Solar_System_Operations_and_Maintenance_Agreement_1",
+    "source_page_start": 2,
+    "source_page_end": 2,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_district",
+        "entity_type": "Terminating Party",
+        "name": "District",
+        "legal_role": "The party with the unilateral right to terminate the Agreement at any time with or without reason, triggering contractual consequences.",
+        "confidence": 1.0,
+        "evidence_quote": "District may, at any time, with our without reason, terminate this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_contractor",
+        "entity_type": "Contracted Service Provider",
+        "name": "Contractor",
+        "legal_role": "The party obligated to perform Services under the Agreement and entitled to compensation for Services satisfactorily rendered up to termination.",
+        "confidence": 1.0,
+        "evidence_quote": "compensate Contractor only for Services satisfactorily rendered to the date of termination",
+        "properties": {}
+      },
+      {
+        "id": "ent_notice_period",
+        "entity_type": "Termination Notice Period",
+        "name": "Thirty (30) days’ notice",
+        "legal_role": "The minimum advance written notice period the District must provide before termination becomes effective.",
+        "confidence": 1.0,
+        "evidence_quote": "with thirty (30) days’ notice",
+        "properties": {}
+      },
+      {
+        "id": "ent_written_notice",
+        "entity_type": "Written Termination Notice",
+        "name": "Written notice by District",
+        "legal_role": "The formal communication method by which the District effectuates termination and stops further performance by the Contractor.",
+        "confidence": 1.0,
+        "evidence_quote": "Written notice by District shall be sufficient to stop further performance of Services by Contractor",
+        "properties": {}
+      },
+      {
+        "id": "ent_notice_deemed_given",
+        "entity_type": "Notice Deemed Receipt Rule",
+        "name": "Notice deemed given",
+        "legal_role": "The legal rule establishing when the termination notice is considered received by the Contractor, affecting timing of termination effects.",
+        "confidence": 1.0,
+        "evidence_quote": "Notice shall be deemed given when received by the Contractor or no later than three (3) calendar days after the date of mailing, whichever is sooner",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_district",
+        "target_id": "Solar_System_Operations_and_Maintenance_Agreement_1:clause:Solar_System_Operations_and_Maintenance_Agreement_1:2:2_3:District_may_at_any_time_with_our_without_reason_t:77f65b",
+        "relationship_type": "Termination Right Holder",
+        "legal_significance": "Identifies the District as the party authorized to terminate the Agreement under the specified clause.",
+        "confidence": 1.0,
+        "evidence_quote": "District may, at any time, with our without reason, terminate this Agreement"
+      },
+      {
+        "source_id": "ent_district",
+        "target_id": "ent_written_notice",
+        "relationship_type": "Notice Obligor",
+        "legal_significance": "The District is obligated to provide written notice to effectuate termination and stop further performance.",
+        "confidence": 1.0,
+        "evidence_quote": "Written notice by District shall be sufficient to stop further performance of Services by Contractor"
+      },
+      {
+        "source_id": "ent_written_notice",
+        "target_id": "ent_contractor",
+        "relationship_type": "Notice Recipient",
+        "legal_significance": "The Contractor is the recipient of the written termination notice, triggering cessation of services.",
+        "confidence": 1.0,
+        "evidence_quote": "Written notice by District shall be sufficient to stop further performance of Services by Contractor"
+      },
+      {
+        "source_id": "ent_notice_period",
+        "target_id": "ent_district",
+        "relationship_type": "Notice Period Imposed On",
+        "legal_significance": "The District must provide the Contractor with at least thirty (30) days’ notice before termination is effective.",
+        "confidence": 1.0,
+        "evidence_quote": "with thirty (30) days’ notice"
+      },
+      {
+        "source_id": "ent_notice_deemed_given",
+        "target_id": "ent_written_notice",
+        "relationship_type": "Notice Receipt Timing Rule",
+        "legal_significance": "Defines the timing for when the written notice is legally considered received by the Contractor, affecting termination timing.",
+        "confidence": 1.0,
+        "evidence_quote": "Notice shall be deemed given when received by the Contractor or no later than three (3) calendar days after the date of mailing, whichever is sooner"
+      },
+      {
+        "source_id": "ent_district",
+        "target_id": "ent_contractor",
+        "relationship_type": "Compensation Obligor to Contractor",
+        "legal_significance": "The District must compensate the Contractor only for Services satisfactorily rendered up to the termination date.",
+        "confidence": 1.0,
+        "evidence_quote": "compensate Contractor only for Services satisfactorily rendered to the date of termination"
+      }
+    ],
+    "extractor_notes": "The clause explicitly grants the District an unrestricted termination right with a 30-day notice period and specifies the method and timing of notice delivery, as well as the Contractor's entitlement to payment only for satisfactorily rendered services up to termination."
+  },
+  {
+    "source_clause_id": "clause:Solar_System_Operations_and_Maintenance_Agreement_1:3:3_4:Any_charges_for_Extra_Services_shall_be_paid_by_th:09cf90",
+    "source_clause_title": "3.4. Any charges for Extra Services shall be paid by the District only to the extent",
+    "contract_id": "Solar_System_Operations_and_Maintenance_Agreement_1",
+    "source_page_start": 2,
+    "source_page_end": 3,
+    "clause_type_hint": "payment",
+    "entities": [
+      {
+        "id": "ent_district",
+        "entity_type": "Payor Party",
+        "name": "District",
+        "legal_role": "The party responsible for payment of charges for Extra Services only if such services are authorized and satisfactorily completed.",
+        "confidence": 1.0,
+        "evidence_quote": "Any charges for Extra Services shall be paid by the District only to the extent that the claimed Extra Services were authorized as indicated herein and that the Extra Services have been satisfactorily completed to the District’s approval.",
+        "properties": {}
+      },
+      {
+        "id": "ent_contractor",
+        "entity_type": "Service Provider",
+        "name": "Contractor",
+        "legal_role": "The party performing Extra Services and seeking payment from the District, subject to prior written authorization.",
+        "confidence": 1.0,
+        "evidence_quote": "If any service is performed by Contractor without prior written authorization by District, District will not be obligated to pay for such service.",
+        "properties": {}
+      },
+      {
+        "id": "ent_extra_services",
+        "entity_type": "Extra Services",
+        "name": "Extra Services",
+        "legal_role": "Additional services beyond the base scope that require prior authorization and satisfactory completion to trigger payment obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "Any charges for Extra Services shall be paid by the District only to the extent that the claimed Extra Services were authorized as indicated herein and that the Extra Services have been satisfactorily completed to the District’s approval.",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_district",
+        "target_id": "ent_extra_services",
+        "relationship_type": "Payment Obligation Conditional on Authorization and Approval",
+        "legal_significance": "The District's obligation to pay charges for Extra Services is expressly conditioned on prior authorization and satisfactory completion approved by the District, limiting financial liability.",
+        "confidence": 1.0,
+        "evidence_quote": "Any charges for Extra Services shall be paid by the District only to the extent that the claimed Extra Services were authorized as indicated herein and that the Extra Services have been satisfactorily completed to the District’s approval."
+      },
+      {
+        "source_id": "ent_contractor",
+        "target_id": "ent_extra_services",
+        "relationship_type": "Service Performance Subject to Authorization",
+        "legal_significance": "The Contractor must obtain prior written authorization from the District before performing Extra Services to ensure payment eligibility.",
+        "confidence": 1.0,
+        "evidence_quote": "If any service is performed by Contractor without prior written authorization by District, District will not be obligated to pay for such service."
+      },
+      {
+        "source_id": "ent_district",
+        "target_id": "ent_contractor",
+        "relationship_type": "Payment Obligation for Authorized Services",
+        "legal_significance": "The District is obligated to pay the Contractor only for Extra Services that have been authorized and satisfactorily completed, protecting the District from unauthorized charges.",
+        "confidence": 1.0,
+        "evidence_quote": "If any service is performed by Contractor without prior written authorization by District, District will not be obligated to pay for such service."
+      }
+    ],
+    "extractor_notes": "The clause explicitly conditions payment on prior written authorization and satisfactory completion approved by the District, establishing clear payment triggers and limiting the District's financial exposure for unauthorized services."
+  },
+  {
+    "source_clause_id": "clause:Solar_System_Operations_and_Maintenance_Agreement_1:19:21_1:To_the_furthest_extent_permitted_by_California_law:a7c0d7",
+    "source_clause_title": "21.1. To the furthest extent permitted by California law, Contractor shall indemnify and hold",
+    "contract_id": "Solar_System_Operations_and_Maintenance_Agreement_1",
+    "source_page_start": 8,
+    "source_page_end": 8,
+    "clause_type_hint": "payment",
+    "entities": [
+      {
+        "id": "ent_indemnitor_contractor",
+        "entity_type": "Indemnitor",
+        "name": "Contractor",
+        "legal_role": "The party obligated to indemnify and hold harmless the Indemnified Parties from claims arising from the Agreement's performance.",
+        "confidence": 1.0,
+        "evidence_quote": "Contractor shall indemnify and hold harmless the District, its agents, representatives, officers, consultants, employees, and volunteers",
+        "properties": {}
+      },
+      {
+        "id": "ent_indemnified_parties",
+        "entity_type": "Indemnified Parties",
+        "name": "District, its agents, representatives, officers, consultants, employees, and volunteers",
+        "legal_role": "The parties protected by the indemnity obligation against claims arising from the Agreement's performance.",
+        "confidence": 1.0,
+        "evidence_quote": "the District, its agents, representatives, officers, consultants, employees, and volunteers (the “Indemnified Parties”)",
+        "properties": {}
+      },
+      {
+        "id": "ent_claims",
+        "entity_type": "Claims",
+        "name": "any and all demands, losses, liabilities, claims, suits, and actions",
+        "legal_role": "The types of legal or financial claims from which the Indemnified Parties are protected under the indemnity obligation.",
+        "confidence": 1.0,
+        "evidence_quote": "any and all demands, losses, liabilities, claims, suits, and actions (the “claims”) of any kind, nature, and description, including, but not limited to, attorneys’ fees and costs",
+        "properties": {}
+      },
+      {
+        "id": "ent_exclusion_active_negligence_willful_misconduct",
+        "entity_type": "Indemnity Exclusion Condition",
+        "name": "active negligence or willful misconduct of the Indemnified Parties",
+        "legal_role": "The condition under which the indemnity obligation does not apply, excluding claims caused by the Indemnified Parties' own active negligence or willful misconduct.",
+        "confidence": 1.0,
+        "evidence_quote": "unless the claims are caused by the active negligence or willful misconduct of the Indemnified Parties",
+        "properties": {}
+      },
+      {
+        "id": "ent_governing_law",
+        "entity_type": "Governing Law Limitation",
+        "name": "California law",
+        "legal_role": "The legal jurisdiction limiting the extent of the indemnity obligation to the furthest extent permitted by its laws.",
+        "confidence": 1.0,
+        "evidence_quote": "To the furthest extent permitted by California law",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_indemnitor_contractor",
+        "target_id": "ent_indemnified_parties",
+        "relationship_type": "Indemnification Obligation",
+        "legal_significance": "The Contractor is legally obligated to indemnify and hold harmless the District and related parties from claims arising from the Agreement's performance, protecting them from liability.",
+        "confidence": 1.0,
+        "evidence_quote": "Contractor shall indemnify and hold harmless the District, its agents, representatives, officers, consultants, employees, and volunteers"
+      },
+      {
+        "source_id": "ent_indemnitor_contractor",
+        "target_id": "ent_claims",
+        "relationship_type": "Scope of Indemnity Coverage",
+        "legal_significance": "The indemnity covers any and all claims, including attorneys’ fees and costs, directly or indirectly arising from the Agreement's performance, defining the breadth of Contractor's liability.",
+        "confidence": 1.0,
+        "evidence_quote": "from any and all demands, losses, liabilities, claims, suits, and actions (the “claims”) of any kind, nature, and description, including, but not limited to, attorneys’ fees and costs, directly or indirectly arising from, arising out of, connected with, or resulting from the performance of this Agreement"
+      },
+      {
+        "source_id": "ent_indemnification_obligation",
+        "target_id": "ent_exclusion_active_negligence_willful_misconduct",
+        "relationship_type": "Indemnity Exclusion",
+        "legal_significance": "The indemnity obligation excludes claims caused by the active negligence or willful misconduct of the Indemnified Parties, limiting Contractor's indemnity responsibility.",
+        "confidence": 1.0,
+        "evidence_quote": "unless the claims are caused by the active negligence or willful misconduct of the Indemnified Parties"
+      },
+      {
+        "source_id": "ent_indemnification_obligation",
+        "target_id": "ent_governing_law",
+        "relationship_type": "Legal Limitation on Indemnity",
+        "legal_significance": "The indemnity obligation is limited to the furthest extent permitted by California law, ensuring compliance with applicable legal standards.",
+        "confidence": 1.0,
+        "evidence_quote": "To the furthest extent permitted by California law"
+      }
+    ],
+    "extractor_notes": "The clause establishes a broad indemnity obligation by the Contractor to protect the District and related parties from claims arising from the Agreement, subject to exclusions for the District's own active negligence or willful misconduct and limited by California law."
+  }
+]

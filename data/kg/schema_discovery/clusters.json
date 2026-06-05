@@ -1,0 +1,3929 @@
+{
+  "entity_clusters": [
+    [
+      "ASTM Standard"
+    ],
+    [
+      "Access Provision"
+    ],
+    [
+      "Access Road Provision"
+    ],
+    [
+      "Account"
+    ],
+    [
+      "Act or Omission"
+    ],
+    [
+      "Actual Direct Costs"
+    ],
+    [
+      "Additional Contract Terms",
+      "Contractual Specific Terms",
+      "Contractual Term",
+      "Related Contractual Agreement"
+    ],
+    [
+      "Additional Cure Time"
+    ],
+    [
+      "Additional Environmental Work"
+    ],
+    [
+      "Additional Insured Party"
+    ],
+    [
+      "Additional Work"
+    ],
+    [
+      "Affected System Operator",
+      "Contractual Party - Affected System Operator"
+    ],
+    [
+      "Affected System Upgrade Facilities",
+      "Project Component - Affected System Upgrade Facilities",
+      "System Deliverability Upgrade Facilities",
+      "System Upgrade Facilities"
+    ],
+    [
+      "Affiliate",
+      "Affiliate (Related Entity)",
+      "Affiliate Relationship",
+      "Affiliates or Assigns"
+    ],
+    [
+      "Affiliates of Provider"
+    ],
+    [
+      "Aggregate Gains"
+    ],
+    [
+      "Aggregate Losses and Costs"
+    ],
+    [
+      "Agreement",
+      "Agreement (Contract Document)"
+    ],
+    [
+      "Allocated Charge"
+    ],
+    [
+      "Alternative Insurance Coverage for Unprotected Employees"
+    ],
+    [
+      "Annual Budget and Work Plan"
+    ],
+    [
+      "Annual True-Up Mechanism"
+    ],
+    [
+      "Applicable Insurance Coverage"
+    ],
+    [
+      "Applicable Law",
+      "Applicable Law or Governmental Authority",
+      "Applicable Laws",
+      "Applicable Laws and Regulations",
+      "Applicable Legal Requirements"
+    ],
+    [
+      "Applicable Taxes"
+    ],
+    [
+      "Article 11"
+    ],
+    [
+      "Assignee"
+    ],
+    [
+      "Assignment Restriction"
+    ],
+    [
+      "Attachment A - List of Employees/Subcontractors"
+    ],
+    [
+      "Audit Period"
+    ],
+    [
+      "Authorized Agent"
+    ],
+    [
+      "Billing Meter"
+    ],
+    [
+      "Billing Period"
+    ],
+    [
+      "Billing Rate"
+    ],
+    [
+      "Binding Effect Clause"
+    ],
+    [
+      "Breach",
+      "Breaching Party"
+    ],
+    [
+      "Breach of Agreement",
+      "Breach of Contract"
+    ],
+    [
+      "Business Day",
+      "Business Day (Time Definition)"
+    ],
+    [
+      "Buyer",
+      "Buyer (Contracting Party)"
+    ],
+    [
+      "Buyer Default"
+    ],
+    [
+      "Buyer Exercise Notice"
+    ],
+    [
+      "Buyer Obligee",
+      "Payment Obligee"
+    ],
+    [
+      "Buyer-Approved Reimbursable Costs",
+      "Reimbursable Costs"
+    ],
+    [
+      "Buyer’s Scheduling Coordinator"
+    ],
+    [
+      "CAISO",
+      "CAISO (Regulatory Authority)",
+      "CAISO Operating Order (CAISO Directive)",
+      "California Independent System Operator (CAISO)"
+    ],
+    [
+      "CAISO Approved Meter (Metering Equipment)",
+      "CAISO Approved Metering Equipment"
+    ],
+    [
+      "CAISO Tariff (Regulatory Market Document)",
+      "Regulatory Tariff Document"
+    ],
+    [
+      "California Balancing Authority"
+    ],
+    [
+      "Capacity Test"
+    ],
+    [
+      "Category of Liquidated Damages",
+      "Liquidated Damages",
+      "Liquidated Damages Cap",
+      "Liquidated Damages Obligation",
+      "Liquidated Damages Provision"
+    ],
+    [
+      "Certificate of Initial Storage Capacity"
+    ],
+    [
+      "Certificate of Public Convenience and Necessity"
+    ],
+    [
+      "Certification by Authorized Officer"
+    ],
+    [
+      "Certifications and Approvals from FERC"
+    ],
+    [
+      "Certified Contractor Entity"
+    ],
+    [
+      "Certified Hazardous Waste Hauler",
+      "Hazardous Materials Certification"
+    ],
+    [
+      "Certified Individual Renovator"
+    ],
+    [
+      "Certified Inspector or Risk Assessor"
+    ],
+    [
+      "Certified Professional Engineer"
+    ],
+    [
+      "Change In Law"
+    ],
+    [
+      "Change Order Document"
+    ],
+    [
+      "Change Order Trigger"
+    ],
+    [
+      "Change of Control Event"
+    ],
+    [
+      "Chemical Inventory Obligation"
+    ],
+    [
+      "Claim",
+      "Claims"
+    ],
+    [
+      "Claim or Legal Proceeding"
+    ],
+    [
+      "Claims Basis"
+    ],
+    [
+      "Claims Presentation Condition Precedent"
+    ],
+    [
+      "Client",
+      "Client Party",
+      "Customer"
+    ],
+    [
+      "Client / Reimbursing Party",
+      "Reimbursing Party"
+    ],
+    [
+      "Client Obligation"
+    ],
+    [
+      "Client Representative"
+    ],
+    [
+      "Code of Conduct Document"
+    ],
+    [
+      "Code of Conduct Interpretation"
+    ],
+    [
+      "Collateral Assignment Agreement",
+      "Obligor under Agreement and Assignor of Collateral"
+    ],
+    [
+      "Collection Costs"
+    ],
+    [
+      "Commercial Operation (Operational Milestone)",
+      "Commercial Operation Date",
+      "Commercial Operation Date (Milestone Date)"
+    ],
+    [
+      "Commercial Operation Delay Damages (Liquidated Damages)"
+    ],
+    [
+      "Commercially Reasonable Efforts",
+      "Commercially Reasonable Manner"
+    ],
+    [
+      "Commissioning Checklist"
+    ],
+    [
+      "Company"
+    ],
+    [
+      "Company (Receiving Party)",
+      "Receiving Party"
+    ],
+    [
+      "Company (Service Recipient)",
+      "Service Recipient"
+    ],
+    [
+      "Company Caused Delay"
+    ],
+    [
+      "Company Data"
+    ],
+    [
+      "Company Event of Default",
+      "Contractor Event of Default",
+      "Event of Default",
+      "Event of Default (Contractual Breach)",
+      "Event of Default Notice Right",
+      "Event of Default by Seller"
+    ],
+    [
+      "Company Insurance Policies",
+      "Contractor Insurance Policies",
+      "Insurance Coverage",
+      "Insurance Policies"
+    ],
+    [
+      "Company Party"
+    ],
+    [
+      "Company or Providers"
+    ],
+    [
+      "Completion Cost"
+    ],
+    [
+      "Compliance Deliverable",
+      "Compliance Documentation Obligation"
+    ],
+    [
+      "Compliance Modifications and Upgrades"
+    ],
+    [
+      "Compliance Transfer Periods"
+    ],
+    [
+      "Con Edison"
+    ],
+    [
+      "Conditional Work Authorization (Limited Notice to Proceed)",
+      "Work Commencement Authorization (Notice to Proceed)"
+    ],
+    [
+      "Confidential Information",
+      "Confidential Information Subject to Disclosure Restrictions",
+      "Confidentiality Provision",
+      "Obligated Party Receiving Confidential Information"
+    ],
+    [
+      "Connecting Transmission Owner",
+      "Participating Transmission Owner (Transmission Entity)",
+      "Registered Transmission Owner"
+    ],
+    [
+      "Contract Agreement",
+      "Contract Document - Agreement",
+      "Contract Documents",
+      "Contract Term",
+      "Contractual Agreement",
+      "Contractual Article",
+      "Contractual Condition",
+      "Contractual Instrument"
+    ],
+    [
+      "Contract Counterparty",
+      "Contract Counterparty and Liability Exempted Party",
+      "Counterparty"
+    ],
+    [
+      "Contract Document - Purchase Order"
+    ],
+    [
+      "Contract Exhibit",
+      "Contract Exhibit - Certificate of Final Acceptance",
+      "Contract Exhibit - Certificate of Substantial Completion",
+      "Contract Exhibit - Company Permits",
+      "Contract Exhibit - Contractor Permits",
+      "Contract Exhibit - Form of Bonds",
+      "Contract Exhibit - Form of Letter of Credit",
+      "Contract Exhibit - Maintenance",
+      "Contract Exhibit - Major Equipment",
+      "Contract Exhibit - Performance Requirements",
+      "Contract Exhibit - Schedule to Letter of Credit",
+      "Contract Exhibit - Statement of Work",
+      "Contract Exhibit Governing Section 2.4",
+      "Contract Exhibits"
+    ],
+    [
+      "Contract Exhibit - Approved Substantial Subcontractors and Substantial Vendors",
+      "List of Approved Substantial Subcontractors and Vendors",
+      "Selective Subcontractors/Vendors",
+      "Substantial Subcontractor",
+      "Third Party Contractual Participants (Subcontractors and Vendors)"
+    ],
+    [
+      "Contract Exhibit - Construction Maintenance Labor Agreement"
+    ],
+    [
+      "Contract Exhibit - Form of Contractor Certificate for Final Waiver of Liens",
+      "Contract Exhibit - Form of Contractor Certificate for Partial Waiver of Liens",
+      "Contract Exhibit - Form of Subcontractor Certificate for Final Waiver of Liens",
+      "Contract Exhibit - Form of Subcontractor Certificate for Partial Waiver of Liens"
+    ],
+    [
+      "Contract Exhibit - Information, Security, Cybersecurity, and Privacy Requirements for Suppliers"
+    ],
+    [
+      "Contract Exhibit - Performance Guarantees and Performance Liquidated Damages",
+      "Contract Exhibit - Schedule Liquidated Damages"
+    ],
+    [
+      "Contract Modification Instrument"
+    ],
+    [
+      "Contract Price",
+      "Contract Price (Payment Term)",
+      "Contract Price Metric",
+      "Contract Quantity"
+    ],
+    [
+      "Contract Price for Portfolio Product",
+      "Contract Quantity of Portfolio Product"
+    ],
+    [
+      "Contract Sum",
+      "Contract Sum Adjustment Mechanism"
+    ],
+    [
+      "Contract Term (Duration of Agreement)",
+      "Defined Contract Term Period",
+      "Initial Contract Term"
+    ],
+    [
+      "Contracted EPC Service Provider",
+      "Contracted Service Provider",
+      "Contracted Services",
+      "Contractual EPC Services Obligation",
+      "Contractual Service Provider",
+      "EPC Contractor"
+    ],
+    [
+      "Contracted Product",
+      "Contractual Product"
+    ],
+    [
+      "Contracted Work Scope",
+      "Contractual Scope of Work",
+      "Contractual Work"
+    ],
+    [
+      "Contracting Company Party",
+      "Contracting Customer",
+      "Contracting Party",
+      "Contracting Party (Company)",
+      "Contracting Party (Contractor)",
+      "Contracting Party - Company",
+      "Contractor",
+      "Contractor Party",
+      "Contractor Subordinate Party",
+      "Contractual Party",
+      "Party (Contracting Entity)"
+    ],
+    [
+      "Contracting Parties",
+      "Contracting Party - Providers",
+      "Seller (Contracting Party)"
+    ],
+    [
+      "Contracting Party - Buyer",
+      "Contracting Party - Seller"
+    ],
+    [
+      "Contracting Party - District"
+    ],
+    [
+      "Contracting Party and Regulatory Compliance Obligor"
+    ],
+    [
+      "Contracting Public Entity"
+    ],
+    [
+      "Contractor Equipment"
+    ],
+    [
+      "Contractor Obligation",
+      "Contractual Duty",
+      "Contractual Obligation",
+      "Contractual Service Obligation",
+      "Contractual Work Obligation",
+      "Obligor (Contractor)"
+    ],
+    [
+      "Contractor Records"
+    ],
+    [
+      "Contractor Subject to RRP",
+      "Covered Building Subject to RRP"
+    ],
+    [
+      "Contractors of Indemnitee",
+      "Contractors of Indemnitor"
+    ],
+    [
+      "Contractor’s Employees and Subcontractors’ Employees"
+    ],
+    [
+      "Contractual Asset"
+    ],
+    [
+      "Contractual Budget"
+    ],
+    [
+      "Contractual Commencement Date",
+      "Contractual Milestone Date",
+      "Contractual Reference Date",
+      "Operational Commencement Date"
+    ],
+    [
+      "Contractual Compliance Assumption Provision",
+      "Contractual Liability Limitation Provision",
+      "Contractual Provision",
+      "Contractual Resource Provision Obligation"
+    ],
+    [
+      "Contractual Deliverable",
+      "Contractual Deliverable - Progress Report",
+      "Project Deliverable"
+    ],
+    [
+      "Contractual Documentation"
+    ],
+    [
+      "Contractual Exhibit - Metering Description",
+      "Contractual Exhibit - Project Description"
+    ],
+    [
+      "Contractual Exhibit - Report Form"
+    ],
+    [
+      "Contractual Milestone",
+      "Contractual Milestone Obligation",
+      "Contractual Milestones",
+      "Contractual Performance Milestone",
+      "Contractual Performance Milestones",
+      "Project Milestone Date"
+    ],
+    [
+      "Contractual Monetary Penalty Obligation"
+    ],
+    [
+      "Contractual Notice Obligation",
+      "Notice Obligation"
+    ],
+    [
+      "Contractual Obligations - Material, Equipment and Labor Contracts",
+      "Labor Contractual Obligations",
+      "Materials, Equipment, and Construction Contracts"
+    ],
+    [
+      "Contractual Order of Precedence Clause"
+    ],
+    [
+      "Contractual Party - NYISO",
+      "Contractual Party - System Operator",
+      "NYISO"
+    ],
+    [
+      "Contractual Party - Transmission Developer"
+    ],
+    [
+      "Contractual Performance Data Set",
+      "Contractual Performance Specification"
+    ],
+    [
+      "Contractual Performance Deadlines",
+      "Contractual Performance Period"
+    ],
+    [
+      "Contractual Performance Obligation (Work)"
+    ],
+    [
+      "Contractual Reference Document"
+    ],
+    [
+      "Contractual Remedy (Change Order Request)"
+    ],
+    [
+      "Contractual Right - Authorization Right"
+    ],
+    [
+      "Contractual Rights and Remedies",
+      "Damages and Remedies"
+    ],
+    [
+      "Contractual Service Recipient",
+      "Contractual Services"
+    ],
+    [
+      "Contractual Termination Provision"
+    ],
+    [
+      "Contractual Warranties"
+    ],
+    [
+      "Copy Notice Recipient"
+    ],
+    [
+      "Cost Allocation Document"
+    ],
+    [
+      "Cost and Expense Responsibility"
+    ],
+    [
+      "Counterparty with Reimbursement and Waiver Rights"
+    ],
+    [
+      "Cover Sheet (Contract Attachment)"
+    ],
+    [
+      "Covered Claims"
+    ],
+    [
+      "Covered Individuals under Insurance Policies"
+    ],
+    [
+      "Credit Rating"
+    ],
+    [
+      "Critical Asset",
+      "Critical Asset Candidate",
+      "Critical Cyber Assets"
+    ],
+    [
+      "Critical Milestones",
+      "Milestone"
+    ],
+    [
+      "Cure Period",
+      "Cure Periods"
+    ],
+    [
+      "Cure Period for Event of Default"
+    ],
+    [
+      "Current Tax Liability",
+      "Tax Liability"
+    ],
+    [
+      "Curtailment Order",
+      "Curtailment Order (Operational Directive)"
+    ],
+    [
+      "Curtailment Period (Operational Downtime)"
+    ],
+    [
+      "Customer Access Credentials",
+      "Customer Access Portal"
+    ],
+    [
+      "Damage Payment"
+    ],
+    [
+      "Damages Stipulation"
+    ],
+    [
+      "Data Export Format Requirement"
+    ],
+    [
+      "Data Transmission Infrastructure Maintained by Contractor"
+    ],
+    [
+      "Default"
+    ],
+    [
+      "Defaulting Party",
+      "Non-Defaulting Party"
+    ],
+    [
+      "Defect or Breach of Warranty"
+    ],
+    [
+      "Defense Counsel Designated by Indemnifying Party",
+      "Separate Counsel for Indemnified Party"
+    ],
+    [
+      "Deficiencies in Performance"
+    ],
+    [
+      "Defined Risks"
+    ],
+    [
+      "Delivery Cessation Date"
+    ],
+    [
+      "Delivery Point",
+      "Delivery Point (Energy Delivery Location)"
+    ],
+    [
+      "Delivery Term",
+      "Payment Term"
+    ],
+    [
+      "Delivery Term for Storage Facility RA Capacity",
+      "Monthly Payment for Storage Facility RA Capacity",
+      "Price for Storage Facility RA Capacity",
+      "Storage Facility Capacity Delivery Term"
+    ],
+    [
+      "Department of Justice (DOJ)"
+    ],
+    [
+      "Design Compliance Specification",
+      "Design and Construction Compliance Requirement",
+      "Technical Specification Compliance Requirement"
+    ],
+    [
+      "Design Support Obligation"
+    ],
+    [
+      "Designated Fund"
+    ],
+    [
+      "Designated Performance Engineer"
+    ],
+    [
+      "Designated Work Area"
+    ],
+    [
+      "Development Agreement"
+    ],
+    [
+      "Development Security",
+      "Development Security (Financial Security)"
+    ],
+    [
+      "Discharging Energy (Energy Product Component)",
+      "PV Energy (Energy Product Component)"
+    ],
+    [
+      "Disclosing Party",
+      "Obligated Party Disclosing Confidential Information"
+    ],
+    [
+      "Discovering Party"
+    ],
+    [
+      "Dispute",
+      "Dispute Resolution Article"
+    ],
+    [
+      "Dispute Resolution Procedures"
+    ],
+    [
+      "Dispute Resolution Tolling Provision"
+    ],
+    [
+      "District"
+    ],
+    [
+      "Documentation Assumption"
+    ],
+    [
+      "Due Diligence Obligation"
+    ],
+    [
+      "Dynamic Transfer Agreement"
+    ],
+    [
+      "EPC Agreement"
+    ],
+    [
+      "Early Termination Date",
+      "Notice of Early Termination Date"
+    ],
+    [
+      "Easement Area"
+    ],
+    [
+      "Education Code Section 45125.1(h)",
+      "Education Code Section 45125.2(a)"
+    ],
+    [
+      "Effective Date"
+    ],
+    [
+      "Electrical Balance of System (BOS)"
+    ],
+    [
+      "Emergency Coordinator Appointment Obligation"
+    ],
+    [
+      "Emergency Response Equipment"
+    ],
+    [
+      "Employees Not Covered by Workers’ Compensation Statute"
+    ],
+    [
+      "Energy Capacity Guarantee Service Package Period Letter of Credit",
+      "Energy Capacity Guarantee Service Package Period Performance Bond",
+      "Energy Capacity Guarantee Service Package Period Performance Security",
+      "Fixed Energy Capacity Guarantee Service Package Period",
+      "Standard Service Package Period Letter of Credit"
+    ],
+    [
+      "Energy Generation Facility",
+      "Generating Facility (Energy Generating Asset)"
+    ],
+    [
+      "Engaging Party"
+    ],
+    [
+      "Engineering, Procurement and Construction Agreement"
+    ],
+    [
+      "Entire Agreement Clause"
+    ],
+    [
+      "Environmental Compliance Commitment"
+    ],
+    [
+      "Environmental Liabilities"
+    ],
+    [
+      "Environmental Release Event",
+      "Hazardous Waste Release Event"
+    ],
+    [
+      "Environmental Risks"
+    ],
+    [
+      "Equitable Relief"
+    ],
+    [
+      "Evidence of Insurance Coverage"
+    ],
+    [
+      "Exception to Right to Assume Defense",
+      "Right to Assume Defense"
+    ],
+    [
+      "Excluded Damage Subcategories",
+      "Excluded Damage Subcategory",
+      "Excluded Damage Types"
+    ],
+    [
+      "Exclusion Event"
+    ],
+    [
+      "Exclusion of Consequential and Other Damages"
+    ],
+    [
+      "Executive Order"
+    ],
+    [
+      "Exhibit C",
+      "Exhibit D"
+    ],
+    [
+      "Expected Capacity"
+    ],
+    [
+      "Express Remedy or Measure of Damages"
+    ],
+    [
+      "Extended Expiration Date",
+      "Initial Expiration Date"
+    ],
+    [
+      "Extra Services"
+    ],
+    [
+      "Facility",
+      "Facility Location"
+    ],
+    [
+      "Facility Energy (Energy Product)"
+    ],
+    [
+      "Facility Meter"
+    ],
+    [
+      "Facility Subject to Contractual Obligations"
+    ],
+    [
+      "Facility Subject to Financing and Collateral Assignment"
+    ],
+    [
+      "Federal Anti-Discrimination Law"
+    ],
+    [
+      "Federal Anti-Trust Statutory Right",
+      "State Anti-Trust Statutory Right"
+    ],
+    [
+      "Federal Regulation",
+      "Federal Regulatory Code",
+      "Federal Regulatory Rule"
+    ],
+    [
+      "Fees for Monitoring Software and Data Services"
+    ],
+    [
+      "Final Completion Certificate",
+      "Mechanical Completion Certificate",
+      "Project Completion Filing",
+      "Substantial Completion Certificate"
+    ],
+    [
+      "Final Lien Waiver",
+      "Partial Lien Waiver"
+    ],
+    [
+      "Final Tax Assessment Order"
+    ],
+    [
+      "Finalized Project Plans"
+    ],
+    [
+      "Financial Assurances"
+    ],
+    [
+      "Financial Schedules"
+    ],
+    [
+      "Financial Statements"
+    ],
+    [
+      "Financing Agreements",
+      "Secured Parties under Financing Agreements"
+    ],
+    [
+      "Firm Transmission Rights"
+    ],
+    [
+      "Force Majeure Definition",
+      "Force Majeure Event",
+      "Force Majeure Event (Excusing Event)",
+      "Force Majeure Notice Obligation"
+    ],
+    [
+      "Full Capacity Deliverability Status",
+      "Interim Deliverability Status"
+    ],
+    [
+      "Gains, Losses and Costs"
+    ],
+    [
+      "Generally Accepted Accounting Principles (GAAP)"
+    ],
+    [
+      "Generating Facility"
+    ],
+    [
+      "Good Faith and Commercially Reasonable Mitigation Obligation"
+    ],
+    [
+      "Governing Law Limitation"
+    ],
+    [
+      "Governing Law and Venue Clause"
+    ],
+    [
+      "Governmental Approvals",
+      "Regulatory Approval",
+      "Regulatory Approvals"
+    ],
+    [
+      "Governmental Authorities",
+      "Governmental Authority"
+    ],
+    [
+      "Governmental Authority with Disclosure Request Power"
+    ],
+    [
+      "Governmental Claims"
+    ],
+    [
+      "Green Attributes (Environmental Credits)"
+    ],
+    [
+      "Guarantee Payment"
+    ],
+    [
+      "Guaranteed Commercial Operation Date"
+    ],
+    [
+      "Guaranteed Completion Date",
+      "Performance Milestone (Guaranteed Completion Date)"
+    ],
+    [
+      "Guarantor (Credit Support Provider)",
+      "Guaranty (Credit Support Instrument)"
+    ],
+    [
+      "Hazardous Substance Disclosure Filing Obligation"
+    ],
+    [
+      "Hazardous Waste Emergency Response Noticee",
+      "Hazardous Waste Emergency Response Obligor",
+      "Statutorily Required Hazardous Waste Preparedness Information"
+    ],
+    [
+      "Hazardous Waste Storage Location"
+    ],
+    [
+      "IRS Extension Right"
+    ],
+    [
+      "ISO Open Access Transmission Tariff (ISO OATT)"
+    ],
+    [
+      "Indemnifiable Event",
+      "Indemnified Party"
+    ],
+    [
+      "Indemnification Exceptions",
+      "Indemnification Obligation",
+      "Indemnity Exclusion",
+      "Indemnity Exclusion Condition"
+    ],
+    [
+      "Indemnification Monetary Limit"
+    ],
+    [
+      "Indemnification Provisions of the Agreement",
+      "Indemnification Termination Condition"
+    ],
+    [
+      "Indemnification Survival Provision",
+      "Surviving Defense and Indemnification Obligations"
+    ],
+    [
+      "Indemnification Triggering Conduct"
+    ],
+    [
+      "Indemnification, Defense and Hold Harmless Obligation",
+      "Indemnity Obligation",
+      "Release, Hold Harmless and Indemnification Agreement"
+    ],
+    [
+      "Indemnified Parties",
+      "Indemnified Party Affiliate",
+      "Indemnifying Party",
+      "Indemnitee and Protected Party",
+      "Indemnitees",
+      "Indemnitor",
+      "Indemnitor and Contracting Party"
+    ],
+    [
+      "Indemnitee",
+      "Indemnitee District",
+      "Indemnitee Group",
+      "Indemnitee and Compliance Manager"
+    ],
+    [
+      "Indemnitor Affiliate"
+    ],
+    [
+      "Independent Auditor",
+      "Independent Auditors"
+    ],
+    [
+      "Independent Contractor"
+    ],
+    [
+      "Indirect and Overhead Costs"
+    ],
+    [
+      "Information Provider"
+    ],
+    [
+      "Information Request"
+    ],
+    [
+      "Infrastructure - New York State Transmission System"
+    ],
+    [
+      "Initial Monthly Cost Estimate"
+    ],
+    [
+      "Initial Site Mobilization"
+    ],
+    [
+      "Initial Subscription Services Fee",
+      "Recurring Subscription Services Fee"
+    ],
+    [
+      "Insurance Certificate",
+      "Insurance Documentation"
+    ],
+    [
+      "Insurance Coverage Obligation",
+      "Obligor under Insurance Obligations"
+    ],
+    [
+      "Insurance Deductibles",
+      "Insurance Deductibles Liability"
+    ],
+    [
+      "Insurance Endorsement Requirement"
+    ],
+    [
+      "Insurance Policy - Business Auto Liability",
+      "Insurance Policy - Commercial General Liability",
+      "Insurance Policy - Employer’s Liability"
+    ],
+    [
+      "Insurance Policy - Construction All-Risk"
+    ],
+    [
+      "Insurance Policy - Pollution Legal Liability"
+    ],
+    [
+      "Insurance Policy - Property Insurance"
+    ],
+    [
+      "Insurance Policy - Umbrella Liability"
+    ],
+    [
+      "Insurance Policy - Workers’ Compensation"
+    ],
+    [
+      "Insurance Policy Change Notice"
+    ],
+    [
+      "Insurance Underwriter Rating Requirement"
+    ],
+    [
+      "Insurer"
+    ],
+    [
+      "Interconnection Agreement",
+      "Interconnection Agreement (Grid Connection Contract)",
+      "Interconnection Agreements",
+      "Interconnection Instructions"
+    ],
+    [
+      "Interconnection Facilities (Grid Connection Assets)"
+    ],
+    [
+      "Interest Rate",
+      "Reference Interest Rate"
+    ],
+    [
+      "Interest Rate Benchmark"
+    ],
+    [
+      "Interest Rate on Overdue Payments"
+    ],
+    [
+      "Internal Document Retention Policies"
+    ],
+    [
+      "Internet-Based Monitoring and Reporting Portal"
+    ],
+    [
+      "Inverter"
+    ],
+    [
+      "Invoice"
+    ],
+    [
+      "Invoice Date",
+      "Payment Due Date"
+    ],
+    [
+      "Invoice Receipt"
+    ],
+    [
+      "Irrevocable Security Instrument"
+    ],
+    [
+      "Job Site"
+    ],
+    [
+      "Joinder Addendum Effective Date"
+    ],
+    [
+      "Judicial Disclosure Mandate"
+    ],
+    [
+      "Jurisdictional Governmental Authority"
+    ],
+    [
+      "Labor Code Compliance Obligation",
+      "Legal Compliance Obligation",
+      "Statutory Labor Compliance Requirement"
+    ],
+    [
+      "Labor Code Section 3700"
+    ],
+    [
+      "Labor Dispute or Disturbance"
+    ],
+    [
+      "Labor Standard"
+    ],
+    [
+      "Late Payment Charge"
+    ],
+    [
+      "Lead Disturbance Work"
+    ],
+    [
+      "Lead Training Records"
+    ],
+    [
+      "Legal Compliance Requirement",
+      "Legal and Regulatory Compliance Requirement",
+      "Legal and Regulatory Requirements",
+      "Obligor under Compliance Obligations",
+      "Operational Compliance Requirement",
+      "Regulatory Compliance Requirement",
+      "Statutory Compliance Obligation",
+      "Statutory Compliance Obligations"
+    ],
+    [
+      "Legal Proceeding Triggering Disclosure"
+    ],
+    [
+      "Legal or Regulatory Reporting Obligation",
+      "Reporting Obligations"
+    ],
+    [
+      "Lender (Financing Party)"
+    ],
+    [
+      "Letter of Credit"
+    ],
+    [
+      "Liability Cap on EPC Contractor"
+    ],
+    [
+      "Liability Exclusion",
+      "Liability Limitation Clause"
+    ],
+    [
+      "Limit on Fees for Separate Counsel"
+    ],
+    [
+      "Limitation on Disclosure Scope"
+    ],
+    [
+      "Limitation to Direct Actual Damages"
+    ],
+    [
+      "Litigation Costs Allocation Clause"
+    ],
+    [
+      "Local Emergency Planning Committee (LEPC)"
+    ],
+    [
+      "Local Fire Department"
+    ],
+    [
+      "Locational Marginal Price (Market Price)"
+    ],
+    [
+      "Maintenance Reporting Obligation"
+    ],
+    [
+      "Mandatory Annual Performance Report"
+    ],
+    [
+      "Mandatory Compliance Activities"
+    ],
+    [
+      "Material Obligation"
+    ],
+    [
+      "Material Safety Data Sheets (MSDS) Obligation"
+    ],
+    [
+      "Material Specification"
+    ],
+    [
+      "Materials, Equipment, Tools, Instruments, Debris, and Waste Materials"
+    ],
+    [
+      "Measurement Device for On-Site Electricity Consumption"
+    ],
+    [
+      "Measurement Device for PV System Production"
+    ],
+    [
+      "Measurement Equipment"
+    ],
+    [
+      "Measurement Period"
+    ],
+    [
+      "Meteorological Station"
+    ],
+    [
+      "Meter Data"
+    ],
+    [
+      "Meter Seals"
+    ],
+    [
+      "Metering Approval Party"
+    ],
+    [
+      "Metering Diagram"
+    ],
+    [
+      "Metering Obligor"
+    ],
+    [
+      "Minor Changes"
+    ],
+    [
+      "Monetary Cap on Compliance Costs"
+    ],
+    [
+      "Monetary Obligation Subject to Cap"
+    ],
+    [
+      "Monthly Invoice or Accounting Report"
+    ],
+    [
+      "Mounting System"
+    ],
+    [
+      "Mutual Financial Obligations"
+    ],
+    [
+      "NERC CIP Standards"
+    ],
+    [
+      "NYISO Services Tariff"
+    ],
+    [
+      "Negligent Acts or Willful Misconduct"
+    ],
+    [
+      "Net Settlement Amount"
+    ],
+    [
+      "Network Upgrades"
+    ],
+    [
+      "No Oral Modification Clause"
+    ],
+    [
+      "Non-Affiliated Person"
+    ],
+    [
+      "Non-Breaching Parties",
+      "Non-Breaching Party"
+    ],
+    [
+      "Non-Defaulting Party (Remedy Recipient)"
+    ],
+    [
+      "Non-Parties"
+    ],
+    [
+      "Notice Deemed Receipt Rule"
+    ],
+    [
+      "Notice of Anticipated Excess Costs"
+    ],
+    [
+      "Notice of Claim"
+    ],
+    [
+      "Notice of Default",
+      "Written Notice of Default"
+    ],
+    [
+      "Notice of Storage Facility Capacity",
+      "Storage Facility Capacity Attributes"
+    ],
+    [
+      "Notification Requirement"
+    ],
+    [
+      "Notified Party"
+    ],
+    [
+      "Obligation to Seek Confidential Treatment"
+    ],
+    [
+      "Obligee",
+      "Obligee (Payor)",
+      "Obligee under Agreement",
+      "Obligee under Agreement and Consent Party",
+      "Obligee under Contract"
+    ],
+    [
+      "Obligee Subject to Payment Retention",
+      "Obligor with Retention Right"
+    ],
+    [
+      "Obligee entitled to receive Remedial Action Plan",
+      "Obligor under Remedial Action Plan Requirement"
+    ],
+    [
+      "Obligee under Capacity Attributes Commitment",
+      "Obligor under Capacity Attributes Commitment"
+    ],
+    [
+      "Obligor",
+      "Obligor (Company)",
+      "Obligor (Service Provider)",
+      "Obligor Party",
+      "Obligor under Agreement",
+      "Obligor under Contract"
+    ],
+    [
+      "Obligor and Beneficiary Party"
+    ],
+    [
+      "Obligor and Warrantor"
+    ],
+    [
+      "Obligor for Insurance Procurement",
+      "Obligor under Insurance Procurement Obligation"
+    ],
+    [
+      "Obligor's Liability Limitation"
+    ],
+    [
+      "Operational Safety Compliance Requirement"
+    ],
+    [
+      "Operational Service Obligation",
+      "Operational Services"
+    ],
+    [
+      "Operations"
+    ],
+    [
+      "Operations and Maintenance Agreement",
+      "Operations and Maintenance Contractor",
+      "Operations and Maintenance Records"
+    ],
+    [
+      "Operator Obligor",
+      "Payment Obligor",
+      "Seller Obligor"
+    ],
+    [
+      "Operator and Compliance Manager"
+    ],
+    [
+      "Optional Custom Reporting Service"
+    ],
+    [
+      "Optional Project Component - Integrated Energy Storage Facility"
+    ],
+    [
+      "Optional Storage Facility"
+    ],
+    [
+      "Original Equipment Manufacturer Warranty"
+    ],
+    [
+      "Other Party",
+      "Third Party"
+    ],
+    [
+      "Other Transmission Developers"
+    ],
+    [
+      "Owned Equipment",
+      "Purchased Equipment",
+      "Supplied Equipment"
+    ],
+    [
+      "Party Receiving Services"
+    ],
+    [
+      "Payment Application Document",
+      "Payment Document"
+    ],
+    [
+      "Payment Bond",
+      "Payment and Performance Bonds",
+      "Performance Bond"
+    ],
+    [
+      "Payment Calculation Provision",
+      "Payment Provision"
+    ],
+    [
+      "Payment Deadline",
+      "Payment Schedule"
+    ],
+    [
+      "Payment Discrepancy"
+    ],
+    [
+      "Payment Event"
+    ],
+    [
+      "Payment Obligations"
+    ],
+    [
+      "Payment Term for Subscription Services",
+      "Payment Term for Transactional Services"
+    ],
+    [
+      "Payment of Expenses in Exception"
+    ],
+    [
+      "Payor Party"
+    ],
+    [
+      "Pending Claims or Actions for Damages"
+    ],
+    [
+      "Per Unit Charges"
+    ],
+    [
+      "Performance Assurance",
+      "Performance Guarantee Obligation"
+    ],
+    [
+      "Performance Management Plans"
+    ],
+    [
+      "Performance Milestone (Final Acceptance Date)"
+    ],
+    [
+      "Performance Security"
+    ],
+    [
+      "Performance Standard - Good Utility Practice"
+    ],
+    [
+      "Performance Standard Obligation",
+      "Performance Standards"
+    ],
+    [
+      "Performance Timeline (Project Schedule)"
+    ],
+    [
+      "Performance or Non-Performance"
+    ],
+    [
+      "Permit",
+      "Permit Processing Obligation",
+      "Permit Requirement"
+    ],
+    [
+      "Permits and Fees"
+    ],
+    [
+      "Permitted Assignees",
+      "Permitted Assignment",
+      "Permitted Successors and Assigns",
+      "Permitted Transferee",
+      "Permitted Transferee (Qualified Assignee)"
+    ],
+    [
+      "Permitted Excuse to Perform"
+    ],
+    [
+      "Permitted Successors-in-Interest"
+    ],
+    [
+      "Personal Property"
+    ],
+    [
+      "Photovoltaic Modules",
+      "Photovoltaic System"
+    ],
+    [
+      "Physical Asset"
+    ],
+    [
+      "Portfolio Product",
+      "Portfolio Product Delivery Term"
+    ],
+    [
+      "Post-Termination Cost Liability",
+      "Post-Termination Financial Obligation",
+      "Post-Termination Liability",
+      "Post-Termination Liability and Indemnification Obligations",
+      "Post-Termination Obligations"
+    ],
+    [
+      "Power Authority"
+    ],
+    [
+      "Power Purchase Agreement",
+      "Power Purchase Agreements"
+    ],
+    [
+      "Preliminary Judicial Relief"
+    ],
+    [
+      "Preparatory Work and Services"
+    ],
+    [
+      "Price Adjustment Condition"
+    ],
+    [
+      "Product"
+    ],
+    [
+      "Production Report"
+    ],
+    [
+      "Progress Disbursement Form"
+    ],
+    [
+      "Project"
+    ],
+    [
+      "Project Asset - Facility"
+    ],
+    [
+      "Project Component - Storage Facility Meter",
+      "Storage Facility Meters"
+    ],
+    [
+      "Project Components - Equipment"
+    ],
+    [
+      "Project Documentation Component"
+    ],
+    [
+      "Project Location - Site",
+      "Project Site"
+    ],
+    [
+      "Project Planning Assumption"
+    ],
+    [
+      "Project Portfolio"
+    ],
+    [
+      "Proposed Operator"
+    ],
+    [
+      "Proprietary Information and Documents"
+    ],
+    [
+      "Protected Information"
+    ],
+    [
+      "Protected Parties"
+    ],
+    [
+      "Providers",
+      "Providers (Service Providers)"
+    ],
+    [
+      "Public Disclosures Restriction"
+    ],
+    [
+      "Qualified Institution"
+    ],
+    [
+      "Qualified Surety"
+    ],
+    [
+      "RPS Compliance Requirements"
+    ],
+    [
+      "Real Property Interest",
+      "Real Property Interest Subject to Environmental Conditions",
+      "Real Property Rights"
+    ],
+    [
+      "Refund Obligation"
+    ],
+    [
+      "Regulated Party"
+    ],
+    [
+      "Regulated Substance"
+    ],
+    [
+      "Regulatory Agency",
+      "Regulatory Agency Staff",
+      "Regulatory Authority",
+      "Regulatory Commissions"
+    ],
+    [
+      "Regulatory Compliance Documentation",
+      "Regulatory Compliance Standards"
+    ],
+    [
+      "Regulatory Event"
+    ],
+    [
+      "Regulatory Framework"
+    ],
+    [
+      "Regulatory Metering Authority"
+    ],
+    [
+      "Regulatory Proceeding"
+    ],
+    [
+      "Regulatory Reviewer"
+    ],
+    [
+      "Regulatory Standard"
+    ],
+    [
+      "Regulatory Trigger"
+    ],
+    [
+      "Regulatory Violations"
+    ],
+    [
+      "Regulatory and Contractual Oversight Party"
+    ],
+    [
+      "Regulatory and Legislative Bodies"
+    ],
+    [
+      "Regulatory or Operational Rule"
+    ],
+    [
+      "Reimbursable Cost Component (Demobilization and Remobilization Costs)"
+    ],
+    [
+      "Reimbursable Cost Component (Protection Costs)"
+    ],
+    [
+      "Reimbursable Cost Component (Standby Charge)"
+    ],
+    [
+      "Reimbursable Out-of-Pocket Expenses"
+    ],
+    [
+      "Reimbursement Obligation"
+    ],
+    [
+      "Related Persons and Entities"
+    ],
+    [
+      "Release Obligation"
+    ],
+    [
+      "Relief from Further Obligations"
+    ],
+    [
+      "Remedial Action Plan"
+    ],
+    [
+      "Remediation Obligation",
+      "Remediation Obligations"
+    ],
+    [
+      "Renewable Energy Certificate",
+      "Renewable Energy Credit"
+    ],
+    [
+      "Renewal Contract Term"
+    ],
+    [
+      "Replacement Agreement"
+    ],
+    [
+      "Replacement Contractor"
+    ],
+    [
+      "Reportable Release"
+    ],
+    [
+      "Representations and Warranties",
+      "Warranties and Representations"
+    ],
+    [
+      "Resource Adequacy Benefits",
+      "Resource Adequacy Benefits (Capacity Rights)"
+    ],
+    [
+      "Right to Participate at Own Expense"
+    ],
+    [
+      "Right to Seek Protective Order"
+    ],
+    [
+      "Right to Select Separate Counsel"
+    ],
+    [
+      "Right to Terminate",
+      "Termination Right"
+    ],
+    [
+      "Risk Allocation"
+    ],
+    [
+      "Risk Management Plan (RMP)"
+    ],
+    [
+      "Sample Results"
+    ],
+    [
+      "Sarbanes-Oxley Act Section 404"
+    ],
+    [
+      "Scope Definition"
+    ],
+    [
+      "Scope Exclusion"
+    ],
+    [
+      "Scope Inclusion"
+    ],
+    [
+      "Scope of Work"
+    ],
+    [
+      "Second Composite Agreement"
+    ],
+    [
+      "Secured Party",
+      "Secured Party and Assignee of Collateral"
+    ],
+    [
+      "Security Enforcement Right"
+    ],
+    [
+      "Security Obligation"
+    ],
+    [
+      "Security Period"
+    ],
+    [
+      "Security Procedure"
+    ],
+    [
+      "Security Testing"
+    ],
+    [
+      "Seller"
+    ],
+    [
+      "Sensor Calibration Obligation"
+    ],
+    [
+      "Service Marks and Trademarks Usage Restriction"
+    ],
+    [
+      "Service Period",
+      "Standard Service Package Period",
+      "Warranty Period"
+    ],
+    [
+      "Service Provider",
+      "Service Provider Party"
+    ],
+    [
+      "Service Provider and Obligor for O&M Services"
+    ],
+    [
+      "Set-Off Right"
+    ],
+    [
+      "Settlement Consent Requirement"
+    ],
+    [
+      "Settlement Offer"
+    ],
+    [
+      "Severability Clause"
+    ],
+    [
+      "Site (Real Property)"
+    ],
+    [
+      "Site Condition Consideration",
+      "Site Conditions"
+    ],
+    [
+      "Site Control (Property Interest)"
+    ],
+    [
+      "Solar Array Design"
+    ],
+    [
+      "Sole Remedy"
+    ],
+    [
+      "Spill Prevention, Control and Countermeasure Plan"
+    ],
+    [
+      "Standard Service Package Period Payment and Performance Bonds",
+      "Standard Service Package Period Performance Security"
+    ],
+    [
+      "State Emergency Response Commission (SERC)"
+    ],
+    [
+      "State Property Owner"
+    ],
+    [
+      "State of California Public Works Contract Requirements"
+    ],
+    [
+      "Statement of Work Attachment"
+    ],
+    [
+      "Statutes of Limitation"
+    ],
+    [
+      "Statutorily Mandated Insurance Coverage"
+    ],
+    [
+      "Storage Facility (Energy Storage Asset)"
+    ],
+    [
+      "Storage Facility Ancillary Services"
+    ],
+    [
+      "Subcontractor",
+      "Subcontractor Insurance Policies",
+      "Subcontractors"
+    ],
+    [
+      "Subcontractors Insurance Policies"
+    ],
+    [
+      "Subcontracts (including warranties)"
+    ],
+    [
+      "Submission Milestone Documentation"
+    ],
+    [
+      "Substantial Completion"
+    ],
+    [
+      "Substantial Vendor"
+    ],
+    [
+      "Successor Affiliate"
+    ],
+    [
+      "Successor Service Provider"
+    ],
+    [
+      "Supplemental Employer Insurance Coverage"
+    ],
+    [
+      "Survivability Clause"
+    ],
+    [
+      "Surviving Contractual Provision"
+    ],
+    [
+      "Surviving Legal Obligations"
+    ],
+    [
+      "Suspended Party / Service Provider",
+      "Suspending Party"
+    ],
+    [
+      "Suspension Notice",
+      "Suspension Termination Period",
+      "Written Notice of Suspension"
+    ],
+    [
+      "Tax Exclusion"
+    ],
+    [
+      "Tax Obligation Subject to Contest"
+    ],
+    [
+      "Tax Obligations"
+    ],
+    [
+      "Tax-Exempt Purchaser and Reimburser"
+    ],
+    [
+      "Tax-Payee and Contesting Party"
+    ],
+    [
+      "Tax-Related Interest and Penalties"
+    ],
+    [
+      "Technical Documentation"
+    ],
+    [
+      "Term"
+    ],
+    [
+      "Terminated Transaction"
+    ],
+    [
+      "Terminating Party",
+      "Termination Event"
+    ],
+    [
+      "Termination Notice",
+      "Termination Notice Period",
+      "Termination Payment",
+      "Written Termination Notice"
+    ],
+    [
+      "Termination Payment Entitlement"
+    ],
+    [
+      "Termination Rights and Remedies"
+    ],
+    [
+      "Test Window"
+    ],
+    [
+      "Testing Obligation"
+    ],
+    [
+      "Third Party Claimant",
+      "Third-Party Claimant",
+      "Third-Party Claims"
+    ],
+    [
+      "Third Party Contractors",
+      "Third Party Project Manager",
+      "Third Party Vendors",
+      "Third-Party Vendors"
+    ],
+    [
+      "Third-Party Guarantees",
+      "Third-Party Liabilities"
+    ],
+    [
+      "Third-Party Performance Providers"
+    ],
+    [
+      "Time Synchronization Standard for Site Meters"
+    ],
+    [
+      "Time is of the Essence Clause"
+    ],
+    [
+      "Training Obligation"
+    ],
+    [
+      "Transaction Documents"
+    ],
+    [
+      "Transactional Services"
+    ],
+    [
+      "Transfer Mechanism"
+    ],
+    [
+      "Transmission Developer"
+    ],
+    [
+      "Transmission Project"
+    ],
+    [
+      "Transmission Provider"
+    ],
+    [
+      "Trigger Date (Limited Notice to Proceed Date)",
+      "Trigger Date (Notice to Proceed Date)"
+    ],
+    [
+      "True-Up Period"
+    ],
+    [
+      "Unforeseeable Subsurface Conditions"
+    ],
+    [
+      "Unpaid Portion of Contract Sum"
+    ],
+    [
+      "Utility Approval"
+    ],
+    [
+      "Vendor"
+    ],
+    [
+      "Violation of Legal Requirements"
+    ],
+    [
+      "WREGIS Certificates"
+    ],
+    [
+      "Waiver Clause",
+      "Waiver Provision",
+      "Waiver of Rights"
+    ],
+    [
+      "Waiver of Other Remedies or Damages"
+    ],
+    [
+      "Waiver of Penalty Challenge"
+    ],
+    [
+      "Warranty",
+      "Warranty Duration",
+      "Warranty Provisions",
+      "Warranty Rights"
+    ],
+    [
+      "Waste Transportation and Disposal Activities"
+    ],
+    [
+      "Work Continuation Obligation"
+    ],
+    [
+      "Work Location"
+    ],
+    [
+      "Work Schedule"
+    ],
+    [
+      "Workers’ Compensation Certification"
+    ],
+    [
+      "ZREC Meter"
+    ]
+  ],
+  "relationship_clusters": [
+    [
+      "Absolute Obligation to Pay",
+      "Billing Obligation",
+      "Payment Obligation"
+    ],
+    [
+      "Absolute Performance Obligation",
+      "Performance Obligation",
+      "Service Performance Obligation"
+    ],
+    [
+      "Access Duration Limitation"
+    ],
+    [
+      "Access Granting Obligation"
+    ],
+    [
+      "Access Permission for Equipment"
+    ],
+    [
+      "Access Restriction Right",
+      "Access Right",
+      "Authorization Right",
+      "Data Access Right",
+      "Information Access Right",
+      "Records Access Right"
+    ],
+    [
+      "Account Maintenance Obligation",
+      "Maintenance Obligation"
+    ],
+    [
+      "Accrual Start Date Adjustment",
+      "Due Date Adjustment"
+    ],
+    [
+      "Additional Insured Coverage",
+      "Additional Insured Coverage by Subcontractors"
+    ],
+    [
+      "Affiliate Relationship"
+    ],
+    [
+      "Allocation of Litigation Costs"
+    ],
+    [
+      "Alternative Form"
+    ],
+    [
+      "Annual Budget Preparation Obligation"
+    ],
+    [
+      "Anticipated Regulatory Trigger"
+    ],
+    [
+      "Applicability Across Legal Theories"
+    ],
+    [
+      "Application Assistance Obligation"
+    ],
+    [
+      "Approval Requirement for Meter Programming and Diagram Updates"
+    ],
+    [
+      "Asset Location"
+    ],
+    [
+      "Assignment Obligation",
+      "Assignment and Removal Obligation",
+      "Conditional Obligation",
+      "Defense Obligation",
+      "Delivery Obligation",
+      "Delivery and Assignment Obligation",
+      "Purchase Obligation"
+    ],
+    [
+      "Assignment Right Upon Termination"
+    ],
+    [
+      "Assignment Right of Subcontractor Agreements"
+    ],
+    [
+      "Assignment of Anti-Trust Claims to District"
+    ],
+    [
+      "Assignment of Warranties"
+    ],
+    [
+      "Assignment to Affiliate Acquiring Business Assets",
+      "Assignment to Successor Affiliate"
+    ],
+    [
+      "Assignor of Agreement as Collateral",
+      "Consent Party to Collateral Assignment Agreement",
+      "Secured Party and Consent Party to Collateral Assignment Agreement"
+    ],
+    [
+      "Associated Metering Component"
+    ],
+    [
+      "Assumption of Obligations",
+      "Assumption of Payment Obligations"
+    ],
+    [
+      "Audit Compliance Obligation",
+      "Compliance Obligation",
+      "Legal Compliance Obligation",
+      "Regulatory Compliance Obligation",
+      "Statutory Compliance Obligation"
+    ],
+    [
+      "Audit Right"
+    ],
+    [
+      "Audit Subject"
+    ],
+    [
+      "Audit Timeframe Restriction"
+    ],
+    [
+      "Audit and Inspection Right"
+    ],
+    [
+      "Authority to Issue Curtailment Orders"
+    ],
+    [
+      "Authority to Order Minor Changes"
+    ],
+    [
+      "Authorization Right Holder",
+      "Permitted Rights Holder"
+    ],
+    [
+      "Authorized To Execute And Perform"
+    ],
+    [
+      "Automatic Renewal Condition"
+    ],
+    [
+      "Beneficiary of Performance Assurance",
+      "Obligation to Provide and Maintain Performance Assurance"
+    ],
+    [
+      "Billing Adjustment Trigger"
+    ],
+    [
+      "Billing Rate Application"
+    ],
+    [
+      "Binding Effect on Successors and Assigns"
+    ],
+    [
+      "Buyer’s Right to Draw on Letter of Credit"
+    ],
+    [
+      "Calculates"
+    ],
+    [
+      "Calculation Basis",
+      "Charge Calculation Basis"
+    ],
+    [
+      "Calibration Obligation"
+    ],
+    [
+      "Capacity Attributes Commitment Period"
+    ],
+    [
+      "Capacity Attributes Transfer Obligation"
+    ],
+    [
+      "Certification Obligation",
+      "Certification Obligation upon Return or Destruction",
+      "Certification Requirement",
+      "Certification and Transfer Obligation"
+    ],
+    [
+      "Certification of Non-Use of Hazardous Materials"
+    ],
+    [
+      "Certification of Workers’ Compensation Compliance"
+    ],
+    [
+      "Change Order Approval and Execution"
+    ],
+    [
+      "Change Order Trigger Relationship"
+    ],
+    [
+      "Change Request Submission"
+    ],
+    [
+      "Chemical Inventory Development and Maintenance Obligation",
+      "Notification Obligation Regarding Chemical Inventory Changes",
+      "Provision of Chemical Inventory Information Obligation"
+    ],
+    [
+      "Claim Originator"
+    ],
+    [
+      "Claims Arising From Customer's Gross Negligence, Fraud or Willful Misconduct"
+    ],
+    [
+      "Claims Subject to Indemnification",
+      "Exclusion from Indemnification",
+      "Indemnification Obligation",
+      "Limitation on Indemnification Obligation",
+      "Subject Matter of Indemnification"
+    ],
+    [
+      "Claims Triggering Indemnity",
+      "Indemnification Trigger",
+      "Indemnification Triggered by Breach",
+      "Indemnification Triggering Conduct",
+      "Ownership Trigger for Indemnification Scope"
+    ],
+    [
+      "Clause Defines Waiver Terms"
+    ],
+    [
+      "Client Engagement"
+    ],
+    [
+      "Comparative Basis for Payment Determination"
+    ],
+    [
+      "Compatibility and Safety Requirement"
+    ],
+    [
+      "Compensation Basis"
+    ],
+    [
+      "Compensation Obligor to Contractor",
+      "Compensation Payment Obligation"
+    ],
+    [
+      "Completion Deadline"
+    ],
+    [
+      "Compliance Management Assumption",
+      "Compliance Management Responsibility"
+    ],
+    [
+      "Compliance Verification"
+    ],
+    [
+      "Component Category"
+    ],
+    [
+      "Component Term Inclusion"
+    ],
+    [
+      "Condition Compliance Standard",
+      "Legal Compliance Condition"
+    ],
+    [
+      "Condition Precedent for Consent"
+    ],
+    [
+      "Condition Precedent to Civil Action",
+      "Condition Precedent to Default"
+    ],
+    [
+      "Condition Precedent to Initial Site Mobilization"
+    ],
+    [
+      "Condition to Sale or Transfer of Facility"
+    ],
+    [
+      "Conditional Disclosure Obligation",
+      "Information Disclosure Obligation"
+    ],
+    [
+      "Conditional Obligation to Obtain Agreement"
+    ],
+    [
+      "Conditional Termination Right",
+      "Enables Termination Right",
+      "Right to Terminate",
+      "Termination Condition",
+      "Termination Payment Right",
+      "Termination Right",
+      "Termination Right Exercisable by District",
+      "Termination Right Holder",
+      "Termination Right Prior to Initial Term Expiry",
+      "Termination Right and Post-Termination Obligations"
+    ],
+    [
+      "Conditioned on Contractor's Indemnification Agreement",
+      "Indemnification Scope Includes Contractors' Work"
+    ],
+    [
+      "Confidential Information Request"
+    ],
+    [
+      "Confidentiality Compliance",
+      "Confidentiality Designation",
+      "Confidentiality Obligation",
+      "Cooperates to Protect Confidentiality",
+      "Obligation to Maintain Confidentiality"
+    ],
+    [
+      "Consent Requirement for Assignment or Delegation"
+    ],
+    [
+      "Consent and Agreement Execution"
+    ],
+    [
+      "Consent to Settlement Offer",
+      "Notice of Settlement Offer",
+      "Settlement Consent Requirement"
+    ],
+    [
+      "Constituent Relationship"
+    ],
+    [
+      "Continuing Obligation Trigger",
+      "Trigger for Tracking Obligation"
+    ],
+    [
+      "Contract Cancellation or Suspension"
+    ],
+    [
+      "Contract Document Precedence Ranking"
+    ],
+    [
+      "Contract Documents Amendment"
+    ],
+    [
+      "Contractual Counterparties"
+    ],
+    [
+      "Contractual Obligation Relationship",
+      "Contractual Party Relationship",
+      "Contractual Relationship",
+      "Notice Obligation Relationship"
+    ],
+    [
+      "Contractual Obligation to Bind Subcontractors",
+      "Obligation to Require Subcontractor Compliance",
+      "Subcontractor Obligations to Contractor"
+    ],
+    [
+      "Contractual Performance Specification"
+    ],
+    [
+      "Cooperation Obligation",
+      "Service Provision and Cooperation Obligation",
+      "Trigger of Cooperation Obligation"
+    ],
+    [
+      "Copy Notice Recipient Designation",
+      "Notice Recipient Designation"
+    ],
+    [
+      "Cost Allocation Methodology"
+    ],
+    [
+      "Cost Bearing for Requested Compliance"
+    ],
+    [
+      "Cost Invoicing and Authorization"
+    ],
+    [
+      "Cost Responsibility and Contract Sum Adjustment"
+    ],
+    [
+      "Cost Responsibility for Compliance Changes"
+    ],
+    [
+      "Cost and Installation Responsibility"
+    ],
+    [
+      "Cost and Obligation Responsibility",
+      "Obligation and Cost Responsibility",
+      "Obligation to Bear Costs"
+    ],
+    [
+      "Costs Incurred by Compliance Actions"
+    ],
+    [
+      "Coverage Relationship"
+    ],
+    [
+      "Credential Provision"
+    ],
+    [
+      "Credit Rating Condition for Letter of Credit Validity"
+    ],
+    [
+      "Damages Amount Specification",
+      "Damages Calculation Base"
+    ],
+    [
+      "Damages Calculation Multiplier"
+    ],
+    [
+      "Damages Stipulation Confirms Direct Damages as Recoverable"
+    ],
+    [
+      "Data Access Consent"
+    ],
+    [
+      "Data Export Capability"
+    ],
+    [
+      "Data Provision Obligation",
+      "Documentation Provision Obligation",
+      "Information Provision Duty",
+      "Information Provision Obligation",
+      "Resource Provision Obligation"
+    ],
+    [
+      "Data Reading Obligation"
+    ],
+    [
+      "Data Retrieval Right"
+    ],
+    [
+      "Deadline for Completion of Compliance Changes"
+    ],
+    [
+      "Deadline for Estimate Delivery"
+    ],
+    [
+      "Deductible Liability",
+      "Deductible Liability Exception"
+    ],
+    [
+      "Deemed Waiver upon Buyer Non-Response"
+    ],
+    [
+      "Default Triggers Termination Right",
+      "Mandatory Termination Trigger",
+      "Termination Trigger",
+      "Triggers Early Termination Date",
+      "Triggers Right to Declare Default and Terminate"
+    ],
+    [
+      "Default in Performance of"
+    ],
+    [
+      "Defense Control and Settlement Authority"
+    ],
+    [
+      "Defines Effective Date of Full Work Authorization",
+      "Defines Effective Date of Limited Work Authorization",
+      "Issuance of Full Work Authorization"
+    ],
+    [
+      "Definition Reference"
+    ],
+    [
+      "Delegation of Compliance Establishment and Management"
+    ],
+    [
+      "Delivery Location of Facility Energy"
+    ],
+    [
+      "Delivery Obligation of Warranty Contracts"
+    ],
+    [
+      "Delivery and License Grant"
+    ],
+    [
+      "Delivery of Assurances to Obligee"
+    ],
+    [
+      "Delivery of Evidence of Insurance",
+      "Duty to Provide Evidence of Insurance"
+    ],
+    [
+      "Design Approval and Information Provision"
+    ],
+    [
+      "Design Certification Requirement"
+    ],
+    [
+      "Design Development Obligation",
+      "Design Preparation and Update Obligation",
+      "Design Responsibility and Modification Obligation"
+    ],
+    [
+      "Design Review Without Warranty"
+    ],
+    [
+      "Design Review and Approval Right"
+    ],
+    [
+      "Design and Construction Responsibility"
+    ],
+    [
+      "Designation of Defaulting Party"
+    ],
+    [
+      "Designation of Defense Counsel"
+    ],
+    [
+      "Designation of Successor Provider"
+    ],
+    [
+      "Determination of Critical Asset Status",
+      "Determination of Existence of Critical Cyber Assets"
+    ],
+    [
+      "Determined In Accordance With"
+    ],
+    [
+      "Developer of"
+    ],
+    [
+      "Disclosure Right"
+    ],
+    [
+      "Discretionary Issuance of Limited Work Authorization"
+    ],
+    [
+      "Discretionary Obligation"
+    ],
+    [
+      "Disposal Responsibility Delegation"
+    ],
+    [
+      "Dispute Resolution Obligation"
+    ],
+    [
+      "Duration of Performance Assurance Obligation"
+    ],
+    [
+      "Duty to Cooperate in Insurance Claims"
+    ],
+    [
+      "Duty to Inform of Additional Code of Conduct Requirements",
+      "Obligation to Comply with Code of Conduct"
+    ],
+    [
+      "Duty to Obtain Prior Written Consent"
+    ],
+    [
+      "Easement Acquisition Obligation"
+    ],
+    [
+      "Emergency Coordinator Appointment and Notification Obligation"
+    ],
+    [
+      "Empowered To Execute And Perform"
+    ],
+    [
+      "Energy Delivery"
+    ],
+    [
+      "Engagement of Independent Contractor"
+    ],
+    [
+      "Entitled To",
+      "Entitled to Remedies"
+    ],
+    [
+      "Entitlement to Additional Cure Time"
+    ],
+    [
+      "Entitlement to Damages"
+    ],
+    [
+      "Entitlement to Enforce Security"
+    ],
+    [
+      "Entitlement to Schedule Extension and Price Increase"
+    ],
+    [
+      "Entitlement to Set-Off"
+    ],
+    [
+      "Entitlement to Termination Payment",
+      "Right to Collect Termination Payment"
+    ],
+    [
+      "Environmental Attribute Transfer"
+    ],
+    [
+      "Estimation Standard for Unascertained Obligations"
+    ],
+    [
+      "Evidentiary Relationship"
+    ],
+    [
+      "Exception to Confidentiality Obligation"
+    ],
+    [
+      "Exception to Defense Control"
+    ],
+    [
+      "Exception to Settlement Consent"
+    ],
+    [
+      "Exclusion from Adjustment"
+    ],
+    [
+      "Exclusion of Buyer Economic Inability from Force Majeure",
+      "Exclusion of Interconnection Agreement Failure from Force Majeure",
+      "Exclusion of Permit Delay or Failure from Force Majeure",
+      "Exclusion of Regulatory Event from Force Majeure",
+      "Exclusion of Seller Economic and Contractual Failures from Force Majeure"
+    ],
+    [
+      "Exclusion of Certain Damages"
+    ],
+    [
+      "Exclusion of Facility Equipment Malfunction from Force Majeure"
+    ],
+    [
+      "Exclusion of Permit Charges from Rates and Prices",
+      "Exclusion of Taxes from Rates and Prices"
+    ],
+    [
+      "Exclusive Beneficiaries"
+    ],
+    [
+      "Exclusive Governing Agreement"
+    ],
+    [
+      "Exclusive Interpretation Responsibility"
+    ],
+    [
+      "Exclusive Remedy Designation"
+    ],
+    [
+      "Exclusive Resale Rights"
+    ],
+    [
+      "Excuse from Performance"
+    ],
+    [
+      "Excuse from Remedial Action Plan Obligation",
+      "Obligation to Submit Remedial Action Plan",
+      "Performance Obligation Subject to Remedial Action Plan Trigger"
+    ],
+    [
+      "Exercise Right via Notice"
+    ],
+    [
+      "Exhibit Conflict Resolution Rule"
+    ],
+    [
+      "Exhibit Precedence Priority",
+      "Precedence Hierarchy"
+    ],
+    [
+      "Express Remedy Excludes Other Remedies"
+    ],
+    [
+      "Express Remedy Limits Obligors Liability"
+    ],
+    [
+      "Express Third-Party Beneficiary Status",
+      "No Third-Party Beneficiary Relationship",
+      "Third-Party Beneficiary Rights"
+    ],
+    [
+      "Extension of Indemnification Period"
+    ],
+    [
+      "FERC Approval of CAISO Tariff",
+      "Regulatory Authority Over CAISO Tariff"
+    ],
+    [
+      "Facilitates Submission to Regulatory Agency"
+    ],
+    [
+      "Facilities Subject to Interconnection Agreement",
+      "Interconnection of Facility"
+    ],
+    [
+      "Failure Constitutes Event of Default"
+    ],
+    [
+      "Failure Excused By"
+    ],
+    [
+      "Fallback Liability Limitation",
+      "Liability Limitation Reference",
+      "Limitation of Liability Exception"
+    ],
+    [
+      "Fee Inclusion in Contract Scope"
+    ],
+    [
+      "Fee Schedule Reference"
+    ],
+    [
+      "Fee Specification"
+    ],
+    [
+      "Final Invoice Requirement"
+    ],
+    [
+      "Financial Assurance Demand Right"
+    ],
+    [
+      "Financing Relationship"
+    ],
+    [
+      "Flow-Down Audit Obligation",
+      "Flow-Down Obligation"
+    ],
+    [
+      "Force Majeure Event Applicability to Party"
+    ],
+    [
+      "Forfeiture to Defray Costs of"
+    ],
+    [
+      "Form Specification"
+    ],
+    [
+      "Geographic Scope of Environmental Liabilities"
+    ],
+    [
+      "Good Faith Cooperation",
+      "Good Faith Negotiation Obligation"
+    ],
+    [
+      "Governing Law and Venue Specification"
+    ],
+    [
+      "Governing Performance Standards"
+    ],
+    [
+      "Governing Rules Superseding Agreement"
+    ],
+    [
+      "Governs Cure of Breach"
+    ],
+    [
+      "Grant of Remedies"
+    ],
+    [
+      "Grant of Security Interest"
+    ],
+    [
+      "Granting Access for Audits"
+    ],
+    [
+      "Guarantee Obligation",
+      "Guarantee Payment Obligation"
+    ],
+    [
+      "Guaranty Beneficiary",
+      "Provider of Guaranty"
+    ],
+    [
+      "Hazardous Substance Disclosure Filing and Fee Payment Obligation"
+    ],
+    [
+      "Hazardous Waste Emergency Preparedness Maintenance Obligation",
+      "Hazardous Waste Emergency Response Notification Obligation"
+    ],
+    [
+      "Immediate Response Obligation"
+    ],
+    [
+      "Includes Performance Milestone"
+    ],
+    [
+      "Inclusion in Payment Application"
+    ],
+    [
+      "Inclusion of Endorsement Requirements"
+    ],
+    [
+      "Inclusion of Purchased Equipment in Payment"
+    ],
+    [
+      "Inclusion of Subcontractor Termination Charges"
+    ],
+    [
+      "Incorporates Standard"
+    ],
+    [
+      "Incorporation by Reference"
+    ],
+    [
+      "Incorporation of Time is of the Essence"
+    ],
+    [
+      "Indemnification Beneficiary",
+      "Indemnification Exclusion",
+      "Indemnification Notification Obligation",
+      "Indemnification for Acts or Omissions",
+      "Indemnity Obligation",
+      "Indemnity Rights Holder"
+    ],
+    [
+      "Indemnification Coverage Exclusion",
+      "Indemnity Exclusion",
+      "Indemnity Exclusion Clause"
+    ],
+    [
+      "Indemnification Obligation Governed By",
+      "Indemnification Related to Defined Risks",
+      "Indemnification and Hold Harmless Obligation"
+    ],
+    [
+      "Indemnification Obligation to Buyer"
+    ],
+    [
+      "Indemnification Related to Additional Work"
+    ],
+    [
+      "Indemnification Related to Compliance Modifications"
+    ],
+    [
+      "Indemnification for Regulatory Violations"
+    ],
+    [
+      "Indemnifies And Holds Harmless"
+    ],
+    [
+      "Indemnity Obligation for Reporting Failures"
+    ],
+    [
+      "Information Exchange Obligation"
+    ],
+    [
+      "Information Request Issuance"
+    ],
+    [
+      "Inspection Request Recipient"
+    ],
+    [
+      "Insurance Flow-Down Obligation"
+    ],
+    [
+      "Insurance Maintenance Obligation",
+      "Insurance Maintenance Obligation During Construction",
+      "Insurance Maintenance Obligation Post-Commercial Operation",
+      "Insurance Obligation"
+    ],
+    [
+      "Insurance Procurement Obligation",
+      "Insurance Procurement Obligation for Unprotected Employees"
+    ],
+    [
+      "Insurer Acceptability Approval"
+    ],
+    [
+      "Integration of Entire Agreement"
+    ],
+    [
+      "Interconnection Agreement Contractual Relationship"
+    ],
+    [
+      "Interconnection Approval Assistance"
+    ],
+    [
+      "Interconnection or Scheduling Requirement"
+    ],
+    [
+      "Interest Accrual Trigger"
+    ],
+    [
+      "Interest Rate Component"
+    ],
+    [
+      "Interest on Overdue Payments"
+    ],
+    [
+      "Invoice Issuance",
+      "Invoice Issuer"
+    ],
+    [
+      "Invoice Preparation and Delivery Obligation",
+      "Invoice Submission Obligation"
+    ],
+    [
+      "Invoice Review and Approval"
+    ],
+    [
+      "Invoices and Payment Obligation",
+      "Tax Invoicing Obligation"
+    ],
+    [
+      "Issued By"
+    ],
+    [
+      "Labor Law Compliance Obligation",
+      "Legal Compliance Duty",
+      "Obligation to Comply with Labor Requirements",
+      "Subject to Labor Compliance Monitoring and Enforcement"
+    ],
+    [
+      "Late Payment Liability"
+    ],
+    [
+      "Lead-Free Determination Authority"
+    ],
+    [
+      "Legal Limitation on Indemnity",
+      "Monetary Limit on Indemnification"
+    ],
+    [
+      "Liability Cap"
+    ],
+    [
+      "Liability Exclusion",
+      "Liability Exemption"
+    ],
+    [
+      "Liability for Violations and Fines"
+    ],
+    [
+      "Limitation of Remedy Payment Source"
+    ],
+    [
+      "Limitation on District's Waiver Effect"
+    ],
+    [
+      "Limitation on EPC Contractor’s Payment Liability",
+      "Payment Obligation to EPC Contractor"
+    ],
+    [
+      "Limitation on Excuse"
+    ],
+    [
+      "Limitation on Indemnifying Party's Payment for Separate Counsel"
+    ],
+    [
+      "Liquidated Damages Claim",
+      "Liquidated Damages Obligation",
+      "Liquidated Damages as Sole Remedy",
+      "Right to Liquidated Damages"
+    ],
+    [
+      "MSDS Acquisition and Submission Obligation"
+    ],
+    [
+      "Maintenance Obligation Conditional on Presence"
+    ],
+    [
+      "Maintenance Obligation for Deliverability Status"
+    ],
+    [
+      "Maintenance Requirement Reference"
+    ],
+    [
+      "Mandatory Alternative Insurance Coverage Requirement"
+    ],
+    [
+      "Mandatory Good Faith Participation in Dispute Resolution Procedures"
+    ],
+    [
+      "Mandatory Reporting Obligation",
+      "Reporting Obligation",
+      "Reporting and Notification Obligation"
+    ],
+    [
+      "Measurement Obligation for Storage Energy"
+    ],
+    [
+      "Measurement of Facility Energy"
+    ],
+    [
+      "Meter Loss Adjustment Point"
+    ],
+    [
+      "Meter Operation and Maintenance Obligation"
+    ],
+    [
+      "Meter Validation Submission"
+    ],
+    [
+      "Milestone Deliverable Requirement"
+    ],
+    [
+      "Mitigation Obligation Imposed on Client"
+    ],
+    [
+      "Monetary Cap Limitation",
+      "Monetary Cap Reference"
+    ],
+    [
+      "Must Notify Upon Third Party or Governmental Request"
+    ],
+    [
+      "Mutual Netting of Payment Obligations"
+    ],
+    [
+      "Mutual Trademark Use Restriction"
+    ],
+    [
+      "Negotiation Obligation for Replacement Security"
+    ],
+    [
+      "Netting Participant"
+    ],
+    [
+      "No Obligation or Liability to Subcontractors"
+    ],
+    [
+      "No Obligation to Credit Economic Benefits"
+    ],
+    [
+      "Non-Binding Status"
+    ],
+    [
+      "Non-Default Status Despite Missed Milestones if Compliant"
+    ],
+    [
+      "Non-Limitation of Service Requests"
+    ],
+    [
+      "Non-Limiting Estimate Relationship"
+    ],
+    [
+      "Non-Modification of Remediation Rights"
+    ],
+    [
+      "Non-Opposition Obligation"
+    ],
+    [
+      "Non-Waiver of Liability by Approval"
+    ],
+    [
+      "Notice Content Specification"
+    ],
+    [
+      "Notice Impact on Insurance Recovery"
+    ],
+    [
+      "Notice Obligation",
+      "Notice Obligation Triggered by Construction Commencement",
+      "Notice Obligation to Buyer",
+      "Notice Obligor",
+      "Notification Obligation"
+    ],
+    [
+      "Notice Period Imposed On"
+    ],
+    [
+      "Notice Receipt Timing Rule"
+    ],
+    [
+      "Notice Recipient"
+    ],
+    [
+      "Notice Recipient of Event of Default",
+      "Right to Notify Event of Default"
+    ],
+    [
+      "Notice and Consent Waiver"
+    ],
+    [
+      "Notice and Cure Opportunity"
+    ],
+    [
+      "Notice and Defense Right",
+      "Notice of Failure to Defend"
+    ],
+    [
+      "Notification Duty to Other Party"
+    ],
+    [
+      "Notification Obligation Upon FERC Request to Release"
+    ],
+    [
+      "Notification Restriction"
+    ],
+    [
+      "Notification and Replacement Obligation upon Insurer Insolvency or Cancellation"
+    ],
+    [
+      "Obligated To Support"
+    ],
+    [
+      "Obligation Subject to Exhibit B Provisions"
+    ],
+    [
+      "Obligation to Accept Delivery",
+      "Obligation to Deliver Product",
+      "Quantity Delivery Obligation",
+      "Sale and Delivery Obligation"
+    ],
+    [
+      "Obligation to Achieve Milestones by Guaranteed Commercial Operation Date"
+    ],
+    [
+      "Obligation to Comply with Anti-Discrimination Law",
+      "Obligation to Comply with Federal Anti-Discrimination Law"
+    ],
+    [
+      "Obligation to Comply with Executive Order"
+    ],
+    [
+      "Obligation to Continue Work During Dispute",
+      "Obligation to Continue Work During Disputes",
+      "Obligation to Pay Undisputed Amounts During Dispute"
+    ],
+    [
+      "Obligation to Control and Contain Releases"
+    ],
+    [
+      "Obligation to Cooperate in Budget Development"
+    ],
+    [
+      "Obligation to Cure Breach",
+      "Payment Obligation Upon Breach",
+      "Right and Obligation to Cure Event of Default"
+    ],
+    [
+      "Obligation to Deliver Development Security",
+      "Obligation to Deliver Performance Security",
+      "Obligation to Maintain Development Security",
+      "Obligation to Return Development Security"
+    ],
+    [
+      "Obligation to Enter Replacement Agreement",
+      "Right to Enter Replacement Agreement Post-Bankruptcy"
+    ],
+    [
+      "Obligation to Exercise Efforts"
+    ],
+    [
+      "Obligation to Maintain Performance Security",
+      "Obligation to Return Performance Security",
+      "Obligation to Satisfy Security Requirements"
+    ],
+    [
+      "Obligation to Obtain Federal Regulatory Approvals",
+      "Obligation to Obtain Governmental Consent and Approval",
+      "Obligation to Obtain Regulatory Approval"
+    ],
+    [
+      "Obligation to Obtain Guarantees and Warranties"
+    ],
+    [
+      "Obligation to Obtain and Maintain Insurance",
+      "Obligation to Provide Insurance Documentation",
+      "Requirement to Maintain Insurance"
+    ],
+    [
+      "Obligation to Pay Expenses When Defense Control Denied"
+    ],
+    [
+      "Obligation to Perform Minor Changes"
+    ],
+    [
+      "Obligation to Provide Notice to Governmental Authority",
+      "Reporting Duty to Governmental Authorities"
+    ],
+    [
+      "Obligation to Receive Financial Schedules",
+      "Obligation to Receive Quarterly Financial Statements"
+    ],
+    [
+      "Obligation to Remove Proprietary Rights Impediment"
+    ],
+    [
+      "Obligation to Secure Transmission Rights"
+    ],
+    [
+      "Obligation to Seek Confidential Treatment"
+    ],
+    [
+      "Obligation to Submit Compliance Deliverable"
+    ],
+    [
+      "Obligation to Submit Payment Application"
+    ],
+    [
+      "Obligation to Substitute Letter of Credit",
+      "Obligation to Substitute Surety"
+    ],
+    [
+      "Obligation to Suspend Work",
+      "Obligation to Suspend and Resume Work",
+      "Right to Require Suspension",
+      "Right to Suspend Performance"
+    ],
+    [
+      "Obligation to Vacate and Remove",
+      "Removal Obligation"
+    ],
+    [
+      "Obligor of Environmental Tracking Duty"
+    ],
+    [
+      "Offer of Additional Terms Post-Renewal"
+    ],
+    [
+      "Operational Compliance Requirement",
+      "Regulatory Compliance Requirement"
+    ],
+    [
+      "Operational Cooperation"
+    ],
+    [
+      "Option to Add Storage Facility",
+      "Option to Purchase Storage Facility Capacity Attributes"
+    ],
+    [
+      "Optional Incorporation Right"
+    ],
+    [
+      "Optional Service Provision Upon Customer Request"
+    ],
+    [
+      "Ownership and Operation of Generating Facility"
+    ],
+    [
+      "Party To",
+      "Party to Agreement"
+    ],
+    [
+      "Party's Obligation to Provide Notice of Force Majeure Event"
+    ],
+    [
+      "Payment Agent Role"
+    ],
+    [
+      "Payment Deadline Obligation",
+      "Payment Obligation for Services",
+      "Payment Obligation to Client",
+      "Payment Timing Obligation"
+    ],
+    [
+      "Payment Document Submission"
+    ],
+    [
+      "Payment Entitlement Limitation"
+    ],
+    [
+      "Payment Obligation Conditional on Authorization and Approval",
+      "Payment Obligation for Authorized Services"
+    ],
+    [
+      "Payment Obligation Subject to Offset"
+    ],
+    [
+      "Payment Obligation for Accepted Compliance Costs",
+      "Payment Obligation for Compliance Costs"
+    ],
+    [
+      "Payment Retention Right"
+    ],
+    [
+      "Payment Schedule Dependency"
+    ],
+    [
+      "Payment Timing Trigger",
+      "Payment Trigger",
+      "Timing Trigger"
+    ],
+    [
+      "Payment and Reimbursement Obligation for Permits and Fees"
+    ],
+    [
+      "Performance Context"
+    ],
+    [
+      "Performance Data Review and Analysis Obligation"
+    ],
+    [
+      "Performance Dependency"
+    ],
+    [
+      "Performance Limitation"
+    ],
+    [
+      "Performance Standard Imposed"
+    ],
+    [
+      "Performance and Warranty Responsibility"
+    ],
+    [
+      "Performance of Functional Activities for CIP Compliance"
+    ],
+    [
+      "Performs Capacity Test On"
+    ],
+    [
+      "Performs Work On"
+    ],
+    [
+      "Permit Obligation"
+    ],
+    [
+      "Permitted Disclosure Aggregation",
+      "Permitted Disclosure Exceptions",
+      "Permitted Disclosure Recipients",
+      "Permitted Disclosure under Applicable Law"
+    ],
+    [
+      "Permitted Disclosure under Valid Governmental Order"
+    ],
+    [
+      "Possesses Confidential Information"
+    ],
+    [
+      "Possession or Title Holder of Facility"
+    ],
+    [
+      "Post-Termination Financial Continuity"
+    ],
+    [
+      "Post-Termination Indemnification Survival",
+      "Survival of Indemnity Obligation",
+      "Survival of Liability and Indemnification",
+      "Survival of Liability and Indemnification Obligations",
+      "Termination Condition on Indemnification Obligation"
+    ],
+    [
+      "Pre-Operational Registration Obligation"
+    ],
+    [
+      "Precedence in Case of Conflict"
+    ],
+    [
+      "Pricing"
+    ],
+    [
+      "Pricing Adjustment Mechanism"
+    ],
+    [
+      "Pricing Benchmark"
+    ],
+    [
+      "Procurement Responsibility"
+    ],
+    [
+      "Production Report Review and Approval Right"
+    ],
+    [
+      "Production Reporting Obligation",
+      "Report Delivery Obligation"
+    ],
+    [
+      "Prohibition of Oral Modifications"
+    ],
+    [
+      "Provider of Security"
+    ],
+    [
+      "Provision of Compliance Evidence"
+    ],
+    [
+      "Provision of Compliance Template"
+    ],
+    [
+      "Provision of Copies of Filings Obligation"
+    ],
+    [
+      "Provision of Draft RMP for Review and Comment"
+    ],
+    [
+      "Provision of Employee/Subcontractor List"
+    ],
+    [
+      "Purchase Obligation Exception"
+    ],
+    [
+      "Qualification Requirement"
+    ],
+    [
+      "RMP Implementation Obligation Subject to Approval",
+      "RMP Preparation and Maintenance Obligation"
+    ],
+    [
+      "Reduction of Liability by Insurance Proceeds"
+    ],
+    [
+      "Reference Date for Rate"
+    ],
+    [
+      "Refund Obligation to Transmission Developer"
+    ],
+    [
+      "Registration and Reporting Compliance Obligation"
+    ],
+    [
+      "Regulatory Compliance",
+      "Regulatory Compliance Duty",
+      "Regulatory Compliance Posting Location"
+    ],
+    [
+      "Regulatory Issuance"
+    ],
+    [
+      "Reimbursement Agreement",
+      "Reimbursement Obligation",
+      "Reimbursement Right"
+    ],
+    [
+      "Reimbursement Obligation for Collection Costs",
+      "Reimbursement Obligation for Taxes"
+    ],
+    [
+      "Release and Discharge of Liability"
+    ],
+    [
+      "Release from Further Obligations",
+      "Release from Post-Termination Liability",
+      "Termination Relieves Further Obligations"
+    ],
+    [
+      "Reliance on Seller's Covenants and Warranties"
+    ],
+    [
+      "Remedial Action Plan Addresses Milestone Delays"
+    ],
+    [
+      "Remedies Impacting Asset Ownership"
+    ],
+    [
+      "Remedy Election Right"
+    ],
+    [
+      "Reporting and Recommendation Duty"
+    ],
+    [
+      "Representation Relationship"
+    ],
+    [
+      "Representation and Warranty to Enter Indemnification Agreement"
+    ],
+    [
+      "Requirement to Obtain Authorization"
+    ],
+    [
+      "Requires Consent for Disclosure"
+    ],
+    [
+      "Requires Cooperation From"
+    ],
+    [
+      "Responsibility for Insurance Policy Management"
+    ],
+    [
+      "Responsible For"
+    ],
+    [
+      "Restriction on Assignment Without District Consent"
+    ],
+    [
+      "Restriction on Use of Company Name"
+    ],
+    [
+      "Retention Condition Based on Pending Claims"
+    ],
+    [
+      "Retention Exception for Compliance"
+    ],
+    [
+      "Retention of Determination Responsibility"
+    ],
+    [
+      "Return of Performance Security"
+    ],
+    [
+      "Right of Prior Written Approval"
+    ],
+    [
+      "Right to Access Financial Records and Personnel"
+    ],
+    [
+      "Right to Assume Defense"
+    ],
+    [
+      "Right to Claim Compensation"
+    ],
+    [
+      "Right to Collect Damage Payment"
+    ],
+    [
+      "Right to Correct Defects in Emergency and Cost Recovery"
+    ],
+    [
+      "Right to Declare Default"
+    ],
+    [
+      "Right to Declare Early Termination Date",
+      "Right to Early Termination",
+      "Right to Send Notice of Early Termination Date"
+    ],
+    [
+      "Right to Draw",
+      "Right to Draw Upon",
+      "Right to Draw on Security"
+    ],
+    [
+      "Right to Draw on Development Security"
+    ],
+    [
+      "Right to Draw on Performance Security"
+    ],
+    [
+      "Right to Employ Replacement Contractor"
+    ],
+    [
+      "Right to Engage Auditors"
+    ],
+    [
+      "Right to Engage Subcontractors with Liability Retained",
+      "Right to Engage Vendors with Liability Retained",
+      "Right to Retain Listed Substantial Subcontractors and Vendors"
+    ],
+    [
+      "Right to Evaluate and Respond to Notice"
+    ],
+    [
+      "Right to Examine Training Records"
+    ],
+    [
+      "Right to Exercise Other Remedies"
+    ],
+    [
+      "Right to Participate in Defense"
+    ],
+    [
+      "Right to Pursue Termination Remedies"
+    ],
+    [
+      "Right to Recover",
+      "Right to Recover Damages and Amounts Due"
+    ],
+    [
+      "Right to Remedy Deficiencies"
+    ],
+    [
+      "Right to Repair and Adjust Equipment During Warranty Period"
+    ],
+    [
+      "Right to Request Employee Training"
+    ],
+    [
+      "Right to Require Additional Warranty Protection"
+    ],
+    [
+      "Right to Seek Equitable Relief"
+    ],
+    [
+      "Right to Seek Preliminary Judicial Relief Despite Exclusive Procedures"
+    ],
+    [
+      "Right to Seek Protective Order"
+    ],
+    [
+      "Right to Select Separate Counsel"
+    ],
+    [
+      "Right to Terminate Agreement"
+    ],
+    [
+      "Right to Use Materials Post-Injunction"
+    ],
+    [
+      "Right to Withhold Payments",
+      "Right to Withhold Retention or Terminate"
+    ],
+    [
+      "Risk Allocation Based on Weather Conditions"
+    ],
+    [
+      "Safety and Reliability Criteria Applicability"
+    ],
+    [
+      "Scheduling Mechanism"
+    ],
+    [
+      "Scope of Application"
+    ],
+    [
+      "Scope of Indemnity Coverage"
+    ],
+    [
+      "Seal Breakage Notification Obligation"
+    ],
+    [
+      "Secondary Reporting Right"
+    ],
+    [
+      "Security Held by"
+    ],
+    [
+      "Security Testing Authorization"
+    ],
+    [
+      "Self-Determination of Legal Requirements"
+    ],
+    [
+      "Sequential Milestone Relationship"
+    ],
+    [
+      "Service Performance Standard Obligation"
+    ],
+    [
+      "Service Performance Subject to Authorization"
+    ],
+    [
+      "Service Procurement Right"
+    ],
+    [
+      "Service Provider Engagement"
+    ],
+    [
+      "Service Provider to Facility"
+    ],
+    [
+      "Set-Off Right Exercised Upon Event of Default"
+    ],
+    [
+      "Severability of Invalid Terms"
+    ],
+    [
+      "Shared Obligation and Liability"
+    ],
+    [
+      "Site Access and Logistics Provision"
+    ],
+    [
+      "Site Control by Seller"
+    ],
+    [
+      "Site Selection Responsibility"
+    ],
+    [
+      "Stringency Precedence Rule"
+    ],
+    [
+      "Subcontracting with Approval and Standards Flowdown"
+    ],
+    [
+      "Subject Matter of Tracking Obligation"
+    ],
+    [
+      "Subject To"
+    ],
+    [
+      "Subject to DOJ Criminal Background Clearance"
+    ],
+    [
+      "Subject to Performance Timeline"
+    ],
+    [
+      "Subject to Review and Approval"
+    ],
+    [
+      "Submission Requirement"
+    ],
+    [
+      "Supersession of Prior Exhibit"
+    ],
+    [
+      "Supply Obligation"
+    ],
+    [
+      "Survival of Cost Liabilities",
+      "Survival of Financial Obligations",
+      "Survival of Obligations",
+      "Survival of Security Obligations"
+    ],
+    [
+      "Survival of Obligations Post-Termination"
+    ],
+    [
+      "Survival of Specific Contractual Provision"
+    ],
+    [
+      "Suspension Commencement and Termination Trigger"
+    ],
+    [
+      "Suspension Effect"
+    ],
+    [
+      "Suspension Instruction"
+    ],
+    [
+      "Suspension Right and Cost Responsibility"
+    ],
+    [
+      "Tax Liability and Contesting Duty"
+    ],
+    [
+      "Tax Payment Obligation",
+      "Tax Payment Responsibility",
+      "Tax Payment and Reimbursement Obligation"
+    ],
+    [
+      "Temporal Compliance Framework"
+    ],
+    [
+      "Temporal Scope",
+      "Temporal Scope of Cap"
+    ],
+    [
+      "Term Definition"
+    ],
+    [
+      "Termination Does Not Waive Damages and Remedies"
+    ],
+    [
+      "Termination Notice Obligation",
+      "notice of non-extension obligation"
+    ],
+    [
+      "Time Synchronization Requirement"
+    ],
+    [
+      "Timing Reference"
+    ],
+    [
+      "Timing of Payment"
+    ],
+    [
+      "Tolling of Claim Presentation Time"
+    ],
+    [
+      "Tolling of Statutes of Limitation During Dispute Resolution"
+    ],
+    [
+      "Training Obligation",
+      "Training Requirement"
+    ],
+    [
+      "Transfer Covenant"
+    ],
+    [
+      "Transfer Covenant for Storage Facility Capacity Attributes"
+    ],
+    [
+      "Transfer Duty",
+      "Transfer Obligation"
+    ],
+    [
+      "Transfer of Compliance Management Responsibility"
+    ],
+    [
+      "Trigger for Commencement of Full Work",
+      "Trigger for Commencement of Limited Work"
+    ],
+    [
+      "Trigger for Compliance Actions Suspension"
+    ],
+    [
+      "Trigger for Cure Period"
+    ],
+    [
+      "Trigger for Payment Obligation",
+      "Trigger of Reimbursement Obligation"
+    ],
+    [
+      "Trigger of CIP Compliance Obligations"
+    ],
+    [
+      "Triggering Environmental Activity",
+      "Triggering Environmental Condition",
+      "Triggering Environmental Event",
+      "Triggering Environmental Obligation"
+    ],
+    [
+      "Triggering Event for Assignment of Claims"
+    ],
+    [
+      "Triggering Event for Curtailment Period"
+    ],
+    [
+      "Trust Holding of Proceeds"
+    ],
+    [
+      "Turnover Obligation"
+    ],
+    [
+      "Unauthorized Transfer Constitutes Default"
+    ],
+    [
+      "Used In"
+    ],
+    [
+      "Waiver of Compliance Actions"
+    ],
+    [
+      "Waiver of Continuing Obligations"
+    ],
+    [
+      "Waiver of Penalty Challenge Attached to Liquidated Damages"
+    ],
+    [
+      "Waiver of Rights to Recover Costs, Fines, and Penalties"
+    ],
+    [
+      "Waiver of Subrogation in Favor of Contractor"
+    ],
+    [
+      "Warranty Obligation Duration"
+    ],
+    [
+      "Warranty Period Trigger"
+    ],
+    [
+      "Warranty Rights Transfer"
+    ],
+    [
+      "Warranty Satisfaction Condition"
+    ],
+    [
+      "alternative commencement date for joining Party"
+    ],
+    [
+      "automatic extension expiration date"
+    ],
+    [
+      "commencement date"
+    ],
+    [
+      "initial expiration date"
+    ]
+  ]
+}

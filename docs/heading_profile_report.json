@@ -1,0 +1,1164 @@
+{
+  "Edison_NYPA_OandM_Contract_1": {
+    "lineCount": 1975,
+    "patternCounts": {
+      "all_caps": 93,
+      "numeric_top": 24,
+      "article_roman": 69,
+      "exhibit": 12,
+      "appendix": 12,
+      "numeric_clause": 154
+    },
+    "badCounts": {
+      "address": 59,
+      "email": 3
+    },
+    "examples": {
+      "all_caps": [
+        "PUBLIC",
+        "SECOND AMENDED AND COMPOSITE AGREEMENT BETWEEN",
+        "THE NEW YORK POWER AUTHORITY",
+        "FOR THE OPERATION AND MAINTENANCE",
+        "OF THE FACILITIES ASSOCIATED WITH",
+        "ASTORIA ANNEX SUBSTATION",
+        "345 KV GAS-INSULATED SUBSTATION",
+        "TABLE OF CONTENTS",
+        "AND TERMINATION",
+        "WATER QUALITY CONTROL",
+        "OUTAGES",
+        "ARTICLE I",
+        "DEFINITIONS",
+        "ARTICLE II",
+        "EFFECTIVE DATE, O&M COMMENCEMENT DATE, TERM AND TERMINATION"
+      ],
+      "BAD_address": [
+        "CONSOLIDATED EDISON COMPANY OF NEW YORK, INC.",
+        "THE NEW YORK POWER AUTHORITY",
+        "New York, Inc. (\"Con Edison\"), a corporation organized and existing under the law of the State of New",
+        "York and having its principal place of business at 4 Irving Place in the City of New York, New York,",
+        "and the New York Power Authority (\"the Power Authority\"), a corporate municipal instrumentality and",
+        "political subdivision of the State of New York having an office at 123 Main Street in the City of White",
+        "Plains, New York. Con Edison and the Power Authority are sometimes collectively referred to herein",
+        "Steinway Street, Astoria, NY (the \"Second Power Block\") pursuant to the easement agreement between",
+        "WHEREAS, Con Edison owns a certain parcel of real property in the City of New York,",
+        "County of Queens, known as Tax Lot 1, in Block 850, on the Tax Map of the City of New York,"
+      ],
+      "numeric_top": [
+        "345 KV GAS-INSULATED SUBSTATION",
+        "123 Main Street",
+        "4 Irving Place, New York, NY 10003",
+        "4 Irving Place, New York, NY 10003",
+        "123 Main Street",
+        "4 Irving Place New York, New York 10003",
+        "4 Irving Place New York, New York 10003",
+        "6520 Glass Factory Road",
+        "123 Main Street",
+        "1. Con Edison shall handle all SF6 gas and SF6 Gas Equipment in a manner to minimize releases.",
+        "2. Only personnel who are familiar with the risks and the need to minimize leaks and releases of FS6",
+        "3. As provided in Section 4.1.7 above, the Power Authority shall provide to a selected group of Con",
+        "4. Con Edison shall weigh the Power Authority-owned SF6 gas containing cylinders, using certified",
+        "5. Con Edison shall weigh the SF6 gas containing cylinders before and after each maintenance",
+        "6. The Power Authority shall purchase and provide for Con Edison's use a weight scale that is"
+      ],
+      "article_roman": [
+        "ARTICLE I: DEFINITIONS 4",
+        "ARTICLE II: EFFECTIVE DATE, O&M COMMENCMENT DATE, TERM 8",
+        "ARTICLE III: REGULATORY COMPLIANCE 9",
+        "ARTICLE IV: CONDITIONS PRECENDENT TO THE SCOPE OF WORK; O&M 12",
+        "ARTICLE V: SERVICES/UTILITIES 20",
+        "ARTICLE VI: COMPENSATION 21",
+        "ARTICLE VII: REPORTING AND INVOICING 24",
+        "ARTICLE VIII: TAXES/PERMIT FEES 25",
+        "ARTICLE IX: PAYMENT 25",
+        "ARTICLE X: WASTE MANAGEMENT 26",
+        "ARTICLE XI: STORM WATER MANAGEMENT FOR POST-CONSTRUCTION 27",
+        "ARTICLE XII: ENVIRONMENTAL PROVISIONS 27",
+        "ARTICLE XIII: SF6 GAS EQUIPMENT 31",
+        "ARTICLE XIV: COMPLIANCE MODIFICATIONS AND UPGRADES 32",
+        "ARTICLE XV: SUPERSEDENCE 33"
+      ],
+      "exhibit": [
+        "EXHIBIT A: List of Equipment For O&M Services",
+        "EXHIBIT B: SF6 Equipment Tracking Cylinder Log",
+        "EXHIBIT C: Power Authority Terms and Requirements",
+        "EXHIBIT D: \"Minor Spare Parts\", \"Major Spares\", and \"Other Parts and",
+        "EXHIBIT E: Survey for Easement Agreement",
+        "EXHIBIT F: Good Faith Estimate of Preparatory Work and Services",
+        "Exhibit A:",
+        "Exhibit B:",
+        "Exhibit C:",
+        "Exhibit D:",
+        "EXHIBIT E:",
+        "EXHIBIT F:"
+      ],
+      "appendix": [
+        "APPENDIX A: Con Edison SSO specification 0100-0022/06",
+        "APPENDIX B: Con Edison Specification EO-4022 Testing of Acc Feeders",
+        "APPENDIX C: Con Edison ES-1003 Installation and Test Specification for Oil",
+        "APPENDIX D: Con Edison ES-1000 Preventative Maintenance (PMP)",
+        "APPENDIX E: Con Edison 2010 Accommodation Services Charges",
+        "APPENDIX F: Power Authority Prompt Payment Policy",
+        "APPENDIX A",
+        "APPENDIX B",
+        "APPENDIX C",
+        "APPENDIX D",
+        "APPENDIX E",
+        "APPENDIX F"
+      ],
+      "numeric_clause": [
+        "2.2.1 Written Notice. This Second Composite Agreement may be terminated, in whole or in",
+        "2.2.1 End of Term Transition. In the event that either Party, in whole or in part, terminates",
+        "2.2.2 Default. Either Party may terminate this Second Composite Agreement in accordance",
+        "2.3 Survival. This Second Composite Agreement shall continue in effect after termination to the",
+        "3.1 NERC Reliability Standards Compliance. NERC Reliability Standards, NPCC Reliability",
+        "3.1.1 The Power Authority represents and warrants that all previous entities owning or",
+        "3.1.2 The Power Authority further represents and warrants that all previous entities owning or",
+        "3.1.3 It is expressly understood that the responsibility for managing compliance and the",
+        "3.1.4 In accordance with Article XIX (Indemnification), the Power Authority will indemnify",
+        "3.1.5 Con Edison agrees to provide Power Authority with all documentation that establishes",
+        "3.1.6 Con Edison (and its third party agents) agrees to comply with all requirements applicable",
+        "3.1.7 Management of Critical Infrastructure Protection (CIP) Standards:",
+        "3.2 Backfeed Requirements. Prior to any Backfeed, and at the Power Authority's sole cost and",
+        "3.3 Energization Component Requirements. Prior to the O&M Commencement Date, the Power",
+        "3.4 Permits. In accordance with Article VIII- Taxes/Permit Fees, the Power Authority shall be"
+      ],
+      "BAD_email": [
+        "receive these reports is Robert Schwabe, Robert.schwabe@nypa.gov, 914-287-3794.",
+        "E-mail: John.Kahabka@nypa.gov",
+        "E-mail: Hudmana@coned.com"
+      ]
+    },
+    "treeSummary": {
+      "topLevelCount": 43,
+      "topLevelTitles": [
+        "ARTICLE I",
+        "ARTICLE II",
+        "ARTICLE III",
+        "ARTICLE IV",
+        "ARTICLE V",
+        "ARTICLE VI",
+        "ARTICLE VII",
+        "ARTICLE VIII",
+        "ARTICLE IX",
+        "ARTICLE X",
+        "ARTICLE XI",
+        "ARTICLE XII",
+        "ARTICLE XIII",
+        "ARTICLE XIV",
+        "ARTICLE XV",
+        "ARTICLE XVI",
+        "ARTICLE XVII",
+        "ARTICLE XVIII",
+        "ARTICLE XIX",
+        "ARTICLE XX",
+        "ARTICLE XXI",
+        "ARTICLE XXII",
+        "ARTICLE XXIII",
+        "ARTICLE XXIV",
+        "ARTICLE XXV",
+        "ARTICLE XXVI",
+        "ARTICLE XXVII",
+        "ARTICLE XXVIII",
+        "ARTICLE XXIX",
+        "ARTICLE XXX",
+        "ARTICLE XXXI",
+        "ARTICLE XXXII",
+        "ARTICLE XXXIII",
+        "ARTICLE XXXIV",
+        "ARTICLE XXXIV",
+        "EXHIBIT E:",
+        "EXHIBIT F:",
+        "APPENDIX A",
+        "APPENDIX B",
+        "APPENDIX C"
+      ],
+      "nodeTypeCounts": {
+        "document": 1,
+        "section": 43,
+        "clause": 160
+      },
+      "isFullDocumentFallback": false
+    }
+  },
+  "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1": {
+    "lineCount": 4114,
+    "patternCounts": {
+      "all_caps": 119,
+      "numeric_top": 173,
+      "numeric_clause": 395,
+      "section_word": 18,
+      "schedule": 3,
+      "article_number": 1,
+      "exhibit": 9
+    },
+    "badCounts": {
+      "address": 13,
+      "email": 13
+    },
+    "examples": {
+      "all_caps": [
+        "ENGINEERING, PROCUREMENT, & CONSTRUCTION (EPC) AGREEMENT",
+        "CONSTRUCTION AND INSTALLATION OF A SOLAR PHOTOVOLTAIC S YSTEM (THE",
+        "RESPONSIBILITIES",
+        "INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY, PUNITIVE OR OTHER",
+        "DAMAGES (OR LOST PROFITS TO THE EXTENT THAT SUCH PORTION OF LOST PROFITS",
+        "CONSTITUTES SUCH TYPES OF DA MAGES), OR DAMAGES FOR DELAY (EXCEPT AS",
+        "PROVIDED HEREIN, THERE ARE NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING",
+        "ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR",
+        "PURPOSE, WITH REGARD TO ANY OR ALL SERVICES, MATERIALS AND EQUIPMENT",
+        "SUPPLIED AND OR INSTALLED BY EPC CONTRACTOR, AND ANY EXPRESS WARRANTY",
+        "IS IN LIEU OF ALL LIABILITIES OR OBLIGATIONS OF EPC CONTRACTOR (WHETHER",
+        "SUCH LIABILITIES OR OBLIGATIONS WOULD ARISE UNDER THE AGREEMENT OR",
+        "OTHERWISE) FOR DAMAGES ARISING OUT OF OR IN CONNECTION WITH THE DESIGN,",
+        "DELIVERY, INSTALLATION, USE OR PERFORMANCE OF SUCH SYSTEM, MATERIALS",
+        "AGREEMENT WHETHER BASED IN CONTRACT (INCLUDING WARRANTY, TORT"
+      ],
+      "numeric_top": [
+        "1. DEFINITIONS",
+        "2. SCOPE OF WORK",
+        "3. EPC CONTRACTOR’S REPRESENTATIONS, WARRANTIES, COVENANTS AND",
+        "4. SUBCONTRACTOR(S); SUBCONSULTANTS; SUPPLIERS",
+        "5. SUPERVISION; PERFORMANCE OF THE WORK; CONSTRUCTION SERVICES",
+        "6. CONTRACT TIME; PROJECT SCHEDULE",
+        "7. SAFETY",
+        "8. MATERIALS; TRANSFER OF TITLE; RISK OF LOSS",
+        "9. PERMITS; FEES",
+        "10. REBATES; CREDITS; INCENTIVES",
+        "11. PRIOR SERVICES AND PRE-CONSTRUCTION SERVICES",
+        "12. COORDINATION WITH PURCHASER AND CLIENT",
+        "13. CONTRACT SUM; PAYMENTS ON ACCOUNT OF CONTRACT SUM",
+        "14. CLIENT’S REPRESENTATIVE",
+        "15. CLAIMS; CHANGE(S) TO SCOPE OF WORK OR SCHEDULE OF WORK"
+      ],
+      "numeric_clause": [
+        "1.1 “Claim” has the meaning given it in Section 15.4.",
+        "1.2 “Client’s Agent” has the meaning given it in Section 14.1.",
+        "1.3 “Completion Cost” has the meaning given it in Section 18.5.",
+        "1.4 “Construction Documents” consist of the architectural, mechanical, electrical, and",
+        "1.5 “Contract Documents” consist of this Agreement, together with all exhibits, and",
+        "1.6 “Contract Sum” is the amount set forth in Schedule #6.",
+        "1.7 “DAS” has the meaning given it in Section 12.3.",
+        "1.8 “Day” means a calendar day unless otherwise specifically defined.",
+        "1.9 “Engineering Services Company ” means any company that is engaged for services",
+        "1.10 “Excusable Delay” means a delay which is the result of: (i ) Client not granting written",
+        "1.11  “Final Completion” means the full completion of all Work, including the satisfaction",
+        "1.12 “Final Completion Date” means the date that EPC Contractor delivers the Final",
+        "1.13 “Final Project Size” has the meaning given it in Section 13.1.",
+        "1.14 “Force Majeure” means any act or event that directly delays or prevents a Party from",
+        "1.15 “Governmental Authorities” shall mean each of the United States of America, the State"
+      ],
+      "section_word": [
+        "section 3.9.",
+        "Section 10, Interconnection Application Status.",
+        "Section 1-210(b) of the Connecticut General Statutes.",
+        "Section 13.1, the remaining milestone payments  below shall be adjusted to reflect the new Contract",
+        "SECTION 4.10).",
+        "Section 3.3, SunPower shall pay Customer for all Guarantee Payments incurred in the portion of the True-",
+        "Section 2.01       Guaranteed Output Calculations.",
+        "Section 2.02       Guaranteed Payment/Reimbursement.",
+        "Section 2.03       Reporting of Actual Generation Measurement.",
+        "Section 2.04 Adjustment of Expected Energy.",
+        "Section 3.01 Customer’s Responsibilities.",
+        "Section 3.02 Customer’s Failure to Uphold Responsibilities.",
+        "Section 4.01 Limitation of Liability.  INTENTIONALLY OMITTED",
+        "Section 4.02 Technical Disputes.",
+        "Section 4.03 Entire Exhibit."
+      ],
+      "schedule": [
+        "Schedule shall be extended by the number of Days between  the later of the dates the Construction",
+        "Schedule are subject to change by SunPower, with written consent from Customer, prior to the",
+        "Schedule of Values"
+      ],
+      "BAD_address": [
+        "7.5 The EPC Contractor shall have in place a site-specific health and safety plan, subject to",
+        "845 Brook Street",
+        "lesser of (a) the rate published by the Wall Street Journal as the “prime rate” on the Business Day preceding",
+        "negligent or intentionally tortious acts or omissions of Customer, or any of its affiliates, or a ny of their",
+        "arbitration shall be English.  The place and seat of arbitration shall be Hartford. The Parties hereto",
+        "8900 Amberglen Blvd., Ste. 325",
+        "8900 Amberglen Blvd., Ste. 325",
+        " all labels and safety signs specified in the plans and by the NEC are in place.",
+        "testing will take place around noon on a cloudless day:",
+        "(4) Equipment will be checked daily and, when not in use, locked in a secure place as the Facility officials"
+      ],
+      "article_number": [
+        "Article 18 herein, EPC Contractor shall not be entitled to any compensation and or reimbursement on"
+      ],
+      "BAD_email": [
+        "Email: Eric.Dietl@sunpowercorp.com",
+        "Email: Justin.Perlman@sunpowercorp.com",
+        "Email: Evan.mazzaglia@sunpowercorp.com",
+        "Email: Brad.Harmon@sunpowercorp.com",
+        "legalnoticesunpower@sunpowercorp.com",
+        "Email: Scott.Gray@sunpower.com with a",
+        "copy to: customer.service@sunpower.com",
+        "OandMSupportTeam@sunpowercorp.com",
+        "Stewart at Fiona.Stewart@ctgreenbank.com copying Catherine Duncan at",
+        "catherine.duncan@ctgreenbank.com."
+      ],
+      "exhibit": [
+        "EXHIBIT A",
+        "EXHIBIT B.1",
+        "EXHIBIT B.2",
+        "EXHIBIT C",
+        "EXHIBIT D",
+        "EXHIBIT E",
+        "EXHIBIT F",
+        "EXHIBIT F",
+        "EXHIBIT G"
+      ]
+    },
+    "treeSummary": {
+      "topLevelCount": 23,
+      "topLevelTitles": [
+        "1. DEFINITIONS",
+        "2. SCOPE OF WORK",
+        "3. EPC CONTRACTOR’S REPRESENTATIONS, WARRANTIES, COVENANTS AND",
+        "4. SUBCONTRACTOR(S); SUBCONSULTANTS; SUPPLIERS",
+        "5. SUPERVISION; PERFORMANCE OF THE WORK; CONSTRUCTION SERVICES",
+        "6. CONTRACT TIME; PROJECT",
+        "7. SAFETY",
+        "8. MATERIALS; TRANSFER OF TITLE; RISK OF LOSS",
+        "9. PERMITS; FEES",
+        "10. REBATES; CREDITS; INCENTIVES",
+        "11. PRIOR SERVICES AND PRE-CONSTRUCTION SERVICES",
+        "12. COORDINATION WITH PURCHASER AND CLIENT",
+        "13. CONTRACT SUM; PAYMENTS ON ACCOUNT OF CONTRACT SUM",
+        "14. CLIENT’S REPRESENTATIVE",
+        "15. CLAIMS; CHANGE(S) TO SCOPE OF WORK OR SCHEDULE OF WORK",
+        "EXHIBIT A",
+        "EXHIBIT B.1",
+        "EXHIBIT B.2",
+        "EXHIBIT C",
+        "EXHIBIT D",
+        "EXHIBIT E",
+        "EXHIBIT F",
+        "EXHIBIT G"
+      ],
+      "nodeTypeCounts": {
+        "document": 1,
+        "section": 23,
+        "clause": 508
+      },
+      "isFullDocumentFallback": false
+    }
+  },
+  "ITEM-Attachment-001-8b61c09bae2e4baf9088744b1bb5d2b5_1": {
+    "lineCount": 61,
+    "patternCounts": {},
+    "badCounts": {},
+    "examples": {},
+    "treeSummary": {
+      "topLevelCount": 1,
+      "topLevelTitles": [
+        "Full Document"
+      ],
+      "nodeTypeCounts": {
+        "document": 1,
+        "section": 1
+      },
+      "isFullDocumentFallback": true
+    }
+  },
+  "LFGTE_Duke_Energy_power_purchase_agrmnt_1": {
+    "lineCount": 1635,
+    "patternCounts": {
+      "all_caps": 94,
+      "numeric_top": 33,
+      "numeric_clause": 223,
+      "section_word": 1,
+      "exhibit": 7
+    },
+    "badCounts": {
+      "execution_copy": 33,
+      "watermark": 33,
+      "page_footer": 29,
+      "address": 9,
+      "email": 1
+    },
+    "examples": {
+      "all_caps": [
+        "EXECUTION COPY",
+        "ALL TERMS, CONDITIONS, AND RATES DEEMED WITHDRAWN ON NOVEMBER 21, 2021",
+        "POWER PURCHASE AGREEMENT",
+        "RECITALS",
+        "EXECUTION COPY",
+        "ALL TERMS, CONDITIONS, AND RATES DEEMED WITHDRAWN ON NOVEMBER 21, 2021",
+        "EXECUTION COPY",
+        "ALL TERMS, CONDITIONS, AND RATES DEEMED WITHDRAWN ON NOVEMBER 21, 2021",
+        "EXECUTION COPY",
+        "ALL TERMS, CONDITIONS, AND RATES DEEMED WITHDRAWN ON NOVEMBER 21, 2021",
+        "EXECUTION COPY",
+        "ALL TERMS, CONDITIONS, AND RATES DEEMED WITHDRAWN ON NOVEMBER 21, 2021",
+        "EXECUTION COPY",
+        "ALL TERMS, CONDITIONS, AND RATES DEEMED WITHDRAWN ON NOVEMBER 21, 2021",
+        "EXECUTION COPY"
+      ],
+      "BAD_execution_copy": [
+        "EXECUTION COPY",
+        "EXECUTION COPY",
+        "EXECUTION COPY",
+        "EXECUTION COPY",
+        "EXECUTION COPY",
+        "EXECUTION COPY",
+        "EXECUTION COPY",
+        "EXECUTION COPY",
+        "EXECUTION COPY",
+        "EXECUTION COPY"
+      ],
+      "BAD_watermark": [
+        "ALL TERMS, CONDITIONS, AND RATES DEEMED WITHDRAWN ON NOVEMBER 21, 2021",
+        "ALL TERMS, CONDITIONS, AND RATES DEEMED WITHDRAWN ON NOVEMBER 21, 2021",
+        "ALL TERMS, CONDITIONS, AND RATES DEEMED WITHDRAWN ON NOVEMBER 21, 2021",
+        "ALL TERMS, CONDITIONS, AND RATES DEEMED WITHDRAWN ON NOVEMBER 21, 2021",
+        "ALL TERMS, CONDITIONS, AND RATES DEEMED WITHDRAWN ON NOVEMBER 21, 2021",
+        "ALL TERMS, CONDITIONS, AND RATES DEEMED WITHDRAWN ON NOVEMBER 21, 2021",
+        "ALL TERMS, CONDITIONS, AND RATES DEEMED WITHDRAWN ON NOVEMBER 21, 2021",
+        "ALL TERMS, CONDITIONS, AND RATES DEEMED WITHDRAWN ON NOVEMBER 21, 2021",
+        "ALL TERMS, CONDITIONS, AND RATES DEEMED WITHDRAWN ON NOVEMBER 21, 2021",
+        "ALL TERMS, CONDITIONS, AND RATES DEEMED WITHDRAWN ON NOVEMBER 21, 2021"
+      ],
+      "BAD_page_footer": [
+        "1 | Page",
+        "2 | Page",
+        "3 | Page",
+        "4 | Page",
+        "5 | Page",
+        "6 | Page",
+        "7 | Page",
+        "8 | Page",
+        "9 | Page",
+        "10 | Page"
+      ],
+      "BAD_address": [
+        "Overnight Mail: 400 South Tryon Street",
+        "81 Panther Branch Road",
+        "1.10. “Business Day” means any day on which the Federal Reserve member banks in New York City",
+        "source and  located in Buncombe  County, North Carolina , at 85 Panther Branch Road ,",
+        "the prime lending rate as may from time to time be published in The Wall Street Journal under",
+        "and regardless of the currency, place of payment or booking office of the obligation) against",
+        "currency, place of payment or booking office of the obligation).  If any such obligation is",
+        "governed by a system of law which does not permit termination to take place upon or after",
+        "through the joint efforts of the Parties, and no Party shall have a ny provision hereof"
+      ],
+      "BAD_email": [
+        "DERContracts@duke-energy.com"
+      ],
+      "numeric_top": [
+        "81 Panther Branch Road",
+        "1. Definitions",
+        "2. Interpretation",
+        "3. Term and Termination",
+        "4. Purchase and Sale Obligations",
+        "5. Seller Compliance Requirements.",
+        "6. Seller’s Facility Requirements.",
+        "7. Facility Performance Requirements",
+        "8. Information Requirements",
+        "9. Metering",
+        "10. Billing Period and Payment",
+        "11. Audit Rights",
+        "12. Taxes",
+        "13. Force Majeure",
+        "14. Change in Law"
+      ],
+      "numeric_clause": [
+        "1.1. “AAA” is defined in Section 23.2.1.",
+        "1.2. “Abandon(s)” means the relinquishment of control or possession of the Facility and/or",
+        "1.3. “Affiliate” means, with respect to any entity, each entity that directly or indirectly controls, is",
+        "1.4. “Agreement” is defined in the introductory paragraph hereof.",
+        "1.5. “Assignment” is defined in Section 24.1.",
+        "1.6. “Back-Up Tapes” is defined in Section 16.3.",
+        "1.7. “Bankrupt” means, with respect to a Party or any Affiliate of such Party that is currently acting",
+        "1.8. “Billing Meter” is defined in Section 10.",
+        "1.9. “Billing Period” is defined in Section 11.",
+        "1.10. “Business Day” means any day on which the Federal Reserve member banks in New York City",
+        "1.11. “Buyer” shall have the meaning specified in the first paragraph of this Agreement.",
+        "1.12. “Capacity” means and includes the electric generation capability and ability of the Facility and",
+        "1.13. “Change of Control” means a transaction or series of related transactions (by way of merger,",
+        "1.14.  “Commercially Reasonable Manner” or “Commercially Reasonable” means, with respect to a",
+        "1.15. “Commission” means the North Carolina Utilities Commission, or any successor thereto."
+      ],
+      "section_word": [
+        "Section 24;"
+      ],
+      "exhibit": [
+        "Exhibit 1-1",
+        "Exhibit 1",
+        "Exhibit 2-1",
+        "Exhibit 2",
+        "Exhibit 3-1",
+        "Exhibit 3",
+        "Exhibit 4"
+      ]
+    },
+    "treeSummary": {
+      "topLevelCount": 25,
+      "topLevelTitles": [
+        "1. Definitions",
+        "2. Interpretation",
+        "3. Term and Termination",
+        "4. Purchase and Sale Obligations",
+        "5. Seller Compliance Requirements.",
+        "6. Seller’s Facility Requirements.",
+        "7. Facility Performance Requirements",
+        "8. Information Requirements",
+        "9. Metering",
+        "10. Billing Period and Payment",
+        "11. Audit Rights",
+        "12. Taxes",
+        "13. Force Majeure",
+        "14. Change in Law",
+        "15. Confidentiality",
+        "16. Mutual Representations and Warranties",
+        "17. Seller Representations and Warranties to Buyer",
+        "18. Events of Default",
+        "19. Early Termination.",
+        "20. Cover Costs.",
+        "21. Limitation of Liabilities & Liquidated Damages.",
+        "22. Disputes",
+        "23. Assignment",
+        "24.  Notices.",
+        "25. Miscellaneous."
+      ],
+      "nodeTypeCounts": {
+        "document": 1,
+        "section": 25,
+        "clause": 203
+      },
+      "isFullDocumentFallback": false
+    }
+  },
+  "NextEra_Corporate_Support_O_M_Agreement_2018_1": {
+    "lineCount": 1069,
+    "patternCounts": {
+      "all_caps": 46,
+      "section_word": 30,
+      "article_number": 9,
+      "numeric_top": 13,
+      "exhibit": 15
+    },
+    "badCounts": {
+      "address": 5
+    },
+    "examples": {
+      "all_caps": [
+        "CORPORATE SUPPORT SERVICES, SHARED RESOURCES,",
+        "AND OPERATIONS AND MAINTENANCE SERVICES AGREEMENT",
+        "RECITALS",
+        "DEFINITIONS",
+        "ARTICLE 2",
+        "ARTICLE 3",
+        "SERVICES",
+        "ARTICLE 4",
+        "AND COMPLIANCE WITH LAW",
+        "ARTICLE 5",
+        "INDEPENDENT CONTRACTOR RELATIONSHIP",
+        "ARTICLE 6",
+        "COMPENSATION AND BILLING",
+        "ARTICLE 7",
+        "ARTICLE 8"
+      ],
+      "section_word": [
+        "Section 1.1 Definition s.  Unless the context otherwise requires, the following terms",
+        "Section 1.2 References.  All references in this Agr eement to sections, paragraphs,",
+        "Section 1.3 Rules of Construction .  The following rules of construction shall be",
+        "Section 2.1 Term.  The term (“Term ”) of this Agreement shall commence on the",
+        "Section 2.2 Termination.  This Agreement may be terminated without Cause by",
+        "Section 2.3 Transition to New Provider .  Subject to any limitations resulting from a",
+        "Section 3.1 Corporate Support Services, Shared Resources, and Operations and",
+        "Section 3.2 Budget.   The Parties will cooperate reasonably to develop a budget for the",
+        "Section 3.3 Consultations.  The Parties shall consult regarding the pr ogress of the",
+        "Section 4.1 Code of Conduct.",
+        "Section 4.2 Confidentiality.",
+        "Section 4.3  Compliance with Law.   In the performance of this Agreement, each Party",
+        "Section 5.1 Independent Contractor.   Providers shall undertake performance of the",
+        "Section 6.1 Compensation.",
+        "Section 6.2 Billing."
+      ],
+      "article_number": [
+        "ARTICLE 2",
+        "ARTICLE 3",
+        "ARTICLE 4",
+        "ARTICLE 5",
+        "ARTICLE 6",
+        "ARTICLE 7",
+        "ARTICLE 8",
+        "ARTICLE 9",
+        "ARTICLE 10"
+      ],
+      "BAD_address": [
+        "the Initial Expiration Date or a ny Extended Expiration Date that it does not intend to extend the",
+        "sixty (60) days prior written noti ce, if, and only if:  (i) Compa ny is no longer an Affiliate of",
+        "5920 W est William Cannon Drive, Building 2",
+        "of any such interest, shall in a ny way release, reduce, or diminish the obligations of such Party",
+        "Section 10.6 Waiver.   The waiver of any breach of a ny terms or conditions hereof shall"
+      ],
+      "numeric_top": [
+        "700 Universe Boulevard",
+        "700 Universe Boulevard.",
+        "700 Universe Boulevard",
+        "700 Universe Boulevard.",
+        "700 Universe Boulevard",
+        "700 Universe Boulevard.",
+        "700 Universe Boulevard",
+        "700 Universe Boulevard",
+        "5920 W est William Cannon Drive, Building 2",
+        "700 Universe Boulevard.",
+        "1. Energy Management Systems (“EMS”) Related Shared Resources:",
+        "2. Hardware and software and systems utilized by Provider to track and maintain",
+        "3. Hardware and software applications and systems utilized to provide dashboards and"
+      ],
+      "exhibit": [
+        "Exhibit A",
+        "EXHIBIT A",
+        "Exhibit A1.",
+        "Exhibit A",
+        "Exhibit A",
+        "Exhibit B",
+        "EXHIBIT B",
+        "Exhibit C",
+        "EXHIBIT C",
+        "Exhibit C",
+        "EXHIBIT A1",
+        "Exhibit D ¹ ²",
+        "EXHIBIT B1",
+        "EXHIBIT C1",
+        "EXHIBIT D"
+      ]
+    },
+    "treeSummary": {
+      "topLevelCount": 16,
+      "topLevelTitles": [
+        "ARTICLE 2",
+        "ARTICLE 3",
+        "ARTICLE 4",
+        "ARTICLE 5",
+        "ARTICLE 6",
+        "ARTICLE 7",
+        "ARTICLE 8",
+        "ARTICLE 9",
+        "ARTICLE 10",
+        "EXHIBIT A",
+        "EXHIBIT B",
+        "EXHIBIT C",
+        "EXHIBIT A1",
+        "EXHIBIT B1",
+        "EXHIBIT C1",
+        "EXHIBIT D"
+      ],
+      "nodeTypeCounts": {
+        "document": 1,
+        "section": 16,
+        "clause": 30
+      },
+      "isFullDocumentFallback": false
+    }
+  },
+  "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1": {
+    "lineCount": 2150,
+    "patternCounts": {
+      "all_caps": 17,
+      "article_number": 53,
+      "numeric_clause": 231,
+      "appendix": 8,
+      "numeric_top": 38
+    },
+    "badCounts": {
+      "address": 63,
+      "email": 4
+    },
+    "examples": {
+      "all_caps": [
+        "ENGINEERING, PROCUREMENT, AND CONSTRUCTION AGREEMENT",
+        "AMONG THE",
+        "NIAGARA MOHAWK POWER CORPORATION",
+        "D/B/A NATIONAL GRID,",
+        "TABLE OF CONTENTS",
+        "RELEASES 30",
+        "ENGINEERING, PROCUREMENT, AND CONSTRUCTION AGREEMENT",
+        "THIS ENGINEERING, PROCUREMENT, AND CONSTRUCTION AGREEMENT",
+        "RECITALS",
+        "RELEASES",
+        "APPENDICES",
+        "APPENDIX A",
+        "EPC SERVICES",
+        "APPENDIX B",
+        "ADDRESSES FOR DELIVERY OF NOTICES AND BILLINGS"
+      ],
+      "BAD_address": [
+        "NEW YORK INDEPENDENT SYSTEM OPERATOR, INC.",
+        "NEXTERA ENERGY TRANSMISSION NEW YORK, INC.",
+        "Energy Transmission New York, Inc., a corporation organized and existing under the laws of the",
+        "State of New York (“Transmission Developer”), the New York Independent System Operator, Inc.,",
+        "a not-for-profit corporation organized and existing under the laws of the State of New York",
+        "organized and existing under the laws of the State of New York (“Affected System Operator”).",
+        "New York Public Policy Transmission Need (“Transmission Project);",
+        "Transmission Owners with which the project will interconnect - New York Power Authority and",
+        "New York State Electric and Gas Corporation;",
+        "procurement, and construction services required to construct and place in service the Affected"
+      ],
+      "article_number": [
+        "ARTICLE 1. DEFINITIONS .........................................................................................................2",
+        "ARTICLE 2. EFFECTIVE DATE, TERM AND TERMINATION ...............................................6",
+        "ARTICLE 3. EPC SERVICES .......................................................................................................9",
+        "ARTICLE 4. TESTING AND INSPECTION ..............................................................................16",
+        "ARTICLE 5. COMMUNICATIONS ...........................................................................................17",
+        "ARTICLE 6. PERFORMANCE OBLIGATION .........................................................................17",
+        "ARTICLE 7. INVOICE ...............................................................................................................19",
+        "ARTICLE 8. REGULATORY REQUIREMENTS AND GOVERNING LAW ..........................20",
+        "ARTICLE 9.   NOTICES ................................................................................................................20",
+        "ARTICLE 10. FORCE MAJEURE .................................................................................................21",
+        "ARTICLE 11. DEFAULT...............................................................................................................21",
+        "ARTICLE 12. INDEMNITY, CONSEQUENTIAL DAMAGES AND INSURANCE ..................22",
+        "ARTICLE 13. ASSIGNMENT .......................................................................................................26",
+        "ARTICLE 14. SEVERABILITY ....................................................................................................26",
+        "ARTICLE 15. COMPARABILITY ................................................................................................26"
+      ],
+      "numeric_clause": [
+        "2.1 Effective Date ..................................................................................................... 6",
+        "2.2 Term of Agreement ............................................................................................. 6",
+        "2.3 Termination ........................................................................................................ 6",
+        "2.4 Termination Costs ............................................................................................... 8",
+        "2.5 Survival ............................................................................................................... 9",
+        "3.1 Performance of EPC Services ............................................................................. 9",
+        "3.2 Equipment Procurement ...................................................................................... 9",
+        "3.3 Construction Commencement ........................................................................... 10",
+        "3.4 Work Progress .................................................................................................. 10",
+        "3.5 Information Exchange ....................................................................................... 10",
+        "3.6 Ownership of Affected System Upgrade Facilities ............................................ 11",
+        "3.7 Access Rights .................................................................................................... 11",
+        "3.8 Lands of Other Property Owners ....................................................................... 11",
+        "3.9 Permits .............................................................................................................. 11",
+        "3.10 Suspension ........................................................................................................ 11"
+      ],
+      "appendix": [
+        "Appendix A of this Agreement.",
+        "Appendix A of this Agreement.  This amount is set forth in Appendix A of this Agreement.  If",
+        "Appendix A",
+        "Appendix B",
+        "Appendix C",
+        "APPENDIX A",
+        "APPENDIX B",
+        "APPENDIX C"
+      ],
+      "numeric_top": [
+        "1.  Affected System Upgrade Facilities",
+        "2. ASO Estimated Total Costs*",
+        "3. Security",
+        "4. Milestones",
+        "1. Start engineering for Transmission Complete Transmission",
+        "2. Execute Support Services Complete Transmission",
+        "3. Advanced payment provided Complete Transmission",
+        "4. Start engineering for Network Complete Affected System",
+        "5. Issue written authorization to Complete Transmission",
+        "6. Start procurement for Network Complete Affected System",
+        "7. Start procurement for",
+        "8. Complete procurement for",
+        "9. Start construction of Transmission",
+        "10. Execute Engineering, Procurement",
+        "11. Provide Security pursuant to this"
+      ],
+      "BAD_email": [
+        "E-mail:  interconnectionsupport@nyiso.com",
+        "Email: Kevin.Reardon@nationalgrid.com",
+        "Richard.allen2@nexteraenergy.com",
+        "info@empirestateline.com"
+      ]
+    },
+    "treeSummary": {
+      "topLevelCount": 26,
+      "topLevelTitles": [
+        "1.   DEFINITIONS",
+        "2.   EFFECTIVE DATE, TERM AND TERMINATION",
+        "3.   EPC SERVICES",
+        "4.   TESTING AND INSPECTION",
+        "5.   COMMUNICATIONS",
+        "6.   PERFORMANCE OBLIGATION",
+        "7.   INVOICE",
+        "8.   REGULATORY REQUIREMENTS AND GOVERNING LAW",
+        "9.   NOTICES",
+        "10.  FORCE MAJEURE",
+        "11.  DEFAULT",
+        "12.  INDEMNITY, CONSEQUENTIAL DAMAGES AND INSURANCE",
+        "13.  ASSIGNMENT",
+        "14.  SEVERABILITY",
+        "15.  COMPARABILITY",
+        "16.  CONFIDENTIALITY",
+        "17.  AFFECTED SYSTEM OPERATOR NOTICES OF ENVIRONMENTAL",
+        "18.  INFORMATION REQUIREMENT",
+        "19.  INFORMATION ACCESS AND AUDIT RIGHTS",
+        "20.  SUBCONTRACTORS",
+        "21.  DISPUTES",
+        "22.  REPRESENTATIONS, WARRANTIES AND COVENANTS",
+        "23.  MISCELLANEOUS",
+        "APPENDIX A",
+        "APPENDIX B",
+        "APPENDIX C"
+      ],
+      "nodeTypeCounts": {
+        "document": 1,
+        "section": 26,
+        "clause": 176
+      },
+      "isFullDocumentFallback": false
+    }
+  },
+  "SoCal_EPC": {
+    "lineCount": 216,
+    "patternCounts": {},
+    "badCounts": {
+      "address": 6
+    },
+    "examples": {
+      "BAD_address": [
+        "Edison Agreement No. CW2264109 SCE-EPCM SCE – Ameresco Inc. - 10 - Doc. Ver. 07/15/2021 Confidential “Prudent Industry Practices” means the practices generally followed by the United States electric utility industry with respect to design, construction, operation, and maintenance of utility scale, electric battery energy storage system facilities (including the engineering, operating and safety practices generally followed by the electric utility industry). “Punch List” has the meaning set forth in Section 10.4(b). “Purchase Order” means that certain Purchase Order issued by Company and accepted by Contractor, as of the date hereof, as the same may be amended, supplemented or modified from time to time in accordance with the terms thereof. “Qualified Institution” means either (A) a commercial bank or financial institution (that is not an Affiliate of Contractor or Contractor’s Parent Guarantor) organized under the laws of the United States or a political subdivision thereof or (B) a U.S. branch office of a foreign bank, with respect to both entities identified in clause (A) and (B), having (i) (a) Credit Ratings of at least [*****] by S&P, [*****] by Fitch and [*****] by Moody’s, if such entity is rated by the Ratings Agencies; (b) if such entity is rated by only two of the three Ratings Agencies, a Credit Rating from two of the three Ratings Agencies of at least [*****] by S&P, if such entity is rated by S&P, [*****] by Fitch, if such entity is rated by Fitch, and [*****] by Moody’s, if such entity is rated by Moody’s; or (c) a Credit Rating of at least [*****] by S&P or [*****] by Moody’s, or [*****] by Fitch if such entity is rated by only one Ratings Agency, and (ii) having shareholder equity (determined in accordance with generally accepted accounting principles) of at least [*****]. “Qualified Surety” has the meaning set forth in Section 11.6. “Ratings Agency” means any of S&P, Moody’s, and Fitch (collectively the ‘Ratings Agencies’). “Reference Rate” means the lesser of (i) the prime rate of interest for United States of America financial institutions as reported from time to time by The Wall Street Journal (New York Edition) plus [*****] or (ii) the maximum rate permitted by Applicable Law. “Request for Payment” means the written requests from Contractor to Company for payment hereunder. “Schedule Liquidated Damages” has the meaning set forth in Section 11.2(a). “Service Package” means the Standard Service Package, and any Fixed Energy Capacity Guarantee Service Package or Maintenance Only Service Package. “Service Package Extension” means any Fixed Energy Capacity Guarantee Service Package or Maintenance Only Service Package following the Standard Service Package. “Service Package Extension Fee” has the meaning set forth in Section 7.3. “Service Package Extension Period” means the period after the expiration of the Standard Service Package Period during which a Service Package Extension is effective. “Service Package Period” means the Standard Service Package Period and all Service Package Extension Periods.",
+        "Edison Agreement No. CW2264109 SCE-EPCM SCE – Ameresco Inc. - 24 - Doc. Ver. 07/15/2021 Confidential such work is proceeding in accordance with the Contract Documents. At least [*****] prior to the time Contractor or its representative intends to inspect any item of Equipment, Contractor shall notify Company in writing of such inspection which notice shall state the date, time and place where such inspection is to be conducted. Company and its designated agent may, at their option and at its expense, accompany Contractor to the inspection by notifying Contractor in writing within [*****] of receipt of notice of the inspection. Company’s failure to notify Contractor within the permitted time period shall be deemed to be a decision by Company not to attend the inspection. Contractor shall arrange for access to the manufacturer’s facilities to permit any such inspection to be conducted smoothly. With respect to any inspection that Company chooses not to attend, Contractor (i) shall keep Company informed in all material respects of the progress and quality of all work; (ii) shall advise Company of any deficiencies revealed through such inspections and of the measures proposed to remedy such deficiencies; and (iii) shall, upon Company’s request, provide Company with a reasonable opportunity to review Contractor’s records with respect to such inspections. Contractor shall include the right to inspection by Company or its representative in all subcontracts and purchase orders. (c) Contractor shall permit Company, and as authorized by Company, any party designated by Company to inspect, test and observe the Work from time to time; provided, however, that none of such Persons shall have any authority or responsibility for such Work. Contractor shall provide Company each month during performance of the Work with a schedule of all testing proposed for the following [*****] period in compliance with the requirements of the Statement of Work. 3.14 NO WAIVER OF RESPONSIBILITY. No inspection made, acceptance of Work, payment of money or approval given by Company shall relieve Contractor of its obligations for the proper performance of the Work in accordance with the terms hereof. Company may reject any Work with Defects or which is not in accordance with the requirements of the Contract Documents, regardless of the stage of completion, the time or place of discovery of error, and whether Company previously accepted any or all of such Work through oversight or otherwise. No approval given by Company, in and of itself, shall be considered as an assumption of risk or liability by any such Person. Any such approval shall mean that the Person giving the approval has no objection to the adoption or use by Contractor of the matter approved at Contractor’s own risk and responsibility. Contractor shall have no claim relating to any such matter approved, including any claims relating to the failure or inefficiency of any method approved. 3.15 DEFECTIVE WORK. Contractor shall, at its sole cost and expense and without reimbursement hereunder, correct or replace any Work that contains a Defect, or is not otherwise in accordance with the Contract Documents. Equipment that has been replaced, if situated on the Job Site, shall be removed by Contractor from the Job Site at its sole cost and expense and without reimbursement hereunder. If Contractor or any Subcontractor defaults or neglects to carry out the Statement of Work in accordance with the Contract Documents and Contractor fails within a reasonable period of time (as reasonably determined by Contractor) after it knows or should have known of such default or neglects to commence and continue correction of such default or neglect with diligence and promptness, Company may, without prejudice to other remedies Company may have under this Agreement or otherwise at law or equity, correct such deficiencies. In such event, an appropriate Change Order shall be issued reducing the Contract Price and deducting from payments then or thereafter due to Contractor the cost of correcting such deficiencies, including compensation for the costs to enforce this provision (including attorneys’ fees) and any consultant’s additional services and expenses made necessary by such default, neglect or failure. If payments then or thereafter due to Contractor are not sufficient to cover such amounts, Contractor shall pay the difference to Company within [*****] from Company’s request therefor. Contractor shall correct any and all deficiencies as required by the Contract",
+        "Edison Agreement No. CW2264109 SCE-EPCM SCE – Ameresco Inc. - 35 - Doc. Ver. 07/15/2021 Confidential ARTICLE IV. CERTAIN OBLIGATIONS OF COMPANY 4.1 THE PROPERTY SITE. Company shall obtain the Company Permits necessary for Contractor to have access to, and perform the Work on the Property Site. 4.2 PERMITS. Company shall, with Contractor’s reasonable assistance, timely obtain and maintain, at its own cost and expense, all Company Permits. In addition, Company shall execute such applications as Contractor may reasonably request in connection with obtaining any of the Contractor Permits. Company shall deliver to Contractor evidence that the Company Permits necessary to begin construction of the ESS have been received by Company or, if any such required Company Permit has not actually been issued, that it has been approved for issuance, or in the opinion of Company, will be approved for issuance. 4.3 ACCESS TO PROPERTY SITE. Subject to Section 3.9 and Section 3.10, from the date of this Agreement until Final Acceptance, Company shall permit the employees and agents of Contractor and its Subcontractors and Vendors to have uninterrupted access to the portions of the Property Site constituting the Job Site as may be reasonably required by Contractor in order to perform the Work, subject to all easements, restrictions, access road construction and other matters which may affect ingress and egress to the Job Site and such restrictions as may be reasonably imposed by Company in order to assure that only authorized persons enter the Property Site. Thereafter, upon reasonable notice and during reasonable times, and subject to such restrictions as may be reasonably imposed by Company and provided to Contractor in order to assure that only authorized persons enter the Property Site, Company shall permit the employees and agents of Contractor and its Subcontractors and Vendors to have access to the Property Site as necessary to repair or replace Defects or other Work that is not in compliance with the Contract Documents. As used above, the references to access contemplate that not only will the individuals referred to be permitted to enter upon and leave the Property Site but that they also will be permitted to bring onto and remove from the Property Site any and all kinds of Contractor Equipment. 4.4 RIGHTS OF WAY. Company shall obtain, at its own cost and expense, any easements and rights of way over the property of others for the construction of the site access road as required, in order that Contractor Equipment, Personnel and its Subcontractors and Vendors have ingress to and egress from the Property Site. 4.5 COMPANY TAXES. Company shall pay, or reimburse to the Contractor within [*****] of receipt of an invoice and evidence of payment by Contractor, all real property taxes assessed against the Property Site, any real or personal property taxes assessed against Equipment located at the Job Site, and any permanent use charges or assessments such as water or sewer, and, subject to Section 3.27, Company shall be responsible for the payment of, or reimbursement to Contractor of, state or local sales and/or use Taxes in connection with the purchase of all Equipment, except for such taxes Company contests in good faith (collectively, “Company Taxes”). Contractor shall be responsible for the cost of additional Taxes, penalties or interest, which shall be paid to Company within [*****] of request therefore, to the extent that Company is required to pay such",
+        "Edison Agreement No. CW2264109 SCE-EPCM SCE – Ameresco Inc. - 70 - Doc. Ver. 07/15/2021 Confidential Such suspension shall continue for the period specified in the notice of suspension; provided that Contractor agrees to resume performance of the Work promptly upon receipt of notice from Company. Upon receiving any such notice of suspension, unless the notice requires otherwise, Contractor shall: (i) immediately discontinue the Work on the date and to the extent specified in the notice; (ii) place no further orders or subcontracts for Equipment, services or facilities with respect to suspended Work, other than to the extent required in the notice; (iii) promptly make every reasonable effort to obtain suspension, with terms satisfactory to Company, of all orders, subcontracts and rental agreements to the extent they relate to performance of suspended Work; (iv) continue to protect and maintain the Work performed, including those portions on which Work has been suspended; and (v) take any other reasonable steps to minimize costs and expenses associated with such suspension. (b) Except as provided in Section 15.4(c), as full compensation for any suspension under this Section 15.4, Contractor will be reimbursed by Company for the costs, as reasonably incurred, without duplication of any item, to the extent that such costs directly result from such suspension of the Work and to the extent that they do not reflect reimbursement for Contractor’s, Vendors’ or Subcontractors’ anticipated profit from unperformed Work, including: (i) a standby charge, without mark-up or multiplier, sufficient to compensate Contractor for the direct costs attributable to keeping, to the extent required in the suspension notice, its organization and the Contractor Equipment committed to the Work on a standby basis, as agreed to by Company and Contractor; provided that Contractor shall substantiate such charge with supporting information acceptable to Company; (ii) all necessary and reasonable costs incurred in connection with demobilization and remobilization of Contractor’s facility and Labor and the Contractor Equipment; and (iii) an equitable amount to reimburse Contractor for the cost of receiving, maintaining and protecting that portion of Work upon which performance has been suspended, as agreed to by Company and Contractor. (c) Upon delivery of notice by Company to Contractor to resume suspended Work, Contractor shall immediately resume performance under the Contract Documents to the extent required in the notice. Contractor may request a Change Order as a result of a suspension of Work under this Section 15.4 within [*****] after receipt of notice to resume the suspended Work; provided that such suspension was not due to Contractor’s negligence, willful misconduct or noncompliance with the terms of this Agreement and; provided, further, that during resumption of the Work Contractor shall use reasonable efforts to minimize the effect on the Critical Path of the Work. Contractor shall submit to Company a request for Changes in accordance with Article VI and such request shall be accompanied by sufficient documentation setting forth the schedule impact and monetary extent of such claim in sufficient detail to permit thorough analysis by Company; provided that if such information is not available within such [*****] period, Contractor shall notify Company of such circumstance within such [*****] period and provide an expected date (which shall be as soon as reasonably practicable) for providing such information. If Contractor does not submit a request for Changes within such [*****] period and provide the information regarding schedule and monetary impact as required above within such [*****] period (or by the expected date if not possible during such [*****] period), Contractor shall not be entitled to any additional consideration or other amendments hereto and shall be deemed to have waived all claims and offsets against Company as a result of the suspension of Work. Contractor shall permit access by Company to pertinent records for purposes of reviewing the claims by Contractor of schedule and monetary impact. (d) No adjustment to the Guaranteed Completion Date, Contract Price or other terms herein shall be made for any suspension of Work under this Section 15.4 to the extent that performance would have been suspended, delayed or interrupted as a result of any Force Majeure Event or Contractor’s noncompliance with the requirements of the Contract Documents. Contractor shall use reasonable commercial efforts to include a suspension for convenience provision with terms similar to the foregoing in all subcontracts and purchase orders.",
+        "Edison Agreement No. CW2264109 SCE-EPCM SCE – Ameresco Inc. - 77 - Doc. Ver. 07/15/2021 Confidential and the Officer of Contractor shall meet at a mutually acceptable time and place within a reasonable period of time after the date of the disputing Party’s notice and thereafter as often as they reasonably deem necessary to exchange relevant information and to attempt to resolve the Dispute. 17.2 ARBITRATION OF DISPUTE. (a) If a Dispute has not been resolved through negotiation within a reasonable period of time after the date of the notice of Dispute received pursuant to Section 17.1 (and no later than [*****] from notice of the Dispute unless such longer time is agreed to by the Parties), and Company invokes the provisions of this Section 17.2, the Dispute shall be finally resolved by binding arbitration. Any Dispute involving [*****] or less shall be before a single, neutral arbitrator; any Dispute in involving in excess of [*****] shall be before a panel of three neutral arbitrators. Except to the extent inconsistent with this Section 17.2, the arbitration shall be conducted in accordance with the JAMS Construction Arbitration Rules & Procedures in effect as of the Effective Date (“JAMS Rules”). Company may exercise its right to arbitrate a Dispute in accordance with this Section 17.2 at any time, and any such dispute shall be thereafter exclusively treated as subject to the arbitration proceeding. The arbitrator(s), not the courts, shall decide whether a Dispute is arbitrable. Notwithstanding anything in the JAMS Rules to the contrary, the arbitrator(s) shall apply the law specified in Section 18.7. (b) The Parties will cooperate with one another in promptly selecting the arbitrator(s) and shall further cooperate in scheduling the arbitration to commence not later than [*****] from the date of Company’s initial written demand for arbitration. If, notwithstanding their good faith efforts, the Parties are unable to agree on a mutually acceptable arbitrator or arbitrators, the arbitrator(s) shall be appointed as provided for in the JAMS Rules. The arbitrator(s) shall be either a retired state or federal judge with experience with construction disputes or attorneys with at least twelve (12) years of experience as a construction lawyer. (c) The arbitration proceeding shall be conducted in the County of Los Angeles, California, United States of America, or such other location upon which the Parties to the arbitration proceeding may agree, in the English language; and all testimony or documentary evidence shall be submitted in English. If witness testimony or documents of a Party or is subcontractors or suppliers is not in English, such Party shall be responsible for the translation costs associated with such documents of testimony. (d) To facilitate the comprehensive resolution of related Disputes, and upon request by either Party, the arbitrator(s) may, at any time before the first oral hearing of evidence, consolidate the arbitration proceeding with any other arbitration proceeding between or among the Parties arising from or out of any other contract or relationship between or among them as permitted under the JAMS Rules and by California law. (e) At any hearing of oral evidence, each Party to the arbitration proceeding or its legal counsel shall have the right to present and examine its witnesses and to cross-examine the witnesses of the other Party. No evidence of any Party’s witness shall be presented in written form unless the other Party shall have the opportunity to cross examine such witness, except as the Parties to the arbitration proceeding otherwise agree in writing or except under extraordinary circumstances where the interest of justice requires a different procedure. A Party shall communicate to the arbitrator(s) and the opposing parties the names and addresses of each witness whose written or spoken testimony it intends to present in the arbitration proceeding and the subject matters upon which, and the languages in which, they will testify at least [*****] prior to the date of the hearing at which such witness may testify. Furthermore, any Person named by a Party to be a witness shall be made available for deposition by the opposing parties at least [*****] prior to the hearing at which such witness may testify. Such deposition shall be permitted under Section 1283.05 of California Code of Civil Procedure.",
+        "Edison Agreement No. CW2264109 SCE-EPCM SCE – Ameresco Inc. - 82 - Doc. Ver. 07/15/2021 Confidential (h) Notwithstanding anything to the contrary in this Section 18.3, Company shall not be in violation of the Agreement: (i) if it provides Contractor Confidential Information to the California Public Utilities Commission pursuant to Public Utilities Code Section 583, or to any other regulatory agency or administrative agency, under applicable protective language, if possible, regardless whether the Contractor Confidential Information is formally requested and without notice to Contractor; and (ii) if it provides Contractor Confidential Information to a third-party to enable Company to make improvement to Company’s internal business operations, including by undertaking performance and post-performance evaluations and assessments, for use in future projects or procurements. (i) If any of the Work, or portion thereof, contains or is derived from Company Confidential Information, Contractor shall clearly mark the Work, or portion thereof, as Company Confidential Information. Additionally, if the Work, or portion thereof, contains or is derived from [*****], Contractor shall also clearly mark the Work as “Contains or Derives from [*****].” Company Confidential Information created by Contractor is subject to this Section 18.3 and the Cyber Requirements. (j) Notwithstanding anything to the contrary in this Section 18.3, Contractor agrees that its confidentiality and non-disclosure obligations with respect to the Cyber Requirements shall continue according to the terms of that policy, if applicable. 18.4 NOTICE. Whenever a provision of the Contract Documents requires or permits any consent, approval, notice, request, or demand from one Party to another, the consent approval, notice, request, or demand must be in writing to be effective and shall be deemed to be delivered and received (a) if personally delivered or if delivered by telegram or courier service, when actually received by the Party to whom notice is sent, (b) if delivered by telex or facsimile, on the [*****] following the day transmitted (with confirmation of receipt), or (c) if delivered by mail (whether actually received or not), at the close of business on the [*****] following the day when placed in the mail, postage prepaid, certified or registered, addressed to the appropriate Party, at the address and/or facsimile numbers of such Party set forth below (or at such other address as such Party may designate by written notice to the other Party in accordance with this Section 18.4): If to Contractor: [*****], Chief Financial Officer 111 Speen Street, Suite 410 Framingham, MA 01701 [*****] with a copy to: [*****], Senior Vice President 3200 Guasti Road, Suite 100 Ontario, CA 91761 [*****] If to Company: Attn: Principal Manager, Direct Services Supply Management [*****] With a copy to: Attn: Director and Managing Attorney, Contracts and Intellectual Property Group Edison Law Department"
+      ]
+    },
+    "treeSummary": {
+      "topLevelCount": 18,
+      "topLevelTitles": [
+        "ARTICLE I. GENERAL MATTERS",
+        "ARTICLE II. RETENTION OF CONTRACTOR",
+        "ARTICLE III. CERTAIN OBLIGATIONS AND RESPONSIBILITIES OF CONTRACTOR",
+        "ARTICLE IV. CERTAIN OBLIGATIONS OF COMPANY",
+        "ARTICLE V. PROJECT",
+        "ARTICLE VI. CHANGE ORDERS",
+        "ARTICLE VII. CONTRACT PRICE; PAYMENTS TO CONTRACTOR",
+        "ARTICLE VIII. TITLE, RISK OF LOSS AND POSSESSION",
+        "ARTICLE IX. INSURANCE",
+        "ARTICLE X. TESTS, SUBSTANTIAL COMPLETION AND FINAL ACCEPTANCE",
+        "ARTICLE XI. CONTRACTOR GUARANTEES AND LIQUIDATED DAMAGES",
+        "ARTICLE XII. CONTRACTOR’S WARRANTIES",
+        "ARTICLE XIII. REPRESENTATIONS",
+        "ARTICLE XIV. FORCE MAJEURE AND OWNER CAUSED DELAY",
+        "ARTICLE XV. TERMINATION",
+        "ARTICLE XVI. INDEMNIFICATION",
+        "ARTICLE XVII. DISPUTE RESOLUTION",
+        "ARTICLE XVIII. MISCELLANEOUS"
+      ],
+      "nodeTypeCounts": {
+        "document": 1,
+        "section": 18,
+        "clause": 39
+      },
+      "isFullDocumentFallback": false
+    }
+  },
+  "Solar_System_Operations_and_Maintenance_Agreement_1": {
+    "lineCount": 1265,
+    "patternCounts": {
+      "all_caps": 72,
+      "numeric_top": 80,
+      "numeric_clause": 33,
+      "exhibit": 4,
+      "section_word": 1
+    },
+    "badCounts": {
+      "address": 7,
+      "email": 3
+    },
+    "examples": {
+      "all_caps": [
+        "11/06/2024   1",
+        "OPERATIONS AND MAINTENANCE AGREEMENT",
+        "11/06/2024   2",
+        "11/06/2024   3",
+        "11/06/2024   4",
+        "11/06/2024   5",
+        "TERMS AND CONDITIONS TO CONTRACT",
+        "TYPE OF COVERAGE MINIMUM",
+        "REQUIREMENT",
+        "EXHIBIT A",
+        "SCOPE OF WORK",
+        "SERVICE DESCRIPTION SERVICE",
+        "FREQUENCY",
+        "SERVICE DESCRIPTION SERVICE",
+        "FREQUENCY"
+      ],
+      "numeric_top": [
+        "1. Scope of Work:",
+        "2. Term and Termination:",
+        "3.  Fee and Payment:",
+        "4. This Agreement incorporates by this reference the attached Terms and Conditions.",
+        "5. This Agreement incorporates by this reference the Contract Documents attached",
+        "6. Contractor shall not commence the Services under this Agreement until the Contractor",
+        "7. Inspection and acceptance of the Work shall be performed by the District and a",
+        "8. Any notice required or permitted to be given under this Agreement shall be deemed",
+        "750 Bradford Street",
+        "107 Spring St, Seattle, WA 98104",
+        "9. Contractor shall guarantee all labor and material used in the performance of this",
+        "10. Each party has the full power and authority to enter into and perform this Agreement,",
+        "11. By signing this Agreement, Contractor certifies, under penalty of perjury, that all the",
+        "1. STANDARD OF CARE:  Contractor shall perform, diligently prosecute and complete the Work in a",
+        "2. SITE CONDITIONS:  District has provided to Contractor the Site Documents, as defined in the"
+      ],
+      "numeric_clause": [
+        "1.1. The Contractor shall furnish all operations and maintenance services for the",
+        "1.2. Contractor shall perform the Services at the following locations:",
+        "1.3. Contractor shall perform the Services covering all components of the net -",
+        "1.4. Any “Extra Services” beyond the scope of work provided in EXHIBIT A shall",
+        "2.1. This Agreement shall become effective on the Effective Date and shall remain",
+        "2.2. Either District or Contractor may immediately terminate this Agreement, by",
+        "2.2.1. Failure of either party to perform any material obligation under this",
+        "2.2.2. Either party ceasing to carry on business or disposing of all or",
+        "2.3. District may, at any time, with our without reason, terminate this Agreement",
+        "2.4. The expiration or termination of this Agreement do not affect Contractor’s",
+        "3.1. In consideration of the Services performed by Contractor under this Agreement",
+        "3.2. Contractor shall bill District for the Services rendered on an annual basis and",
+        "3.3. Contractor shall not charge additional fees for standard payment methods",
+        "3.4. Any charges for Extra Services shall be paid by the District only to the extent",
+        "21.1. To the furthest extent permitted by California law, Contractor shall indemnify and hold"
+      ],
+      "BAD_address": [
+        "● Garfield Community School, 3600 Middlefield Road, Menlo Park, CA",
+        "● Orion Alternative, 555 Avenue del Ora, Redwood City, CA 94062",
+        "750 Bradford Street",
+        "Address:  750 Bradford Street",
+        "Middlefield Road, Menlo Park, CA",
+        "Orion Alternative, 555 Avenue",
+        "place under the immediate supervision and control of the pupil’s parent or guardian or a"
+      ],
+      "exhibit": [
+        "EXHIBIT A.  The District shall pay all undisputed sums due to Contractor within sixty (60)",
+        "EXHIBIT A",
+        "EXHIBIT B",
+        "EXHIBIT C"
+      ],
+      "BAD_email": [
+        "EMAIL: mcervantes@rcsdk8.net",
+        "EMAIL: support@omnidian.com",
+        "E-Mail: support@omnidian.com"
+      ],
+      "section_word": [
+        "Section 1.6041-1 of Title 26 of the"
+      ]
+    },
+    "treeSummary": {
+      "topLevelCount": 22,
+      "topLevelTitles": [
+        "1. Scope of Work:",
+        "2. Term and Termination:",
+        "3.  Fee and Payment:",
+        "4. This Agreement incorporates by this reference the attached Terms and Conditions.",
+        "5. This Agreement incorporates by this reference the Contract Documents attached",
+        "6. Contractor shall not commence the Services under this Agreement until the Contractor",
+        "7. Inspection and acceptance of the Work shall be performed by the District and a",
+        "8. Any notice required or permitted to be given under this Agreement shall be deemed",
+        "9. Contractor shall guarantee all labor and material used in the performance of this",
+        "10. OWNERSHIP OF DATA: This Agreement creates a non -exclusive and perpetual license for the",
+        "11. AUDIT: Contractor shall establish and maintain books, records, and systems of account, in",
+        "12. LEAD-BASED PAINT: Pursuant to the requirements of the Federal Occupational Safety and Health",
+        "13. CLEAN UP: Debris shall be removed from the Site.  The Site shall be left in a reasonably clean",
+        "14. PROTECTION OF WORK AND PROPERTY:  Contractor shall erect and properly maintain at all",
+        "15. FORCE MAJEURE: “Force Majeure” means any event or circumstance unknown at the time of",
+        "16. CORRECTION OF ERRORS:  Contractor shall perform, at its own cost and expense and without",
+        "17. DISTRICT’S RIGHT TO PERFORM WORK:   If the Contractor should neglect to prosecute the",
+        "18. SITE ACCESS: The District shall provide Contractor with reasonable access to the Sites and the",
+        "19. OCCUPANCY: District reserves the right to occupy the Sites at any time before formal completion",
+        "EXHIBIT A",
+        "EXHIBIT B",
+        "EXHIBIT C"
+      ],
+      "nodeTypeCounts": {
+        "document": 1,
+        "section": 22,
+        "clause": 53
+      },
+      "isFullDocumentFallback": false
+    }
+  },
+  "Terra-Gen_SJCE__PPA__PUBLIC_1": {
+    "lineCount": 3951,
+    "patternCounts": {
+      "all_caps": 187,
+      "section_word": 10,
+      "article_number": 41,
+      "numeric_clause": 188,
+      "exhibit": 73,
+      "schedule": 2,
+      "numeric_top": 58
+    },
+    "badCounts": {
+      "email": 12,
+      "address": 21
+    },
+    "examples": {
+      "all_caps": [
+        "EXECUTION VERSION",
+        "RENEWABLE POWER PURCHASE AGREEMENT",
+        "COVER SHEET",
+        "CON666139-000",
+        "TABLE OF CONTENTS",
+        "RENEWABLE POWER PURCHASE AGREEMENT",
+        "RECITALS",
+        "ARTICLE 1",
+        "DEFINITIONS",
+        "05-10-042, 06-04-040, 06-06-064, 06-07-031 06-07-031, 07-06-029, 08-06-031, 09-06-028,",
+        "ARTICLE 2",
+        "ARTICLE 3",
+        "PURCHASE AND SALE",
+        "ARTICLE 4",
+        "OBLIGATIONS AND DELIVERIES"
+      ],
+      "section_word": [
+        "Section 3.7(e))",
+        "Section 399.16(b)(1), as may be amended from time to time or as further defined or supplemented",
+        "Section 399.16(b)(2), as may be amended from time to time or as further defined or supplemented",
+        "Section 399.16(b)(3), as may be amended from time to time or as further defined or supplemented",
+        "Section 399.12(h), as may be amended from time to time or as further defined or supplemented by",
+        "Section 8.8; and",
+        "Section 3.5, the Parties agree to negotiate in good faith with respect to the development of further",
+        "Section 4.8. Notwithstanding this delay, Buyer shall have all right and title to all such WREGIS",
+        "Section 14.3 below, neither Party may voluntarily assign this Agreement or its rights or obligations",
+        "Section 2(b) of this Exhibit B.  The Parties agree that Buyer’s receipt of Daily Delay"
+      ],
+      "article_number": [
+        "ARTICLE 1 DEFINITIONS........................................................................................................... 1",
+        "ARTICLE 2 TERM; CONDITIONS PRECEDENT .................................................................... 20",
+        "ARTICLE 3 PURCHASE AND SALE ........................................................................................ 22",
+        "ARTICLE 4 OBLIGATIONS AND DELIVERIES..................................................................... 31",
+        "ARTICLE 5 TAXES ..................................................................................................................... 35",
+        "ARTICLE 6 MAINTENANCE OF THE FACILITY .................................................................. 36",
+        "ARTICLE 7 METERING............................................................................................................. 36",
+        "ARTICLE 8 INVOICING AND PAYMENT; CREDIT .............................................................. 37",
+        "ARTICLE 9 NOTICES ................................................................................................................. 40",
+        "ARTICLE 10 FORCE MAJEURE ............................................................................................... 41",
+        "ARTICLE 11 DEFAULTS; REMEDIES; TERMINATION ....................................................... 43",
+        "ARTICLE 12 LIMITATION OF LIABILITY AND EXCLUSION OF WARRANTIES........... 47",
+        "ARTICLE 13 REPRESENTATIONS AND WARRANTIES; AUTHORITY ............................ 48",
+        "ARTICLE 14 ASSIGNMENT ...................................................................................................... 52",
+        "ARTICLE 15 DISPUTE RESOLUTION ..................................................................................... 55"
+      ],
+      "numeric_clause": [
+        "1.1 C ONTRACT DEFINITIONS. ................................................................................................. 1",
+        "1.2 R ULES OF INTERPRETATION. .......................................................................................... 19",
+        "2.1 C ONTRACT TERM........................................................................................................... 20",
+        "2.2 C ONDITIONS PRECEDENT............................................................................................... 21",
+        "2.3 D EVELOPMENT; CONSTRUCTION; PROGRESS REPORTS .................................................. 22",
+        "2.4 R EMEDIAL ACTION PLAN ............................................................................................... 22",
+        "3.1 P URCHASE AND SALE OF PRODUCT................................................................................ 22",
+        "3.2 S ALE OF GREEN ATTRIBUTES......................................................................................... 26",
+        "3.3 I MBALANCE ENERGY. .................................................................................................... 26",
+        "3.4 O WNERSHIP OF RENEWABLE ENERGY INCENTIVES. ....................................................... 26",
+        "3.5 F UTURE ENVIRONMENTAL ATTRIBUTES. ....................................................................... 26",
+        "3.6 T EST ENERGY. ............................................................................................................... 27",
+        "3.7 C APACITY ATTRIBUTES. ................................................................................................ 27",
+        "3.8 R ESOURCE ADEQUACY FAILURE.................................................................................... 29",
+        "3.9 CEC  CERTIFICATION AND VERIFICATION. ..................................................................... 29"
+      ],
+      "exhibit": [
+        "Exhibit A Facility Description",
+        "Exhibit B Major Facility Development Milestones and Commercial Operation",
+        "Exhibit C Compensation",
+        "Exhibit D Scheduling Coordinator Responsibilities",
+        "Exhibit E Progress Reporting Form",
+        "Exhibit F-1 Form of Average Expected Energy Report",
+        "Exhibit F-2 Form of Monthly Available Capacity Report",
+        "Exhibit G Guaranteed Energy Production Damages Calculation",
+        "Exhibit H Form of Commercial Operation Date Certificate",
+        "Exhibit I Form of Installed Capacity Certificate",
+        "Exhibit J Form of Construction Start Date Certificate",
+        "Exhibit K Form of Letter of Credit",
+        "Exhibit L Form of Guaranty",
+        "Exhibit M Form of Replacement RA Notice",
+        "Exhibit N Notices"
+      ],
+      "schedule": [
+        "Schedule for such Settlement Interval.",
+        "schedule into the California balancing authority only the fraction of"
+      ],
+      "BAD_email": [
+        "notice via e-mail to Buyer at Preschedulers@ncpa.com (or such other",
+        "Email: RFO@sanjosecleanenergy.org",
+        "Email: cao.main@sanjoseca.gov",
+        "E-mail: Invoices@sanjosecleanenergy.org",
+        "Email: preschedulers@ncpa.com",
+        "Email: ScheduleCoordinators@ncpa.com",
+        "E-mail: Jeanne.sole@sanjoseca.gov",
+        "E-mail: kelly.morris@sanjoseca.gov",
+        "E-mail: Invoices@sanjosecleanenergy.org",
+        "Email: RFO@sanjosecleanenergy.org"
+      ],
+      "numeric_top": [
+        "1. The original upstream third-party contract(s) through which Seller",
+        "2. This Agreement transfers only electricity and Renewable Energy",
+        "3. The electricity transferred by this Agreement is transferred to Buyer",
+        "4. If the Product is scheduled from a Project that is not interconnected",
+        "5. If the Project has an agreement to dynamically transfer electricity to",
+        "16 INDEMNITY CLAIM, OR INCLUDED IN A LIQUIDATED DAMAGES CALCULATION,",
+        "1. Major Facility Development Milestones.",
+        "2. Commercial Operation of the Facility.  “Commercial Operation” means the condition",
+        "3. Termination for Failure to Achieve Commercial Operation.  If the Facility has not",
+        "4. Extension of the Guaranteed Dates.  The Guaranteed Construction Start Date and the",
+        "5. Failure to Reach Guaranteed Capacity .  If, at Commercial Operation, the Installed",
+        "6. Buyer’s Right to Draw on Development Security.  If Seller fails to timely pay any Daily",
+        "1. Facility description.",
+        "2. Site plan of the Facility.",
+        "3. Description of any material planned changes to the Facility or the site."
+      ],
+      "BAD_address": [
+        "to Buyer, that are imposed on Product prior to its delivery to Buyer at the time and place",
+        "after its delivery to Buyer at the time and place contemplated under this Agreement (other than",
+        "in The Wall Street Journal (or, if The Wall Street Journal is not published on that day, the next",
+        "neutral mediator selected from a panel of neutrals and in scheduling the time and place of the",
+        "200 E. Santa Clara Street, Tower 14",
+        "Santa Clara Street, Tower 14, San José, CA 95113, for an amount not to exceed the aggregate sum",
+        "causes the place for presentation of the Letter of Credit to be closed for business on the last day",
+        "amendment to a date thirty (30) calendar days after the place for presentation reopens for business.",
+        "Resources, 200 E. Santa Clara Street, Tower 14, San José, CA 95113.  Only notices to Beneficiary",
+        "200 E. Santa Clara Street, Tower 14, San José, CA 95113, as beneficiary (the “Beneficiary”) of"
+      ]
+    },
+    "treeSummary": {
+      "topLevelCount": 35,
+      "topLevelTitles": [
+        "ARTICLE 1",
+        "ARTICLE 2",
+        "ARTICLE 3",
+        "ARTICLE 4",
+        "ARTICLE 5",
+        "ARTICLE 6",
+        "ARTICLE 7",
+        "ARTICLE 8",
+        "ARTICLE 9",
+        "ARTICLE 10",
+        "ARTICLE 11",
+        "ARTICLE 12",
+        "ARTICLE 13",
+        "ARTICLE 14",
+        "ARTICLE 15",
+        "ARTICLE 16",
+        "ARTICLE 17",
+        "ARTICLE 18",
+        "ARTICLE 19",
+        "EXHIBIT A",
+        "EXHIBIT B",
+        "EXHIBIT C",
+        "EXHIBIT D",
+        "EXHIBIT E",
+        "EXHIBIT G",
+        "EXHIBIT H",
+        "EXHIBIT I",
+        "EXHIBIT J",
+        "EXHIBIT K",
+        "EXHIBIT L",
+        "EXHIBIT M",
+        "EXHIBIT N",
+        "EXHIBIT O",
+        "EXHIBIT P",
+        "EXHIBIT Q"
+      ],
+      "nodeTypeCounts": {
+        "document": 1,
+        "section": 35,
+        "clause": 141
+      },
+      "isFullDocumentFallback": false
+    }
+  }
+}

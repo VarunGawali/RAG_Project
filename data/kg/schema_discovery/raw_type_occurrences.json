@@ -1,0 +1,5147 @@
+{
+  "entity_types": {
+    "Operator Obligor": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Contracting Party and Regulatory Compliance Obligor": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Chemical Inventory Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Risk Management Plan (RMP)": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Material Safety Data Sheets (MSDS) Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Emergency Coordinator Appointment Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Hazardous Substance Disclosure Filing Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "State Emergency Response Commission (SERC)": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Local Emergency Planning Committee (LEPC)": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Local Fire Department": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Operational Commencement Date": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Indemnitor": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Indemnitee and Compliance Manager": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Compliance Transfer Periods": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Regulatory Compliance Standards": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Compliance Documentation Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Power Authority": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Critical Asset Candidate": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Critical Asset": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Critical Cyber Assets": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "NERC CIP Standards": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Cost and Expense Responsibility": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Contractual Milestone Date": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Operator and Compliance Manager": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Registered Transmission Owner": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Contracting Parties": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Easement Area": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Facility": [
+      "Edison_NYPA_OandM_Contract_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Discovering Party": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Con Edison": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Governmental Authorities": [
+      "Edison_NYPA_OandM_Contract_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Reportable Release": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Reporting Obligations": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Indemnity Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Spill Prevention, Control and Countermeasure Plan": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Remediation Obligations": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Contractual Agreement": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Post-Termination Financial Obligation": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Post-Termination Liability and Indemnification Obligations": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Surviving Contractual Provision": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Obligor for Insurance Procurement": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Service Provider and Obligor for O&M Services": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Contractual Scope of Work": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Performance Standards": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Performance Management Plans": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Contractual Specific Terms": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Subcontractor": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "SoCal_EPC"
+    ],
+    "Service Provider": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Tax-Exempt Purchaser and Reimburser": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Third-Party Vendors": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Applicable Taxes": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Permits and Fees": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Contract Agreement": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Non-Breaching Party": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Breaching Party": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Second Composite Agreement": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Default": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Breach": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Indemnitee and Protected Party": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Protected Parties": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Indemnitor and Contracting Party": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Contractors of Indemnitor": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Contractors of Indemnitee": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Operational Services": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Additional Work": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Defined Risks": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Compliance Modifications and Upgrades": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Regulatory Violations": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Contractual Commencement Date": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Contract Term": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Contractual Compliance Assumption Provision": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Warranties and Representations": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Release Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Waiver of Rights": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Contracting Party": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Contractual Asset": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Contractual Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Proposed Operator": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Confidential Information": [
+      "Edison_NYPA_OandM_Contract_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Physical Asset": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Facility Location": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Contractual Termination Provision": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Confidentiality Provision": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Obligor": [
+      "Edison_NYPA_OandM_Contract_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Regulatory Reviewer": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Regulatory Agency": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Information Provider": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Regulatory Standard": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Compliance Deliverable": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Client / Reimbursing Party": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Preparatory Work and Services": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Scope of Work": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Initial Monthly Cost Estimate": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Annual Budget and Work Plan": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Reimbursement Obligation": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Billing Rate": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Hazardous Waste Emergency Response Obligor": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Hazardous Waste Emergency Response Noticee": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Hazardous Waste Storage Location": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Statutorily Required Hazardous Waste Preparedness Information": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Emergency Response Equipment": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Hazardous Waste Release Event": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Indemnitees": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "SoCal_EPC"
+    ],
+    "Environmental Liabilities": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Real Property Interest Subject to Environmental Conditions": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Owned Equipment": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Environmental Release Event": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Remediation Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Additional Environmental Work": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Environmental Risks": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Waste Transportation and Disposal Activities": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Contractual Instrument": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Regulated Substance": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Facility Subject to Contractual Obligations": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Operational Service Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Contractual Duty": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Environmental Compliance Commitment": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Regulatory Trigger": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Waiver Provision": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Contractor": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "State Property Owner": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Engineering, Procurement and Construction Agreement": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Release, Hold Harmless and Indemnification Agreement": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Authorized Agent": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Company": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "SoCal_EPC"
+    ],
+    "Transaction Documents": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Counterparty": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Access Provision": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Scope Exclusion": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Access Road Provision": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Client Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Contractor Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Change Order Trigger": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Scope Inclusion": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Material Specification": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Scope Definition": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Labor Standard": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Work Schedule": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Security Procedure": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Permit Requirement": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Permit Processing Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Tax Exclusion": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Project Planning Assumption": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Risk Allocation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Liability Exclusion": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Site Condition Consideration": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Price Adjustment Condition": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Documentation Assumption": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Due Diligence Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Contract Sum Adjustment Mechanism": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Testing Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Contract Price": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Payment Schedule": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Operations and Maintenance Agreement": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Client": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "EPC Agreement": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Milestone": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Substantial Completion": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Insurance Certificate": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Partial Lien Waiver": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Final Lien Waiver": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Progress Disbursement Form": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Invoice": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Mechanical Completion Certificate": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Substantial Completion Certificate": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Final Completion Certificate": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Utility Approval": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Commissioning Checklist": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Third Party Project Manager": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Capacity Test": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Interconnection Agreement": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "ZREC Meter": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Client Representative": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "EPC Contractor": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Solar Array Design": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Production Report": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Certified Professional Engineer": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Subcontractors": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Indemnifying Party": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Claims": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Breach of Agreement": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Act or Omission": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Violation of Legal Requirements": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Performance or Non-Performance": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Governmental Claims": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Negligent Acts or Willful Misconduct": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Operations": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Representations and Warranties": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Indemnification, Defense and Hold Harmless Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Insurance Coverage": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Project Documentation Component": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Design Compliance Specification": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Design Support Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Regulatory Compliance Documentation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Submission Milestone Documentation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Completion Cost": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Unpaid Portion of Contract Sum": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Liability Cap on EPC Contractor": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Good Faith and Commercially Reasonable Mitigation Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Payment Term": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Service Recipient": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Initial Subscription Services Fee": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Recurring Subscription Services Fee": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Transactional Services": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Contract Exhibit": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "True-Up Period": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Guarantee Payment": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Invoice Date": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Payment Term for Subscription Services": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Payment Term for Transactional Services": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Interest Rate on Overdue Payments": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Collection Costs": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Tax Liability": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Photovoltaic System": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Expected Capacity": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Cure Period": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "SoCal_EPC"
+    ],
+    "Sole Remedy": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ASTM Standard": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Test Window": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Measurement Equipment": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Subcontractor Insurance Policies": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Indemnitee": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Contractor Party": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "SoCal_EPC"
+    ],
+    "Client Party": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Notice of Default": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Deficiencies in Performance": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Contract Sum": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Termination Right": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Termination Payment Entitlement": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Purchased Equipment": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Post-Termination Liability": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Post-Termination Obligations": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Project Site": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Subcontracts (including warranties)": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Proprietary Information and Documents": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Warranty Rights": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Replacement Contractor": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Materials, Equipment, Tools, Instruments, Debris, and Waste Materials": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Contractual Provision": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Indemnitee Group": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Covered Claims": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Third Party Claimant": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Indemnification Triggering Conduct": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Contracted Services": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Indemnification Monetary Limit": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Insurance Deductibles": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Indemnity Exclusion": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Indemnification Survival Provision": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Third-Party Claims": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Insurance Coverage Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Insurance Deductibles Liability": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Exclusion Event": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Defaulting Party": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Non-Defaulting Party": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Material Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Written Notice of Default": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Commercially Reasonable Efforts": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Additional Cure Time": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Agreement": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Event of Default": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Set-Off Right": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "SoCal_EPC"
+    ],
+    "Commercially Reasonable Manner": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Performance Assurance": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Security Period": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Buyer": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Seller": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Event of Default Notice Right": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Termination Rights and Remedies": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Certificate of Public Convenience and Necessity": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Firm Transmission Rights": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Certifications and Approvals from FERC": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Indemnification Obligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Confidential Information Subject to Disclosure Restrictions": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Obligated Party Receiving Confidential Information": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Obligated Party Disclosing Confidential Information": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Statutory Compliance Obligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Governmental Authority with Disclosure Request Power": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Applicable Legal Requirements": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Regulatory or Operational Rule": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Judicial Disclosure Mandate": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Legal Proceeding Triggering Disclosure": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Notice Obligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Right to Seek Protective Order": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Limitation on Disclosure Scope": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Obligation to Seek Confidential Treatment": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Seller Obligor": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Buyer Obligee": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Contracted Product": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Contract Quantity": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Permitted Excuse to Perform": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Termination Payment": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Liquidated Damages Obligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "SoCal_EPC"
+    ],
+    "Billing Meter": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Billing Period": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Payment Deadline": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Interest Rate": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Early Termination Date": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Net Settlement Amount": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Gains, Losses and Costs": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Liquidated Damages": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Invoice Receipt": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Liquidated Damages Provision": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Express Remedy or Measure of Damages": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Obligor's Liability Limitation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Waiver of Other Remedies or Damages": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Waiver of Penalty Challenge": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Limitation to Direct Actual Damages": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Exclusion of Consequential and Other Damages": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Damages Stipulation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Obligor under Agreement": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Obligee under Agreement": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Permitted Assignment": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Assignee": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Legal and Regulatory Requirements": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Change of Control Event": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Transmission Provider": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Interconnection Instructions": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Generally Accepted Accounting Principles (GAAP)": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Financial Statements": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Financial Schedules": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Independent Auditor": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Sarbanes-Oxley Act Section 404": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Power Purchase Agreements": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Force Majeure Definition": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Regulatory Event": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Permit": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Force Majeure Notice Obligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Power Purchase Agreement": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Force Majeure Event": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Cure Periods": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Contractual Rights and Remedies": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Labor Dispute or Disturbance": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Regulated Party": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Protected Information": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Regulatory Commissions": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Regulatory and Legislative Bodies": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Regulatory Proceeding": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Legal or Regulatory Reporting Obligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Aggregate Gains": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Aggregate Losses and Costs": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Monthly Invoice or Accounting Report": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Company (Receiving Party)": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Third Party Vendors": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Reimbursable Out-of-Pocket Expenses": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Indemnified Party Affiliate": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Indemnitor Affiliate": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Indemnified Party": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Third-Party Liabilities": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Indemnification Exceptions": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Permitted Successors-in-Interest": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Permitted Assignees": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Secured Party": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Obligor Party": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Successor Affiliate": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Affiliate": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Disclosing Party": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Receiving Party": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Governmental Authority": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Applicable Law": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Internal Document Retention Policies": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Certification by Authorized Officer": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Equitable Relief": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Service Provider Party": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Contracting Company Party": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Code of Conduct Document": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Jurisdictional Governmental Authority": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Training Obligation": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Notified Party": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Copy Notice Recipient": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Contracting Party - Company": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Contracting Party - Providers": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Affiliate Relationship": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Secured Parties under Financing Agreements": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Financing Agreements": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Contractual Service Obligation": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Contractual Resource Provision Obligation": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Contractual Service Provider": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Contractual Service Recipient": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Contractual Services": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Contractual Liability Limitation Provision": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Legal Compliance Requirement": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Applicable Laws": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Governmental Approvals": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Code of Conduct Interpretation": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Company or Providers": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Company (Service Recipient)": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Providers (Service Providers)": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Actual Direct Costs": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Indirect and Overhead Costs": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Contract Exhibits": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Applicable Law or Governmental Authority": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Per Unit Charges": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Annual True-Up Mechanism": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Party Receiving Services": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Affiliates of Provider": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Non-Affiliated Person": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Related Persons and Entities": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Excluded Damage Types": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Excluded Damage Subcategory": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Excluded Damage Subcategories": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Claims Basis": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Effective Date": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Joinder Addendum Effective Date": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Initial Expiration Date": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Extended Expiration Date": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Providers": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Term": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Successor Service Provider": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Termination Event": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Contractual Budget": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Independent Auditors": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Allocated Charge": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Payment Discrepancy": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Audit Period": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Suspending Party": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Suspended Party / Service Provider": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Regulatory and Contractual Oversight Party": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Contracted Work Scope": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Related Contractual Agreement": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Contractual Milestones": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Cost Allocation Document": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Written Notice of Suspension": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Suspension Termination Period": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Defense Counsel Designated by Indemnifying Party": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Separate Counsel for Indemnified Party": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Claim or Legal Proceeding": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Notification Requirement": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Right to Assume Defense": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Right to Select Separate Counsel": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Limit on Fees for Separate Counsel": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Right to Participate at Own Expense": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Exception to Right to Assume Defense": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Payment of Expenses in Exception": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Settlement Consent Requirement": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Current Tax Liability": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Tax-Related Interest and Penalties": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Indemnification Termination Condition": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "IRS Extension Right": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Irrevocable Security Instrument": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Transmission Developer": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Affected System Operator": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Transmission Project": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Affected System Upgrade Facilities": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Other Transmission Developers": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "System Upgrade Facilities": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "System Deliverability Upgrade Facilities": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Connecting Transmission Owner": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Payment Document": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Mutual Financial Obligations": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Regulatory Agency Staff": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Regulatory Tariff Document": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Federal Regulation": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Contractual Article": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Post-Termination Cost Liability": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Security Obligation": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Contractual Party": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Surviving Legal Obligations": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Breach of Contract": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Non-Breaching Parties": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Right to Terminate": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Relief from Further Obligations": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Damages and Remedies": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Article 11": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Other Party": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Third Party": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ISO Open Access Transmission Tariff (ISO OATT)": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "NYISO Services Tariff": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Contractual Party - System Operator": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Contractual Party - Transmission Developer": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Contractual Party - Affected System Operator": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Project Component - Affected System Upgrade Facilities": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Infrastructure - New York State Transmission System": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Performance Standard - Good Utility Practice": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Contractual Party - NYISO": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Contractual Obligations - Material, Equipment and Labor Contracts": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Contractual Right - Authorization Right": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "NYISO": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Interconnection Agreements": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Development Agreement": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Reimbursing Party": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Tax-Payee and Contesting Party": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Tax Obligation Subject to Contest": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Reimbursable Costs": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Final Tax Assessment Order": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Applicable Laws and Regulations": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Materials, Equipment, and Construction Contracts": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Payment Obligations": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Refund Obligation": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Contracted EPC Service Provider": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Contractual EPC Services Obligation": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Contractual Performance Deadlines": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Performance Standard Obligation": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Operational Safety Compliance Requirement": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Technical Specification Compliance Requirement": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Design and Construction Compliance Requirement": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Labor Contractual Obligations": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Legal and Regulatory Compliance Requirement": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Contract Counterparty": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Contract Counterparty and Liability Exempted Party": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Contract Documents": [
+      "SoCal_EPC"
+    ],
+    "Contractor Records": [
+      "SoCal_EPC"
+    ],
+    "Security Testing": [
+      "SoCal_EPC"
+    ],
+    "Financial Assurances": [
+      "SoCal_EPC"
+    ],
+    "Public Disclosures Restriction": [
+      "SoCal_EPC"
+    ],
+    "Service Marks and Trademarks Usage Restriction": [
+      "SoCal_EPC"
+    ],
+    "Survivability Clause": [
+      "SoCal_EPC"
+    ],
+    "Company Data": [
+      "SoCal_EPC"
+    ],
+    "Contracting Party (Company)": [
+      "SoCal_EPC"
+    ],
+    "Contracting Party (Contractor)": [
+      "SoCal_EPC"
+    ],
+    "Contractual Performance Obligation (Work)": [
+      "SoCal_EPC"
+    ],
+    "Suspension Notice": [
+      "SoCal_EPC"
+    ],
+    "Reimbursable Cost Component (Standby Charge)": [
+      "SoCal_EPC"
+    ],
+    "Reimbursable Cost Component (Demobilization and Remobilization Costs)": [
+      "SoCal_EPC"
+    ],
+    "Reimbursable Cost Component (Protection Costs)": [
+      "SoCal_EPC"
+    ],
+    "Contractual Remedy (Change Order Request)": [
+      "SoCal_EPC"
+    ],
+    "Third Party Contractual Participants (Subcontractors and Vendors)": [
+      "SoCal_EPC"
+    ],
+    "Selective Subcontractors/Vendors": [
+      "SoCal_EPC"
+    ],
+    "Termination Notice": [
+      "SoCal_EPC"
+    ],
+    "Company Event of Default": [
+      "SoCal_EPC"
+    ],
+    "Contractor Event of Default": [
+      "SoCal_EPC"
+    ],
+    "Job Site": [
+      "SoCal_EPC"
+    ],
+    "Contractor Equipment": [
+      "SoCal_EPC"
+    ],
+    "Independent Contractor": [
+      "SoCal_EPC"
+    ],
+    "Engaging Party": [
+      "SoCal_EPC"
+    ],
+    "Contractual Work": [
+      "SoCal_EPC"
+    ],
+    "Vendor": [
+      "SoCal_EPC"
+    ],
+    "List of Approved Substantial Subcontractors and Vendors": [
+      "SoCal_EPC"
+    ],
+    "Substantial Subcontractor": [
+      "SoCal_EPC"
+    ],
+    "Substantial Vendor": [
+      "SoCal_EPC"
+    ],
+    "Contractor Insurance Policies": [
+      "SoCal_EPC"
+    ],
+    "Subcontractors Insurance Policies": [
+      "SoCal_EPC"
+    ],
+    "Company Insurance Policies": [
+      "SoCal_EPC"
+    ],
+    "Initial Site Mobilization": [
+      "SoCal_EPC"
+    ],
+    "Insurer": [
+      "SoCal_EPC"
+    ],
+    "Obligee": [
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Regulatory Approval": [
+      "SoCal_EPC"
+    ],
+    "Real Property Interest": [
+      "SoCal_EPC"
+    ],
+    "Designated Work Area": [
+      "SoCal_EPC"
+    ],
+    "Third Party Contractors": [
+      "SoCal_EPC"
+    ],
+    "Real Property Rights": [
+      "SoCal_EPC"
+    ],
+    "Tax Obligations": [
+      "SoCal_EPC"
+    ],
+    "Personal Property": [
+      "SoCal_EPC"
+    ],
+    "Contractual Milestone": [
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Payment and Performance Bonds": [
+      "SoCal_EPC"
+    ],
+    "Payment Bond": [
+      "SoCal_EPC"
+    ],
+    "Performance Bond": [
+      "SoCal_EPC"
+    ],
+    "Qualified Surety": [
+      "SoCal_EPC"
+    ],
+    "Standard Service Package Period Performance Security": [
+      "SoCal_EPC"
+    ],
+    "Standard Service Package Period Letter of Credit": [
+      "SoCal_EPC"
+    ],
+    "Standard Service Package Period Payment and Performance Bonds": [
+      "SoCal_EPC"
+    ],
+    "Energy Capacity Guarantee Service Package Period Performance Security": [
+      "SoCal_EPC"
+    ],
+    "Energy Capacity Guarantee Service Package Period Letter of Credit": [
+      "SoCal_EPC"
+    ],
+    "Energy Capacity Guarantee Service Package Period Performance Bond": [
+      "SoCal_EPC"
+    ],
+    "Defect or Breach of Warranty": [
+      "SoCal_EPC"
+    ],
+    "Standard Service Package Period": [
+      "SoCal_EPC"
+    ],
+    "Fixed Energy Capacity Guarantee Service Package Period": [
+      "SoCal_EPC"
+    ],
+    "Qualified Institution": [
+      "SoCal_EPC"
+    ],
+    "Obligor and Beneficiary Party": [
+      "SoCal_EPC"
+    ],
+    "Obligor and Warrantor": [
+      "SoCal_EPC"
+    ],
+    "Third-Party Performance Providers": [
+      "SoCal_EPC"
+    ],
+    "Project Deliverable": [
+      "SoCal_EPC"
+    ],
+    "Contractual Work Obligation": [
+      "SoCal_EPC"
+    ],
+    "Contractual Documentation": [
+      "SoCal_EPC"
+    ],
+    "Supplied Equipment": [
+      "SoCal_EPC"
+    ],
+    "Technical Documentation": [
+      "SoCal_EPC"
+    ],
+    "Finalized Project Plans": [
+      "SoCal_EPC"
+    ],
+    "Third-Party Claimant": [
+      "SoCal_EPC"
+    ],
+    "Warranty Period": [
+      "SoCal_EPC"
+    ],
+    "Contract Modification Instrument": [
+      "SoCal_EPC"
+    ],
+    "Project Milestone Date": [
+      "SoCal_EPC"
+    ],
+    "Contractual Warranties": [
+      "SoCal_EPC"
+    ],
+    "Third-Party Guarantees": [
+      "SoCal_EPC"
+    ],
+    "Affiliates or Assigns": [
+      "SoCal_EPC"
+    ],
+    "Obligor (Company)": [
+      "SoCal_EPC"
+    ],
+    "Obligor (Contractor)": [
+      "SoCal_EPC"
+    ],
+    "Conditional Work Authorization (Limited Notice to Proceed)": [
+      "SoCal_EPC"
+    ],
+    "Trigger Date (Limited Notice to Proceed Date)": [
+      "SoCal_EPC"
+    ],
+    "Work Commencement Authorization (Notice to Proceed)": [
+      "SoCal_EPC"
+    ],
+    "Trigger Date (Notice to Proceed Date)": [
+      "SoCal_EPC"
+    ],
+    "Performance Timeline (Project Schedule)": [
+      "SoCal_EPC"
+    ],
+    "Performance Milestone (Guaranteed Completion Date)": [
+      "SoCal_EPC"
+    ],
+    "Performance Milestone (Final Acceptance Date)": [
+      "SoCal_EPC"
+    ],
+    "Contractual Monetary Penalty Obligation": [
+      "SoCal_EPC"
+    ],
+    "Obligor under Contract": [
+      "SoCal_EPC"
+    ],
+    "Obligee under Contract": [
+      "SoCal_EPC"
+    ],
+    "Interest Rate Benchmark": [
+      "SoCal_EPC"
+    ],
+    "Category of Liquidated Damages": [
+      "SoCal_EPC"
+    ],
+    "Contract Price Metric": [
+      "SoCal_EPC"
+    ],
+    "Contractual Milestone Obligation": [
+      "SoCal_EPC"
+    ],
+    "Operational Compliance Requirement": [
+      "SoCal_EPC"
+    ],
+    "Regulatory Compliance Requirement": [
+      "SoCal_EPC"
+    ],
+    "Contractual Performance Specification": [
+      "SoCal_EPC"
+    ],
+    "Liquidated Damages Cap": [
+      "SoCal_EPC"
+    ],
+    "Security Enforcement Right": [
+      "SoCal_EPC"
+    ],
+    "Statement of Work Attachment": [
+      "SoCal_EPC"
+    ],
+    "Company Party": [
+      "SoCal_EPC"
+    ],
+    "Change Order Document": [
+      "SoCal_EPC"
+    ],
+    "Critical Milestones": [
+      "SoCal_EPC"
+    ],
+    "Warranty Provisions": [
+      "SoCal_EPC"
+    ],
+    "Dispute Resolution Article": [
+      "SoCal_EPC"
+    ],
+    "Company Caused Delay": [
+      "SoCal_EPC"
+    ],
+    "Change In Law": [
+      "SoCal_EPC"
+    ],
+    "Unforeseeable Subsurface Conditions": [
+      "SoCal_EPC"
+    ],
+    "Information Request": [
+      "SoCal_EPC"
+    ],
+    "Minor Changes": [
+      "SoCal_EPC"
+    ],
+    "Guaranteed Completion Date": [
+      "SoCal_EPC"
+    ],
+    "Dispute": [
+      "SoCal_EPC"
+    ],
+    "Dispute Resolution Procedures": [
+      "SoCal_EPC"
+    ],
+    "Statutes of Limitation": [
+      "SoCal_EPC"
+    ],
+    "Preliminary Judicial Relief": [
+      "SoCal_EPC"
+    ],
+    "Contract Exhibit - Statement of Work": [
+      "SoCal_EPC"
+    ],
+    "Contract Exhibit - Certificate of Substantial Completion": [
+      "SoCal_EPC"
+    ],
+    "Contract Exhibit - Certificate of Final Acceptance": [
+      "SoCal_EPC"
+    ],
+    "Contract Exhibit - Performance Requirements": [
+      "SoCal_EPC"
+    ],
+    "Contract Exhibit - Form of Contractor Certificate for Partial Waiver of Liens": [
+      "SoCal_EPC"
+    ],
+    "Contract Exhibit - Form of Subcontractor Certificate for Partial Waiver of Liens": [
+      "SoCal_EPC"
+    ],
+    "Contract Exhibit - Contractor Permits": [
+      "SoCal_EPC"
+    ],
+    "Contract Exhibit - Company Permits": [
+      "SoCal_EPC"
+    ],
+    "Contract Exhibit - Major Equipment": [
+      "SoCal_EPC"
+    ],
+    "Contract Exhibit - Approved Substantial Subcontractors and Substantial Vendors": [
+      "SoCal_EPC"
+    ],
+    "Contract Exhibit - Form of Contractor Certificate for Final Waiver of Liens": [
+      "SoCal_EPC"
+    ],
+    "Contract Exhibit - Form of Subcontractor Certificate for Final Waiver of Liens": [
+      "SoCal_EPC"
+    ],
+    "Contract Exhibit - Form of Letter of Credit": [
+      "SoCal_EPC"
+    ],
+    "Contract Exhibit - Schedule to Letter of Credit": [
+      "SoCal_EPC"
+    ],
+    "Contract Exhibit - Performance Guarantees and Performance Liquidated Damages": [
+      "SoCal_EPC"
+    ],
+    "Contract Exhibit - Construction Maintenance Labor Agreement": [
+      "SoCal_EPC"
+    ],
+    "Contract Exhibit - Information, Security, Cybersecurity, and Privacy Requirements for Suppliers": [
+      "SoCal_EPC"
+    ],
+    "Contract Exhibit - Maintenance": [
+      "SoCal_EPC"
+    ],
+    "Contract Exhibit - Form of Bonds": [
+      "SoCal_EPC"
+    ],
+    "Contract Exhibit - Schedule Liquidated Damages": [
+      "SoCal_EPC"
+    ],
+    "Contractual Order of Precedence Clause": [
+      "SoCal_EPC"
+    ],
+    "Contract Document - Purchase Order": [
+      "SoCal_EPC"
+    ],
+    "Contract Document - Agreement": [
+      "SoCal_EPC"
+    ],
+    "Performance Guarantee Obligation": [
+      "SoCal_EPC"
+    ],
+    "Contractual Reference Document": [
+      "SoCal_EPC"
+    ],
+    "Service Period": [
+      "SoCal_EPC"
+    ],
+    "Measurement Period": [
+      "SoCal_EPC"
+    ],
+    "Contractual Condition": [
+      "SoCal_EPC"
+    ],
+    "Permitted Successors and Assigns": [
+      "SoCal_EPC"
+    ],
+    "Non-Parties": [
+      "SoCal_EPC"
+    ],
+    "Insurance Documentation": [
+      "SoCal_EPC"
+    ],
+    "Insurance Policies": [
+      "SoCal_EPC"
+    ],
+    "Work Location": [
+      "SoCal_EPC"
+    ],
+    "Insurance Policy Change Notice": [
+      "SoCal_EPC"
+    ],
+    "Insurance Endorsement Requirement": [
+      "SoCal_EPC"
+    ],
+    "Insurance Underwriter Rating Requirement": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Contracting Public Entity": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Warranty Duration": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Project Completion Filing": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Statutory Compliance Obligations": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Liability Limitation Clause": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Legal Compliance Obligation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Labor Code Compliance Obligation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Indemnitee District": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Indemnification Provisions of the Agreement": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Lead Disturbance Work": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Certified Hazardous Waste Hauler": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Sample Results": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Lead Training Records": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "District": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "State of California Public Works Contract Requirements": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Labor Code Section 3700": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Workers’ Compensation Certification": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Education Code Section 45125.2(a)": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Education Code Section 45125.1(h)": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Department of Justice (DOJ)": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Contractor’s Employees and Subcontractors’ Employees": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Attachment A - List of Employees/Subcontractors": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Hazardous Materials Certification": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Regulatory Authority": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Statutory Labor Compliance Requirement": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Federal Anti-Discrimination Law": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Executive Order": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Federal Anti-Trust Statutory Right": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "State Anti-Trust Statutory Right": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Payment Event": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Claims Presentation Condition Precedent": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Dispute Resolution Tolling Provision": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Work Continuation Obligation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Litigation Costs Allocation Clause": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Assignment Restriction": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Time is of the Essence Clause": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Governing Law and Venue Clause": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Binding Effect Clause": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Waiver Clause": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Severability Clause": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Entire Agreement Clause": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "No Oral Modification Clause": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Operations and Maintenance Contractor": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Customer": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Photovoltaic Modules": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Mounting System": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Inverter": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Electrical Balance of System (BOS)": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Meteorological Station": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Site Conditions": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Maintenance Reporting Obligation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Sensor Calibration Obligation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Original Equipment Manufacturer Warranty": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Initial Contract Term": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Renewal Contract Term": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Additional Contract Terms": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Contracting Party - District": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Defined Contract Term Period": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Obligor with Retention Right": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Obligee Subject to Payment Retention": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Indemnified Parties": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Surviving Defense and Indemnification Obligations": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Pending Claims or Actions for Damages": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Measurement Device for PV System Production": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Measurement Device for On-Site Electricity Consumption": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Customer Access Portal": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Data Transmission Infrastructure Maintained by Contractor": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Internet-Based Monitoring and Reporting Portal": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Time Synchronization Standard for Site Meters": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Data Export Format Requirement": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Customer Access Credentials": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Fees for Monitoring Software and Data Services": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Contractual Performance Data Set": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Designated Performance Engineer": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Contracting Customer": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Mandatory Annual Performance Report": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Contractual Reference Date": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Optional Custom Reporting Service": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Operations and Maintenance Records": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Obligor (Service Provider)": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Obligee (Payor)": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Payment Application Document": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Contractual Deliverable": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Obligor under Insurance Procurement Obligation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Statutorily Mandated Insurance Coverage": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Supplemental Employer Insurance Coverage": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Covered Individuals under Insurance Policies": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Employees Not Covered by Workers’ Compensation Statute": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Alternative Insurance Coverage for Unprotected Employees": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Federal Regulatory Rule": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Certified Contractor Entity": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Certified Individual Renovator": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Federal Regulatory Code": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Contractor Subject to RRP": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Certified Inspector or Risk Assessor": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Covered Building Subject to RRP": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Terminating Party": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Contracted Service Provider": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Termination Notice Period": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Written Termination Notice": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Notice Deemed Receipt Rule": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Payor Party": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Extra Services": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Indemnity Exclusion Condition": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Governing Law Limitation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Buyer (Contracting Party)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Seller (Contracting Party)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Agreement (Contract Document)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Generating Facility (Energy Generating Asset)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Storage Facility (Energy Storage Asset)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Facility Energy (Energy Product)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PV Energy (Energy Product Component)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Discharging Energy (Energy Product Component)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Delivery Point (Energy Delivery Location)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Cover Sheet (Contract Attachment)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Guarantor (Credit Support Provider)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Guaranty (Credit Support Instrument)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Interconnection Agreement (Grid Connection Contract)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Interconnection Facilities (Grid Connection Assets)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CAISO (Regulatory Authority)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CAISO Tariff (Regulatory Market Document)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Business Day (Time Definition)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Force Majeure Event (Excusing Event)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Event of Default (Contractual Breach)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Non-Defaulting Party (Remedy Recipient)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Contract Term (Duration of Agreement)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Commercial Operation Date (Milestone Date)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Development Security (Financial Security)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CAISO Approved Meter (Metering Equipment)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Party (Contracting Entity)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Affiliate (Related Entity)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Permitted Transferee (Qualified Assignee)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Curtailment Order (Operational Directive)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Curtailment Period (Operational Downtime)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CAISO Operating Order (CAISO Directive)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Locational Marginal Price (Market Price)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Contract Price (Payment Term)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Commercial Operation (Operational Milestone)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Commercial Operation Delay Damages (Liquidated Damages)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CAISO Approved Metering Equipment": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Lender (Financing Party)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Site (Real Property)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Site Control (Property Interest)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Green Attributes (Environmental Credits)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Resource Adequacy Benefits (Capacity Rights)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Participating Transmission Owner (Transmission Entity)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligor under Agreement and Assignor of Collateral": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligee under Agreement and Consent Party": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Secured Party and Assignee of Collateral": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Collateral Assignment Agreement": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Event of Default by Seller": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Cure Period for Event of Default": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Facility Subject to Financing and Collateral Assignment": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Permitted Transferee": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Replacement Agreement": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Contracting Party - Seller": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Contracting Party - Buyer": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Contractual Deliverable - Progress Report": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Contractual Exhibit - Report Form": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Contractual Performance Milestones": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Project Asset - Facility": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Project Location - Site": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Regulatory Approvals": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Project Components - Equipment": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Optional Project Component - Integrated Energy Storage Facility": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Contractual Notice Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Contractual Exhibit - Project Description": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Contractual Exhibit - Metering Description": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Project Component - Storage Facility Meter": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligor under Capacity Attributes Commitment": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligee under Capacity Attributes Commitment": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Generating Facility": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Optional Storage Facility": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Full Capacity Deliverability Status": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Resource Adequacy Benefits": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Network Upgrades": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Notice of Storage Facility Capacity": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Price for Storage Facility RA Capacity": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Delivery Term for Storage Facility RA Capacity": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Buyer Exercise Notice": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Certificate of Initial Storage Capacity": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Monthly Payment for Storage Facility RA Capacity": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Delivery Term": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Storage Facility Capacity Delivery Term": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "California Independent System Operator (CAISO)": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Interim Deliverability Status": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligor under Compliance Obligations": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Counterparty with Reimbursement and Waiver Rights": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Monetary Obligation Subject to Cap": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Monetary Cap on Compliance Costs": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Mandatory Compliance Activities": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Notice of Anticipated Excess Costs": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Buyer-Approved Reimbursable Costs": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Contractual Performance Period": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Renewable Energy Certificate": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Renewable Energy Credit": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Energy Generation Facility": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Regulatory Framework": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Account": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Transfer Mechanism": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Contractual Term": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Warranty": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Payment Provision": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Notice of Claim": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Indemnifiable Event": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Claim": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Applicable Insurance Coverage": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Settlement Offer": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Product": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Exhibit C": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Exhibit D": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Delivery Point": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Curtailment Order": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Storage Facility Capacity Attributes": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Storage Facility Ancillary Services": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Portfolio Product": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Project": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Project Portfolio": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Portfolio Product Delivery Term": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Delivery Cessation Date": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "WREGIS Certificates": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Contract Quantity of Portfolio Product": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Contract Price for Portfolio Product": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "RPS Compliance Requirements": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "California Balancing Authority": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Dynamic Transfer Agreement": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CAISO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligor under Insurance Obligations": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Additional Insured Party": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Insurance Policy - Commercial General Liability": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Insurance Policy - Employer’s Liability": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Insurance Policy - Workers’ Compensation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Insurance Policy - Business Auto Liability": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Insurance Policy - Umbrella Liability": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Insurance Policy - Construction All-Risk": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Insurance Policy - Pollution Legal Liability": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Insurance Policy - Property Insurance": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Contractor Subordinate Party": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Evidence of Insurance Coverage": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligor under Remedial Action Plan Requirement": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligee entitled to receive Remedial Action Plan": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Contractual Performance Milestone": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Remedial Action Plan": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Buyer Default": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Guaranteed Commercial Operation Date": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Contract Exhibit Governing Section 2.4": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Metering Obligor": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Metering Approval Party": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Facility Meter": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Storage Facility Meters": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Regulatory Metering Authority": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Metering Diagram": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Meter Seals": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Meter Data": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Buyer’s Scheduling Coordinator": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Contractual Product": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Development Security": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Performance Security": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Letter of Credit": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Credit Rating": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Commercial Operation Date": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Business Day": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Payment Obligor": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Payment Obligee": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Payment Due Date": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Late Payment Charge": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Reference Interest Rate": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Notice of Early Termination Date": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Terminated Transaction": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Damage Payment": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Payment Calculation Provision": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Designated Fund": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ]
+  },
+  "relationship_types": {
+    "Chemical Inventory Development and Maintenance Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Notification Obligation Regarding Chemical Inventory Changes": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "RMP Preparation and Maintenance Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Provision of Draft RMP for Review and Comment": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "RMP Implementation Obligation Subject to Approval": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "MSDS Acquisition and Submission Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Emergency Coordinator Appointment and Notification Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Hazardous Substance Disclosure Filing and Fee Payment Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Provision of Copies of Filings Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Provision of Chemical Inventory Information Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Indemnification and Hold Harmless Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Compliance Management Responsibility": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Compliance Management Assumption": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Provision of Compliance Evidence": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Temporal Compliance Framework": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Determination of Critical Asset Status": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Determination of Existence of Critical Cyber Assets": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Trigger of CIP Compliance Obligations": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Cost Responsibility for Compliance Changes": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Deadline for Completion of Compliance Changes": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Performance of Functional Activities for CIP Compliance": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Transfer of Compliance Management Responsibility": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Retention of Determination Responsibility": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Delegation of Compliance Establishment and Management": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Notification Duty to Other Party": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Reporting Duty to Governmental Authorities": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Information Provision Duty": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Secondary Reporting Right": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Indemnity Obligation for Reporting Failures": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Obligation to Control and Contain Releases": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Non-Modification of Remediation Rights": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Post-Termination Financial Continuity": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Survival of Liability and Indemnification Obligations": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Survival of Specific Contractual Provision": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Payment Obligation for Services": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Performance Obligation": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "SoCal_EPC"
+    ],
+    "Governing Performance Standards": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Precedence in Case of Conflict": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Precedence Hierarchy": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Subcontracting with Approval and Standards Flowdown": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Notification Obligation": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Reimbursement Obligation for Taxes": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Payment and Reimbursement Obligation for Permits and Fees": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Exclusion of Taxes from Rates and Prices": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Exclusion of Permit Charges from Rates and Prices": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Right to Declare Default": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Right to Terminate Agreement": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Right to Recover Damages and Amounts Due": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Condition Precedent to Default": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Default Triggers Termination Right": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Indemnification Obligation": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Indemnification Scope Includes Contractors' Work": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Indemnification for Acts or Omissions": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Indemnification Related to Additional Work": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Indemnification Related to Defined Risks": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Indemnification Related to Compliance Modifications": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Indemnification for Regulatory Violations": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Indemnification Triggered by Breach": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Release and Discharge of Liability": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Waiver of Rights to Recover Costs, Fines, and Penalties": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Turnover Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Training Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Termination Trigger": [
+      "Edison_NYPA_OandM_Contract_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "SoCal_EPC"
+    ],
+    "Confidentiality Compliance": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Asset Location": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Obligation to Submit Compliance Deliverable": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Subject to Review and Approval": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Facilitates Submission to Regulatory Agency": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Provision of Compliance Template": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Liability for Violations and Fines": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Reporting Obligation": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Reimbursement Obligation": [
+      "Edison_NYPA_OandM_Contract_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "SoCal_EPC"
+    ],
+    "Deadline for Estimate Delivery": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Annual Budget Preparation Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Non-Limiting Estimate Relationship": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Billing Rate Application": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Hazardous Waste Emergency Response Notification Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Hazardous Waste Emergency Preparedness Maintenance Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Regulatory Compliance Posting Location": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Immediate Response Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Subject Matter of Indemnification": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Geographic Scope of Environmental Liabilities": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Triggering Environmental Event": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Triggering Environmental Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Triggering Environmental Condition": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Triggering Environmental Activity": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Ownership Trigger for Indemnification Scope": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Party to Agreement": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Service Provider to Facility": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Obligor of Environmental Tracking Duty": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Subject Matter of Tracking Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Trigger for Tracking Obligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Anticipated Regulatory Trigger": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Clause Defines Waiver Terms": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Performs Work On": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Party To": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Indemnifies And Holds Harmless": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Authorized To Execute And Perform": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Empowered To Execute And Perform": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Contractual Counterparties": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Site Access and Logistics Provision": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Change Order Trigger Relationship": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Risk Allocation Based on Weather Conditions": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Cost Responsibility and Contract Sum Adjustment": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Payment Schedule Dependency": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Service Provider Engagement": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Client Engagement": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Contractual Obligation Relationship": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Milestone Deliverable Requirement": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Notice Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Inspection Request Recipient": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Meter Validation Submission": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Payment Document Submission": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Design Development Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Design Certification Requirement": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Production Reporting Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Design Review and Approval Right": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Production Report Review and Approval Right": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Non-Waiver of Liability by Approval": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Shared Obligation and Liability": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Indemnity Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Claims Triggering Indemnity": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Survival of Indemnity Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Reduction of Liability by Insurance Proceeds": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Design Approval and Information Provision": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Design Preparation and Update Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Interconnection Approval Assistance": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Submission Requirement": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Payment Obligation to EPC Contractor": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Payment Obligation to Client": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Comparative Basis for Payment Determination": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Limitation on EPC Contractor’s Payment Liability": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Mitigation Obligation Imposed on Client": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Invoices and Payment Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Guarantee Payment Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Fee Specification": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Fee Schedule Reference": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Definition Reference": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Payment Deadline Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Interest on Overdue Payments": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Reimbursement Obligation for Collection Costs": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Tax Payment Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Tax Invoicing Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Performs Capacity Test On": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Subject To": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Incorporates Standard": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Determined In Accordance With": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Entitled To": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Obligated To Support": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Responsible For": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Requires Cooperation From": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Used In": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Insurance Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Representation and Warranty to Enter Indemnification Agreement": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Indemnification Beneficiary": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Notice and Cure Opportunity": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Obligation to Cure Breach": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Right to Remedy Deficiencies": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Entitlement to Termination Payment": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Inclusion of Purchased Equipment in Payment": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Inclusion of Subcontractor Termination Charges": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Release from Post-Termination Liability": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Release from Further Obligations": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Termination Right and Post-Termination Obligations": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Assignment Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Delivery and License Grant": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Removal Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Right to Employ Replacement Contractor": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Warranty Rights Transfer": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Payment Entitlement Limitation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Claims Subject to Indemnification": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Claim Originator": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Indemnification Triggering Conduct": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Performance Context": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Monetary Limit on Indemnification": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Deductible Liability": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Indemnity Exclusion Clause": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Post-Termination Indemnification Survival": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Claims Arising From Customer's Gross Negligence, Fraud or Willful Misconduct": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Limitation on Indemnification Obligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Deductible Liability Exception": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Indemnification Exclusion": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Default in Performance of": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Right to Terminate": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Trigger for Cure Period": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Obligation to Exercise Efforts": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Entitlement to Additional Cure Time": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Set-Off Right Exercised Upon Event of Default": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Estimation Standard for Unascertained Obligations": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Obligation to Provide and Maintain Performance Assurance": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Duration of Performance Assurance Obligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Right to Notify Event of Default": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Right to Pursue Termination Remedies": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Beneficiary of Performance Assurance": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Obligation to Obtain Regulatory Approval": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Conditional Obligation to Obtain Agreement": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Obligation to Secure Transmission Rights": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Obligation to Obtain Federal Regulatory Approvals": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Indemnification Obligation to Buyer": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Reliance on Seller's Covenants and Warranties": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Notice Obligation Relationship": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Right to Seek Protective Order": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Non-Opposition Obligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Conditional Disclosure Obligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Obligation to Seek Confidential Treatment": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Delivery Obligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Quantity Delivery Obligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Excuse from Performance": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Remedy Election Right": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Termination Payment Right": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Liquidated Damages Claim": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Damages Calculation Base": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Damages Calculation Multiplier": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Data Reading Obligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Invoice Preparation and Delivery Obligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Cooperation Obligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "SoCal_EPC"
+    ],
+    "Payment Obligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Interest Accrual Trigger": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Triggers Early Termination Date": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Calculates": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Entitled to Remedies": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Obligation to Accept Delivery": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Failure Excused By": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Failure Constitutes Event of Default": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Right to Liquidated Damages": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Calculation Basis": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Payment Timing Trigger": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Waiver of Penalty Challenge Attached to Liquidated Damages": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Express Remedy Limits Obligors Liability": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Express Remedy Excludes Other Remedies": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Fallback Liability Limitation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Exclusion of Certain Damages": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Damages Stipulation Confirms Direct Damages as Recoverable": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Assumption of Obligations": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Delivery of Assurances to Obligee": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Condition Precedent for Consent": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Unauthorized Transfer Constitutes Default": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Designation of Defaulting Party": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Waiver of Continuing Obligations": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Interconnection Agreement Contractual Relationship": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Obligation and Cost Responsibility": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Contractual Party Relationship": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Performance Dependency": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Information Access Right": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Exclusive Governing Agreement": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Non-Binding Status": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Right to Access Financial Records and Personnel": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Obligation to Receive Quarterly Financial Statements": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Obligation to Receive Financial Schedules": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Granting Access for Audits": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Audit Compliance Obligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Confidentiality Obligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Permitted Disclosure Aggregation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Force Majeure Event Applicability to Party": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Exclusion of Buyer Economic Inability from Force Majeure": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Exclusion of Seller Economic and Contractual Failures from Force Majeure": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Exclusion of Regulatory Event from Force Majeure": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Exclusion of Facility Equipment Malfunction from Force Majeure": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Exclusion of Permit Delay or Failure from Force Majeure": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Exclusion of Interconnection Agreement Failure from Force Majeure": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Party's Obligation to Provide Notice of Force Majeure Event": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Termination Condition": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Limitation on Excuse": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Right to Early Termination": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Discretionary Obligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Disclosure Right": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Permitted Disclosure Recipients": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Governing Rules Superseding Agreement": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Mandatory Reporting Obligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Notice and Consent Waiver": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "No Obligation to Credit Economic Benefits": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Right to Recover": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Right to Draw Upon": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Billing Obligation": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Invoice Review and Approval": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Payment Agent Role": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Reimbursement Right": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Documentation Provision Obligation": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Notice and Defense Right": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Defense Control and Settlement Authority": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Exclusion from Indemnification": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Grant of Security Interest": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Assignment to Successor Affiliate": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Assignment to Affiliate Acquiring Business Assets": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Consent and Agreement Execution": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Consent Requirement for Assignment or Delegation": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Obligation to Maintain Confidentiality": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Duty to Obtain Prior Written Consent": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Permitted Disclosure under Valid Governmental Order": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Permitted Disclosure under Applicable Law": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Retention Exception for Compliance": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Certification Obligation upon Return or Destruction": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Right to Seek Equitable Relief": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Obligation to Comply with Code of Conduct": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Duty to Inform of Additional Code of Conduct Requirements": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Right to Request Employee Training": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Payment Obligation for Compliance Costs": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Notice Recipient Designation": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Copy Notice Recipient Designation": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Termination Notice Obligation": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Conditional Termination Right": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Remedies Impacting Asset Ownership": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Grant of Remedies": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Mandatory Termination Trigger": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Service Performance Obligation": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Resource Provision Obligation": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Service Procurement Right": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Service Performance Standard Obligation": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Liability Limitation Reference": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Legal Compliance Condition": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Compliance Obligation": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Exclusive Interpretation Responsibility": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Cost Bearing for Requested Compliance": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Self-Determination of Legal Requirements": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Compensation Payment Obligation": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Compensation Basis": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Cost Allocation Methodology": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Pricing Adjustment Mechanism": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Pricing Benchmark": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Liability Exclusion": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Applicability Across Legal Theories": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "commencement date": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "initial expiration date": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "automatic extension expiration date": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "notice of non-extension obligation": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "alternative commencement date for joining Party": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Service Provision and Cooperation Obligation": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Designation of Successor Provider": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Trigger of Cooperation Obligation": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Trigger of Reimbursement Obligation": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Obligation to Cooperate in Budget Development": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Non-Limitation of Service Requests": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Right to Engage Auditors": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Audit Subject": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Compliance Verification": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Audit Timeframe Restriction": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Billing Adjustment Trigger": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Suspension Right and Cost Responsibility": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Right to Require Suspension": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Cost Invoicing and Authorization": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Suspension Commencement and Termination Trigger": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Designation of Defense Counsel": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Right to Select Separate Counsel": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Limitation on Indemnifying Party's Payment for Separate Counsel": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Right to Participate in Defense": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Exception to Defense Control": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Obligation to Pay Expenses When Defense Control Denied": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Settlement Consent Requirement": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Indemnification Trigger": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Indemnification Coverage Exclusion": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Termination Condition on Indemnification Obligation": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Extension of Indemnification Period": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Provider of Security": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Security Held by": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Developer of": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Forfeiture to Defray Costs of": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Negotiation Obligation for Replacement Security": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Right to Draw on Security": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Invoice Submission Obligation": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Invoice Issuer": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Netting Participant": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Final Invoice Requirement": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Information Disclosure Obligation": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Regulatory Compliance Duty": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Notification Restriction": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Confidential Information Request": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Notification Obligation Upon FERC Request to Release": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Exception to Confidentiality Obligation": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Survival of Financial Obligations": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Survival of Cost Liabilities": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Survival of Security Obligations": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Obligation to Satisfy Security Requirements": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Survival of Liability and Indemnification": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Triggers Right to Declare Default and Terminate": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Enables Termination Right": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Termination Relieves Further Obligations": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Termination Does Not Waive Damages and Remedies": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Governs Cure of Breach": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Possesses Confidential Information": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Requires Consent for Disclosure": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Must Notify Upon Third Party or Governmental Request": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Cooperates to Protect Confidentiality": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Permitted Disclosure Exceptions": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Obligation to Suspend Work": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Cost and Obligation Responsibility": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Contract Cancellation or Suspension": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Requirement to Obtain Authorization": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Authorization Right Holder": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Condition Compliance Standard": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Safety and Reliability Criteria Applicability": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Information Exchange Obligation": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Information Provision Obligation": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "SoCal_EPC"
+    ],
+    "Design Responsibility and Modification Obligation": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Compatibility and Safety Requirement": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Design Review Without Warranty": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Tax Liability and Contesting Duty": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Tax Payment Responsibility": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Payment Trigger": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Good Faith Cooperation": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Obligation to Obtain Governmental Consent and Approval": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Obligation to Provide Notice to Governmental Authority": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Authorization Right": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Assumption of Payment Obligations": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Delivery and Assignment Obligation": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Refund Obligation to Transmission Developer": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Completion Deadline": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Performance Standard Imposed": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Performance Limitation": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Legal Compliance Obligation": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Liability Exemption": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Audit Right": [
+      "SoCal_EPC"
+    ],
+    "Flow-Down Audit Obligation": [
+      "SoCal_EPC"
+    ],
+    "Security Testing Authorization": [
+      "SoCal_EPC"
+    ],
+    "Confidentiality Designation": [
+      "SoCal_EPC"
+    ],
+    "Financial Assurance Demand Right": [
+      "SoCal_EPC"
+    ],
+    "Limitation of Liability Exception": [
+      "SoCal_EPC"
+    ],
+    "Restriction on Use of Company Name": [
+      "SoCal_EPC"
+    ],
+    "Mutual Trademark Use Restriction": [
+      "SoCal_EPC"
+    ],
+    "Survival of Obligations": [
+      "SoCal_EPC"
+    ],
+    "Continuing Obligation Trigger": [
+      "SoCal_EPC"
+    ],
+    "Suspension Instruction": [
+      "SoCal_EPC"
+    ],
+    "Suspension Effect": [
+      "SoCal_EPC"
+    ],
+    "Obligation to Suspend and Resume Work": [
+      "SoCal_EPC"
+    ],
+    "Right to Claim Compensation": [
+      "SoCal_EPC"
+    ],
+    "Exclusion from Adjustment": [
+      "SoCal_EPC"
+    ],
+    "Flow-Down Obligation": [
+      "SoCal_EPC"
+    ],
+    "Assignment Right Upon Termination": [
+      "SoCal_EPC"
+    ],
+    "Termination Right": [
+      "SoCal_EPC"
+    ],
+    "Obligation to Vacate and Remove": [
+      "SoCal_EPC"
+    ],
+    "Assignment and Removal Obligation": [
+      "SoCal_EPC"
+    ],
+    "Data Retrieval Right": [
+      "SoCal_EPC"
+    ],
+    "Engagement of Independent Contractor": [
+      "SoCal_EPC"
+    ],
+    "Right to Engage Subcontractors with Liability Retained": [
+      "SoCal_EPC"
+    ],
+    "Right to Engage Vendors with Liability Retained": [
+      "SoCal_EPC"
+    ],
+    "No Obligation or Liability to Subcontractors": [
+      "SoCal_EPC"
+    ],
+    "Right of Prior Written Approval": [
+      "SoCal_EPC"
+    ],
+    "Right to Retain Listed Substantial Subcontractors and Vendors": [
+      "SoCal_EPC"
+    ],
+    "Express Third-Party Beneficiary Status": [
+      "SoCal_EPC"
+    ],
+    "Assignment Right of Subcontractor Agreements": [
+      "SoCal_EPC"
+    ],
+    "Subcontractor Obligations to Contractor": [
+      "SoCal_EPC"
+    ],
+    "Obligation to Obtain and Maintain Insurance": [
+      "SoCal_EPC"
+    ],
+    "Duty to Provide Evidence of Insurance": [
+      "SoCal_EPC"
+    ],
+    "Requirement to Maintain Insurance": [
+      "SoCal_EPC"
+    ],
+    "Contractual Obligation to Bind Subcontractors": [
+      "SoCal_EPC"
+    ],
+    "Waiver of Subrogation in Favor of Contractor": [
+      "SoCal_EPC"
+    ],
+    "Duty to Cooperate in Insurance Claims": [
+      "SoCal_EPC"
+    ],
+    "Responsibility for Insurance Policy Management": [
+      "SoCal_EPC"
+    ],
+    "Notification and Replacement Obligation upon Insurer Insolvency or Cancellation": [
+      "SoCal_EPC"
+    ],
+    "Condition Precedent to Initial Site Mobilization": [
+      "SoCal_EPC"
+    ],
+    "Permit Obligation": [
+      "SoCal_EPC"
+    ],
+    "Application Assistance Obligation": [
+      "SoCal_EPC"
+    ],
+    "Access Granting Obligation": [
+      "SoCal_EPC"
+    ],
+    "Easement Acquisition Obligation": [
+      "SoCal_EPC"
+    ],
+    "Tax Payment and Reimbursement Obligation": [
+      "SoCal_EPC"
+    ],
+    "Access Permission for Equipment": [
+      "SoCal_EPC"
+    ],
+    "Access Duration Limitation": [
+      "SoCal_EPC"
+    ],
+    "Access Restriction Right": [
+      "SoCal_EPC"
+    ],
+    "Obligation to Deliver Performance Security": [
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Issued By": [
+      "SoCal_EPC"
+    ],
+    "Alternative Form": [
+      "SoCal_EPC"
+    ],
+    "Right to Withhold Payments": [
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligation to Substitute Surety": [
+      "SoCal_EPC"
+    ],
+    "Right to Withhold Retention or Terminate": [
+      "SoCal_EPC"
+    ],
+    "Return of Performance Security": [
+      "SoCal_EPC"
+    ],
+    "Right to Draw": [
+      "SoCal_EPC"
+    ],
+    "Trust Holding of Proceeds": [
+      "SoCal_EPC"
+    ],
+    "Obligation to Remove Proprietary Rights Impediment": [
+      "SoCal_EPC"
+    ],
+    "Performance and Warranty Responsibility": [
+      "SoCal_EPC"
+    ],
+    "Right to Repair and Adjust Equipment During Warranty Period": [
+      "SoCal_EPC"
+    ],
+    "Right to Correct Defects in Emergency and Cost Recovery": [
+      "SoCal_EPC"
+    ],
+    "Obligation to Obtain Guarantees and Warranties": [
+      "SoCal_EPC"
+    ],
+    "Third-Party Beneficiary Rights": [
+      "SoCal_EPC"
+    ],
+    "Right to Require Additional Warranty Protection": [
+      "SoCal_EPC"
+    ],
+    "Delivery Obligation of Warranty Contracts": [
+      "SoCal_EPC"
+    ],
+    "Assignment of Warranties": [
+      "SoCal_EPC"
+    ],
+    "Right to Use Materials Post-Injunction": [
+      "SoCal_EPC"
+    ],
+    "Discretionary Issuance of Limited Work Authorization": [
+      "SoCal_EPC"
+    ],
+    "Defines Effective Date of Limited Work Authorization": [
+      "SoCal_EPC"
+    ],
+    "Trigger for Commencement of Limited Work": [
+      "SoCal_EPC"
+    ],
+    "Issuance of Full Work Authorization": [
+      "SoCal_EPC"
+    ],
+    "Defines Effective Date of Full Work Authorization": [
+      "SoCal_EPC"
+    ],
+    "Trigger for Commencement of Full Work": [
+      "SoCal_EPC"
+    ],
+    "Subject to Performance Timeline": [
+      "SoCal_EPC"
+    ],
+    "Includes Performance Milestone": [
+      "SoCal_EPC"
+    ],
+    "Reporting and Notification Obligation": [
+      "SoCal_EPC"
+    ],
+    "Absolute Obligation to Pay": [
+      "SoCal_EPC"
+    ],
+    "Component Category": [
+      "SoCal_EPC"
+    ],
+    "Monetary Cap Reference": [
+      "SoCal_EPC"
+    ],
+    "Entitlement to Set-Off": [
+      "SoCal_EPC"
+    ],
+    "Entitlement to Enforce Security": [
+      "SoCal_EPC"
+    ],
+    "Absolute Performance Obligation": [
+      "SoCal_EPC"
+    ],
+    "Sequential Milestone Relationship": [
+      "SoCal_EPC"
+    ],
+    "Operational Compliance Requirement": [
+      "SoCal_EPC"
+    ],
+    "Regulatory Compliance Requirement": [
+      "SoCal_EPC"
+    ],
+    "Contractual Performance Specification": [
+      "SoCal_EPC"
+    ],
+    "Change Request Submission": [
+      "SoCal_EPC"
+    ],
+    "Change Order Approval and Execution": [
+      "SoCal_EPC"
+    ],
+    "Contract Documents Amendment": [
+      "SoCal_EPC"
+    ],
+    "Entitlement to Schedule Extension and Price Increase": [
+      "SoCal_EPC"
+    ],
+    "Dispute Resolution Obligation": [
+      "SoCal_EPC"
+    ],
+    "Audit and Inspection Right": [
+      "SoCal_EPC"
+    ],
+    "Information Request Issuance": [
+      "SoCal_EPC"
+    ],
+    "Authority to Order Minor Changes": [
+      "SoCal_EPC"
+    ],
+    "Obligation to Perform Minor Changes": [
+      "SoCal_EPC"
+    ],
+    "Obligation to Continue Work During Dispute": [
+      "SoCal_EPC"
+    ],
+    "Obligation to Pay Undisputed Amounts During Dispute": [
+      "SoCal_EPC"
+    ],
+    "Mandatory Good Faith Participation in Dispute Resolution Procedures": [
+      "SoCal_EPC"
+    ],
+    "Tolling of Statutes of Limitation During Dispute Resolution": [
+      "SoCal_EPC"
+    ],
+    "Right to Seek Preliminary Judicial Relief Despite Exclusive Procedures": [
+      "SoCal_EPC"
+    ],
+    "Incorporation by Reference": [
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Exhibit Precedence Priority": [
+      "SoCal_EPC"
+    ],
+    "Contract Document Precedence Ranking": [
+      "SoCal_EPC"
+    ],
+    "Exhibit Conflict Resolution Rule": [
+      "SoCal_EPC"
+    ],
+    "Stringency Precedence Rule": [
+      "SoCal_EPC"
+    ],
+    "Guarantee Obligation": [
+      "SoCal_EPC"
+    ],
+    "Payment Obligation Upon Breach": [
+      "SoCal_EPC"
+    ],
+    "Entitlement to Damages": [
+      "SoCal_EPC"
+    ],
+    "Damages Amount Specification": [
+      "SoCal_EPC"
+    ],
+    "Temporal Scope": [
+      "SoCal_EPC"
+    ],
+    "Timing of Payment": [
+      "SoCal_EPC"
+    ],
+    "Conditional Obligation": [
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Exclusive Remedy Designation": [
+      "SoCal_EPC"
+    ],
+    "No Third-Party Beneficiary Relationship": [
+      "SoCal_EPC"
+    ],
+    "Exclusive Beneficiaries": [
+      "SoCal_EPC"
+    ],
+    "Permitted Rights Holder": [
+      "SoCal_EPC"
+    ],
+    "Indemnity Rights Holder": [
+      "SoCal_EPC"
+    ],
+    "Payment Obligation Subject to Offset": [
+      "SoCal_EPC"
+    ],
+    "Obligation to Provide Insurance Documentation": [
+      "SoCal_EPC"
+    ],
+    "Evidentiary Relationship": [
+      "SoCal_EPC"
+    ],
+    "Inclusion of Endorsement Requirements": [
+      "SoCal_EPC"
+    ],
+    "Timing Trigger": [
+      "SoCal_EPC"
+    ],
+    "Insurer Acceptability Approval": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Warranty Obligation Duration": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Warranty Period Trigger": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Statutory Compliance Obligation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Liability Cap": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Legal Compliance Duty": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Termination Right Exercisable by District": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Labor Law Compliance Obligation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Indemnification Obligation Governed By": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Qualification Requirement": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Disposal Responsibility Delegation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Right to Examine Training Records": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Obligation to Comply with Labor Requirements": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Certification of Workers’ Compensation Compliance": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Subject to DOJ Criminal Background Clearance": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Provision of Employee/Subcontractor List": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Certification of Non-Use of Hazardous Materials": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Contractual Relationship": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Subject to Labor Compliance Monitoring and Enforcement": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Obligation to Comply with Anti-Discrimination Law": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Obligation to Comply with Federal Anti-Discrimination Law": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Obligation to Comply with Executive Order": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Obligation to Require Subcontractor Compliance": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Assignment of Anti-Trust Claims to District": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Triggering Event for Assignment of Claims": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Condition Precedent to Civil Action": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Tolling of Claim Presentation Time": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Obligation to Continue Work During Disputes": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Allocation of Litigation Costs": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Restriction on Assignment Without District Consent": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Incorporation of Time is of the Essence": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Governing Law and Venue Specification": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Binding Effect on Successors and Assigns": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Limitation on District's Waiver Effect": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Severability of Invalid Terms": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Integration of Entire Agreement": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Prohibition of Oral Modifications": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Maintenance Obligation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Maintenance Obligation Conditional on Presence": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Calibration Obligation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Maintenance Requirement Reference": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Automatic Renewal Condition": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Offer of Additional Terms Post-Renewal": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Termination Right Prior to Initial Term Expiry": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Component Term Inclusion": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Payment Retention Right": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Retention Condition Based on Pending Claims": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Conditioned on Contractor's Indemnification Agreement": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Survival of Obligations Post-Termination": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Access Right": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Credential Provision": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Fee Inclusion in Contract Scope": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Time Synchronization Requirement": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Data Access Right": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Data Export Capability": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Performance Data Review and Analysis Obligation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Reporting and Recommendation Duty": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Report Delivery Obligation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Timing Reference": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Optional Service Provision Upon Customer Request": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Records Access Right": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Obligation to Submit Payment Application": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Trigger for Payment Obligation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Inclusion in Payment Application": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Insurance Procurement Obligation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Coverage Relationship": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Mandatory Alternative Insurance Coverage Requirement": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Insurance Procurement Obligation for Unprotected Employees": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Regulatory Issuance": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Certification Requirement": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Training Requirement": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Scope of Application": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Lead-Free Determination Authority": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Termination Right Holder": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Notice Obligor": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Notice Recipient": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Notice Period Imposed On": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Notice Receipt Timing Rule": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Compensation Obligor to Contractor": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Payment Obligation Conditional on Authorization and Approval": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Service Performance Subject to Authorization": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Payment Obligation for Authorized Services": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Scope of Indemnity Coverage": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Indemnity Exclusion": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Legal Limitation on Indemnity": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Ownership and Operation of Generating Facility": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Option to Add Storage Facility": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Delivery Location of Facility Energy": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Measurement of Facility Energy": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Provider of Guaranty": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Guaranty Beneficiary": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Interconnection of Facility": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Facilities Subject to Interconnection Agreement": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Triggering Event for Curtailment Period": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Authority to Issue Curtailment Orders": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligation to Deliver Product": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Affiliate Relationship": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Financing Relationship": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Site Control by Seller": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Regulatory Authority Over CAISO Tariff": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "FERC Approval of CAISO Tariff": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Assignor of Agreement as Collateral": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Consent Party to Collateral Assignment Agreement": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Secured Party and Consent Party to Collateral Assignment Agreement": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Notice Recipient of Event of Default": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Right and Obligation to Cure Event of Default": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Possession or Title Holder of Facility": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Condition to Sale or Transfer of Facility": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Right to Enter Replacement Agreement Post-Bankruptcy": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligation to Enter Replacement Agreement": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Form Specification": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Design and Construction Responsibility": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Site Selection Responsibility": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Regulatory Compliance Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Procurement Responsibility": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Optional Incorporation Right": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Notice Obligation Triggered by Construction Commencement": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Supersession of Prior Exhibit": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Associated Metering Component": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Capacity Attributes Transfer Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Cost and Installation Responsibility": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Transfer Covenant": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Option to Purchase Storage Facility Capacity Attributes": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Exercise Right via Notice": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Certification Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Capacity Attributes Commitment Period": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Maintenance Obligation for Deliverability Status": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Transfer Covenant for Storage Facility Capacity Attributes": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Registration and Reporting Compliance Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Good Faith Negotiation Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligation to Bear Costs": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Monetary Cap Limitation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Costs Incurred by Compliance Actions": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Right to Evaluate and Respond to Notice": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Reimbursement Agreement": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Waiver of Compliance Actions": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Trigger for Compliance Actions Suspension": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Deemed Waiver upon Buyer Non-Response": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Payment Obligation for Accepted Compliance Costs": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Temporal Scope of Cap": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Certification and Transfer Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Transfer Duty": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Account Maintenance Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Transfer Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Representation Relationship": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Pre-Operational Registration Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Warranty Satisfaction Condition": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Payment Timing Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Indemnification Notification Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Notice Content Specification": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Notice Impact on Insurance Recovery": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Defense Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Notice of Failure to Defend": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Right to Assume Defense": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Exception to Settlement Consent": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Notice of Settlement Offer": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Consent to Settlement Offer": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Purchase Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Supply Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Pricing": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Exclusive Resale Rights": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Purchase Obligation Exception": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Energy Delivery": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Environmental Attribute Transfer": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Sale and Delivery Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Term Definition": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Liquidated Damages Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Constituent Relationship": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Interconnection or Scheduling Requirement": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Scheduling Mechanism": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Regulatory Compliance": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Insurance Maintenance Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Additional Insured Coverage": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Insurance Maintenance Obligation During Construction": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Insurance Maintenance Obligation Post-Commercial Operation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Insurance Flow-Down Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Additional Insured Coverage by Subcontractors": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Delivery of Evidence of Insurance": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Notice Obligation to Buyer": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligation to Submit Remedial Action Plan": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Performance Obligation Subject to Remedial Action Plan Trigger": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Remedial Action Plan Addresses Milestone Delays": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Excuse from Remedial Action Plan Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligation to Achieve Milestones by Guaranteed Commercial Operation Date": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligation Subject to Exhibit B Provisions": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Non-Default Status Despite Missed Milestones if Compliant": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Meter Operation and Maintenance Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Measurement Obligation for Storage Energy": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Approval Requirement for Meter Programming and Diagram Updates": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Seal Breakage Notification Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Data Provision Obligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Data Access Consent": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Operational Cooperation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Meter Loss Adjustment Point": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Mutual Netting of Payment Obligations": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligation to Deliver Development Security": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Right to Draw on Development Security": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Right to Draw on Performance Security": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligation to Maintain Development Security": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligation to Maintain Performance Security": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligation to Return Development Security": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligation to Return Performance Security": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Credit Rating Condition for Letter of Credit Validity": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Buyer’s Right to Draw on Letter of Credit": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligation to Substitute Letter of Credit": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Invoice Issuance": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Due Date Adjustment": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Late Payment Liability": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Charge Calculation Basis": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Interest Rate Component": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Reference Date for Rate": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Accrual Start Date Adjustment": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Right to Declare Early Termination Date": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Right to Send Notice of Early Termination Date": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Right to Collect Damage Payment": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Right to Collect Termination Payment": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Right to Suspend Performance": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Right to Exercise Other Remedies": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Liquidated Damages as Sole Remedy": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Limitation of Remedy Payment Source": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ]
+  }
+}

@@ -1,0 +1,2018 @@
+[
+  {
+    "source_clause_id": "clause:NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1:3:3_10:Suspension:040d3c",
+    "source_clause_title": "3.10 Suspension.",
+    "contract_id": "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+    "source_page_start": 28,
+    "source_page_end": 30,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_transmission_developer",
+        "entity_type": "Suspending Party",
+        "name": "Transmission Developer",
+        "legal_role": "The party with the contractual right to suspend work under the EPC Agreement and responsible for costs arising from suspension.",
+        "confidence": 1.0,
+        "evidence_quote": "Transmission Developer reserves the right, upon written notice to Affected System Operator and NYISO, to suspend at any time all work by Affected System Operator associated with the EPC Services under this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_affected_system_operator",
+        "entity_type": "Suspended Party / Service Provider",
+        "name": "Affected System Operator",
+        "legal_role": "The party performing EPC Services whose work may be suspended and who incurs costs related to suspension.",
+        "confidence": 1.0,
+        "evidence_quote": "Transmission Developer reserves the right, upon written notice to Affected System Operator and NYISO, to suspend at any time all work by Affected System Operator associated with the EPC Services under this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_nyiso",
+        "entity_type": "Regulatory and Contractual Oversight Party",
+        "name": "NYISO",
+        "legal_role": "The entity with rights to require suspension of work upon termination of the Development Agreement and recipient of notices regarding suspension.",
+        "confidence": 1.0,
+        "evidence_quote": "NYISO reserves the right, upon written notice to Transmission Developer and Affected System Operator, to require the suspension of all work by Transmission Developer and Affected System Operator associated with the EPC Services under this Agreement if the NYISO terminates the Development Agreement pursuant to Article 8 of the Development Agreement.",
+        "properties": {}
+      },
+      {
+        "id": "ent_epc_services",
+        "entity_type": "Contracted Work Scope",
+        "name": "EPC Services",
+        "legal_role": "The specific work performed by Affected System Operator under the Agreement that may be suspended.",
+        "confidence": 1.0,
+        "evidence_quote": "to suspend at any time all work by Affected System Operator associated with the EPC Services under this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_development_agreement",
+        "entity_type": "Related Contractual Agreement",
+        "name": "Development Agreement",
+        "legal_role": "A related agreement containing milestones and termination provisions that affect suspension rights under this Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "If the suspension will impact the Transmission Developer’s ability to meet any Advisory Milestones or Critical Path Milestones in the Development Agreement, Transmission Developer shall notify the NYISO in accordance with the requirements in Article 3.3 of the Development Agreement.",
+        "properties": {}
+      },
+      {
+        "id": "ent_advisory_milestones",
+        "entity_type": "Contractual Milestones",
+        "name": "Advisory Milestones",
+        "legal_role": "Milestones in the Development Agreement whose potential impact triggers notification obligations upon suspension.",
+        "confidence": 1.0,
+        "evidence_quote": "If the suspension will impact the Transmission Developer’s ability to meet any Advisory Milestones or Critical Path Milestones in the Development Agreement, Transmission Developer shall notify the NYISO",
+        "properties": {}
+      },
+      {
+        "id": "ent_critical_path_milestones",
+        "entity_type": "Contractual Milestones",
+        "name": "Critical Path Milestones",
+        "legal_role": "Milestones in the Development Agreement whose potential impact triggers notification obligations upon suspension.",
+        "confidence": 1.0,
+        "evidence_quote": "If the suspension will impact the Transmission Developer’s ability to meet any Advisory Milestones or Critical Path Milestones in the Development Agreement, Transmission Developer shall notify the NYISO",
+        "properties": {}
+      },
+      {
+        "id": "ent_facilities_study_report",
+        "entity_type": "Cost Allocation Document",
+        "name": "Facilities Study report",
+        "legal_role": "Document governing the reasonable and necessary costs and obligations for which Transmission Developer is responsible upon suspension.",
+        "confidence": 1.0,
+        "evidence_quote": "Transmission Developer shall be responsible for all reasonable and necessary costs and/or obligations in accordance with the Facilities Study report",
+        "properties": {}
+      },
+      {
+        "id": "ent_suspension_notice",
+        "entity_type": "Written Notice of Suspension",
+        "name": "Written Notice of Suspension",
+        "legal_role": "Formal written communication triggering suspension rights and defining the suspension commencement date.",
+        "confidence": 1.0,
+        "evidence_quote": "Transmission Developer reserves the right, upon written notice to Affected System Operator and NYISO, to suspend at any time all work",
+        "properties": {}
+      },
+      {
+        "id": "ent_three_year_termination_period",
+        "entity_type": "Suspension Termination Period",
+        "name": "Three (3) year suspension period",
+        "legal_role": "The period after which, if work is not recommenced, the Agreement is deemed terminated.",
+        "confidence": 1.0,
+        "evidence_quote": "if Transmission Developer suspends work ... and has not requested Affected System Operator to recommence the work ... on or before the expiration of three (3) years following commencement of such suspension, this Agreement shall be deemed terminated.",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_affected_system_operator",
+        "relationship_type": "Suspension Right and Cost Responsibility",
+        "legal_significance": "Transmission Developer has the contractual right to suspend work performed by Affected System Operator and is responsible for costs incurred due to suspension.",
+        "confidence": 1.0,
+        "evidence_quote": "Transmission Developer reserves the right ... to suspend at any time all work by Affected System Operator ... Transmission Developer shall be responsible for all reasonable and necessary costs ... including those which Affected System Operator ... incurs in suspending such work"
+      },
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_nyiso",
+        "relationship_type": "Notification Obligation",
+        "legal_significance": "Transmission Developer must notify NYISO if suspension impacts milestones in the Development Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "If the suspension will impact the Transmission Developer’s ability to meet any Advisory Milestones or Critical Path Milestones in the Development Agreement, Transmission Developer shall notify the NYISO"
+      },
+      {
+        "source_id": "ent_nyiso",
+        "target_id": "ent_transmission_developer",
+        "relationship_type": "Right to Require Suspension",
+        "legal_significance": "NYISO may require suspension of work by Transmission Developer and Affected System Operator if NYISO terminates the Development Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "NYISO reserves the right ... to require the suspension of all work ... if the NYISO terminates the Development Agreement pursuant to Article 8"
+      },
+      {
+        "source_id": "ent_affected_system_operator",
+        "target_id": "ent_transmission_developer",
+        "relationship_type": "Cost Invoicing and Authorization",
+        "legal_significance": "Affected System Operator invoices Transmission Developer for suspension-related costs and must obtain authorization before canceling contracts.",
+        "confidence": 1.0,
+        "evidence_quote": "Affected System Operator shall invoice Transmission Developer for such costs ... prior to canceling or suspending any such material, equipment or labor contract, Affected System Operator shall obtain Transmission Developer’s authorization"
+      },
+      {
+        "source_id": "ent_suspension_notice",
+        "target_id": "ent_three_year_termination_period",
+        "relationship_type": "Suspension Commencement and Termination Trigger",
+        "legal_significance": "The written notice of suspension starts the three-year period after which the Agreement is deemed terminated if work is not recommenced.",
+        "confidence": 1.0,
+        "evidence_quote": "The three-year period shall begin on the date required under this Article 3.10 or the date specified in the written notice of suspension."
+      }
+    ],
+    "extractor_notes": "This clause establishes mutual suspension rights and obligations between Transmission Developer, Affected System Operator, and NYISO, linking suspension to milestone impacts and Development Agreement termination, with detailed cost responsibility and a three-year termination trigger if suspension persists."
+  },
+  {
+    "source_clause_id": "clause:NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1:1c4589:12_1_3:Indemnity_Procedures:6af636",
+    "source_clause_title": "12.1.3 Indemnity Procedures.",
+    "contract_id": "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+    "source_page_start": 50,
+    "source_page_end": 52,
+    "clause_type_hint": "payment",
+    "entities": [
+      {
+        "id": "ent_indemnified_party",
+        "entity_type": "Indemnified Party",
+        "name": "Indemnified Party",
+        "legal_role": "The party entitled to receive indemnity and who must notify the Indemnifying Party upon receipt of a claim or legal proceeding to which indemnity may apply.",
+        "confidence": 1.0,
+        "evidence_quote": "Promptly after receipt by an Indemnified Party of any claim or notice ... the Indemnified Party shall notify the Indemnifying Party of such fact.",
+        "properties": {}
+      },
+      {
+        "id": "ent_indemnifying_party",
+        "entity_type": "Indemnifying Party",
+        "name": "Indemnifying Party",
+        "legal_role": "The party obligated to indemnify the Indemnified Party and who has the right to assume the defense of claims subject to indemnity.",
+        "confidence": 1.0,
+        "evidence_quote": "the Indemnifying Party shall have the right to assume the defense thereof with counsel designated by such Indemnifying Party",
+        "properties": {}
+      },
+      {
+        "id": "ent_counsel_designated_by_indemnifying_party",
+        "entity_type": "Defense Counsel Designated by Indemnifying Party",
+        "name": "Counsel designated by Indemnifying Party",
+        "legal_role": "The legal counsel selected by the Indemnifying Party to defend claims subject to indemnity, subject to reasonableness approval by the Indemnified Party.",
+        "confidence": 1.0,
+        "evidence_quote": "the Indemnifying Party shall have the right to assume the defense thereof with counsel designated by such Indemnifying Party and reasonably satisfactory to the Indemnified Party.",
+        "properties": {}
+      },
+      {
+        "id": "ent_separate_counsel_for_indemnified_party",
+        "entity_type": "Separate Counsel for Indemnified Party",
+        "name": "Separate counsel selected by Indemnified Party",
+        "legal_role": "Counsel selected by the Indemnified Party to assert legal defenses different or additional to those of the Indemnifying Party, with fees partially borne by the Indemnifying Party.",
+        "confidence": 1.0,
+        "evidence_quote": "the Indemnified Party shall have the right to select separate counsel to assert such legal defenses and to otherwise participate in the defense of such action on its own behalf.",
+        "properties": {}
+      },
+      {
+        "id": "ent_claim_or_legal_proceeding",
+        "entity_type": "Claim or Legal Proceeding",
+        "name": "Claim or legal proceeding subject to indemnity",
+        "legal_role": "Any claim, action, administrative or legal proceeding or investigation to which the indemnity obligation applies.",
+        "confidence": 1.0,
+        "evidence_quote": "any claim or notice of the commencement of any action or administrative or legal proceeding or investigation as to which the indemnity provided for in Article 12.1 may apply",
+        "properties": {}
+      },
+      {
+        "id": "ent_indemnity_obligation",
+        "entity_type": "Indemnification Obligation",
+        "name": "Indemnity obligation under Article 12.1",
+        "legal_role": "The contractual duty of the Indemnifying Party to indemnify the Indemnified Party for claims as specified in Article 12.1.",
+        "confidence": 1.0,
+        "evidence_quote": "the indemnity provided for in Article 12.1 may apply",
+        "properties": {}
+      },
+      {
+        "id": "ent_notification_requirement",
+        "entity_type": "Notification Requirement",
+        "name": "Notification of claim to Indemnifying Party",
+        "legal_role": "The requirement that the Indemnified Party promptly notify the Indemnifying Party of claims or proceedings to which indemnity may apply, with limited effect of failure or delay.",
+        "confidence": 1.0,
+        "evidence_quote": "the Indemnified Party shall notify the Indemnifying Party of such fact. Any failure of or delay in such notification shall not affect ... unless such failure or delay is materially prejudicial to the Indemnifying Party.",
+        "properties": {}
+      },
+      {
+        "id": "ent_right_to_assume_defense",
+        "entity_type": "Right to Assume Defense",
+        "name": "Indemnifying Party's right to assume defense",
+        "legal_role": "The contractual right of the Indemnifying Party to control the defense of claims subject to indemnity, subject to exceptions.",
+        "confidence": 1.0,
+        "evidence_quote": "the Indemnifying Party shall have the right to assume the defense thereof with counsel designated by such Indemnifying Party",
+        "properties": {}
+      },
+      {
+        "id": "ent_right_to_select_separate_counsel",
+        "entity_type": "Right to Select Separate Counsel",
+        "name": "Indemnified Party's right to select separate counsel",
+        "legal_role": "The right of the Indemnified Party to select separate counsel when legal defenses differ or are additional to those of the Indemnifying Party.",
+        "confidence": 1.0,
+        "evidence_quote": "the Indemnified Party shall have the right to select separate counsel to assert such legal defenses and to otherwise participate in the defense of such action on its own behalf.",
+        "properties": {}
+      },
+      {
+        "id": "ent_limit_on_fees_for_separate_counsel",
+        "entity_type": "Limit on Fees for Separate Counsel",
+        "name": "Indemnifying Party's obligation to pay fees for one additional attorney",
+        "legal_role": "The limitation that the Indemnifying Party is only required to pay fees and expenses for one additional attorney representing Indemnified Parties with differing or additional defenses.",
+        "confidence": 1.0,
+        "evidence_quote": "the Indemnifying Party shall only be required to pay the fees and expenses of one additional attorney to represent an Indemnified Party or Indemnified Parties having such differing or additional legal defenses.",
+        "properties": {}
+      },
+      {
+        "id": "ent_right_to_participate_at_own_expense",
+        "entity_type": "Right to Participate at Own Expense",
+        "name": "Indemnified Party's right to participate in defense",
+        "legal_role": "The right of the Indemnified Party to participate in the defense of claims assumed by the Indemnifying Party, but at its own expense.",
+        "confidence": 1.0,
+        "evidence_quote": "The Indemnified Party shall be entitled, at its expense, to participate in any such action, suit or proceeding, the defense of which has been assumed by the Indemnifying Party.",
+        "properties": {}
+      },
+      {
+        "id": "ent_exception_to_right_to_assume_defense",
+        "entity_type": "Exception to Right to Assume Defense",
+        "name": "Exceptions preventing Indemnifying Party from assuming defense",
+        "legal_role": "Situations where the Indemnifying Party cannot assume or control defense due to potential criminal liability or conflict of interest, triggering payment of reasonable expenses by Indemnifying Party.",
+        "confidence": 1.0,
+        "evidence_quote": "the Indemnifying Party (i) shall not be entitled to assume and control the defense ... if ... such action ... involves the potential imposition of criminal liability on the Indemnified Party, or there exists a conflict or adversity of interest between the Indemnified Party and the Indemnifying Party",
+        "properties": {}
+      },
+      {
+        "id": "ent_payment_of_expenses_in_exception",
+        "entity_type": "Payment of Expenses in Exception",
+        "name": "Indemnifying Party's obligation to pay reasonable expenses",
+        "legal_role": "The obligation of the Indemnifying Party to pay reasonable expenses of the Indemnified Party when the Indemnifying Party cannot assume or control the defense due to exceptions.",
+        "confidence": 1.0,
+        "evidence_quote": "in such event the Indemnifying Party shall pay the reasonable expenses of the Indemnified Party",
+        "properties": {}
+      },
+      {
+        "id": "ent_settlement_consent_requirement",
+        "entity_type": "Settlement Consent Requirement",
+        "name": "Indemnified Party's consent to settlement",
+        "legal_role": "The requirement that the Indemnifying Party must obtain the Indemnified Party's consent before settling or consenting to judgment, with consent not to be unreasonably withheld.",
+        "confidence": 1.0,
+        "evidence_quote": "the Indemnifying Party shall not settle or consent to the entry of any judgment ... without the consent of the Indemnified Party, which shall not be unreasonably withheld, conditioned or delayed.",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_indemnified_party",
+        "target_id": "ent_indemnifying_party",
+        "relationship_type": "Notification Obligation",
+        "legal_significance": "The Indemnified Party must notify the Indemnifying Party promptly of claims or proceedings to which indemnity may apply, enabling the Indemnifying Party to exercise defense rights.",
+        "confidence": 1.0,
+        "evidence_quote": "the Indemnified Party shall notify the Indemnifying Party of such fact."
+      },
+      {
+        "source_id": "ent_indemnifying_party",
+        "target_id": "ent_counsel_designated_by_indemnifying_party",
+        "relationship_type": "Designation of Defense Counsel",
+        "legal_significance": "The Indemnifying Party has the right to select counsel to defend claims subject to indemnity, controlling the defense process.",
+        "confidence": 1.0,
+        "evidence_quote": "the Indemnifying Party shall have the right to assume the defense thereof with counsel designated by such Indemnifying Party"
+      },
+      {
+        "source_id": "ent_indemnified_party",
+        "target_id": "ent_separate_counsel_for_indemnified_party",
+        "relationship_type": "Right to Select Separate Counsel",
+        "legal_significance": "The Indemnified Party may select separate counsel when legal defenses differ or are additional, ensuring protection of its distinct legal interests.",
+        "confidence": 1.0,
+        "evidence_quote": "the Indemnified Party shall have the right to select separate counsel to assert such legal defenses"
+      },
+      {
+        "source_id": "ent_indemnifying_party",
+        "target_id": "ent_limit_on_fees_for_separate_counsel",
+        "relationship_type": "Limitation on Indemnifying Party's Payment for Separate Counsel",
+        "legal_significance": "Limits the Indemnifying Party's financial exposure by capping payment obligations for additional counsel to one attorney despite multiple Indemnified Parties.",
+        "confidence": 1.0,
+        "evidence_quote": "the Indemnifying Party shall only be required to pay the fees and expenses of one additional attorney"
+      },
+      {
+        "source_id": "ent_indemnified_party",
+        "target_id": "ent_right_to_participate_at_own_expense",
+        "relationship_type": "Right to Participate in Defense",
+        "legal_significance": "Allows the Indemnified Party to be involved in the defense of claims assumed by the Indemnifying Party, preserving its interests at its own cost.",
+        "confidence": 1.0,
+        "evidence_quote": "The Indemnified Party shall be entitled, at its expense, to participate in any such action"
+      },
+      {
+        "source_id": "ent_indemnifying_party",
+        "target_id": "ent_exception_to_right_to_assume_defense",
+        "relationship_type": "Exception to Defense Control",
+        "legal_significance": "Restricts the Indemnifying Party's right to control defense when criminal liability or conflicts of interest arise, protecting the Indemnified Party's legal rights.",
+        "confidence": 1.0,
+        "evidence_quote": "the Indemnifying Party shall not be entitled to assume and control the defense ... if ... potential imposition of criminal liability ... or conflict or adversity of interest"
+      },
+      {
+        "source_id": "ent_indemnifying_party",
+        "target_id": "ent_payment_of_expenses_in_exception",
+        "relationship_type": "Obligation to Pay Expenses When Defense Control Denied",
+        "legal_significance": "Requires the Indemnifying Party to pay reasonable expenses of the Indemnified Party when it cannot control the defense due to exceptions, ensuring fair cost allocation.",
+        "confidence": 1.0,
+        "evidence_quote": "in such event the Indemnifying Party shall pay the reasonable expenses of the Indemnified Party"
+      },
+      {
+        "source_id": "ent_indemnifying_party",
+        "target_id": "ent_settlement_consent_requirement",
+        "relationship_type": "Settlement Consent Requirement",
+        "legal_significance": "Prevents the Indemnifying Party from settling claims without the Indemnified Party's consent, protecting the Indemnified Party's interests in resolution decisions.",
+        "confidence": 1.0,
+        "evidence_quote": "shall not settle or consent to the entry of any judgment ... without the consent of the Indemnified Party"
+      }
+    ],
+    "extractor_notes": "The clause carefully balances the rights and obligations of the Indemnified and Indemnifying Parties regarding notification, defense control, counsel selection, expense payment, and settlement consent, with explicit exceptions for criminal liability and conflicts of interest."
+  },
+  {
+    "source_clause_id": "clause:NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1:ef2509:3_11_1:Indemnification_for_the_Cost_Consequences_of_Curre:1233f3",
+    "source_clause_title": "3.11.1 Indemnification for the Cost Consequences of Current Tax Liability Imposed",
+    "contract_id": "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+    "source_page_start": 30,
+    "source_page_end": 32,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_transmission_developer",
+        "entity_type": "Indemnitor",
+        "name": "Transmission Developer",
+        "legal_role": "The party obligated to protect, indemnify, hold harmless, and reimburse the Affected System Operator for certain tax liabilities and related costs under this Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Transmission Developer shall protect, indemnify and hold harmless Affected System Operator from the cost consequences of any current tax liability imposed against Affected System Operator...",
+        "properties": {}
+      },
+      {
+        "id": "ent_affected_system_operator",
+        "entity_type": "Indemnitee",
+        "name": "Affected System Operator",
+        "legal_role": "The party entitled to protection, indemnification, and reimbursement from the Transmission Developer for current tax liabilities and related costs arising from payments or property transfers under this Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Transmission Developer shall protect, indemnify and hold harmless Affected System Operator from the cost consequences of any current tax liability imposed against Affected System Operator...",
+        "properties": {}
+      },
+      {
+        "id": "ent_current_tax_liability",
+        "entity_type": "Current Tax Liability",
+        "name": "Current tax liability imposed against Affected System Operator",
+        "legal_role": "A financial obligation imposed on the Affected System Operator as a result of payments or property transfers made by the Transmission Developer under this Agreement, triggering indemnification.",
+        "confidence": 1.0,
+        "evidence_quote": "any current tax liability imposed against Affected System Operator as the result of payments or property transfers made by Transmission Developer to Affected System Operator under this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_interest_and_penalties",
+        "entity_type": "Tax-Related Interest and Penalties",
+        "name": "Interest and penalties related to current tax liability",
+        "legal_role": "Additional financial charges related to the current tax liability for which the Transmission Developer must indemnify the Affected System Operator, except those caused by the Operator's delay.",
+        "confidence": 1.0,
+        "evidence_quote": "as well as any interest and penalties, other than interest and penalties attributable to any delay caused by Affected System Operator",
+        "properties": {}
+      },
+      {
+        "id": "ent_reimbursement_obligation",
+        "entity_type": "Reimbursement Obligation",
+        "name": "Reimbursement of costs on a fully grossed-up basis",
+        "legal_role": "The Transmission Developer's obligation to reimburse the Affected System Operator for indemnified costs, calculated and paid within thirty calendar days upon written notification.",
+        "confidence": 1.0,
+        "evidence_quote": "Transmission Developer shall reimburse Affected System Operator for such costs on a fully grossed-up basis, in accordance with Article 2, within thirty (30) Calendar Days of receiving written notification",
+        "properties": {}
+      },
+      {
+        "id": "ent_indemnification_termination",
+        "entity_type": "Indemnification Termination Condition",
+        "name": "Termination of indemnification obligation",
+        "legal_role": "The conditions under which the Transmission Developer's indemnification obligation ends, either after the ten-year testing period and statute of limitations or upon a subsequent taxable event and related indemnification payment.",
+        "confidence": 1.0,
+        "evidence_quote": "This indemnification obligation shall terminate at the earlier of (1) the expiration of the ten-year testing period and the applicable statute of limitation... or (2) the occurrence of a subsequent taxable event and the payment of any related indemnification obligations",
+        "properties": {}
+      },
+      {
+        "id": "ent_irs_extension",
+        "entity_type": "IRS Extension Right",
+        "name": "Extension of statute of limitations by Affected System Operator upon IRS request",
+        "legal_role": "The Affected System Operator's right to extend the statute of limitations period to keep the tax years open for audit or adjustment, affecting the duration of indemnification.",
+        "confidence": 1.0,
+        "evidence_quote": "as it may be extended by the Affected System Operator upon request of the IRS, to keep these years open for audit or adjustment",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_affected_system_operator",
+        "relationship_type": "Indemnification Obligation",
+        "legal_significance": "The Transmission Developer is legally required to indemnify and hold harmless the Affected System Operator against certain tax liabilities and related costs, protecting the Operator from financial harm.",
+        "confidence": 1.0,
+        "evidence_quote": "Transmission Developer shall protect, indemnify and hold harmless Affected System Operator from the cost consequences of any current tax liability imposed against Affected System Operator"
+      },
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_current_tax_liability",
+        "relationship_type": "Indemnification Trigger",
+        "legal_significance": "The current tax liability imposed on the Affected System Operator as a result of payments or property transfers by the Transmission Developer triggers the indemnification obligation.",
+        "confidence": 1.0,
+        "evidence_quote": "any current tax liability imposed against Affected System Operator as the result of payments or property transfers made by Transmission Developer"
+      },
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_interest_and_penalties",
+        "relationship_type": "Indemnification Coverage Exclusion",
+        "legal_significance": "The Transmission Developer must indemnify interest and penalties related to the tax liability except those caused by delay attributable to the Affected System Operator, defining the scope of indemnification.",
+        "confidence": 1.0,
+        "evidence_quote": "as well as any interest and penalties, other than interest and penalties attributable to any delay caused by Affected System Operator"
+      },
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_affected_system_operator",
+        "relationship_type": "Reimbursement Obligation",
+        "legal_significance": "The Transmission Developer must reimburse the Affected System Operator for indemnified costs on a fully grossed-up basis within a specified timeframe, ensuring timely compensation.",
+        "confidence": 1.0,
+        "evidence_quote": "Transmission Developer shall reimburse Affected System Operator for such costs on a fully grossed-up basis... within thirty (30) Calendar Days of receiving written notification"
+      },
+      {
+        "source_id": "ent_indemnification_termination",
+        "target_id": "ent_transmission_developer",
+        "relationship_type": "Termination Condition on Indemnification Obligation",
+        "legal_significance": "Defines when the Transmission Developer's indemnification obligation ceases, limiting the duration of liability and providing certainty to the parties.",
+        "confidence": 1.0,
+        "evidence_quote": "This indemnification obligation shall terminate at the earlier of (1) the expiration of the ten-year testing period and the applicable statute of limitation... or (2) the occurrence of a subsequent taxable event and the payment of any related indemnification obligations"
+      },
+      {
+        "source_id": "ent_irs_extension",
+        "target_id": "ent_indemnification_termination",
+        "relationship_type": "Extension of Indemnification Period",
+        "legal_significance": "The Affected System Operator's ability to extend the statute of limitations period upon IRS request prolongs the indemnification obligation, affecting risk exposure.",
+        "confidence": 1.0,
+        "evidence_quote": "as it may be extended by the Affected System Operator upon request of the IRS, to keep these years open for audit or adjustment"
+      }
+    ],
+    "extractor_notes": "The clause explicitly limits indemnification to current tax liabilities arising from payments or property transfers under the Agreement and excludes penalties caused by the Operator's delay. The indemnification period is tied to a ten-year testing period and statute of limitations, which may be extended by IRS request, or terminated upon a subsequent taxable event. The reimbursement is on a fully grossed-up basis, ensuring the Operator is made whole."
+  },
+  {
+    "source_clause_id": "clause:NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1:6:6_3:Forfeiture_of_Security:8478f6",
+    "source_clause_title": "6.3 Forfeiture of Security",
+    "contract_id": "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+    "source_page_start": 42,
+    "source_page_end": 42,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_security",
+        "entity_type": "Irrevocable Security Instrument",
+        "name": "Security",
+        "legal_role": "The Security represents a financial guarantee provided by the Transmission Developer to secure performance obligations and is subject to forfeiture upon certain termination or abandonment events.",
+        "confidence": 1.0,
+        "evidence_quote": "The Security the Transmission Developer provides Affected System Operator in accordance with Article 6.2 of this Agreement shall be irrevocable and shall be subject to forfeiture...",
+        "properties": {}
+      },
+      {
+        "id": "ent_transmission_developer",
+        "entity_type": "Transmission Developer",
+        "name": "Transmission Developer",
+        "legal_role": "The party responsible for developing the Transmission Project and providing Security to the Affected System Operator under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "The Security the Transmission Developer provides Affected System Operator...",
+        "properties": {}
+      },
+      {
+        "id": "ent_affected_system_operator",
+        "entity_type": "Affected System Operator",
+        "name": "Affected System Operator",
+        "legal_role": "The party receiving the Security from the Transmission Developer and entitled to enforce forfeiture under specified conditions.",
+        "confidence": 1.0,
+        "evidence_quote": "The Security the Transmission Developer provides Affected System Operator...",
+        "properties": {}
+      },
+      {
+        "id": "ent_transmission_project",
+        "entity_type": "Transmission Project",
+        "name": "Transmission Project",
+        "legal_role": "The project being developed by the Transmission Developer, whose termination or abandonment triggers potential forfeiture of Security.",
+        "confidence": 1.0,
+        "evidence_quote": "in the event that the Transmission Developer subsequently terminates or abandons development of the Transmission Project...",
+        "properties": {}
+      },
+      {
+        "id": "ent_affected_system_upgrade_facilities",
+        "entity_type": "Affected System Upgrade Facilities",
+        "name": "Affected System Upgrade Facilities",
+        "legal_role": "Facilities related to the Transmission Project whose development abandonment or termination can cause forfeiture of Security.",
+        "confidence": 1.0,
+        "evidence_quote": "terminates or abandons development of the Transmission Project or the Affected System Upgrade Facilities.",
+        "properties": {}
+      },
+      {
+        "id": "ent_other_transmission_developers",
+        "entity_type": "Other Transmission Developers",
+        "name": "Other Transmission Developers",
+        "legal_role": "Third-party developers whose required Affected System Upgrade Facilities costs may be defrayed by forfeited Security.",
+        "confidence": 1.0,
+        "evidence_quote": "(1) Affected System Upgrade Facilities required for other Transmission Developers whose Transmission Project interconnection studies included the Transmission Developer’s Transmission Project...",
+        "properties": {}
+      },
+      {
+        "id": "ent_system_upgrade_facilities",
+        "entity_type": "System Upgrade Facilities",
+        "name": "System Upgrade Facilities",
+        "legal_role": "Facilities required for projects that may be funded by forfeited Security when the Transmission Project and related facilities are included in certain studies.",
+        "confidence": 1.0,
+        "evidence_quote": "(2) System Upgrade Facilities and System Deliverability Upgrade Facilities required for projects for which the Transmission Project and Affected System Upgrade Facilities were included in their Annual Transmission Reliability Assessment and/or Class Year Deliverability Study...",
+        "properties": {}
+      },
+      {
+        "id": "ent_system_deliverability_upgrade_facilities",
+        "entity_type": "System Deliverability Upgrade Facilities",
+        "name": "System Deliverability Upgrade Facilities",
+        "legal_role": "Specific upgrade facilities whose costs may be defrayed by forfeited Security under the conditions described.",
+        "confidence": 1.0,
+        "evidence_quote": "(2) System Upgrade Facilities and System Deliverability Upgrade Facilities required for projects...",
+        "properties": {}
+      },
+      {
+        "id": "ent_connecting_transmission_owner",
+        "entity_type": "Connecting Transmission Owner",
+        "name": "Connecting Transmission Owner",
+        "legal_role": "The party entitled to draw on the Security to defray costs of affected upgrades and negotiate replacement Security forms with the Transmission Developer.",
+        "confidence": 1.0,
+        "evidence_quote": "Transmission Developer shall negotiate in good faith with the Connecting Transmission Owner to replace the Security with cash or an alternative form of Security... Connecting Transmission Owner shall only be responsible for using Transmission Developer’s Security to defray the costs...",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_security",
+        "relationship_type": "Provider of Security",
+        "legal_significance": "The Transmission Developer is legally obligated to provide irrevocable Security to secure its performance under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "The Security the Transmission Developer provides Affected System Operator in accordance with Article 6.2 of this Agreement..."
+      },
+      {
+        "source_id": "ent_security",
+        "target_id": "ent_affected_system_operator",
+        "relationship_type": "Security Held by",
+        "legal_significance": "The Security is held by the Affected System Operator, who has the right to enforce forfeiture upon certain triggering events.",
+        "confidence": 1.0,
+        "evidence_quote": "The Security the Transmission Developer provides Affected System Operator..."
+      },
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_transmission_project",
+        "relationship_type": "Developer of",
+        "legal_significance": "The Transmission Developer is responsible for developing the Transmission Project, whose termination or abandonment triggers forfeiture of Security.",
+        "confidence": 1.0,
+        "evidence_quote": "in the event that the Transmission Developer subsequently terminates or abandons development of the Transmission Project..."
+      },
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_affected_system_upgrade_facilities",
+        "relationship_type": "Developer of",
+        "legal_significance": "The Transmission Developer is responsible for developing the Affected System Upgrade Facilities, whose abandonment or termination triggers forfeiture of Security.",
+        "confidence": 1.0,
+        "evidence_quote": "terminates or abandons development of the Transmission Project or the Affected System Upgrade Facilities."
+      },
+      {
+        "source_id": "ent_security",
+        "target_id": "ent_other_transmission_developers",
+        "relationship_type": "Forfeiture to Defray Costs of",
+        "legal_significance": "The Security may be forfeited to defray costs of Affected System Upgrade Facilities required for other Transmission Developers impacted by the Transmission Developer’s project.",
+        "confidence": 1.0,
+        "evidence_quote": "Any Security provided by the Transmission Developer shall be subject to forfeiture to the extent necessary to defray the cost of: (1) Affected System Upgrade Facilities required for other Transmission Developers..."
+      },
+      {
+        "source_id": "ent_security",
+        "target_id": "ent_system_upgrade_facilities",
+        "relationship_type": "Forfeiture to Defray Costs of",
+        "legal_significance": "The Security may be forfeited to defray costs of System Upgrade Facilities required for projects including the Transmission Developer’s project in certain studies.",
+        "confidence": 1.0,
+        "evidence_quote": "(2) System Upgrade Facilities and System Deliverability Upgrade Facilities required for projects for which the Transmission Project and Affected System Upgrade Facilities were included in their Annual Transmission Reliability Assessment and/or Class Year Deliverability Study..."
+      },
+      {
+        "source_id": "ent_security",
+        "target_id": "ent_system_deliverability_upgrade_facilities",
+        "relationship_type": "Forfeiture to Defray Costs of",
+        "legal_significance": "The Security may be forfeited to defray costs of System Deliverability Upgrade Facilities required for projects including the Transmission Developer’s project in certain studies.",
+        "confidence": 1.0,
+        "evidence_quote": "(2) System Upgrade Facilities and System Deliverability Upgrade Facilities required for projects..."
+      },
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_connecting_transmission_owner",
+        "relationship_type": "Negotiation Obligation for Replacement Security",
+        "legal_significance": "If the Security is not readily drawable by the Connecting Transmission Owner, the Transmission Developer must negotiate in good faith to replace it with cash or an alternative readily drawable Security.",
+        "confidence": 1.0,
+        "evidence_quote": "Transmission Developer shall negotiate in good faith with the Connecting Transmission Owner to replace the Security with cash or an alternative form of Security that can be readily drawn on..."
+      },
+      {
+        "source_id": "ent_connecting_transmission_owner",
+        "target_id": "ent_security",
+        "relationship_type": "Right to Draw on Security",
+        "legal_significance": "The Connecting Transmission Owner has the right to draw on the Security to defray costs of affected upgrades, but only if the Security is in a form readily drawable by them.",
+        "confidence": 1.0,
+        "evidence_quote": "Connecting Transmission Owner shall only be responsible for using Transmission Developer’s Security to defray the costs of an affected upgrade to the extent Transmission Developer has provided cash or Security in a form that the Connecting Transmission Owner can readily draw on..."
+      }
+    ],
+    "extractor_notes": "The clause explicitly defines the conditions under which the Transmission Developer's Security is forfeited, the parties entitled to hold and draw on the Security, and the obligation to negotiate replacement Security forms if the original Security is not readily drawable by the Connecting Transmission Owner."
+  },
+  {
+    "source_clause_id": "clause:NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1:7:7_1:General:59d927",
+    "source_clause_title": "7.1 General.",
+    "contract_id": "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+    "source_page_start": 44,
+    "source_page_end": 44,
+    "clause_type_hint": "payment",
+    "entities": [
+      {
+        "id": "ent_transmission_developer",
+        "entity_type": "Contracting Party",
+        "name": "Transmission Developer",
+        "legal_role": "The Transmission Developer is a party entitled to receive payments and obligated to submit invoices under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "any amounts are due to the Transmission Developer ... the Transmission Developer ... shall submit ... invoices",
+        "properties": {}
+      },
+      {
+        "id": "ent_affected_system_operator",
+        "entity_type": "Contracting Party",
+        "name": "Affected System Operator",
+        "legal_role": "The Affected System Operator is a party entitled to receive payments and obligated to submit invoices under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "any amounts are due to ... Affected System Operator ... Affected System Operator ... shall submit ... invoices",
+        "properties": {}
+      },
+      {
+        "id": "ent_invoice",
+        "entity_type": "Payment Document",
+        "name": "Invoice",
+        "legal_role": "An invoice is a formal document submitted monthly by either party to request payment for amounts due under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "shall submit to the other Party, on a monthly basis, invoices of amounts due for the preceding month",
+        "properties": {}
+      },
+      {
+        "id": "ent_epc_services",
+        "entity_type": "Contracted Services",
+        "name": "EPC Services",
+        "legal_role": "EPC Services are the specific services performed under the Agreement for which final payment invoices must be submitted within six months after completion.",
+        "confidence": 1.0,
+        "evidence_quote": "Within six months after completion of the EPC Services ... shall provide a final invoice",
+        "properties": {}
+      },
+      {
+        "id": "ent_mutual_debts_and_payment_obligations",
+        "entity_type": "Mutual Financial Obligations",
+        "name": "Mutual Debts and Payment Obligations",
+        "legal_role": "Mutual debts and payment obligations represent reciprocal amounts owed by the parties to each other that may be netted to simplify payment.",
+        "confidence": 1.0,
+        "evidence_quote": "may discharge mutual debts and payment obligations due and owing to each other on the same date through netting",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_affected_system_operator",
+        "relationship_type": "Invoice Submission Obligation",
+        "legal_significance": "Each party is obligated to submit invoices to the other party for amounts due, establishing a reciprocal invoicing process.",
+        "confidence": 1.0,
+        "evidence_quote": "the Transmission Developer or Affected System Operator ... shall submit to the other Party ... invoices"
+      },
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_invoice",
+        "relationship_type": "Invoice Issuer",
+        "legal_significance": "The Transmission Developer issues invoices to claim payment for services or equipment provided under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "the Transmission Developer ... shall submit ... invoices of amounts due"
+      },
+      {
+        "source_id": "ent_affected_system_operator",
+        "target_id": "ent_invoice",
+        "relationship_type": "Invoice Issuer",
+        "legal_significance": "The Affected System Operator issues invoices to claim payment for services or equipment provided under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Affected System Operator ... shall submit ... invoices of amounts due"
+      },
+      {
+        "source_id": "ent_mutual_debts_and_payment_obligations",
+        "target_id": "ent_transmission_developer",
+        "relationship_type": "Netting Participant",
+        "legal_significance": "The Transmission Developer participates in netting mutual debts and payment obligations to reduce payment complexity and amount owed.",
+        "confidence": 1.0,
+        "evidence_quote": "The Transmission Developer ... may discharge mutual debts and payment obligations ... through netting"
+      },
+      {
+        "source_id": "ent_mutual_debts_and_payment_obligations",
+        "target_id": "ent_affected_system_operator",
+        "relationship_type": "Netting Participant",
+        "legal_significance": "The Affected System Operator participates in netting mutual debts and payment obligations to reduce payment complexity and amount owed.",
+        "confidence": 1.0,
+        "evidence_quote": "Affected System Operator ... may discharge mutual debts and payment obligations ... through netting"
+      },
+      {
+        "source_id": "ent_epc_services",
+        "target_id": "ent_invoice",
+        "relationship_type": "Final Invoice Requirement",
+        "legal_significance": "A final invoice must be submitted within six months after completion of the EPC Services to settle any remaining amounts due.",
+        "confidence": 1.0,
+        "evidence_quote": "Within six months after completion of the EPC Services ... shall provide a final invoice"
+      }
+    ],
+    "extractor_notes": "The clause establishes reciprocal invoicing obligations between the Transmission Developer and Affected System Operator, including monthly invoicing, detailed invoice content requirements, mutual debt netting to simplify payments, and a final invoice submission deadline tied to completion of EPC Services."
+  },
+  {
+    "source_clause_id": "clause:NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1:16:16_12:Disclosure_to_FERC_its_Staff_or_a_State:bb8521",
+    "source_clause_title": "16.12 Disclosure to FERC, its Staff, or a State.",
+    "contract_id": "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+    "source_page_start": 64,
+    "source_page_end": 64,
+    "clause_type_hint": "confidentiality",
+    "entities": [
+      {
+        "id": "ent_FERC",
+        "entity_type": "Regulatory Agency",
+        "name": "FERC",
+        "legal_role": "FERC is the federal regulatory authority empowered to request confidential information from the Parties during investigations or otherwise under 18 C.F.R. regulations.",
+        "confidence": 1.0,
+        "evidence_quote": "if FERC or its staff, during the course of an investigation or otherwise, requests information from one of the Parties",
+        "properties": {}
+      },
+      {
+        "id": "ent_FERC_staff",
+        "entity_type": "Regulatory Agency Staff",
+        "name": "FERC staff",
+        "legal_role": "FERC staff act as agents of FERC authorized to request and receive confidential information from the Parties under regulatory authority.",
+        "confidence": 1.0,
+        "evidence_quote": "if FERC or its staff, during the course of an investigation or otherwise, requests information",
+        "properties": {}
+      },
+      {
+        "id": "ent_Party",
+        "entity_type": "Contracting Party",
+        "name": "Party",
+        "legal_role": "A Party is a signatory to the Agreement obligated to maintain confidentiality but required to provide requested information to FERC or its staff under regulatory mandate.",
+        "confidence": 1.0,
+        "evidence_quote": "if FERC or its staff ... requests information from one of the Parties ... the Party shall provide the requested information",
+        "properties": {}
+      },
+      {
+        "id": "ent_Confidential_Information",
+        "entity_type": "Confidential Information",
+        "name": "Confidential Information",
+        "legal_role": "Information required to be maintained in confidence under the Agreement or ISO OATT, subject to disclosure only under specified regulatory conditions.",
+        "confidence": 1.0,
+        "evidence_quote": "information from one of the Parties that is otherwise required to be maintained in confidence pursuant to this Agreement or the ISO OATT",
+        "properties": {}
+      },
+      {
+        "id": "ent_ISO_OATT",
+        "entity_type": "Regulatory Tariff Document",
+        "name": "ISO OATT",
+        "legal_role": "The ISO Open Access Transmission Tariff (OATT) is a regulatory document that imposes confidentiality obligations on the Parties.",
+        "confidence": 1.0,
+        "evidence_quote": "information ... required to be maintained in confidence pursuant to this Agreement or the ISO OATT",
+        "properties": {}
+      },
+      {
+        "id": "ent_18_CFR_1b20",
+        "entity_type": "Federal Regulation",
+        "name": "18 C.F.R. section 1b.20",
+        "legal_role": "Federal regulation authorizing FERC or its staff to request confidential information from the Parties during investigations or otherwise.",
+        "confidence": 1.0,
+        "evidence_quote": "pursuant to 18 C.F.R. section 1b.20, if FERC or its staff ... requests information",
+        "properties": {}
+      },
+      {
+        "id": "ent_18_CFR_388112",
+        "entity_type": "Federal Regulation",
+        "name": "18 C.F.R. section 388.112",
+        "legal_role": "Federal regulation requiring the Party providing information to request confidential and non-public treatment of such information by FERC and its staff.",
+        "confidence": 1.0,
+        "evidence_quote": "consistent with 18 C.F.R. section 388.112, request that the information be treated as confidential and non-public",
+        "properties": {}
+      },
+      {
+        "id": "ent_Other_Parties",
+        "entity_type": "Contracting Parties",
+        "name": "Other Parties to this Agreement",
+        "legal_role": "Parties to the Agreement other than the disclosing Party, who are prohibited from being notified prior to release of Confidential Information to FERC or its staff.",
+        "confidence": 1.0,
+        "evidence_quote": "Parties are prohibited from notifying the other Parties to this Agreement prior to the release of the Confidential Information",
+        "properties": {}
+      },
+      {
+        "id": "ent_Confidentiality_Article",
+        "entity_type": "Contractual Article",
+        "name": "Article 16",
+        "legal_role": "The confidentiality provisions of the Agreement which are subject to exception under this clause for disclosures to FERC or its staff.",
+        "confidence": 1.0,
+        "evidence_quote": "Notwithstanding anything in this Article 16 to the contrary",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_Party",
+        "target_id": "ent_FERC",
+        "relationship_type": "Information Disclosure Obligation",
+        "legal_significance": "The Party is legally obligated to provide requested confidential information to FERC or its staff within the time specified in the request, overriding confidentiality provisions.",
+        "confidence": 1.0,
+        "evidence_quote": "the Party shall provide the requested information to FERC or its staff, within the time provided for in the request for information"
+      },
+      {
+        "source_id": "ent_Party",
+        "target_id": "ent_Confidential_Information",
+        "relationship_type": "Confidentiality Obligation",
+        "legal_significance": "The Party must maintain the confidentiality of certain information pursuant to the Agreement and ISO OATT, except as required by regulatory disclosure.",
+        "confidence": 1.0,
+        "evidence_quote": "information from one of the Parties that is otherwise required to be maintained in confidence pursuant to this Agreement or the ISO OATT"
+      },
+      {
+        "source_id": "ent_Party",
+        "target_id": "ent_18_CFR_388112",
+        "relationship_type": "Regulatory Compliance Duty",
+        "legal_significance": "The Party must comply with 18 C.F.R. section 388.112 by requesting confidential and non-public treatment of information provided to FERC or its staff.",
+        "confidence": 1.0,
+        "evidence_quote": "In providing the information to FERC or its staff, the Party must, consistent with 18 C.F.R. section 388.112, request that the information be treated as confidential and non-public"
+      },
+      {
+        "source_id": "ent_Party",
+        "target_id": "ent_Other_Parties",
+        "relationship_type": "Notification Restriction",
+        "legal_significance": "The Party is prohibited from notifying the other Parties prior to release of Confidential Information to FERC or its staff, preserving regulatory confidentiality.",
+        "confidence": 1.0,
+        "evidence_quote": "Parties are prohibited from notifying the other Parties to this Agreement prior to the release of the Confidential Information"
+      },
+      {
+        "source_id": "ent_FERC_staff",
+        "target_id": "ent_Confidential_Information",
+        "relationship_type": "Confidential Information Request",
+        "legal_significance": "FERC staff have the authority to request Confidential Information from the Parties during investigations or otherwise.",
+        "confidence": 1.0,
+        "evidence_quote": "if FERC or its staff ... requests information from one of the Parties"
+      },
+      {
+        "source_id": "ent_FERC",
+        "target_id": "ent_Confidential_Information",
+        "relationship_type": "Confidential Information Request",
+        "legal_significance": "FERC has the authority to request Confidential Information from the Parties during investigations or otherwise.",
+        "confidence": 1.0,
+        "evidence_quote": "if FERC or its staff ... requests information from one of the Parties"
+      },
+      {
+        "source_id": "ent_Party",
+        "target_id": "ent_Other_Parties",
+        "relationship_type": "Notification Obligation Upon FERC Request to Release",
+        "legal_significance": "The Party must notify the other Parties when it is notified by FERC or its staff of a request to release Confidential Information, allowing the Parties to respond before public disclosure.",
+        "confidence": 1.0,
+        "evidence_quote": "The Party shall notify the other Parties to the Agreement when it is notified by FERC or its staff that a request to release Confidential Information has been received by FERC"
+      },
+      {
+        "source_id": "ent_Confidentiality_Article",
+        "target_id": "ent_Party",
+        "relationship_type": "Exception to Confidentiality Obligation",
+        "legal_significance": "This clause overrides the confidentiality obligations in Article 16 to permit disclosure to FERC or its staff as required by federal regulation.",
+        "confidence": 1.0,
+        "evidence_quote": "Notwithstanding anything in this Article 16 to the contrary, and pursuant to 18 C.F.R. section 1b.20, if FERC or its staff ... requests information ... the Party shall provide the requested information"
+      }
+    ],
+    "extractor_notes": "The clause explicitly creates an exception to the confidentiality obligations in Article 16 for disclosures to FERC or its staff under federal regulations 18 C.F.R. sections 1b.20 and 388.112, including procedural requirements for confidentiality requests and notification restrictions among Parties."
+  },
+  {
+    "source_clause_id": "clause:NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1:2:2_5:Survival:dee655",
+    "source_clause_title": "2.5 Survival.",
+    "contract_id": "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+    "source_page_start": 24,
+    "source_page_end": 24,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_agreement",
+        "entity_type": "Contractual Agreement",
+        "name": "This Agreement",
+        "legal_role": "The primary binding contract whose terms govern the parties' rights and obligations, including survival provisions after termination.",
+        "confidence": 1.0,
+        "evidence_quote": "This Agreement shall continue in effect after termination to the extent necessary to provide for final billings and payments and for costs incurred hereunder",
+        "properties": {}
+      },
+      {
+        "id": "ent_final_billings_and_payments",
+        "entity_type": "Post-Termination Financial Obligation",
+        "name": "final billings and payments",
+        "legal_role": "Obligations related to settling outstanding financial amounts after the Agreement's termination.",
+        "confidence": 1.0,
+        "evidence_quote": "to provide for final billings and payments",
+        "properties": {}
+      },
+      {
+        "id": "ent_costs_incurred",
+        "entity_type": "Post-Termination Cost Liability",
+        "name": "costs incurred hereunder",
+        "legal_role": "Costs that remain payable even after termination, ensuring financial responsibilities are met for actions taken during the Agreement term.",
+        "confidence": 1.0,
+        "evidence_quote": "and for costs incurred hereunder",
+        "properties": {}
+      },
+      {
+        "id": "ent_security_requirements",
+        "entity_type": "Security Obligation",
+        "name": "Security requirements in Article 6.3",
+        "legal_role": "Specific security-related obligations that the Transmission Developer must satisfy, surviving termination to ensure compliance.",
+        "confidence": 1.0,
+        "evidence_quote": "including billings and payments pursuant to this Agreement and Transmission Developer’s satisfaction of the Security requirements in Article 6.3",
+        "properties": {}
+      },
+      {
+        "id": "ent_transmission_developer",
+        "entity_type": "Contractual Party",
+        "name": "Transmission Developer",
+        "legal_role": "A party to the Agreement responsible for satisfying security requirements and subject to post-termination obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "Transmission Developer’s satisfaction of the Security requirements in Article 6.3",
+        "properties": {}
+      },
+      {
+        "id": "ent_liability_and_indemnification_obligations",
+        "entity_type": "Surviving Legal Obligations",
+        "name": "liability and indemnification obligations",
+        "legal_role": "Obligations related to responsibility and compensation for acts or events during the Agreement term that survive termination for enforcement.",
+        "confidence": 1.0,
+        "evidence_quote": "to permit the determination and enforcement of liability and indemnification obligations arising from acts or events that occurred while this Agreement was in effect",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_agreement",
+        "target_id": "ent_final_billings_and_payments",
+        "relationship_type": "Survival of Financial Obligations",
+        "legal_significance": "Ensures that financial settlements continue to be enforceable after the Agreement terminates, protecting parties' monetary interests.",
+        "confidence": 1.0,
+        "evidence_quote": "This Agreement shall continue in effect after termination to the extent necessary to provide for final billings and payments"
+      },
+      {
+        "source_id": "ent_agreement",
+        "target_id": "ent_costs_incurred",
+        "relationship_type": "Survival of Cost Liabilities",
+        "legal_significance": "Maintains the obligation to pay costs incurred under the Agreement even after its termination, ensuring accountability for expenses.",
+        "confidence": 1.0,
+        "evidence_quote": "and for costs incurred hereunder"
+      },
+      {
+        "source_id": "ent_agreement",
+        "target_id": "ent_security_requirements",
+        "relationship_type": "Survival of Security Obligations",
+        "legal_significance": "Preserves the Transmission Developer’s duty to satisfy security requirements post-termination, securing contractual protections.",
+        "confidence": 1.0,
+        "evidence_quote": "including billings and payments pursuant to this Agreement and Transmission Developer’s satisfaction of the Security requirements in Article 6.3"
+      },
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_security_requirements",
+        "relationship_type": "Obligation to Satisfy Security Requirements",
+        "legal_significance": "Defines the Transmission Developer’s specific responsibility to meet security conditions, which survive termination for enforcement.",
+        "confidence": 1.0,
+        "evidence_quote": "Transmission Developer’s satisfaction of the Security requirements in Article 6.3"
+      },
+      {
+        "source_id": "ent_agreement",
+        "target_id": "ent_liability_and_indemnification_obligations",
+        "relationship_type": "Survival of Liability and Indemnification",
+        "legal_significance": "Allows for the determination and enforcement of liability and indemnification for acts during the Agreement term, even after termination, ensuring legal accountability.",
+        "confidence": 1.0,
+        "evidence_quote": "to permit the determination and enforcement of liability and indemnification obligations arising from acts or events that occurred while this Agreement was in effect"
+      }
+    ],
+    "extractor_notes": "The clause explicitly defines survival of financial, cost, security, liability, and indemnification obligations post-termination, emphasizing enforceability of these duties beyond the Agreement's end."
+  },
+  {
+    "source_clause_id": "clause:NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1:11:11_2:Right_to_Terminate:4c67f0",
+    "source_clause_title": "11.2 Right to Terminate.",
+    "contract_id": "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+    "source_page_start": 50,
+    "source_page_end": 50,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_breach",
+        "entity_type": "Breach of Contract",
+        "name": "Breach",
+        "legal_role": "A Breach represents a failure to perform an obligation under the Agreement, triggering rights and remedies for the non-breaching Parties.",
+        "confidence": 1.0,
+        "evidence_quote": "If a Breach is not cured as provided in this Article 11, or if a Breach is not capable of being cured within the period provided for herein",
+        "properties": {}
+      },
+      {
+        "id": "ent_non_breaching_parties",
+        "entity_type": "Non-Breaching Parties",
+        "name": "non-Breaching Parties acting together",
+        "legal_role": "The Non-Breaching Parties are the Parties not responsible for the Breach, who have the right to declare Default and terminate the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "the non-Breaching Parties acting together shall thereafter have the right to declare a Default and terminate this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_defaulting_party",
+        "entity_type": "Defaulting Party",
+        "name": "defaulting Party",
+        "legal_role": "The Defaulting Party is the Party responsible for the Breach and liable for damages and obligations upon termination.",
+        "confidence": 1.0,
+        "evidence_quote": "to recover from the defaulting Party all amounts due hereunder, plus all other damages and remedies",
+        "properties": {}
+      },
+      {
+        "id": "ent_default",
+        "entity_type": "Default",
+        "name": "Default",
+        "legal_role": "Default is the formal status declared by the Non-Breaching Parties upon uncured Breach, enabling termination and remedies.",
+        "confidence": 1.0,
+        "evidence_quote": "the non-Breaching Parties acting together shall thereafter have the right to declare a Default and terminate this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_termination_right",
+        "entity_type": "Right to Terminate",
+        "name": "Right to Terminate this Agreement",
+        "legal_role": "The Right to Terminate allows the Non-Breaching Parties to end the Agreement by written notice upon Default.",
+        "confidence": 1.0,
+        "evidence_quote": "shall thereafter have the right to declare a Default and terminate this Agreement by written notice at any time until cure occurs",
+        "properties": {}
+      },
+      {
+        "id": "ent_obligation_relief",
+        "entity_type": "Relief from Further Obligations",
+        "name": "relief of any further obligation hereunder",
+        "legal_role": "Upon termination, the Non-Breaching Parties are released from any further contractual obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "and be relieved of any further obligation hereunder",
+        "properties": {}
+      },
+      {
+        "id": "ent_damages_and_remedies",
+        "entity_type": "Damages and Remedies",
+        "name": "damages and remedies to which they are entitled at law or in equity",
+        "legal_role": "The Non-Breaching Parties retain the right to recover damages and pursue remedies despite termination.",
+        "confidence": 1.0,
+        "evidence_quote": "to recover from the defaulting Party all amounts due hereunder, plus all other damages and remedies to which they are entitled at law or in equity",
+        "properties": {}
+      },
+      {
+        "id": "ent_article_11",
+        "entity_type": "Article 11",
+        "name": "Article 11",
+        "legal_role": "Article 11 governs the cure period and procedures related to Breach and Default under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "If a Breach is not cured as provided in this Article 11",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_breach",
+        "target_id": "ent_non_breaching_parties",
+        "relationship_type": "Triggers Right to Declare Default and Terminate",
+        "legal_significance": "An uncured Breach empowers the Non-Breaching Parties to declare Default and exercise termination rights, affecting contractual continuity.",
+        "confidence": 1.0,
+        "evidence_quote": "If a Breach is not cured as provided in this Article 11... the non-Breaching Parties acting together shall thereafter have the right to declare a Default and terminate this Agreement"
+      },
+      {
+        "source_id": "ent_non_breaching_parties",
+        "target_id": "ent_default",
+        "relationship_type": "Right to Declare Default",
+        "legal_significance": "The Non-Breaching Parties collectively hold the legal authority to declare Default, which is a prerequisite to termination.",
+        "confidence": 1.0,
+        "evidence_quote": "the non-Breaching Parties acting together shall thereafter have the right to declare a Default"
+      },
+      {
+        "source_id": "ent_default",
+        "target_id": "ent_termination_right",
+        "relationship_type": "Enables Termination Right",
+        "legal_significance": "Declaration of Default enables the Non-Breaching Parties to terminate the Agreement by written notice.",
+        "confidence": 1.0,
+        "evidence_quote": "shall thereafter have the right to declare a Default and terminate this Agreement by written notice"
+      },
+      {
+        "source_id": "ent_termination_right",
+        "target_id": "ent_obligation_relief",
+        "relationship_type": "Termination Relieves Further Obligations",
+        "legal_significance": "Termination of the Agreement relieves the Non-Breaching Parties from any further contractual duties.",
+        "confidence": 1.0,
+        "evidence_quote": "terminate this Agreement by written notice at any time until cure occurs, and be relieved of any further obligation hereunder"
+      },
+      {
+        "source_id": "ent_termination_right",
+        "target_id": "ent_damages_and_remedies",
+        "relationship_type": "Termination Does Not Waive Damages and Remedies",
+        "legal_significance": "Even if the Agreement is terminated, the Non-Breaching Parties retain rights to recover damages and pursue remedies against the Defaulting Party.",
+        "confidence": 1.0,
+        "evidence_quote": "whether or not those Parties terminate this Agreement, to recover from the defaulting Party all amounts due hereunder, plus all other damages and remedies"
+      },
+      {
+        "source_id": "ent_article_11",
+        "target_id": "ent_breach",
+        "relationship_type": "Governs Cure of Breach",
+        "legal_significance": "Article 11 sets forth the cure period and conditions under which a Breach may be remedied to avoid Default and termination.",
+        "confidence": 1.0,
+        "evidence_quote": "If a Breach is not cured as provided in this Article 11"
+      }
+    ],
+    "extractor_notes": "The clause explicitly defines the conditions under which a Breach leads to Default and termination, the collective right of Non-Breaching Parties to act, and the survival of remedies post-termination. The clause also references Article 11 as the governing provision for cure periods."
+  },
+  {
+    "source_clause_id": "clause:NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1:16:16_13:Required_Notices_Upon_Requests_or_Demands_for_Conf:7e1970",
+    "source_clause_title": "16.13  Required Notices Upon Requests or Demands for Confidential Information",
+    "contract_id": "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+    "source_page_start": 64,
+    "source_page_end": 66,
+    "clause_type_hint": "confidentiality",
+    "entities": [
+      {
+        "id": "ent_party",
+        "entity_type": "Contracting Party",
+        "name": "Party",
+        "legal_role": "A Party is a signatory to the Agreement who possesses Confidential Information and is subject to confidentiality obligations and disclosure restrictions.",
+        "confidence": 1.0,
+        "evidence_quote": "no Party shall disclose Confidential Information to any person not employed or retained by the Party possessing the Confidential Information",
+        "properties": {}
+      },
+      {
+        "id": "ent_confidential_information",
+        "entity_type": "Confidential Information",
+        "name": "Confidential Information",
+        "legal_role": "Confidential Information is the sensitive information protected under the Agreement from unauthorized disclosure.",
+        "confidence": 1.0,
+        "evidence_quote": "no Party shall disclose Confidential Information to any person not employed or retained by the Party possessing the Confidential Information",
+        "properties": {}
+      },
+      {
+        "id": "ent_disclosing_party",
+        "entity_type": "Disclosing Party",
+        "name": "Disclosing Party",
+        "legal_role": "The Disclosing Party is the Party who possesses and may disclose Confidential Information under specified conditions.",
+        "confidence": 1.0,
+        "evidence_quote": "reasonably deemed by the disclosing Party to be required to be disclosed",
+        "properties": {}
+      },
+      {
+        "id": "ent_other_party",
+        "entity_type": "Other Party",
+        "name": "Other Party",
+        "legal_role": "The Other Party is the counterparty to the Disclosing Party whose consent is required for certain disclosures of Confidential Information.",
+        "confidence": 1.0,
+        "evidence_quote": "otherwise permitted by consent of the other Party, such consent not to be unreasonably withheld",
+        "properties": {}
+      },
+      {
+        "id": "ent_third_party",
+        "entity_type": "Third Party",
+        "name": "Third Party",
+        "legal_role": "A Third Party is any person or entity outside the Parties who may request or demand Confidential Information.",
+        "confidence": 1.0,
+        "evidence_quote": "if any third party or Governmental Authority makes any request or demand for any of the information described in this subparagraph",
+        "properties": {}
+      },
+      {
+        "id": "ent_governmental_authority",
+        "entity_type": "Governmental Authority",
+        "name": "Governmental Authority",
+        "legal_role": "A Governmental Authority is a public regulatory or enforcement body that may require disclosure of Confidential Information by law or request.",
+        "confidence": 1.0,
+        "evidence_quote": "if any third party or Governmental Authority makes any request or demand for any of the information described in this subparagraph",
+        "properties": {}
+      },
+      {
+        "id": "ent_iso_oatt",
+        "entity_type": "ISO Open Access Transmission Tariff (ISO OATT)",
+        "name": "ISO OATT",
+        "legal_role": "The ISO OATT is a regulatory tariff under which certain disclosures of Confidential Information may be necessary to fulfill obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "necessary to fulfill its obligations under this Agreement, the ISO OATT or the NYISO Services Tariff",
+        "properties": {}
+      },
+      {
+        "id": "ent_nyiso_services_tariff",
+        "entity_type": "NYISO Services Tariff",
+        "name": "NYISO Services Tariff",
+        "legal_role": "The NYISO Services Tariff is a regulatory tariff under which certain disclosures of Confidential Information may be necessary to fulfill obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "necessary to fulfill its obligations under this Agreement, the ISO OATT or the NYISO Services Tariff",
+        "properties": {}
+      },
+      {
+        "id": "ent_agreement",
+        "entity_type": "Agreement",
+        "name": "Agreement",
+        "legal_role": "The Agreement is the contract governing the Parties’ rights and obligations, including confidentiality and disclosure terms.",
+        "confidence": 1.0,
+        "evidence_quote": "necessary to fulfill its obligations under this Agreement",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_party",
+        "target_id": "ent_confidential_information",
+        "relationship_type": "Possesses Confidential Information",
+        "legal_significance": "A Party possesses Confidential Information and is responsible for its protection and controlled disclosure.",
+        "confidence": 1.0,
+        "evidence_quote": "no Party shall disclose Confidential Information to any person not employed or retained by the Party possessing the Confidential Information"
+      },
+      {
+        "source_id": "ent_disclosing_party",
+        "target_id": "ent_other_party",
+        "relationship_type": "Requires Consent for Disclosure",
+        "legal_significance": "The Disclosing Party must obtain the Other Party’s consent, which cannot be unreasonably withheld, before disclosing Confidential Information outside permitted exceptions.",
+        "confidence": 1.0,
+        "evidence_quote": "otherwise permitted by consent of the other Party, such consent not to be unreasonably withheld"
+      },
+      {
+        "source_id": "ent_disclosing_party",
+        "target_id": "ent_other_party",
+        "relationship_type": "Must Notify Upon Third Party or Governmental Request",
+        "legal_significance": "The Disclosing Party must promptly notify the Other Party in writing if a third party or Governmental Authority requests Confidential Information, enabling the Other Party to protect confidentiality.",
+        "confidence": 1.0,
+        "evidence_quote": "the disclosing Party agrees to promptly notify the other Party in writing"
+      },
+      {
+        "source_id": "ent_other_party",
+        "target_id": "ent_confidential_information",
+        "relationship_type": "Cooperates to Protect Confidentiality",
+        "legal_significance": "The Other Party agrees to cooperate with the Disclosing Party to protect Confidential Information from public disclosure through confidentiality agreements, protective orders, or other reasonable measures.",
+        "confidence": 1.0,
+        "evidence_quote": "agrees to assert confidentiality and cooperate with the other Party in seeking to protect the Confidential Information from public disclosure by confidentiality agreement, protective order or other reasonable measures"
+      },
+      {
+        "source_id": "ent_disclosing_party",
+        "target_id": "ent_confidential_information",
+        "relationship_type": "Permitted Disclosure Exceptions",
+        "legal_significance": "The Disclosing Party may disclose Confidential Information without breaching confidentiality if disclosure is required by law, reasonably required for dispute resolution or litigation defense, permitted by consent, or necessary to fulfill obligations under the Agreement, ISO OATT, or NYISO Services Tariff.",
+        "confidence": 1.0,
+        "evidence_quote": "except to the extent disclosure is (i) required by law; (ii) reasonably deemed by the disclosing Party to be required to be disclosed in connection with a dispute between or among the Parties, or the defense of litigation or dispute; (iii) otherwise permitted by consent of the other Party, such consent not to be unreasonably withheld; or (iv) necessary to fulfill its obligations under this Agreement, the ISO OATT or the NYISO Services Tariff"
+      }
+    ],
+    "extractor_notes": "The clause explicitly defines the conditions under which Confidential Information may be disclosed, the notification obligations upon third party or governmental requests, and the cooperation required to protect confidentiality, without inferring any additional rights or obligations beyond those stated."
+  },
+  {
+    "source_clause_id": "clause:NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1:14ebfd:2_3_1_2_2:During_the_suspension_period_the_Transmission_Deve:f7003f",
+    "source_clause_title": "2.3.1.2.2   During the suspension period, the Transmission Developer and Affected",
+    "contract_id": "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+    "source_page_start": 20,
+    "source_page_end": 20,
+    "clause_type_hint": "liability",
+    "entities": [
+      {
+        "id": "ent_system_operator",
+        "entity_type": "Contractual Party - System Operator",
+        "name": "System Operator",
+        "legal_role": "The party obligated to suspend all work related to the construction and installation of the Affected System Upgrade Facilities during the suspension period.",
+        "confidence": 1.0,
+        "evidence_quote": "System Operator shall suspend all work associated with the construction and installation of the Affected System Upgrade Facilities",
+        "properties": {}
+      },
+      {
+        "id": "ent_transmission_developer",
+        "entity_type": "Contractual Party - Transmission Developer",
+        "name": "Transmission Developer",
+        "legal_role": "The party responsible for all reasonable and necessary costs and obligations arising from the suspension of work under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Transmission Developer shall be responsible for all reasonable and necessary costs and/or obligations in accordance with this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_affected_system_operator",
+        "entity_type": "Contractual Party - Affected System Operator",
+        "name": "Affected System Operator",
+        "legal_role": "The party whose safety and reliability criteria must be met during suspension and who incurs costs related to suspension and contract cancellations.",
+        "confidence": 1.0,
+        "evidence_quote": "the safety and reliability criteria of Affected System Operator and NYISO... including those which Affected System Operator (i) has incurred pursuant to this Agreement prior to the suspension and (ii) incurs in suspending such work",
+        "properties": {}
+      },
+      {
+        "id": "ent_affected_system_upgrade_facilities",
+        "entity_type": "Project Component - Affected System Upgrade Facilities",
+        "name": "Affected System Upgrade Facilities",
+        "legal_role": "The specific facilities whose construction and installation work is suspended by the System Operator during the suspension period.",
+        "confidence": 1.0,
+        "evidence_quote": "all work associated with the construction and installation of the Affected System Upgrade Facilities required for only that Transmission Developer",
+        "properties": {}
+      },
+      {
+        "id": "ent_new_york_state_transmission_system",
+        "entity_type": "Infrastructure - New York State Transmission System",
+        "name": "New York State Transmission System",
+        "legal_role": "The transmission system that must be left in a safe and reliable condition during suspension in accordance with Good Utility Practice and safety criteria.",
+        "confidence": 1.0,
+        "evidence_quote": "the New York State Transmission System shall be left in a safe and reliable condition in accordance with Good Utility Practice and the safety and reliability criteria of Affected System Operator and NYISO",
+        "properties": {}
+      },
+      {
+        "id": "ent_good_utility_practice",
+        "entity_type": "Performance Standard - Good Utility Practice",
+        "name": "Good Utility Practice",
+        "legal_role": "The standard governing the safety and reliability condition of the New York State Transmission System during suspension.",
+        "confidence": 1.0,
+        "evidence_quote": "in accordance with Good Utility Practice and the safety and reliability criteria of Affected System Operator and NYISO",
+        "properties": {}
+      },
+      {
+        "id": "ent_nyiso",
+        "entity_type": "Contractual Party - NYISO",
+        "name": "NYISO",
+        "legal_role": "An entity whose safety and reliability criteria must be met during suspension of work.",
+        "confidence": 1.0,
+        "evidence_quote": "the safety and reliability criteria of Affected System Operator and NYISO",
+        "properties": {}
+      },
+      {
+        "id": "ent_material_equipment_labor_contracts",
+        "entity_type": "Contractual Obligations - Material, Equipment and Labor Contracts",
+        "name": "Material, Equipment and Labor Contracts",
+        "legal_role": "Contracts that may be cancelled or suspended during the suspension period, subject to Transmission Developer’s authorization.",
+        "confidence": 1.0,
+        "evidence_quote": "any costs incurred in connection with the cancellation or suspension of material, equipment and labor contracts which Affected System Operator cannot reasonably avoid",
+        "properties": {}
+      },
+      {
+        "id": "ent_authorization_right",
+        "entity_type": "Contractual Right - Authorization Right",
+        "name": "Transmission Developer’s authorization",
+        "legal_role": "The right of the Transmission Developer to approve cancellation or suspension of material, equipment or labor contracts, which shall not be unreasonably withheld, conditioned or delayed.",
+        "confidence": 1.0,
+        "evidence_quote": "prior to canceling or suspending any such material, equipment or labor contract, Affected System Operator shall obtain Transmission Developer’s authorization to do so, which authorization shall not unreasonably be withheld, conditioned or delayed",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_system_operator",
+        "target_id": "ent_affected_system_upgrade_facilities",
+        "relationship_type": "Obligation to Suspend Work",
+        "legal_significance": "System Operator is contractually obligated to suspend all work related to the construction and installation of the Affected System Upgrade Facilities during the suspension period, ensuring compliance with safety and reliability standards.",
+        "confidence": 1.0,
+        "evidence_quote": "System Operator shall suspend all work associated with the construction and installation of the Affected System Upgrade Facilities"
+      },
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_affected_system_operator",
+        "relationship_type": "Cost and Obligation Responsibility",
+        "legal_significance": "Transmission Developer is responsible for all reasonable and necessary costs and obligations incurred by Affected System Operator both prior to and during suspension, including costs to ensure safety and integrity of the transmission system.",
+        "confidence": 1.0,
+        "evidence_quote": "Transmission Developer shall be responsible for all reasonable and necessary costs and/or obligations... including those which Affected System Operator (i) has incurred pursuant to this Agreement prior to the suspension and (ii) incurs in suspending such work"
+      },
+      {
+        "source_id": "ent_affected_system_operator",
+        "target_id": "ent_material_equipment_labor_contracts",
+        "relationship_type": "Contract Cancellation or Suspension",
+        "legal_significance": "Affected System Operator may incur costs related to cancellation or suspension of material, equipment and labor contracts that cannot reasonably be avoided during suspension.",
+        "confidence": 1.0,
+        "evidence_quote": "any costs incurred in connection with the cancellation or suspension of material, equipment and labor contracts which Affected System Operator cannot reasonably avoid"
+      },
+      {
+        "source_id": "ent_affected_system_operator",
+        "target_id": "ent_authorization_right",
+        "relationship_type": "Requirement to Obtain Authorization",
+        "legal_significance": "Affected System Operator must obtain Transmission Developer’s authorization before canceling or suspending any material, equipment or labor contract, ensuring Transmission Developer’s control over such decisions.",
+        "confidence": 1.0,
+        "evidence_quote": "prior to canceling or suspending any such material, equipment or labor contract, Affected System Operator shall obtain Transmission Developer’s authorization to do so"
+      },
+      {
+        "source_id": "ent_authorization_right",
+        "target_id": "ent_transmission_developer",
+        "relationship_type": "Authorization Right Holder",
+        "legal_significance": "Transmission Developer holds the right to authorize or withhold consent for cancellation or suspension of contracts, with the limitation that such authorization shall not be unreasonably withheld, conditioned or delayed.",
+        "confidence": 1.0,
+        "evidence_quote": "which authorization shall not unreasonably be withheld, conditioned or delayed"
+      },
+      {
+        "source_id": "ent_new_york_state_transmission_system",
+        "target_id": "ent_good_utility_practice",
+        "relationship_type": "Condition Compliance Standard",
+        "legal_significance": "The New York State Transmission System must be maintained in a safe and reliable condition in accordance with Good Utility Practice during the suspension period.",
+        "confidence": 1.0,
+        "evidence_quote": "the New York State Transmission System shall be left in a safe and reliable condition in accordance with Good Utility Practice"
+      },
+      {
+        "source_id": "ent_new_york_state_transmission_system",
+        "target_id": "ent_affected_system_operator",
+        "relationship_type": "Safety and Reliability Criteria Applicability",
+        "legal_significance": "The safety and reliability criteria of the Affected System Operator apply to the New York State Transmission System during suspension, ensuring operational standards are met.",
+        "confidence": 1.0,
+        "evidence_quote": "the safety and reliability criteria of Affected System Operator and NYISO"
+      },
+      {
+        "source_id": "ent_new_york_state_transmission_system",
+        "target_id": "ent_nyiso",
+        "relationship_type": "Safety and Reliability Criteria Applicability",
+        "legal_significance": "The safety and reliability criteria of NYISO apply to the New York State Transmission System during suspension, ensuring operational standards are met.",
+        "confidence": 1.0,
+        "evidence_quote": "the safety and reliability criteria of Affected System Operator and NYISO"
+      }
+    ],
+    "extractor_notes": "The clause explicitly defines the suspension obligations, cost responsibilities, and authorization rights related to suspension of work on the Affected System Upgrade Facilities, emphasizing safety and reliability standards and the procedural requirement for contract cancellations."
+  },
+  {
+    "source_clause_id": "clause:NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1:3:3_5:Information_Exchange:caebb5",
+    "source_clause_title": "3.5 Information Exchange.",
+    "contract_id": "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+    "source_page_start": 26,
+    "source_page_end": 28,
+    "clause_type_hint": "termination",
+    "entities": [
+      {
+        "id": "ent_transmission_developer",
+        "entity_type": "Transmission Developer",
+        "name": "Transmission Developer",
+        "legal_role": "The party responsible for designing and implementing the Affected System Upgrade Facilities and for exchanging information with the Affected System Operator and NYISO.",
+        "confidence": 1.0,
+        "evidence_quote": "the Transmission Developer and Affected System Operator shall exchange information",
+        "properties": {}
+      },
+      {
+        "id": "ent_affected_system_operator",
+        "entity_type": "Affected System Operator",
+        "name": "Affected System Operator",
+        "legal_role": "The party responsible for operating the affected system and ensuring compatibility and safety of the Affected System Upgrade Facilities with the New York State Transmission System.",
+        "confidence": 1.0,
+        "evidence_quote": "the Transmission Developer and Affected System Operator shall exchange information",
+        "properties": {}
+      },
+      {
+        "id": "ent_nyiso",
+        "entity_type": "NYISO",
+        "name": "NYISO",
+        "legal_role": "The New York Independent System Operator, a regulatory or coordinating entity receiving information and reviewing designs but not providing warranties.",
+        "confidence": 1.0,
+        "evidence_quote": "and provide NYISO the same information",
+        "properties": {}
+      },
+      {
+        "id": "ent_affected_system_upgrade_facilities",
+        "entity_type": "Affected System Upgrade Facilities",
+        "name": "Affected System Upgrade Facilities",
+        "legal_role": "The physical or technical upgrades to the affected system whose design and compatibility are subject to review and modification.",
+        "confidence": 1.0,
+        "evidence_quote": "regarding the design of the Affected System Upgrade Facilities and compatibility of the Affected System Upgrade Facilities",
+        "properties": {}
+      },
+      {
+        "id": "ent_interconnection_agreements",
+        "entity_type": "Interconnection Agreements",
+        "name": "Interconnection Agreements",
+        "legal_role": "Agreements governing the interconnection of systems, whose termination must be communicated by the Transmission Developer to the Affected System Operator.",
+        "confidence": 1.0,
+        "evidence_quote": "termination of one or both of the Interconnection Agreements",
+        "properties": {}
+      },
+      {
+        "id": "ent_development_agreement",
+        "entity_type": "Development Agreement",
+        "name": "Development Agreement",
+        "legal_role": "An agreement related to the development of the system upgrades, whose termination must be communicated by the Transmission Developer to the Affected System Operator.",
+        "confidence": 1.0,
+        "evidence_quote": "termination of one or both of the Interconnection Agreements or the Development Agreement",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_affected_system_operator",
+        "relationship_type": "Information Exchange Obligation",
+        "legal_significance": "The Transmission Developer and Affected System Operator are contractually obligated to exchange information regarding the design and compatibility of the Affected System Upgrade Facilities, ensuring coordination and compliance.",
+        "confidence": 1.0,
+        "evidence_quote": "the Transmission Developer and Affected System Operator shall exchange information"
+      },
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_nyiso",
+        "relationship_type": "Information Provision Obligation",
+        "legal_significance": "The Transmission Developer and Affected System Operator must provide NYISO with the same information exchanged between them, ensuring NYISO is informed for oversight purposes.",
+        "confidence": 1.0,
+        "evidence_quote": "and provide NYISO the same information"
+      },
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_affected_system_upgrade_facilities",
+        "relationship_type": "Design Responsibility and Modification Obligation",
+        "legal_significance": "The Transmission Developer must design the Affected System Upgrade Facilities and work diligently and in good faith to make necessary design changes as required by the Affected System Operator or NYISO.",
+        "confidence": 1.0,
+        "evidence_quote": "shall work diligently and in good faith to make any necessary design changes required by Affected System Operator or NYISO"
+      },
+      {
+        "source_id": "ent_affected_system_operator",
+        "target_id": "ent_affected_system_upgrade_facilities",
+        "relationship_type": "Compatibility and Safety Requirement",
+        "legal_significance": "The Affected System Operator requires that the Affected System Upgrade Facilities comply with its technical specifications, operational control, and safety requirements.",
+        "confidence": 1.0,
+        "evidence_quote": "to ensure that the Affected System Upgrade Facilities are compatible with the technical specifications, operational control, and safety requirements of the Affected System Operator"
+      },
+      {
+        "source_id": "ent_nyiso",
+        "target_id": "ent_affected_system_upgrade_facilities",
+        "relationship_type": "Design Review Without Warranty",
+        "legal_significance": "NYISO reviews the design of the Affected System Upgrade Facilities but explicitly does not confirm, endorse, or warrant the design, fitness, safety, durability, or reliability, limiting its liability.",
+        "confidence": 1.0,
+        "evidence_quote": "Any review by the NYISO of the design of the Affected System Upgrade Facilities shall not be construed as confirming, endorsing, or providing a warranty"
+      },
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_interconnection_agreements",
+        "relationship_type": "Termination Notice Obligation",
+        "legal_significance": "The Transmission Developer must inform the Affected System Operator within ten days of termination of one or both Interconnection Agreements, ensuring timely notice of contract status changes.",
+        "confidence": 1.0,
+        "evidence_quote": "The Transmission Developer shall inform the Affected System Operator of the termination of one or both of the Interconnection Agreements ... within ten (10) days"
+      },
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_development_agreement",
+        "relationship_type": "Termination Notice Obligation",
+        "legal_significance": "The Transmission Developer must inform the Affected System Operator within ten days of termination of the Development Agreement, ensuring timely notice of contract status changes.",
+        "confidence": 1.0,
+        "evidence_quote": "The Transmission Developer shall inform the Affected System Operator of the termination of ... the Development Agreement within ten (10) days"
+      }
+    ],
+    "extractor_notes": "The clause establishes mutual information exchange and design modification obligations among the Transmission Developer, Affected System Operator, and NYISO, with explicit disclaimers limiting NYISO's warranty liability and specific notice requirements for termination of key agreements."
+  },
+  {
+    "source_clause_id": "clause:NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1:ef2509:3_11_5:Taxes_Other_Than_Income_Taxes:c470f8",
+    "source_clause_title": "3.11.5 Taxes Other Than Income Taxes.",
+    "contract_id": "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+    "source_page_start": 36,
+    "source_page_end": 36,
+    "clause_type_hint": "payment",
+    "entities": [
+      {
+        "id": "ent_transmission_developer",
+        "entity_type": "Reimbursing Party",
+        "name": "Transmission Developer",
+        "legal_role": "The party responsible for requesting appeals and reimbursing the Affected System Operator for costs related to taxes other than income taxes under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Upon the timely request by Transmission Developer, and at Transmission Developer’s sole expense, Affected System Operator shall appeal, protest, seek abatement of, or otherwise contest any tax (other than federal or state income tax) asserted or assessed against Affected System Operator for which Transmission Developer may be required to reimburse Affected System Operator under the terms of this Agreement.",
+        "properties": {}
+      },
+      {
+        "id": "ent_affected_system_operator",
+        "entity_type": "Tax-Payee and Contesting Party",
+        "name": "Affected System Operator",
+        "legal_role": "The party against whom taxes other than income taxes are asserted or assessed and who is obligated to appeal or contest such taxes upon request by Transmission Developer.",
+        "confidence": 1.0,
+        "evidence_quote": "Affected System Operator shall appeal, protest, seek abatement of, or otherwise contest any tax (other than federal or state income tax) asserted or assessed against Affected System Operator...",
+        "properties": {}
+      },
+      {
+        "id": "ent_taxes_other_than_income_taxes",
+        "entity_type": "Tax Obligation Subject to Contest",
+        "name": "Taxes Other Than Income Taxes",
+        "legal_role": "Taxes asserted or assessed against the Affected System Operator excluding federal or state income taxes, which may be contested and reimbursed under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "any tax (other than federal or state income tax) asserted or assessed against Affected System Operator",
+        "properties": {}
+      },
+      {
+        "id": "ent_documented_reasonable_costs",
+        "entity_type": "Reimbursable Costs",
+        "name": "Documented Reasonable Costs of Prosecuting Appeal",
+        "legal_role": "Costs incurred by the Affected System Operator in contesting taxes, which Transmission Developer must pay periodically upon invoicing.",
+        "confidence": 1.0,
+        "evidence_quote": "Transmission Developer shall pay to Affected System Operator on a periodic basis, as invoiced by Affected System Operator, Affected System Operator’s documented reasonable costs of prosecuting such appeal, protest, abatement, or other contest.",
+        "properties": {}
+      },
+      {
+        "id": "ent_final_non_appealable_order",
+        "entity_type": "Final Tax Assessment Order",
+        "name": "Final, Non-Appealable Order",
+        "legal_role": "A conclusive determination by a court or agency of competent jurisdiction that triggers the obligation of Transmission Developer to pay the assessed taxes.",
+        "confidence": 1.0,
+        "evidence_quote": "no amount shall be payable by Transmission Developer to Affected System Operator for such taxes until they are assessed by a final, non-appealable order by any court or agency of competent jurisdiction.",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_affected_system_operator",
+        "relationship_type": "Reimbursement Obligation",
+        "legal_significance": "Transmission Developer is obligated to reimburse Affected System Operator for costs incurred in contesting taxes, establishing a financial responsibility between the parties.",
+        "confidence": 1.0,
+        "evidence_quote": "Transmission Developer shall pay to Affected System Operator on a periodic basis, as invoiced by Affected System Operator, Affected System Operator’s documented reasonable costs of prosecuting such appeal, protest, abatement, or other contest."
+      },
+      {
+        "source_id": "ent_affected_system_operator",
+        "target_id": "ent_taxes_other_than_income_taxes",
+        "relationship_type": "Tax Liability and Contesting Duty",
+        "legal_significance": "Affected System Operator is the party against whom the taxes are assessed and who must contest them upon Transmission Developer’s request.",
+        "confidence": 1.0,
+        "evidence_quote": "Affected System Operator shall appeal, protest, seek abatement of, or otherwise contest any tax (other than federal or state income tax) asserted or assessed against Affected System Operator"
+      },
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_taxes_other_than_income_taxes",
+        "relationship_type": "Tax Payment Responsibility",
+        "legal_significance": "Transmission Developer is ultimately responsible for paying the taxes, interest, and penalties after final assessment, defining the financial liability for the tax obligation.",
+        "confidence": 1.0,
+        "evidence_quote": "In the event that a tax payment is withheld and ultimately due and payable after appeal, Transmission Developer will be responsible for all taxes, interest and penalties"
+      },
+      {
+        "source_id": "ent_final_non_appealable_order",
+        "target_id": "ent_transmission_developer",
+        "relationship_type": "Payment Trigger",
+        "legal_significance": "The final, non-appealable order triggers Transmission Developer’s obligation to pay the assessed taxes, ensuring payment is only due after conclusive determination.",
+        "confidence": 1.0,
+        "evidence_quote": "no amount shall be payable by Transmission Developer to Affected System Operator for such taxes until they are assessed by a final, non-appealable order"
+      },
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_affected_system_operator",
+        "relationship_type": "Good Faith Cooperation",
+        "legal_significance": "Both parties are required to cooperate in good faith during the contest of taxes, which facilitates effective dispute resolution.",
+        "confidence": 1.0,
+        "evidence_quote": "Transmission Developer and Affected System Operator shall cooperate in good faith with respect to any such contest."
+      }
+    ],
+    "extractor_notes": "The clause explicitly excludes federal and state income taxes from the scope of contest and reimbursement. It establishes a conditional payment obligation triggered only by a final, non-appealable order, and allocates responsibility for penalties caused by delay to the Affected System Operator."
+  },
+  {
+    "source_clause_id": "clause:NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1:026ebf:22_1_4:Consent_and_Approval:3a92d3",
+    "source_clause_title": "22.1.4 Consent and Approval.",
+    "contract_id": "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+    "source_page_start": 74,
+    "source_page_end": 74,
+    "clause_type_hint": "notice",
+    "entities": [
+      {
+        "id": "ent_party",
+        "entity_type": "Contracting Party",
+        "name": "Such Party",
+        "legal_role": "A Contracting Party obligated to seek or obtain necessary governmental consents and approvals to validly execute, deliver, and perform the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Such Party has sought or obtained, or, in accordance with this Agreement will seek or obtain, each consent, approval, authorization, order, or acceptance by any Governmental Authority in connection with the execution, delivery and performance of this Agreement",
+        "properties": {}
+      },
+      {
+        "id": "ent_governmental_authority",
+        "entity_type": "Governmental Authority",
+        "name": "any Governmental Authority",
+        "legal_role": "A regulatory or administrative body whose consents, approvals, authorizations, orders, or acceptances are required for the Agreement's execution, delivery, and performance.",
+        "confidence": 1.0,
+        "evidence_quote": "each consent, approval, authorization, order, or acceptance by any Governmental Authority",
+        "properties": {}
+      },
+      {
+        "id": "ent_applicable_laws",
+        "entity_type": "Applicable Laws and Regulations",
+        "name": "Applicable Laws and Regulations",
+        "legal_role": "The body of laws and regulations that mandate notice requirements to Governmental Authorities for actions under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "notice of any actions under this Agreement that are required by Applicable Laws and Regulations",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_party",
+        "target_id": "ent_governmental_authority",
+        "relationship_type": "Obligation to Obtain Governmental Consent and Approval",
+        "legal_significance": "This relationship establishes the Party's legal duty to secure all necessary governmental consents, approvals, authorizations, orders, or acceptances to lawfully execute, deliver, and perform the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "Such Party has sought or obtained, or, in accordance with this Agreement will seek or obtain, each consent, approval, authorization, order, or acceptance by any Governmental Authority in connection with the execution, delivery and performance of this Agreement"
+      },
+      {
+        "source_id": "ent_party",
+        "target_id": "ent_governmental_authority",
+        "relationship_type": "Obligation to Provide Notice to Governmental Authority",
+        "legal_significance": "This relationship imposes a duty on the Party to notify Governmental Authorities of any actions under the Agreement as required by applicable laws, ensuring regulatory compliance.",
+        "confidence": 1.0,
+        "evidence_quote": "it will provide to any Governmental Authority notice of any actions under this Agreement that are required by Applicable Laws and Regulations"
+      },
+      {
+        "source_id": "ent_party",
+        "target_id": "ent_applicable_laws",
+        "relationship_type": "Compliance Obligation",
+        "legal_significance": "This relationship binds the Party to comply with Applicable Laws and Regulations by providing required notices to Governmental Authorities regarding actions under the Agreement.",
+        "confidence": 1.0,
+        "evidence_quote": "notice of any actions under this Agreement that are required by Applicable Laws and Regulations"
+      }
+    ],
+    "extractor_notes": "The clause imposes dual obligations on the Party: to obtain all necessary governmental consents and approvals, and to provide notices to Governmental Authorities as mandated by applicable laws, ensuring regulatory compliance throughout the Agreement's lifecycle."
+  },
+  {
+    "source_clause_id": "clause:NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1:968c97:2_4_2:With_respect_to_any_portion_of_the_Affected_System:969d71",
+    "source_clause_title": "2.4.2   With respect to any portion of the Affected System Upgrade Facilities that has not",
+    "contract_id": "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+    "source_page_start": 22,
+    "source_page_end": 22,
+    "clause_type_hint": "payment",
+    "entities": [
+      {
+        "id": "ent_affected_system_operator",
+        "entity_type": "Affected System Operator",
+        "name": "Affected System Operator",
+        "legal_role": "The party responsible for managing the cancellation, return, and assignment of materials, equipment, and contracts related to the Affected System Upgrade Facilities.",
+        "confidence": 1.0,
+        "evidence_quote": "the Affected System Operator shall to the extent possible and with Transmission Developer’s authorization cancel any pending orders of, or return, any materials or equipment for, or contracts for construction of, such facilities",
+        "properties": {}
+      },
+      {
+        "id": "ent_transmission_developer",
+        "entity_type": "Transmission Developer",
+        "name": "Transmission Developer",
+        "legal_role": "The party who authorizes cancellation of orders and assumes payment obligations if cancellation is not authorized, and who receives materials, equipment, and contract assignments at its expense.",
+        "confidence": 1.0,
+        "evidence_quote": "with Transmission Developer’s authorization cancel any pending orders... provided that in the event Transmission Developer elects not to authorize such cancellation, Transmission Developer shall assume all payment obligations",
+        "properties": {}
+      },
+      {
+        "id": "ent_affected_system_upgrade_facilities",
+        "entity_type": "Affected System Upgrade Facilities",
+        "name": "Affected System Upgrade Facilities",
+        "legal_role": "The facilities that have not yet been constructed or installed and are subject to cancellation, return, or contract assignment under this clause.",
+        "confidence": 1.0,
+        "evidence_quote": "any portion of the Affected System Upgrade Facilities that has not yet been constructed or installed",
+        "properties": {}
+      },
+      {
+        "id": "ent_materials_equipment_contracts",
+        "entity_type": "Materials, Equipment, and Construction Contracts",
+        "name": "Materials, Equipment, and Construction Contracts",
+        "legal_role": "The tangible and contractual assets related to the Affected System Upgrade Facilities that may be cancelled, returned, or assigned depending on Transmission Developer’s authorization.",
+        "confidence": 1.0,
+        "evidence_quote": "cancel any pending orders of, or return, any materials or equipment for, or contracts for construction of, such facilities",
+        "properties": {}
+      },
+      {
+        "id": "ent_payment_obligations",
+        "entity_type": "Payment Obligations",
+        "name": "Payment Obligations with respect to materials, equipment, and contracts",
+        "legal_role": "The financial responsibility assumed by Transmission Developer if it elects not to authorize cancellation of orders or returns.",
+        "confidence": 1.0,
+        "evidence_quote": "Transmission Developer shall assume all payment obligations with respect to such materials, equipment, and contracts",
+        "properties": {}
+      },
+      {
+        "id": "ent_refund_obligation",
+        "entity_type": "Refund Obligation",
+        "name": "Refund Obligation of Affected System Operator",
+        "legal_role": "The obligation of the Affected System Operator to promptly refund amounts paid by Transmission Developer for materials or equipment not taken, less cancellation costs and penalties.",
+        "confidence": 1.0,
+        "evidence_quote": "Affected System Operator shall promptly refund such amounts to Transmission Developer, less any costs, including penalties incurred by the Affected System Operator to cancel any pending orders of or return such materials, equipment, or contracts",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_affected_system_operator",
+        "target_id": "ent_transmission_developer",
+        "relationship_type": "Authorization Right",
+        "legal_significance": "The Affected System Operator requires Transmission Developer’s authorization to cancel pending orders or return materials and equipment, establishing a control right over such actions.",
+        "confidence": 1.0,
+        "evidence_quote": "the Affected System Operator shall to the extent possible and with Transmission Developer’s authorization cancel any pending orders"
+      },
+      {
+        "source_id": "ent_transmission_developer",
+        "target_id": "ent_payment_obligations",
+        "relationship_type": "Assumption of Payment Obligations",
+        "legal_significance": "If Transmission Developer elects not to authorize cancellation, it becomes financially responsible for all costs related to materials, equipment, and contracts, shifting financial risk to Transmission Developer.",
+        "confidence": 1.0,
+        "evidence_quote": "in the event Transmission Developer elects not to authorize such cancellation, Transmission Developer shall assume all payment obligations"
+      },
+      {
+        "source_id": "ent_affected_system_operator",
+        "target_id": "ent_materials_equipment_contracts",
+        "relationship_type": "Delivery and Assignment Obligation",
+        "legal_significance": "The Affected System Operator must deliver materials and equipment and assign contracts to Transmission Developer at Transmission Developer’s expense when cancellation is not authorized.",
+        "confidence": 1.0,
+        "evidence_quote": "the Affected System Operator shall deliver such material and equipment, and, if necessary, assign such contracts, to Transmission Developer as soon as practicable, at Transmission Developer’s expense"
+      },
+      {
+        "source_id": "ent_affected_system_operator",
+        "target_id": "ent_refund_obligation",
+        "relationship_type": "Refund Obligation to Transmission Developer",
+        "legal_significance": "The Affected System Operator must refund Transmission Developer for costs paid for materials or equipment not taken, less cancellation costs, ensuring financial reconciliation between parties.",
+        "confidence": 1.0,
+        "evidence_quote": "Affected System Operator shall promptly refund such amounts to Transmission Developer, less any costs, including penalties incurred by the Affected System Operator to cancel any pending orders"
+      }
+    ],
+    "extractor_notes": "The clause explicitly governs the rights and obligations related to cancellation and payment for unconstructed portions of the Affected System Upgrade Facilities, clearly defining the roles of the Affected System Operator and Transmission Developer in authorization, payment, delivery, assignment, and refund processes."
+  },
+  {
+    "source_clause_id": "clause:NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1:3:3_1:Performance_of_EPC_Services:cd6958",
+    "source_clause_title": "3.1 Performance of EPC Services.",
+    "contract_id": "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+    "source_page_start": 24,
+    "source_page_end": 24,
+    "clause_type_hint": "liability",
+    "entities": [
+      {
+        "id": "ent_affected_system_operator",
+        "entity_type": "Contracted EPC Service Provider",
+        "name": "Affected System Operator",
+        "legal_role": "The party obligated to perform the EPC Services according to the contract terms and standards.",
+        "confidence": 1.0,
+        "evidence_quote": "The Affected System Operator shall perform the EPC Services, as set forth in Appendix A hereto",
+        "properties": {}
+      },
+      {
+        "id": "ent_epc_services",
+        "entity_type": "Contractual EPC Services Obligation",
+        "name": "EPC Services",
+        "legal_role": "The specific engineering, procurement, and construction services that the Affected System Operator must perform under the contract.",
+        "confidence": 1.0,
+        "evidence_quote": "The Affected System Operator shall perform the EPC Services, as set forth in Appendix A hereto",
+        "properties": {}
+      },
+      {
+        "id": "ent_milestone_dates",
+        "entity_type": "Contractual Performance Deadlines",
+        "name": "Milestone dates",
+        "legal_role": "The specified deadlines by which the EPC Services must be completed, establishing temporal obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "using Reasonable Efforts to complete the EPC Services by the Milestone dates set forth in Appendix A hereto",
+        "properties": {}
+      },
+      {
+        "id": "ent_reasonable_efforts",
+        "entity_type": "Performance Standard Obligation",
+        "name": "Reasonable Efforts",
+        "legal_role": "The standard of effort the Affected System Operator must apply to complete the EPC Services by the Milestone dates.",
+        "confidence": 1.0,
+        "evidence_quote": "using Reasonable Efforts to complete the EPC Services by the Milestone dates set forth in Appendix A hereto",
+        "properties": {}
+      },
+      {
+        "id": "ent_standard_safety_practices",
+        "entity_type": "Operational Safety Compliance Requirement",
+        "name": "standard safety practices",
+        "legal_role": "The safety standards that the Affected System Operator must not violate in performing the EPC Services.",
+        "confidence": 1.0,
+        "evidence_quote": "shall not be required to undertake any action which is inconsistent with its standard safety practices",
+        "properties": {}
+      },
+      {
+        "id": "ent_material_and_equipment_specifications",
+        "entity_type": "Technical Specification Compliance Requirement",
+        "name": "material and equipment specifications",
+        "legal_role": "The technical standards governing materials and equipment that the Affected System Operator must adhere to.",
+        "confidence": 1.0,
+        "evidence_quote": "shall not be required to undertake any action which is inconsistent with ... its material and equipment specifications",
+        "properties": {}
+      },
+      {
+        "id": "ent_design_criteria_and_construction_procedures",
+        "entity_type": "Design and Construction Compliance Requirement",
+        "name": "design criteria and construction procedures",
+        "legal_role": "The design and construction standards that limit the actions the Affected System Operator may take.",
+        "confidence": 1.0,
+        "evidence_quote": "shall not be required to undertake any action which is inconsistent with ... its design criteria and construction procedures",
+        "properties": {}
+      },
+      {
+        "id": "ent_labor_agreements",
+        "entity_type": "Labor Contractual Obligations",
+        "name": "labor agreements",
+        "legal_role": "The labor contracts that constrain the Affected System Operator's permissible actions in performing the EPC Services.",
+        "confidence": 1.0,
+        "evidence_quote": "shall not be required to undertake any action which is inconsistent with ... its labor agreements",
+        "properties": {}
+      },
+      {
+        "id": "ent_applicable_laws_and_regulations",
+        "entity_type": "Legal and Regulatory Compliance Requirement",
+        "name": "Applicable Laws and Regulations",
+        "legal_role": "The legal framework that the Affected System Operator must comply with in performing the EPC Services.",
+        "confidence": 1.0,
+        "evidence_quote": "shall not be required to undertake any action which is inconsistent with ... Applicable Laws and Regulations",
+        "properties": {}
+      },
+      {
+        "id": "ent_transmission_developer",
+        "entity_type": "Contract Counterparty",
+        "name": "Transmission Developer",
+        "legal_role": "A party entitled to receive notice if the Affected System Operator expects delay in EPC Services completion.",
+        "confidence": 1.0,
+        "evidence_quote": "the Affected System Operator shall promptly provide written notice to the Transmission Developer and NYISO",
+        "properties": {}
+      },
+      {
+        "id": "ent_nyiso",
+        "entity_type": "Contract Counterparty and Liability Exempted Party",
+        "name": "NYISO",
+        "legal_role": "A party entitled to receive notice of delays and expressly exempted from liability for EPC Services performance.",
+        "confidence": 1.0,
+        "evidence_quote": "the Affected System Operator shall promptly provide written notice to the Transmission Developer and NYISO ... The NYISO has no responsibility, and shall have no liability, for the performance of any of the EPC Services under this Agreement",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "ent_affected_system_operator",
+        "target_id": "ent_epc_services",
+        "relationship_type": "Performance Obligation",
+        "legal_significance": "The Affected System Operator is contractually obligated to perform the EPC Services, defining the primary duty under this clause.",
+        "confidence": 1.0,
+        "evidence_quote": "The Affected System Operator shall perform the EPC Services, as set forth in Appendix A hereto"
+      },
+      {
+        "source_id": "ent_epc_services",
+        "target_id": "ent_milestone_dates",
+        "relationship_type": "Completion Deadline",
+        "legal_significance": "The EPC Services must be completed by the Milestone dates, establishing enforceable timeframes.",
+        "confidence": 1.0,
+        "evidence_quote": "using Reasonable Efforts to complete the EPC Services by the Milestone dates set forth in Appendix A hereto"
+      },
+      {
+        "source_id": "ent_affected_system_operator",
+        "target_id": "ent_reasonable_efforts",
+        "relationship_type": "Performance Standard Imposed",
+        "legal_significance": "The Affected System Operator must apply Reasonable Efforts, setting the standard of care for performance.",
+        "confidence": 1.0,
+        "evidence_quote": "using Reasonable Efforts to complete the EPC Services by the Milestone dates"
+      },
+      {
+        "source_id": "ent_affected_system_operator",
+        "target_id": "ent_standard_safety_practices",
+        "relationship_type": "Performance Limitation",
+        "legal_significance": "The Affected System Operator is not required to act inconsistently with its standard safety practices, limiting its obligations.",
+        "confidence": 1.0,
+        "evidence_quote": "shall not be required to undertake any action which is inconsistent with its standard safety practices"
+      },
+      {
+        "source_id": "ent_affected_system_operator",
+        "target_id": "ent_material_and_equipment_specifications",
+        "relationship_type": "Performance Limitation",
+        "legal_significance": "The Affected System Operator's actions are limited by its material and equipment specifications.",
+        "confidence": 1.0,
+        "evidence_quote": "shall not be required to undertake any action which is inconsistent with ... its material and equipment specifications"
+      },
+      {
+        "source_id": "ent_affected_system_operator",
+        "target_id": "ent_design_criteria_and_construction_procedures",
+        "relationship_type": "Performance Limitation",
+        "legal_significance": "The Affected System Operator must comply with its design criteria and construction procedures, restricting its actions.",
+        "confidence": 1.0,
+        "evidence_quote": "shall not be required to undertake any action which is inconsistent with ... its design criteria and construction procedures"
+      },
+      {
+        "source_id": "ent_affected_system_operator",
+        "target_id": "ent_labor_agreements",
+        "relationship_type": "Performance Limitation",
+        "legal_significance": "The Affected System Operator's performance is constrained by its labor agreements.",
+        "confidence": 1.0,
+        "evidence_quote": "shall not be required to undertake any action which is inconsistent with ... its labor agreements"
+      },
+      {
+        "source_id": "ent_affected_system_operator",
+        "target_id": "ent_applicable_laws_and_regulations",
+        "relationship_type": "Legal Compliance Obligation",
+        "legal_significance": "The Affected System Operator must comply with Applicable Laws and Regulations in performing the EPC Services.",
+        "confidence": 1.0,
+        "evidence_quote": "shall not be required to undertake any action which is inconsistent with ... Applicable Laws and Regulations"
+      },
+      {
+        "source_id": "ent_affected_system_operator",
+        "target_id": "ent_transmission_developer",
+        "relationship_type": "Notice Obligation",
+        "legal_significance": "The Affected System Operator must provide prompt written notice to the Transmission Developer if it expects delay, enabling risk management.",
+        "confidence": 1.0,
+        "evidence_quote": "the Affected System Operator shall promptly provide written notice to the Transmission Developer and NYISO"
+      },
+      {
+        "source_id": "ent_affected_system_operator",
+        "target_id": "ent_nyiso",
+        "relationship_type": "Notice Obligation",
+        "legal_significance": "The Affected System Operator must provide prompt written notice to NYISO if it expects delay, ensuring transparency.",
+        "confidence": 1.0,
+        "evidence_quote": "the Affected System Operator shall promptly provide written notice to the Transmission Developer and NYISO"
+      },
+      {
+        "source_id": "ent_nyiso",
+        "target_id": "ent_epc_services",
+        "relationship_type": "Liability Exemption",
+        "legal_significance": "NYISO disclaims responsibility and liability for the performance of the EPC Services, limiting its legal exposure.",
+        "confidence": 1.0,
+        "evidence_quote": "The NYISO has no responsibility, and shall have no liability, for the performance of any of the EPC Services under this Agreement"
+      }
+    ],
+    "extractor_notes": "The clause explicitly limits the Affected System Operator's obligations by multiple compliance and safety standards and exempts NYISO from liability, which is critical for risk allocation."
+  }
+]

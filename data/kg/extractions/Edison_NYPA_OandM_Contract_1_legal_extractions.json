@@ -1,0 +1,3033 @@
+[
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XII:12_4:Community_Right_to_Know:9ebd93",
+    "source_clause_title": "12.4 Community Right to Know",
+    "source_page_start": 34,
+    "source_page_end": 35,
+    "entities": [
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "Party",
+        "name": "Con Edison",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "Party",
+        "name": "Power Authority",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:ConEdison_Chemical_Inventory",
+        "type": "Obligation",
+        "name": "Develop and maintain chemical inventory subject to reporting requirements",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall develop and maintain an inventory of all chemicals and hazardous substances, subject to reporting requirements under the Community Right To Know Law"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:ConEdison_Notify_New_Removed_Chemicals",
+        "type": "Obligation",
+        "name": "Notify Power Authority within five business days of new or removed chemicals",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall notify the Power Authority within five (5) business days whenever a new such chemical or hazardous substance is brought on to the facility or whenever such chemical or hazardous substance is removed from the facility"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:PowerAuthority_Prepare_RMP",
+        "type": "Obligation",
+        "name": "Prepare, submit, and maintain the Risk Management Plan (RMP)",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall be responsible for: Preparing, submitting, and maintaining the Risk Management Plan (\"RMP\") for the Facility in compliance with Environmental Laws"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:PowerAuthority_Inspect_Facility_RMP",
+        "type": "Obligation",
+        "name": "Conduct periodic inspections to monitor compliance with the RMP",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall be responsible for: Conducting periodic inspections of the Facility to monitor compliance with the RMP"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:PowerAuthority_Provide_Draft_RMP",
+        "type": "Obligation",
+        "name": "Provide Con Edison draft RMP at least 30 days prior to O&M Commencement Date",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "At least thirty (30) days prior to the O&M Commencement Date, the Power Authority shall provide Con Edison with a draft RMP for Con Edison's review and comment"
+      },
+      {
+        "id": "right:Edison_NYPA_OandM_Contract_1:ConEdison_Approve_RMP_Implementation",
+        "type": "Right",
+        "name": "Con Edison approval of RMP implementation provisions",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Provisions relating to Con Edison's implementation of the RMP, or any subsequent modification of implementation provisions, are subject to Con Edison's approval"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:ConEdison_Implement_RMP",
+        "type": "Obligation",
+        "name": "Implement the RMP after review and approval",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall be responsible for the implementation of the RMP so long as Con Edison has had an opportunity to review and approve the implementation sections of the RMP"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:PowerAuthority_Submit_MSDS",
+        "type": "Obligation",
+        "name": "Obtain and submit Material Safety Data Sheets for EHS and OSHA hazardous substances within 3 months",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall obtain and submit Material Safety Data Sheets (\"MSDS\") for any Extremely Hazardous Substance (\"EHS\") present at the facility ... to the State Emergency Response Commission (\"SERC\"), the Local Emergency Planning Committee (\"LEPC\"), and the local fire department within three (3) months of their acquisition"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:PowerAuthority_Notify_Emergency_Coordinator",
+        "type": "Obligation",
+        "name": "Appoint Emergency Coordinator and notify SERC and LEPC within 60 days of EHS presence",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall appoint an Emergency Coordinator and shall notify the SERC and the LEPC of such appointment within 60 days of an EHS being present at the facility"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:PowerAuthority_File_Inventory_Forms",
+        "type": "Obligation",
+        "name": "File Facility Inventory Forms, 209-U forms, and other hazardous substance disclosure forms after O&M Commencement Date and pay fees",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "After the O&M Commencement Date, the Power Authority shall be responsible for the filing of all Facility Inventory Forms (\"FIF\"), 209-U forms and any other forms relating to the disclosure of hazardous substances ... and for the payment of all associated filing fees"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:PowerAuthority_Provide_Filing_Copies",
+        "type": "Obligation",
+        "name": "Provide Con Edison with copies of filings",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "and shall provide: Con Edison with a copy of each such filing"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:ConEdison_Provide_Chemical_Info",
+        "type": "Obligation",
+        "name": "Provide Power Authority with chemical inventory information in sufficient time",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall be responsible for providing Power Authority with information related to the chemical inventory under Con Edison's custody and control at the Facility in sufficient time to allow Power Authority to complete the required forms"
+      },
+      {
+        "id": "deadline:Edison_NYPA_OandM_Contract_1:ConEdison_Chemical_Inventory_Deadline",
+        "type": "Deadline",
+        "name": "Chemical inventory development deadline",
+        "properties": {
+          "date": "[insert date]"
+        },
+        "confidence": 0.9,
+        "evidenceQuote": "subject to reporting requirements under the Community Right To Know Law, stored or used at the facility by [insert date]"
+      },
+      {
+        "id": "noticeperiod:Edison_NYPA_OandM_Contract_1:ConEdison_Notify_PowerAuthority_5_Business_Days",
+        "type": "NoticePeriod",
+        "name": "Five (5) business days notice period",
+        "properties": {
+          "duration": "5 business days"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall notify the Power Authority within five (5) business days"
+      },
+      {
+        "id": "noticeperiod:Edison_NYPA_OandM_Contract_1:PowerAuthority_Notify_SERC_LEPC_60_Days",
+        "type": "NoticePeriod",
+        "name": "Sixty (60) days notice period",
+        "properties": {
+          "duration": "60 days"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "shall notify the SERC and the LEPC of such appointment within 60 days"
+      },
+      {
+        "id": "noticeperiod:Edison_NYPA_OandM_Contract_1:PowerAuthority_Provide_Draft_RMP_30_Days",
+        "type": "NoticePeriod",
+        "name": "At least thirty (30) days prior notice",
+        "properties": {
+          "duration": "30 days"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "At least thirty (30) days prior to the O&M Commencement Date, the Power Authority shall provide Con Edison with a draft RMP"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XII:12_4:Community_Right_to_Know:9ebd93",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:ConEdison_Chemical_Inventory",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall develop and maintain an inventory of all chemicals and hazardous substances"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:ConEdison_Chemical_Inventory",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall develop and maintain an inventory"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:ConEdison_Chemical_Inventory",
+        "target_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XII:12_4:Community_Right_to_Know:9ebd93",
+        "type": "RECORDED_IN",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "subject to reporting requirements under the Community Right To Know Law"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:ConEdison_Chemical_Inventory",
+        "target_id": "deadline:Edison_NYPA_OandM_Contract_1:ConEdison_Chemical_Inventory_Deadline",
+        "type": "HAS_DEADLINE",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "stored or used at the facility by [insert date]"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:ConEdison_Notify_New_Removed_Chemicals",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall notify the Power Authority"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:ConEdison_Notify_New_Removed_Chemicals",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall notify the Power Authority"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:ConEdison_Notify_New_Removed_Chemicals",
+        "target_id": "noticeperiod:Edison_NYPA_OandM_Contract_1:ConEdison_Notify_PowerAuthority_5_Business_Days",
+        "type": "HAS_NOTICE_PERIOD",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "within five (5) business days"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XII:12_4:Community_Right_to_Know:9ebd93",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:PowerAuthority_Prepare_RMP",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall be responsible for: Preparing, submitting, and maintaining the Risk Management Plan"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:PowerAuthority_Prepare_RMP",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall be responsible for: Preparing, submitting, and maintaining the Risk Management Plan"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XII:12_4:Community_Right_to_Know:9ebd93",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:PowerAuthority_Inspect_Facility_RMP",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall be responsible for: Conducting periodic inspections of the Facility to monitor compliance with the RMP"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:PowerAuthority_Inspect_Facility_RMP",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall be responsible for: Conducting periodic inspections"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:PowerAuthority_Provide_Draft_RMP",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority shall provide Con Edison with a draft RMP"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:PowerAuthority_Provide_Draft_RMP",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority shall provide Con Edison with a draft RMP"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:PowerAuthority_Provide_Draft_RMP",
+        "target_id": "noticeperiod:Edison_NYPA_OandM_Contract_1:PowerAuthority_Provide_Draft_RMP_30_Days",
+        "type": "HAS_NOTICE_PERIOD",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "At least thirty (30) days prior to the O&M Commencement Date"
+      },
+      {
+        "source_id": "right:Edison_NYPA_OandM_Contract_1:ConEdison_Approve_RMP_Implementation",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "GRANTS_RIGHT",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Provisions relating to Con Edison's implementation of the RMP ... are subject to Con Edison's approval"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:ConEdison_Implement_RMP",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall be responsible for the implementation of the RMP"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:PowerAuthority_Submit_MSDS",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall obtain and submit Material Safety Data Sheets"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:PowerAuthority_Submit_MSDS",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "to the State Emergency Response Commission (\"SERC\"), the Local Emergency Planning Committee (\"LEPC\"), and the local fire department"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:PowerAuthority_Notify_Emergency_Coordinator",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall appoint an Emergency Coordinator and shall notify the SERC and the LEPC"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:PowerAuthority_Notify_Emergency_Coordinator",
+        "target_id": "noticeperiod:Edison_NYPA_OandM_Contract_1:PowerAuthority_Notify_SERC_LEPC_60_Days",
+        "type": "HAS_NOTICE_PERIOD",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "notify the SERC and the LEPC ... within 60 days"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:PowerAuthority_File_Inventory_Forms",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority shall be responsible for the filing of all Facility Inventory Forms ... and for the payment of all associated filing fees"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:PowerAuthority_Provide_Filing_Copies",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "shall provide: Con Edison with a copy of each such filing"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:PowerAuthority_Provide_Filing_Copies",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "shall provide: Con Edison with a copy of each such filing"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:ConEdison_Provide_Chemical_Info",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall be responsible for providing Power Authority with information"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:ConEdison_Provide_Chemical_Info",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall be responsible for providing Power Authority with information"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:8d15fb:3_1_4:In_accordance_with_Article_XIX_Indemnification_the:027004",
+    "source_clause_title": "3.1.4 In accordance with Article XIX (Indemnification), the Power Authority will indemnify",
+    "source_page_start": 12,
+    "source_page_end": 12,
+    "entities": [
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "Party",
+        "name": "Power Authority",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "Party",
+        "name": "Con Edison",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:Indemnify_Con_Edison_for_NERC_Obligations_and_Penalties",
+        "type": "Obligation",
+        "name": "Indemnify Con Edison for NERC obligations and penalties during Compliance Transfer Periods",
+        "properties": {
+          "scope": "NERC obligations and penalties",
+          "period": "Compliance Transfer Periods",
+          "condition": "to the extent allowed by law"
+        },
+        "confidence": 0.95,
+        "evidenceQuote": "the Power Authority will indemnify and hold Con Edison harmless, to the extent allowed by law, for all such NERC obligations and penalties, if any, until Con Edison performs the specific test or analysis required by each individual applicable NERC Reliability Standard, NPCC Reliability Standards, NPCC Directories and NPCC Criteria Requirements for the Astoria Annex Substation (hereinafter referred to as the \"Compliance Transfer Periods\")"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:Provide_Documentary_Evidence_to_Power_Authority",
+        "type": "Obligation",
+        "name": "Provide documentary evidence to Power Authority to demonstrate compliance during Compliance Transfer Periods",
+        "properties": {
+          "scope": "documentary evidence required to demonstrate compliance with applicable NERC and NPCC standards",
+          "period": "Compliance Transfer Periods"
+        },
+        "confidence": 0.9,
+        "evidenceQuote": "Con Edison shall provide the Power Authority with documentary evidence required to demonstrate compliance, as identified and requested by the Power Authority, with any and all applicable NERC Reliability Standards, NPCC Reliability Standards, NPCC Directories and NPCC Criteria Requirements"
+      },
+      {
+        "id": "condition:Edison_NYPA_OandM_Contract_1:Compliance_Transfer_Periods",
+        "type": "Condition",
+        "name": "Compliance Transfer Periods",
+        "properties": {
+          "description": "Period until Con Edison performs the specific test or analysis required by each individual applicable NERC and NPCC standards"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "until Con Edison performs the specific test or analysis required by each individual applicable NERC Reliability Standard, NPCC Reliability Standards, NPCC Directories and NPCC Criteria Requirements for the Astoria Annex Substation (hereinafter referred to as the \"Compliance Transfer Periods\")"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:8d15fb:3_1_4:In_accordance_with_Article_XIX_Indemnification_the:027004",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:Indemnify_Con_Edison_for_NERC_Obligations_and_Penalties",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority will indemnify and hold Con Edison harmless"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Indemnify_Con_Edison_for_NERC_Obligations_and_Penalties",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority will indemnify"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Indemnify_Con_Edison_for_NERC_Obligations_and_Penalties",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "indemnify and hold Con Edison harmless"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Provide_Documentary_Evidence_to_Power_Authority",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall provide the Power Authority with documentary evidence"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Provide_Documentary_Evidence_to_Power_Authority",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall provide the Power Authority with documentary evidence"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Indemnify_Con_Edison_for_NERC_Obligations_and_Penalties",
+        "target_id": "condition:Edison_NYPA_OandM_Contract_1:Compliance_Transfer_Periods",
+        "type": "SUBJECT_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "until Con Edison performs the specific test or analysis ... (hereinafter referred to as the \"Compliance Transfer Periods\")"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Provide_Documentary_Evidence_to_Power_Authority",
+        "target_id": "condition:Edison_NYPA_OandM_Contract_1:Compliance_Transfer_Periods",
+        "type": "SUBJECT_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "during the Compliance Transfer Periods"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:8d15fb:3_1_7:Management_of_Critical_Infrastructure_Protection_C:393209",
+    "source_clause_title": "3.1.7 Management of Critical Infrastructure Protection (CIP) Standards:",
+    "source_page_start": 13,
+    "source_page_end": 14,
+    "entities": [
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "Party",
+        "name": "Power Authority",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "Party",
+        "name": "Con Edison",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:determine_critical_asset",
+        "type": "Obligation",
+        "name": "Determine whether the Astoria Annex Substation is a Critical Asset and determine the existence of Critical Cyber Assets prior to the O&M Commencement Date",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Prior to the O&M Commencement Date, NYPA will determine whether the Astoria Annex Substation is a Critical Asset and determine the existence of Critical Cyber Assets."
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:apply_cip_compliance_and_changes",
+        "type": "Obligation",
+        "name": "Apply CIP-003 through CIP-009 compliance and perform required design and operational changes at Power Authority's sole cost and expense",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "If Power Authority determines that the Astoria Annex Substation is a Critical Asset with Critical Cyber Assets, then compliance required by CIP-003 through CIP-009 shall be applied and any required changes to the existing design and operation of the Facility shall be the Power Authority's sole responsibility and performed at the Power Authority's sole cost and expense."
+      },
+      {
+        "id": "deadline:Edison_NYPA_OandM_Contract_1:design_changes_completion",
+        "type": "Deadline",
+        "name": "Completion of design and operational changes at least sixty (60) days prior to the O&M Commencement Date",
+        "properties": {
+          "daysBefore": 60
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "all such design and operational changes required to comply with the obligations of being a Critical Cyber Asset must be completed at least sixty (60) days prior to the O&M Commencement Date."
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:complete_design_changes",
+        "type": "Obligation",
+        "name": "Complete all design and operational changes required to comply with obligations of being a Critical Cyber Asset",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "all such design and operational changes required to comply with the obligations of being a Critical Cyber Asset must be completed at least sixty (60) days prior to the O&M Commencement Date."
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:adhere_policies_and_provide_evidence",
+        "type": "Obligation",
+        "name": "Con Edison shall adhere to its policies and procedures and provide Power Authority with documentary evidence to demonstrate compliance",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall be required to adhere to Con Edison's policies and procedures, and Con Edison shall perform all functional activities related to NERC CIP compliance and shall provide the Power Authority with documentary evidence required to demonstrate compliance"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:manage_protections_and_compliance_after_transfer",
+        "type": "Obligation",
+        "name": "Con Edison will manage protections, maintain compliance evidence, and manage compliance audits after Compliance Transfer Periods",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "After the Compliance Transfer Periods, Con Edison will assume responsibility for managing those protections, maintaining the required compliance evidence, and managing compliance audits in accordance with Con Edison's processes."
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:establish_and_manage_protections_post_commencement",
+        "type": "Obligation",
+        "name": "Con Edison shall establish and manage protections required by CIP-002 through CIP-009 at Power Authority's direction and sole cost and expense if protections are not necessary until after O&M Commencement Date",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "If the protections required by CIP-002 through CIP-009 are determined by Power Authority, in its sole discretion, to not be necessary until after the O&M Commencement Date, then at Power Authority's direction, Con Edison shall be responsible at Power Authority's sole cost and expense, for establishing and managing the protections required by CIP-002 through CIP-009"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:nypa_retain_responsibility_for_determination",
+        "type": "Obligation",
+        "name": "NYPA will retain responsibility for determining whether the Astoria Annex Substation is a Critical Asset and existence of Critical Cyber Assets",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "NYPA, as the registered Transmission Owner for the Astoria Annex Substation, will retain responsibility for the determination of whether the Astoria Annex Substation is a Critical Asset and determining the existence of Critical Cyber Assets."
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:power_authority_cost_for_upgrades",
+        "type": "Obligation",
+        "name": "Any changes required to upgrade the Facility shall be at the Power Authority's sole cost and expense",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Any changes required to upgrade the Facility shall be at the Power Authority's sole cost and expense."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:8d15fb:3_1_7:Management_of_Critical_Infrastructure_Protection_C:393209",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:determine_critical_asset",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Prior to the O&M Commencement Date, NYPA will determine whether the Astoria Annex Substation is a Critical Asset and determine the existence of Critical Cyber Assets."
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:determine_critical_asset",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "NYPA will determine whether the Astoria Annex Substation is a Critical Asset"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:apply_cip_compliance_and_changes",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "any required changes to the existing design and operation of the Facility shall be the Power Authority's sole responsibility and performed at the Power Authority's sole cost and expense."
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:complete_design_changes",
+        "target_id": "deadline:Edison_NYPA_OandM_Contract_1:design_changes_completion",
+        "type": "HAS_DEADLINE",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "must be completed at least sixty (60) days prior to the O&M Commencement Date."
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:complete_design_changes",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "all such design and operational changes ... must be completed ... at the Power Authority's sole cost and expense."
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:adhere_policies_and_provide_evidence",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall be required to adhere to Con Edison's policies and procedures"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:adhere_policies_and_provide_evidence",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "shall provide the Power Authority with documentary evidence required to demonstrate compliance"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:manage_protections_and_compliance_after_transfer",
+        "target_id": "party:Edison_NYNA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison will assume responsibility for managing those protections"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:establish_and_manage_protections_post_commencement",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall be responsible ... for establishing and managing the protections"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:establish_and_manage_protections_post_commencement",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "at Power Authority's direction ... at Power Authority's sole cost and expense"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:nypa_retain_responsibility_for_determination",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "NYPA ... will retain responsibility for the determination"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:power_authority_cost_for_upgrades",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Any changes required to upgrade the Facility shall be at the Power Authority's sole cost and expense."
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XII:12_1:Release_Reporting_Requirements:c03392",
+    "source_clause_title": "12.1 Release Reporting Requirements:",
+    "source_page_start": 32,
+    "source_page_end": 33,
+    "entities": [
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "Party",
+        "name": "Con Edison",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "Party",
+        "name": "Power Authority",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Either_Party",
+        "type": "Party",
+        "name": "Either Party",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "either Party"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:discovery_reporting_obligation",
+        "type": "Obligation",
+        "name": "Discovery Party to use commercially reasonable efforts to provide relevant information quickly to the other Party",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "(a) The Parties agree that in the event that either Party discovers on or about the Easement Area ... the discovering Party shall use commercially reasonable efforts to provide relevant information as quickly as practicable to the other Party by telephone or email, followed by written confirmation."
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:power_authority_reporting_obligation",
+        "type": "Obligation",
+        "name": "Power Authority to report reportable Releases to Governmental Authorities within required time",
+        "properties": {},
+        "confidence": 0.98,
+        "evidenceQuote": "(b) The Power Authority shall report to the proper Governmental Authorities any reportable Releases within the time required by applicable federal, state, local, and Environmental Laws, or Power Authority requirements"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:con_edison_provide_info_to_power_authority",
+        "type": "Obligation",
+        "name": "Con Edison to provide Power Authority with relevant information regarding Releases in sufficient time for notification",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "provided that if Con Edison is the discovering party, it provides the Power Authority with relevant information regarding such Release within sufficient time for the Power Authority to make such notification."
+      },
+      {
+        "id": "right:Edison_NYPA_OandM_Contract_1:con_edison_reporting_right_if_power_authority_fails",
+        "type": "Right",
+        "name": "Con Edison may report Release if Power Authority fails to report within required time",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Con Edison may report such Release if Power Authority does not report within required time"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:power_authority_indemnify_con_edison",
+        "type": "Obligation",
+        "name": "Power Authority to indemnify Con Edison for penalties assessed due to Power Authority's failure to report",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "the Power Authority shall indemnify Con Edison for any such assessed penalties pursuant to Section 12.5"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:con_edison_control_and_contain_release",
+        "type": "Obligation",
+        "name": "Con Edison to promptly take all actions reasonably necessary to control and contain the release",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "(c) Con Edison shall promptly take all actions reasonably necessary to control and contain the release as are consistent with applicable laws and plans"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XII:12_1:Release_Reporting_Requirements:c03392",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:discovery_reporting_obligation",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "(a) The Parties agree that ... the discovering Party shall use commercially reasonable efforts to provide relevant information"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:discovery_reporting_obligation",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Either_Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "either Party discovers ... the discovering Party shall use commercially reasonable efforts"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:discovery_reporting_obligation",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Either_Party",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "provide relevant information ... to the other Party"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XII:12_1:Release_Reporting_Requirements:c03392",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:power_authority_reporting_obligation",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.98,
+        "evidenceQuote": "(b) The Power Authority shall report to the proper Governmental Authorities any reportable Releases within the time required"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:power_authority_reporting_obligation",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.98,
+        "evidenceQuote": "The Power Authority shall report"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:power_authority_reporting_obligation",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Governmental_Authorities",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.8,
+        "evidenceQuote": "report to the proper Governmental Authorities"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XII:12_1:Release_Reporting_Requirements:c03392",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:con_edison_provide_info_to_power_authority",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "if Con Edison is the discovering party, it provides the Power Authority with relevant information"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:con_edison_provide_info_to_power_authority",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "if Con Edison is the discovering party, it provides"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:con_edison_provide_info_to_power_authority",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "provides the Power Authority with relevant information"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XII:12_1:Release_Reporting_Requirements:c03392",
+        "target_id": "right:Edison_NYPA_OandM_Contract_1:con_edison_reporting_right_if_power_authority_fails",
+        "type": "GRANTS_RIGHT",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Con Edison may report such Release"
+      },
+      {
+        "source_id": "right:Edison_NYPA_OandM_Contract_1:con_edison_reporting_right_if_power_authority_fails",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "HELD_BY",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Con Edison may report such Release"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XII:12_1:Release_Reporting_Requirements:c03392",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:power_authority_indemnify_con_edison",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "the Power Authority shall indemnify Con Edison for any such assessed penalties"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:power_authority_indemnify_con_edison",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "the Power Authority shall indemnify"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:power_authority_indemnify_con_edison",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "indemnify Con Edison"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XII:12_1:Release_Reporting_Requirements:c03392",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:con_edison_control_and_contain_release",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "(c) Con Edison shall promptly take all actions reasonably necessary to control and contain the release"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:con_edison_control_and_contain_release",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Con Edison shall promptly take all actions"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_II:2_3:Survival_This_Second_Composite_Agreement_shall_con:9f241e",
+    "source_clause_title": "2.3 Survival. This Second Composite Agreement shall continue in effect after termination to the",
+    "source_page_start": 11,
+    "source_page_end": 11,
+    "entities": [
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:survival_obligation",
+        "type": "Obligation",
+        "name": "Survival of obligations after termination",
+        "properties": {
+          "scope": "Costs incurred, final billings and payments, determination and enforcement of liability and indemnification obligations, survival of specific provisions including Article XII - Environmental Provisions, Article XIX - Indemnification, and Article XX - No Warranty/Disclaimers"
+        },
+        "confidence": 0.95,
+        "evidenceQuote": "This Second Composite Agreement shall continue in effect after termination to the extent necessary to provide for costs incurred hereunder; including final billings and payments pursuant to this Composite Agreement; to permit the determination and enforcement of liability and indemnification obligations arising from acts or events that occurred while this Second Composite Agreement was in effect, and for survival of those provisions which specifically survive termination of this Composite Agreement, including, but not limited to, Article XII - Environmental Provisions, Article XIX, Indemnification, and Article XX - No Warranty/Disclaimers."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_II:2_3:Survival_This_Second_Composite_Agreement_shall_con:9f241e",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:survival_obligation",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "This Second Composite Agreement shall continue in effect after termination to the extent necessary to provide for costs incurred hereunder; including final billings and payments pursuant to this Composite Agreement; to permit the determination and enforcement of liability and indemnification obligations arising from acts or events that occurred while this Second Composite Agreement was in effect, and for survival of those provisions which specifically survive termination of this Composite Agreement, including, but not limited to, Article XII - Environmental Provisions, Article XIX, Indemnification, and Article XX - No Warranty/Disclaimers."
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:5e25a2:4_1_10:Insurance_The_Power_Authority_will_procure_all_ins:8ba4a1",
+    "source_clause_title": "4.1.10 Insurance. The Power Authority will procure all insurance as required by Article",
+    "source_page_start": 19,
+    "source_page_end": 19,
+    "entities": [
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "Party",
+        "name": "Power Authority",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:Power_Authority_procure_insurance",
+        "type": "Obligation",
+        "name": "Procure all insurance as required by Article",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority will procure all insurance as required by Article"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "Party",
+        "name": "Con Edison",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:Con_Edison_perform_OM_Services",
+        "type": "Obligation",
+        "name": "Perform the O&M Services at the Power Authority's sole cost and expense in accordance with Con Edison Standards and other specified standards",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall perform the O&M Services, at the Power Authority's sole cost and expense, in accordance with Con Edison Standards, which are consistent with, NERC Reliability Standards, NPCC Reliability Standards, NPCC Directories and NPCC Criteria Requirements, the Finalized PMPs, any Updated PMPs and the Power Authority's specific terms as set forth in Exhibit C"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:Con_Edison_subcontract_OM_Services",
+        "type": "Obligation",
+        "name": "Provide subcontractors with applicable Con Edison Standards, Finalized PMPs, Updated PMPs and comply with Article XXI - Confidentiality",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall provide such subcontractor(s) with any applicable Con Edison Standards, Finalized PMPs, Updated PMPs and as permitted by the provisions of Article XXI - Confidentiality"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:5e25a2:4_1_10:Insurance_The_Power_Authority_will_procure_all_ins:8ba4a1",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:Power_Authority_procure_insurance",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority will procure all insurance as required by Article"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Power_Authority_procure_insurance",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority will procure all insurance"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Con_Edison_perform_OM_Services",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall perform the O&M Services"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Con_Edison_perform_OM_Services",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "at the Power Authority's sole cost and expense"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Con_Edison_subcontract_OM_Services",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall provide such subcontractor(s) with any applicable Con Edison Standards, Finalized PMPs, Updated PMPs and as permitted by the provisions of Article XXI - Confidentiality"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_VIII:8_1:The_rates_and_or_prices_set_forth_in_this_Second_C:9dba91",
+    "source_clause_title": "8.1 The rates and/or prices set forth in this Second Composite Agreement do not include any",
+    "source_page_start": 30,
+    "source_page_end": 30,
+    "entities": [
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "Party",
+        "name": "Con Edison",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison will notify Vendors"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "Party",
+        "name": "Power Authority",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority is exempt from taxes"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:reimburse_ConEdison_for_taxes",
+        "type": "Obligation",
+        "name": "Power Authority reimburses Con Edison for taxes",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "the Power Authority agrees to reimburse Con Edison for any such taxes which the Power Authority is responsible to pay"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:pay_charges_and_fees",
+        "type": "Obligation",
+        "name": "Power Authority pays charges and fees and reimburses Con Edison for charges and fees",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "The Power Authority agrees to pay any such charges and fees and to reimburse Con Edison for any such charges and fees which Con Edison is required to pay"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_VIII:8_1:The_rates_and_or_prices_set_forth_in_this_Second_C:9dba91",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:reimburse_ConEdison_for_taxes",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "the Power Authority agrees to reimburse Con Edison for any such taxes which the Power Authority is responsible to pay"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:reimburse_ConEdison_for_taxes",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "the Power Authority agrees to reimburse Con Edison"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:reimburse_ConEdison_for_taxes",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "the Power Authority agrees to reimburse Con Edison"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_VIII:8_1:The_rates_and_or_prices_set_forth_in_this_Second_C:9dba91",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:pay_charges_and_fees",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "The Power Authority agrees to pay any such charges and fees and to reimburse Con Edison for any such charges and fees which Con Edison is required to pay"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:pay_charges_and_fees",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "The Power Authority agrees to pay any such charges and fees"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:pay_charges_and_fees",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "to reimburse Con Edison for any such charges and fees which Con Edison is required to pay"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XVII:17_2:Right_to_Terminate_If_a_Breach_is_not_cured_as_pro:435d74",
+    "source_clause_title": "17.2 Right to Terminate. If a Breach is not cured as provided in this Article XVII, or if a Breach is",
+    "source_page_start": 38,
+    "source_page_end": 38,
+    "entities": [
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Non-Breaching_Party",
+        "type": "Party",
+        "name": "Non-Breaching Party",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the non-Breaching Party"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Breaching_Party",
+        "type": "Party",
+        "name": "Breaching Party",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Breaching Party"
+      },
+      {
+        "id": "right:Edison_NYPA_OandM_Contract_1:Right_to_Declare_Default_and_Terminate",
+        "type": "Right",
+        "name": "Right to declare a Default and terminate the Second Composite Agreement by written notice at any time until cure occurs",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the non-Breaching Party shall thereafter have the right to declare a Default and terminate this Second Composite Agreement by written notice at any time until cure occurs"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:Recover_Amounts_and_Damages",
+        "type": "Obligation",
+        "name": "Obligation to recover from the Breaching Party all amounts due plus all other damages and remedies",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "to recover from the Breaching Party all amounts due hereunder, plus all other damages and remedies to which they are entitled at law or in equity"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:Relieved_of_Further_Obligation",
+        "type": "Obligation",
+        "name": "Relieved of any further obligation hereunder upon termination",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "be relieved of any further obligation hereunder"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XVII:17_2:Right_to_Terminate_If_a_Breach_is_not_cured_as_pro:435d74",
+        "target_id": "right:Edison_NYPA_OandM_Contract_1:Right_to_Declare_Default_and_Terminate",
+        "type": "GRANTS_RIGHT",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the non-Breaching Party shall thereafter have the right to declare a Default and terminate this Second Composite Agreement by written notice at any time until cure occurs"
+      },
+      {
+        "source_id": "right:Edison_NYPA_OandM_Contract_1:Right_to_Declare_Default_and_Terminate",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Non-Breaching_Party",
+        "type": "HELD_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the non-Breaching Party shall thereafter have the right"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Recover_Amounts_and_Damages",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Non-Breaching_Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "to recover from the Breaching Party all amounts due hereunder, plus all other damages and remedies to which they are entitled"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Recover_Amounts_and_Damages",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Breaching_Party",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "to recover from the Breaching Party all amounts due hereunder"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Relieved_of_Further_Obligation",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Non-Breaching_Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "be relieved of any further obligation hereunder"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XIX:19_1:Indemnification_Limitation_of_Liability_To_the_ful:92233d",
+    "source_clause_title": "19.1 Indemnification/Limitation of Liability. To the fullest extent permitted by law, the Power",
+    "source_page_start": 41,
+    "source_page_end": 41,
+    "entities": [
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "Party",
+        "name": "Power Authority",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "Party",
+        "name": "Con Edison",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Protected_Parties",
+        "type": "Party",
+        "name": "Protected Parties",
+        "properties": {
+          "description": "Con Edison, its trustees, officers, employees, and agents"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison, its trustees, officers, employees, and agents (collectively, the \"Protected Parties\")"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:Power_Authority_indemnify_defend_hold_harmless_Protected_Parties",
+        "type": "Obligation",
+        "name": "Power Authority indemnify, defend, and hold harmless Protected Parties",
+        "properties": {
+          "scope": "any and all direct claims, actions, liabilities, damages, costs, and expenses (including attorney fees and other legal costs and expenses), whether based in contract, tort or otherwise",
+          "causes": [
+            "services, goods and/or materials furnished by Con Edison hereunder or performed by contractors hired by Con Edison, including O&M Services",
+            "any act or omission of the Power Authority and/or the Power Authority's Contractors",
+            "the Additional Work",
+            "the Risks as defined in section 4.1",
+            "Compliance Modifications and Upgrades",
+            "any and all violations of NERC Reliability Standards, NPCC Reliability Standards, FERC, NPCC Directories and/or NPCC Criteria Requirements that occurred prior to the O&M Commencement Date and/or during the Term, until Con Edison has assumed the obligation to comply with each individual NERC Reliability Standard as provided in section 3.1",
+            "a breach of this Second Composite Agreement by the Power Authority, including but not limited to any breach of Power Authority's warranties and representation contained herein"
+          ]
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "Authority shall indemnify, defend, and hold harmless Con Edison, its trustees, officers, employees, and agents (collectively, the \"Protected Parties\") from and against any and all direct claims, actions, liabilities, damages, costs, and expenses (including without limitation attorney fees and other legal costs and expenses), whether based in contract, tort or otherwise, which are asserted, suffered, or incurred by any person or entity (including the Power Authority and the Protected Parties) and which arise from, relate to, or are connected with (i) the services, goods and/or materials furnished by Con Edison hereunder or performed by contractors hired by Con Edison, including, but not limited to, the O&M Services (ii) any act or omission of the Power Authority and/or the Power Authority's Contractors, (iii) the Additional Work, (iv) the Risks as defined in the entire section 4.1 (v) Compliance Modifications and Upgrades, and/or (vi) any and all violations of NERC Reliability Standards, NPCC Reliability Standards, FERC, NPCC Directories and/or NPCC Criteria Requirements that occurred prior to the O&M Commencement Date and/or during the Term, until Con Edison has assumed the obligation to comply with each individual NERC Reliability Standard, as provided for in section 3.1 herein, and (vi) a breach of this Second Composite Agreement by the Power Authority, including but not limited to, any breach of Power Authority's warranties and representation contained herein"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:Power_Authority_release_discharge_Protected_Parties",
+        "type": "Obligation",
+        "name": "Power Authority release and discharge Protected Parties from liability for certain violations",
+        "properties": {
+          "scope": "any and all liability for any violations of NERC Reliability Standards, NPCC Reliability Standards, FERC, NPCC Directories and/or NPCC Criteria Requirements",
+          "period": "prior to Con Edison assuming the obligation to comply with such NERC Reliability Standards"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "To the fullest extent permitted by law, the Power Authority hereby irrevocably and unconditionally agrees to release and forever discharge the Protected Parties from any and all liability for any violations of NERC Reliability Standards, NPCC Reliability Standards, FERC, NPCC Directories and/or NPCC Criteria Requirements and to waive any and all rights to recover any costs, fines and/or penalties from the Protected Parties or any of them in the future for the period prior to Con Edison assuming the obligation to comply with such NERC Reliability Standards."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XIX:19_1:Indemnification_Limitation_of_Liability_To_the_ful:92233d",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:Power_Authority_indemnify_defend_hold_harmless_Protected_Parties",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Authority shall indemnify, defend, and hold harmless Con Edison, its trustees, officers, employees, and agents (collectively, the \"Protected Parties\") from and against any and all direct claims, actions, liabilities, damages, costs, and expenses..."
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Power_Authority_indemnify_defend_hold_harmless_Protected_Parties",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Authority shall indemnify, defend, and hold harmless..."
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Power_Authority_indemnify_defend_hold_harmless_Protected_Parties",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Protected_Parties",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Authority shall indemnify, defend, and hold harmless Con Edison, its trustees, officers, employees, and agents (collectively, the \"Protected Parties\")"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XIX:19_1:Indemnification_Limitation_of_Liability_To_the_ful:92233d",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:Power_Authority_release_discharge_Protected_Parties",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "To the fullest extent permitted by law, the Power Authority hereby irrevocably and unconditionally agrees to release and forever discharge the Protected Parties from any and all liability..."
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Power_Authority_release_discharge_Protected_Parties",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority hereby irrevocably and unconditionally agrees to release and forever discharge..."
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Power_Authority_release_discharge_Protected_Parties",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Protected_Parties",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "release and forever discharge the Protected Parties from any and all liability..."
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_II:2_2_1:End_of_Term_Transition_In_the_event_that_either_Pa:1ba408",
+    "source_clause_title": "2.2.1 End of Term Transition. In the event that either Party, in whole or in part, terminates",
+    "source_page_start": 11,
+    "source_page_end": 11,
+    "entities": [
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "Party",
+        "name": "Power Authority",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "Party",
+        "name": "Con Edison",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:turn_over_test_equipment",
+        "type": "Obligation",
+        "name": "Turn over test equipment to the Power Authority",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(i) turn over test equipment to the Power Authority"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:provide_training_to_new_operator",
+        "type": "Obligation",
+        "name": "Provide reasonable training to the Power Authority's proposed new operator",
+        "properties": {
+          "schedule": "commercially reasonable schedule, as agreed upon by Con Edison and the Power Authority"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "(ii) provide reasonable training to the Power Authority's proposed new operator, pursuant to a commercially reasonable schedule, as agreed upon by Con Edison and the Power Authority"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:turn_over_data_and_procedures",
+        "type": "Obligation",
+        "name": "Turn over applicable data and procedures in accordance with Article XXI - Confidentiality",
+        "properties": {
+          "subject_to": "Article XXI - Confidentiality"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "(iii) turn over applicable data and procedures in accordance with and as permitted by the provisions of Article XXI - Confidentiality"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:turn_over_minor_spare_parts",
+        "type": "Obligation",
+        "name": "Turn over all Minor Spare Parts located within the Astoria Annex Substation to the Power Authority",
+        "properties": {
+          "asset": "Minor Spare Parts located within the Astoria Annex Substation"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "(iv) turn over all Minor Spare Parts located within the Astoria Annex Substation to the Power Authority"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_II:2_2_1:End_of_Term_Transition_In_the_event_that_either_Pa:1ba408",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:turn_over_test_equipment",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(i) turn over test equipment to the Power Authority"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:turn_over_test_equipment",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall: (i) turn over test equipment to the Power Authority"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:turn_over_test_equipment",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(i) turn over test equipment to the Power Authority"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_II:2_2_1:End_of_Term_Transition_In_the_event_that_either_Pa:1ba408",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:provide_training_to_new_operator",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(ii) provide reasonable training to the Power Authority's proposed new operator"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:provide_training_to_new_operator",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall: (ii) provide reasonable training to the Power Authority's proposed new operator"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:provide_training_to_new_operator",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(ii) provide reasonable training to the Power Authority's proposed new operator"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_II:2_2_1:End_of_Term_Transition_In_the_event_that_either_Pa:1ba408",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:turn_over_data_and_procedures",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(iii) turn over applicable data and procedures in accordance with and as permitted by the provisions of Article XXI - Confidentiality"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:turn_over_data_and_procedures",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall: (iii) turn over applicable data and procedures"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:turn_over_data_and_procedures",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(iii) turn over applicable data and procedures ... to the Power Authority"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_II:2_2_1:End_of_Term_Transition_In_the_event_that_either_Pa:1ba408",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:turn_over_minor_spare_parts",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(iv) turn over all Minor Spare Parts located within the Astoria Annex Substation to the Power Authority"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:turn_over_minor_spare_parts",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall: (iv) turn over all Minor Spare Parts"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:turn_over_minor_spare_parts",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(iv) turn over all Minor Spare Parts ... to the Power Authority"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:1176dd:4_2_3_2:Con_Edison_and_any_applicable_subcontractor_s_shal:f1b2b5",
+    "source_clause_title": "4.2.3.2 Con Edison and any applicable subcontractor(s) shall submit proof of",
+    "source_page_start": 20,
+    "source_page_end": 20,
+    "entities": [
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "Party",
+        "name": "Con Edison",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "Party",
+        "name": "Power Authority",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:submit_proof_of_compliance",
+        "type": "Obligation",
+        "name": "Submit proof of compliance with 6 NYCRR Part 248 including a complete HDV inventory/equipment list",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison and any applicable subcontractor(s) shall submit proof of compliance with 6 NYCRR Part 248, including a complete HDV inventory/equipment list of all vehicles, equipment, etc."
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:bear_costs_and_expenses_of_violations",
+        "type": "Obligation",
+        "name": "Bear all costs and expenses resulting from violations and/or fines from the NYSDEC",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall be solely responsible for all such costs and expenses which resulting from violations and/or fines from the NYSDEC."
+      },
+      {
+        "id": "asset:Edison_NYPA_OandM_Contract_1:HDV_inventory_equipment_list",
+        "type": "Asset",
+        "name": "HDV inventory/equipment list",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "including a complete HDV inventory/equipment list of all vehicles, equipment, etc."
+      },
+      {
+        "id": "system:Edison_NYPA_OandM_Contract_1:inventory_template",
+        "type": "System",
+        "name": "Inventory template provided by Power Authority",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority will provide to Con Edison an inventory template"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:1176dd:4_2_3_2:Con_Edison_and_any_applicable_subcontractor_s_shal:f1b2b5",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:submit_proof_of_compliance",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison and any applicable subcontractor(s) shall submit proof of compliance with 6 NYCRR Part 248"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:submit_proof_of_compliance",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison and any applicable subcontractor(s) shall submit proof"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:submit_proof_of_compliance",
+        "target_id": "asset:Edison_NYPA_OandM_Contract_1:HDV_inventory_equipment_list",
+        "type": "APPLIES_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "including a complete HDV inventory/equipment list of all vehicles, equipment, etc."
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:submit_proof_of_compliance",
+        "target_id": "system:Edison_NYPA_OandM_Contract_1:inventory_template",
+        "type": "REQUIRES",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "Power Authority will provide to Con Edison an inventory template, which Con Edison, at its sole discretion, may choose to use."
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:1176dd:4_2_3_2:Con_Edison_and_any_applicable_subcontractor_s_shal:f1b2b5",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:bear_costs_and_expenses_of_violations",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall be solely responsible for all such costs and expenses which resulting from violations and/or fines from the NYSDEC."
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:bear_costs_and_expenses_of_violations",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall be solely responsible"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:c45983:6_1_1:Prior_to_the_O_M_Commencement_Date_Con_Edison_will:286caa",
+    "source_clause_title": "6.1.1 Prior to the O&M Commencement Date, Con Edison will provide the Power Authority",
+    "source_page_start": 25,
+    "source_page_end": 27,
+    "entities": [
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "Party",
+        "name": "Con Edison",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "Party",
+        "name": "Power Authority",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:Provide_Good_Faith_Estimate_Prior_to_OandM_Commencement",
+        "type": "Obligation",
+        "name": "Provide a good faith estimate of anticipated costs and expenses for the Scope of Work prior to the O&M Commencement Date",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Prior to the O&M Commencement Date, Con Edison will provide the Power Authority a good faith estimate of the anticipated costs and expenses for the Scope of Work (on a monthly and/or annual basis)"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:Provide_Budget_and_Work_Plan_Annually",
+        "type": "Obligation",
+        "name": "Provide a budget and work plan/schedule for the upcoming calendar year not later than June 30 each year after the first calendar year",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Following the first calendar year of its O&M Services, and not later than June 30 of each year thereafter, Con Edison shall endeavor to provide the Power Authority with a budget and work plan/schedule for the upcoming calendar year"
+      },
+      {
+        "id": "monetaryamount:Edison_NYPA_OandM_Contract_1:Initial_Monthly_Estimate_30000",
+        "type": "MonetaryAmount",
+        "name": "Thirty Thousand Dollars ($30,000) per month",
+        "properties": {
+          "amount": 30000,
+          "currency": "USD",
+          "period": "month"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "Thirty Thousand Dollars ($30,000) per month"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:Reimburse_All_Costs_and_Expenses",
+        "type": "Obligation",
+        "name": "Power Authority shall reimburse Con Edison for all costs and expenses incurred in providing the O&M Services",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority shall reimburse Con Edison for all of the costs and expenses that Con Edison incurs in providing the the O&M Services"
+      },
+      {
+        "id": "frequency:Edison_NYPA_OandM_Contract_1:Monthly_and_Annual",
+        "type": "Frequency",
+        "name": "monthly and/or annual basis",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "on a monthly and/or annual basis"
+      },
+      {
+        "id": "deadline:Edison_NYPA_OandM_Contract_1:June_30_Annual_Budget_Deadline",
+        "type": "Deadline",
+        "name": "June 30 of each year",
+        "properties": {
+          "date": "June 30"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "not later than June 30 of each year thereafter"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:c45983:6_1_1:Prior_to_the_O_M_Commencement_Date_Con_Edison_will:286caa",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:Provide_Good_Faith_Estimate_Prior_to_OandM_Commencement",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Prior to the O&M Commencement Date, Con Edison will provide the Power Authority a good faith estimate"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Provide_Good_Faith_Estimate_Prior_to_OandM_Commencement",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison will provide"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Provide_Good_Faith_Estimate_Prior_to_OandM_Commencement",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison will provide the Power Authority"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Provide_Good_Faith_Estimate_Prior_to_OandM_Commencement",
+        "target_id": "frequency:Edison_NYPA_OandM_Contract_1:Monthly_and_Annual",
+        "type": "HAS_FREQUENCY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "on a monthly and/or annual basis"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:c45983:6_1_1:Prior_to_the_O_M_Commencement_Date_Con_Edison_will:286caa",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:Provide_Budget_and_Work_Plan_Annually",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall endeavor to provide the Power Authority with a budget and work plan/schedule for the upcoming calendar year"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Provide_Budget_and_Work_Plan_Annually",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall endeavor to provide"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Provide_Budget_and_Work_Plan_Annually",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "provide the Power Authority"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Provide_Budget_and_Work_Plan_Annually",
+        "target_id": "deadline:Edison_NYPA_OandM_Contract_1:June_30_Annual_Budget_Deadline",
+        "type": "HAS_DEADLINE",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "not later than June 30 of each year thereafter"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:c45983:6_1_1:Prior_to_the_O_M_Commencement_Date_Con_Edison_will:286caa",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:Reimburse_All_Costs_and_Expenses",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority shall reimburse Con Edison for all of the costs and expenses"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Reimburse_All_Costs_and_Expenses",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority shall reimburse"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Reimburse_All_Costs_and_Expenses",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "reimburse Con Edison"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_X:10_5:Con_Edison_shall_provide_the_Power_Authority_with_:335a4c",
+    "source_clause_title": "10.5 Con Edison shall provide the Power Authority with the Hazardous Waste Emergency Response",
+    "source_page_start": 31,
+    "source_page_end": 32,
+    "entities": [
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "Party",
+        "name": "Con Edison",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "Party",
+        "name": "Power Authority",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority"
+      },
+      {
+        "id": "asset:Edison_NYPA_OandM_Contract_1:Astoria_Annex_Substation",
+        "type": "Asset",
+        "name": "Astoria Annex Substation",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Astoria Annex Substation"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:maintain_preparedness_information_posting",
+        "type": "Obligation",
+        "name": "Maintain current and updated posting of preparedness information on-site adjacent to the designated hazardous waste storage area",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "shall maintain a current and updated posting of this information on-site adjacent to the designated hazardous waste storage area"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:maintain_spill_kits_and_emergency_response_equipment",
+        "type": "Obligation",
+        "name": "Maintain spill kits and other emergency response equipment at the Astoria Annex Substation if necessary",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Con Edison shall maintain spill kits and other emergency response equipment, if necessary, at the Astoria Annex Substation"
+      },
+      {
+        "id": "event:Edison_NYPA_OandM_Contract_1:Release_of_hazardous_waste",
+        "type": "Event",
+        "name": "Release of hazardous waste",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "In the event of a Release of hazardous waste"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:contain_and_control_release",
+        "type": "Obligation",
+        "name": "Take immediate action to contain and control the Release of hazardous waste",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Con Edison shall take immediate action to contain and control the Release"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:notify_power_authority_of_release",
+        "type": "Obligation",
+        "name": "Promptly notify the Power Authority of the Release and the actions taken",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "will promptly notify the Power Authority of the Release and the actions taken"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_X:10_5:Con_Edison_shall_provide_the_Power_Authority_with_:335a4c",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:maintain_preparedness_information_posting",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "shall maintain a current and updated posting of this information on-site adjacent to the designated hazardous waste storage area"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:maintain_preparedness_information_posting",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall maintain"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:maintain_spill_kits_and_emergency_response_equipment",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall maintain spill kits and other emergency response equipment"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:maintain_spill_kits_and_emergency_response_equipment",
+        "target_id": "asset:Edison_NYPA_OandM_Contract_1:Astoria_Annex_Substation",
+        "type": "APPLIES_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "at the Astoria Annex Substation"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:contain_and_control_release",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall take immediate action"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:contain_and_control_release",
+        "target_id": "event:Edison_NYPA_OandM_Contract_1:Release_of_hazardous_waste",
+        "type": "TRIGGERED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "In the event of a Release of hazardous waste"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:notify_power_authority_of_release",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison ... will promptly notify"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:notify_power_authority_of_release",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "notify the Power Authority"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:notify_power_authority_of_release",
+        "target_id": "event:Edison_NYPA_OandM_Contract_1:Release_of_hazardous_waste",
+        "type": "TRIGGERED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "In the event of a Release of hazardous waste"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XII:12_5:Environmental_Indemnification:6940b2",
+    "source_clause_title": "12.5 Environmental Indemnification:",
+    "source_page_start": 35,
+    "source_page_end": 35,
+    "entities": [
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "Party",
+        "name": "Power Authority",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall indemnify, defend, and hold harmless Con Edison"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "Party",
+        "name": "Con Edison",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall indemnify, defend, and hold harmless Con Edison"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison_Indemnified_Parties",
+        "type": "Party",
+        "name": "Con Edison Indemnified Parties",
+        "properties": {
+          "description": "Con Edison, its affiliates and their respective directors, officers, shareholders, and employees"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison, its affiliates and their respective directors, officers, shareholders, and employees (collectively, the \"Con Edison Indemnified Parties\")"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:Environmental_Indemnification",
+        "type": "Obligation",
+        "name": "Indemnify, defend, and hold harmless Con Edison Indemnified Parties for Environmental Liabilities",
+        "properties": {
+          "scope": [
+            "existence of or any actual or threatened Release or Discovery on, over, above, under or around the Easement Area and any migration of such Hazardous Substances on, to or through the Con Edison Lands",
+            "any initial control and containment of a Release in the Easement Area",
+            "Required Remediation",
+            "the Additional Work",
+            "the Risks",
+            "transportation and disposal of any and all wastes from the Facility and the Easement Area",
+            "any and all wastes subject to Required Remediation on the Con Edison Lands from the date of the Power Authority ownership of the Associated Equipment forward"
+          ],
+          "includes": [
+            "burden and expense of defending all claims, suits and administrative proceedings",
+            "conducting all negotiations of any description",
+            "paying and discharging any and all judgments, penalties or other sums due against the Con Edison Indemnified Parties"
+          ]
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall indemnify, defend, and hold harmless Con Edison, its affiliates and their respective directors, officers, shareholders, and employees (collectively, the \"Con Edison Indemnified Parties\") for any and all Environmental Liabilities arising out of or in connection with (i) the existence of or any actual or threatened Release or Discovery on, over, above, under or around the Easement Area and any migration of such Hazardous Substances on, to or through the Con Edison Lands; (ii) any initial control and containment of a Release in the Easement Area; (iii) Required Remediation; (iv) the Additional Work, (v) the Risks, and (vi) the transportation and disposal of any and all wastes from the Facility and the Easement Area, as well as any and all wastes subject to Required Remediation on the Con Edison Lands that occurs from the date of the Power Authority ownership of the Associated Equipment forward. This obligation shall include the burden and expense of defending all claims, suits and administrative proceedings and conducting all negotiations of any description, and paying and discharging, when and as the same become due, any and all judgments, penalties or other sums due against the Con Edison Indemnified Parties."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XII:12_5:Environmental_Indemnification:6940b2",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:Environmental_Indemnification",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall indemnify, defend, and hold harmless Con Edison"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Environmental_Indemnification",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall indemnify, defend, and hold harmless Con Edison"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Environmental_Indemnification",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison_Indemnified_Parties",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall indemnify, defend, and hold harmless Con Edison, its affiliates and their respective directors, officers, shareholders, and employees (collectively, the \"Con Edison Indemnified Parties\")"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XXXIV:34_1:No_delay_or_omission_by_either_party_to_exercise_a:eb059a",
+    "source_clause_title": "34.1 No delay or omission by either party to exercise any right or power accruing upon a non­",
+    "source_page_start": 50,
+    "source_page_end": 53,
+    "entities": [
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "Party",
+        "name": "Con Edison",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "CONSOLIDATED EDISON COMPANY OF NEW YORK, INC."
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "Party",
+        "name": "Power Authority",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "NEW YORK POWER AUTHORITY"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Either_Party",
+        "type": "Party",
+        "name": "Either Party",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "either party"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:No_delay_or_omission_to_exercise_rights",
+        "type": "Obligation",
+        "name": "No delay or omission by either party to exercise any right or power accruing upon a non-compliance or failure of performance",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "No delay or omission by either party to exercise any right or power accruing upon a non­ compliance or failure of performance by the other party shall impair that right or power or be construed to be a waiver thereof."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_XXXIV:34_1:No_delay_or_omission_by_either_party_to_exercise_a:eb059a",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:No_delay_or_omission_to_exercise_rights",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "No delay or omission by either party to exercise any right or power accruing upon a non­ compliance or failure of performance by the other party shall impair that right or power or be construed to be a waiver thereof."
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:No_delay_or_omission_to_exercise_rights",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Either_Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "No delay or omission by either party to exercise any right or power accruing upon a non­ compliance or failure of performance by the other party shall impair that right or power or be construed to be a waiver thereof."
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:No_delay_or_omission_to_exercise_rights",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Either_Party",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "No delay or omission by either party to exercise any right or power accruing upon a non­ compliance or failure of performance by the other party shall impair that right or power or be construed to be a waiver thereof."
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:5e25a2:4_2_7:Operating_Communications_Astoria_Annex_Substation_:dfc496",
+    "source_clause_title": "4.2.7 Operating Communications- Astoria Annex Substation/ Energy Control Center. In",
+    "source_page_start": 21,
+    "source_page_end": 22,
+    "entities": [
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "Party",
+        "name": "Power Authority",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "Party",
+        "name": "Con Edison",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison_ECC",
+        "type": "Party",
+        "name": "Con Edison ECC",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison Energy Control Center (\"Con Edison ECC\")"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:NYPA_ECC",
+        "type": "Party",
+        "name": "NYPA ECC",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority Energy Control Center (\"NYPA ECC\")"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:install_maintain_comm_lines",
+        "type": "Obligation",
+        "name": "Install and maintain two dedicated communication lines and other necessary communication lines",
+        "properties": {
+          "cost_and_expense": "sole cost and expense"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority shall install and maintain, at its sole cost and expense, two dedicated communication lines between the Astoria Annex Substation and the Con Edison Energy Control Center (\"Con Edison ECC\") and such other communication lines as are necessary to operate any required fire detection and alarm systems"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:maintain_continuous_communication",
+        "type": "Obligation",
+        "name": "Maintain continuous communication 24/7/365 only through Con Edison ECC",
+        "properties": {
+          "frequency": "24 hours a day, 7 days a week, 365 days a year"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall maintain continuous communication 24 hours a day, 7 days a week, and 365 days of the year, only through the Con Edison ECC"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:notify_emergency",
+        "type": "Obligation",
+        "name": "Notify NYPA ECC dispatcher of any emergency situation at Astoria Annex Substation as soon as practicable",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison ECC shall notify the designated the Power Authority Energy Control Center (\"NYPA ECC\") dispatcher, of any emergency situation at the Astoria Annex Substation as soon as practicable"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:install_maintain_regular_phone_line",
+        "type": "Obligation",
+        "name": "Install and maintain a regular phone line for all outside calls",
+        "properties": {
+          "cost_and_expense": "sole cost and expense"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority shall install and maintain, at its sole cost and expense, a regular phone line for all outside calls"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:provide_radio_system",
+        "type": "Obligation",
+        "name": "Provide a Con Edison substation frequency band radio system for communication between Astoria Annex Substation operators and Con Edison ECC",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall provide a Con Edison substation frequency band radio system for communication between the Astoria Annex Substation operators and the Con Edison ECC"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:continue_construction_commissioning_work",
+        "type": "Obligation",
+        "name": "Continue Construction and Commissioning Work at sole cost, expense, and risk until fully performed",
+        "properties": {
+          "cost_and_expense": "sole cost, expense, and risk"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority shall continue to have the Construction and Commissioning Work performed until any and all such Construction and Commissioning Work contracted for has been fully performed pursuant to the terms of any applicable contract"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:responsible_for_issues_from_construction_commissioning_work",
+        "type": "Obligation",
+        "name": "Be solely responsible and liable for any ensuing issues arising from or relating to the Construction and Commissioning Work",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority shall be solely responsible and liable for any ensuing issues arising from or relating to the Construction and Commissioning Work"
+      },
+      {
+        "id": "restriction:Edison_NYPA_OandM_Contract_1:excluded_services_construction_defects",
+        "type": "Restriction",
+        "name": "O&M Services exclude operation, monitoring, inspection, preventative or corrective maintenance, testing, or protection system operations assessment relating to construction defects except immediate action to protect persons and property",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The O&M Services shall not include any operation, monitoring, inspection, preventative or corrective maintenance, testing, or protection system operations assessment relating to construction defects of the Facility, as reasonably determined by Con Edison, except Con Edison will take any immediate action necessary to protect persons and property from harm"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:correct_construction_defects",
+        "type": "Obligation",
+        "name": "Promptly correct any construction defects at sole cost and expense",
+        "properties": {
+          "cost_and_expense": "sole cost and expense"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall be solely responsible to promptly correct any such construction defects at its sole cost and expense"
+      },
+      {
+        "id": "restriction:Edison_NYPA_OandM_Contract_1:excluded_services_capital_expenditures",
+        "type": "Restriction",
+        "name": "O&M Services exclude operation, monitoring, inspection, preventative or corrective maintenance, testing, or protection system operations assessment that requires a capital expenditure",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The O&M Services shall not include any operation, monitoring, inspection, preventative or corrective maintenance, testing, or protection system operations assessment that requires a capital expenditure"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:submit_design_change",
+        "type": "Obligation",
+        "name": "Submit design change to Con Edison for review and comment if required",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "In the event a design change is required, the Power Authority shall submit such design change to Con Edison for its review and comment"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:pay_costs_design_change",
+        "type": "Obligation",
+        "name": "Pay for costs relating to designing, constructing, installing and implementing design changes",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall be solely responsible to pay for any costs relating to designing, constructing, installing and implementing the design change"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:5e25a2:4_2_7:Operating_Communications_Astoria_Annex_Substation_:dfc496",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:install_maintain_comm_lines",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority shall install and maintain, at its sole cost and expense, two dedicated communication lines between the Astoria Annex Substation and the Con Edison Energy Control Center (\"Con Edison ECC\") and such other communication lines as are necessary to operate any required fire detection and alarm systems"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:install_maintain_comm_lines",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority shall install and maintain"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:install_maintain_comm_lines",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison_ECC",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "communication lines between the Astoria Annex Substation and the Con Edison Energy Control Center (\"Con Edison ECC\")"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:5e25a2:4_2_7:Operating_Communications_Astoria_Annex_Substation_:dfc496",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:maintain_continuous_communication",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall maintain continuous communication 24 hours a day, 7 days a week, and 365 days of the year, only through the Con Edison ECC"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:maintain_continuous_communication",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall maintain continuous communication"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:maintain_continuous_communication",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison_ECC",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "only through the Con Edison ECC"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:5e25a2:4_2_7:Operating_Communications_Astoria_Annex_Substation_:dfc496",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:notify_emergency",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison ECC shall notify the designated the Power Authority Energy Control Center (\"NYPA ECC\") dispatcher, of any emergency situation at the Astoria Annex Substation as soon as practicable"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:notify_emergency",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison_ECC",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison ECC shall notify"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:notify_emergency",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:NYPA_ECC",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "notify the designated the Power Authority Energy Control Center (\"NYPA ECC\") dispatcher"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:5e25a2:4_2_7:Operating_Communications_Astoria_Annex_Substation_:dfc496",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:install_maintain_regular_phone_line",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority shall install and maintain, at its sole cost and expense, a regular phone line for all outside calls"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:install_maintain_regular_phone_line",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority shall install and maintain"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:5e25a2:4_2_7:Operating_Communications_Astoria_Annex_Substation_:dfc496",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:provide_radio_system",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall provide a Con Edison substation frequency band radio system for communication between the Astoria Annex Substation operators and the Con Edison ECC"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:provide_radio_system",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall provide"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:5e25a2:4_2_7:Operating_Communications_Astoria_Annex_Substation_:dfc496",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:continue_construction_commissioning_work",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority shall continue to have the Construction and Commissioning Work performed until any and all such Construction and Commissioning Work contracted for has been fully performed pursuant to the terms of any applicable contract"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:continue_construction_commissioning_work",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority shall continue to have the Construction and Commissioning Work performed"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:5e25a2:4_2_7:Operating_Communications_Astoria_Annex_Substation_:dfc496",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:responsible_for_issues_from_construction_commissioning_work",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority shall be solely responsible and liable for any ensuing issues arising from or relating to the Construction and Commissioning Work"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:responsible_for_issues_from_construction_commissioning_work",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority shall be solely responsible and liable"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:5e25a2:4_2_7:Operating_Communications_Astoria_Annex_Substation_:dfc496",
+        "target_id": "restriction:Edison_NYPA_OandM_Contract_1:excluded_services_construction_defects",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The O&M Services shall not include any operation, monitoring, inspection, preventative or corrective maintenance, testing, or protection system operations assessment relating to construction defects of the Facility, as reasonably determined by Con Edison, except Con Edison will take any immediate action necessary to protect persons and property from harm"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:5e25a2:4_2_7:Operating_Communications_Astoria_Annex_Substation_:dfc496",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:correct_construction_defects",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall be solely responsible to promptly correct any such construction defects at its sole cost and expense"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:correct_construction_defects",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall be solely responsible to promptly correct any such construction defects"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:5e25a2:4_2_7:Operating_Communications_Astoria_Annex_Substation_:dfc496",
+        "target_id": "restriction:Edison_NYPA_OandM_Contract_1:excluded_services_capital_expenditures",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The O&M Services shall not include any operation, monitoring, inspection, preventative or corrective maintenance, testing, or protection system operations assessment that requires a capital expenditure"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:5e25a2:4_2_7:Operating_Communications_Astoria_Annex_Substation_:dfc496",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:submit_design_change",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "In the event a design change is required, the Power Authority shall submit such design change to Con Edison for its review and comment"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:submit_design_change",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority shall submit such design change"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:5e25a2:4_2_7:Operating_Communications_Astoria_Annex_Substation_:dfc496",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:pay_costs_design_change",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority shall be solely responsible to pay for any costs relating to designing, constructing, installing and implementing the design change"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:pay_costs_design_change",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority shall be solely responsible to pay for any costs"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_II:2_2_1:Written_Notice_This_Second_Composite_Agreement_may:0cd5b1",
+    "source_clause_title": "2.2.1 Written Notice. This Second Composite Agreement may be terminated, in whole or in",
+    "source_page_start": 10,
+    "source_page_end": 11,
+    "entities": [
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Either_Party",
+        "type": "Party",
+        "name": "Either Party",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "either Party"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:Written_Notice_One_Year_Advance",
+        "type": "Obligation",
+        "name": "Provide at least one year advance written notice to terminate the Agreement",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "either Party upon at least one year advance written notice"
+      },
+      {
+        "id": "noticeperiod:Edison_NYPA_OandM_Contract_1:One_Year",
+        "type": "NoticePeriod",
+        "name": "One year advance notice",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "at least one year advance written notice"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:No_Liability_Upon_Termination",
+        "type": "Obligation",
+        "name": "No liability to the other Party for any reason upon termination",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "without liability to the other Party for any reason whatsoever"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:Obligations_Prior_To_Termination",
+        "type": "Obligation",
+        "name": "Neither Party relieved of obligations or liabilities arising prior to effective termination date",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "no such termination shall have any effect on, and neither Party shall be relieved of, any obligation or liability relating to or arising from this Second Composite Agreement prior to the effective date of such termination"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Written_Notice_One_Year_Advance",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Either_Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "either Party upon at least one year advance written notice"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Written_Notice_One_Year_Advance",
+        "target_id": "noticeperiod:Edison_NYPA_OandM_Contract_1:One_Year",
+        "type": "HAS_NOTICE_PERIOD",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "at least one year advance written notice"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:No_Liability_Upon_Termination",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Either_Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "without liability to the other Party for any reason whatsoever"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:No_Liability_Upon_Termination",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Either_Party",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "without liability to the other Party for any reason whatsoever"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Obligations_Prior_To_Termination",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Either_Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "neither Party shall be relieved of, any obligation or liability relating to or arising from this Second Composite Agreement prior to the effective date of such termination"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Obligations_Prior_To_Termination",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Either_Party",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "neither Party shall be relieved of, any obligation or liability relating to or arising from this Second Composite Agreement prior to the effective date of such termination"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_II:2_2_1:Written_Notice_This_Second_Composite_Agreement_may:0cd5b1",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:Written_Notice_One_Year_Advance",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "either Party upon at least one year advance written notice"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_II:2_2_1:Written_Notice_This_Second_Composite_Agreement_may:0cd5b1",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:No_Liability_Upon_Termination",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "without liability to the other Party for any reason whatsoever"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_II:2_2_1:Written_Notice_This_Second_Composite_Agreement_may:0cd5b1",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:Obligations_Prior_To_Termination",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "no such termination shall have any effect on, and neither Party shall be relieved of, any obligation or liability relating to or arising from this Second Composite Agreement prior to the effective date of such termination"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_III:3_4:Permits_In_accordance_with_Article_VIII_Taxes_Perm:b397f5",
+    "source_clause_title": "3.4 Permits. In accordance with Article VIII- Taxes/Permit Fees, the Power Authority shall be",
+    "source_page_start": 14,
+    "source_page_end": 14,
+    "entities": [
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "Party",
+        "name": "Power Authority",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "Party",
+        "name": "Con Edison",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:obtain_and_maintain_permits",
+        "type": "Obligation",
+        "name": "Obligation to obtain, procure, maintain and update all rights, approvals, consents, Permits and Environmental Permits",
+        "properties": {
+          "scope": "operation and maintenance of the Facility, the O&M Services, and the performance of any obligation of the Power Authority hereunder",
+          "cost_borne_by": "Power Authority"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "solely responsible pursuant to Applicable Legal Requirements and Good Industry Practice, at its sole cost and expense, to obtain, procure, maintain and update all rights, approvals, consents, Permits and Environmental Permits from Governmental Authority or otherwise, and any other items needed for or relating to the operation and maintenance of the Facility, the O&M Services, and the performance of any obligation of the Power Authority hereunder."
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:cooperate_in_good_faith",
+        "type": "Obligation",
+        "name": "Obligation to cooperate in good faith with the Power Authority in processing Permit and Environmental Permit applications",
+        "properties": {
+          "scope": "Permit and Environmental Permit applications that require signature on behalf of Con Edison or information available only to Con Edison"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall cooperate in good faith with the Power Authority in the processing of Permit and Environmental Permit applications that require signature on behalf of Con Edison or information available only to Con Edison"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:reimburse_out_of_pocket_expenses",
+        "type": "Obligation",
+        "name": "Obligation to reimburse Con Edison for all reasonable out-of-pocket expenses",
+        "properties": {
+          "expense_type": "reasonable out-of-pocket (i.e., third party) expenses incurred by Con Edison"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority shall reimburse Con Edison for all reasonable out-of-pocket (i.e., third party) expenses incurred by Con Edison"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_III:3_4:Permits_In_accordance_with_Article_VIII_Taxes_Perm:b397f5",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:obtain_and_maintain_permits",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority shall be solely responsible pursuant to Applicable Legal Requirements and Good Industry Practice, at its sole cost and expense, to obtain, procure, maintain and update all rights, approvals, consents, Permits and Environmental Permits"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:obtain_and_maintain_permits",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority shall be solely responsible"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:cooperate_in_good_faith",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall cooperate in good faith"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:cooperate_in_good_faith",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall cooperate in good faith with the Power Authority"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:reimburse_out_of_pocket_expenses",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority shall reimburse Con Edison"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:reimburse_out_of_pocket_expenses",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority shall reimburse Con Edison"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:ARTICLE_III:3_4:Permits_In_accordance_with_Article_VIII_Taxes_Perm:b397f5",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority shall be solely responsible"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:5e25a2:4_2_2:Access_to_and_Use_of_the_Power_Authority_Property_:434cd8",
+    "source_clause_title": "4.2.2 Access to and Use of the Power Authority Property. The Power Authority hereby",
+    "source_page_start": 19,
+    "source_page_end": 20,
+    "entities": [
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "Party",
+        "name": "Con Edison",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "authorizes Con Edison"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "Party",
+        "name": "Power Authority",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority hereby authorizes"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Applicable_Subcontractor",
+        "type": "Party",
+        "name": "Applicable Subcontractor",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "Con Edison (and any applicable subcontractor)"
+      },
+      {
+        "id": "right:Edison_NYPA_OandM_Contract_1:Access_and_Use_of_Power_Authority_Property",
+        "type": "Right",
+        "name": "Access and use of the Power Authority Property",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "authorizes Con Edison (and any applicable subcontractor) to access and use any portion of the Power Authority Property required by Con Edison"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:Reasonable_Notice_to_Power_Authority",
+        "type": "Obligation",
+        "name": "Provide reasonable notice to Power Authority to access and use property",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "upon reasonable notice to perform the O&M Services"
+      },
+      {
+        "id": "exception:Edison_NYPA_OandM_Contract_1:No_Prior_Notice_in_Emergency",
+        "type": "Exception",
+        "name": "No prior notice required in cases of emergency",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "except that no prior notice shall be required in cases of emergency"
+      },
+      {
+        "id": "condition:Edison_NYPA_OandM_Contract_1:Emergency_Determined_by_Con_Edison",
+        "type": "Condition",
+        "name": "Emergency as determined in Con Edison's sole discretion",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "as determined in Con Edison's sole discretion"
+      },
+      {
+        "id": "frequency:Edison_NYPA_OandM_Contract_1:Access_24_7_365",
+        "type": "Frequency",
+        "name": "Access permitted 24 hours a day, 7 days a week, 365 days a year",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Such access and use shall be permitted 24 hours a day, 7 days a week, 365 days of the year"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:Comply_with_Power_Authority_Site_Access_Requirements",
+        "type": "Obligation",
+        "name": "Comply with Power Authority's site access requirements for security and escort",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison and any applicable subcontractor will be required to comply with the Power Authority's site access requirements for security, escort"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:Power_Authority_Cooperate_to_Ensure_Compliance",
+        "type": "Obligation",
+        "name": "Power Authority shall cooperate with Con Edison and subcontractors to ensure compliance",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority shall cooperate with Con Edison and any applicable subcontractor to ensure Power Authority's compliance with the preceding sentence"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:Immediate_Notification_to_NYPA_ECC_in_Emergency",
+        "type": "Obligation",
+        "name": "Immediate notification to NYPA ECC in event of emergency",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "In the event of emergency, Con Edison and/or its subcontractors must immediately notify the NYPA ECC"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:NYPA_ECC",
+        "type": "Party",
+        "name": "NYPA ECC",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "must immediately notify the NYPA ECC"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:5e25a2:4_2_2:Access_to_and_Use_of_the_Power_Authority_Property_:434cd8",
+        "target_id": "right:Edison_NYPA_OandM_Contract_1:Access_and_Use_of_Power_Authority_Property",
+        "type": "GRANTS_RIGHT",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "authorizes Con Edison (and any applicable subcontractor) to access and use any portion of the Power Authority Property"
+      },
+      {
+        "source_id": "right:Edison_NYPA_OandM_Contract_1:Access_and_Use_of_Power_Authority_Property",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "GRANTS_RIGHT",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "authorizes Con Edison"
+      },
+      {
+        "source_id": "right:Edison_NYPA_OandM_Contract_1:Access_and_Use_of_Power_Authority_Property",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Applicable_Subcontractor",
+        "type": "GRANTS_RIGHT",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "authorizes Con Edison (and any applicable subcontractor)"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Reasonable_Notice_to_Power_Authority",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "upon reasonable notice to perform the O&M Services"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Reasonable_Notice_to_Power_Authority",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "upon reasonable notice"
+      },
+      {
+        "source_id": "exception:Edison_NYPA_OandM_Contract_1:No_Prior_Notice_in_Emergency",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:Reasonable_Notice_to_Power_Authority",
+        "type": "EXCEPTS",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "except that no prior notice shall be required in cases of emergency"
+      },
+      {
+        "source_id": "exception:Edison_NYPA_OandM_Contract_1:No_Prior_Notice_in_Emergency",
+        "target_id": "condition:Edison_NYPA_OandM_Contract_1:Emergency_Determined_by_Con_Edison",
+        "type": "SUBJECT_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "no prior notice shall be required in cases of emergency, as determined in Con Edison's sole discretion"
+      },
+      {
+        "source_id": "right:Edison_NYPA_OandM_Contract_1:Access_and_Use_of_Power_Authority_Property",
+        "target_id": "frequency:Edison_NYPA_OandM_Contract_1:Access_24_7_365",
+        "type": "HAS_FREQUENCY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Such access and use shall be permitted 24 hours a day, 7 days a week, 365 days of the year"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Comply_with_Power_Authority_Site_Access_Requirements",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison and any applicable subcontractor will be required to comply"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Comply_with_Power_Authority_Site_Access_Requirements",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Applicable_Subcontractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "Con Edison and any applicable subcontractor will be required to comply"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Power_Authority_Cooperate_to_Ensure_Compliance",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority shall cooperate"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Power_Authority_Cooperate_to_Ensure_Compliance",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority shall cooperate with Con Edison"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Power_Authority_Cooperate_to_Ensure_Compliance",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Applicable_Subcontractor",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "Power Authority shall cooperate with any applicable subcontractor"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Immediate_Notification_to_NYPA_ECC_in_Emergency",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison and/or its subcontractors must immediately notify"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Immediate_Notification_to_NYPA_ECC_in_Emergency",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Applicable_Subcontractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "Con Edison and/or its subcontractors must immediately notify"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Immediate_Notification_to_NYPA_ECC_in_Emergency",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:NYPA_ECC",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "must immediately notify the NYPA ECC"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:Edison_NYPA_OandM_Contract_1:129dd5:4_3_6_2:Except_for:4a9f4a",
+    "source_clause_title": "4.3.6.2. Except for",
+    "source_page_start": 23,
+    "source_page_end": 23,
+    "entities": [
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "Party",
+        "name": "Con Edison",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison"
+      },
+      {
+        "id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "Party",
+        "name": "Power Authority",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Power Authority"
+      },
+      {
+        "id": "asset:Edison_NYPA_OandM_Contract_1:Minor_Spare_Parts_and_Other_Parts_and_Equipment",
+        "type": "Asset",
+        "name": "Minor Spare Parts and Other Parts and Equipment",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Minor Spare Parts and Other Parts and Equipment"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:maintain_Minor_Spare_Parts_and_Other_Parts_and_Equipment_at_Astoria_Annex_Substation",
+        "type": "Obligation",
+        "name": "Maintain Minor Spare Parts and Other Parts and Equipment at the Astoria Annex Substation",
+        "properties": {
+          "location": "Astoria Annex Substation"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall maintain in the Astoria Annex Substation Minor Spare Parts and Other Parts and Equipment"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:Power_Authority_maintain_spare_parts_not_at_Astoria_Annex_Substation",
+        "type": "Obligation",
+        "name": "Maintain any and all spare parts not stored at the Astoria Annex Substation",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority shall be solely responsible to maintain any and all spare parts not stored at the Astoria Annex Substation"
+      },
+      {
+        "id": "right:Edison_NYPA_OandM_Contract_1:Power_Authority_ship_Minor_Spare_Parts_and_Other_Parts_and_Equipment_to_Con_Edison",
+        "type": "Right",
+        "name": "Power Authority may ship Minor Spare Parts and Other Parts and Equipment directly to Con Edison",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority may ship the Minor Spare Parts and Other Parts and Equipment directly to Con Edison"
+      },
+      {
+        "id": "obligation:Edison_NYPA_OandM_Contract_1:Con_Edison_review_and_use_reasonable_efforts_define_required_Minor_Spare_Parts",
+        "type": "Obligation",
+        "name": "Review and use reasonable efforts to define required Minor Spare Parts to support day-to-day operation of the Facility",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison will review and use reasonable efforts to define the required Minor Spare Parts needed to support the day-to-day operation of the Facility"
+      },
+      {
+        "id": "riskSignal:Edison_NYPA_OandM_Contract_1:title_and_risk_of_loss_remain_with_Power_Authority_until_delivery",
+        "type": "RiskSignal",
+        "name": "Title and risk of loss remain with Power Authority until delivery to Astoria Annex Substation",
+        "properties": {
+          "location": "Astoria Annex Substation"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "All title and risk of loss to any Minor Spare Parts and Other Parts and Equipment shall remain with the Power Authority until delivery to the Astoria Annex Substation"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:129dd5:4_3_6_2:Except_for:4a9f4a",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:maintain_Minor_Spare_Parts_and_Other_Parts_and_Equipment_at_Astoria_Annex_Substation",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall maintain in the Astoria Annex Substation Minor Spare Parts and Other Parts and Equipment"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:maintain_Minor_Spare_Parts_and_Other_Parts_and_Equipment_at_Astoria_Annex_Substation",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison shall maintain"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:maintain_Minor_Spare_Parts_and_Other_Parts_and_Equipment_at_Astoria_Annex_Substation",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Minor Spare Parts and Other Parts and Equipment ... the Power Authority"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:129dd5:4_3_6_2:Except_for:4a9f4a",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:Power_Authority_maintain_spare_parts_not_at_Astoria_Annex_Substation",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority shall be solely responsible to maintain any and all spare parts not stored at the Astoria Annex Substation"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Power_Authority_maintain_spare_parts_not_at_Astoria_Annex_Substation",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority shall be solely responsible"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Power_Authority_maintain_spare_parts_not_at_Astoria_Annex_Substation",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Power Authority shall be solely responsible"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:129dd5:4_3_6_2:Except_for:4a9f4a",
+        "target_id": "right:Edison_NYPA_OandM_Contract_1:Power_Authority_ship_Minor_Spare_Parts_and_Other_Parts_and_Equipment_to_Con_Edison",
+        "type": "GRANTS_RIGHT",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority may ship the Minor Spare Parts and Other Parts and Equipment directly to Con Edison"
+      },
+      {
+        "source_id": "right:Edison_NYPA_OandM_Contract_1:Power_Authority_ship_Minor_Spare_Parts_and_Other_Parts_and_Equipment_to_Con_Edison",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "HELD_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Power Authority may ship"
+      },
+      {
+        "source_id": "right:Edison_NYPA_OandM_Contract_1:Power_Authority_ship_Minor_Spare_Parts_and_Other_Parts_and_Equipment_to_Con_Edison",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "ship ... directly to Con Edison"
+      },
+      {
+        "source_id": "clause:Edison_NYPA_OandM_Contract_1:129dd5:4_3_6_2:Except_for:4a9f4a",
+        "target_id": "obligation:Edison_NYPA_OandM_Contract_1:Con_Edison_review_and_use_reasonable_efforts_define_required_Minor_Spare_Parts",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison will review and use reasonable efforts to define the required Minor Spare Parts needed to support the day-to-day operation of the Facility"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Con_Edison_review_and_use_reasonable_efforts_define_required_Minor_Spare_Parts",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Con_Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Con Edison will review and use reasonable efforts"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:maintain_Minor_Spare_Parts_and_Other_Parts_and_Equipment_at_Astoria_Annex_Substation",
+        "target_id": "asset:Edison_NYPA_OandM_Contract_1:Minor_Spare_Parts_and_Other_Parts_and_Equipment",
+        "type": "APPLIES_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Minor Spare Parts and Other Parts and Equipment"
+      },
+      {
+        "source_id": "obligation:Edison_NYPA_OandM_Contract_1:Power_Authority_maintain_spare_parts_not_at_Astoria_Annex_Substation",
+        "target_id": "asset:Edison_NYPA_OandM_Contract_1:Minor_Spare_Parts_and_Other_Parts_and_Equipment",
+        "type": "APPLIES_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "any and all spare parts not stored at the Astoria Annex Substation"
+      },
+      {
+        "source_id": "riskSignal:Edison_NYPA_OandM_Contract_1:title_and_risk_of_loss_remain_with_Power_Authority_until_delivery",
+        "target_id": "party:Edison_NYPA_OandM_Contract_1:Power_Authority",
+        "type": "HELD_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "title and risk of loss ... shall remain with the Power Authority"
+      }
+    ]
+  }
+]
