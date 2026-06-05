@@ -19,6 +19,8 @@ from app.rag.query_router import route_question
 from app.rag.graph_retriever import graph_native_retrieve
 from app.rag.hybrid_retriever import graph_rag_retrieve
 from app.rag.answer_generator import AnswerGenerator
+from app.services.prompt_builder import build_rag_prompt
+from app.tree.semantic_retriever import SemanticRetriever
 
 
 GRAPH_ENABLED_CONTRACTS = {
@@ -164,6 +166,22 @@ def search_only_retrieve(
     return format_search_docs(docs)
 
 
+def tree_retrieve(
+    question: str,
+    contract_id: Optional[str],
+    top: int = 5,
+) -> str:
+    """
+    TreeRAG retrieval: vector search + hierarchical tree context expansion.
+
+    Returns a formatted context string (no LLM call here — that happens
+    in AnswerGenerator so chat_history support is unified).
+    """
+    retriever = SemanticRetriever(contract_id=contract_id)
+    chunks = retriever.retrieve(query=question, top_k=top, contract_id=contract_id)
+    return build_rag_prompt(query=question, retrieved_chunks=chunks)
+
+
 def answer_question(
     question: str,
     contract_id: Optional[str],
@@ -203,6 +221,13 @@ def answer_question(
 
     if route == "graph":
         context = graph_native_retrieve(question)
+
+    elif route == "tree":
+        context = tree_retrieve(
+            question=question,
+            contract_id=contract_id,
+            top=top,
+        )
 
     elif route == "search":
         context = search_only_retrieve(

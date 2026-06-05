@@ -5,16 +5,16 @@ from app.readers.document_reader import read_document
 from app.tree.tree_builder import build_fallback_tree, load_pageindex_tree
 from app.chunking.chunker import create_chunks
 from app.indexing.index_builder import IndexBuilder
-from app.storage.artifact_store import ArtifactStore
+from app.storage.artifact_store import ArtifactStore, get_artifact_store
 from app.utils import contract_id_from_file
 from app import config
 from app.models import TreeNode
-from app.pageindex.pageindex_api import PageIndexApiTreeGenerator
+from app.pageindex.pageindex_api import get_pageindex_generator
 
 class IngestionService:
-    def __init__(self):
+    def __init__(self, store=None):
         self.index_builder = IndexBuilder()
-        self.store = ArtifactStore()
+        self.store = store or get_artifact_store()
 
     def ingest_file(
         self,
@@ -33,20 +33,35 @@ class IngestionService:
             print(f"[Ingestion] Using provided PageIndex JSON for {contract_id}")
             tree = load_pageindex_tree(pageindex_json, contract_id)
 
-        # 2. Existing generated PageIndex JSON
+        # 2. PageIndex API (local disk or Blob depending on USE_BLOB_ARTIFACTS)
         elif config.USE_PAGEINDEX_API:
-            pageindex = PageIndexApiTreeGenerator()
+            pageindex = get_pageindex_generator()
 
             if pageindex.exists(contract_id):
                 print(f"[Ingestion] Using cached PageIndex tree for {contract_id}")
-                tree = load_pageindex_tree(str(pageindex.output_path(contract_id)), contract_id)
-
+                if config.USE_BLOB_ARTIFACTS:
+                    # BlobPageIndexTreeGenerator: fetch dict directly
+                    tree_data = pageindex.get_tree_data(contract_id)
+                    if tree_data:
+                        from app.tree.tree_builder import _tree_node_from_any
+                        raw_tree = tree_data.get("tree", tree_data)
+                        tree = _tree_node_from_any(raw_tree, contract_id)
+                else:
+                    tree = load_pageindex_tree(
+                        str(pageindex.output_path(contract_id)), contract_id
+                    )
             else:
                 print(f"[Ingestion] Generating PageIndex tree for {contract_id}")
-                generated_path = pageindex.generate(file_path, contract_id)
-
-                if generated_path:
-                    tree = load_pageindex_tree(generated_path, contract_id)
+                result_path = pageindex.generate(file_path, contract_id)
+                if result_path:
+                    if config.USE_BLOB_ARTIFACTS:
+                        tree_data = pageindex.get_tree_data(contract_id)
+                        if tree_data:
+                            from app.tree.tree_builder import _tree_node_from_any
+                            raw_tree = tree_data.get("tree", tree_data)
+                            tree = _tree_node_from_any(raw_tree, contract_id)
+                    else:
+                        tree = load_pageindex_tree(result_path, contract_id)
 
         # 3. Fallback tree
         if tree is None:
@@ -99,7 +114,9 @@ class IngestionService:
 
         return {
             "manifest": manifest,
-            "corpus": corpus
+            "corpus": corpus,
+            # Return index_docs so callers don't have to re-read from disk/Blob.
+            "index_docs": index_docs,
         }
 
     def ingest_folder(self, folder: str, pageindex_folder: Optional[str] = None) -> Dict:

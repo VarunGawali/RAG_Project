@@ -5,7 +5,18 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # ---------------------------------------------------------------------
-# Project paths
+# Artifact storage mode
+# Set USE_BLOB_ARTIFACTS=true in production (Azure).
+# False keeps artifacts on local disk for local development/testing.
+# ---------------------------------------------------------------------
+
+USE_BLOB_ARTIFACTS = os.getenv("USE_BLOB_ARTIFACTS", "false").lower() == "true"
+
+# ---------------------------------------------------------------------
+# Project paths  (local dev / temp files only)
+# When USE_BLOB_ARTIFACTS=true these directories are used only for
+# ephemeral temp files during a single worker run and are not the
+# primary storage location.
 # ---------------------------------------------------------------------
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,16 +27,18 @@ SAMPLES_DIR = ROOT / "samples"
 
 PAGEINDEX_OUTPUT_DIR = ROOT / "samples" / "pageindex_trees"
 
-# KG output folders
+# KG output folders (local dev only)
 KG_DIR = DATA_DIR / "kg"
 KG_NORMALIZED_DIR = KG_DIR / "normalized"
 KG_EXTRACTIONS_DIR = KG_DIR / "extractions"
 KG_LOGS_DIR = KG_DIR / "logs"
 
-# Ensure KG folders exist
-KG_NORMALIZED_DIR.mkdir(parents=True, exist_ok=True)
-KG_EXTRACTIONS_DIR.mkdir(parents=True, exist_ok=True)
-KG_LOGS_DIR.mkdir(parents=True, exist_ok=True)
+# Only create local directories in local-dev mode to avoid
+# filesystem errors in read-only cloud container environments.
+if not USE_BLOB_ARTIFACTS:
+    KG_NORMALIZED_DIR.mkdir(parents=True, exist_ok=True)
+    KG_EXTRACTIONS_DIR.mkdir(parents=True, exist_ok=True)
+    KG_LOGS_DIR.mkdir(parents=True, exist_ok=True)
 
 
 # ---------------------------------------------------------------------

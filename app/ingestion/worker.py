@@ -6,29 +6,30 @@ Each job runs in a thread from a module-level ThreadPoolExecutor.
 Flow per file:
   1. Download raw file from Azure Blob Storage
   2. Write to a temp file on local disk (ephemeral, cleaned up after)
-  3. Run IngestionService (parse → tree → chunk → embed)
-  4. Upload index_docs to Azure AI Search
-  5. Persist key artifacts back to Azure Blob
-  6. Mark job done in Cosmos
+  3. Run IngestionService with BlobArtifactStore
+     → parse → tree → chunk → embed
+     → artifacts written to Blob (not local disk)
+  4. Upload index_docs directly to Azure AI Search (no local file read)
+  5. Mark job done in Cosmos
 
 NOTE: For higher throughput or multi-instance deployments, replace the
 ThreadPoolExecutor with an Azure Service Bus queue + a dedicated worker
 process that calls run_job() after dequeuing a message.
 """
 
-import json
 import logging
+import os
 import tempfile
 import traceback
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from typing import Dict
 
 from app import config
 from app.ingestion.job_store import JobStore
 from app.services.ingestion_service import IngestionService
 from app.indexing.azure_search_uploader import AzureSearchIndexer
 from app.storage.blob_store import BlobStore
+from app.storage.blob_artifact_store import BlobArtifactStore
 
 logger = logging.getLogger(__name__)
 
@@ -62,48 +63,42 @@ def _run_job(
     tmp_path: str | None = None
 
     try:
-        # ── Step 1: download from Blob ─────────────────────────────────
+        # ── Step 1: download raw file from Blob ───────────────────────
         job_store.update_stage(job_id, user_id, stage="parsing", progress=10)
         raw_bytes = blob_store.download_raw_file(blob_path)
 
-        # ── Step 2: write to a temp file ───────────────────────────────
+        # ── Step 2: write to ephemeral temp file ──────────────────────
         fd, tmp_path = tempfile.mkstemp(suffix=suffix)
         try:
-            import os
             os.write(fd, raw_bytes)
         finally:
-            import os
             os.close(fd)
 
-        # ── Step 3: parse → tree → chunk ──────────────────────────────
+        # ── Step 3: parse → tree → chunk → embed ─────────────────────
+        # Use BlobArtifactStore so artifacts go to Blob, not local disk.
+        blob_artifact_store = BlobArtifactStore(blob_store=blob_store)
+        ingestion_svc = IngestionService(store=blob_artifact_store)
+
         job_store.update_stage(job_id, user_id, stage="parsing", progress=20)
-        ingestion_svc = IngestionService()
         ingestion_result = ingestion_svc.ingest_file(
             file_path=tmp_path,
             contract_id=contract_id,
         )
 
-        # ── Step 4: embed + upload to Azure AI Search ─────────────────
-        job_store.update_stage(job_id, user_id, stage="embedding", progress=55)
-
-        index_docs_path = config.PROCESSED_DIR / contract_id / "index_docs.json"
-        if not index_docs_path.exists():
-            raise FileNotFoundError(
-                f"index_docs.json not found after ingestion: {index_docs_path}"
+        # ── Step 4: upload index_docs to Azure AI Search ──────────────
+        # index_docs is returned directly by ingest_file — no disk read.
+        index_docs = ingestion_result.get("index_docs", [])
+        if not index_docs:
+            raise ValueError(
+                f"No index_docs returned from ingestion for {contract_id}"
             )
 
-        with open(index_docs_path, "r", encoding="utf-8") as f:
-            index_docs = json.load(f)
-
+        job_store.update_stage(job_id, user_id, stage="embedding", progress=55)
         job_store.update_stage(job_id, user_id, stage="indexing", progress=70)
         indexer = AzureSearchIndexer()
         uploaded_count = indexer.upload_documents(index_docs, kg_lookup=None)
 
-        # ── Step 5: persist artifacts to Blob ─────────────────────────
-        job_store.update_stage(job_id, user_id, stage="indexing", progress=88)
-        _persist_artifacts(blob_store, contract_id, index_docs_path)
-
-        # ── Step 6: mark done ─────────────────────────────────────────
+        # ── Step 5: mark done ─────────────────────────────────────────
         job_store.mark_done(
             job_id=job_id,
             user_id=user_id,
@@ -130,31 +125,3 @@ def _run_job(
                 Path(tmp_path).unlink(missing_ok=True)
             except Exception:
                 pass
-
-
-def _persist_artifacts(
-    blob_store: BlobStore,
-    contract_id: str,
-    index_docs_path: Path,
-) -> None:
-    """
-    Upload key processed artifacts to Blob so they survive container restarts.
-    Only uploads files that actually exist.
-    """
-    artifact_files: Dict[str, Path] = {
-        "index_docs.json": index_docs_path,
-        "tree.json":       index_docs_path.parent / "tree.json",
-        "chunks.json":     index_docs_path.parent / "chunks.json",
-        "manifest.json":   index_docs_path.parent / "manifest.json",
-    }
-
-    for artifact_name, path in artifact_files.items():
-        if path.exists():
-            try:
-                data = json.loads(path.read_text(encoding="utf-8"))
-                blob_store.upload_artifact(contract_id, artifact_name, data)
-            except Exception as exc:
-                logger.warning(
-                    "Could not persist artifact %s for %s: %s",
-                    artifact_name, contract_id, exc,
-                )
