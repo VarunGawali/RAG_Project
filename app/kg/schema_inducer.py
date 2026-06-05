@@ -182,11 +182,47 @@ BATCH_CANONICALIZE_SYSTEM = """You are a legal ontology expert specializing in c
 You will receive a JSON list of term groups. Each group has a "representative" name and
 optional "aliases" (synonyms from the same semantic cluster).
 
+━━━ YOUR TASK ━━━
 For each group, return the single best canonical PascalCase legal ontology name and a
-one-sentence definition. Preserve legal precision — do not over-generalise.
+one-sentence definition.
+
+━━━ CRITICAL RULES ━━━
+
+1. POLARITY CHECK FIRST — Before canonicalizing any group, verify all members share
+   the same legal polarity. Legally opposite roles must NEVER be in the same group.
+   Known opposite pairs that must stay separate:
+   • Indemnitor  ↔  Indemnitee
+   • Obligor     ↔  Obligee
+   • Buyer       ↔  Seller
+   • Defaulting Party  ↔  Non-Defaulting Party
+   • Breaching Party   ↔  Non-Breaching Party
+   • Disclosing Party  ↔  Receiving Party
+   • Assignor    ↔  Assignee
+   If a group contains members from BOTH sides of a pair, set "split_required": true
+   and list the two subgroups in "split_into".
+
+2. LEGAL PRECISION — do not over-generalise. "CurePeriod" is better than "Period".
+   "LiquidatedDamagesClause" is better than "DamagesProvision".
+
+3. PASCAL CASE — e.g. CurePeriod, LiquidatedDamagesCap, ForceMAjeureEvent
+
+4. NO COMPOUND TYPES — if the representative is "Indemnitor and Contracting Party",
+   the canonical should be "Indemnitor" (drop the compound qualifier).
 
 Return a JSON array in the same order:
-[{"canonical": "CurePeriod", "definition": "..."}, ...]"""
+[
+  {"canonical": "CurePeriod", "definition": "..."},
+  {"canonical": "Indemnitor", "definition": "...", "split_required": false},
+  {
+    "canonical": "SPLIT_NEEDED",
+    "definition": "",
+    "split_required": true,
+    "split_into": [
+      {"canonical": "Indemnitor", "definition": "Party bearing the indemnification obligation."},
+      {"canonical": "Indemnitee", "definition": "Party protected by the indemnification obligation."}
+    ]
+  }
+]"""
 
 
 def canonicalize_clusters(
@@ -274,11 +310,27 @@ def canonicalize_clusters(
             for k, orig_i in enumerate(batch_idx):
                 cluster, rep = clusters_with_rep[orig_i]
                 item = items[k] if k < len(items) else {}
-                proposals[orig_i] = {
-                    "canonical": item.get("canonical") or to_pascal_case(rep),
-                    "definition": item.get("definition", ""),
-                    "raw_variants": cluster,
-                }
+
+                if item.get("split_required") and item.get("split_into"):
+                    # LLM detected a polarity error — emit one proposal per sub-group
+                    # Each sub-group inherits the full cluster's raw_variants for now
+                    # (frequency scoring will still work correctly)
+                    print(f"  [split] cluster '{rep}' split into: "
+                          f"{[s['canonical'] for s in item['split_into']]}")
+                    for sub in item["split_into"]:
+                        proposals.append({
+                            "canonical": sub.get("canonical", to_pascal_case(rep)),
+                            "definition": sub.get("definition", ""),
+                            "raw_variants": cluster,   # shared — frequency still correct
+                            "was_split": True,
+                        })
+                    proposals[orig_i] = None  # placeholder replaced by appended entries
+                else:
+                    proposals[orig_i] = {
+                        "canonical": item.get("canonical") or to_pascal_case(rep),
+                        "definition": item.get("definition", ""),
+                        "raw_variants": cluster,
+                    }
 
         return [p for p in proposals if p is not None]
 

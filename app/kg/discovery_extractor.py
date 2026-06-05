@@ -83,27 +83,155 @@ DISCOVERY_SYSTEM_PROMPT = """You are a senior legal contract expert and knowledg
 Your task is to read a contract clause and identify every legally significant
 entity and relationship present in it.
 
-IMPORTANT RULES:
-- Do NOT use a predefined list of entity or relationship types.
-- Name entity types and relationship types based on their actual legal meaning.
-- Use precise legal terminology (e.g. "Indemnitor", "Cure Period", "Step-In Right",
-  "Liquidated Damages Cap", "Regulatory Trigger", "Force Majeure Event").
-- For each entity, explain its legal role in one sentence.
-- For each relationship, explain why the connection is legally significant.
-- Extract only what is explicitly present in the text — do not infer.
-- Include exact evidence quotes.
-- Return valid JSON only."""
+━━━ ENTITY TYPE RULES ━━━
+
+1. NO PREDEFINED LIST — name types based on actual legal meaning in this clause.
+
+2. SINGLE-ROLE TYPES ONLY — each entity_type must describe exactly one legal role.
+   ✗ Bad:  "Indemnitor and Contracting Party"  (compound — two roles)
+   ✗ Bad:  "Obligor under Insurance Obligations"  (over-qualified — just "Obligor")
+   ✓ Good: "Indemnitor", "Indemnitee", "Obligor", "Obligee"
+
+3. PREFERRED CANONICAL FORMS — use these root forms, not verbose paraphrases:
+   • Party giving indemnity  → "Indemnitor"   (not "Indemnifying Party")
+   • Party receiving indemnity → "Indemnitee"  (not "Indemnified Party")
+   • Party bearing a duty   → "Obligor"       (not "Obligated Party" or "Performing Party")
+   • Party holding a right  → "Obligee"       (not "Benefiting Party")
+   • Party in breach        → "BreachingParty" (not "Defaulting Counterparty")
+   • Party not in breach    → "NonBreachingParty"
+   • Party giving notice    → "NoticeObligor"
+   • Party receiving notice → "NoticeRecipient"
+
+4. ALWAYS SEPARATE OPPOSITE ROLES — for every legal relationship, extract BOTH sides
+   as distinct entities with distinct types.
+   Example — indemnification clause must produce TWO entities:
+     { "entity_type": "Indemnitor", "name": "Contractor" }
+     { "entity_type": "Indemnitee", "name": "Owner" }
+   Never merge them into one entity or one compound type.
+
+5. PARTY ROLES NOT PARTY NAMES — entity_type is the legal role, not the proper noun.
+   ✗ Bad:  entity_type = "Con Edison"
+   ✓ Good: entity_type = "ServiceProvider", name = "Con Edison"
+
+━━━ RELATIONSHIP TYPE RULES ━━━
+
+6. DIRECTIONAL VERB PHRASES — relationship_type must read as source → target.
+   ✗ Bad:  "Indemnification Obligation"  (unclear direction)
+   ✓ Good: "INDEMNIFIES"  (source=Indemnitor, target=Indemnitee)
+   ✓ Good: "TRIGGERS_DEFAULT_OF"  (source=Event, target=Party)
+   ✓ Good: "CAPS_LIABILITY_OF"  (source=Clause, target=Obligor)
+
+7. SCREAMING_SNAKE_CASE for relationship types — makes them visually distinct
+   from entity types in downstream processing.
+   Examples: "OBLIGATES", "TERMINATES", "EXCUSES_PERFORMANCE_OF",
+             "SURVIVES_TERMINATION_OF", "GRANTS_CURE_PERIOD_TO",
+             "ASSIGNS_RIGHT_TO", "REQUIRES_NOTICE_FROM"
+
+8. EXTRACT ONLY WHAT IS EXPLICIT — do not infer relationships not stated in the text.
+
+━━━ CONFIDENCE SCORING ━━━
+- 1.0 = explicitly stated in exact words
+- 0.8 = clearly implied by the clause structure
+- 0.6 = reasonable legal inference from context
+
+Return valid JSON only."""
+
+
+_FEW_SHOT_EXAMPLE = '''
+━━━ EXAMPLE — correct extraction for an indemnification clause ━━━
+
+Clause text:
+"Contractor shall defend, indemnify and hold harmless Owner and its officers,
+employees and agents from and against any Claims arising out of Contractor's
+negligent acts or willful misconduct in performing the Work."
+
+Correct output:
+{
+  "entities": [
+    {
+      "id": "ent_contractor",
+      "entity_type": "Indemnitor",
+      "name": "Contractor",
+      "legal_role": "Bears the indemnification obligation; must defend and compensate Owner.",
+      "confidence": 1.0,
+      "evidence_quote": "Contractor shall defend, indemnify and hold harmless Owner"
+    },
+    {
+      "id": "ent_owner",
+      "entity_type": "Indemnitee",
+      "name": "Owner",
+      "legal_role": "Beneficiary of indemnification; protected against claims from Contractor's misconduct.",
+      "confidence": 1.0,
+      "evidence_quote": "hold harmless Owner and its officers, employees and agents"
+    },
+    {
+      "id": "ent_claims",
+      "entity_type": "IndemnifiableClaim",
+      "name": "Claims from negligent acts or willful misconduct",
+      "legal_role": "Defines the scope of losses covered by the indemnity obligation.",
+      "confidence": 1.0,
+      "evidence_quote": "any Claims arising out of Contractor's negligent acts or willful misconduct"
+    },
+    {
+      "id": "ent_trigger",
+      "entity_type": "IndemnityTrigger",
+      "name": "Negligent acts or willful misconduct in performing Work",
+      "legal_role": "The conduct that activates the indemnification obligation.",
+      "confidence": 1.0,
+      "evidence_quote": "arising out of Contractor's negligent acts or willful misconduct in performing the Work"
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "ent_contractor",
+      "target_id": "ent_owner",
+      "relationship_type": "INDEMNIFIES",
+      "legal_significance": "Creates a primary financial protection obligation running from Contractor to Owner.",
+      "confidence": 1.0,
+      "evidence_quote": "Contractor shall defend, indemnify and hold harmless Owner"
+    },
+    {
+      "source_id": "ent_trigger",
+      "target_id": "ent_contractor",
+      "relationship_type": "ACTIVATES_INDEMNITY_OBLIGATION_OF",
+      "legal_significance": "Connects the triggering conduct to the party bearing the resulting liability.",
+      "confidence": 1.0,
+      "evidence_quote": "Claims arising out of Contractor's negligent acts or willful misconduct"
+    },
+    {
+      "source_id": "ent_claims",
+      "target_id": "ent_contractor",
+      "relationship_type": "FALLS_WITHIN_INDEMNITY_SCOPE_OF",
+      "legal_significance": "Defines which losses Contractor must cover.",
+      "confidence": 1.0,
+      "evidence_quote": "any Claims arising out of Contractor's negligent acts"
+    }
+  ],
+  "extractor_notes": "Classic unilateral indemnity running from service provider to client. Scope limited to Contractor's own acts — not absolute."
+}
+
+Note what the example does:
+- Indemnitor and Indemnitee are SEPARATE entities with OPPOSITE types
+- No compound types ("Indemnitor and Contractor" is never used)
+- Relationship types are directional verb phrases in SCREAMING_SNAKE_CASE
+- The trigger condition is its own entity, not folded into the Indemnitor
+━━━ END EXAMPLE ━━━
+'''
 
 
 def build_discovery_prompt(clause: KGNode) -> str:
     return f"""Read the following contract clause and extract all legally significant entities and relationships.
+Follow the system prompt rules precisely. Study the example below before extracting.
+
+{_FEW_SHOT_EXAMPLE}
+
+━━━ NOW EXTRACT FROM THIS CLAUSE ━━━
 
 Contract ID: {clause.contractId}
 Clause ID: {clause.kgId}
 Clause title: {clause.title}
 Clause type hint: {clause.clauseTypeHint}
 Page: {clause.pageStart}-{clause.pageEnd}
-Source path: {clause.sourcePath}
 
 Clause text:
 \"\"\"
@@ -115,24 +243,24 @@ Return JSON in exactly this shape:
   "entities": [
     {{
       "id": "ent_<short_slug>",
-      "entity_type": "<legal type name — be specific, use legal terminology>",
-      "name": "<the specific instance name>",
-      "legal_role": "<one sentence: why is this legally significant?>",
+      "entity_type": "<single-role legal type — use canonical forms from system prompt>",
+      "name": "<the specific instance or value from this clause>",
+      "legal_role": "<one sentence: what legal function does this play?>",
       "confidence": 0.0,
       "evidence_quote": "<exact quote from clause text>"
     }}
   ],
   "relationships": [
     {{
-      "source_id": "<entity id or clause id>",
-      "target_id": "<entity id or clause id>",
-      "relationship_type": "<legal relationship name — be specific>",
+      "source_id": "<entity id>",
+      "target_id": "<entity id>",
+      "relationship_type": "<DIRECTIONAL_VERB in SCREAMING_SNAKE_CASE>",
       "legal_significance": "<one sentence: why does this connection matter legally?>",
       "confidence": 0.0,
       "evidence_quote": "<exact quote from clause text>"
     }}
   ],
-  "extractor_notes": "<optional: anything unusual about this clause>"
+  "extractor_notes": "<optional: note anything unusual, ambiguous, or cross-referencing another clause>"
 }}"""
 
 
