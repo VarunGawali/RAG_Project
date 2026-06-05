@@ -1,44 +1,11 @@
 import argparse
 from app.kg.gremlin_writer import GremlinWriter
+from app.kg.legal_extractor import LEGAL_NODE_TYPES, LEGAL_RELATIONSHIP_TYPES
 
 
-LEGAL_VERTEX_LABELS = [
-    "Party",
-    "Obligation",
-    "Right",
-    "Restriction",
-    "Condition",
-    "Exception",
-    "Deadline",
-    "NoticePeriod",
-    "Frequency",
-    "MonetaryAmount",
-    "Asset",
-    "System",
-    "Report",
-    "Event",
-    "RiskSignal",
-]
+LEGAL_VERTEX_LABELS = LEGAL_NODE_TYPES
 
-LEGAL_EDGE_LABELS = [
-    "EXTRACTED_ENTITY",
-    "IMPOSES_OBLIGATION",
-    "GRANTS_RIGHT",
-    "PROHIBITS",
-    "OWED_BY",
-    "OWED_TO",
-    "HELD_BY",
-    "HAS_DEADLINE",
-    "HAS_NOTICE_PERIOD",
-    "HAS_FREQUENCY",
-    "TRIGGERED_BY",
-    "SUBJECT_TO",
-    "EXCEPTS",
-    "APPLIES_TO",
-    "RECORDED_IN",
-    "REQUIRES",
-    "HAS_RISK_SIGNAL",
-]
+LEGAL_EDGE_LABELS = LEGAL_RELATIONSHIP_TYPES + ["EXTRACTED_ENTITY", "IMPOSES_OBLIGATION_ON"]
 
 
 def count_vertices(writer: GremlinWriter, label: str):

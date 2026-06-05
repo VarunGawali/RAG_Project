@@ -173,9 +173,20 @@ def cluster_by_similarity(
 # ---------------------------------------------------------------------------
 
 def to_pascal_case(name: str) -> str:
-    """Convert 'cure period' or 'Cure Period' → 'CurePeriod'."""
-    words = re.sub(r"[^a-zA-Z0-9 ]+", " ", name).split()
-    return "".join(w.capitalize() for w in words if w)
+    """Convert any of these correctly to PascalCase:
+       'cure period'       → 'CurePeriod'
+       'Cure Period'       → 'CurePeriod'
+       'CAPS_LIABILITY_OF' → 'CapsLiabilityOf'
+       'CurePeriod'        → 'CurePeriod'   (already PascalCase — preserved)
+       'forceMajeureEvent' → 'ForceMajeureEvent'
+    """
+    # 1. Insert space before every uppercase letter that follows a lowercase letter
+    #    (handles camelCase and PascalCase boundaries: "CurePeriod" → "Cure Period")
+    spaced = re.sub(r"([a-z0-9])([A-Z])", r"\1 \2", name)
+    # 2. Replace all non-alphanumeric characters (underscores, hyphens, etc.) with space
+    spaced = re.sub(r"[^a-zA-Z0-9 ]+", " ", spaced)
+    # 3. Capitalize each word and join
+    return "".join(w.capitalize() for w in spaced.split() if w)
 
 
 BATCH_CANONICALIZE_SYSTEM = """You are a legal ontology expert specializing in contract law.

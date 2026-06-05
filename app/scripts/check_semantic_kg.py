@@ -1,34 +1,31 @@
 from app.kg.gremlin_writer import GremlinWriter
+from app.kg.legal_extractor import LEGAL_NODE_TYPES, LEGAL_RELATIONSHIP_TYPES
 
 
 def main():
     writer = GremlinWriter()
 
-    queries = {
-        "Legal entities": "g.V().has('nodeType', 'legal_entity').count()",
-        "Obligations": "g.V().hasLabel('Obligation').count()",
-        "Rights": "g.V().hasLabel('Right').count()",
-        "Restrictions": "g.V().hasLabel('Restriction').count()",
-        "Parties": "g.V().hasLabel('Party').count()",
-        "Assets": "g.V().hasLabel('Asset').count()",
-        "Events": "g.V().hasLabel('Event').count()",
-        "Deadlines": "g.V().hasLabel('Deadline').count()",
-        "NoticePeriods": "g.V().hasLabel('NoticePeriod').count()",
-        "Frequencies": "g.V().hasLabel('Frequency').count()",
-        "RiskSignals": "g.V().hasLabel('RiskSignal').count()",
-        "EXTRACTED_ENTITY": "g.E().hasLabel('EXTRACTED_ENTITY').count()",
-        "IMPOSES_OBLIGATION": "g.E().hasLabel('IMPOSES_OBLIGATION').count()",
-        "GRANTS_RIGHT": "g.E().hasLabel('GRANTS_RIGHT').count()",
-        "OWED_BY": "g.E().hasLabel('OWED_BY').count()",
-        "OWED_TO": "g.E().hasLabel('OWED_TO').count()",
-        "HAS_DEADLINE": "g.E().hasLabel('HAS_DEADLINE').count()",
-        "HAS_FREQUENCY": "g.E().hasLabel('HAS_FREQUENCY').count()",
-    }
-
     try:
-        for label, query in queries.items():
-            result = writer.submit(query)
-            print(label, ":", result)
+        total = writer.submit("g.V().has('nodeType', 'legal_entity').count()")
+        print(f"\n{'='*45}")
+        print(f"  Total semantic vertices : {total}")
+        print(f"{'='*45}")
+
+        print("\n--- Entity types ---")
+        for label in LEGAL_NODE_TYPES:
+            count = writer.submit(f"g.V().hasLabel('{label}').count()")
+            if count and count[0] > 0:
+                print(f"  {label:<30} {count[0]}")
+
+        print("\n--- Relationship types ---")
+        edge_labels = LEGAL_RELATIONSHIP_TYPES + ["EXTRACTED_ENTITY", "IMPOSES_OBLIGATION_ON"]
+        for label in edge_labels:
+            count = writer.submit(f"g.E().hasLabel('{label}').count()")
+            if count and count[0] > 0:
+                print(f"  {label:<35} {count[0]}")
+
+        print(f"\n{'='*45}\n")
+
     finally:
         writer.close()
 

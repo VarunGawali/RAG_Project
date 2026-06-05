@@ -110,42 +110,33 @@ class GremlinWriter:
         properties: Dict[str, Any],
     ):
         """
-        Upsert vertex by id.
-
-        Assumes Cosmos Gremlin graph partition key path is /pk.
+        Upsert vertex in a single query — all properties chained inline.
+        One RU round-trip instead of N+1.
         """
-        query = """
+        clean_props = {
+            k: clean_value(v)
+            for k, v in properties.items()
+            if k not in {"id", "label"} and clean_value(v) not in (None, "")
+        }
+
+        # Build chained .property() calls as part of one traversal
+        prop_chain = "".join(
+            f".property(p{i}k, p{i}v)" for i in range(len(clean_props))
+        )
+        query = f"""
         g.V(vid).fold().
           coalesce(
             unfold(),
             addV(vlabel).property('id', vid).property('pk', pk)
-          )
+          ){prop_chain}
         """
 
-        self.submit(query, {
-            "vid": vertex_id,
-            "vlabel": label,
-            "pk": pk,
-        })
+        bindings = {"vid": vertex_id, "vlabel": label, "pk": pk}
+        for i, (k, v) in enumerate(clean_props.items()):
+            bindings[f"p{i}k"] = k
+            bindings[f"p{i}v"] = v
 
-        for key, value in properties.items():
-            if key in {"id", "label"}:
-                continue
-
-            value = clean_value(value)
-
-            if value is None or value == "":
-                continue
-
-            prop_query = """
-            g.V(vid).property(pkey, pvalue)
-            """
-
-            self.submit(prop_query, {
-                "vid": vertex_id,
-                "pkey": key,
-                "pvalue": value,
-            })
+        self.submit(query, bindings)
 
     def upsert_edge(
         self,
@@ -159,41 +150,34 @@ class GremlinWriter:
         """
         properties = properties or {}
 
-        query = """
+        clean_props = {
+            k: clean_value(v)
+            for k, v in properties.items()
+            if clean_value(v) not in (None, "")
+        }
+
+        prop_chain = "".join(
+            f".property(p{i}k, p{i}v)" for i in range(len(clean_props))
+        )
+        query = f"""
         g.V(source_id).as('s').
           V(target_id).as('t').
           coalesce(
             __.outE(edge_label).where(inV().hasId(target_id)),
             __.addE(edge_label).from('s').to('t')
-          )
+          ){prop_chain}
         """
 
-        self.submit(query, {
+        bindings = {
             "source_id": source_id,
             "target_id": target_id,
             "edge_label": edge_label,
-        })
+        }
+        for i, (k, v) in enumerate(clean_props.items()):
+            bindings[f"p{i}k"] = k
+            bindings[f"p{i}v"] = v
 
-        for key, value in properties.items():
-            value = clean_value(value)
-
-            if value is None or value == "":
-                continue
-
-            prop_query = """
-            g.V(source_id).
-              outE(edge_label).
-              where(inV().hasId(target_id)).
-              property(pkey, pvalue)
-            """
-
-            self.submit(prop_query, {
-                "source_id": source_id,
-                "target_id": target_id,
-                "edge_label": edge_label,
-                "pkey": key,
-                "pvalue": value,
-            })
+        self.submit(query, bindings)
 
     def write_structural_graph(self, normalized: NormalizedContract):
         """
@@ -320,4 +304,3 @@ class GremlinWriter:
                     **rel.properties,
                 },
             )
-

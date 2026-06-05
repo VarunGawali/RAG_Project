@@ -8,44 +8,85 @@ from openai import AzureOpenAI
 from app import config
 from app.kg.models import KGNode, LegalExtractionResult
 
-
 LEGAL_NODE_TYPES = [
+    # Layer 1 — Universal (all 8 contracts)
+    "Obligee",
+    "Obligation",             # renamed from Paymentobligation — covers all 33 obligation subtypes
+    "NoticeRecipient",
+    "Indemnitor",
+    "Obligor",
+    "Agreement",
+    "ForceMajeureEvent",
+    "Indemnitee",
+    "InsurancePolicy",
+
+    # Layer 2 — Common (50–75% contracts)
+    "Breach",
     "Party",
-    "Obligation",
-    "Right",
-    "Restriction",
-    "Condition",
-    "Exception",
-    "Deadline",
-    "NoticePeriod",
-    "Frequency",
-    "MonetaryAmount",
-    "Asset",
-    "System",
-    "Report",
-    "Event",
-    "RiskSignal",
+    "CurePeriod",
+    "BreachingParty",
+    "NonBreachingParty",      # split from BreachingParty
+    "EffectiveDate",
+    "PerformanceMilestoneDate", # split from EffectiveDate
+    "TerminationEvent",
+    "ConfidentialInformation",
+    "Contract",
+    "Dispute",
+    "GovernmentalAuthority",
+    "Invoice",
+    "Notice",
+    "ThirdParty",
+    "ObligationTrigger",
+    "InsuranceCertificate",
+    "Claim",
+    "Consent",
+    "Deliverable",
+    "Facility",
+    "InterestRate",
+    "LegalRequirement",
+    "Liability",
+    "ReimbursableCost",
+    "Service",
+    "TerminationRight",
+    "Assignee",               # keep separate
+    "Assignor",               # split from Assignee
 ]
 
 LEGAL_RELATIONSHIP_TYPES = [
-    "IMPOSES_OBLIGATION",
-    "GRANTS_RIGHT",
-    "PROHIBITS",
-    "OWED_BY",
-    "OWED_TO",
-    "HELD_BY",
-    "HAS_DEADLINE",
-    "HAS_NOTICE_PERIOD",
-    "HAS_FREQUENCY",
-    "TRIGGERED_BY",
-    "SUBJECT_TO",
-    "EXCEPTS",
-    "APPLIES_TO",
-    "RECORDED_IN",
-    "REQUIRES",
-    "HAS_RISK_SIGNAL",
-]
+    # Layer 1 — Universal
+    "INDEMNIFIES",
+    "CAPS_LIABILITY_OF",
+    "GIVES_NOTICE_TO",
+    "GRANTS_ACCESS_TO",
+    "GRANTS_RIGHT_TO",
+    "NOTIFIES",
+    "PAYS",
+    "PROVIDES_NOTICE_TO",
+    "REIMBURSES",
+    "TRIGGERS_OBLIGATION_OF",
 
+    # Layer 2 — Common (use the canonical forms from the proposal)
+    "APPLIES_TO",
+    "OBLIGATES",
+    "SURVIVES_TERMINATION_OF",
+    "COOPERATES_WITH",
+    "DELIVERS",
+    "MAINTAINS",
+    "MAKES_PAYMENT_TO",
+    "PROVIDES",
+    "REQUIRES_NOTICE_FROM",
+    "LIMITS_INDEMNITY_OBLIGATION_OF",
+    "ASSIGNS_RIGHTS_TO",
+    "REQUIRES_COMPLIANCE_WITH",
+    "BEARS_COSTS_OF",
+    "COMPLIES_WITH",
+    "NAMES_AS_ADDITIONAL_INSURED",
+    "EXCUSES_BREACH_OF",
+    "TRIGGERS_CURE_PERIOD_OF",
+    "IMPOSES_OBLIGATION_ON",
+    "FALLS_WITHIN_INDEMNITY_SCOPE_OF",
+    "TERMINATES",
+]
 
 def slugify(value: str, max_len: int = 80) -> str:
     value = value or "unknown"

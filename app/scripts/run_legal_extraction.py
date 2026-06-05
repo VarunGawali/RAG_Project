@@ -19,8 +19,8 @@ def main():
     parser.add_argument(
         "--limit",
         type=int,
-        default=config.KG_EXTRACTION_LIMIT,
-        help="Number of clauses to extract",
+        default=None,
+        help="Max clauses to extract (default: all qualifying clauses)",
     )
     parser.add_argument(
         "--dry-run",
