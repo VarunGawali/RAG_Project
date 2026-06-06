@@ -146,7 +146,12 @@ def get_history(
 ):
     user_id = _get_user(x_user_id)
     _require_session(session_id, user_id)
-    return _session_svc.get_history(session_id, user_id)
+    messages = _session_svc.get_history(session_id, user_id)
+    # Rename 'sources' → 'citations' to match the frontend Message type
+    for msg in messages:
+        if "sources" in msg:
+            msg["citations"] = msg.pop("sources")
+    return messages
 
 
 @app.delete("/sessions/{session_id}", status_code=status.HTTP_204_NO_CONTENT)
