@@ -331,9 +331,11 @@ export default function UploadPanel({ onClose, onContractAdded }: Props) {
             <div>
               <div className="flex items-center justify-between mb-3">
                 <p className="text-xs font-medium text-ey-muted uppercase tracking-wider">
-                  {activeCount > 0
-                    ? `Processing ${activeCount} file${activeCount !== 1 ? 's' : ''}…`
-                    : `${doneCount} file${doneCount !== 1 ? 's' : ''} ready`}
+                  {activeCount > 0 && doneCount > 0
+                    ? `${activeCount} processing · ${doneCount} ready`
+                    : activeCount > 0
+                      ? `Processing ${activeCount} file${activeCount !== 1 ? 's' : ''}…`
+                      : `${doneCount} file${doneCount !== 1 ? 's' : ''} ready`}
                 </p>
                 {doneCount > 0 && (
                   <button
@@ -374,7 +376,7 @@ export default function UploadPanel({ onClose, onContractAdded }: Props) {
             className="w-full py-2.5 rounded bg-ey-surface border border-ey-border
                        text-sm text-ey-light hover:border-ey-yellow hover:text-ey-yellow transition-colors"
           >
-            {activeCount > 0 ? 'Processing in background — Close' : 'Done'}
+            {activeCount > 0 ? 'Running in background — Close' : 'Done'}
           </button>
         </div>
       </div>

@@ -493,7 +493,7 @@ export default function ChatArea({
           <div className="max-w-3xl mx-auto px-4 md:px-6 py-6 space-y-6">
             {messages.map((msg, idx) => (
               <MessageBubble
-                key={msg.id}
+                key={`${msg.id}-${idx}`}
                 message={msg}
                 isLast={idx === lastAssistantIdx && !isLoading}
                 onFollowUp={onSendMessage}
