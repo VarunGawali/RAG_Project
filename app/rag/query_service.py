@@ -20,13 +20,39 @@ from app.rag.query_router import route_question
 from app.rag.graph_retriever import graph_native_retrieve
 from app.rag.hybrid_retriever import graph_rag_retrieve
 from app.rag.answer_generator import AnswerGenerator
+from app.rag.summary_generator import format_summary_as_answer
 from app.services.prompt_builder import build_rag_prompt
+from app.storage.artifact_store import get_artifact_store
 from app.tree.semantic_retriever import SemanticRetriever
 
 
 GRAPH_ENABLED_CONTRACTS = {
     "Edison_NYPA_OandM_Contract_1",
 }
+
+
+# ── Document-level summary shortcut ───────────────────────────────────────────
+
+_SUMMARY_PATTERNS = {
+    "what is this contract about", "what's this contract about",
+    "what is this agreement about", "what's this agreement about",
+    "tell me about this contract", "tell me about this agreement",
+    "what does this contract cover", "what does this agreement cover",
+    "give me a summary", "provide a summary", "contract overview",
+    "give me an overview", "overview of this contract", "overview of the contract",
+    "high-level summary", "high level summary",
+    "summarize this contract", "summarise this contract",
+    "summary of this contract", "summary of the contract",
+    "summarize the contract", "summarise the contract",
+    "summarize this agreement", "summarise this agreement",
+    "summary of this agreement", "summary of the agreement",
+}
+
+
+def _is_summary_query(question: str) -> bool:
+    """Return True only for whole-document summary intent, not section-specific queries."""
+    q = question.lower().strip()
+    return any(pat in q for pat in _SUMMARY_PATTERNS)
 
 
 # ── Retrieval helpers ──────────────────────────────────────────────────────────
@@ -109,6 +135,22 @@ def answer_question(
       "context": str   (only when return_context=True)
     }
     """
+    # ── 0. Document-level summary shortcut (no retrieval, no extra LLM call) ──
+    if _is_summary_query(question) and contract_id and route_override == "auto":
+        store = get_artifact_store()
+        summary = store.load_summary(contract_id)
+        if summary:
+            answer = format_summary_as_answer(summary)
+            result: Dict = {
+                "route":           "summary",
+                "reason":          "Document-level summary query — returning pre-generated summary.",
+                "rewritten_query": question,
+                "answer":          answer,
+            }
+            if return_context:
+                result["context"] = f"Pre-generated summary for contract: {contract_id}"
+            return result
+
     # ── 1. Route ───────────────────────────────────────────────────────
     # Pass chat_history so the LLM router can resolve follow-up references.
     query_plan = route_question(question, chat_history=chat_history)

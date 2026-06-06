@@ -11,6 +11,7 @@ class TreeNode:
     pageStart: Optional[int] = None
     pageEnd: Optional[int] = None
     sourcePath: Optional[str] = None
+    summary: Optional[str] = None
     children: List['TreeNode'] = field(default_factory=list)
 
     def to_dict(self) -> Dict[str, Any]:
