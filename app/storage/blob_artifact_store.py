@@ -94,6 +94,15 @@ class BlobArtifactStore:
             return None
         return self._blob.download_artifact_json(contract_id, "manifest.json")
 
+    def save_summary(self, contract_id: str, summary: Dict) -> None:
+        self._blob.upload_artifact(contract_id, "summary.json", summary)
+        logger.info("Saved summary for '%s' to Blob.", contract_id)
+
+    def load_summary(self, contract_id: str) -> Optional[Dict]:
+        if not self._blob.artifact_exists(contract_id, "summary.json"):
+            return None
+        return self._blob.download_artifact_json(contract_id, "summary.json")
+
     def get_kg_normalized(self, contract_id: str) -> Optional[Dict]:
         """
         Download the pre-built normalized KG JSON for a contract.

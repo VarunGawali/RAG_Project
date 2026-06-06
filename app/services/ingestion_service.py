@@ -10,6 +10,7 @@ from app.utils import contract_id_from_file
 from app import config
 from app.models import TreeNode
 from app.pageindex.pageindex_api import get_pageindex_generator
+from app.rag.summary_generator import generate_summary
 
 class IngestionService:
     def __init__(self, store=None):
@@ -100,6 +101,11 @@ class IngestionService:
             chunks = create_chunks(contract_id, tree)
 
         index_docs = self.index_builder.chunks_to_index_docs(chunks)
+
+        # Generate document-level summary (1 LLM call at ingestion; 0 at query time)
+        print(f"[Ingestion] Generating document summary for {contract_id}")
+        summary = generate_summary(contract_id, raw_text)
+        self.store.save_summary(contract_id, summary)
 
         manifest = self.store.save_contract_artifacts(
             contract_id=contract_id,
