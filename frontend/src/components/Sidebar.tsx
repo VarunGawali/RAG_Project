@@ -18,6 +18,7 @@ interface Props {
   onSelectSession: (id: string) => void
   onSelectContract: (id: string | null) => void
   onOpenUpload: () => void
+  onDeleteSession?: (id: string) => void
 }
 
 function formatDate(iso: string) {
@@ -47,7 +48,7 @@ export default function Sidebar({
   sessions, activeSessionId, contracts, contractFilter,
   collapsed, mobileOpen,
   onToggleCollapse, onCloseMobile,
-  onNewChat, onSelectSession, onSelectContract, onOpenUpload,
+  onNewChat, onSelectSession, onSelectContract, onOpenUpload, onDeleteSession,
 }: Props) {
   const [contractsExpanded, setContractsExpanded] = useState(true)
 
@@ -132,6 +133,7 @@ export default function Sidebar({
             onSelectSession={onSelectSession}
             onSelectContract={onSelectContract}
             onOpenUpload={onOpenUpload}
+            onDeleteSession={onDeleteSession}
           />
         )}
       </aside>
@@ -156,6 +158,7 @@ export default function Sidebar({
           onSelectSession={onSelectSession}
           onSelectContract={onSelectContract}
           onOpenUpload={onOpenUpload}
+          onDeleteSession={onDeleteSession}
         />
       </aside>
     </>
@@ -169,7 +172,7 @@ function SidebarContent({
   contractsExpanded, onToggleContracts,
   showCollapseBtn, showCloseBtn,
   onToggleCollapse, onCloseBtn,
-  onNewChat, onSelectSession, onSelectContract, onOpenUpload,
+  onNewChat, onSelectSession, onSelectContract, onOpenUpload, onDeleteSession,
 }: {
   sessions: ChatSession[]
   activeSessionId: string | null
@@ -185,6 +188,7 @@ function SidebarContent({
   onSelectSession: (id: string) => void
   onSelectContract: (id: string | null) => void
   onOpenUpload: () => void
+  onDeleteSession?: (id: string) => void
 }) {
   return (
     <>
@@ -247,31 +251,42 @@ function SidebarContent({
             {sessions.map(session => {
               const isActive = session.id === activeSessionId
               return (
-                <button
-                  key={session.id}
-                  onClick={() => onSelectSession(session.id)}
-                  className={`w-full text-left px-3 py-2.5 rounded group transition-colors ${
-                    isActive ? 'bg-ey-card border border-ey-border' : 'hover:bg-ey-surface'
-                  }`}
-                >
-                  <div className="flex items-start gap-2">
-                    <MessageSquare
-                      size={13}
-                      className={`mt-0.5 flex-shrink-0 ${isActive ? 'text-ey-yellow' : 'text-ey-muted'}`}
-                    />
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center justify-between gap-1">
-                        <p className={`text-xs font-medium truncate ${isActive ? 'text-white' : 'text-ey-light'}`}>
-                          {session.title}
-                        </p>
-                        <span className="text-ey-muted text-[10px] flex-shrink-0">
-                          {formatDate(session.updatedAt)}
-                        </span>
+                <div key={session.id} className="relative group/session">
+                  <button
+                    onClick={() => onSelectSession(session.id)}
+                    className={`w-full text-left px-3 py-2.5 pr-8 rounded transition-colors ${
+                      isActive ? 'bg-ey-card border border-ey-border' : 'hover:bg-ey-surface'
+                    }`}
+                  >
+                    <div className="flex items-start gap-2">
+                      <MessageSquare
+                        size={13}
+                        className={`mt-0.5 flex-shrink-0 ${isActive ? 'text-ey-yellow' : 'text-ey-muted'}`}
+                      />
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center justify-between gap-1">
+                          <p className={`text-xs font-medium truncate ${isActive ? 'text-white' : 'text-ey-light'}`}>
+                            {session.title}
+                          </p>
+                          <span className="text-ey-muted text-[10px] flex-shrink-0">
+                            {formatDate(session.updatedAt)}
+                          </span>
+                        </div>
+                        <p className="text-ey-muted text-[11px] truncate mt-0.5">{session.previewText}</p>
                       </div>
-                      <p className="text-ey-muted text-[11px] truncate mt-0.5">{session.previewText}</p>
                     </div>
-                  </div>
-                </button>
+                  </button>
+                  {onDeleteSession && (
+                    <button
+                      onClick={e => { e.stopPropagation(); onDeleteSession(session.id) }}
+                      className="absolute right-2 top-1/2 -translate-y-1/2 w-5 h-5 flex items-center
+                                 justify-center rounded text-ey-muted hover:text-white hover:bg-ey-card-hover
+                                 opacity-0 group-hover/session:opacity-100 transition-opacity"
+                    >
+                      <X size={11} />
+                    </button>
+                  )}
+                </div>
               )
             })}
           </div>
