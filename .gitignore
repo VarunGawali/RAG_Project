@@ -58,3 +58,4 @@ samples/**/*.docx
 corpus_index_docs.json
 
 node_modules/
+frontend/dist/
