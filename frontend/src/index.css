@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  body {
+    background-color: #1A1A24;
+    color: #ffffff;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3D3D50;
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555568;
+  }
+}
+
+@layer components {
+  .route-badge-graph {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs font-medium bg-emerald-500/15 text-emerald-400 border border-emerald-500/20;
+  }
+  .route-badge-search {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs font-medium bg-blue-500/15 text-blue-400 border border-blue-500/20;
+  }
+  .route-badge-hybrid {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs font-medium bg-violet-500/15 text-violet-400 border border-violet-500/20;
+  }
+  .route-badge-auto {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs font-medium bg-ey-yellow/10 text-ey-yellow border border-ey-yellow/20;
+  }
+}
+
+/* Typing cursor animation */
+.typing-cursor::after {
+  content: '▋';
+  animation: blink 0.7s step-end infinite;
+  color: #FFE600;
+  margin-left: 1px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* Prose-like formatting inside AI messages */
+.ai-prose p    { margin-bottom: 0.6rem; }
+.ai-prose ul   { list-style: disc; padding-left: 1.25rem; margin-bottom: 0.6rem; }
+.ai-prose ol   { list-style: decimal; padding-left: 1.25rem; margin-bottom: 0.6rem; }
+.ai-prose li   { margin-bottom: 0.25rem; }
+.ai-prose strong { color: #ffffff; font-weight: 600; }
+.ai-prose code {
+  background: #1A1A24;
+  border: 1px solid #3D3D50;
+  border-radius: 3px;
+  padding: 0.1rem 0.35rem;
+  font-size: 0.8rem;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}

@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Environment/secrets
+.env
+.env.*
+!.env.example
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/settings.json
+.idea/
+
+# Logs
+*.log
+logs/
+data/kg/logs/
+
+# Large/generated data - default ignore all data
+data/**
+
+# Allow selected demo artifacts
+data/processed/
+data/uploads/
+!data/processed/Edison_NYPA_OandM_Contract_1/
+!data/processed/Edison_NYPA_OandM_Contract_1/tree.json
+
+# !data/kg/
+# !data/kg/normalized/**
+# !data/kg/normalized/Edison_NYPA_OandM_Contract_1_kg_ready.json
+# !data/kg/extractions/
+# !data/kg/extractions/Edison_NYPA_OandM_Contract_1_legal_extractions.json
+
+# Samples - decide case by case
+# If samples are small, allow them.
+# If samples contain PDFs/contracts, ignore them.
+samples/**/*.pdf
+samples/**/*.docx
+
+# Azure/search generated bulk files
+*_index_docs.json
+corpus_index_docs.json
+
+node_modules/
