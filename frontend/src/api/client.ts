@@ -57,6 +57,7 @@ export interface AskPayload {
   top?: number
   route_override?: string
   return_context?: boolean
+  contract_ids?: string[] | null
 }
 
 export interface AskResult {

@@ -119,15 +119,15 @@ class AzureSearchTester:
         self,
         query: str,
         contract_id: str = None,
+        contract_ids: list = None,
         top: int = 5,
         graph_ready_only: bool = False,
     ):
         """
         Hybrid keyword + vector search over Azure AI Search.
 
-        Used for:
-        - normal semantic search
-        - hybrid GraphRAG entry-point search
+        contract_id  — single contract filter (legacy, kept for compatibility)
+        contract_ids — multi-contract filter; takes precedence over contract_id
         """
 
         query_vector = self.embedder.embed(query)
@@ -140,9 +140,15 @@ class AzureSearchTester:
 
         filters = []
 
-        if contract_id:
-            safe_contract_id = contract_id.replace("'", "''")
-            filters.append(f"contractId eq '{safe_contract_id}'")
+        # Multi-contract filter takes precedence
+        ids = contract_ids if contract_ids else ([contract_id] if contract_id else [])
+        if ids:
+            safe = [cid.replace("'", "''") for cid in ids]
+            if len(safe) == 1:
+                filters.append(f"contractId eq '{safe[0]}'")
+            else:
+                or_clause = " or ".join(f"contractId eq '{cid}'" for cid in safe)
+                filters.append(f"({or_clause})")
 
         if graph_ready_only:
             filters.append("graphReady eq true")
@@ -187,6 +193,7 @@ class AzureSearchTester:
         structure_type: str,
         identifier: str,
         contract_id: str = None,
+        contract_ids: list = None,
         top: int = 100,
     ):
         """
@@ -228,9 +235,14 @@ class AzureSearchTester:
                 "Supported: Article, Section, Clause"
             )
 
-        if contract_id:
-            safe_contract_id = contract_id.replace("'", "''")
-            filters.append(f"contractId eq '{safe_contract_id}'")
+        ids = contract_ids if contract_ids else ([contract_id] if contract_id else [])
+        if ids:
+            safe = [cid.replace("'", "''") for cid in ids]
+            if len(safe) == 1:
+                filters.append(f"contractId eq '{safe[0]}'")
+            else:
+                or_clause = " or ".join(f"contractId eq '{cid}'" for cid in safe)
+                filters.append(f"({or_clause})")
 
         filter_expr = " and ".join(filters)
 

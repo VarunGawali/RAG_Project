@@ -71,6 +71,7 @@ class AskRequest(BaseModel):
     top: int = 4
     route_override: str = "auto"
     return_context: bool = False
+    contract_ids: Optional[List[str]] = None   # multi-contract filter; overrides session contractFilter
 
 
 class AskResponse(BaseModel):
@@ -192,10 +193,12 @@ def ask(
         chat_history = chat_history[:-1]
 
     # 3. Run RAG
+    # contract_ids from request body takes precedence over session contractFilter
     contract_filter = session.get("contractFilter")
     result = answer_question(
         question=body.question,
         contract_id=contract_filter,
+        contract_ids=body.contract_ids or None,
         top=body.top,
         route_override=body.route_override,
         return_context=body.return_context,

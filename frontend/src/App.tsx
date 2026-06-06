@@ -17,23 +17,25 @@ function generateLocalId() {
 }
 
 export default function App() {
-  const [sessions, setSessions]               = useState<ChatSession[]>([])
-  const [activeSessionId, setActiveSession]   = useState<string | null>(null)
-  const [contracts, setContracts]             = useState<Contract[]>(MOCK_CONTRACTS)
-  const [contractFilter, setContractFilter]   = useState<string | null>(null)
-  const [isLoading, setIsLoading]             = useState(false)
-  const [uploadOpen, setUploadOpen]           = useState(false)
-  const [sidebarCollapsed, setSidebarCollapsed] = useState(false)
+  const [sessions, setSessions]                   = useState<ChatSession[]>([])
+  const [activeSessionId, setActiveSession]       = useState<string | null>(null)
+  const [contracts, setContracts]                 = useState<Contract[]>(MOCK_CONTRACTS)
+  // Empty array = all contracts (portfolio-wide); non-empty = filtered scope
+  const [selectedContracts, setSelectedContracts] = useState<string[]>([])
+  const [isLoading, setIsLoading]                 = useState(false)
+  const [uploadOpen, setUploadOpen]               = useState(false)
+  const [sidebarCollapsed, setSidebarCollapsed]   = useState(false)
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false)
-  const [apiError, setApiError]               = useState<string | null>(null)
+  const [apiError, setApiError]                   = useState<string | null>(null)
 
   const activeSession = sessions.find(s => s.id === activeSessionId) ?? null
+  // null contract_filter = all contracts (for session creation)
+  const contractFilter = selectedContracts.length === 1 ? selectedContracts[0] : null
 
   // ── Load session list on mount ──────────────────────────────────────
   useEffect(() => {
     api.listSessions()
       .then(summaries => {
-        // Convert summaries to ChatSession shape (no messages yet — lazy loaded)
         const loaded: ChatSession[] = summaries.map(s => ({
           id: s.id,
           title: s.title,
@@ -46,20 +48,22 @@ export default function App() {
         setSessions(loaded)
         if (loaded.length > 0) {
           setActiveSession(loaded[0].id)
-          setContractFilter(loaded[0].contractFilter)
+          // Restore single-contract filter from session if set
+          if (loaded[0].contractFilter) {
+            setSelectedContracts([loaded[0].contractFilter])
+          }
         }
       })
       .catch(() => {
-        // Backend not reachable — stay on empty state; user can still create sessions
         setApiError('Could not reach the API. Check VITE_API_BASE_URL and that the backend is running.')
       })
   }, [])
 
-  // ── Load full message history when switching sessions ───────────────
+  // ── Lazy-load message history when switching sessions ───────────────
   useEffect(() => {
     if (!activeSessionId) return
     const session = sessions.find(s => s.id === activeSessionId)
-    if (!session || session.messages.length > 0) return   // already loaded
+    if (!session || session.messages.length > 0) return
 
     api.getHistory(activeSessionId)
       .then(messages => {
@@ -76,14 +80,11 @@ export default function App() {
       const session = await api.createSession({ contract_filter: contractFilter })
       setSessions(prev => [{ ...session, messages: [] }, ...prev])
       setActiveSession(session.id)
-      setContractFilter(session.contractFilter)
     } catch {
-      // Optimistic fallback: create a local-only session until API is available
       const localId = generateLocalId()
       const now = new Date().toISOString()
       setSessions(prev => [{
-        id: localId,
-        title: 'New Conversation',
+        id: localId, title: 'New Conversation',
         createdAt: now, updatedAt: now,
         messages: [], contractFilter, previewText: '',
       }, ...prev])
@@ -95,20 +96,28 @@ export default function App() {
   const handleSelectSession = useCallback((id: string) => {
     setActiveSession(id)
     const session = sessions.find(s => s.id === id)
-    if (session) setContractFilter(session.contractFilter)
+    if (session?.contractFilter) {
+      setSelectedContracts([session.contractFilter])
+    } else {
+      setSelectedContracts([])
+    }
     setMobileSidebarOpen(false)
   }, [sessions])
 
-  const handleSelectContract = useCallback((id: string | null) => {
-    setContractFilter(id)
+  // Toggle a contract in/out of the selection
+  const handleToggleContract = useCallback((id: string) => {
+    setSelectedContracts(prev =>
+      prev.includes(id) ? prev.filter(c => c !== id) : [...prev, id]
+    )
   }, [])
+
+  // Clear all → portfolio-wide mode
+  const handleClearContracts = useCallback(() => setSelectedContracts([]), [])
 
   const handleDeleteSession = useCallback(async (id: string) => {
     await api.deleteSession(id).catch(() => {})
     setSessions(prev => prev.filter(s => s.id !== id))
-    if (activeSessionId === id) {
-      setActiveSession(null)
-    }
+    if (activeSessionId === id) setActiveSession(null)
   }, [activeSessionId])
 
   // ── Send message ────────────────────────────────────────────────────
@@ -116,22 +125,19 @@ export default function App() {
     if (isLoading) return
     setApiError(null)
 
-    // Ensure we have an active session
     let sessionId = activeSessionId
     if (!sessionId) {
       try {
         const session = await api.createSession({ contract_filter: contractFilter })
         setSessions(prev => [{ ...session, messages: [] }, ...prev])
         setActiveSession(session.id)
-        setContractFilter(session.contractFilter)
         sessionId = session.id
-      } catch (err) {
+      } catch {
         setApiError('Failed to create session. Is the backend running?')
         return
       }
     }
 
-    // Optimistically append the user message
     const tempUserMsg: Message = {
       id: `tmp_${generateLocalId()}`,
       role: 'user',
@@ -147,7 +153,6 @@ export default function App() {
       } : s
     ))
 
-    // Optimistically add a streaming placeholder for the assistant
     const streamingId = `streaming_${generateLocalId()}`
     setIsLoading(true)
     setSessions(prev => prev.map(s =>
@@ -167,9 +172,10 @@ export default function App() {
       const result = await api.askQuestion(sessionId!, {
         question: text,
         route_override: 'auto',
+        // Send multi-contract filter only when user has selected more than one contract
+        contract_ids: selectedContracts.length > 0 ? selectedContracts : null,
       })
 
-      // Simulate word-by-word streaming from the returned answer
       const words = result.answer.split(' ')
       let streamedContent = ''
 
@@ -190,7 +196,6 @@ export default function App() {
         }, 28)
       })
 
-      // Finalize: replace streaming placeholder with real message data
       setSessions(prev => prev.map(s =>
         s.id === sessionId ? {
           ...s,
@@ -211,7 +216,6 @@ export default function App() {
     } catch (err) {
       const errorText = err instanceof Error ? err.message : 'An error occurred.'
       setApiError(errorText)
-      // Remove the streaming placeholder on error
       setSessions(prev => prev.map(s =>
         s.id === sessionId ? {
           ...s,
@@ -221,7 +225,7 @@ export default function App() {
     } finally {
       setIsLoading(false)
     }
-  }, [activeSessionId, contractFilter, isLoading])
+  }, [activeSessionId, contractFilter, selectedContracts, isLoading])
 
   const handleContractAdded = useCallback((contractId: string, fileName: string) => {
     setContracts(prev => {
@@ -239,7 +243,6 @@ export default function App() {
   return (
     <div className="flex h-screen bg-ey-darker overflow-hidden">
 
-      {/* Mobile backdrop */}
       {mobileSidebarOpen && (
         <div
           className="fixed inset-0 bg-black/60 z-20 md:hidden"
@@ -251,14 +254,15 @@ export default function App() {
         sessions={sessions}
         activeSessionId={activeSessionId}
         contracts={contracts}
-        contractFilter={contractFilter}
+        selectedContracts={selectedContracts}
         collapsed={sidebarCollapsed}
         mobileOpen={mobileSidebarOpen}
         onToggleCollapse={() => setSidebarCollapsed(v => !v)}
         onCloseMobile={() => setMobileSidebarOpen(false)}
         onNewChat={handleNewChat}
         onSelectSession={handleSelectSession}
-        onSelectContract={handleSelectContract}
+        onToggleContract={handleToggleContract}
+        onClearContracts={handleClearContracts}
         onOpenUpload={() => setUploadOpen(true)}
         onDeleteSession={handleDeleteSession}
       />
