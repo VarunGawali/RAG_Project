@@ -58,23 +58,51 @@ export default function App() {
       })
   }, [])
 
-  // ── Load contract list from the search index on mount ───────────────
+  // ── Load contract list on mount (merge two sources for resilience) ──
+  // Primary: ingest jobs in Cosmos (always available, tracks UI uploads).
+  // Secondary: Azure AI Search index (may include CLI-ingested contracts).
+  // Merge both so a failure in either doesn't wipe the sidebar.
   useEffect(() => {
-    api.listContracts()
-      .then(summaries => {
-        const loaded: Contract[] = summaries.map(s => ({
-          id: s.id,
-          displayName: s.displayName,
-          fileName: s.id,
+    const fromJobs = api.listIngestJobs().then(jobs => {
+      const seen = new Set<string>()
+      const result: Contract[] = []
+      for (const job of jobs) {
+        if (job.status !== 'done' || seen.has(job.contractId)) continue
+        seen.add(job.contractId)
+        result.push({
+          id: job.contractId,
+          displayName: job.fileName.replace(/\.[^.]+$/, '').replace(/_/g, ' '),
+          fileName: job.fileName,
           status: 'search_only' as const,
           uploadedAt: '',
           pageCount: 0,
           fileSize: '',
           graphReady: false,
-        }))
-        if (loaded.length > 0) setContracts(loaded)
-      })
-      .catch(() => {}) // sidebar stays empty; non-fatal
+        })
+      }
+      return result
+    }).catch(() => [] as Contract[])
+
+    const fromSearch = api.listContracts().then(summaries =>
+      summaries.map(s => ({
+        id: s.id,
+        displayName: s.displayName,
+        fileName: s.id,
+        status: 'search_only' as const,
+        uploadedAt: '',
+        pageCount: 0,
+        fileSize: '',
+        graphReady: false,
+      } as Contract))
+    ).catch(() => [] as Contract[])
+
+    Promise.all([fromJobs, fromSearch]).then(([jobContracts, searchContracts]) => {
+      const merged = new Map<string, Contract>()
+      // Search results take display precedence; jobs guarantee presence
+      for (const c of [...jobContracts, ...searchContracts]) merged.set(c.id, c)
+      const all = Array.from(merged.values())
+      if (all.length > 0) setContracts(all)
+    })
   }, [])
 
   // ── Lazy-load message history when switching sessions ───────────────
