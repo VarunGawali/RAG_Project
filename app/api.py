@@ -31,6 +31,7 @@ from pydantic import BaseModel
 from app.chat_history.session_service import SessionService
 from app.ingestion.job_store import JobStore
 from app.ingestion import worker as ingestion_worker
+from app.indexing.search_tester import AzureSearchTester
 from app.rag.query_service import answer_question
 from app.services.frontend_ingestion_service import sanitize_contract_id
 from app.storage.blob_store import BlobStore
@@ -386,6 +387,29 @@ def list_ingest_jobs(
             result=j.get("result"),
         )
         for j in jobs
+    ]
+
+
+# ──────────────────────────────────────────────
+# Contracts route
+# ──────────────────────────────────────────────
+
+class ContractSummary(BaseModel):
+    id: str
+    displayName: str
+
+
+@app.get("/contracts")
+def list_contracts() -> List[ContractSummary]:
+    """Return all contract IDs currently indexed in Azure AI Search."""
+    searcher = AzureSearchTester()
+    ids = searcher.list_contract_ids()
+    return [
+        ContractSummary(
+            id=cid,
+            displayName=cid.replace("_", " "),
+        )
+        for cid in ids
     ]
 
 
