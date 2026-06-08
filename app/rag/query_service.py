@@ -26,11 +26,6 @@ from app.storage.artifact_store import get_artifact_store
 from app.tree.semantic_retriever import SemanticRetriever
 
 
-GRAPH_ENABLED_CONTRACTS = {
-    "Edison_NYPA_OandM_Contract_1",
-}
-
-
 # ── Document-level summary shortcut ───────────────────────────────────────────
 
 _SUMMARY_PATTERNS = {
@@ -169,8 +164,9 @@ def answer_question(
         route = route_override
         reason = f"User override: {route_override}"
 
-    # Downgrade graph/hybrid if the contract has no KG yet
-    graph_available = contract_id in GRAPH_ENABLED_CONTRACTS
+    # Downgrade graph/hybrid if the contract has no KG artifact in storage
+    _store = get_artifact_store()
+    graph_available = bool(contract_id and _store.kg_exists(contract_id))
     if route in {"graph", "hybrid"} and not graph_available:
         route = "search"
         reason = (

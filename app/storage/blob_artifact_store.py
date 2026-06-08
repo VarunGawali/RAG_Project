@@ -103,6 +103,10 @@ class BlobArtifactStore:
             return None
         return self._blob.download_artifact_json(contract_id, "summary.json")
 
+    def kg_exists(self, contract_id: str) -> bool:
+        """Return True if kg_normalized.json exists in Blob for this contract."""
+        return self._blob.artifact_exists(contract_id, "kg_normalized.json")
+
     def get_kg_normalized(self, contract_id: str) -> Optional[Dict]:
         """
         Download the pre-built normalized KG JSON for a contract.
