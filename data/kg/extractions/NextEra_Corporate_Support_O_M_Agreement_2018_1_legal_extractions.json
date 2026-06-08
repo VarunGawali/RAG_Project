@@ -1,0 +1,3231 @@
+[
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_2:2_2:Termination_This_Agreement_may_be_terminated_witho:c603e9",
+    "source_clause_title": "2.2 Termination.  This Agreement may be terminated without Cause by",
+    "source_page_start": 4,
+    "source_page_end": 4,
+    "entities": [
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Providers",
+        "type": "Party",
+        "name": "Providers",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Providers"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_180_days_prior_written_notice",
+        "type": "Obligation",
+        "name": "Company gives 180 days prior written notice to Providers to terminate Agreement without cause",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company upon 180 days’ prior written notice to Providers"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Providers_60_days_prior_written_notice_conditioned",
+        "type": "Obligation",
+        "name": "Providers may terminate Agreement upon 60 days prior written notice if conditions met",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Providers may only terminate upon sixty (60) days prior written notice, if, and only if: (i) Company is no longer an Affiliate of Providers, or (ii) by reason of an exercise of any remedies by the Secured Parties under any Financing Agreements, Company ceases to own all of the assets and properties covered by this Agreement, or (iii) a Provider is required to terminate due to Applicable Law"
+      },
+      {
+        "id": "condition:NextEra_Corporate_Support_O_M_Agreement_2018_1:Providers_termination_conditions",
+        "type": "Condition",
+        "name": "Conditions for Providers termination",
+        "properties": {
+          "conditions": [
+            "Company is no longer an Affiliate of Providers",
+            "Exercise of remedies by Secured Parties under Financing Agreements causes Company to cease owning all assets and properties covered by Agreement",
+            "Provider is required to terminate due to Applicable Law"
+          ]
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "(i) Company is no longer an Affiliate of Providers, or (ii) by reason of an exercise of any remedies by the Secured Parties under any Financing Agreements, Company ceases to own all of the assets and properties covered by this Agreement, or (iii) a Provider is required to terminate due to Applicable Law"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_2:2_2:Termination_This_Agreement_may_be_terminated_witho:c603e9",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_180_days_prior_written_notice",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company upon 180 days’ prior written notice to Providers"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_180_days_prior_written_notice",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company upon 180 days’ prior written notice to Providers"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_180_days_prior_written_notice",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Providers",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company upon 180 days’ prior written notice to Providers"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_2:2_2:Termination_This_Agreement_may_be_terminated_witho:c603e9",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Providers_60_days_prior_written_notice_conditioned",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Providers may only terminate upon sixty (60) days prior written notice, if, and only if: (i) Company is no longer an Affiliate of Providers, or (ii) by reason of an exercise of any remedies by the Secured Parties under any Financing Agreements, Company ceases to own all of the assets and properties covered by this Agreement, or (iii) a Provider is required to terminate due to Applicable Law"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Providers_60_days_prior_written_notice_conditioned",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Providers",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Providers may only terminate upon sixty (60) days prior written notice"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Providers_60_days_prior_written_notice_conditioned",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Providers may only terminate upon sixty (60) days prior written notice"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Providers_60_days_prior_written_notice_conditioned",
+        "target_id": "condition:NextEra_Corporate_Support_O_M_Agreement_2018_1:Providers_termination_conditions",
+        "type": "SUBJECT_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "if, and only if: (i) Company is no longer an Affiliate of Providers, or (ii) by reason of an exercise of any remedies by the Secured Parties under any Financing Agreements, Company ceases to own all of the assets and properties covered by this Agreement, or (iii) a Provider is required to terminate due to Applicable Law"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_6:6_2:Billing:d692f1",
+    "source_clause_title": "6.2 Billing.",
+    "source_page_start": 8,
+    "source_page_end": 8,
+    "entities": [
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:maintain_accurate_records",
+        "type": "Obligation",
+        "name": "Maintain accurate records of all direct and indirect costs and expenses incurred in the performance of the Services",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "The Parties will maintain accurate records of all direct and indirect costs and expenses incurred in the performance of the Services under this Agreement."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provider_render_monthly_invoice",
+        "type": "Obligation",
+        "name": "Provider shall render a monthly invoice or accounting system generated report summarizing the direct and allocated costs and expenses for that month",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "A Provider providing any such Services shall render a monthly invoice or accounting system generated report summarizing the direct and allocated costs and expenses for that month."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:review_monthly_invoice_before_approval",
+        "type": "Obligation",
+        "name": "Review each monthly invoice or accounting system generated report before approval of the charges",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "Each monthly invoice or accounting system generated report will be reviewed before approval of the charges, including any documentation necessary to support the charges for the Services provided, to ensure the charges are properly billed."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provider_reimbursed_for_out_of_pocket_expenses",
+        "type": "Obligation",
+        "name": "Provider shall be reimbursed for reasonable, ordinary, and necessary out-of-pocket expenses actually incurred when paying third parties for products or services",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "the Provider shall be reimbursed for any and all reasonable, ordinary, and necessary out-of-pocket expenses actually incurred with respect to such products or services"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provider_provide_supporting_documentation",
+        "type": "Obligation",
+        "name": "Provider shall provide supporting documentation of such payments as requested by Company",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "shall provide supporting documentation of such payments as requested by Company"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "Party",
+        "name": "Party",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Parties"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "Party",
+        "name": "Provider",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "A Provider"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "as requested by Company"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_6:6_2:Billing:d692f1",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:maintain_accurate_records",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "The Parties will maintain accurate records of all direct and indirect costs and expenses incurred in the performance of the Services under this Agreement."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:maintain_accurate_records",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "The Parties will maintain accurate records"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_6:6_2:Billing:d692f1",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provider_render_monthly_invoice",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "A Provider providing any such Services shall render a monthly invoice or accounting system generated report summarizing the direct and allocated costs and expenses for that month."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provider_render_monthly_invoice",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "A Provider providing any such Services shall render a monthly invoice"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_6:6_2:Billing:d692f1",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:review_monthly_invoice_before_approval",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "Each monthly invoice or accounting system generated report will be reviewed before approval of the charges"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:review_monthly_invoice_before_approval",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "Each monthly invoice or accounting system generated report will be reviewed"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_6:6_2:Billing:d692f1",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provider_reimbursed_for_out_of_pocket_expenses",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "the Provider shall be reimbursed for any and all reasonable, ordinary, and necessary out-of-pocket expenses actually incurred"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provider_reimbursed_for_out_of_pocket_expenses",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "the Provider shall be reimbursed"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_6:6_2:Billing:d692f1",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provider_provide_supporting_documentation",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "shall provide supporting documentation of such payments as requested by Company"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provider_provide_supporting_documentation",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "shall provide supporting documentation"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provider_provide_supporting_documentation",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "as requested by Company"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_9:9_1:Notices_All_notices_required_or_permitted_under_th:647234",
+    "source_clause_title": "9.1 Notices.  All notices required or permitted  under this Agreement shall be in",
+    "source_page_start": 10,
+    "source_page_end": 11,
+    "entities": [
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:notice_delivery",
+        "type": "Obligation",
+        "name": "Notice Delivery Obligation",
+        "properties": {
+          "method": "writing, hand-delivered or sent by certified or registered mail (return receipt requested), or commercial delivery subject to written record of receipt",
+          "effective_upon": "first receipt evidenced by written record of delivery or confirmation of transmission"
+        },
+        "confidence": 0.95,
+        "evidenceQuote": "All notices required or permitted under this Agreement shall be in writing and shall be hand-delivered or sent by certified or registered mail (return receipt requested), or commercial delivery subject to written record of receipt... All notices shall be effective upon first receipt as evidenced by written record of delivery or confirmation of transmission."
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:34185e9c:nextera_energy_transmission_midatlantic_llc",
+        "type": "Party",
+        "name": "NextEra Energy Transmission MidAtlantic, LLC",
+        "properties": {
+          "address": "700 Universe Boulevard, Juno Beach, Florida 33408-0428",
+          "attention": "President",
+          "copy_to": {
+            "attention": "General Counsel",
+            "telephone": "561-691-7126"
+          }
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "Company: NextEra Energy Transmission MidAtlantic, LLC 700 Universe Boulevard Juno Beach, Florida 33408-0428 Attention: President With copy to: NextEra Energy Transmission MidAtlantic, LLC 700 Universe Boulevard. Juno Beach, Florida 33408-0428 Attention: General Counsel Telephone: 561-691-7126"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:44e0439a:nextera_energy_resources_llc",
+        "type": "Party",
+        "name": "NextEra Energy Resources, LLC",
+        "properties": {
+          "address": "700 Universe Boulevard, Juno Beach, Florida 33408-0428",
+          "attention": "Vice President, Business Management",
+          "copy_to": {
+            "attention": "General Counsel",
+            "telephone": "561-691-7126"
+          }
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "NEER: NextEra Energy Resources, LLC 700 Universe Boulevard Juno Beach, Florida 33408-0428 Attention: Vice President, Business Management With copy to: NextEra Energy Energy Resources, LLC 700 Universe Boulevard. Juno Beach, Florida 33408-0428 Attention: General Counsel Telephone: 561-691-7126"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:14fcb827:nextera_energy_transmission_llc",
+        "type": "Party",
+        "name": "NextEra Energy Transmission, LLC",
+        "properties": {
+          "address": "700 Universe Boulevard, Juno Beach, Florida 33408-0428",
+          "attention": "President",
+          "copy_to": {
+            "attention": "General Counsel",
+            "telephone": "561-691-7126"
+          }
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "NEET: NextEra Energy Transmission, LLC 700 Universe Boulevard Juno Beach, Florida 33408-0428 Attention: President With copy to: NextEra Energy Transmission, LLC 700 Universe Boulevard. Juno Beach, Florida 33408-0428 Attention: General Counsel Telephone: 561-691-7126"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:0db045d9:florida_power_light_company",
+        "type": "Party",
+        "name": "Florida Power & Light Company",
+        "properties": {
+          "address": "700 Universe Boulevard, Juno Beach, Florida 33408-0428",
+          "attention": "Vice President, Transmission & Substation",
+          "telephone": "561-904-3406",
+          "copy_to": {
+            "attention": "General Counsel",
+            "telephone": "561-691-7101"
+          }
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "FPL: Florida Power & Light Company 700 Universe Boulevard Juno Beach, Florida 33408-0428 Attention:  Vice President, Transmission & Substation Telephone: 561-904-3406 With copy to: Florida Power & Light Company 700 Universe Boulevard Juno Beach, Florida 33408-0428 Attention: General Counsel Telephone: 561-691-7101"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:fec63e80:lone_star_transmission_llc",
+        "type": "Party",
+        "name": "Lone Star Transmission, LLC",
+        "properties": {
+          "address": "5920 West William Cannon Drive, Building 2, Austin, Texas 78749",
+          "attention": "President",
+          "telephone": "512-236-3142",
+          "copy_to": {
+            "attention": "General Counsel",
+            "telephone": "561-691-7126",
+            "copy_address": "700 Universe Boulevard, Juno Beach, Florida 33408-0428"
+          }
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "Lone Star:  Lone Star Transmission, LLC 5920 West William Cannon Drive, Building 2 Austin, Texas 78749 Attention: President Telephone: 512-236-3142 With copy to: Lone Star Transmission Transmission, LLC 700 Universe Boulevard. Juno Beach, Florida 33408-0428 Attention: General Counsel Telephone: 561-691-7126"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_9:9_1:Notices_All_notices_required_or_permitted_under_th:647234",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:notice_delivery",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "All notices required or permitted under this Agreement shall be in writing and shall be hand-delivered or sent by certified or registered mail (return receipt requested), or commercial delivery subject to written record of receipt..."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:notice_delivery",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:34185e9c:nextera_energy_transmission_midatlantic_llc",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "to Company or Provider, as the case may be, at their respective addresses set forth below"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:notice_delivery",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:44e0439a:nextera_energy_resources_llc",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "to Company or Provider, as the case may be, at their respective addresses set forth below"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:notice_delivery",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:14fcb827:nextera_energy_transmission_llc",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "to Company or Provider, as the case may be, at their respective addresses set forth below"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:notice_delivery",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:0db045d9:florida_power_light_company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "to Company or Provider, as the case may be, at their respective addresses set forth below"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:notice_delivery",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:fec63e80:lone_star_transmission_llc",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "to Company or Provider, as the case may be, at their respective addresses set forth below"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_10:10_2:Assignment_The_rights_under_this_Agreement_shall_n:26b374",
+    "source_clause_title": "10.2 Assignment.   The rights under this Agreement shall not be assignable or",
+    "source_page_start": 11,
+    "source_page_end": 12,
+    "entities": [
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:assignment_no_transfer_without_consent",
+        "type": "Obligation",
+        "name": "No assignment or delegation without prior written consent",
+        "properties": {
+          "description": "The rights under this Agreement shall not be assignable or transferrable nor the duties delegable by any Party without prior written consent of the other Parties, which consent shall not be unreasonably withheld or delayed"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "The rights under this Agreement shall not be assignable or transferrable nor the duties delegable by any Party without prior written consent of the other Parties, which consent shall not be unreasonably withheld or delayed"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:assignment_security_interest_consent",
+        "type": "Obligation",
+        "name": "Assigning Party to execute consent and agreement for Secured Party",
+        "properties": {
+          "description": "In the event of a security assignment, the assigning Party will execute for the benefit of such Secured Party a consent and agreement"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "In the event of such security assignment, the assigning Party will execute for the benefit of such Secured Party a consent and agreement"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:assignment_notice_90_days_prior",
+        "type": "Obligation",
+        "name": "Party must provide ninety (90) days’ prior written notice for assignment to Affiliate or successor",
+        "properties": {
+          "notice_period_days": 90,
+          "description": "This Agreement may be assigned by a Party, with ninety (90) days’ prior written notice to the other Parties: (i) to the successor of the assigning Party, if such successor is an Affiliate of such Party; or (ii) to an Affiliate of the assigning Party acquiring all or a controlling interest in the business assets of such Party"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "This Agreement may be assigned by a Party, with ninety (90) days’ prior written notice to the other Parties: (i) to the successor of the assigning Party, if such successor is an Affiliate of such Party; or (ii) to an Affiliate of the assigning Party acquiring all or a controlling interest in the business assets of such Party"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "Party",
+        "name": "Party",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "any Party"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Other_Parties",
+        "type": "Party",
+        "name": "Other Parties",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "other Parties"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Secured_Party",
+        "type": "Party",
+        "name": "Secured Party",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Secured Party"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Affiliate",
+        "type": "Party",
+        "name": "Affiliate",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Affiliate"
+      },
+      {
+        "id": "agreement:NextEra_Corporate_Support_O_M_Agreement_2018_1:Agreement",
+        "type": "Agreement",
+        "name": "This Agreement",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "this Agreement"
+      },
+      {
+        "id": "noticeperiod:NextEra_Corporate_Support_O_M_Agreement_2018_1:90_days",
+        "type": "NoticePeriod",
+        "name": "90 days prior written notice",
+        "properties": {
+          "duration_days": 90
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "ninety (90) days’ prior written notice"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_10:10_2:Assignment_The_rights_under_this_Agreement_shall_n:26b374",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:assignment_no_transfer_without_consent",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The rights under this Agreement shall not be assignable or transferrable nor the duties delegable by any Party without prior written consent of the other Parties, which consent shall not be unreasonably withheld or delayed"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:assignment_no_transfer_without_consent",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "by any Party"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:assignment_no_transfer_without_consent",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Other_Parties",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "prior written consent of the other Parties"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_10:10_2:Assignment_The_rights_under_this_Agreement_shall_n:26b374",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:assignment_security_interest_consent",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "In the event of such security assignment, the assigning Party will execute for the benefit of such Secured Party a consent and agreement"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:assignment_security_interest_consent",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "assigning Party"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:assignment_security_interest_consent",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Secured_Party",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "for the benefit of such Secured Party"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_10:10_2:Assignment_The_rights_under_this_Agreement_shall_n:26b374",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:assignment_notice_90_days_prior",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "This Agreement may be assigned by a Party, with ninety (90) days’ prior written notice to the other Parties"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:assignment_notice_90_days_prior",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "by a Party"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:assignment_notice_90_days_prior",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Other_Parties",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "prior written notice to the other Parties"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:assignment_notice_90_days_prior",
+        "target_id": "noticeperiod:NextEra_Corporate_Support_O_M_Agreement_2018_1:90_days",
+        "type": "HAS_NOTICE_PERIOD",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "ninety (90) days’ prior written notice"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_7:7_2:Indemnification:b9ebbd",
+    "source_clause_title": "7.2 Indemnification.",
+    "source_page_start": 9,
+    "source_page_end": 9,
+    "entities": [
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "\"Company shall, to the fullest extent permitted by law, defend, indemnify, and hold harmless Provider and its Affiliates...\""
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "Party",
+        "name": "Provider",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "\"Provider shall, to the fullest extent permitted by Applicable Law, defend, indemnify, and hold harmless Company...\""
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider_Affiliates",
+        "type": "Party",
+        "name": "Provider and its Affiliates",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "\"Provider and its Affiliates\""
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_Affiliates",
+        "type": "Party",
+        "name": "Company and its Affiliates",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "\"Provider’s (or any of its Affiliates’) failure to perform under this Agreement\""
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_indemnify_Provider",
+        "type": "Obligation",
+        "name": "Company indemnifies Provider and its Affiliates",
+        "properties": {
+          "scope": "defend, indemnify, and hold harmless Provider and its Affiliates from and against any and all Liabilities claimed or asserted by a third party arising from Company's failure to perform under this Agreement except for Provider's fraud, willful misconduct, violation of Applicable Law, or gross negligence",
+          "exceptions": [
+            "fraud by Provider",
+            "willful misconduct by Provider",
+            "violation of Applicable Law by Provider",
+            "gross negligence by Provider"
+          ]
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "(a) Company shall, to the fullest extent permitted by law, defend, indemnify, and hold harmless Provider and its Affiliates from and against any and all Liabilities claimed or asserted against Provider or its Affiliates by a third party arising as a result of or in any way connected with the Company’s failure to perform under this Agreement, except to the extent such failure was the result of fraud, willful misconduct, violation of Applicable Law, or gross negligence on the part of Provider."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider_indemnify_Company",
+        "type": "Obligation",
+        "name": "Provider indemnifies Company",
+        "properties": {
+          "scope": "defend, indemnify, and hold harmless Company from and against any and all Liabilities claimed or asserted by a third party arising from Provider’s or its Affiliates’ failure to perform under this Agreement except for Company's fraud, willful misconduct, violation of Applicable Law, or gross negligence",
+          "exceptions": [
+            "fraud by Company",
+            "willful misconduct by Company",
+            "violation of Applicable Law by Company",
+            "gross negligence by Company"
+          ]
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "(b) Provider shall, to the fullest extent permitted by Applicable Law, defend, indemnify, and hold harmless Company from and against any and all Liabilities claimed or asserted against Company by a third party arising as a result of Provider’s (or any of its Affiliates’) failure to perform under this Agreement, except to the extent such Liabilities are caused by fraud, willful misconduct, violation of Applicable Law, or gross negligence by Company."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Indemnified_Party_gives_notice",
+        "type": "Obligation",
+        "name": "Indemnified Party gives notice of claim to indemnifying Party",
+        "properties": {
+          "notice_contents": "reasonably detailed description of facts and circumstances, complete copies of all notices, pleadings, and other papers, and reasonable detail of basis for potential indemnification claim",
+          "timing": "as promptly as possible",
+          "failure_consequence": "relieves indemnifying Party from obligation to respond or defend only to extent failure prejudiced indemnifying Party's interests"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "(c) If any Party hereto (each, an “Indemnified Party”) shall receive notice or have knowledge of any claim that may result in a claim for indemnification by such Indemnified Party against a Party pursuant to this Section 7.2, such Indemnified Party shall, as promptly as possible, give the indemnifying Party notice of such claim, including a reasonably detailed description of the facts and circumstances relating to such claim, and a complete copy of all notices, pleadings, and other papers related thereto, and in reasonable detail the basis for its potential claim for indemnification with respect thereto; provided that failure promptly to give such notice or to provide such information and documents shall relieve the indemnifying Party from the obligation hereunder to respond to or to defend the Indemnified Party failing to give such notice against such claim only to the extent such failure prejudiced the interests of the indemnifying Party with respect to such claim."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Indemnifying_Party_defense_rights",
+        "type": "Obligation",
+        "name": "Indemnifying Party may assume defense of Indemnified Party",
+        "properties": {
+          "rights": [
+            "select and direct legal counsel and other consultants",
+            "appear in proceedings on behalf of Indemnified Party",
+            "propose, accept, or reject offers of settlement"
+          ],
+          "cost": "sole cost of indemnifying Party",
+          "condition": "upon written acknowledgement of obligation to indemnify",
+          "restriction": "may not consent to judgment or settlement providing injunctive or nonmonetary relief affecting Indemnified Party without Indemnified Party's consent, which may not be unreasonably withheld"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "The Party against whom indemnification is claimed shall, upon its acknowledgement in writing of its obligation to indemnify the Indemnified Party seeking indemnification, be entitled to assume the defense or to represent the interests of the Indemnified Party seeking indemnification in respect of such claim, which shall include the right to select and direct legal counsel and other consultants, appear in proceedings on behalf of such Indemnified Party, and to propose, accept, or reject offers of settlement, all at its sole cost; provided, however, that without the Indemnified Party’s consent, which consent may not be unreasonably withheld, the indemnifying Party may not consent to entry of a judgment or settlement if such judgment or settlement provides for injunctive or other nonmonetary relief affecting the Indemnified Party."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_7:7_2:Indemnification:b9ebbd",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_indemnify_Provider",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(a) Company shall, to the fullest extent permitted by law, defend, indemnify, and hold harmless Provider and its Affiliates..."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_indemnify_Provider",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall ... defend, indemnify, and hold harmless Provider and its Affiliates..."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_indemnify_Provider",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider_Affiliates",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "defend, indemnify, and hold harmless Provider and its Affiliates"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_7:7_2:Indemnification:b9ebbd",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider_indemnify_Company",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(b) Provider shall, to the fullest extent permitted by Applicable Law, defend, indemnify, and hold harmless Company..."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider_indemnify_Company",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Provider shall ... defend, indemnify, and hold harmless Company"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider_indemnify_Company",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "defend, indemnify, and hold harmless Company"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_7:7_2:Indemnification:b9ebbd",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Indemnified_Party_gives_notice",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(c) such Indemnified Party shall, as promptly as possible, give the indemnifying Party notice of such claim..."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Indemnified_Party_gives_notice",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "If any Party hereto (each, an “Indemnified Party”) shall receive notice or have knowledge of any claim ... such Indemnified Party shall ... give the indemnifying Party notice"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Indemnified_Party_gives_notice",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "give the indemnifying Party notice of such claim"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_7:7_2:Indemnification:b9ebbd",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Indemnifying_Party_defense_rights",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Party against whom indemnification is claimed shall, upon its acknowledgement in writing of its obligation to indemnify the Indemnified Party seeking indemnification, be entitled to assume the defense..."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Indemnifying_Party_defense_rights",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "The Party against whom indemnification is claimed shall, upon its acknowledgement in writing of its obligation to indemnify..."
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_7:7_1:Limitation_of_Liability_Notwithstanding_any_provi_:aae9b9",
+    "source_clause_title": "7.1 Limitation of Liability.  Notwithstanding any provi sion herein to the",
+    "source_page_start": 8,
+    "source_page_end": 9,
+    "entities": [
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_or_Providers",
+        "type": "Party",
+        "name": "Company or Providers",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "none of Company or Providers"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:limitation_of_liability",
+        "type": "Obligation",
+        "name": "Limitation of liability for punitive, indirect, consequential, or exemplary damages",
+        "properties": {
+          "excluded_damages": [
+            "punitive",
+            "indirect",
+            "consequential",
+            "exemplary",
+            "lost profits or revenues",
+            "loss or use of such profits or anticipated revenues",
+            "cost of capital",
+            "loss of goodwill",
+            "increased operating expenses of plant or equipment",
+            "increased costs of purchasing or providing equipment, materials, labor, services",
+            "costs of replacement power or capital",
+            "penalties",
+            "inventory or use charges",
+            "damages to reputation",
+            "damages for lost opportunities",
+            "any other special or incidental damages"
+          ],
+          "liability_bases_excluded": [
+            "contract",
+            "warranty",
+            "tort (including negligence and strict liability)",
+            "other theory of law"
+          ]
+        },
+        "confidence": 0.95,
+        "evidenceQuote": "none of Company or Providers nor any of their respective officers, members, shareholders, partners, principals, Affiliates, agents subcontractors, vendors, or employees shall be liable hereunder for punitive, indirect, consequential, or exemplary losses or damages of any nature, including damages for lost profits or revenues or the loss  or use of such profits or anticipated revenues, cost of capital, loss of goodwill, increased operating expenses of plant or equipment, increased costs of purchasing or providing equipment, materials, labor, services, costs of replacement power or capital, penalties, inventory or use charges, damages to reputation or damages for lost opportunities, or any other special or incidental damages, regardless of whether said claim is based upon contract, warranty, tort (including negligence and strict liability), or other theory of law."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_7:7_1:Limitation_of_Liability_Notwithstanding_any_provi_:aae9b9",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:limitation_of_liability",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "none of Company or Providers nor any of their respective officers, members, shareholders, partners, principals, Affiliates, agents subcontractors, vendors, or employees shall be liable hereunder for punitive, indirect, consequential, or exemplary losses or damages of any nature"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:limitation_of_liability",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_or_Providers",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "none of Company or Providers nor any of their respective officers, members, shareholders, partners, principals, Affiliates, agents subcontractors, vendors, or employees shall be liable hereunder"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_1:Code_of_Conduct:b6312d",
+    "source_clause_title": "4.1 Code of Conduct.",
+    "source_page_start": 5,
+    "source_page_end": 6,
+    "entities": [
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "Party",
+        "name": "Provider",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Providers"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider_comply_with_Company_Code_of_Conduct",
+        "type": "Obligation",
+        "name": "Provider comply with Company's Code of Conduct",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(a) Providers shall, at the Company’s expense, (i) comply with the Company’s instructions relating to adherence to Company’s Code of Conduct"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider_work_with_Company_to_comply_with_additional_Code_of_Conduct_requirements",
+        "type": "Obligation",
+        "name": "Provider work with Company to comply with additional Code of Conduct requirements",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(a) Providers shall, at the Company’s expense, (ii) work with the Company to comply with all additional Code of Conduct requirements imposed upon Company by a jurisdictional Governmental Authority or by Applicable Law"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider_ensure_employee_training_on_Company_Code_of_Conduct",
+        "type": "Obligation",
+        "name": "Provider ensure employee training on Company's Code of Conduct at Company's request",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(a) Providers shall, at the Company’s expense, (iii) at Company’s request, ensure that each employee of Providers that are providing Services receives training in the Company’s Code of Conduct requirements"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_comply_with_Provider_Code_of_Conduct",
+        "type": "Obligation",
+        "name": "Company comply with Provider's Code of Conduct",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(b) Company shall, at the Provider’s expense, (i) comply with each Provider’s instructions relating to adherence to the Provider’s Code of Conduct"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_work_with_Provider_to_comply_with_additional_Code_of_Conduct_requirements",
+        "type": "Obligation",
+        "name": "Company work with Provider to comply with additional Code of Conduct requirements",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(b) Company shall, at the Provider’s expense, (ii) work with the Provider to comply with all additional Code of Conduct requirements imposed upon Provider by a jurisdictional Governmental Authority or by other Applicable Law"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_ensure_employee_training_on_Provider_Code_of_Conduct",
+        "type": "Obligation",
+        "name": "Company ensure employee training on Provider's Code of Conduct at Provider's request",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(b) Company shall, at the Provider’s expense, (iii) at the Provider’s request, ensure that each employee of Company receiving Services receives training in the Providers’ applicable Code of Conduct requirements"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_1:Code_of_Conduct:b6312d",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider_comply_with_Company_Code_of_Conduct",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(a) Providers shall, at the Company’s expense, (i) comply with the Company’s instructions relating to adherence to Company’s Code of Conduct"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider_comply_with_Company_Code_of_Conduct",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Providers shall ... comply"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider_comply_with_Company_Code_of_Conduct",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "comply with the Company’s instructions"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_1:Code_of_Conduct:b6312d",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider_work_with_Company_to_comply_with_additional_Code_of_Conduct_requirements",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(a) Providers shall, at the Company’s expense, (ii) work with the Company to comply with all additional Code of Conduct requirements"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider_work_with_Company_to_comply_with_additional_Code_of_Conduct_requirements",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Providers shall ... work with the Company"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider_work_with_Company_to_comply_with_additional_Code_of_Conduct_requirements",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "work with the Company to comply"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_1:Code_of_Conduct:b6312d",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider_ensure_employee_training_on_Company_Code_of_Conduct",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(a) Providers shall, at the Company’s expense, (iii) at Company’s request, ensure that each employee of Providers ... receives training"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider_ensure_employee_training_on_Company_Code_of_Conduct",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Providers shall ... ensure that each employee"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider_ensure_employee_training_on_Company_Code_of_Conduct",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "at Company’s request"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_1:Code_of_Conduct:b6312d",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_comply_with_Provider_Code_of_Conduct",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(b) Company shall, at the Provider’s expense, (i) comply with each Provider’s instructions relating to adherence to the Provider’s Code of Conduct"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_comply_with_Provider_Code_of_Conduct",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall ... comply"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_comply_with_Provider_Code_of_Conduct",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "comply with each Provider’s instructions"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_1:Code_of_Conduct:b6312d",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_work_with_Provider_to_comply_with_additional_Code_of_Conduct_requirements",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(b) Company shall, at the Provider’s expense, (ii) work with the Provider to comply with all additional Code of Conduct requirements"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_work_with_Provider_to_comply_with_additional_Code_of_Conduct_requirements",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall ... work with the Provider"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_work_with_Provider_to_comply_with_additional_Code_of_Conduct_requirements",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "work with the Provider to comply"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_1:Code_of_Conduct:b6312d",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_ensure_employee_training_on_Provider_Code_of_Conduct",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(b) Company shall, at the Provider’s expense, (iii) at the Provider’s request, ensure that each employee of Company receiving Services receives training"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_ensure_employee_training_on_Provider_Code_of_Conduct",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall ... ensure that each employee"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_ensure_employee_training_on_Provider_Code_of_Conduct",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "at the Provider’s request"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_3:Compliance_with_Law_In_the_performance_of_this_Agr:adbbf3",
+    "source_clause_title": "4.3  Compliance with Law.   In the performance of this Agreement, each Party",
+    "source_page_start": 7,
+    "source_page_end": 7,
+    "entities": [
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "Party",
+        "name": "Party",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "each Party"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_or_Providers",
+        "type": "Party",
+        "name": "Company or Providers",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company or Providers"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party_compliance_with_laws",
+        "type": "Obligation",
+        "name": "Party shall comply with all Applicable Laws, Governmental Authority, and Governmental Approvals",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "shall comply with all Applicable Laws, Governmental Authority, and Governmental Approvals"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party_bears_expense_for_compliance",
+        "type": "Obligation",
+        "name": "Party shall bear the expense of all costs associated with compliance with interpretation of Applicable Laws requested to Company or Providers",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "such Party shall bear the expense of all costs associated with such compliance"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party_determines_legal_requirements",
+        "type": "Obligation",
+        "name": "Each Party shall be responsible to determine for itself the laws, ordinances, regulations, or other legal requirements imposed upon its activities",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "each Party hereto shall be responsible to determine for itself the laws, ordinances, regulations, or other legal requirements imposed upon its activities hereunder"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_3:Compliance_with_Law_In_the_performance_of_this_Agr:adbbf3",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party_compliance_with_laws",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "shall comply with all Applicable Laws, Governmental Authority, and Governmental Approvals"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party_compliance_with_laws",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "each Party"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party_bears_expense_for_compliance",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "such Party shall bear the expense"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party_bears_expense_for_compliance",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_or_Providers",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Party requests that Company or Providers, as applicable, comply with any such interpretation"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_3:Compliance_with_Law_In_the_performance_of_this_Agr:adbbf3",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party_bears_expense_for_compliance",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "such Party shall bear the expense of all costs associated with such compliance"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_3:Compliance_with_Law_In_the_performance_of_this_Agr:adbbf3",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party_determines_legal_requirements",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "each Party hereto shall be responsible to determine for itself the laws, ordinances, regulations, or other legal requirements imposed upon its activities hereunder"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party_determines_legal_requirements",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "each Party hereto shall be responsible"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_3:3_1:Corporate_Support_Services_Shared_Resources_and_Op:883122",
+    "source_clause_title": "3.1 Corporate Support Services, Shared Resources, and Operations and",
+    "source_page_start": 4,
+    "source_page_end": 5,
+    "entities": [
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:perform_corporate_support_services",
+        "type": "Obligation",
+        "name": "Perform Corporate Support Services",
+        "properties": {
+          "description": "Providers shall provide and perform the Corporate Support Services consistent with the terms hereof and as set forth and described in Exhibit A to this Agreement, as such Exhibit may be modified from time to time.",
+          "reference": "Exhibit A",
+          "effectiveFrom": "Effective Date"
+        },
+        "confidence": 0.95,
+        "evidenceQuote": "From and after the Effective Date, Providers shall provide and perform the Corporate Support Services consistent with the terms hereof."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provide_shared_resources",
+        "type": "Obligation",
+        "name": "Provide Shared Resources",
+        "properties": {
+          "description": "Providers shall provide the Shared Resources consistent with the terms hereof and as set forth and described in Exhibit B to this Agreement, as such Exhibit may be modified from time to time.",
+          "reference": "Exhibit B",
+          "effectiveFrom": "Effective Date"
+        },
+        "confidence": 0.95,
+        "evidenceQuote": "From and after the Effective Date, Providers shall provide the Shared Resources consistent with the terms hereof."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provide_operations_and_maintenance_services",
+        "type": "Obligation",
+        "name": "Provide Operations and Maintenance Services",
+        "properties": {
+          "description": "Providers shall provide the Operations and Maintenance Services consistent with the terms hereof and as set forth and described in Exhibit C to this Agreement, as such Exhibit may be modified from time to time.",
+          "reference": "Exhibit C",
+          "effectiveFrom": "Effective Date"
+        },
+        "confidence": 0.95,
+        "evidenceQuote": "From and after the Effective Date, Providers shall provide the Operations and Maintenance Services consistent with the terms hereof."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:perform_services_professionally",
+        "type": "Obligation",
+        "name": "Perform Services in Professional and Prudent Manner",
+        "properties": {
+          "description": "The Parties shall perform and provide the Services under this Agreement in a professional and prudent manner in accordance with standard industry practices for services of the type rendered under this Agreement.",
+          "standard": "standard industry practices"
+        },
+        "confidence": 0.9,
+        "evidenceQuote": "The Parties shall perform and provide the Services under this Agreement in a professional and prudent manner in accordance with standard industry practices for services of the type rendered under this Agreement"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:ensure_services_compliance_with_law",
+        "type": "Obligation",
+        "name": "Ensure Services Compliance with Applicable Law and Governmental Authority",
+        "properties": {
+          "description": "The Parties shall ensure that any Services performed or provided under this Agreement are not prohibited by Applicable Law or Governmental Authority, except to the extent permitted by exception or waiver granted by the applicable jurisdictional Governmental Authority."
+        },
+        "confidence": 0.9,
+        "evidenceQuote": "the Parties shall ensure that any Services performed or provided under this Agreement are not prohibited by Applicable Law or Governmental Authority, except to the extent that any of the foregoing are permitted by exception or waiver granted by the applicable jurisdictional Governmental Authority"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:providers",
+        "type": "Party",
+        "name": "Providers",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Providers shall provide and perform the Corporate Support Services"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company may obtain the Services to be performed and provided under this Agreement"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:parties",
+        "type": "Party",
+        "name": "Parties",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Parties shall perform and provide the Services under this Agreement"
+      },
+      {
+        "id": "agreement:NextEra_Corporate_Support_O_M_Agreement_2018_1:agreement",
+        "type": "Agreement",
+        "name": "This Agreement",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "under this Agreement"
+      },
+      {
+        "id": "effective_date:NextEra_Corporate_Support_O_M_Agreement_2018_1:effective_date",
+        "type": "EffectiveDate",
+        "name": "Effective Date",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "From and after the Effective Date"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_3:3_1:Corporate_Support_Services_Shared_Resources_and_Op:883122",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:perform_corporate_support_services",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "From and after the Effective Date, Providers shall provide and perform the Corporate Support Services consistent with the terms hereof."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:perform_corporate_support_services",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:providers",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Providers shall provide and perform the Corporate Support Services"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:perform_corporate_support_services",
+        "target_id": "agreement:NextEra_Corporate_Support_O_M_Agreement_2018_1:agreement",
+        "type": "APPLIES_TO",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "under this Agreement"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:perform_corporate_support_services",
+        "target_id": "effective_date:NextEra_Corporate_Support_O_M_Agreement_2018_1:effective_date",
+        "type": "HAS_DEADLINE",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "From and after the Effective Date"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_3:3_1:Corporate_Support_Services_Shared_Resources_and_Op:883122",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provide_shared_resources",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "From and after the Effective Date, Providers shall provide the Shared Resources consistent with the terms hereof."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provide_shared_resources",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:providers",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Providers shall provide the Shared Resources"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provide_shared_resources",
+        "target_id": "agreement:NextEra_Corporate_Support_O_M_Agreement_2018_1:agreement",
+        "type": "APPLIES_TO",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "under this Agreement"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provide_shared_resources",
+        "target_id": "effective_date:NextEra_Corporate_Support_O_M_Agreement_2018_1:effective_date",
+        "type": "HAS_DEADLINE",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "From and after the Effective Date"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_3:3_1:Corporate_Support_Services_Shared_Resources_and_Op:883122",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provide_operations_and_maintenance_services",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "From and after the Effective Date, Providers shall provide the Operations and Maintenance Services consistent with the terms hereof."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provide_operations_and_maintenance_services",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:providers",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Providers shall provide the Operations and Maintenance Services"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provide_operations_and_maintenance_services",
+        "target_id": "agreement:NextEra_Corporate_Support_O_M_Agreement_2018_1:agreement",
+        "type": "APPLIES_TO",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "under this Agreement"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provide_operations_and_maintenance_services",
+        "target_id": "effective_date:NextEra_Corporate_Support_O_M_Agreement_2018_1:effective_date",
+        "type": "HAS_DEADLINE",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "From and after the Effective Date"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_3:3_1:Corporate_Support_Services_Shared_Resources_and_Op:883122",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:perform_services_professionally",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "The Parties shall perform and provide the Services under this Agreement in a professional and prudent manner in accordance with standard industry practices"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:perform_services_professionally",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:parties",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Parties shall perform and provide the Services"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:perform_services_professionally",
+        "target_id": "agreement:NextEra_Corporate_Support_O_M_Agreement_2018_1:agreement",
+        "type": "APPLIES_TO",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "under this Agreement"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_3:3_1:Corporate_Support_Services_Shared_Resources_and_Op:883122",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:ensure_services_compliance_with_law",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "the Parties shall ensure that any Services performed or provided under this Agreement are not prohibited by Applicable Law or Governmental Authority"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:ensure_services_compliance_with_law",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:parties",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Parties shall ensure that any Services performed or provided under this Agreement"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:ensure_services_compliance_with_law",
+        "target_id": "agreement:NextEra_Corporate_Support_O_M_Agreement_2018_1:agreement",
+        "type": "APPLIES_TO",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "under this Agreement"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_8:8_2:Audits:f047c7",
+    "source_clause_title": "8.2 Audits.",
+    "source_page_start": 9,
+    "source_page_end": 10,
+    "entities": [
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:periodic_audit",
+        "type": "Obligation",
+        "name": "Periodic audit of records and books for Services",
+        "properties": {
+          "description": "Engage independent auditors at their expense to perform a periodic audit of the records and books for the Services provided pursuant to this Agreement to verify compliance with Applicable Law",
+          "audit_period_limit_years": 3,
+          "payment_obligation_on_discrepancy": true,
+          "payment_obligation_timing": "promptly"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "The Parities shall have the right, at their expense, to engage independent auditors to perform a periodic audit of the records and books for the Services provided pursuant to this Agreement to verify compliance with Applicable Law. ... Any audit to be conducted shall be performed timely such that the period being reviewed shall be no more than three years prior to the date of the initiation of the audit."
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "Party",
+        "name": "Party",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Parities shall have the right, at their expense, to engage independent auditors..."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_8:8_2:Audits:f047c7",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:periodic_audit",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Parities shall have the right, at their expense, to engage independent auditors to perform a periodic audit of the records and books for the Services provided pursuant to this Agreement to verify compliance with Applicable Law."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:periodic_audit",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Parities shall have the right, at their expense, to engage independent auditors..."
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_3:3_3:Consultations_The_Parties_shall_consult_regarding_:49be44",
+    "source_clause_title": "3.3 Consultations.  The Parties shall consult regarding the pr ogress of the",
+    "source_page_start": 5,
+    "source_page_end": 5,
+    "entities": [
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:consult_on_services_progress",
+        "type": "Obligation",
+        "name": "Consult regarding progress and aspects of Services",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "The Parties shall consult regarding the progress of the Services, any appropriate changes that should be made to such Services, the cost of such Services, where improvements can be made, where efficiencies can be gained, and other matters that either Company or Providers deem appropriate."
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "Party",
+        "name": "Party",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Parties"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_3:3_3:Consultations_The_Parties_shall_consult_regarding_:49be44",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:consult_on_services_progress",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "The Parties shall consult regarding the progress of the Services, any appropriate changes that should be made to such Services, the cost of such Services, where improvements can be made, where efficiencies can be gained, and other matters that either Company or Providers deem appropriate."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:consult_on_services_progress",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "The Parties shall consult"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_2:2_3:Transition_to_New_Provider_Subject_to_any_limitati:4a6967",
+    "source_clause_title": "2.3 Transition to New Provider .  Subject to any limitations resulting from a",
+    "source_page_start": 4,
+    "source_page_end": 4,
+    "entities": [
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Providers",
+        "type": "Party",
+        "name": "Providers",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Providers"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Providers_cooperate_transition",
+        "type": "Obligation",
+        "name": "Providers cooperate with Company to effect an orderly transition of the Services to any new provider designated by Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Providers shall cooperate with Company to effect an orderly transition of the Services being provided to Company to any new provider designated by Company"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_reimburse_providers_costs",
+        "type": "Obligation",
+        "name": "Company shall reimburse Providers for costs incurred in connection with such termination after the effective date of such termination",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall reimburse Providers for costs incurred in connection with such termination after the effective date of such termination"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_2:2_3:Transition_to_New_Provider_Subject_to_any_limitati:4a6967",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Providers_cooperate_transition",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Providers shall cooperate with Company to effect an orderly transition of the Services being provided to Company to any new provider designated by Company"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_2:2_3:Transition_to_New_Provider_Subject_to_any_limitati:4a6967",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_reimburse_providers_costs",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall reimburse Providers for costs incurred in connection with such termination after the effective date of such termination"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Providers_cooperate_transition",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Providers",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Providers shall cooperate"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Providers_cooperate_transition",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "cooperate with Company"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_reimburse_providers_costs",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall reimburse"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company_reimburse_providers_costs",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Providers",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "reimburse Providers"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_6:6_1:Compensation:c76494",
+    "source_clause_title": "6.1 Compensation.",
+    "source_page_start": 7,
+    "source_page_end": 8,
+    "entities": [
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:charge_actual_costs",
+        "type": "Obligation",
+        "name": "Company charged actual direct and reasonable indirect costs for Services",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "As compensation for performing any Services prior to the end of the Term of this Agreement, Company shall be charged the actual direct costs of the Service plus a reasonable allocation of indirect and overhead costs in accordance with Exhibits A1, B1, C1, and D and as required by Applicable Law or Governmental Authority."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:true_up_annual_costs",
+        "type": "Obligation",
+        "name": "Party receiving Services shall pay actual costs on an annual true-up basis",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "the per unit prices billed shall be trued-up to actual costs on at least an annual basis, so that, on an annual basis, the Party receiving the Services shall pay no more and no less than the actual direct and indirect costs and expenses of providing such Services."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:charge_no_higher_than_market",
+        "type": "Obligation",
+        "name": "Amounts charged for Services shall not exceed amounts charged by Provider to Affiliates or non-affiliated Persons in same market",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "the amounts charged for the Services provided under this Agreement shall be no higher than the amounts charged by a Provider to its other Affiliates or to a non-affiliated Person (within the same market area or having the same market conditions) for the same service or class of services."
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party_receiving_Services",
+        "type": "Party",
+        "name": "Party receiving the Services",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "the Party receiving the Services"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "Party",
+        "name": "Provider",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Provider"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_6:6_1:Compensation:c76494",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:charge_actual_costs",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "As compensation for performing any Services prior to the end of the Term of this Agreement, Company shall be charged the actual direct costs of the Service plus a reasonable allocation of indirect and overhead costs in accordance with Exhibits A1, B1, C1, and D and as required by Applicable Law or Governmental Authority."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:charge_actual_costs",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall be charged the actual direct costs"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:charge_actual_costs",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "Services provided under this Agreement"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_6:6_1:Compensation:c76494",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:true_up_annual_costs",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "the per unit prices billed shall be trued-up to actual costs on at least an annual basis, so that, on an annual basis, the Party receiving the Services shall pay no more and no less than the actual direct and indirect costs and expenses of providing such Services."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:true_up_annual_costs",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party_receiving_Services",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "Party receiving the Services shall pay no more and no less than the actual direct and indirect costs"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_6:6_1:Compensation:c76494",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:charge_no_higher_than_market",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "the amounts charged for the Services provided under this Agreement shall be no higher than the amounts charged by a Provider to its other Affiliates or to a non-affiliated Person (within the same market area or having the same market conditions) for the same service or class of services."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:charge_no_higher_than_market",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "amounts charged ... shall be no higher than the amounts charged by a Provider"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_2:2_1:Term_The_term_Term_of_this_Agreement_shall_commenc:72e3e0",
+    "source_clause_title": "2.1 Term.  The term (“Term ”) of this Agreement shall commence on the",
+    "source_page_start": 4,
+    "source_page_end": 4,
+    "entities": [
+      {
+        "id": "agreement:NextEra_Corporate_Support_O_M_Agreement_2018_1:Agreement",
+        "type": "Agreement",
+        "name": "This Agreement",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "This Agreement"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Term_Extension_Notice",
+        "type": "Obligation",
+        "name": "Company must inform Providers in writing at least three (3) months prior to expiration if it does not intend to extend the Term",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "unless Company informs Providers in writing at least three (3) months prior to the Initial Expiration Date or any Extended Expiration Date that it does not intend to extend the Term of this Agreement"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Providers",
+        "type": "Party",
+        "name": "Providers",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Providers"
+      },
+      {
+        "id": "deadline:NextEra_Corporate_Support_O_M_Agreement_2018_1:Notice_Deadline",
+        "type": "Deadline",
+        "name": "Three (3) months prior to Initial or Extended Expiration Date",
+        "properties": {
+          "timePeriod": "3 months"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "at least three (3) months prior to the Initial Expiration Date or any Extended Expiration Date"
+      },
+      {
+        "id": "deadline:NextEra_Corporate_Support_O_M_Agreement_2018_1:Initial_Expiration_Date",
+        "type": "Deadline",
+        "name": "Twentieth (20th) anniversary of the Effective Date",
+        "properties": {
+          "timePeriod": "20 years"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "shall expire on the twentieth (20 th) anniversary of the Effective Date (the “Initial Expiration Date”)"
+      },
+      {
+        "id": "deadline:NextEra_Corporate_Support_O_M_Agreement_2018_1:Extended_Expiration_Date",
+        "type": "Deadline",
+        "name": "Last day of any extension period",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the last day of any extension period shall be referred to as the “Extended Expiration Date”"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Term_Commencement",
+        "type": "Obligation",
+        "name": "Term of Agreement shall commence on the Effective Date or effective date of Joinder Addendum",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Effective Date (or, with respect to any Party joining by Joinder Addendum, on the effective date of such Joinder Addendum)"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_2:2_1:Term_The_term_Term_of_this_Agreement_shall_commenc:72e3e0",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Term_Extension_Notice",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "unless Company informs Providers in writing at least three (3) months prior to the Initial Expiration Date or any Extended Expiration Date that it does not intend to extend the Term of this Agreement"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Term_Extension_Notice",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company informs Providers"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Term_Extension_Notice",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Providers",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company informs Providers"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Term_Extension_Notice",
+        "target_id": "deadline:NextEra_Corporate_Support_O_M_Agreement_2018_1:Notice_Deadline",
+        "type": "HAS_DEADLINE",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "at least three (3) months prior to the Initial Expiration Date or any Extended Expiration Date"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_2:2_1:Term_The_term_Term_of_this_Agreement_shall_commenc:72e3e0",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Term_Commencement",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Effective Date (or, with respect to any Party joining by Joinder Addendum, on the effective date of such Joinder Addendum)"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Term_Commencement",
+        "target_id": "agreement:NextEra_Corporate_Support_O_M_Agreement_2018_1:Agreement",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Term of this Agreement shall commence"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_3:3_2:Budget_The_Parties_will_cooperate_reasonably_to_de:820426",
+    "source_clause_title": "3.2 Budget.   The Parties will cooperate reasonably to develop a budget for the",
+    "source_page_start": 5,
+    "source_page_end": 5,
+    "entities": [
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:develop_budget",
+        "type": "Obligation",
+        "name": "Develop a budget for Services for each calendar year",
+        "properties": {
+          "description": "The Parties will cooperate reasonably to develop a budget for Services for each calendar year (the “Budget”), provided that the Budget shall not be a limitation on the Services that the Company may request under this Agreement."
+        },
+        "confidence": 0.95,
+        "evidenceQuote": "The Parties will cooperate reasonably to develop a budget for Services for each calendar year (the “Budget”), provided that the Budget shall not be a limitation on the Services that the Company may request under this Agreement."
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "Party",
+        "name": "Party",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Parties"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Company"
+      },
+      {
+        "id": "agreement:NextEra_Corporate_Support_O_M_Agreement_2018_1:Agreement",
+        "type": "Agreement",
+        "name": "Agreement",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "this Agreement"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_3:3_2:Budget_The_Parties_will_cooperate_reasonably_to_de:820426",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:develop_budget",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "The Parties will cooperate reasonably to develop a budget for Services for each calendar year (the “Budget”), provided that the Budget shall not be a limitation on the Services that the Company may request under this Agreement."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:develop_budget",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "The Parties will cooperate reasonably"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:develop_budget",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "the Company may request under this Agreement"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:develop_budget",
+        "target_id": "agreement:NextEra_Corporate_Support_O_M_Agreement_2018_1:Agreement",
+        "type": "APPLIES_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "provided that the Budget shall not be a limitation on the Services that the Company may request under this Agreement"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_5:5_1:Independent_Contractor_Providers_shall_undertake_p:fe0cf4",
+    "source_clause_title": "5.1 Independent Contractor.   Providers shall undertake performance of the",
+    "source_page_start": 7,
+    "source_page_end": 7,
+    "entities": [
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:perform_services_as_independent_contractors",
+        "type": "Obligation",
+        "name": "Perform Services as Independent Contractors",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Services as independent contra ctors and not employees of Comp any."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:work_together_in_performing_services",
+        "type": "Obligation",
+        "name": "Work Together in Performing the Services",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "The Parties shall work together in performing the Services under this Agreement."
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Providers",
+        "type": "Party",
+        "name": "Providers",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "Providers"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "Party",
+        "name": "Party",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "The Parties"
+      },
+      {
+        "id": "agreement:NextEra_Corporate_Support_O_M_Agreement_2018_1:this_agreement",
+        "type": "Agreement",
+        "name": "This Agreement",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "under this Agreement"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_5:5_1:Independent_Contractor_Providers_shall_undertake_p:fe0cf4",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:perform_services_as_independent_contractors",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Services as independent contra ctors and not employees of Comp any."
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_5:5_1:Independent_Contractor_Providers_shall_undertake_p:fe0cf4",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:work_together_in_performing_services",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "The Parties shall work together in performing the Services under this Agreement."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:perform_services_as_independent_contractors",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Providers",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Providers shall undertake performance of the Services as independent contractors"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:work_together_in_performing_services",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "The Parties shall work together in performing the Services"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:work_together_in_performing_services",
+        "target_id": "agreement:NextEra_Corporate_Support_O_M_Agreement_2018_1:this_agreement",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "The Parties shall work together in performing the Services under this Agreement."
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_2:Confidentiality:43c68a",
+    "source_clause_title": "4.2 Confidentiality.",
+    "source_page_start": 6,
+    "source_page_end": 7,
+    "entities": [
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "Party",
+        "name": "Party",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Each Party shall keep any information not intended for public disclosure and considered to be confidential or proprietary"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Keep_Confidential_Information",
+        "type": "Obligation",
+        "name": "Keep Confidential Information",
+        "properties": {
+          "description": "Each Party shall keep any information not intended for public disclosure and considered to be confidential or proprietary in strict confidence at all times, notwithstanding the completion or termination of this Agreement; no Party shall disclose another Party’s Confidential Information to others, nor use it for its own benefit except as necessary to perform obligations under this Agreement, unless prior written consent is obtained."
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "(a) Each Party shall keep any information not intended for public disclosure and considered to be confidential or proprietary ... in strict confidence at all times, notwithstanding the completion or termination of this Agreement; and no Party shall disclose another Party’s Confidential Information to others, nor shall a Party use the other Party’s Confidential Information for its own benefit (except as necessary to perform its obligations pursuant to this Agreement) or the benefit of other parties, unless, in each instance, the receiving Party obtains the prior written consent of the disclosing Party."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Obtain_Prior_Written_Consent",
+        "type": "Obligation",
+        "name": "Obtain Prior Written Consent",
+        "properties": {
+          "description": "Receiving Party must obtain prior written consent of the disclosing Party before disclosing or using Confidential Information for own or others' benefit except as necessary to perform obligations."
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "unless, in each instance, the receiving Party obtains the prior written consent of the disclosing Party."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Notice_of_Governmental_Disclosure_Request",
+        "type": "Obligation",
+        "name": "Notice of Governmental Disclosure Request",
+        "properties": {
+          "description": "If receiving Party believes disclosure of Confidential Information is required by Governmental Authority or Applicable Law, it shall promptly provide notice to disclosing Party so protective measures may be sought."
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "in the event the receiving Party believes it is so required to disclose the Confidential Information, it shall promptly provide notice of such request or requirement so that the disclosing Party may seek an appropriate protective order or take other action as it deems appropriate."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Return_or_Destroy_Confidential_Information",
+        "type": "Obligation",
+        "name": "Return or Destroy Confidential Information",
+        "properties": {
+          "description": "At any time upon disclosing Party’s written request, receiving Party shall return or destroy all written Confidential Information of disclosing Party, except retention necessary for internal document retention policies for legal, governance, or regulatory compliance, subject to confidentiality for 5 years post-termination."
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "At any time upon the disclosing Party’s written request, the receiving Party shall return or destroy, at the receiving Party’s option, all written Confidential Information of the disclosing Party ... Confidential Information may be retained ... to comply with the receiving Party’s internal document retention policies ... and any such retained Confidential Information shall remain subject to the disclosure and use restrictions set forth herein, for a period of 5 years from the termination of this Agreement."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Certification_of_Destruction",
+        "type": "Obligation",
+        "name": "Certification of Destruction",
+        "properties": {
+          "description": "Upon written request of disclosing Party, receiving Party shall cause an authorized officer to certify in writing that return or destruction requirements have been satisfied."
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "The receiving Party shall, upon written request of the disclosing Party, cause one of its duly authorized officers to certify in writing to the disclosing Party that the requirements of the preceding sentence have been satisfied in full."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Retention_of_Digital_Confidential_Information",
+        "type": "Obligation",
+        "name": "Retention of Digital Confidential Information",
+        "properties": {
+          "description": "Receiving Party shall not be deemed to have retained Confidential Information if deleted from local hard drives without recovery attempts; retained digital Confidential Information remains subject to confidentiality for 5 years post-termination."
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "The receiving Party shall not be deemed to have retained or failed to return or destroy any Confidential Information if Confidential Information received or stored in digital format is deleted from local hard drives so long as no attempt is made to recover such Confidential Information from servers or back-up sources, provided that any such retained Confidential Information shall remain subject to the disclosure and use restrictions set forth herein, for a period of 5 years from the termination of this Agreement."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Equitable_Relief_for_Violation",
+        "type": "Obligation",
+        "name": "Equitable Relief for Violation",
+        "properties": {
+          "description": "Each Party acknowledges that violation of confidentiality may cause irreparable injury and disclosing Party is entitled to seek immediate equitable relief including injunctive relief."
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "Each Party acknowledges and agrees that any violation of this Section 4.2 may cause the other Party irreparable injury for which the disclosing Party would not have an adequate remedy at law, and the disclosing Party is entitled to seek immediate equitable relief including injunctive relief prohibiting any violation of this Section 4.2"
+      },
+      {
+        "id": "agreement:NextEra_Corporate_Support_O_M_Agreement_2018_1:Agreement",
+        "type": "Agreement",
+        "name": "Agreement",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "notwithstanding the completion or termination of this Agreement"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Disclosing_Party",
+        "type": "Party",
+        "name": "Disclosing Party",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "disclosing Party"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Receiving_Party",
+        "type": "Party",
+        "name": "Receiving Party",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "receiving Party"
+      },
+      {
+        "id": "governmentalauthority:NextEra_Corporate_Support_O_M_Agreement_2018_1:Governmental_Authority",
+        "type": "GovernmentalAuthority",
+        "name": "Governmental Authority",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Governmental Authority"
+      },
+      {
+        "id": "legalrequirement:NextEra_Corporate_Support_O_M_Agreement_2018_1:Applicable_Law",
+        "type": "LegalRequirement",
+        "name": "Applicable Law",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Applicable Law"
+      },
+      {
+        "id": "exception:NextEra_Corporate_Support_O_M_Agreement_2018_1:Confidential_Information_Exceptions",
+        "type": "Exception",
+        "name": "Confidential Information Exceptions",
+        "properties": {
+          "description": "Information that is publicly available not due to violation, available from non-prohibited sources, legally possessed prior, or independently developed."
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "(b) Confidential Information shall not include: (i) information which is or becomes publicly available other than as a result of a violation of this Agreement; (ii) information which is or becomes available on a non-confidential basis from a source which is not known to the receiving Party to be prohibited from disclosing such information pursuant to a legal, contractual, or fiduciary obligation to the disclosing Party; (iii) information which the receiving Party can demonstrate was legally in its possession prior to disclosure by the disclosing Party; or (iv) information which is developed by or for receiving Party independently of the disclosing Party’s Confidential Information."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_2:Confidentiality:43c68a",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Keep_Confidential_Information",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(a) Each Party shall keep any information not intended for public disclosure and considered to be confidential or proprietary ... in strict confidence at all times"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Keep_Confidential_Information",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Each Party shall keep any information not intended for public disclosure and considered to be confidential or proprietary"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Keep_Confidential_Information",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "no Party shall disclose another Party’s Confidential Information"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_2:Confidentiality:43c68a",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Obtain_Prior_Written_Consent",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "unless, in each instance, the receiving Party obtains the prior written consent of the disclosing Party."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Obtain_Prior_Written_Consent",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Receiving_Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "receiving Party obtains the prior written consent"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Obtain_Prior_Written_Consent",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Disclosing_Party",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "prior written consent of the disclosing Party"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_2:Confidentiality:43c68a",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Notice_of_Governmental_Disclosure_Request",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "it shall promptly provide notice of such request or requirement so that the disclosing Party may seek an appropriate protective order or take other action"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Notice_of_Governmental_Disclosure_Request",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Receiving_Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "receiving Party believes it is so required to disclose ... it shall promptly provide notice"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Notice_of_Governmental_Disclosure_Request",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Disclosing_Party",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "so that the disclosing Party may seek an appropriate protective order"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_2:Confidentiality:43c68a",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Return_or_Destroy_Confidential_Information",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "At any time upon the disclosing Party’s written request, the receiving Party shall return or destroy ... all written Confidential Information"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Return_or_Destroy_Confidential_Information",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Receiving_Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "receiving Party shall return or destroy"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Return_or_Destroy_Confidential_Information",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Disclosing_Party",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "written Confidential Information of the disclosing Party"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_2:Confidentiality:43c68a",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Certification_of_Destruction",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "receiving Party shall, upon written request of the disclosing Party, cause one of its duly authorized officers to certify in writing"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Certification_of_Destruction",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Receiving_Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "receiving Party shall cause one of its duly authorized officers to certify"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_2:Confidentiality:43c68a",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Retention_of_Digital_Confidential_Information",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The receiving Party shall not be deemed to have retained or failed to return or destroy any Confidential Information if Confidential Information received or stored in digital format is deleted from local hard drives"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Retention_of_Digital_Confidential_Information",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Receiving_Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "receiving Party shall not be deemed to have retained or failed to return or destroy any Confidential Information if ... deleted from local hard drives"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_2:Confidentiality:43c68a",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Equitable_Relief_for_Violation",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Each Party acknowledges and agrees that any violation of this Section 4.2 may cause the other Party irreparable injury ... and the disclosing Party is entitled to seek immediate equitable relief"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Equitable_Relief_for_Violation",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Each Party acknowledges and agrees that any violation of this Section 4.2 may cause the other Party irreparable injury"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Equitable_Relief_for_Violation",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the disclosing Party is entitled to seek immediate equitable relief"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_4:4_2:Confidentiality:43c68a",
+        "target_id": "exception:NextEra_Corporate_Support_O_M_Agreement_2018_1:Confidential_Information_Exceptions",
+        "type": "EXCEPTS",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(b) Confidential Information shall not include: (i) information which is or becomes publicly available other than as a result of a violation of this Agreement; (ii) information which is or becomes available on a non-confidential basis from a source which is not known to the receiving Party to be prohibited from disclosing such information pursuant to a legal, contractual, or fiduciary obligation to the disclosing Party; (iii) information which the receiving Party can demonstrate was legally in its possession prior to disclosure by the disclosing Party; or (iv) information which is developed by or for receiving Party independently of the disclosing Party’s Confidential Information."
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_10:10_10:Entire_Agreement_This_Agreement_and_all_exhibits_a:7762a4",
+    "source_clause_title": "10.10 Entire Agreement.   This Agreement and all exhibits and schedules hereto",
+    "source_page_start": 12,
+    "source_page_end": 15,
+    "entities": [
+      {
+        "id": "agreement:NextEra_Corporate_Support_O_M_Agreement_2018_1:Entire_Agreement",
+        "type": "Agreement",
+        "name": "This Agreement and all exhibits and schedules hereto",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "constitutes the entire Agreement between the Parties pertaining to the subject matter contained herein and supersedes all prior agreements, arrangements, understandings, representations, warranties, commitments, and communications (oral or written) related to the subject matter hereof."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:No_Parole_Evidence",
+        "type": "Obligation",
+        "name": "No parole evidence admissible to alter or vary terms",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "inclusion of this provision evidences the intent of the Parties that no parole evidence shall be admissible to alter or vary the terms of this Agreement."
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "Party",
+        "name": "Party",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "constitutes the entire Agreement between the Parties pertaining to the subject matter contained herein"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_10:10_10:Entire_Agreement_This_Agreement_and_all_exhibits_a:7762a4",
+        "target_id": "agreement:NextEra_Corporate_Support_O_M_Agreement_2018_1:Entire_Agreement",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "constitutes the entire Agreement between the Parties pertaining to the subject matter contained herein and supersedes all prior agreements, arrangements, understandings, representations, warranties, commitments, and communications (oral or written) related to the subject matter hereof."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:No_Parole_Evidence",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "inclusion of this provision evidences the intent of the Parties that no parole evidence shall be admissible to alter or vary the terms of this Agreement."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:No_Parole_Evidence",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "inclusion of this provision evidences the intent of the Parties that no parole evidence shall be admissible to alter or vary the terms of this Agreement."
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:EXHIBIT_B:3:Hardware_and_software_applications_and_systems_uti:a2f734",
+    "source_clause_title": "3. Hardware and software applications and systems utilized to provide dashboards and",
+    "source_page_start": 18,
+    "source_page_end": 19,
+    "entities": [
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provide_hardware_software_applications",
+        "type": "Obligation",
+        "name": "Provide hardware and software applications and systems for operational functions",
+        "properties": {
+          "functions": [
+            "Asset Management",
+            "Event Response and Tracking",
+            "Indicator Reporting",
+            "Other operationally related functions"
+          ],
+          "beneficiary": "Company and Provider"
+        },
+        "confidence": 0.9,
+        "evidenceQuote": "Hardware and software applications and systems utilized to provide Asset Management, Event Response and Tracking, Indicator Reporting, and other operationally related functions for Company and Provider."
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "Party",
+        "name": "Provider",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Provider"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:EXHIBIT_B:3:Hardware_and_software_applications_and_systems_uti:a2f734",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provide_hardware_software_applications",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "Hardware and software applications and systems utilized to provide Asset Management, Event Response and Tracking, Indicator Reporting, and other operationally related functions for Company and Provider."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provide_hardware_software_applications",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "Hardware and software applications and systems utilized to provide ... for Company and Provider."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:provide_hardware_software_applications",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "Hardware and software applications and systems utilized to provide ... for Company and Provider."
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_8:8_1:Books_and_Records_The_Parties_shall_keep_accurate_:8ad769",
+    "source_clause_title": "8.1 Books and Records.   The Parties shall keep accurate records and books of",
+    "source_page_start": 9,
+    "source_page_end": 9,
+    "entities": [
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "Party",
+        "name": "Party",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Parties"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:keep_accurate_records_and_books",
+        "type": "Obligation",
+        "name": "Keep accurate records and books of account",
+        "properties": {
+          "subject": "records and books of account",
+          "context": "in respect of the Services provided pursuant to this Agreement"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "The Parties shall keep accurate records and books of account in respect of the Services provided pursuant to this Agreement."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:make_records_available_for_inspection_and_audit",
+        "type": "Obligation",
+        "name": "Make records and books of account available for inspection and audit",
+        "properties": {
+          "context": "in accordance with the terms of this Agreement"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "The Parties shall make those records and books of account available for inspection and audit in accordance with the terms of this Agreement."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_8:8_1:Books_and_Records_The_Parties_shall_keep_accurate_:8ad769",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:keep_accurate_records_and_books",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Parties shall keep accurate records and books of account in respect of the Services provided pursuant to this Agreement."
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_8:8_1:Books_and_Records_The_Parties_shall_keep_accurate_:8ad769",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:make_records_available_for_inspection_and_audit",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Parties shall make those records and books of account available for inspection and audit in accordance with the terms of this Agreement."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:keep_accurate_records_and_books",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Parties shall keep accurate records and books of account"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:make_records_available_for_inspection_and_audit",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Parties shall make those records and books of account available for inspection and audit"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:EXHIBIT_B:2:Hardware_and_software_and_systems_utilized_by_Prov:628b40",
+    "source_clause_title": "2. Hardware and software and systems utilized by Provider to track and maintain",
+    "source_page_start": 18,
+    "source_page_end": 18,
+    "entities": [
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:vegetation_management_assessments_tracking",
+        "type": "Obligation",
+        "name": "Vegetation Management related assessments, conditions, and work activities tracking and maintenance",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "Vegetation Management related assessments, conditions, and work activities for Company."
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Vegetation Management related assessments, conditions, and work activities for Company."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:EXHIBIT_B:2:Hardware_and_software_and_systems_utilized_by_Prov:628b40",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:vegetation_management_assessments_tracking",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "Vegetation Management related assessments, conditions, and work activities for Company."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_vegetation_management_assessments_tracking",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Vegetation Management related assessments, conditions, and work activities for Company."
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_10:10_9:Governing_Law_This_Agreement_shall_be_governed_by_:e60cc1",
+    "source_clause_title": "10.9 Governing Law.   This Agreement shall be governed by and construed under",
+    "source_page_start": 12,
+    "source_page_end": 12,
+    "entities": [
+      {
+        "id": "agreement:NextEra_Corporate_Support_O_M_Agreement_2018_1:This_Agreement",
+        "type": "Agreement",
+        "name": "This Agreement",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "This Agreement"
+      },
+      {
+        "id": "legalrequirement:NextEra_Corporate_Support_O_M_Agreement_2018_1:Florida_Law",
+        "type": "LegalRequirement",
+        "name": "laws of the State of Florida",
+        "properties": {
+          "jurisdiction": "State of Florida",
+          "excludes": "conflict of laws principles"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "the laws of the State of Florida without regard to its conflict of laws principles"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Each_Party",
+        "type": "Party",
+        "name": "Each of the Parties",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "EACH OF THE PARTIES HERETO"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Waiver_of_Jury_Trial",
+        "type": "Obligation",
+        "name": "Waiver of right to trial by jury",
+        "properties": {
+          "scope": "any litigation based on, arising out of, under or in connection with this Agreement",
+          "waiver_type": "trial by jury"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "EACH OF THE PARTIES HERETO HEREBY KNOWINGLY, VOLUNTARILY AND INTENTIONALLY WAIVES THE RIGHT EITHER OF THEM MAY HAVE TO A TRIAL BY JURY IN RESPECT OF ANY LITIGATION BASED HEREON, OR ARISING OUT OF, UNDER OR IN CONNECTION WITH THIS AGREEMENT"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_10:10_9:Governing_Law_This_Agreement_shall_be_governed_by_:e60cc1",
+        "target_id": "agreement:NextEra_Corporate_Support_O_M_Agreement_2018_1:This_Agreement",
+        "type": "APPLIES_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "This Agreement"
+      },
+      {
+        "source_id": "agreement:NextEra_Corporate_Support_O_M_Agreement_2018_1:This_Agreement",
+        "target_id": "legalrequirement:NextEra_Corporate_Support_O_M_Agreement_2018_1:Florida_Law",
+        "type": "REQUIRES_COMPLIANCE_WITH",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "shall be governed by and construed under the laws of the State of Florida without regard to its conflict of laws principles"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Waiver_of_Jury_Trial",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Each_Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "EACH OF THE PARTIES HERETO HEREBY KNOWINGLY, VOLUNTARILY AND INTENTIONALLY WAIVES THE RIGHT"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Waiver_of_Jury_Trial",
+        "target_id": "agreement:NextEra_Corporate_Support_O_M_Agreement_2018_1:This_Agreement",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "in respect of any litigation based hereon, or arising out of, under or in connection with this Agreement"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_10:10_9:Governing_Law_This_Agreement_shall_be_governed_by_:e60cc1",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Waiver_of_Jury_Trial",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "EACH OF THE PARTIES HERETO HEREBY KNOWINGLY, VOLUNTARILY AND INTENTIONALLY WAIVES THE RIGHT"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_10:10_4:Contracting_The_Parties_may_contract_on_their_own_:1e5e25",
+    "source_clause_title": "10.4 Contracting .  The Parties may contract on their own behalf with unaffiliated",
+    "source_page_start": 12,
+    "source_page_end": 12,
+    "entities": [
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:contract_on_own_behalf",
+        "type": "Obligation",
+        "name": "Contract on own behalf with unaffiliated third parties for auditing, legal advice, and other professional services",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "third parties for auditing services, legal advice, and other third party professional services for the performance of duties to be performed under this Agreement."
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "Party",
+        "name": "Party",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The Parties"
+      },
+      {
+        "id": "agreement:NextEra_Corporate_Support_O_M_Agreement_2018_1:Agreement",
+        "type": "Agreement",
+        "name": "Agreement",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "this Agreement"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_10:10_4:Contracting_The_Parties_may_contract_on_their_own_:1e5e25",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:contract_on_own_behalf",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "third parties for auditing services, legal advice, and other third party professional services for the performance of duties to be performed under this Agreement."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:contract_on_own_behalf",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "The Parties may contract on their own behalf"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:contract_on_own_behalf",
+        "target_id": "agreement:NextEra_Corporate_Support_O_M_Agreement_2018_1:Agreement",
+        "type": "APPLIES_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "duties to be performed under this Agreement"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_10:10_5:Subsidiary_Employees_The_Parties_acknowledge_th_at:dc612f",
+    "source_clause_title": "10.5 Subsidiary Employees.  The Parties acknowledge th at all or a portion of the",
+    "source_page_start": 12,
+    "source_page_end": 12,
+    "entities": [
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:performance_with_subsidiaries",
+        "type": "Obligation",
+        "name": "Performance of obligations with assistance of wholly-owned subsidiaries and employees",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "obligations hereunder may be performed with the assistance of a Party’s wholly-owned subsidiaries and employees thereof."
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "Party",
+        "name": "Party",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "a Party’s wholly-owned subsidiaries and employees thereof"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_10:10_5:Subsidiary_Employees_The_Parties_acknowledge_th_at:dc612f",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:performance_with_subsidiaries",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "obligations hereunder may be performed with the assistance of a Party’s wholly-owned subsidiaries and employees thereof."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:performance_with_subsidiaries",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "a Party’s wholly-owned subsidiaries and employees thereof"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_10:10_1:Counterparts_This_Agreement_may_be_executed_in_two:f91d0f",
+    "source_clause_title": "10.1 Counterparts.   This Agreement may be executed in two or more",
+    "source_page_start": 11,
+    "source_page_end": 11,
+    "entities": [
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:execute_counterparts",
+        "type": "Obligation",
+        "name": "Execution of Agreement in Counterparts",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "This Agreement may be executed in two or more counterparts, each of which shall be deemed an original, but all of which together shall constitute one and the same instrument."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_10:10_1:Counterparts_This_Agreement_may_be_executed_in_two:f91d0f",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:execute_counterparts",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "This Agreement may be executed in two or more counterparts, each of which shall be deemed an original, but all of which together shall constitute one and the same instrument."
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_10:10_7:Severability_If_any_term_or_provision_of_this_Agre:804b9a",
+    "source_clause_title": "10.7 Severability.   If any term or provision of this Agreement or the performance",
+    "source_page_start": 12,
+    "source_page_end": 12,
+    "entities": [
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:severability_validity_obligation",
+        "type": "Obligation",
+        "name": "Maintain validity and enforceability of Agreement to fullest extent permitted by Applicable Law",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "this Agreement shall be valid and enforced to the fullest extent permitted by Applicable Law"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_10:10_7:Severability_If_any_term_or_provision_of_this_Agre:804b9a",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:severability_validity_obligation",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "this Agreement shall be valid and enforced to the fullest extent permitted by Applicable Law"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_10:10_3:Force_Majeure_No_Party_hereto_shall_be_in_breach_o:e58ab1",
+    "source_clause_title": "10.3 Force Majeure.   No Party hereto shall be in breach or in vi olation of this",
+    "source_page_start": 12,
+    "source_page_end": 12,
+    "entities": [
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "Party",
+        "name": "Party",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "No Party hereto"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Force_Majeure_Performance_Obligation",
+        "type": "Obligation",
+        "name": "Performance Obligation Subject to Force Majeure",
+        "properties": {
+          "description": "Not to be in breach of Agreement if prevented from performing obligations due to reasons beyond reasonable control including acts of God, fire, flood, earthquake, explosion, riot, war, sabotage, or governmental acts and decrees"
+        },
+        "confidence": 0.95,
+        "evidenceQuote": "No Party hereto shall be in breach or in violation of this Agreement if such Party is prevented from performing any of its obligations hereunder for any reason beyond its reasonable control, including acts of God, fire, flood, earthquake, explosion, riot, war, sabotage, or governmental acts and decrees that in fact prevent performance hereunder."
+      },
+      {
+        "id": "event:NextEra_Corporate_Support_O_M_Agreement_2018_1:ForceMajeureEvent",
+        "type": "ForceMajeureEvent",
+        "name": "Force Majeure Event",
+        "properties": {
+          "examples": [
+            "acts of God",
+            "fire",
+            "flood",
+            "earthquake",
+            "explosion",
+            "riot",
+            "war",
+            "sabotage",
+            "governmental acts and decrees"
+          ]
+        },
+        "confidence": 0.95,
+        "evidenceQuote": "reason beyond its reasonable control, including acts of God, fire, flood, earthquake, explosion, riot, war, sabotage, or governmental acts and decrees that in fact prevent performance hereunder."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:ARTICLE_10:10_3:Force_Majeure_No_Party_hereto_shall_be_in_breach_o:e58ab1",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Force_Majeure_Performance_Obligation",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "No Party hereto shall be in breach or in violation of this Agreement if such Party is prevented from performing any of its obligations hereunder for any reason beyond its reasonable control"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Force_Majeure_Performance_Obligation",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "No Party hereto shall be in breach or in violation of this Agreement if such Party is prevented from performing any of its obligations hereunder"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:Force_Majeure_Performance_Obligation",
+        "target_id": "event:NextEra_Corporate_Support_O_M_Agreement_2018_1:ForceMajeureEvent",
+        "type": "TRIGGERED_BY",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "reason beyond its reasonable control, including acts of God, fire, flood, earthquake, explosion, riot, war, sabotage, or governmental acts and decrees that in fact prevent performance hereunder."
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:EXHIBIT_B:1:Energy_Management_Systems_EMS_Related_Shared_Resou:eb1c21",
+    "source_clause_title": "1. Energy Management Systems (“EMS”) Related Shared Resources:",
+    "source_page_start": 18,
+    "source_page_end": 18,
+    "entities": [
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:ems_hardware_software_maintenance",
+        "type": "Obligation",
+        "name": "Provide hardware and software licenses and ongoing maintenance for EMS-related infrastructure and applications shared by Company and Provider",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Hardware and Software licenses and ongoing maintenance for EMS-related infrastructure and applications shared by Company and Provider"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:ems_asset_tracking_change_management",
+        "type": "Obligation",
+        "name": "Provide software applications and systems utilized for asset tracking and change management of EMS-related infrastructure",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Software applications and systems utilized for asset tracking and change management of EMS-related infrastructure"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:ems_authentication_provisioning_access",
+        "type": "Obligation",
+        "name": "Provide software and systems utilized in the authentication and provisioning of access to users of EMS infrastructure",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Software and systems utilized in the authentication and provisioning of access to users of EMS infrastructure"
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:ems_cyber_systems_management_monitoring",
+        "type": "Obligation",
+        "name": "Holistic management and monitoring of all cyber systems related to NERC Critical Infrastructure Protection compliance",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Holistic management and monitoring of all cyber systems related to NERC Critical Infrastructure Protection compliance"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company"
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "Party",
+        "name": "Provider",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Provider"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:EXHIBIT_B:1:Energy_Management_Systems_EMS_Related_Shared_Resou:eb1c21",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:ems_hardware_software_maintenance",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Hardware and Software licenses and ongoing maintenance for EMS-related infrastructure and applications shared by Company and Provider"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:ems_hardware_software_maintenance",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "shared by Company and Provider"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:ems_hardware_software_maintenance",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "shared by Company and Provider"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:EXHIBIT_B:1:Energy_Management_Systems_EMS_Related_Shared_Resou:eb1c21",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:ems_asset_tracking_change_management",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Software applications and systems utilized for asset tracking and change management of EMS-related infrastructure"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:ems_asset_tracking_change_management",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "shared by Company and Provider"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:ems_asset_tracking_change_management",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "shared by Company and Provider"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:EXHIBIT_B:1:Energy_Management_Systems_EMS_Related_Shared_Resou:eb1c21",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:ems_authentication_provisioning_access",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Software and systems utilized in the authentication and provisioning of access to users of EMS infrastructure"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:ems_authentication_provisioning_access",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "shared by Company and Provider"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:ems_authentication_provisioning_access",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "shared by Company and Provider"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:EXHIBIT_B:1:Energy_Management_Systems_EMS_Related_Shared_Resou:eb1c21",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:ems_cyber_systems_management_monitoring",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Holistic management and monitoring of all cyber systems related to NERC Critical Infrastructure Protection compliance"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:ems_cyber_systems_management_monitoring",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "shared by Company and Provider"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:ems_cyber_systems_management_monitoring",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Provider",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "shared by Company and Provider"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:EXHIBIT_A:404:HR_servic_es_also_include_performing_any_other:edb7d3",
+    "source_clause_title": "404.  HR servic es also include performing any other",
+    "source_page_start": 16,
+    "source_page_end": 18,
+    "entities": [
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:im_services",
+        "type": "Obligation",
+        "name": "Implementing and maintaining all computer applications required by the Company",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "IM services include implementing and maintaining all computer applications required by the Company to conduct its business."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:im_hardware_software_support",
+        "type": "Obligation",
+        "name": "Providing hardware installation and support, software application upgrades, cyber-security, database structure and controls, desktop support and other computer services",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Services include hardware installation and support, software application upgrades, cyber-security, database structure and controls, desktop support and other computer services as needed."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:legal_services",
+        "type": "Obligation",
+        "name": "Providing legal advice and contract support for regulatory, financial, corporate oversight, labor and employment, real estate transactions, and disputes and damages",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Legal services include providing legal advice and contract support for regulatory, financial, corporate oversight, labor and employment, real estate transactions, and disputes and damages arising during the course of the Company’s business."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:procurement_services",
+        "type": "Obligation",
+        "name": "Performing all necessary services to support the Company in procuring needed materials and services",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Procurement/ISC services include performing all necessary services to support the Company in procuring needed materials and services, including qualifying vendors and maintaining a vendor database; soliciting proposals for goods and services, including preparing requests for proposals, distributing the same to vendors, and assisting in proposal evaluations; issuing purchase orders and contracts; maintaining standard terms and conditions; supporting supplier diversity by identifying opportunities, and other support functions as needed related to the procurement of goods and services."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:regulatory_affairs_services",
+        "type": "Obligation",
+        "name": "Coordinating dockets for regulatory rulemaking policy, rate proceedings, and other technical filings before Governmental Authorities",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Regulatory Affairs services include coordinating dockets for regulatory rulemaking policy, rate proceedings, and other technical filings before Governmental Authorities."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:regulatory_case_planning",
+        "type": "Obligation",
+        "name": "Coordinating case planning activities, strategy development, witness selection and preparation, filing logistics, discovery protocol, hearing logistics, and other applicable services",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "This includes coordination of case planning activities, strategy development, witness selection and preparation, filing logistics, discovery protocol, hearing logistics, and other applicable services."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:treasury_services",
+        "type": "Obligation",
+        "name": "Maintaining bank accounts, managing cash, making investments of funds and disbursements as directed",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Treasury services include maintaining bank accounts, managing the cash, and making investments of funds and disbursements as directed."
+      },
+      {
+        "id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:treasury_financing_compliance",
+        "type": "Obligation",
+        "name": "Securing financing, ongoing compliance and monitoring with regards to existing financings, and any other treasury functions required to manage finances",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "In addition, Treasury services include securing financing, ongoing compliance and monitoring with regards to existing financings, and any other treasury functions required to manage finances."
+      },
+      {
+        "id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "required by the Company to conduct its business"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:EXHIBIT_A:404:HR_servic_es_also_include_performing_any_other:edb7d3",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:im_services",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "IM services include implementing and maintaining all computer applications required by the Company to conduct its business."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:im_services",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "required by the Company to conduct its business"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:EXHIBIT_A:404:HR_servic_es_also_include_performing_any_other:edb7d3",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:im_hardware_software_support",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Services include hardware installation and support, software application upgrades, cyber-security, database structure and controls, desktop support and other computer services as needed."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:im_hardware_software_support",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "required by the Company to conduct its business"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:EXHIBIT_A:404:HR_servic_es_also_include_performing_any_other:edb7d3",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:legal_services",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Legal services include providing legal advice and contract support for regulatory, financial, corporate oversight, labor and employment, real estate transactions, and disputes and damages arising during the course of the Company’s business."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:legal_services",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "arising during the course of the Company’s business"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:EXHIBIT_A:404:HR_servic_es_also_include_performing_any_other:edb7d3",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:procurement_services",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Procurement/ISC services include performing all necessary services to support the Company in procuring needed materials and services"
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:procurement_services",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "to support the Company in procuring needed materials and services"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:EXHIBIT_A:404:HR_servic_es_also_include_performing_any_other:edb7d3",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:regulatory_affairs_services",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Regulatory Affairs services include coordinating dockets for regulatory rulemaking policy, rate proceedings, and other technical filings before Governmental Authorities."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:regulatory_affairs_services",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "services ... before Governmental Authorities"
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:EXHIBIT_A:404:HR_servic_es_also_include_performing_any_other:edb7d3",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:regulatory_case_planning",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "This includes coordination of case planning activities, strategy development, witness selection and preparation, filing logistics, discovery protocol, hearing logistics, and other applicable services."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:regulatory_case_planning",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "This includes coordination of case planning activities, strategy development, witness selection and preparation, filing logistics, discovery protocol, hearing logistics, and other applicable services."
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:EXHIBIT_A:404:HR_servic_es_also_include_performing_any_other:edb7d3",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:treasury_services",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Treasury services include maintaining bank accounts, managing the cash, and making investments of funds and disbursements as directed."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:treasury_services",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Treasury services include maintaining bank accounts, managing the cash, and making investments of funds and disbursements as directed."
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:EXHIBIT_A:404:HR_servic_es_also_include_performing_any_other:edb7d3",
+        "target_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:treasury_financing_compliance",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "In addition, Treasury services include securing financing, ongoing compliance and monitoring with regards to existing financings, and any other treasury functions required to manage finances."
+      },
+      {
+        "source_id": "obligation:NextEra_Corporate_Support_O_M_Agreement_2018_1:treasury_financing_compliance",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "In addition, Treasury services include securing financing, ongoing compliance and monitoring with regards to existing financings, and any other treasury functions required to manage finances."
+      },
+      {
+        "source_id": "clause:NextEra_Corporate_Support_O_M_Agreement_2018_1:EXHIBIT_A:404:HR_servic_es_also_include_performing_any_other:edb7d3",
+        "target_id": "party:NextEra_Corporate_Support_O_M_Agreement_2018_1:Company",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "required by the Company to conduct its business"
+      }
+    ]
+  }
+]
