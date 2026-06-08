@@ -1,16 +1,16 @@
 """
 Query service for Contract360.
 
-Routes a question to one of four retrieval paths:
-  search  — Azure AI Search (text / structural)
-  graph   — Cosmos Gremlin native facts
-  hybrid  — Azure AI Search + Cosmos Gremlin expansion
-  tree    — Azure AI Search + hierarchical tree context (TreeRAG)
+Three retrieval routes:
+  tree   — Azure AI Search (BM25+vector) + hierarchical tree context expansion.
+           Handles text lookup, summarization, structural navigation.
+  graph  — Cosmos Gremlin semantic graph only.
+           Handles obligations, rights, deadlines, party relationships.
+           Supports single-contract, multi-contract, and cross-contract queries.
+  hybrid — Tree search context + Gremlin semantic graph facts merged.
+           Best for questions needing both clause text evidence and structured facts.
 
-Routing is performed by an LLM classifier (query_router.py) with a
-keyword-based fallback. The router also produces a rewritten_query
-(pronouns resolved, context from chat history folded in) and a
-structural_scope that replaces the old extract_structural_scope regex.
+Routing: LLM classifier (query_router.py) with keyword fallback.
 """
 
 from typing import Dict, List, Optional
@@ -46,7 +46,6 @@ _SUMMARY_PATTERNS = {
 
 
 def _is_summary_query(question: str) -> bool:
-    """Return True only for whole-document summary intent, not section-specific queries."""
     q = question.lower().strip()
     return any(pat in q for pat in _SUMMARY_PATTERNS)
 
@@ -74,16 +73,23 @@ def _format_search_docs(docs: list) -> str:
     return "\n".join(parts)
 
 
-def _search_retrieve(
+def _tree_retrieve(
     question: str,
     contract_id: Optional[str],
     contract_ids: Optional[List[str]],
     top: int,
     structural_scope: Optional[Dict],
 ) -> str:
-    searcher = AzureSearchTester()
+    """
+    Azure AI Search (BM25+vector) + hierarchical tree context expansion.
 
+    For structural scope questions (Article/Section/Clause references), uses
+    the structural index path. Otherwise uses SemanticRetriever for tree context
+    when a single contract is active, or flat hybrid search for multi-contract.
+    """
+    # Structural scope: always use the search index (exact article/section lookup)
     if structural_scope:
+        searcher = AzureSearchTester()
         docs = searcher.retrieve_structural_scope(
             structure_type=structural_scope["type"],
             identifier=structural_scope["identifier"],
@@ -93,6 +99,15 @@ def _search_retrieve(
         )
         return _format_search_docs(docs)
 
+    # Single contract with tree artifacts: use SemanticRetriever for rich expansion
+    if contract_id and not contract_ids:
+        retriever = SemanticRetriever(contract_id=contract_id)
+        chunks = retriever.retrieve(query=question, top_k=top, contract_id=contract_id)
+        if chunks:
+            return build_rag_prompt(query=question, retrieved_chunks=chunks)
+
+    # Multi-contract or fallback: hybrid BM25+vector search, labelled by contract
+    searcher = AzureSearchTester()
     docs = searcher.hybrid_search(
         query=question,
         contract_id=contract_id,
@@ -102,14 +117,66 @@ def _search_retrieve(
     return _format_search_docs(docs)
 
 
-def _tree_retrieve(
+def _hybrid_retrieve(
     question: str,
     contract_id: Optional[str],
+    contract_ids: Optional[List[str]],
     top: int,
 ) -> str:
-    retriever = SemanticRetriever(contract_id=contract_id)
-    chunks = retriever.retrieve(query=question, top_k=top, contract_id=contract_id)
-    return build_rag_prompt(query=question, retrieved_chunks=chunks)
+    """
+    Tree search context (Azure AI Search) merged with Gremlin semantic graph facts.
+    Gives the LLM both clause text evidence and structured obligation/party data.
+    """
+    # Tree side
+    tree_context = _tree_retrieve(
+        question=question,
+        contract_id=contract_id,
+        contract_ids=contract_ids,
+        top=top,
+        structural_scope=None,
+    )
+
+    # Graph side — use contract-scoped graph retrieval
+    graph_context = graph_native_retrieve(
+        question=question,
+        contract_id=contract_id,
+        contract_ids=contract_ids,
+    )
+
+    return (
+        "=" * 80 + "\n"
+        "TREE SEARCH CONTEXT (Azure AI Search + Hierarchical Expansion)\n"
+        + "=" * 80 + "\n"
+        + tree_context
+        + "\n\n"
+        + "=" * 80 + "\n"
+        "GRAPH CONTEXT (Cosmos Gremlin Semantic Facts)\n"
+        + "=" * 80 + "\n"
+        + graph_context
+    )
+
+
+# ── Graph availability check ───────────────────────────────────────────────────
+
+def _graph_available(contract_id: Optional[str], contract_ids: Optional[List[str]]) -> bool:
+    """
+    Return True if KG data exists for the active scope.
+    For multi-contract or portfolio queries, True if Gremlin is configured at all.
+    """
+    if contract_ids and len(contract_ids) > 1:
+        # Multi-contract: if Gremlin is configured it has the 9 pre-existing contracts
+        return gremlin_is_configured()
+    if not contract_id and not contract_ids:
+        # Portfolio-wide: same
+        return gremlin_is_configured()
+    # Single contract check
+    cid = contract_id or (contract_ids[0] if contract_ids else None)
+    if not cid:
+        return False
+    if gremlin_is_configured():
+        return contract_has_graph(cid)
+    _store = get_artifact_store()
+    return _store.kg_exists(cid)
 
 
 # ── Main entry point ───────────────────────────────────────────────────────────
@@ -126,16 +193,9 @@ def answer_question(
     """
     Route, retrieve, and answer a question.
 
-    Returns
-    -------
-    {
-      "route":   str,
-      "reason":  str,
-      "answer":  str,
-      "context": str   (only when return_context=True)
-    }
+    Returns { route, reason, rewritten_query, answer, context? }
     """
-    # ── 0. Document-level summary shortcut (no retrieval, no extra LLM call) ──
+    # ── 0. Document-level summary shortcut ────────────────────────────
     if _is_summary_query(question) and contract_id and route_override == "auto":
         store = get_artifact_store()
         summary = store.load_summary(contract_id)
@@ -143,58 +203,49 @@ def answer_question(
             answer = format_summary_as_answer(summary)
             result: Dict = {
                 "route":           "summary",
-                "reason":          "Document-level summary query — returning pre-generated summary.",
+                "reason":          "Pre-generated document summary.",
                 "rewritten_query": question,
                 "answer":          answer,
             }
             if return_context:
-                result["context"] = f"Pre-generated summary for contract: {contract_id}"
+                result["context"] = f"Pre-generated summary for: {contract_id}"
             return result
 
-    # ── 1. Route ───────────────────────────────────────────────────────
-    # Pass chat_history so the LLM router can resolve follow-up references.
+    # ── 1. Route ──────────────────────────────────────────────────────
     query_plan = route_question(question, chat_history=chat_history)
-
     route            = query_plan["route"]
     reason           = query_plan["reasoning"]
     rewritten_query  = query_plan["rewritten_query"]
     structural_scope = query_plan["structural_scope"]
 
-    # Manual override from the UI or API caller
     if route_override and route_override != "auto":
         route = route_override
         reason = f"User override: {route_override}"
 
-    # Downgrade graph/hybrid if no KG exists for this contract.
-    # Check Gremlin first (live data); fall back to Blob artifact check.
-    if contract_id and gremlin_is_configured():
-        graph_available = contract_has_graph(contract_id)
-    elif contract_id:
-        _store = get_artifact_store()
-        graph_available = _store.kg_exists(contract_id)
-    else:
-        graph_available = False
-    if route in {"graph", "hybrid"} and not graph_available:
-        route = "search"
-        reason = (
-            "Graph is not available for this contract yet — "
-            "falling back to Azure AI Search."
-        )
+    # Downgrade graph/hybrid to tree if no KG exists for this scope
+    graph_ok = _graph_available(contract_id, contract_ids)
+    if route in {"graph", "hybrid"} and not graph_ok:
+        route = "tree"
+        reason = "No knowledge graph available for this contract — using tree search."
 
     # ── 2. Retrieve ────────────────────────────────────────────────────
-    # Use rewritten_query for retrieval so pronouns/references are resolved.
     if route == "graph":
-        context = graph_native_retrieve(rewritten_query)
+        context = graph_native_retrieve(
+            rewritten_query,
+            contract_id=contract_id,
+            contract_ids=contract_ids,
+        )
 
-    elif route == "tree":
-        context = _tree_retrieve(
+    elif route == "hybrid":
+        context = _hybrid_retrieve(
             question=rewritten_query,
             contract_id=contract_id,
+            contract_ids=contract_ids,
             top=top,
         )
 
-    elif route == "search":
-        context = _search_retrieve(
+    else:  # tree (default for all text/structural questions)
+        context = _tree_retrieve(
             question=rewritten_query,
             contract_id=contract_id,
             contract_ids=contract_ids,
@@ -202,16 +253,7 @@ def answer_question(
             structural_scope=structural_scope,
         )
 
-    else:   # hybrid
-        context = graph_rag_retrieve(
-            question=rewritten_query,
-            k=top,
-            contract_id=contract_id,
-            graph_ready_only=True,
-        )
-
     # ── 3. Generate ────────────────────────────────────────────────────
-    # Build explicit scope header so the LLM knows which contracts are in play.
     active_ids: List[str] = []
     if contract_ids:
         active_ids = list(contract_ids)
