@@ -166,10 +166,12 @@ def get_history(
     user_id = _get_user(x_user_id)
     _require_session(session_id, user_id)
     messages = _session_svc.get_history(session_id, user_id)
-    # Rename 'sources' → 'citations' to match the frontend Message type
+    # Rename fields to match the frontend Message type
     for msg in messages:
         if "sources" in msg:
             msg["citations"] = msg.pop("sources")
+        if "follow_up_suggestions" not in msg:
+            msg["follow_up_suggestions"] = []
     return messages
 
 
@@ -233,6 +235,7 @@ def ask(
         content=result["answer"],
         route=result["route"],
         sources=citations,
+        follow_up_suggestions=follow_ups,
     )
 
     return AskResponse(
@@ -303,6 +306,7 @@ async def ask_stream(
             assistant_msg = _session_svc.save_assistant_message(
                 session_id=session_id, user_id=user_id,
                 content=answer, route=result["route"], sources=citations,
+                follow_up_suggestions=follow_ups,
             )
 
             # Stream answer word by word

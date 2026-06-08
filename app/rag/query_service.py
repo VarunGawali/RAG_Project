@@ -47,7 +47,7 @@ def _is_summary_query(question: str) -> bool:
 
 # ── Citation extraction ────────────────────────────────────────────────────────
 
-def _docs_to_citations(docs: list) -> List[Dict]:
+def _docs_to_citations(docs: list, route: str = "tree") -> List[Dict]:
     """Convert raw search/tree docs to structured citation objects."""
     citations = []
     seen = set()
@@ -69,7 +69,7 @@ def _docs_to_citations(docs: list) -> List[Dict]:
             "pageRange":     f"{page_start}–{page_end}" if page_start else "",
             "sourcePath":    doc.get("sourcePath") or "",
             "evidenceQuote": (doc.get("text") or "")[:200],
-            "route":         "tree",
+            "route":         route,
             "score":         round(doc.get("score", 0), 4),
         })
     return citations
@@ -145,6 +145,10 @@ def _tree_retrieve(
         )
         return _format_search_docs(docs), _docs_to_citations(docs)
 
+    # Normalise: treat empty list same as None (portfolio-wide)
+    if contract_ids is not None and len(contract_ids) == 0:
+        contract_ids = None
+
     if contract_id and not contract_ids:
         retriever = SemanticRetriever(contract_id=contract_id)
         chunks = retriever.retrieve(query=question, top_k=top, contract_id=contract_id)
@@ -169,18 +173,42 @@ def _hybrid_retrieve(
     top: int,
 ) -> Tuple[str, List[Dict]]:
     """Returns (context_string, citations). Merges tree + graph contexts."""
-    tree_context, citations = _tree_retrieve(
+    tree_context, tree_citations = _tree_retrieve(
         question=question,
         contract_id=contract_id,
         contract_ids=contract_ids,
         top=top,
         structural_scope=None,
     )
+    # Re-label tree citations as hybrid
+    for c in tree_citations:
+        c["route"] = "hybrid"
+
     graph_context = graph_native_retrieve(
         question=question,
         contract_id=contract_id,
         contract_ids=contract_ids,
     )
+
+    # Append one graph citation per contract in scope
+    scope_ids = contract_ids or ([contract_id] if contract_id else [])
+    seen_ids = {c["contractId"] for c in tree_citations}
+    graph_citations = [
+        {
+            "id":            cid,
+            "contractId":    cid,
+            "contractName":  cid.replace("_", " "),
+            "clauseTitle":   "Knowledge Graph",
+            "sectionTitle":  "",
+            "pageRange":     "",
+            "sourcePath":    "",
+            "evidenceQuote": "",
+            "route":         "graph",
+            "score":         1.0,
+        }
+        for cid in scope_ids if cid not in seen_ids
+    ]
+
     combined = (
         "=" * 80 + "\n"
         "TREE SEARCH CONTEXT (Azure AI Search + Hierarchical Expansion)\n"
@@ -192,7 +220,7 @@ def _hybrid_retrieve(
         + "=" * 80 + "\n"
         + graph_context
     )
-    return combined, citations
+    return combined, tree_citations + graph_citations
 
 
 # ── Graph availability check ───────────────────────────────────────────────────
@@ -232,6 +260,10 @@ def answer_question(
       context?: str
     }
     """
+    # Normalise empty list to None so all downstream checks work consistently
+    if contract_ids is not None and len(contract_ids) == 0:
+        contract_ids = None
+
     # ── 0. Document-level summary shortcut ────────────────────────────
     if _is_summary_query(question) and contract_id and route_override == "auto":
         store = get_artifact_store()
