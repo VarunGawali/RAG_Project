@@ -324,16 +324,27 @@ function TypingIndicator() {
   )
 }
 
+// ─── Scope label helper ───────────────────────────────────────────────────────
+
+function scopeLabel(selectedContracts: string[], contracts: Contract[]): string {
+  if (selectedContracts.length === 0) return 'All contracts'
+  if (selectedContracts.length === 1) {
+    const c = contracts.find(c => c.id === selectedContracts[0])
+    return c?.displayName ?? selectedContracts[0]
+  }
+  return `${selectedContracts.length} contracts selected`
+}
+
 // ─── Welcome / empty state ────────────────────────────────────────────────────
 
 function WelcomeScreen({
-  contractFilter,
+  selectedContracts,
   contracts,
 }: {
-  contractFilter: string | null
+  selectedContracts: string[]
   contracts: Contract[]
 }) {
-  const activeContract = contracts.find(c => c.id === contractFilter)
+  const label = scopeLabel(selectedContracts, contracts)
 
   return (
     <div className="flex-1 flex flex-col items-center justify-center px-8 py-16">
@@ -344,9 +355,9 @@ function WelcomeScreen({
         What would you like to know?
       </h1>
       <p className="text-ey-muted text-sm text-center max-w-sm leading-relaxed">
-        {activeContract
-          ? <>Ask anything about <span className="text-ey-light font-medium">{activeContract.displayName}</span>.</>
-          : 'Ask questions across any of your contracts, or select a specific contract from the sidebar.'}
+        {selectedContracts.length === 0
+          ? 'Ask questions across any of your contracts, or select a specific contract from the sidebar.'
+          : <>Querying <span className="text-ey-light font-medium">{label}</span>.</>}
       </p>
     </div>
   )
@@ -357,17 +368,16 @@ function WelcomeScreen({
 function ChatInput({
   onSend,
   disabled,
-  contractFilter,
+  selectedContracts,
   contracts,
 }: {
   onSend: (text: string) => void
   disabled: boolean
-  contractFilter: string | null
+  selectedContracts: string[]
   contracts: Contract[]
 }) {
   const [value, setValue] = useState('')
   const textareaRef = useRef<HTMLTextAreaElement>(null)
-  const activeContract = contracts.find(c => c.id === contractFilter)
 
   const submit = () => {
     const trimmed = value.trim()
@@ -395,7 +405,7 @@ function ChatInput({
         <div className="flex items-center gap-1.5 px-2 py-1 bg-ey-surface rounded">
           <FileText size={10} className="text-ey-muted" />
           <span className="text-[11px] text-ey-muted">
-            {activeContract ? activeContract.displayName : 'All contracts'}
+            {scopeLabel(selectedContracts, contracts)}
           </span>
         </div>
       </div>
@@ -437,13 +447,14 @@ interface ChatAreaProps {
   session: ChatSession | null
   contracts: Contract[]
   contractFilter: string | null
+  selectedContracts: string[]
   isLoading: boolean
   onSendMessage: (text: string) => void
   onOpenMobileSidebar: () => void
 }
 
 export default function ChatArea({
-  session, contracts, contractFilter, isLoading, onSendMessage, onOpenMobileSidebar,
+  session, contracts, contractFilter, selectedContracts, isLoading, onSendMessage, onOpenMobileSidebar,
 }: ChatAreaProps) {
   const bottomRef = useRef<HTMLDivElement>(null)
 
@@ -477,18 +488,16 @@ export default function ChatArea({
           <h2 className="text-sm font-semibold text-white truncate">
             {session ? session.title : 'New Conversation'}
           </h2>
-          {session && session.contractFilter && (
-            <p className="text-[11px] text-ey-muted mt-0.5 truncate">
-              {contracts.find(c => c.id === session.contractFilter)?.displayName ?? session.contractFilter}
-            </p>
-          )}
+          <p className="text-[11px] text-ey-muted mt-0.5 truncate">
+            {scopeLabel(selectedContracts, contracts)}
+          </p>
         </div>
       </div>
 
       {/* ── Messages ── */}
       <div className="flex-1 overflow-y-auto">
         {showWelcome ? (
-          <WelcomeScreen contractFilter={contractFilter} contracts={contracts} />
+          <WelcomeScreen selectedContracts={selectedContracts} contracts={contracts} />
         ) : (
           <div className="max-w-3xl mx-auto px-4 md:px-6 py-6 space-y-6">
             {messages.map((msg, idx) => (
@@ -509,7 +518,7 @@ export default function ChatArea({
       <ChatInput
         onSend={onSendMessage}
         disabled={isLoading}
-        contractFilter={contractFilter}
+        selectedContracts={selectedContracts}
         contracts={contracts}
       />
     </div>
