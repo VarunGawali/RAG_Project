@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+venv/
+.venv/
+env/
+
+# Local artifact directories — never baked into image
+data/
+samples/
+output/
+
+# Secrets — never commit or bake in
+.env
+.env.*
+!.env.example
+
+# Frontend source — not needed in the backend image
+frontend/
+
+# Dev/test only
+tests/
+*.test.*
+notebooks/
+streamlit_app.py
+
+# VCS
+.git/
+.gitignore
+
+# Docker
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Misc
+*.md
+*.log
+.DS_Store

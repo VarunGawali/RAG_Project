@@ -23,6 +23,7 @@ This is intentionally minimal — swap in Azure Entra ID when auth is added.
 import json
 import logging
 import re
+from contextlib import asynccontextmanager
 from typing import Any, AsyncGenerator, Dict, List, Optional
 
 from fastapi import FastAPI, File, Header, HTTPException, UploadFile, status
@@ -30,6 +31,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 
+from app import config
 from app.chat_history.session_service import SessionService
 from app.ingestion.job_store import JobStore
 from app.ingestion import worker as ingestion_worker
@@ -41,13 +43,26 @@ from app.storage.blob_store import BlobStore
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 
-app = FastAPI(title="Contract360 API", version="1.0.0")
 
-# Allow the React dev server (port 5173) and any same-origin requests.
-# Restrict origins in production.
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    config.validate_required_config()
+    logger.info(
+        "Contract360 API starting — USE_BLOB_ARTIFACTS=%s, index=%s",
+        config.USE_BLOB_ARTIFACTS,
+        config.AZURE_SEARCH_INDEX,
+    )
+    yield
+
+
+app = FastAPI(title="Contract360 API", version="1.0.0", lifespan=lifespan)
+
+# Allowed origins are set via the ALLOWED_ORIGINS env var (comma-separated).
+# Defaults to localhost dev ports; override in production with the deployed
+# frontend URL, e.g. https://contract360-ui.azurecontainerapps.io
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000"],
+    allow_origins=config.ALLOWED_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

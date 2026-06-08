@@ -151,3 +151,44 @@ KG_MAX_CLAUSE_CHARS = int(os.getenv("KG_MAX_CLAUSE_CHARS", "3000"))
 
 # If true, legal extraction runs but does not write semantic entities/edges to Gremlin.
 KG_DRY_RUN = os.getenv("KG_DRY_RUN", "false").lower() == "true"
+
+# ---------------------------------------------------------------------
+# CORS
+# Comma-separated list of allowed origins.
+# Defaults to localhost dev ports; set explicitly in production.
+# Example: ALLOWED_ORIGINS=https://contract360.example.com
+# ---------------------------------------------------------------------
+
+ALLOWED_ORIGINS = [
+    o.strip()
+    for o in os.getenv(
+        "ALLOWED_ORIGINS",
+        "http://localhost:5173,http://localhost:3000",
+    ).split(",")
+    if o.strip()
+]
+
+
+# ---------------------------------------------------------------------
+# Startup validation
+# Call once at process start to fail loudly if critical vars are missing.
+# ---------------------------------------------------------------------
+
+def validate_required_config() -> None:
+    """Raise RuntimeError with a clear list of missing env vars."""
+    required = {
+        "AZURE_OPENAI_ENDPOINT":        AZURE_OPENAI_ENDPOINT,
+        "AZURE_OPENAI_API_KEY":         AZURE_OPENAI_API_KEY,
+        "AZURE_SEARCH_ENDPOINT":        AZURE_SEARCH_ENDPOINT,
+        "AZURE_SEARCH_ADMIN_KEY":       AZURE_SEARCH_ADMIN_KEY,
+        "COSMOS_NOSQL_ENDPOINT":        COSMOS_NOSQL_ENDPOINT,
+        "COSMOS_NOSQL_KEY":             COSMOS_NOSQL_KEY,
+        "AZURE_BLOB_CONNECTION_STRING": AZURE_BLOB_CONNECTION_STRING or None,
+    }
+    missing = [name for name, val in required.items() if not val]
+    if missing:
+        raise RuntimeError(
+            "Contract360 cannot start — missing required environment variables:\n"
+            + "\n".join(f"  • {m}" for m in missing)
+            + "\n\nCopy .env.example to .env and fill in the values."
+        )
