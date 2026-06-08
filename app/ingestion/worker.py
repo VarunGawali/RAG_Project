@@ -59,8 +59,14 @@ def _run_kg_pipeline(
     job_store: "JobStore",
 ) -> bool:
     """
-    Normalize tree → write structural graph → LLM extract clauses →
-    write semantic graph to Gremlin.
+    Normalize tree (for clause selection) → LLM extract clauses →
+    write legal-semantic graph to Gremlin.
+
+    The structural graph is intentionally NOT written to Gremlin — the
+    document hierarchy already lives in the tree JSON (Blob) and is used
+    by SemanticRetriever for tree-context expansion. Clause citation
+    metadata (title, page range) is denormalized directly onto each legal
+    entity at write time, so no structural clause vertices are needed.
 
     Returns True if graph was written, False if skipped or failed.
     Non-fatal: caller continues to mark_done even on failure.
@@ -77,17 +83,11 @@ def _run_kg_pipeline(
     try:
         job_store.update_stage(job_id, user_id, stage="extracting", progress=75)
         logger.info("Job %s: normalizing tree for %s", job_id, contract_id)
+        # Normalize only to obtain clause nodes for selection — not written to Gremlin.
         normalized = normalize_contract_tree_from_dict(tree_dict, contract_id)
 
         writer = GremlinWriter()
         try:
-            # Write structural graph (sections, clauses, hierarchy edges)
-            writer.write_structural_graph(normalized)
-            logger.info(
-                "Job %s: structural graph written (%d nodes, %d edges)",
-                job_id, len(normalized.nodes), len(normalized.edges),
-            )
-
             # Select clauses and run LLM extraction
             job_store.update_stage(job_id, user_id, stage="extracting", progress=82)
             clauses = select_representative_clauses(normalized.nodes)

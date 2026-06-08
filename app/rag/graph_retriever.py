@@ -114,6 +114,10 @@ def normalize_items(items: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             "confidence":     first_value(item, "confidence"),
             "evidenceQuote":  first_value(item, "evidenceQuote"),
             "sourceClauseId": first_value(item, "sourceClauseId"),
+            # Denormalized citation metadata (stored on each entity)
+            "clauseTitle":    first_value(item, "clauseTitle"),
+            "pageStart":      first_value(item, "pageStart"),
+            "pageEnd":        first_value(item, "pageEnd"),
         }
         for item in items
     ]
@@ -157,7 +161,7 @@ class GraphNativeRetriever:
         q1 = f"""
         g.V().hasLabel('Party').has('name', party_name){cf}
           .in('OWED_BY').hasLabel('Obligation').dedup()
-          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId', 'clauseTitle', 'pageStart', 'pageEnd')
         """
         r1 = normalize_items(self.writer.submit(q1, {"party_name": party_name}))
 
@@ -165,7 +169,7 @@ class GraphNativeRetriever:
         q2 = f"""
         g.V().hasLabel('Obligor').has('name', party_name){cf}
           .out('OBLIGATES').dedup()
-          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId', 'clauseTitle', 'pageStart', 'pageEnd')
         """
         r2 = normalize_items(self.writer.submit(q2, {"party_name": party_name}))
 
@@ -183,14 +187,14 @@ class GraphNativeRetriever:
         q1 = f"""
         g.V().hasLabel('Party').has('name', party_name){cf}
           .in('OWED_TO').hasLabel('Obligation').dedup()
-          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId', 'clauseTitle', 'pageStart', 'pageEnd')
         """
         r1 = normalize_items(self.writer.submit(q1, {"party_name": party_name}))
 
         q2 = f"""
         g.V().hasLabel('Obligee').has('name', party_name){cf}
           .in('OBLIGATES').dedup()
-          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId', 'clauseTitle', 'pageStart', 'pageEnd')
         """
         r2 = normalize_items(self.writer.submit(q2, {"party_name": party_name}))
 
@@ -206,7 +210,7 @@ class GraphNativeRetriever:
         g.V().hasLabel('Obligation'){cf}.as('obligation')
           .out('HAS_DEADLINE').hasLabel('Deadline').as('deadline')
           .select('obligation', 'deadline')
-            .by(valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId'))
+            .by(valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId', 'clauseTitle', 'pageStart', 'pageEnd'))
             .by(valueMap('kgId', 'name', 'evidenceQuote'))
         """
         result = self.writer.submit(query)
@@ -237,7 +241,7 @@ class GraphNativeRetriever:
 
         q1 = f"""
         g.V().hasLabel('Obligation'){cf}.dedup()
-          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId', 'clauseTitle', 'pageStart', 'pageEnd')
         """
         r1 = normalize_items(self.writer.submit(q1))
 
@@ -245,7 +249,7 @@ class GraphNativeRetriever:
         q2 = f"""
         g.V().hasLabel('Obligor'){cf}
           .out('OBLIGATES').hasLabel('Obligation').dedup()
-          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId', 'clauseTitle', 'pageStart', 'pageEnd')
         """
         r2 = normalize_items(self.writer.submit(q2))
 
@@ -259,7 +263,7 @@ class GraphNativeRetriever:
         cf = _contract_filter_step(contract_id, contract_ids)
         query = f"""
         g.V().hasLabel('Right'){cf}.dedup()
-          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId', 'clauseTitle', 'pageStart', 'pageEnd')
         """
         return normalize_items(self.writer.submit(query))
 
@@ -271,7 +275,7 @@ class GraphNativeRetriever:
         cf = _contract_filter_step(contract_id, contract_ids)
         query = f"""
         g.V().hasLabel('Restriction'){cf}.dedup()
-          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId', 'clauseTitle', 'pageStart', 'pageEnd')
         """
         return normalize_items(self.writer.submit(query))
 
@@ -313,7 +317,7 @@ class GraphNativeRetriever:
         # Standalone Indemnitor vertices (no paired Indemnitee edge found)
         q2 = f"""
         g.V().hasLabel('Indemnitor', 'Indemnitee'){cf}.dedup()
-          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId', 'clauseTitle', 'pageStart', 'pageEnd')
         """
         standalone = normalize_items(self.writer.submit(q2))
         # Only include if not already covered by a paired result
@@ -336,7 +340,7 @@ class GraphNativeRetriever:
         cf = _contract_filter_step(contract_id, contract_ids)
         query = f"""
         g.V().hasLabel('TerminationEvent', 'TerminationRight'){cf}.dedup()
-          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId', 'clauseTitle', 'pageStart', 'pageEnd')
         """
         return normalize_items(self.writer.submit(query))
 
@@ -348,7 +352,7 @@ class GraphNativeRetriever:
         cf = _contract_filter_step(contract_id, contract_ids)
         query = f"""
         g.V().hasLabel('Breach', 'CurePeriod'){cf}.dedup()
-          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId', 'clauseTitle', 'pageStart', 'pageEnd')
         """
         return normalize_items(self.writer.submit(query))
 
@@ -389,7 +393,7 @@ class GraphNativeRetriever:
         # Standalone Notice / NoticeRecipient vertices
         q2 = f"""
         g.V().hasLabel('Notice', 'NoticeRecipient', 'NoticePeriod'){cf}.dedup()
-          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId', 'clauseTitle', 'pageStart', 'pageEnd')
         """
         seen = {i["kgId"] for i in items if i.get("kgId")}
         for s in normalize_items(self.writer.submit(q2)):
@@ -413,7 +417,7 @@ class GraphNativeRetriever:
         # Structural payment vertices
         q1 = f"""
         g.V().hasLabel('Invoice', 'ReimbursableCost', 'InterestRate'){cf}.dedup()
-          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId', 'clauseTitle', 'pageStart', 'pageEnd')
         """
         items = list(normalize_items(self.writer.submit(q1)))
 
@@ -454,7 +458,7 @@ class GraphNativeRetriever:
 
         q1 = f"""
         g.V().hasLabel('Liability'){cf}.dedup()
-          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId', 'clauseTitle', 'pageStart', 'pageEnd')
         """
         items = list(normalize_items(self.writer.submit(q1)))
 
@@ -481,29 +485,6 @@ class GraphNativeRetriever:
             })
 
         return _dedup(items)
-
-    # ------------------------------------------------------------------
-    # Clause metadata
-    # ------------------------------------------------------------------
-
-    def get_clause_metadata(self, source_clause_id: str) -> Dict:
-        query = """
-        g.V(source_clause_id)
-          .valueMap('kgId', 'contractId', 'title', 'pageStart', 'pageEnd', 'sourcePath', 'textPreview')
-        """
-        result = self.writer.submit(query, {"source_clause_id": source_clause_id})
-        if not result:
-            return {}
-        row = result[0]
-        return {
-            "kgId":        first_value(row, "kgId"),
-            "contractId":  first_value(row, "contractId"),
-            "title":       first_value(row, "title"),
-            "pageStart":   first_value(row, "pageStart"),
-            "pageEnd":     first_value(row, "pageEnd"),
-            "sourcePath":  first_value(row, "sourcePath"),
-            "textPreview": first_value(row, "textPreview"),
-        }
 
     # ------------------------------------------------------------------
     # Cross-contract queries
@@ -570,9 +551,6 @@ def _format_facts(
 ) -> List[str]:
     lines = []
     for idx, fact in enumerate(facts, start=1):
-        source_clause_id = fact.get("sourceClauseId")
-        meta = retriever.get_clause_metadata(source_clause_id) if source_clause_id else {}
-
         label = fact.get("name") or "(unnamed)"
         if fact.get("legalType"):
             label = f"[{fact['legalType']}] {label}"
@@ -589,11 +567,12 @@ def _format_facts(
             lines.append(f"     Deadline: {fact.get('deadlineName')}")
         if fact.get("evidenceQuote"):
             lines.append(f"     Evidence: \"{fact.get('evidenceQuote')}\"")
-        if meta:
-            lines.append(
-                f"     Source: {meta.get('title')} "
-                f"(pp. {meta.get('pageStart')}-{meta.get('pageEnd')})"
-            )
+        # Citation metadata denormalized onto each entity (no structural vertex lookup)
+        if fact.get("clauseTitle"):
+            page = ""
+            if fact.get("pageStart"):
+                page = f" (pp. {fact.get('pageStart')}-{fact.get('pageEnd')})"
+            lines.append(f"     Source: {fact.get('clauseTitle')}{page}")
     return lines
 
 

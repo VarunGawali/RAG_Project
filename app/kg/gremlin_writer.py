@@ -5,7 +5,7 @@ from typing import Dict, Any, Optional
 from gremlin_python.driver import client, serializer
 
 from app import config
-from app.kg.models import NormalizedContract, LegalExtractionResult
+from app.kg.models import LegalExtractionResult
 
 
 MAX_TEXT_PREVIEW_CHARS = 1200
@@ -207,76 +207,6 @@ class GremlinWriter:
 
         self.submit(query, bindings)
 
-    def write_structural_graph(self, normalized: NormalizedContract):
-        """
-        Write deterministic structural KG.
-
-        Important:
-        Full node text is NOT stored in Gremlin.
-        Gremlin stores textPreview + textLength only.
-        Full text remains in tree JSON / Azure AI Search.
-        """
-        print("Writing structural vertices...")
-
-        total_nodes = len(normalized.nodes)
-
-        for idx, node in enumerate(normalized.nodes, start=1):
-            full_text = node.text or ""
-
-            props = {
-                "kgId": node.kgId,
-                "rawNodeId": node.rawNodeId,
-                "tenantId": node.tenantId,
-                "contractId": node.contractId,
-                "nodeType": node.nodeType,
-                "title": node.title,
-                "textPreview": full_text[:MAX_TEXT_PREVIEW_CHARS],
-                "textLength": len(full_text),
-                "sectionNumber": node.sectionNumber,
-                "pageStart": node.pageStart,
-                "pageEnd": node.pageEnd,
-                "sourcePath": node.sourcePath,
-                "parentKgId": node.parentKgId,
-                "childrenCount": len(node.childrenKgIds or []),
-                "siblingCount": len(node.siblingKgIds or []),
-                "clauseTypeHint": node.clauseTypeHint,
-                "extractionReady": node.extractionReady,
-                "rawItemType": node.properties.get("itemType"),
-                "rawDocumentId": node.properties.get("documentId"),
-                "rawParentNodeId": node.properties.get("parentNodeId"),
-            }
-
-            self.upsert_vertex(
-                label=node.label,
-                vertex_id=node.kgId,
-                pk=node.tenantId,
-                properties=props,
-            )
-
-            if idx % 25 == 0 or idx == total_nodes:
-                print(f"  Vertices written: {idx}/{total_nodes}")
-
-        print("Writing structural edges...")
-
-        total_edges = len(normalized.edges)
-
-        for idx, edge in enumerate(normalized.edges, start=1):
-            self.upsert_edge(
-                source_id=edge.sourceKgId,
-                target_id=edge.targetKgId,
-                edge_label=edge.label,
-                properties={
-                    "edgeId": edge.edgeId,
-                    "tenantId": edge.tenantId,
-                    "edgeType": edge.properties.get("edgeType", "structural"),
-                },
-            )
-
-            if idx % 50 == 0 or idx == total_edges:
-                print(f"  Edges written: {idx}/{total_edges}")
-
-        print("Structural graph written successfully.")
-
     def write_legal_extraction(
         self,
         extraction: LegalExtractionResult,
@@ -284,9 +214,18 @@ class GremlinWriter:
         contract_id: str,
     ):
         """
-        Later step: write LLM-extracted legal semantic graph.
+        Write the LLM-extracted legal-semantic graph.
+
+        Clause citation metadata (title, page range) is denormalized onto
+        every entity so citations work without a separate structural clause
+        vertex. Relationships are entity-to-entity (e.g. Obligation -OWED_BY->
+        Party); any relationship that references a non-existent vertex is
+        skipped by the per-edge retry/fail path and logged upstream.
         """
         source_clause_id = extraction.source_clause_id
+        clause_title     = extraction.source_clause_title
+        page_start       = extraction.source_page_start
+        page_end         = extraction.source_page_end
 
         for entity in extraction.entities:
             props = {
@@ -299,6 +238,10 @@ class GremlinWriter:
                 "confidence": entity.confidence,
                 "evidenceQuote": entity.evidenceQuote,
                 "sourceClauseId": source_clause_id,
+                # Denormalized citation metadata (replaces structural clause vertex)
+                "clauseTitle": clause_title,
+                "pageStart": page_start,
+                "pageEnd": page_end,
                 **entity.properties,
             }
 
@@ -307,17 +250,6 @@ class GremlinWriter:
                 vertex_id=entity.id,
                 pk=tenant_id,
                 properties=props,
-            )
-
-            self.upsert_edge(
-                source_id=source_clause_id,
-                target_id=entity.id,
-                edge_label="EXTRACTED_ENTITY",
-                properties={
-                    "tenantId": tenant_id,
-                    "confidence": entity.confidence,
-                    "evidenceQuote": entity.evidenceQuote,
-                },
             )
 
         for rel in extraction.relationships:
