@@ -215,50 +215,65 @@ export default function App() {
     ))
 
     try {
-      const result = await api.askQuestion(sessionId!, {
-        question: text,
-        route_override: 'auto',
-        // Send multi-contract filter only when user has selected more than one contract
-        contract_ids: selectedContracts.length > 0 ? selectedContracts : null,
-      })
-
-      const words = result.answer.split(' ')
-      let streamedContent = ''
-
-      await new Promise<void>(resolve => {
-        let idx = 0
-        const interval = setInterval(() => {
-          idx = Math.min(idx + Math.floor(Math.random() * 3) + 1, words.length)
-          streamedContent = words.slice(0, idx).join(' ')
+      await api.askQuestionStream(
+        sessionId!,
+        {
+          question: text,
+          route_override: 'auto',
+          contract_ids: selectedContracts.length > 0 ? selectedContracts : null,
+        },
+        // onDelta — append each token as it arrives
+        (token) => {
           setSessions(prev => prev.map(s =>
             s.id === sessionId ? {
               ...s,
               messages: s.messages.map(m =>
-                m.id === streamingId ? { ...m, content: streamedContent } : m
+                m.id === streamingId
+                  ? { ...m, content: m.content + token }
+                  : m
               ),
             } : s
           ))
-          if (idx >= words.length) { clearInterval(interval); resolve() }
-        }, 28)
-      })
-
-      setSessions(prev => prev.map(s =>
-        s.id === sessionId ? {
-          ...s,
-          messages: s.messages.map(m =>
-            m.id === streamingId ? {
-              id: result.message_id,
-              role: 'assistant' as const,
-              content: result.answer,
-              timestamp: new Date().toISOString(),
-              route: result.route as Message['route'],
-              isStreaming: false,
-            } : m
-          ),
-          previewText: result.answer.slice(0, 80) + (result.answer.length > 80 ? '…' : ''),
-          updatedAt: new Date().toISOString(),
-        } : s
-      ))
+        },
+        // onDone — replace placeholder with final message + metadata
+        (done) => {
+          setSessions(prev => prev.map(s =>
+            s.id === sessionId ? {
+              ...s,
+              messages: s.messages.map(m =>
+                m.id === streamingId ? {
+                  id: done.message_id,
+                  role: 'assistant' as const,
+                  content: m.content,   // already fully streamed
+                  timestamp: new Date().toISOString(),
+                  route: done.route as Message['route'],
+                  citations: done.citations,
+                  followUpSuggestions: done.follow_up_suggestions,
+                  isStreaming: false,
+                } : m
+              ),
+              previewText: (() => {
+                const last = s.messages.find(m => m.id === streamingId)
+                const txt = last?.content ?? ''
+                return txt.slice(0, 80) + (txt.length > 80 ? '…' : '')
+              })(),
+              updatedAt: new Date().toISOString(),
+            } : s
+          ))
+          setIsLoading(false)
+        },
+        // onError
+        (detail) => {
+          setApiError(detail)
+          setSessions(prev => prev.map(s =>
+            s.id === sessionId ? {
+              ...s,
+              messages: s.messages.filter(m => m.id !== streamingId),
+            } : s
+          ))
+          setIsLoading(false)
+        },
+      )
     } catch (err) {
       const errorText = err instanceof Error ? err.message : 'An error occurred.'
       setApiError(errorText)
@@ -268,7 +283,6 @@ export default function App() {
           messages: s.messages.filter(m => m.id !== streamingId),
         } : s
       ))
-    } finally {
       setIsLoading(false)
     }
   }, [activeSessionId, contractFilter, selectedContracts, isLoading])

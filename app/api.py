@@ -20,14 +20,18 @@ For now we use a simple header `X-User-Id` (defaults to "default_user").
 This is intentionally minimal — swap in Azure Entra ID when auth is added.
 """
 
+import json
 import logging
 import re
-from typing import Any, Dict, List, Optional
+from contextlib import asynccontextmanager
+from typing import Any, AsyncGenerator, Dict, List, Optional
 
 from fastapi import FastAPI, File, Header, HTTPException, UploadFile, status
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 
+from app import config
 from app.chat_history.session_service import SessionService
 from app.ingestion.job_store import JobStore
 from app.ingestion import worker as ingestion_worker
@@ -39,13 +43,26 @@ from app.storage.blob_store import BlobStore
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 
-app = FastAPI(title="Contract360 API", version="1.0.0")
 
-# Allow the React dev server (port 5173) and any same-origin requests.
-# Restrict origins in production.
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    config.validate_required_config()
+    logger.info(
+        "Contract360 API starting — USE_BLOB_ARTIFACTS=%s, index=%s",
+        config.USE_BLOB_ARTIFACTS,
+        config.AZURE_SEARCH_INDEX,
+    )
+    yield
+
+
+app = FastAPI(title="Contract360 API", version="1.0.0", lifespan=lifespan)
+
+# Allowed origins are set via the ALLOWED_ORIGINS env var (comma-separated).
+# Defaults to localhost dev ports; override in production with the deployed
+# frontend URL, e.g. https://contract360-ui.azurecontainerapps.io
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000"],
+    allow_origins=config.ALLOWED_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -75,6 +92,19 @@ class AskRequest(BaseModel):
     contract_ids: Optional[List[str]] = None   # multi-contract filter; overrides session contractFilter
 
 
+class CitationModel(BaseModel):
+    id: str
+    contractId: str
+    contractName: str
+    clauseTitle: str
+    sectionTitle: str
+    pageRange: str
+    sourcePath: str
+    evidenceQuote: str
+    route: str
+    score: float = 0.0
+
+
 class AskResponse(BaseModel):
     session_id: str
     message_id: str
@@ -82,6 +112,8 @@ class AskResponse(BaseModel):
     reason: str
     rewritten_query: Optional[str] = None
     answer: str
+    citations: List[CitationModel] = []
+    follow_up_suggestions: List[str] = []
     context: Optional[str] = None
 
 
@@ -149,10 +181,12 @@ def get_history(
     user_id = _get_user(x_user_id)
     _require_session(session_id, user_id)
     messages = _session_svc.get_history(session_id, user_id)
-    # Rename 'sources' → 'citations' to match the frontend Message type
+    # Rename fields to match the frontend Message type
     for msg in messages:
         if "sources" in msg:
             msg["citations"] = msg.pop("sources")
+        if "follow_up_suggestions" not in msg:
+            msg["follow_up_suggestions"] = []
     return messages
 
 
@@ -206,12 +240,17 @@ def ask(
         chat_history=chat_history,
     )
 
-    # 4. Persist the assistant message
+    citations     = result.get("citations", [])
+    follow_ups    = result.get("follow_up_suggestions", [])
+
+    # 4. Persist the assistant message (sources stored in Cosmos)
     assistant_msg = _session_svc.save_assistant_message(
         session_id=session_id,
         user_id=user_id,
         content=result["answer"],
         route=result["route"],
+        sources=citations,
+        follow_up_suggestions=follow_ups,
     )
 
     return AskResponse(
@@ -221,7 +260,98 @@ def ask(
         reason=result["reason"],
         rewritten_query=result.get("rewritten_query"),
         answer=result["answer"],
+        citations=[CitationModel(**c) for c in citations],
+        follow_up_suggestions=follow_ups,
         context=result.get("context"),
+    )
+
+
+@app.post("/sessions/{session_id}/ask/stream")
+async def ask_stream(
+    session_id: str,
+    body: AskRequest,
+    x_user_id: Optional[str] = Header(default=None),
+):
+    """
+    SSE streaming variant of /ask.
+
+    Emits newline-delimited JSON events:
+      {"type": "delta",    "content": "<token>"}
+      {"type": "done",     "message_id": "...", "route": "...", "reason": "...",
+                           "citations": [...], "follow_up_suggestions": [...]}
+      {"type": "error",    "detail": "..."}
+    """
+    user_id = _get_user(x_user_id)
+    _require_session(session_id, user_id)
+
+    async def _event_stream() -> AsyncGenerator[str, None]:
+        try:
+            # Save user message
+            _session_svc.save_user_message(
+                session_id=session_id, user_id=user_id, content=body.question,
+            )
+            chat_history = _session_svc.build_llm_history(session_id, user_id)
+            if chat_history and chat_history[-1]["role"] == "user":
+                chat_history = chat_history[:-1]
+
+            session = _session_svc.get(session_id, user_id)
+            contract_filter = session.get("contractFilter") if session else None
+
+            # Run RAG (blocking — wraps sync code)
+            import asyncio
+            loop = asyncio.get_event_loop()
+            result = await loop.run_in_executor(
+                None,
+                lambda: answer_question(
+                    question=body.question,
+                    contract_id=contract_filter,
+                    contract_ids=body.contract_ids or None,
+                    top=body.top,
+                    route_override=body.route_override,
+                    return_context=body.return_context,
+                    chat_history=chat_history,
+                ),
+            )
+
+            answer   = result["answer"]
+            citations = result.get("citations", [])
+            follow_ups = result.get("follow_up_suggestions", [])
+
+            # Persist
+            assistant_msg = _session_svc.save_assistant_message(
+                session_id=session_id, user_id=user_id,
+                content=answer, route=result["route"], sources=citations,
+                follow_up_suggestions=follow_ups,
+            )
+
+            # Stream answer word by word
+            words = answer.split(" ")
+            for i, word in enumerate(words):
+                chunk = word if i == 0 else " " + word
+                yield json.dumps({"type": "delta", "content": chunk}) + "\n"
+
+            # Final done event with metadata
+            yield json.dumps({
+                "type":                  "done",
+                "message_id":            assistant_msg["id"],
+                "route":                 result["route"],
+                "reason":                result["reason"],
+                "rewritten_query":       result.get("rewritten_query", ""),
+                "citations":             citations,
+                "follow_up_suggestions": follow_ups,
+            }) + "\n"
+
+        except Exception as exc:
+            logger.error("SSE stream error: %s", exc)
+            yield json.dumps({"type": "error", "detail": str(exc)}) + "\n"
+
+    return StreamingResponse(
+        _event_stream(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no",
+        },
     )
 
 

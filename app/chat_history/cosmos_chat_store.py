@@ -123,6 +123,7 @@ class CosmosChatStore:
         content: str,
         route: Optional[str] = None,
         sources: Optional[List[Dict]] = None,
+        follow_up_suggestions: Optional[List[str]] = None,
     ) -> Dict[str, Any]:
         """Append a single message and update the session's updatedAt + title."""
         session = self.get_session(session_id, user_id)
@@ -136,6 +137,7 @@ class CosmosChatStore:
             "timestamp": _now(),
             "route": route,
             "sources": sources or [],
+            "follow_up_suggestions": follow_up_suggestions or [],
         }
 
         messages: list = session.get("messages", [])

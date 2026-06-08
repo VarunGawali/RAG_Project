@@ -66,6 +66,7 @@ class SessionService:
         content: str,
         route: Optional[str] = None,
         sources: Optional[List[Dict]] = None,
+        follow_up_suggestions: Optional[List[str]] = None,
     ) -> Dict[str, Any]:
         return self._store.append_message(
             session_id=session_id,
@@ -74,6 +75,7 @@ class SessionService:
             content=content,
             route=route,
             sources=sources,
+            follow_up_suggestions=follow_up_suggestions,
         )
 
     # ------------------------------------------------------------------

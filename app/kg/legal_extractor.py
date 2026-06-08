@@ -8,85 +8,138 @@ from openai import AzureOpenAI
 from app import config
 from app.kg.models import KGNode, LegalExtractionResult
 
-LEGAL_NODE_TYPES = [
-    # Layer 1 — Universal (all 8 contracts)
-    "Obligee",
-    "Obligation",             # renamed from Paymentobligation — covers all 33 obligation subtypes
-    "NoticeRecipient",
-    "Indemnitor",
-    "Obligor",
-    "Agreement",
-    "ForceMajeureEvent",
-    "Indemnitee",
-    "InsurancePolicy",
+# =============================================================================
+# Canonical ontology — single source of truth used by BOTH the extractor
+# prompt and the graph retriever.  Every label/edge emitted by the LLM must
+# come from one of these lists.
+# =============================================================================
 
-    # Layer 2 — Common (50–75% contracts)
-    "Breach",
-    "Party",
-    "CurePeriod",
+LEGAL_NODE_TYPES = [
+    # ── Parties and roles ──────────────────────────────────────────────
+    "Party",                    # generic named party
+    "Obligor",                  # party bearing a duty
+    "Obligee",                  # party to whom a duty is owed
+    "Indemnitor",               # party providing indemnification
+    "Indemnitee",               # party receiving indemnification
     "BreachingParty",
-    "NonBreachingParty",      # split from BreachingParty
-    "EffectiveDate",
-    "PerformanceMilestoneDate", # split from EffectiveDate
-    "TerminationEvent",
-    "ConfidentialInformation",
-    "Contract",
-    "Dispute",
-    "GovernmentalAuthority",
-    "Invoice",
-    "Notice",
+    "NonBreachingParty",
+    "NoticeRecipient",
+    "Assignor",
+    "Assignee",
     "ThirdParty",
-    "ObligationTrigger",
+    "GovernmentalAuthority",
+
+    # ── Duties and entitlements ────────────────────────────────────────
+    "Obligation",               # a duty imposed on a party
+    "Right",                    # a permission or entitlement
+    "Restriction",              # a prohibition or limitation
+    "ObligationTrigger",        # condition that activates an obligation
+
+    # ── Temporal / deadline entities ──────────────────────────────────
+    "Deadline",                 # specific date/time a duty must be met
+    "NoticePeriod",             # required advance-notice window
+    "Frequency",                # recurring cadence (monthly, quarterly…)
+    "EffectiveDate",
+    "PerformanceMilestoneDate",
+
+    # ── Events and conditions ──────────────────────────────────────────
+    "Event",                    # triggering occurrence
+    "Condition",                # a prerequisite or contingency
+    "Exception",                # a carve-out or exclusion
+    "ForceMajeureEvent",
+    "TerminationEvent",
+    "TerminationRight",
+    "Breach",
+    "CurePeriod",
+    "Dispute",
+
+    # ── Instruments and documents ──────────────────────────────────────
+    "Agreement",
+    "Contract",
+    "Notice",
+    "Invoice",
     "InsuranceCertificate",
-    "Claim",
-    "Consent",
+    "InsurancePolicy",
     "Deliverable",
-    "Facility",
-    "InterestRate",
-    "LegalRequirement",
+    "Consent",
+    "Claim",
+
+    # ── Financial ─────────────────────────────────────────────────────
     "Liability",
     "ReimbursableCost",
+    "InterestRate",
+
+    # ── Other ─────────────────────────────────────────────────────────
+    "ConfidentialInformation",
+    "LegalRequirement",
     "Service",
-    "TerminationRight",
-    "Assignee",               # keep separate
-    "Assignor",               # split from Assignee
+    "Facility",
 ]
 
 LEGAL_RELATIONSHIP_TYPES = [
-    # Layer 1 — Universal
-    "INDEMNIFIES",
+    # ── Obligation edges (CORE — retriever depends on these) ───────────
+    "OWED_BY",                  # Obligation → Party  (party bears the duty)
+    "OWED_TO",                  # Obligation → Party  (party benefits from duty)
+    "OBLIGATES",                # Obligor → Obligation
+    "IMPOSES_OBLIGATION_ON",    # any node → Party
+    "TRIGGERS_OBLIGATION_OF",   # Event/Condition → Obligation
+
+    # ── Temporal edges (CORE) ──────────────────────────────────────────
+    "HAS_DEADLINE",             # Obligation → Deadline
+    "HAS_NOTICE_PERIOD",        # Obligation/Right → NoticePeriod
+    "HAS_FREQUENCY",            # Obligation → Frequency
+
+    # ── Condition/exception edges ──────────────────────────────────────
+    "SUBJECT_TO",               # Obligation/Right → Condition
+    "EXCEPTS",                  # Obligation/Right → Exception
+    "TRIGGERED_BY",             # Obligation → Event
+
+    # ── Indemnification ────────────────────────────────────────────────
+    "INDEMNIFIES",              # Indemnitor → Indemnitee
+    "FALLS_WITHIN_INDEMNITY_SCOPE_OF",
+    "LIMITS_INDEMNITY_OBLIGATION_OF",
+
+    # ── Liability ─────────────────────────────────────────────────────
     "CAPS_LIABILITY_OF",
+
+    # ── Payment / financial ────────────────────────────────────────────
+    "PAYS",                     # Party → Party
+    "MAKES_PAYMENT_TO",
+    "REIMBURSES",
+    "BEARS_COSTS_OF",
+
+    # ── Notice / communication ─────────────────────────────────────────
     "GIVES_NOTICE_TO",
+    "PROVIDES_NOTICE_TO",
+    "NOTIFIES",
+    "REQUIRES_NOTICE_FROM",
+
+    # ── Assignment ────────────────────────────────────────────────────
+    "ASSIGNS_RIGHTS_TO",
+
+    # ── Access / rights ───────────────────────────────────────────────
     "GRANTS_ACCESS_TO",
     "GRANTS_RIGHT_TO",
-    "NOTIFIES",
-    "PAYS",
-    "PROVIDES_NOTICE_TO",
-    "REIMBURSES",
-    "TRIGGERS_OBLIGATION_OF",
 
-    # Layer 2 — Common (use the canonical forms from the proposal)
-    "APPLIES_TO",
-    "OBLIGATES",
-    "SURVIVES_TERMINATION_OF",
-    "COOPERATES_WITH",
-    "DELIVERS",
-    "MAINTAINS",
-    "MAKES_PAYMENT_TO",
-    "PROVIDES",
-    "REQUIRES_NOTICE_FROM",
-    "LIMITS_INDEMNITY_OBLIGATION_OF",
-    "ASSIGNS_RIGHTS_TO",
-    "REQUIRES_COMPLIANCE_WITH",
-    "BEARS_COSTS_OF",
+    # ── Compliance / cooperation ───────────────────────────────────────
     "COMPLIES_WITH",
-    "NAMES_AS_ADDITIONAL_INSURED",
-    "EXCUSES_BREACH_OF",
-    "TRIGGERS_CURE_PERIOD_OF",
-    "IMPOSES_OBLIGATION_ON",
-    "FALLS_WITHIN_INDEMNITY_SCOPE_OF",
+    "REQUIRES_COMPLIANCE_WITH",
+    "COOPERATES_WITH",
+    "MAINTAINS",
+    "PROVIDES",
+    "DELIVERS",
+
+    # ── Termination / breach ──────────────────────────────────────────
     "TERMINATES",
+    "TRIGGERS_CURE_PERIOD_OF",
+    "EXCUSES_BREACH_OF",
+
+    # ── Survival / applicability ───────────────────────────────────────
+    "SURVIVES_TERMINATION_OF",
+    "APPLIES_TO",
+    "NAMES_AS_ADDITIONAL_INSURED",
 ]
+
 
 def slugify(value: str, max_len: int = 80) -> str:
     value = value or "unknown"
@@ -114,38 +167,57 @@ You are a legal contract knowledge graph extraction expert.
 
 Extract legal-semantic entities and relationships from the clause below.
 
-Allowed entity types:
+ALLOWED ENTITY TYPES (use ONLY these labels):
 {LEGAL_NODE_TYPES}
 
-Allowed relationship types:
+ALLOWED RELATIONSHIP TYPES (use ONLY these edge labels):
 {LEGAL_RELATIONSHIP_TYPES}
 
-Rules:
-1. Extract only information explicitly supported by the text.
-2. Every entity must have a stable id.
+EXTRACTION RULES
+----------------
+General:
+1. Extract only information explicitly supported by the text. Do not hallucinate.
+2. Every entity must have a stable, deterministic id.
 3. Every relationship source_id and target_id must refer to extracted entity ids or the source clause id.
 4. The source clause id is: {clause.kgId}
-5. Include confidence from 0 to 1.
-6. Include exact evidence quote where possible.
-7. If the clause imposes a duty, create an Obligation.
-8. If the clause gives permission or entitlement, create a Right.
-9. If the clause forbids conduct, create a Restriction.
-10. Extract deadlines, notice periods, frequency, systems, assets, events, and risk signals if present.
-11. Do not hallucinate missing parties or dates.
-12. Return valid JSON only.
-13. For every Obligation, if the obligated party is stated or clearly implied, create a Party entity and an OWED_BY relationship from the Obligation to the Party.
-14. For every Obligation, if the beneficiary or recipient party is stated, create a Party entity and an OWED_TO relationship from the Obligation to the Party.
-15. If a deadline is present, create a Deadline entity and a HAS_DEADLINE relationship from the Obligation to the Deadline.
-16. If a notice period is present, create a NoticePeriod entity and a HAS_NOTICE_PERIOD relationship from the Obligation or Right to the NoticePeriod.
-17. If a recurring frequency is present, create a Frequency entity and a HAS_FREQUENCY relationship.
-18. If a condition is present, create a Condition entity and a SUBJECT_TO relationship.
-19. If an exception is present, create an Exception entity and an EXCEPTS relationship.
-20. If a triggering event is present, create an Event entity and a TRIGGERED_BY relationship.
-21. Do not create duplicate Party entities within one clause.
-22. Prefer normalized party names: "Con Edison", "Power Authority", "Either Party", "Party".
-23. Use deterministic IDs based on source clause id and normalized entity name.
+5. Include confidence 0–1. Include an exact evidence quote where possible.
+6. Do not create duplicate Party entities within one clause.
+7. Prefer normalized party names: "Con Edison", "Power Authority", "Either Party", "Party".
+8. Use deterministic IDs: "<type_lower>:<contract_id>:<short_hash>:<slug>"
 
+Duties (Obligation / Right / Restriction):
+9.  If the clause imposes a duty → create an Obligation vertex.
+10. If the clause grants a permission or entitlement → create a Right vertex.
+11. If the clause forbids conduct → create a Restriction vertex.
+12. For every Obligation, if the obligated party is stated, create a Party vertex (or Obligor)
+    and an OWED_BY edge: Obligation → Party.
+13. For every Obligation, if the beneficiary party is stated, create a Party vertex (or Obligee)
+    and an OWED_TO edge: Obligation → Party.
 
+Temporal:
+14. If a deadline is present → create a Deadline vertex + HAS_DEADLINE edge from the Obligation.
+15. If a notice period is present → create a NoticePeriod vertex + HAS_NOTICE_PERIOD edge.
+16. If a recurring frequency is present → create a Frequency vertex + HAS_FREQUENCY edge.
+
+Conditions / Exceptions / Triggers:
+17. If a condition is present → create a Condition vertex + SUBJECT_TO edge.
+18. If an exception/carve-out is present → create an Exception vertex + EXCEPTS edge.
+19. If a triggering event is present → create an Event vertex + TRIGGERED_BY edge.
+
+Indemnification:
+20. If the clause provides indemnification → create Indemnitor and Indemnitee vertices
+    + INDEMNIFIES edge: Indemnitor → Indemnitee.
+
+Termination / Breach:
+21. If the clause describes a termination right or event → create TerminationRight or TerminationEvent.
+22. If the clause describes breach and cure → create Breach and CurePeriod vertices.
+
+Payments:
+23. If the clause involves payment → use Invoice, ReimbursableCost, or PAYS/MAKES_PAYMENT_TO edges.
+
+Notice:
+24. If the clause requires notice → create Notice vertex + GIVES_NOTICE_TO or PROVIDES_NOTICE_TO edge
+    pointing to the NoticeRecipient.
 
 Contract ID: {clause.contractId}
 Clause ID: {clause.kgId}
@@ -160,7 +232,7 @@ Clause text:
 {clause.text}
 \"\"\"
 
-Return JSON in this exact shape:
+Return JSON in this exact shape (no markdown fences):
 {{
   "source_clause_id": "{clause.kgId}",
   "source_clause_title": "{clause.title}",
@@ -168,21 +240,21 @@ Return JSON in this exact shape:
   "source_page_end": {clause.pageEnd},
   "entities": [
     {{
-      "id": "obligation:<contract_id>:<short_slug>",
+      "id": "obligation:{clause.contractId}:<short_hash>:<slug>",
       "type": "Obligation",
       "name": "...",
       "properties": {{}},
-      "confidence": 0.0,
+      "confidence": 0.9,
       "evidenceQuote": "..."
     }}
   ],
   "relationships": [
     {{
-      "source_id": "{clause.kgId}",
-      "target_id": "obligation:<contract_id>:<short_slug>",
-      "type": "IMPOSES_OBLIGATION",
+      "source_id": "obligation:{clause.contractId}:<short_hash>:<slug>",
+      "target_id": "party:{clause.contractId}:<short_hash>:<slug>",
+      "type": "OWED_BY",
       "properties": {{}},
-      "confidence": 0.0,
+      "confidence": 0.9,
       "evidenceQuote": "..."
     }}
   ]
@@ -199,11 +271,11 @@ Return JSON in this exact shape:
             messages=[
                 {
                     "role": "system",
-                    "content": "You extract legal contract knowledge graphs as strict JSON."
+                    "content": "You extract legal contract knowledge graphs as strict JSON.",
                 },
                 {
                     "role": "user",
-                    "content": prompt
+                    "content": prompt,
                 },
             ],
         )
