@@ -302,6 +302,7 @@ export default function App() {
           session={activeSession}
           contracts={contracts}
           contractFilter={contractFilter}
+          selectedContracts={selectedContracts}
           isLoading={isLoading}
           onSendMessage={handleSendMessage}
           onOpenMobileSidebar={() => setMobileSidebarOpen(true)}
