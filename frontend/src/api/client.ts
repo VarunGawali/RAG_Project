@@ -174,3 +174,9 @@ export async function getIngestStatus(
   })
   return handleResponse<IngestJob>(res)
 }
+
+/** List all ingestion jobs for the current user. */
+export async function listIngestJobs(userId?: string): Promise<IngestJob[]> {
+  const res = await fetch(`${BASE}/ingest`, { headers: headers(userId) })
+  return handleResponse<IngestJob[]>(res)
+}

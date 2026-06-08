@@ -1,6 +1,5 @@
 import { useState, useCallback, useEffect } from 'react'
 import type { ChatSession, Contract, Message } from './types'
-import { MOCK_CONTRACTS } from './data/mockData'
 import Sidebar from './components/Sidebar'
 import ChatArea from './components/ChatArea'
 import UploadPanel from './components/UploadPanel'
@@ -19,7 +18,7 @@ function generateLocalId() {
 export default function App() {
   const [sessions, setSessions]                   = useState<ChatSession[]>([])
   const [activeSessionId, setActiveSession]       = useState<string | null>(null)
-  const [contracts, setContracts]                 = useState<Contract[]>(MOCK_CONTRACTS)
+  const [contracts, setContracts]                 = useState<Contract[]>([])
   // Empty array = all contracts (portfolio-wide); non-empty = filtered scope
   const [selectedContracts, setSelectedContracts] = useState<string[]>([])
   const [isLoading, setIsLoading]                 = useState(false)
@@ -57,6 +56,31 @@ export default function App() {
       .catch(() => {
         setApiError('Could not reach the API. Check VITE_API_BASE_URL and that the backend is running.')
       })
+  }, [])
+
+  // ── Load real contract list from completed ingestion jobs on mount ───
+  useEffect(() => {
+    api.listIngestJobs()
+      .then(jobs => {
+        const seen = new Set<string>()
+        const loaded: Contract[] = []
+        for (const job of jobs) {
+          if (job.status !== 'done' || seen.has(job.contractId)) continue
+          seen.add(job.contractId)
+          loaded.push({
+            id: job.contractId,
+            displayName: job.fileName.replace(/\.[^.]+$/, '').replace(/_/g, ' '),
+            fileName: job.fileName,
+            status: 'search_only',
+            uploadedAt: '',
+            pageCount: 0,
+            fileSize: '',
+            graphReady: false,
+          })
+        }
+        if (loaded.length > 0) setContracts(loaded)
+      })
+      .catch(() => {}) // sidebar stays empty; non-fatal
   }, [])
 
   // ── Lazy-load message history when switching sessions ───────────────
