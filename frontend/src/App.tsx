@@ -58,26 +58,20 @@ export default function App() {
       })
   }, [])
 
-  // ── Load real contract list from completed ingestion jobs on mount ───
+  // ── Load contract list from the search index on mount ───────────────
   useEffect(() => {
-    api.listIngestJobs()
-      .then(jobs => {
-        const seen = new Set<string>()
-        const loaded: Contract[] = []
-        for (const job of jobs) {
-          if (job.status !== 'done' || seen.has(job.contractId)) continue
-          seen.add(job.contractId)
-          loaded.push({
-            id: job.contractId,
-            displayName: job.fileName.replace(/\.[^.]+$/, '').replace(/_/g, ' '),
-            fileName: job.fileName,
-            status: 'search_only',
-            uploadedAt: '',
-            pageCount: 0,
-            fileSize: '',
-            graphReady: false,
-          })
-        }
+    api.listContracts()
+      .then(summaries => {
+        const loaded: Contract[] = summaries.map(s => ({
+          id: s.id,
+          displayName: s.displayName,
+          fileName: s.id,
+          status: 'search_only' as const,
+          uploadedAt: '',
+          pageCount: 0,
+          fileSize: '',
+          graphReady: false,
+        }))
         if (loaded.length > 0) setContracts(loaded)
       })
       .catch(() => {}) // sidebar stays empty; non-fatal

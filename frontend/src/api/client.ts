@@ -132,6 +132,20 @@ export async function askQuestion(
 }
 
 // ──────────────────────────────────────────────
+// Contracts API
+// ──────────────────────────────────────────────
+
+export interface ContractSummary {
+  id: string
+  displayName: string
+}
+
+export async function listContracts(userId?: string): Promise<ContractSummary[]> {
+  const res = await fetch(`${BASE}/contracts`, { headers: headers(userId) })
+  return handleResponse<ContractSummary[]>(res)
+}
+
+// ──────────────────────────────────────────────
 // Ingestion API
 // ──────────────────────────────────────────────
 

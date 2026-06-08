@@ -64,6 +64,10 @@ class ArtifactStore:
         self._write_json(self.processed_dir / 'corpus_index_docs.json', corpus_docs)
         return corpus_manifest
 
+    def kg_exists(self, contract_id: str) -> bool:
+        """Return True if a kg_normalized.json artifact exists for this contract."""
+        return (self.processed_dir / contract_id / 'kg_normalized.json').exists()
+
     def save_summary(self, contract_id: str, summary: Dict) -> None:
         self._write_json(self.contract_dir(contract_id) / 'summary.json', summary)
 
