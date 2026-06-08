@@ -3,7 +3,7 @@ Answer generator for Contract360 GraphRAG demo.
 """
 
 import logging
-from typing import List, Dict
+from typing import List, Dict, Optional
 
 from openai import AzureOpenAI
 
@@ -45,6 +45,16 @@ For obligation questions:
 
 Do not invent legal obligations, parties, deadlines, or clauses.
 
+When multiple contracts are in scope:
+- Always attribute each fact to its source contract by name.
+- Never merge or conflate facts from different contracts without clearly labelling them.
+- If contracts differ on the same point, state each contract's position separately.
+- Format multi-contract answers with a clear contract heading per section, e.g.:
+  **Contract A:**
+  - ...
+  **Contract B:**
+  - ...
+
 Formatting requirements:
 - Use clean professional formatting.
 - Use sequential numbering for top-level lists (1, 2, 3, ...).
@@ -80,17 +90,33 @@ class AnswerGenerator:
         context: str,
         route: str,
         chat_history: List[Dict[str, str]] | None = None,
+        active_contract_ids: Optional[List[str]] = None,
     ) -> str:
         """
         Generate an answer.
 
         chat_history: list of {"role": "user"|"assistant", "content": "..."}
-                      representing prior turns in this session. These are
-                      injected between the system prompt and the current
-                      retrieval context so the model can resolve follow-up
-                      references ("it", "that clause", "the party above", etc.).
+                      representing prior turns in this session.
+        active_contract_ids: the contracts in scope for this query. Injected
+                      as an explicit scope header so the model knows exactly
+                      which documents it is drawing from.
         """
+        if active_contract_ids:
+            scope_lines = "\n".join(f"  - {cid}" for cid in active_contract_ids)
+            scope_header = (
+                f"SCOPE — you are answering ONLY from these contracts:\n{scope_lines}\n\n"
+                "Every claim in your answer MUST be attributed to one of these contracts. "
+                "If a retrieved chunk belongs to a contract not in this list, ignore it.\n"
+            )
+        else:
+            scope_header = "SCOPE — portfolio-wide query (all available contracts).\n"
+
         current_prompt = f"""
+============================================================
+QUERY SCOPE
+============================================================
+
+{scope_header}
 ============================================================
 ROUTE
 ============================================================

@@ -60,13 +60,13 @@ def _format_search_docs(docs: list) -> str:
     for idx, doc in enumerate(docs, start=1):
         parts += [
             "=" * 80,
-            f"SEARCH RESULT {idx}",
+            f"SEARCH RESULT {idx}  [CONTRACT: {doc.get('contractId', 'unknown')}]",
             "=" * 80,
+            f"Contract ID: {doc.get('contractId')}",
             f"Title: {doc.get('title')}",
             f"Section: {doc.get('sectionTitle')}",
             f"Pages: {doc.get('pageStart')}-{doc.get('pageEnd')}",
             f"Source path: {doc.get('sourcePath')}",
-            f"kgId: {doc.get('kgId')}",
             "",
             doc.get("text") or "",
             "",
@@ -211,12 +211,20 @@ def answer_question(
         )
 
     # ── 3. Generate ────────────────────────────────────────────────────
+    # Build explicit scope header so the LLM knows which contracts are in play.
+    active_ids: List[str] = []
+    if contract_ids:
+        active_ids = list(contract_ids)
+    elif contract_id:
+        active_ids = [contract_id]
+
     generator = AnswerGenerator()
     answer = generator.generate(
-        question=question,          # original question for the LLM answer
+        question=question,
         context=context,
         route=route,
         chat_history=chat_history or [],
+        active_contract_ids=active_ids or None,
     )
 
     result: Dict = {
