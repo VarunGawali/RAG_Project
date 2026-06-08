@@ -50,6 +50,12 @@
   .route-badge-auto {
     @apply inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs font-medium bg-ey-yellow/10 text-ey-yellow border border-ey-yellow/20;
   }
+  .route-badge-tree {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs font-medium bg-amber-500/15 text-amber-400 border border-amber-500/20;
+  }
+  .route-badge-summary {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs font-medium bg-sky-500/15 text-sky-400 border border-sky-500/20;
+  }
 }
 
 /* Typing cursor animation */

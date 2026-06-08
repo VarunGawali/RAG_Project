@@ -1,4 +1,4 @@
-export type RouteType = 'graph' | 'search' | 'hybrid' | 'auto'
+export type RouteType = 'graph' | 'search' | 'hybrid' | 'tree' | 'summary' | 'auto'
 
 export type ContractStatus =
   | 'graph_ready'

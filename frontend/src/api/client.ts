@@ -57,6 +57,7 @@ export interface AskPayload {
   top?: number
   route_override?: string
   return_context?: boolean
+  contract_ids?: string[] | null
 }
 
 export interface AskResult {
@@ -172,4 +173,10 @@ export async function getIngestStatus(
     headers: headers(userId),
   })
   return handleResponse<IngestJob>(res)
+}
+
+/** List all ingestion jobs for the current user. */
+export async function listIngestJobs(userId?: string): Promise<IngestJob[]> {
+  const res = await fetch(`${BASE}/ingest`, { headers: headers(userId) })
+  return handleResponse<IngestJob[]>(res)
 }

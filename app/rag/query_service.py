@@ -81,6 +81,7 @@ def _format_search_docs(docs: list) -> str:
 def _search_retrieve(
     question: str,
     contract_id: Optional[str],
+    contract_ids: Optional[List[str]],
     top: int,
     structural_scope: Optional[Dict],
 ) -> str:
@@ -91,6 +92,7 @@ def _search_retrieve(
             structure_type=structural_scope["type"],
             identifier=structural_scope["identifier"],
             contract_id=contract_id,
+            contract_ids=contract_ids,
             top=100,
         )
         return _format_search_docs(docs)
@@ -98,6 +100,7 @@ def _search_retrieve(
     docs = searcher.hybrid_search(
         query=question,
         contract_id=contract_id,
+        contract_ids=contract_ids,
         top=top,
     )
     return _format_search_docs(docs)
@@ -118,6 +121,7 @@ def _tree_retrieve(
 def answer_question(
     question: str,
     contract_id: Optional[str],
+    contract_ids: Optional[List[str]] = None,
     top: int = 4,
     route_override: str = "auto",
     return_context: bool = False,
@@ -190,6 +194,7 @@ def answer_question(
         context = _search_retrieve(
             question=rewritten_query,
             contract_id=contract_id,
+            contract_ids=contract_ids,
             top=top,
             structural_scope=structural_scope,
         )

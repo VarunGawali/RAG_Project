@@ -9,14 +9,15 @@ interface Props {
   sessions: ChatSession[]
   activeSessionId: string | null
   contracts: Contract[]
-  contractFilter: string | null
+  selectedContracts: string[]
   collapsed: boolean
   mobileOpen: boolean
   onToggleCollapse: () => void
   onCloseMobile: () => void
   onNewChat: () => void
   onSelectSession: (id: string) => void
-  onSelectContract: (id: string | null) => void
+  onToggleContract: (id: string) => void
+  onClearContracts: () => void
   onOpenUpload: () => void
   onDeleteSession?: (id: string) => void
 }
@@ -45,10 +46,10 @@ function Tip({ label, children }: { label: string; children: React.ReactNode }) 
 }
 
 export default function Sidebar({
-  sessions, activeSessionId, contracts, contractFilter,
+  sessions, activeSessionId, contracts, selectedContracts,
   collapsed, mobileOpen,
   onToggleCollapse, onCloseMobile,
-  onNewChat, onSelectSession, onSelectContract, onOpenUpload, onDeleteSession,
+  onNewChat, onSelectSession, onToggleContract, onClearContracts, onOpenUpload, onDeleteSession,
 }: Props) {
   const [contractsExpanded, setContractsExpanded] = useState(true)
 
@@ -124,14 +125,15 @@ export default function Sidebar({
           /* Full sidebar content */
           <SidebarContent
             sessions={sessions} activeSessionId={activeSessionId}
-            contracts={contracts} contractFilter={contractFilter}
+            contracts={contracts} selectedContracts={selectedContracts}
             contractsExpanded={contractsExpanded}
             onToggleContracts={() => setContractsExpanded(v => !v)}
             showCollapseBtn
             onToggleCollapse={onToggleCollapse}
             onNewChat={onNewChat}
             onSelectSession={onSelectSession}
-            onSelectContract={onSelectContract}
+            onToggleContract={onToggleContract}
+            onClearContracts={onClearContracts}
             onOpenUpload={onOpenUpload}
             onDeleteSession={onDeleteSession}
           />
@@ -147,7 +149,7 @@ export default function Sidebar({
       `}>
         <SidebarContent
           sessions={sessions} activeSessionId={activeSessionId}
-          contracts={contracts} contractFilter={contractFilter}
+          contracts={contracts} selectedContracts={selectedContracts}
           contractsExpanded={contractsExpanded}
           onToggleContracts={() => setContractsExpanded(v => !v)}
           showCollapseBtn={false}
@@ -156,7 +158,8 @@ export default function Sidebar({
           onToggleCollapse={onToggleCollapse}
           onNewChat={onNewChat}
           onSelectSession={onSelectSession}
-          onSelectContract={onSelectContract}
+          onToggleContract={onToggleContract}
+          onClearContracts={onClearContracts}
           onOpenUpload={onOpenUpload}
           onDeleteSession={onDeleteSession}
         />
@@ -168,16 +171,16 @@ export default function Sidebar({
 // ─── Shared sidebar body ──────────────────────────────────────────────────────
 
 function SidebarContent({
-  sessions, activeSessionId, contracts, contractFilter,
+  sessions, activeSessionId, contracts, selectedContracts,
   contractsExpanded, onToggleContracts,
   showCollapseBtn, showCloseBtn,
   onToggleCollapse, onCloseBtn,
-  onNewChat, onSelectSession, onSelectContract, onOpenUpload, onDeleteSession,
+  onNewChat, onSelectSession, onToggleContract, onClearContracts, onOpenUpload, onDeleteSession,
 }: {
   sessions: ChatSession[]
   activeSessionId: string | null
   contracts: Contract[]
-  contractFilter: string | null
+  selectedContracts: string[]
   contractsExpanded: boolean
   onToggleContracts: () => void
   showCollapseBtn?: boolean
@@ -186,7 +189,8 @@ function SidebarContent({
   onCloseBtn?: () => void
   onNewChat: () => void
   onSelectSession: (id: string) => void
-  onSelectContract: (id: string | null) => void
+  onToggleContract: (id: string) => void
+  onClearContracts: () => void
   onOpenUpload: () => void
   onDeleteSession?: (id: string) => void
 }) {
@@ -294,53 +298,77 @@ function SidebarContent({
 
         {/* Contracts */}
         <div className="mt-4 border-t border-ey-border pt-3">
-          <button
-            onClick={onToggleContracts}
-            className="w-full flex items-center justify-between px-4 py-1"
-          >
-            <p className="text-xs font-medium text-ey-muted uppercase tracking-wider">Contracts</p>
-            {contractsExpanded
-              ? <ChevronDown size={12} className="text-ey-muted" />
-              : <ChevronRight size={12} className="text-ey-muted" />}
-          </button>
+          <div className="flex items-center justify-between px-4 py-1">
+            <button
+              onClick={onToggleContracts}
+              className="flex items-center gap-1.5"
+            >
+              <p className="text-xs font-medium text-ey-muted uppercase tracking-wider">Contracts</p>
+              {contractsExpanded
+                ? <ChevronDown size={12} className="text-ey-muted" />
+                : <ChevronRight size={12} className="text-ey-muted" />}
+            </button>
+            {selectedContracts.length > 0 && (
+              <button
+                onClick={onClearContracts}
+                className="text-[10px] text-ey-yellow hover:text-white transition-colors"
+              >
+                All ({selectedContracts.length} selected)
+              </button>
+            )}
+          </div>
 
           {contractsExpanded && (
             <div className="mt-1 space-y-0.5 px-2 animate-fade-in">
+              {/* All Contracts row — active when nothing selected */}
               <button
-                onClick={() => onSelectContract(null)}
+                onClick={onClearContracts}
                 className={`w-full text-left px-3 py-2 rounded transition-colors flex items-center gap-2 ${
-                  contractFilter === null ? 'bg-ey-card border border-ey-border' : 'hover:bg-ey-surface'
+                  selectedContracts.length === 0 ? 'bg-ey-card border border-ey-border' : 'hover:bg-ey-surface'
                 }`}
               >
-                <div className="w-1.5 h-1.5 rounded-full bg-ey-yellow flex-shrink-0" />
+                <div className="w-3.5 h-3.5 rounded border flex items-center justify-center flex-shrink-0
+                                border-ey-border bg-ey-darker">
+                  {selectedContracts.length === 0 && (
+                    <div className="w-1.5 h-1.5 rounded-full bg-ey-yellow" />
+                  )}
+                </div>
                 <p className="text-xs text-ey-light font-medium flex-1">All Contracts</p>
-                {contractFilter === null && <CheckCircle2 size={12} className="text-ey-yellow flex-shrink-0" />}
               </button>
 
-              {contracts.map(contract => (
-                <button
-                  key={contract.id}
-                  onClick={() => onSelectContract(contract.id)}
-                  className={`w-full text-left px-3 py-2 rounded transition-colors ${
-                    contractFilter === contract.id ? 'bg-ey-card border border-ey-border' : 'hover:bg-ey-surface'
-                  }`}
-                >
-                  <div className="flex items-start gap-2">
-                    <FileText size={12} className="text-ey-muted mt-0.5 flex-shrink-0" />
-                    <div className="flex-1 min-w-0">
-                      <p className="text-xs text-ey-light font-medium truncate leading-snug">
-                        {contract.displayName}
-                      </p>
-                      <p className="text-[10px] text-ey-muted mt-0.5">
-                        {contract.pageCount > 0 ? `${contract.pageCount}p · ` : ''}{contract.fileSize}
-                      </p>
+              {contracts.map(contract => {
+                const checked = selectedContracts.includes(contract.id)
+                return (
+                  <button
+                    key={contract.id}
+                    onClick={() => onToggleContract(contract.id)}
+                    className={`w-full text-left px-3 py-2 rounded transition-colors ${
+                      checked ? 'bg-ey-card border border-ey-border' : 'hover:bg-ey-surface'
+                    }`}
+                  >
+                    <div className="flex items-start gap-2">
+                      {/* Checkbox visual */}
+                      <div className={`w-3.5 h-3.5 rounded border flex items-center justify-center flex-shrink-0 mt-0.5 transition-colors ${
+                        checked ? 'bg-ey-yellow border-ey-yellow' : 'border-ey-border bg-ey-darker'
+                      }`}>
+                        {checked && (
+                          <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                            <path d="M1 3L3 5L7 1" stroke="#1A1A24" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                          </svg>
+                        )}
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className={`text-xs font-medium truncate leading-snug ${checked ? 'text-white' : 'text-ey-light'}`}>
+                          {contract.displayName}
+                        </p>
+                        <p className="text-[10px] text-ey-muted mt-0.5">
+                          {contract.pageCount > 0 ? `${contract.pageCount}p · ` : ''}{contract.fileSize}
+                        </p>
+                      </div>
                     </div>
-                    {contractFilter === contract.id && (
-                      <CheckCircle2 size={12} className="text-ey-yellow flex-shrink-0 mt-0.5" />
-                    )}
-                  </div>
-                </button>
-              ))}
+                  </button>
+                )
+              })}
             </div>
           )}
         </div>
