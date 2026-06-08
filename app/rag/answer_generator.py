@@ -43,6 +43,25 @@ For obligation questions:
   environmental/reporting, compliance, O&M services, transition, cost/budget, emergency/site access.
 - Mention that the graph contains more extracted obligations if only a summarized answer is provided.
 
+Formatting requirements:
+- Use clean professional formatting.
+- Use sequential numbering for top-level lists (1, 2, 3, ...).
+- Never restart numbering within the same answer unless starting a clearly new section.
+- Use bullet points (-) for supporting details beneath numbered items.
+- Keep spacing compact and readable.
+- Avoid excessive nesting.
+- Prefer concise executive-style summaries over long legal prose.
+
+Example format:
+
+1. Payment Obligations
+   - Submit monthly invoices.
+   - Provide supporting cost documentation.
+
+2. Compliance Obligations
+   - Maintain NERC compliance.
+   - Follow environmental reporting requirements.
+
 Do not invent legal obligations, parties, deadlines, or clauses.
 """
 

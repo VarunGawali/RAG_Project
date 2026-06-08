@@ -106,7 +106,7 @@ for node in sample_nodes:
 
 llm = AzureChatOpenAI(
     azure_deployment=os.getenv(
-        "AZURE_OPENAI_LLM_DEPLOYMENT"
+        "AZURE_OPENAI_CHAT_DEPLOYMENT"
     ),
     api_version=os.getenv(
         "AZURE_OPENAI_API_VERSION"

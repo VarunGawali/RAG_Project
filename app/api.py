@@ -71,6 +71,7 @@ class AskRequest(BaseModel):
     top: int = 4
     route_override: str = "auto"
     return_context: bool = False
+    contract_ids: Optional[List[str]] = None
 
 
 class AskResponse(BaseModel):
@@ -188,14 +189,17 @@ def ask(
 
     # 3. Run RAG
     contract_filter = session.get("contractFilter")
+    print("ASK contract_ids:", body.contract_ids, flush=True)
     result = answer_question(
-        question=body.question,
-        contract_id=contract_filter,
-        top=body.top,
-        route_override=body.route_override,
-        return_context=body.return_context,
-        chat_history=chat_history,
-    )
+    question=body.question,
+    contract_id=contract_filter,
+    contract_ids=body.contract_ids, 
+    top=body.top,
+    route_override=body.route_override,
+    return_context=body.return_context,
+    chat_history=chat_history,
+)
+
 
     # 4. Persist the assistant message
     assistant_msg = _session_svc.save_assistant_message(

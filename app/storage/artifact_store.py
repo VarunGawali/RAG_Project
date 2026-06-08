@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-from typing import Any, Dict, List, Union
+from typing import Any, Dict, List, Optional, Union
 from app import config
 
 class ArtifactStore:
@@ -63,6 +63,19 @@ class ArtifactStore:
         self._write_json(self.processed_dir / 'corpus_manifest.json', corpus_manifest)
         self._write_json(self.processed_dir / 'corpus_index_docs.json', corpus_docs)
         return corpus_manifest
+
+    def kg_exists(self, contract_id: str) -> bool:
+        """Return True if a kg_normalized.json artifact exists for this contract."""
+        return (self.processed_dir / contract_id / 'kg_normalized.json').exists()
+
+    def save_summary(self, contract_id: str, summary: Dict) -> None:
+        self._write_json(self.contract_dir(contract_id) / 'summary.json', summary)
+
+    def load_summary(self, contract_id: str) -> Optional[Dict]:
+        path = self.processed_dir / contract_id / 'summary.json'
+        if not path.exists():
+            return None
+        return json.loads(path.read_text(encoding='utf-8'))
 
     def _write_json(self, path: Path, data: Any) -> None:
         path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding='utf-8')
