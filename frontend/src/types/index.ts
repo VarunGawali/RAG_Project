@@ -13,6 +13,8 @@ export type UploadStage =
   | 'parsing'
   | 'embedding'
   | 'indexing'
+  | 'extracting'
+  | 'graph_writing'
   | 'done'
   | 'error'
 

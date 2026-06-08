@@ -7,10 +7,14 @@ Flow per file:
   1. Download raw file from Azure Blob Storage
   2. Write to a temp file on local disk (ephemeral, cleaned up after)
   3. Run IngestionService with BlobArtifactStore
-     → parse → tree → chunk → embed
+     → parse → tree → chunk → embed → summary
      → artifacts written to Blob (not local disk)
-  4. Upload index_docs directly to Azure AI Search (no local file read)
-  5. Mark job done in Cosmos
+  4. Upload index_docs directly to Azure AI Search
+  5. KG pipeline (only when GREMLIN_ENDPOINT is configured):
+     → normalize tree → write structural graph to Gremlin
+     → select representative clauses → LLM extraction
+     → write semantic entities/relations to Gremlin
+  6. Mark job done in Cosmos
 
 NOTE: For higher throughput or multi-instance deployments, replace the
 ThreadPoolExecutor with an Azure Service Bus queue + a dedicated worker
@@ -33,8 +37,6 @@ from app.storage.blob_artifact_store import BlobArtifactStore
 
 logger = logging.getLogger(__name__)
 
-# Max concurrent ingestion jobs. Keep low — each job calls Azure OpenAI for
-# embeddings and can be memory-intensive for large PDFs.
 _EXECUTOR = ThreadPoolExecutor(max_workers=4)
 
 
@@ -47,6 +49,79 @@ def enqueue(
 ) -> None:
     """Submit a job to the thread pool. Returns immediately."""
     _EXECUTOR.submit(_run_job, job_id, user_id, contract_id, blob_path, file_name)
+
+
+def _run_kg_pipeline(
+    contract_id: str,
+    tree_dict: dict,
+    job_id: str,
+    user_id: str,
+    job_store: "JobStore",
+) -> bool:
+    """
+    Normalize tree → write structural graph → LLM extract clauses →
+    write semantic graph to Gremlin.
+
+    Returns True if graph was written, False if skipped or failed.
+    Non-fatal: caller continues to mark_done even on failure.
+    """
+    from app.kg.gremlin_writer import GremlinWriter, gremlin_is_configured
+    from app.kg.normalize_tree import normalize_contract_tree_from_dict
+    from app.kg.legal_extractor import LegalLLMExtractor
+    from app.kg.clause_selector import select_representative_clauses
+
+    if not gremlin_is_configured():
+        logger.info("Job %s: Gremlin not configured, skipping KG pipeline.", job_id)
+        return False
+
+    try:
+        job_store.update_stage(job_id, user_id, stage="extracting", progress=75)
+        logger.info("Job %s: normalizing tree for %s", job_id, contract_id)
+        normalized = normalize_contract_tree_from_dict(tree_dict, contract_id)
+
+        writer = GremlinWriter()
+        try:
+            # Write structural graph (sections, clauses, hierarchy edges)
+            writer.write_structural_graph(normalized)
+            logger.info(
+                "Job %s: structural graph written (%d nodes, %d edges)",
+                job_id, len(normalized.nodes), len(normalized.edges),
+            )
+
+            # Select clauses and run LLM extraction
+            job_store.update_stage(job_id, user_id, stage="extracting", progress=82)
+            clauses = select_representative_clauses(normalized.nodes)
+            logger.info("Job %s: extracting KG from %d clauses", job_id, len(clauses))
+
+            extractor = LegalLLMExtractor()
+            extractions = []
+            for clause in clauses:
+                try:
+                    result = extractor.extract_from_clause(clause)
+                    extractions.append(result)
+                except Exception as e:
+                    logger.warning("Job %s: extraction failed for clause %s: %s", job_id, clause.kgId, e)
+
+            # Write semantic entities and relations to Gremlin
+            job_store.update_stage(job_id, user_id, stage="graph_writing", progress=90)
+            for extraction in extractions:
+                try:
+                    writer.write_legal_extraction(extraction, config.TENANT_ID, contract_id)
+                except Exception as e:
+                    logger.warning("Job %s: Gremlin write failed for extraction: %s", job_id, e)
+
+            logger.info(
+                "Job %s: KG pipeline done — %d extractions written to Gremlin",
+                job_id, len(extractions),
+            )
+            return True
+
+        finally:
+            writer.close()
+
+    except Exception as exc:
+        logger.error("Job %s: KG pipeline failed (non-fatal): %s", job_id, exc)
+        return False
 
 
 def _run_job(
@@ -74,8 +149,7 @@ def _run_job(
         finally:
             os.close(fd)
 
-        # ── Step 3: parse → tree → chunk → embed ─────────────────────
-        # Use BlobArtifactStore so artifacts go to Blob, not local disk.
+        # ── Step 3: parse → tree → chunk → embed → summary ───────────
         blob_artifact_store = BlobArtifactStore(blob_store=blob_store)
         ingestion_svc = IngestionService(store=blob_artifact_store)
 
@@ -86,32 +160,33 @@ def _run_job(
         )
 
         # ── Step 4: upload index_docs to Azure AI Search ──────────────
-        # index_docs is returned directly by ingest_file — no disk read.
         index_docs = ingestion_result.get("index_docs", [])
         if not index_docs:
-            raise ValueError(
-                f"No index_docs returned from ingestion for {contract_id}"
-            )
+            raise ValueError(f"No index_docs returned from ingestion for {contract_id}")
 
         job_store.update_stage(job_id, user_id, stage="embedding", progress=55)
         job_store.update_stage(job_id, user_id, stage="indexing", progress=70)
         indexer = AzureSearchIndexer()
         uploaded_count = indexer.upload_documents(index_docs, kg_lookup=None)
 
-        # ── Step 5: mark done ─────────────────────────────────────────
+        # ── Step 5: KG extraction + Gremlin write (if configured) ─────
+        tree_dict = ingestion_result.get("tree_dict", {})
+        graph_written = _run_kg_pipeline(contract_id, tree_dict, job_id, user_id, job_store)
+
+        # ── Step 6: mark done ─────────────────────────────────────────
         job_store.mark_done(
             job_id=job_id,
             user_id=user_id,
             result={
                 "contractId": contract_id,
                 "uploadedChunks": uploaded_count,
-                "graphWritten": False,
+                "graphWritten": graph_written,
                 "ingestionManifest": ingestion_result.get("manifest", {}),
             },
         )
         logger.info(
-            "Job %s completed: %d chunks indexed for %s.",
-            job_id, uploaded_count, contract_id,
+            "Job %s completed: %d chunks indexed, graphWritten=%s for %s.",
+            job_id, uploaded_count, graph_written, contract_id,
         )
 
     except Exception as exc:

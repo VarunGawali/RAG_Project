@@ -121,8 +121,9 @@ class IngestionService:
         return {
             "manifest": manifest,
             "corpus": corpus,
-            # Return index_docs so callers don't have to re-read from disk/Blob.
             "index_docs": index_docs,
+            # tree dict returned so callers can build KG without re-reading from storage
+            "tree_dict": tree.to_dict(),
         }
 
     def ingest_folder(self, folder: str, pageindex_folder: Optional[str] = None) -> Dict:

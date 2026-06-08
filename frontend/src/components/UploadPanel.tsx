@@ -9,24 +9,31 @@ interface Props {
 }
 
 const STAGES: { key: UploadStage; label: string }[] = [
-  { key: 'uploading',  label: 'Uploading' },
-  { key: 'parsing',   label: 'Reading document' },
-  { key: 'embedding', label: 'Processing content' },
-  { key: 'indexing',  label: 'Preparing for search' },
-  { key: 'done',      label: 'Ready' },
+  { key: 'uploading',     label: 'Uploading' },
+  { key: 'parsing',      label: 'Reading document' },
+  { key: 'embedding',    label: 'Processing content' },
+  { key: 'indexing',     label: 'Preparing for search' },
+  { key: 'extracting',   label: 'Extracting knowledge graph' },
+  { key: 'graph_writing', label: 'Writing to graph DB' },
+  { key: 'done',         label: 'Ready' },
 ]
 
-const STAGE_ORDER: UploadStage[] = ['uploading', 'parsing', 'embedding', 'indexing', 'done']
+const STAGE_ORDER: UploadStage[] = [
+  'uploading', 'parsing', 'embedding', 'indexing',
+  'extracting', 'graph_writing', 'done',
+]
 
 // Map backend stage strings to UploadStage type
 function toUploadStage(backendStage: string): UploadStage {
   const map: Record<string, UploadStage> = {
-    uploading: 'uploading',
-    parsing:   'parsing',
-    embedding: 'embedding',
-    indexing:  'indexing',
-    done:      'done',
-    error:     'error',
+    uploading:     'uploading',
+    parsing:       'parsing',
+    embedding:     'embedding',
+    indexing:      'indexing',
+    extracting:    'extracting',
+    graph_writing: 'graph_writing',
+    done:          'done',
+    error:         'error',
   }
   return map[backendStage] ?? 'uploading'
 }

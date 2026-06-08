@@ -53,6 +53,34 @@ def clean_value(value):
     return text
 
 
+def gremlin_is_configured() -> bool:
+    """Return True if all required Gremlin env vars are set."""
+    return all([
+        config.GREMLIN_ENDPOINT,
+        config.GREMLIN_USERNAME,
+        config.GREMLIN_PASSWORD,
+    ])
+
+
+def contract_has_graph(contract_id: str) -> bool:
+    """
+    Return True if at least one vertex for this contract exists in Gremlin.
+    Safe to call even if Gremlin is not configured — returns False.
+    """
+    if not gremlin_is_configured():
+        return False
+    try:
+        writer = GremlinWriter()
+        result = writer.submit(
+            "g.V().has('contractId', contractId).limit(1).count()",
+            {"contractId": contract_id},
+        )
+        writer.close()
+        return bool(result and result[0] > 0)
+    except Exception:
+        return False
+
+
 class GremlinWriter:
     def __init__(self):
         self.client = None

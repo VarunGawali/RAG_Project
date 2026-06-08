@@ -567,6 +567,57 @@ def save_normalized_contract(normalized: NormalizedContract, output_path: str):
         )
 
 
+def normalize_contract_tree_from_dict(tree_dict: Dict[str, Any], contract_id: str) -> NormalizedContract:
+    """
+    Build a NormalizedContract directly from an in-memory tree dict,
+    bypassing the need to write/read a file. Used by the ingestion worker.
+    """
+    tenant_id = config.TENANT_ID
+    nodes: List[KGNode] = []
+    edges: List[KGEdge] = []
+    raw_to_kg: Dict[str, str] = {}
+
+    root_type = str(tree_dict.get("nodeType") or "").lower()
+    if root_type not in {"doc", "document", "contract"}:
+        root = {
+            "nodeId": f"doc_{contract_id}",
+            "nodeType": "document",
+            "title": contract_id,
+            "text": tree_dict.get("text"),
+            "pageStart": tree_dict.get("pageStart"),
+            "pageEnd": tree_dict.get("pageEnd"),
+            "sourcePath": contract_id,
+            "children": tree_dict.get("children", []),
+            "contractId": contract_id,
+            "documentId": tree_dict.get("documentId"),
+        }
+    else:
+        root = tree_dict
+
+    flatten_tree(
+        raw_node=root,
+        contract_id=contract_id,
+        tenant_id=tenant_id,
+        parent_kg_id=None,
+        nodes=nodes,
+        edges=edges,
+        raw_to_kg=raw_to_kg,
+        parent_path=contract_id,
+    )
+
+    parent_to_children: Dict[str, List[str]] = {}
+    for node in nodes:
+        if node.parentKgId:
+            parent_to_children.setdefault(node.parentKgId, []).append(node.kgId)
+    for node in nodes:
+        if node.parentKgId and node.parentKgId in parent_to_children:
+            node.siblingKgIds = [
+                cid for cid in parent_to_children[node.parentKgId] if cid != node.kgId
+            ]
+
+    return NormalizedContract(contractId=contract_id, tenantId=tenant_id, nodes=nodes, edges=edges)
+
+
 def default_normalized_output_path(contract_id: str) -> Path:
     """
     Default output path under data/kg/normalized.

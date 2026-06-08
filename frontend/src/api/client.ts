@@ -154,7 +154,7 @@ export interface IngestJob {
   contractId: string
   fileName: string
   status: 'queued' | 'processing' | 'done' | 'failed'
-  stage: 'uploading' | 'parsing' | 'embedding' | 'indexing' | 'done' | 'error'
+  stage: 'uploading' | 'parsing' | 'embedding' | 'indexing' | 'extracting' | 'graph_writing' | 'done' | 'error'
   progress: number
   error?: string | null
   result?: Record<string, unknown> | null

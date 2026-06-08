@@ -24,6 +24,7 @@ from app.rag.summary_generator import format_summary_as_answer
 from app.services.prompt_builder import build_rag_prompt
 from app.storage.artifact_store import get_artifact_store
 from app.tree.semantic_retriever import SemanticRetriever
+from app.kg.gremlin_writer import contract_has_graph, gremlin_is_configured
 
 
 # ── Document-level summary shortcut ───────────────────────────────────────────
@@ -164,9 +165,15 @@ def answer_question(
         route = route_override
         reason = f"User override: {route_override}"
 
-    # Downgrade graph/hybrid if the contract has no KG artifact in storage
-    _store = get_artifact_store()
-    graph_available = bool(contract_id and _store.kg_exists(contract_id))
+    # Downgrade graph/hybrid if no KG exists for this contract.
+    # Check Gremlin first (live data); fall back to Blob artifact check.
+    if contract_id and gremlin_is_configured():
+        graph_available = contract_has_graph(contract_id)
+    elif contract_id:
+        _store = get_artifact_store()
+        graph_available = _store.kg_exists(contract_id)
+    else:
+        graph_available = False
     if route in {"graph", "hybrid"} and not graph_available:
         route = "search"
         reason = (
