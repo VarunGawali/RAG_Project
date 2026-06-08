@@ -9,6 +9,13 @@ Supports:
   - Cross-contract analysis         (shared parties, comparative obligations)
 
 Route: "graph" — no Azure AI Search involved.
+
+Vocabulary alignment: retriever queries cover the full canonical ontology
+defined in app/kg/legal_extractor.py (LEGAL_NODE_TYPES /
+LEGAL_RELATIONSHIP_TYPES).  Both the Rules-vocab subset
+(Obligation/Right/Restriction + OWED_BY/OWED_TO/HAS_DEADLINE) AND the
+richer Allowed-list vocab (Indemnitor/Indemnitee/TerminationEvent etc.) are
+handled.
 """
 
 import logging
@@ -18,6 +25,23 @@ from typing import Any, Dict, List, Optional
 from app.kg.gremlin_writer import GremlinWriter
 
 logger = logging.getLogger(__name__)
+
+
+# ── Canonical label sets ───────────────────────────────────────────────────────
+
+# All vertex labels that represent a named party or party-role.
+# Used by get_shared_parties and party-scoped queries.
+PARTY_LABELS = [
+    "Party", "Obligor", "Obligee", "Indemnitor", "Indemnitee",
+    "BreachingParty", "NonBreachingParty", "NoticeRecipient",
+    "Assignor", "Assignee", "ThirdParty",
+]
+
+# hasLabel() argument string for Gremlin (comma-separated quoted values)
+_PARTY_LABEL_ARGS = ", ".join(f"'{l}'" for l in PARTY_LABELS)
+
+# Edge types that link a party-role vertex to an Obligation
+_OBLIGATION_EDGES = ["OWED_BY", "OBLIGATES", "IMPOSES_OBLIGATION_ON", "TRIGGERS_OBLIGATION_OF"]
 
 
 # ── Party alias normalisation ──────────────────────────────────────────────────
@@ -58,11 +82,10 @@ def _contract_filter_step(contract_id: Optional[str], contract_ids: Optional[Lis
         contract_ids = None
     if contract_id and not contract_ids:
         return f".has('contractId', '{contract_id}')"
-    # Multi-contract: Cosmos Gremlin doesn't support within(), use or()
     if contract_ids:
         clauses = ", ".join(f"has('contractId', '{cid}')" for cid in contract_ids)
         return f".or({clauses})"
-    return ""  # portfolio-wide — no filter
+    return ""
 
 
 def _filter_by_contracts(
@@ -84,15 +107,28 @@ def _filter_by_contracts(
 def normalize_items(items: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     return [
         {
-            "kgId":          first_value(item, "kgId"),
-            "name":          first_value(item, "name"),
-            "contractId":    first_value(item, "contractId"),
-            "confidence":    first_value(item, "confidence"),
-            "evidenceQuote": first_value(item, "evidenceQuote"),
+            "kgId":           first_value(item, "kgId"),
+            "name":           first_value(item, "name"),
+            "contractId":     first_value(item, "contractId"),
+            "legalType":      first_value(item, "legalType"),
+            "confidence":     first_value(item, "confidence"),
+            "evidenceQuote":  first_value(item, "evidenceQuote"),
             "sourceClauseId": first_value(item, "sourceClauseId"),
         }
         for item in items
     ]
+
+
+def _dedup(items: List[Dict], key: str = "kgId") -> List[Dict]:
+    seen, out = set(), []
+    for item in items:
+        k = item.get(key)
+        if k and k not in seen:
+            seen.add(k)
+            out.append(item)
+        elif not k:
+            out.append(item)
+    return out
 
 
 # ── GraphNativeRetriever ───────────────────────────────────────────────────────
@@ -104,7 +140,9 @@ class GraphNativeRetriever:
     def close(self):
         self.writer.close()
 
-    # ── Per-contract queries ───────────────────────────────────────────
+    # ------------------------------------------------------------------
+    # Obligation queries
+    # ------------------------------------------------------------------
 
     def get_obligations_by_party(
         self,
@@ -112,14 +150,26 @@ class GraphNativeRetriever:
         contract_id: Optional[str] = None,
         contract_ids: Optional[List[str]] = None,
     ) -> List[Dict]:
+        """Obligations owed BY a named party (OWED_BY path + Obligor path)."""
         cf = _contract_filter_step(contract_id, contract_ids)
-        query = f"""
+
+        # Rules vocab: Obligation -OWED_BY-> Party
+        q1 = f"""
         g.V().hasLabel('Party').has('name', party_name){cf}
           .in('OWED_BY').hasLabel('Obligation').dedup()
-          .valueMap('kgId', 'name', 'contractId', 'confidence', 'evidenceQuote', 'sourceClauseId')
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
         """
-        result = self.writer.submit(query, {"party_name": party_name})
-        return normalize_items(result)
+        r1 = normalize_items(self.writer.submit(q1, {"party_name": party_name}))
+
+        # Allowed-list vocab: Obligor -OBLIGATES-> Obligation
+        q2 = f"""
+        g.V().hasLabel('Obligor').has('name', party_name){cf}
+          .out('OBLIGATES').dedup()
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+        """
+        r2 = normalize_items(self.writer.submit(q2, {"party_name": party_name}))
+
+        return _dedup(r1 + r2)
 
     def get_obligations_owed_to_party(
         self,
@@ -127,14 +177,24 @@ class GraphNativeRetriever:
         contract_id: Optional[str] = None,
         contract_ids: Optional[List[str]] = None,
     ) -> List[Dict]:
+        """Obligations owed TO a named party (OWED_TO path + Obligee path)."""
         cf = _contract_filter_step(contract_id, contract_ids)
-        query = f"""
+
+        q1 = f"""
         g.V().hasLabel('Party').has('name', party_name){cf}
           .in('OWED_TO').hasLabel('Obligation').dedup()
-          .valueMap('kgId', 'name', 'contractId', 'confidence', 'evidenceQuote', 'sourceClauseId')
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
         """
-        result = self.writer.submit(query, {"party_name": party_name})
-        return normalize_items(result)
+        r1 = normalize_items(self.writer.submit(q1, {"party_name": party_name}))
+
+        q2 = f"""
+        g.V().hasLabel('Obligee').has('name', party_name){cf}
+          .in('OBLIGATES').dedup()
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+        """
+        r2 = normalize_items(self.writer.submit(q2, {"party_name": party_name}))
+
+        return _dedup(r1 + r2)
 
     def get_obligations_with_deadlines(
         self,
@@ -146,7 +206,7 @@ class GraphNativeRetriever:
         g.V().hasLabel('Obligation'){cf}.as('obligation')
           .out('HAS_DEADLINE').hasLabel('Deadline').as('deadline')
           .select('obligation', 'deadline')
-            .by(valueMap('kgId', 'name', 'contractId', 'confidence', 'evidenceQuote', 'sourceClauseId'))
+            .by(valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId'))
             .by(valueMap('kgId', 'name', 'evidenceQuote'))
         """
         result = self.writer.submit(query)
@@ -154,15 +214,15 @@ class GraphNativeRetriever:
         for row in result:
             o = row.get("obligation", {})
             d = row.get("deadline", {})
-            cid = first_value(o, "contractId")
             items.append({
-                "kgId":            first_value(o, "kgId"),
-                "name":            first_value(o, "name"),
-                "contractId":      cid,
-                "confidence":      first_value(o, "confidence"),
-                "evidenceQuote":   first_value(o, "evidenceQuote"),
-                "sourceClauseId":  first_value(o, "sourceClauseId"),
-                "deadlineName":    first_value(d, "name"),
+                "kgId":             first_value(o, "kgId"),
+                "name":             first_value(o, "name"),
+                "contractId":       first_value(o, "contractId"),
+                "legalType":        first_value(o, "legalType"),
+                "confidence":       first_value(o, "confidence"),
+                "evidenceQuote":    first_value(o, "evidenceQuote"),
+                "sourceClauseId":   first_value(o, "sourceClauseId"),
+                "deadlineName":     first_value(d, "name"),
                 "deadlineEvidence": first_value(d, "evidenceQuote"),
             })
         return _filter_by_contracts(items, contract_id, contract_ids)
@@ -172,12 +232,24 @@ class GraphNativeRetriever:
         contract_id: Optional[str] = None,
         contract_ids: Optional[List[str]] = None,
     ) -> List[Dict]:
+        """All Obligation vertices — direct + reached via Obligor->OBLIGATES."""
         cf = _contract_filter_step(contract_id, contract_ids)
-        query = f"""
+
+        q1 = f"""
         g.V().hasLabel('Obligation'){cf}.dedup()
-          .valueMap('kgId', 'name', 'contractId', 'confidence', 'evidenceQuote', 'sourceClauseId')
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
         """
-        return normalize_items(self.writer.submit(query))
+        r1 = normalize_items(self.writer.submit(q1))
+
+        # Also catch obligations reachable via Obligor
+        q2 = f"""
+        g.V().hasLabel('Obligor'){cf}
+          .out('OBLIGATES').hasLabel('Obligation').dedup()
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+        """
+        r2 = normalize_items(self.writer.submit(q2))
+
+        return _dedup(r1 + r2)
 
     def get_rights(
         self,
@@ -187,7 +259,7 @@ class GraphNativeRetriever:
         cf = _contract_filter_step(contract_id, contract_ids)
         query = f"""
         g.V().hasLabel('Right'){cf}.dedup()
-          .valueMap('kgId', 'name', 'contractId', 'confidence', 'evidenceQuote', 'sourceClauseId')
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
         """
         return normalize_items(self.writer.submit(query))
 
@@ -199,9 +271,220 @@ class GraphNativeRetriever:
         cf = _contract_filter_step(contract_id, contract_ids)
         query = f"""
         g.V().hasLabel('Restriction'){cf}.dedup()
-          .valueMap('kgId', 'name', 'contractId', 'confidence', 'evidenceQuote', 'sourceClauseId')
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
         """
         return normalize_items(self.writer.submit(query))
+
+    # ------------------------------------------------------------------
+    # Indemnification
+    # ------------------------------------------------------------------
+
+    def get_indemnity_facts(
+        self,
+        contract_id: Optional[str] = None,
+        contract_ids: Optional[List[str]] = None,
+    ) -> List[Dict]:
+        """Indemnitor -INDEMNIFIES-> Indemnitee pairs + standalone Indemnitor/Indemnitee vertices."""
+        cf = _contract_filter_step(contract_id, contract_ids)
+
+        # Relationship-based (richer)
+        q1 = f"""
+        g.V().hasLabel('Indemnitor'){cf}.as('ind')
+          .out('INDEMNIFIES').hasLabel('Indemnitee').as('indt')
+          .select('ind', 'indt')
+          .by(valueMap('kgId', 'name', 'contractId', 'evidenceQuote', 'sourceClauseId'))
+          .by(valueMap('kgId', 'name'))
+        """
+        items = []
+        for row in self.writer.submit(q1):
+            ind  = row.get("ind", {})
+            indt = row.get("indt", {})
+            items.append({
+                "kgId":          first_value(ind, "kgId"),
+                "name":          f"{first_value(ind, 'name')} indemnifies {first_value(indt, 'name')}",
+                "indemnitor":    first_value(ind, "name"),
+                "indemnitee":    first_value(indt, "name"),
+                "contractId":    first_value(ind, "contractId"),
+                "evidenceQuote": first_value(ind, "evidenceQuote"),
+                "sourceClauseId": first_value(ind, "sourceClauseId"),
+                "confidence":    None,
+            })
+
+        # Standalone Indemnitor vertices (no paired Indemnitee edge found)
+        q2 = f"""
+        g.V().hasLabel('Indemnitor', 'Indemnitee'){cf}.dedup()
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+        """
+        standalone = normalize_items(self.writer.submit(q2))
+        # Only include if not already covered by a paired result
+        paired_ids = {i["kgId"] for i in items if i.get("kgId")}
+        for s in standalone:
+            if s.get("kgId") not in paired_ids:
+                items.append(s)
+
+        return items
+
+    # ------------------------------------------------------------------
+    # Termination / breach / cure
+    # ------------------------------------------------------------------
+
+    def get_termination_facts(
+        self,
+        contract_id: Optional[str] = None,
+        contract_ids: Optional[List[str]] = None,
+    ) -> List[Dict]:
+        cf = _contract_filter_step(contract_id, contract_ids)
+        query = f"""
+        g.V().hasLabel('TerminationEvent', 'TerminationRight'){cf}.dedup()
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+        """
+        return normalize_items(self.writer.submit(query))
+
+    def get_breach_cure_facts(
+        self,
+        contract_id: Optional[str] = None,
+        contract_ids: Optional[List[str]] = None,
+    ) -> List[Dict]:
+        cf = _contract_filter_step(contract_id, contract_ids)
+        query = f"""
+        g.V().hasLabel('Breach', 'CurePeriod'){cf}.dedup()
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+        """
+        return normalize_items(self.writer.submit(query))
+
+    # ------------------------------------------------------------------
+    # Notice
+    # ------------------------------------------------------------------
+
+    def get_notice_facts(
+        self,
+        contract_id: Optional[str] = None,
+        contract_ids: Optional[List[str]] = None,
+    ) -> List[Dict]:
+        """Notice vertices + GIVES_NOTICE_TO / PROVIDES_NOTICE_TO edges + NoticeRecipient vertices."""
+        cf = _contract_filter_step(contract_id, contract_ids)
+
+        # Relationship-based
+        q1 = f"""
+        g.V().hasLabel('Notice'){cf}.as('notice')
+          .out('GIVES_NOTICE_TO', 'PROVIDES_NOTICE_TO').as('recipient')
+          .select('notice', 'recipient')
+          .by(valueMap('kgId', 'name', 'contractId', 'evidenceQuote', 'sourceClauseId'))
+          .by(valueMap('kgId', 'name'))
+        """
+        items = []
+        for row in self.writer.submit(q1):
+            n = row.get("notice", {})
+            r = row.get("recipient", {})
+            items.append({
+                "kgId":           first_value(n, "kgId"),
+                "name":           first_value(n, "name"),
+                "recipient":      first_value(r, "name"),
+                "contractId":     first_value(n, "contractId"),
+                "evidenceQuote":  first_value(n, "evidenceQuote"),
+                "sourceClauseId": first_value(n, "sourceClauseId"),
+                "confidence":     None,
+            })
+
+        # Standalone Notice / NoticeRecipient vertices
+        q2 = f"""
+        g.V().hasLabel('Notice', 'NoticeRecipient', 'NoticePeriod'){cf}.dedup()
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+        """
+        seen = {i["kgId"] for i in items if i.get("kgId")}
+        for s in normalize_items(self.writer.submit(q2)):
+            if s.get("kgId") not in seen:
+                items.append(s)
+
+        return items
+
+    # ------------------------------------------------------------------
+    # Payment / financial
+    # ------------------------------------------------------------------
+
+    def get_payment_facts(
+        self,
+        contract_id: Optional[str] = None,
+        contract_ids: Optional[List[str]] = None,
+    ) -> List[Dict]:
+        """Invoice/ReimbursableCost vertices + PAYS/MAKES_PAYMENT_TO/REIMBURSES edges."""
+        cf = _contract_filter_step(contract_id, contract_ids)
+
+        # Structural payment vertices
+        q1 = f"""
+        g.V().hasLabel('Invoice', 'ReimbursableCost', 'InterestRate'){cf}.dedup()
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+        """
+        items = list(normalize_items(self.writer.submit(q1)))
+
+        # Payment relationship: payer -PAYS/MAKES_PAYMENT_TO/REIMBURSES-> payee
+        q2 = f"""
+        g.V().hasLabel({_PARTY_LABEL_ARGS}){cf}.as('payer')
+          .out('PAYS', 'MAKES_PAYMENT_TO', 'REIMBURSES').as('payee')
+          .select('payer', 'payee')
+          .by(valueMap('kgId', 'name', 'contractId', 'evidenceQuote', 'sourceClauseId'))
+          .by(valueMap('kgId', 'name'))
+        """
+        for row in self.writer.submit(q2):
+            p  = row.get("payer", {})
+            pe = row.get("payee", {})
+            items.append({
+                "kgId":           first_value(p, "kgId"),
+                "name":           f"{first_value(p, 'name')} pays {first_value(pe, 'name')}",
+                "contractId":     first_value(p, "contractId"),
+                "evidenceQuote":  first_value(p, "evidenceQuote"),
+                "sourceClauseId": first_value(p, "sourceClauseId"),
+                "confidence":     None,
+                "legalType":      None,
+            })
+
+        return _dedup(items)
+
+    # ------------------------------------------------------------------
+    # Liability
+    # ------------------------------------------------------------------
+
+    def get_liability_facts(
+        self,
+        contract_id: Optional[str] = None,
+        contract_ids: Optional[List[str]] = None,
+    ) -> List[Dict]:
+        """Liability vertices + CAPS_LIABILITY_OF relationships."""
+        cf = _contract_filter_step(contract_id, contract_ids)
+
+        q1 = f"""
+        g.V().hasLabel('Liability'){cf}.dedup()
+          .valueMap('kgId', 'name', 'contractId', 'legalType', 'confidence', 'evidenceQuote', 'sourceClauseId')
+        """
+        items = list(normalize_items(self.writer.submit(q1)))
+
+        # Liability cap relationships: capper -CAPS_LIABILITY_OF-> capped_party
+        q2 = f"""
+        g.V(){cf}.as('capper')
+          .outE('CAPS_LIABILITY_OF').as('e')
+          .inV().as('capped')
+          .select('capper', 'capped')
+          .by(valueMap('kgId', 'name', 'contractId', 'evidenceQuote', 'sourceClauseId'))
+          .by(valueMap('kgId', 'name'))
+        """
+        for row in self.writer.submit(q2):
+            a = row.get("capper", {})
+            b = row.get("capped", {})
+            items.append({
+                "kgId":           first_value(a, "kgId"),
+                "name":           f"{first_value(a, 'name')} caps liability of {first_value(b, 'name')}",
+                "contractId":     first_value(a, "contractId"),
+                "evidenceQuote":  first_value(a, "evidenceQuote"),
+                "sourceClauseId": first_value(a, "sourceClauseId"),
+                "confidence":     None,
+                "legalType":      "LiabilityCap",
+            })
+
+        return _dedup(items)
+
+    # ------------------------------------------------------------------
+    # Clause metadata
+    # ------------------------------------------------------------------
 
     def get_clause_metadata(self, source_clause_id: str) -> Dict:
         query = """
@@ -222,15 +505,18 @@ class GraphNativeRetriever:
             "textPreview": first_value(row, "textPreview"),
         }
 
-    # ── Cross-contract queries ─────────────────────────────────────────
+    # ------------------------------------------------------------------
+    # Cross-contract queries
+    # ------------------------------------------------------------------
 
     def get_shared_parties(self, contract_ids: Optional[List[str]] = None) -> Dict[str, List[str]]:
         """
-        Return parties that appear in more than one contract.
-        { party_name: [contractId, contractId, ...] }
+        Return parties/party-roles that appear in more than one contract.
+        Queries ALL party-role labels, not just 'Party'.
+        { party_name: [contractId, ...] }
         """
-        query = """
-        g.V().hasLabel('Party').dedup()
+        query = f"""
+        g.V().hasLabel({_PARTY_LABEL_ARGS}).dedup()
           .valueMap('name', 'contractId')
         """
         result = self.writer.submit(query)
@@ -242,7 +528,6 @@ class GraphNativeRetriever:
                 scope = set(contract_ids) if contract_ids else None
                 if scope is None or cid in scope:
                     party_contracts[name].append(cid)
-        # Keep only parties appearing in 2+ contracts
         return {
             name: sorted(set(cids))
             for name, cids in party_contracts.items()
@@ -253,24 +538,26 @@ class GraphNativeRetriever:
         self,
         contract_ids: Optional[List[str]] = None,
     ) -> Dict[str, List[Dict]]:
-        """Return all obligations grouped by contractId for comparison."""
         items = self.get_all_obligations(contract_ids=contract_ids)
         grouped: Dict[str, List[Dict]] = defaultdict(list)
         for item in items:
-            cid = item.get("contractId") or "unknown"
-            grouped[cid].append(item)
+            grouped[item.get("contractId") or "unknown"].append(item)
         return dict(grouped)
 
     def get_deadlines_grouped_by_contract(
         self,
         contract_ids: Optional[List[str]] = None,
     ) -> Dict[str, List[Dict]]:
-        """Return all deadline-bearing obligations grouped by contractId."""
         items = self.get_obligations_with_deadlines(contract_ids=contract_ids)
         grouped: Dict[str, List[Dict]] = defaultdict(list)
         for item in items:
-            cid = item.get("contractId") or "unknown"
-            grouped[cid].append(item)
+            grouped[item.get("contractId") or "unknown"].append(item)
+        return dict(grouped)
+
+    def _group_by_contract(self, items: List[Dict]) -> Dict[str, List[Dict]]:
+        grouped: Dict[str, List[Dict]] = defaultdict(list)
+        for item in items:
+            grouped[item.get("contractId") or "unknown"].append(item)
         return dict(grouped)
 
 
@@ -285,9 +572,19 @@ def _format_facts(
     for idx, fact in enumerate(facts, start=1):
         source_clause_id = fact.get("sourceClauseId")
         meta = retriever.get_clause_metadata(source_clause_id) if source_clause_id else {}
-        lines.append(f"  {idx}. {fact.get('name')}")
+
+        label = fact.get("name") or "(unnamed)"
+        if fact.get("legalType"):
+            label = f"[{fact['legalType']}] {label}"
+        lines.append(f"  {idx}. {label}")
+
         if show_contract and fact.get("contractId"):
             lines.append(f"     Contract: {fact.get('contractId')}")
+        # Relationship-specific sub-fields
+        if fact.get("indemnitor"):
+            lines.append(f"     Indemnitor: {fact['indemnitor']}  →  Indemnitee: {fact.get('indemnitee', '?')}")
+        if fact.get("recipient"):
+            lines.append(f"     Notice recipient: {fact['recipient']}")
         if fact.get("deadlineName"):
             lines.append(f"     Deadline: {fact.get('deadlineName')}")
         if fact.get("evidenceQuote"):
@@ -307,9 +604,11 @@ def format_graph_result(
     retriever: GraphNativeRetriever,
     multi_contract: bool = False,
 ) -> str:
-    header = ["=" * 80, "GRAPH RETRIEVAL", "=" * 80,
-              f"Question: {question}", f"Intent: {intent}",
-              f"Facts found: {len(facts)}", ""]
+    header = [
+        "=" * 80, "GRAPH RETRIEVAL", "=" * 80,
+        f"Question: {question}", f"Intent: {intent}",
+        f"Facts found: {len(facts)}", "",
+    ]
     if not facts:
         return "\n".join(header + ["No graph facts found for this query."])
     lines = header + _format_facts(facts, retriever, show_contract=multi_contract)
@@ -330,9 +629,9 @@ def format_cross_contract_result(
         f"Contracts in scope: {len(grouped)}  |  Total facts: {total}", "",
     ]
     for contract_id, facts in sorted(grouped.items()):
-        lines += [
-            f"── {contract_id} ({len(facts)} facts) " + "─" * max(0, 60 - len(contract_id)),
-        ]
+        lines.append(
+            f"── {contract_id} ({len(facts)} facts) " + "─" * max(0, 60 - len(contract_id))
+        )
         lines += _format_facts(facts, retriever, show_contract=False)
         lines.append("")
     if extra_sections:
@@ -349,8 +648,8 @@ def graph_native_retrieve(
 ) -> str:
     """
     Route graph questions to the right Gremlin query pattern.
-    Automatically chooses single-contract, multi-contract, or cross-contract
-    analysis based on the active scope.
+    Covers the full canonical ontology: obligations, rights, restrictions,
+    indemnity, termination, breach/cure, notice, payment, liability.
     """
     q = question.lower()
 
@@ -360,7 +659,7 @@ def graph_native_retrieve(
         scope_ids = contract_ids
     elif contract_id:
         scope_ids = [contract_id]
-    multi = scope_ids is not None and len(scope_ids) > 1
+    multi     = scope_ids is not None and len(scope_ids) > 1
     portfolio = scope_ids is None
 
     retriever = GraphNativeRetriever()
@@ -368,27 +667,69 @@ def graph_native_retrieve(
         party = extract_party(question)
 
         # ── Deadline questions ─────────────────────────────────────────
-        if "deadline" in q or "due" in q or "by when" in q:
+        if "deadline" in q or "due date" in q or "by when" in q:
             if multi or portfolio:
-                grouped = retriever.get_deadlines_grouped_by_contract(
-                    contract_ids=scope_ids,
-                )
-                return format_cross_contract_result(
-                    question, "obligations_with_deadlines", grouped, retriever,
-                )
-            facts = retriever.get_obligations_with_deadlines(
-                contract_id=contract_id, contract_ids=scope_ids,
-            )
+                grouped = retriever.get_deadlines_grouped_by_contract(contract_ids=scope_ids)
+                return format_cross_contract_result(question, "obligations_with_deadlines", grouped, retriever)
+            facts = retriever.get_obligations_with_deadlines(contract_id=contract_id, contract_ids=scope_ids)
             return format_graph_result(question, "obligations_with_deadlines", facts, retriever)
 
-        # ── Shared party / cross-contract questions ────────────────────
-        cross_triggers = ["across contracts", "compare", "shared parties",
-                          "both contracts", "all contracts", "portfolio", "multiple contracts"]
+        # ── Indemnification ────────────────────────────────────────────
+        if "indemnif" in q or "indemnit" in q or "hold harmless" in q:
+            facts = retriever.get_indemnity_facts(contract_id=contract_id, contract_ids=scope_ids)
+            if multi or portfolio:
+                grouped = retriever._group_by_contract(facts)
+                return format_cross_contract_result(question, "indemnity", grouped, retriever)
+            return format_graph_result(question, "indemnity", facts, retriever, multi_contract=portfolio)
+
+        # ── Termination ────────────────────────────────────────────────
+        if "terminat" in q or "termination" in q:
+            facts = retriever.get_termination_facts(contract_id=contract_id, contract_ids=scope_ids)
+            if multi or portfolio:
+                grouped = retriever._group_by_contract(facts)
+                return format_cross_contract_result(question, "termination", grouped, retriever)
+            return format_graph_result(question, "termination", facts, retriever, multi_contract=portfolio)
+
+        # ── Breach / cure / default ────────────────────────────────────
+        if "breach" in q or "cure" in q or "default" in q:
+            facts = retriever.get_breach_cure_facts(contract_id=contract_id, contract_ids=scope_ids)
+            if multi or portfolio:
+                grouped = retriever._group_by_contract(facts)
+                return format_cross_contract_result(question, "breach_cure", grouped, retriever)
+            return format_graph_result(question, "breach_cure", facts, retriever, multi_contract=portfolio)
+
+        # ── Notice ─────────────────────────────────────────────────────
+        if "notice" in q or "notif" in q or "notice period" in q:
+            facts = retriever.get_notice_facts(contract_id=contract_id, contract_ids=scope_ids)
+            if multi or portfolio:
+                grouped = retriever._group_by_contract(facts)
+                return format_cross_contract_result(question, "notice", grouped, retriever)
+            return format_graph_result(question, "notice", facts, retriever, multi_contract=portfolio)
+
+        # ── Payment / invoicing / reimbursement ───────────────────────
+        if any(t in q for t in ["payment", "invoice", "reimburse", "pay ", "pays ", "billing"]):
+            facts = retriever.get_payment_facts(contract_id=contract_id, contract_ids=scope_ids)
+            if multi or portfolio:
+                grouped = retriever._group_by_contract(facts)
+                return format_cross_contract_result(question, "payment", grouped, retriever)
+            return format_graph_result(question, "payment", facts, retriever, multi_contract=portfolio)
+
+        # ── Liability / caps ───────────────────────────────────────────
+        if "liabilit" in q or "liability cap" in q or "cap " in q:
+            facts = retriever.get_liability_facts(contract_id=contract_id, contract_ids=scope_ids)
+            if multi or portfolio:
+                grouped = retriever._group_by_contract(facts)
+                return format_cross_contract_result(question, "liability", grouped, retriever)
+            return format_graph_result(question, "liability", facts, retriever, multi_contract=portfolio)
+
+        # ── Shared party / cross-contract analysis ─────────────────────
+        cross_triggers = [
+            "across contracts", "compare", "shared parties", "both contracts",
+            "all contracts", "portfolio", "multiple contracts",
+        ]
         if any(t in q for t in cross_triggers) or (portfolio and party is None):
-            shared = retriever.get_shared_parties(contract_ids=scope_ids)
-            grouped = retriever.get_obligations_grouped_by_contract(
-                contract_ids=scope_ids,
-            )
+            shared  = retriever.get_shared_parties(contract_ids=scope_ids)
+            grouped = retriever.get_obligations_grouped_by_contract(contract_ids=scope_ids)
             extra = []
             if shared:
                 extra.append("\n── Parties Appearing in Multiple Contracts ─────────────")
@@ -398,91 +739,53 @@ def graph_native_retrieve(
                 question, "cross_contract_analysis", grouped, retriever, extra_sections=extra,
             )
 
-        # ── Party-owed-to questions ────────────────────────────────────
+        # ── Party-owed-to ──────────────────────────────────────────────
         if "owed to" in q and party:
             if multi or portfolio:
-                grouped = defaultdict(list)
-                for cid in (scope_ids or [None]):
-                    facts = retriever.get_obligations_owed_to_party(
-                        party, contract_id=cid if not multi else None,
-                        contract_ids=scope_ids if multi else None,
-                    )
-                    for f in facts:
-                        grouped[f.get("contractId", "unknown")].append(f)
-                return format_cross_contract_result(
-                    question, f"obligations_owed_to:{party}", dict(grouped), retriever,
-                )
-            facts = retriever.get_obligations_owed_to_party(
-                party, contract_id=contract_id, contract_ids=scope_ids,
-            )
-            return format_graph_result(
-                question, f"obligations_owed_to:{party}", facts, retriever,
-            )
+                facts = retriever.get_obligations_owed_to_party(party, contract_ids=scope_ids)
+                grouped = retriever._group_by_contract(facts)
+                return format_cross_contract_result(question, f"obligations_owed_to:{party}", grouped, retriever)
+            facts = retriever.get_obligations_owed_to_party(party, contract_id=contract_id, contract_ids=scope_ids)
+            return format_graph_result(question, f"obligations_owed_to:{party}", facts, retriever)
 
-        # ── Party-obligation questions ─────────────────────────────────
+        # ── Party obligation ───────────────────────────────────────────
         if ("obligation" in q or "responsible" in q or "owe" in q or "owed" in q) and party:
             if multi or portfolio:
-                facts = retriever.get_obligations_by_party(
-                    party, contract_ids=scope_ids,
-                )
-                grouped: Dict[str, List] = defaultdict(list)
-                for f in facts:
-                    grouped[f.get("contractId", "unknown")].append(f)
-                return format_cross_contract_result(
-                    question, f"obligations_by_party:{party}", dict(grouped), retriever,
-                )
-            facts = retriever.get_obligations_by_party(
-                party, contract_id=contract_id, contract_ids=scope_ids,
-            )
-            return format_graph_result(
-                question, f"obligations_by_party:{party}", facts, retriever,
-            )
+                facts = retriever.get_obligations_by_party(party, contract_ids=scope_ids)
+                grouped = retriever._group_by_contract(facts)
+                return format_cross_contract_result(question, f"obligations_by_party:{party}", grouped, retriever)
+            facts = retriever.get_obligations_by_party(party, contract_id=contract_id, contract_ids=scope_ids)
+            return format_graph_result(question, f"obligations_by_party:{party}", facts, retriever)
 
         # ── All obligations (no specific party) ────────────────────────
         if "obligation" in q or "responsible" in q:
             if multi or portfolio:
-                grouped = retriever.get_obligations_grouped_by_contract(
-                    contract_ids=scope_ids,
-                )
-                return format_cross_contract_result(
-                    question, "all_obligations", grouped, retriever,
-                )
-            facts = retriever.get_all_obligations(
-                contract_id=contract_id, contract_ids=scope_ids,
-            )
+                grouped = retriever.get_obligations_grouped_by_contract(contract_ids=scope_ids)
+                return format_cross_contract_result(question, "all_obligations", grouped, retriever)
+            facts = retriever.get_all_obligations(contract_id=contract_id, contract_ids=scope_ids)
             return format_graph_result(question, "all_obligations", facts, retriever)
 
-        # ── Rights ────────────────────────────────────────────────────
-        if "right" in q:
-            facts = retriever.get_rights(
-                contract_id=contract_id, contract_ids=scope_ids,
-            )
-            multi_ctx = multi or portfolio
-            return format_graph_result(
-                question, "rights", facts, retriever, multi_contract=multi_ctx,
-            )
+        # ── Rights ─────────────────────────────────────────────────────
+        if "right" in q or "entitl" in q or "permission" in q:
+            facts = retriever.get_rights(contract_id=contract_id, contract_ids=scope_ids)
+            if multi or portfolio:
+                grouped = retriever._group_by_contract(facts)
+                return format_cross_contract_result(question, "rights", grouped, retriever)
+            return format_graph_result(question, "rights", facts, retriever, multi_contract=multi or portfolio)
 
-        # ── Restrictions ──────────────────────────────────────────────
-        if "restriction" in q or "prohibit" in q or "shall not" in q:
-            facts = retriever.get_restrictions(
-                contract_id=contract_id, contract_ids=scope_ids,
-            )
-            multi_ctx = multi or portfolio
-            return format_graph_result(
-                question, "restrictions", facts, retriever, multi_contract=multi_ctx,
-            )
+        # ── Restrictions ───────────────────────────────────────────────
+        if "restriction" in q or "prohibit" in q or "shall not" in q or "may not" in q:
+            facts = retriever.get_restrictions(contract_id=contract_id, contract_ids=scope_ids)
+            if multi or portfolio:
+                grouped = retriever._group_by_contract(facts)
+                return format_cross_contract_result(question, "restrictions", grouped, retriever)
+            return format_graph_result(question, "restrictions", facts, retriever, multi_contract=multi or portfolio)
 
-        # ── Fallback: return all obligations for the scope ─────────────
+        # ── Fallback: obligations ──────────────────────────────────────
         if multi or portfolio:
-            grouped = retriever.get_obligations_grouped_by_contract(
-                contract_ids=scope_ids,
-            )
-            return format_cross_contract_result(
-                question, "all_obligations_fallback", grouped, retriever,
-            )
-        facts = retriever.get_all_obligations(
-            contract_id=contract_id, contract_ids=scope_ids,
-        )
+            grouped = retriever.get_obligations_grouped_by_contract(contract_ids=scope_ids)
+            return format_cross_contract_result(question, "all_obligations_fallback", grouped, retriever)
+        facts = retriever.get_all_obligations(contract_id=contract_id, contract_ids=scope_ids)
         return format_graph_result(question, "all_obligations_fallback", facts, retriever)
 
     finally:
