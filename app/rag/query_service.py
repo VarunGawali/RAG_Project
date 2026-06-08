@@ -3,22 +3,17 @@ Query service for Contract360.
 
 Three retrieval routes:
   tree   — Azure AI Search (BM25+vector) + hierarchical tree context expansion.
-           Handles text lookup, summarization, structural navigation.
   graph  — Cosmos Gremlin semantic graph only.
-           Handles obligations, rights, deadlines, party relationships.
-           Supports single-contract, multi-contract, and cross-contract queries.
   hybrid — Tree search context + Gremlin semantic graph facts merged.
-           Best for questions needing both clause text evidence and structured facts.
 
-Routing: LLM classifier (query_router.py) with keyword fallback.
+Returns citations[] alongside the answer so the frontend can render source cards.
 """
 
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 
 from app.indexing.search_tester import AzureSearchTester
 from app.rag.query_router import route_question
 from app.rag.graph_retriever import graph_native_retrieve
-from app.rag.hybrid_retriever import graph_rag_retrieve
 from app.rag.answer_generator import AnswerGenerator
 from app.rag.summary_generator import format_summary_as_answer
 from app.services.prompt_builder import build_rag_prompt
@@ -50,7 +45,65 @@ def _is_summary_query(question: str) -> bool:
     return any(pat in q for pat in _SUMMARY_PATTERNS)
 
 
-# ── Retrieval helpers ──────────────────────────────────────────────────────────
+# ── Citation extraction ────────────────────────────────────────────────────────
+
+def _docs_to_citations(docs: list) -> List[Dict]:
+    """Convert raw search/tree docs to structured citation objects."""
+    citations = []
+    seen = set()
+    for doc in docs:
+        cid   = doc.get("contractId") or ""
+        title = doc.get("title") or doc.get("sectionTitle") or ""
+        page_start = doc.get("pageStart") or ""
+        page_end   = doc.get("pageEnd") or ""
+        key = f"{cid}|{title}|{page_start}"
+        if key in seen:
+            continue
+        seen.add(key)
+        citations.append({
+            "id":            doc.get("kgId") or doc.get("nodeId") or key,
+            "contractId":    cid,
+            "contractName":  cid.replace("_", " "),
+            "clauseTitle":   title,
+            "sectionTitle":  doc.get("sectionTitle") or "",
+            "pageRange":     f"{page_start}–{page_end}" if page_start else "",
+            "sourcePath":    doc.get("sourcePath") or "",
+            "evidenceQuote": (doc.get("text") or "")[:200],
+            "route":         "tree",
+            "score":         round(doc.get("score", 0), 4),
+        })
+    return citations
+
+
+def _chunks_to_citations(chunks: list) -> List[Dict]:
+    """Convert SemanticRetriever chunk objects to citations."""
+    citations = []
+    seen = set()
+    for chunk in chunks:
+        cid   = chunk.get("contractId") or ""
+        title = chunk.get("title") or chunk.get("sectionTitle") or ""
+        page_start = chunk.get("pageStart") or ""
+        page_end   = chunk.get("pageEnd") or ""
+        key = f"{cid}|{title}|{page_start}"
+        if key in seen:
+            continue
+        seen.add(key)
+        citations.append({
+            "id":            chunk.get("kgId") or chunk.get("nodeId") or key,
+            "contractId":    cid,
+            "contractName":  cid.replace("_", " "),
+            "clauseTitle":   title,
+            "sectionTitle":  chunk.get("sectionTitle") or "",
+            "pageRange":     f"{page_start}–{page_end}" if page_start else "",
+            "sourcePath":    chunk.get("sourcePath") or "",
+            "evidenceQuote": (chunk.get("text") or "")[:200],
+            "route":         "tree",
+            "score":         round(chunk.get("score", 0), 4),
+        })
+    return citations
+
+
+# ── Retrieval helpers — return (context_str, citations) ───────────────────────
 
 def _format_search_docs(docs: list) -> str:
     if not docs:
@@ -79,15 +132,8 @@ def _tree_retrieve(
     contract_ids: Optional[List[str]],
     top: int,
     structural_scope: Optional[Dict],
-) -> str:
-    """
-    Azure AI Search (BM25+vector) + hierarchical tree context expansion.
-
-    For structural scope questions (Article/Section/Clause references), uses
-    the structural index path. Otherwise uses SemanticRetriever for tree context
-    when a single contract is active, or flat hybrid search for multi-contract.
-    """
-    # Structural scope: always use the search index (exact article/section lookup)
+) -> Tuple[str, List[Dict]]:
+    """Returns (context_string, citations)."""
     if structural_scope:
         searcher = AzureSearchTester()
         docs = searcher.retrieve_structural_scope(
@@ -97,16 +143,15 @@ def _tree_retrieve(
             contract_ids=contract_ids,
             top=100,
         )
-        return _format_search_docs(docs)
+        return _format_search_docs(docs), _docs_to_citations(docs)
 
-    # Single contract with tree artifacts: use SemanticRetriever for rich expansion
     if contract_id and not contract_ids:
         retriever = SemanticRetriever(contract_id=contract_id)
         chunks = retriever.retrieve(query=question, top_k=top, contract_id=contract_id)
         if chunks:
-            return build_rag_prompt(query=question, retrieved_chunks=chunks)
+            context = build_rag_prompt(query=question, retrieved_chunks=chunks)
+            return context, _chunks_to_citations(chunks)
 
-    # Multi-contract or fallback: hybrid BM25+vector search, labelled by contract
     searcher = AzureSearchTester()
     docs = searcher.hybrid_search(
         query=question,
@@ -114,7 +159,7 @@ def _tree_retrieve(
         contract_ids=contract_ids,
         top=top,
     )
-    return _format_search_docs(docs)
+    return _format_search_docs(docs), _docs_to_citations(docs)
 
 
 def _hybrid_retrieve(
@@ -122,28 +167,21 @@ def _hybrid_retrieve(
     contract_id: Optional[str],
     contract_ids: Optional[List[str]],
     top: int,
-) -> str:
-    """
-    Tree search context (Azure AI Search) merged with Gremlin semantic graph facts.
-    Gives the LLM both clause text evidence and structured obligation/party data.
-    """
-    # Tree side
-    tree_context = _tree_retrieve(
+) -> Tuple[str, List[Dict]]:
+    """Returns (context_string, citations). Merges tree + graph contexts."""
+    tree_context, citations = _tree_retrieve(
         question=question,
         contract_id=contract_id,
         contract_ids=contract_ids,
         top=top,
         structural_scope=None,
     )
-
-    # Graph side — use contract-scoped graph retrieval
     graph_context = graph_native_retrieve(
         question=question,
         contract_id=contract_id,
         contract_ids=contract_ids,
     )
-
-    return (
+    combined = (
         "=" * 80 + "\n"
         "TREE SEARCH CONTEXT (Azure AI Search + Hierarchical Expansion)\n"
         + "=" * 80 + "\n"
@@ -154,22 +192,16 @@ def _hybrid_retrieve(
         + "=" * 80 + "\n"
         + graph_context
     )
+    return combined, citations
 
 
 # ── Graph availability check ───────────────────────────────────────────────────
 
 def _graph_available(contract_id: Optional[str], contract_ids: Optional[List[str]]) -> bool:
-    """
-    Return True if KG data exists for the active scope.
-    For multi-contract or portfolio queries, True if Gremlin is configured at all.
-    """
     if contract_ids and len(contract_ids) > 1:
-        # Multi-contract: if Gremlin is configured it has the 9 pre-existing contracts
         return gremlin_is_configured()
     if not contract_id and not contract_ids:
-        # Portfolio-wide: same
         return gremlin_is_configured()
-    # Single contract check
     cid = contract_id or (contract_ids[0] if contract_ids else None)
     if not cid:
         return False
@@ -193,7 +225,12 @@ def answer_question(
     """
     Route, retrieve, and answer a question.
 
-    Returns { route, reason, rewritten_query, answer, context? }
+    Returns {
+      route, reason, rewritten_query, answer,
+      citations: List[Dict],
+      follow_up_suggestions: List[str],
+      context?: str
+    }
     """
     # ── 0. Document-level summary shortcut ────────────────────────────
     if _is_summary_query(question) and contract_id and route_override == "auto":
@@ -202,10 +239,12 @@ def answer_question(
         if summary:
             answer = format_summary_as_answer(summary)
             result: Dict = {
-                "route":           "summary",
-                "reason":          "Pre-generated document summary.",
-                "rewritten_query": question,
-                "answer":          answer,
+                "route":                "summary",
+                "reason":               "Pre-generated document summary.",
+                "rewritten_query":      question,
+                "answer":               answer,
+                "citations":            [],
+                "follow_up_suggestions": [],
             }
             if return_context:
                 result["context"] = f"Pre-generated summary for: {contract_id}"
@@ -222,30 +261,48 @@ def answer_question(
         route = route_override
         reason = f"User override: {route_override}"
 
-    # Downgrade graph/hybrid to tree if no KG exists for this scope
     graph_ok = _graph_available(contract_id, contract_ids)
     if route in {"graph", "hybrid"} and not graph_ok:
         route = "tree"
         reason = "No knowledge graph available for this contract — using tree search."
 
     # ── 2. Retrieve ────────────────────────────────────────────────────
+    citations: List[Dict] = []
+
     if route == "graph":
         context = graph_native_retrieve(
             rewritten_query,
             contract_id=contract_id,
             contract_ids=contract_ids,
         )
+        # Graph citations: derive from active contract scope (no chunk scores)
+        scope_ids = contract_ids or ([contract_id] if contract_id else [])
+        citations = [
+            {
+                "id":            cid,
+                "contractId":    cid,
+                "contractName":  cid.replace("_", " "),
+                "clauseTitle":   "Knowledge Graph",
+                "sectionTitle":  "",
+                "pageRange":     "",
+                "sourcePath":    "",
+                "evidenceQuote": "",
+                "route":         "graph",
+                "score":         1.0,
+            }
+            for cid in scope_ids
+        ]
 
     elif route == "hybrid":
-        context = _hybrid_retrieve(
+        context, citations = _hybrid_retrieve(
             question=rewritten_query,
             contract_id=contract_id,
             contract_ids=contract_ids,
             top=top,
         )
 
-    else:  # tree (default for all text/structural questions)
-        context = _tree_retrieve(
+    else:  # tree
+        context, citations = _tree_retrieve(
             question=rewritten_query,
             contract_id=contract_id,
             contract_ids=contract_ids,
@@ -253,7 +310,7 @@ def answer_question(
             structural_scope=structural_scope,
         )
 
-    # ── 3. Generate ────────────────────────────────────────────────────
+    # ── 3. Generate answer + follow-up suggestions ─────────────────────
     active_ids: List[str] = []
     if contract_ids:
         active_ids = list(contract_ids)
@@ -261,7 +318,7 @@ def answer_question(
         active_ids = [contract_id]
 
     generator = AnswerGenerator()
-    answer = generator.generate(
+    answer, follow_ups = generator.generate(
         question=question,
         context=context,
         route=route,
@@ -270,10 +327,12 @@ def answer_question(
     )
 
     result: Dict = {
-        "route":           route,
-        "reason":          reason,
-        "rewritten_query": rewritten_query,
-        "answer":          answer,
+        "route":                 route,
+        "reason":                reason,
+        "rewritten_query":       rewritten_query,
+        "answer":                answer,
+        "citations":             citations,
+        "follow_up_suggestions": follow_ups,
     }
     if return_context:
         result["context"] = context

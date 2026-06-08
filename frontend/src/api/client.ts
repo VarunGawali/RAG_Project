@@ -67,7 +67,68 @@ export interface AskResult {
   reason: string
   rewritten_query?: string
   answer: string
+  citations?: import('../types').Citation[]
+  follow_up_suggestions?: string[]
   context?: string
+}
+
+// SSE event shapes
+export interface StreamDelta  { type: 'delta';  content: string }
+export interface StreamDone   {
+  type: 'done'
+  message_id: string
+  route: string
+  reason: string
+  rewritten_query?: string
+  citations: import('../types').Citation[]
+  follow_up_suggestions: string[]
+}
+export interface StreamError  { type: 'error';  detail: string }
+export type StreamEvent = StreamDelta | StreamDone | StreamError
+
+/**
+ * Streaming ask — yields SSE events as they arrive.
+ * Caller receives (onDelta, onDone, onError) callbacks.
+ */
+export async function askQuestionStream(
+  sessionId: string,
+  payload: AskPayload,
+  onDelta: (token: string) => void,
+  onDone: (done: StreamDone) => void,
+  onError: (detail: string) => void,
+  userId?: string,
+): Promise<void> {
+  const res = await fetch(`${BASE}/sessions/${sessionId}/ask/stream`, {
+    method: 'POST',
+    headers: headers(userId),
+    body: JSON.stringify(payload),
+  })
+  if (!res.ok || !res.body) {
+    let detail = res.statusText
+    try { detail = (await res.json()).detail ?? detail } catch { /* ignore */ }
+    onError(`API ${res.status}: ${detail}`)
+    return
+  }
+  const reader = res.body.getReader()
+  const decoder = new TextDecoder()
+  let buf = ''
+  while (true) {
+    const { value, done } = await reader.read()
+    if (done) break
+    buf += decoder.decode(value, { stream: true })
+    const lines = buf.split('\n')
+    buf = lines.pop() ?? ''
+    for (const line of lines) {
+      const trimmed = line.trim()
+      if (!trimmed) continue
+      try {
+        const event: StreamEvent = JSON.parse(trimmed)
+        if (event.type === 'delta')  onDelta(event.content)
+        else if (event.type === 'done')  onDone(event)
+        else if (event.type === 'error') onError(event.detail)
+      } catch { /* malformed line — ignore */ }
+    }
+  }
 }
 
 export async function createSession(

@@ -1,9 +1,12 @@
 """
-Answer generator for Contract360 GraphRAG demo.
+Answer generator for Contract360.
+Returns (answer, follow_up_suggestions) in a single LLM call.
 """
 
+import json
 import logging
-from typing import List, Dict, Optional
+import re
+from typing import Dict, List, Optional, Tuple
 
 from openai import AzureOpenAI
 
@@ -11,7 +14,6 @@ from app import config
 
 
 logger = logging.getLogger(__name__)
-logging.basicConfig(level=logging.INFO)
 
 
 SYSTEM_PROMPT = """
@@ -73,6 +75,23 @@ Example format:
 2. Compliance Obligations
    - Maintain NERC compliance.
    - Follow environmental reporting requirements.
+
+OUTPUT FORMAT
+-------------
+You MUST respond with valid JSON only — no markdown fences, no extra text:
+{
+  "answer": "<your full answer text here>",
+  "follow_up_suggestions": [
+    "<follow-up question 1>",
+    "<follow-up question 2>",
+    "<follow-up question 3>"
+  ]
+}
+
+For follow_up_suggestions: generate exactly 3 short follow-up questions a user
+would naturally ask next, based on the answer content and the contract topic.
+Make them specific and actionable — e.g. "What are the deadlines for these obligations?"
+not "Tell me more".
 """
 
 
@@ -91,15 +110,11 @@ class AnswerGenerator:
         route: str,
         chat_history: List[Dict[str, str]] | None = None,
         active_contract_ids: Optional[List[str]] = None,
-    ) -> str:
+    ) -> Tuple[str, List[str]]:
         """
-        Generate an answer.
+        Generate an answer and 3 follow-up suggestions in one LLM call.
 
-        chat_history: list of {"role": "user"|"assistant", "content": "..."}
-                      representing prior turns in this session.
-        active_contract_ids: the contracts in scope for this query. Injected
-                      as an explicit scope header so the model knows exactly
-                      which documents it is drawing from.
+        Returns (answer: str, follow_up_suggestions: List[str]).
         """
         if active_contract_ids:
             scope_lines = "\n".join(f"  - {cid}" for cid in active_contract_ids)
@@ -136,46 +151,39 @@ QUESTION
 {question}
 
 ============================================================
-ANSWER
+ANSWER (JSON only)
 ============================================================
 """
 
-        messages = [
-            {
-                "role": "system",
-                "content": SYSTEM_PROMPT,
-            }
-        ]
-
-        # Inject prior turns so the model can resolve follow-up references
+        messages = [{"role": "system", "content": SYSTEM_PROMPT}]
         if chat_history:
             messages.extend(chat_history)
-
         messages.append({"role": "user", "content": current_prompt})
 
         response = self.client.chat.completions.create(
             model=config.AZURE_OPENAI_CHAT_DEPLOYMENT,
             temperature=0,
-            max_tokens=1200,
+            max_tokens=1500,
             messages=messages,
         )
 
-        return response.choices[0].message.content
+        raw = response.choices[0].message.content or ""
+        return _parse_response(raw, question)
 
 
-if __name__ == "__main__":
-    generator = AnswerGenerator()
-
-    answer = generator.generate(
-        question="What obligations does Con Edison have?",
-        route="test",
-        context="""
-Fact 1:
-Name: Notify Power Authority within five business days of new or removed chemicals
-Evidence: Con Edison shall notify the Power Authority within five (5) business days...
-Source clause: 12.4 Community Right to Know
-Pages: 34-35
-""",
-    )
-
-    print(answer)
+def _parse_response(raw: str, fallback_question: str) -> Tuple[str, List[str]]:
+    """Parse JSON response; gracefully degrade if malformed."""
+    cleaned = re.sub(r"```(?:json)?|```", "", raw).strip()
+    try:
+        data = json.loads(cleaned)
+        answer = data.get("answer") or cleaned
+        suggestions = data.get("follow_up_suggestions") or []
+        if isinstance(suggestions, list):
+            suggestions = [s for s in suggestions if isinstance(s, str)][:3]
+        else:
+            suggestions = []
+        return answer, suggestions
+    except (json.JSONDecodeError, AttributeError):
+        # LLM didn't return JSON — treat entire response as the answer
+        logger.warning("AnswerGenerator returned non-JSON; using raw text as answer.")
+        return raw.strip(), []
