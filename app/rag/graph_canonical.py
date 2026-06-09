@@ -195,13 +195,9 @@ def canonical_graph_retrieve(
     qlow = question.lower()
 
     # Comparison questions with 2+ contracts: delegate to graph_native_retrieve
-    # which already has a dedicated side-by-side comparison path.
-    _comparison_triggers = {
-        "compare", "comparison", "versus", " vs ", " vs.", "differ",
-        "contrast", "both contract", "side by side", "which contract",
-        "more stringent", "stricter", "how do", "how does",
-    }
-    if is_multi and any(t in qlow for t in _comparison_triggers):
+    # which already has a dedicated side-by-side comparison path with semantic intent.
+    from app.rag.graph_retriever import _is_comparison
+    if is_multi and _is_comparison(question):
         from app.rag.graph_retriever import graph_native_retrieve
         ctx = graph_native_retrieve(question, contract_ids=scope)
         # Re-parse facts from the context isn't feasible here; return empty facts
