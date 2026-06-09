@@ -206,6 +206,18 @@ export async function listContracts(userId?: string): Promise<ContractSummary[]>
   return handleResponse<ContractSummary[]>(res)
 }
 
+/** Delete a contract from Search + Gremlin + Blob. Returns a per-store summary. */
+export async function deleteContract(
+  contractId: string,
+  userId?: string,
+): Promise<Record<string, unknown>> {
+  const res = await fetch(`${BASE}/contracts/${encodeURIComponent(contractId)}`, {
+    method: 'DELETE',
+    headers: headers(userId),
+  })
+  return handleResponse<Record<string, unknown>>(res)
+}
+
 // ──────────────────────────────────────────────
 // Ingestion API
 // ──────────────────────────────────────────────

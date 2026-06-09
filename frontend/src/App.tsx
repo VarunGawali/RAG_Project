@@ -26,6 +26,7 @@ export default function App() {
   const [sidebarCollapsed, setSidebarCollapsed]   = useState(false)
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false)
   const [apiError, setApiError]                   = useState<string | null>(null)
+  const [activeUploads, setActiveUploads]         = useState(0)
 
   const activeSession = sessions.find(s => s.id === activeSessionId) ?? null
   // null contract_filter = all contracts (for session creation)
@@ -58,11 +59,8 @@ export default function App() {
       })
   }, [])
 
-  // ── Load contract list on mount (merge two sources for resilience) ──
-  // Primary: ingest jobs in Cosmos (always available, tracks UI uploads).
-  // Secondary: Azure AI Search index (may include CLI-ingested contracts).
-  // Merge both so a failure in either doesn't wipe the sidebar.
-  useEffect(() => {
+  // ── Refresh contract list (merge ingest jobs + search index) ────────
+  const refreshContracts = useCallback(async () => {
     const fromJobs = api.listIngestJobs().then(jobs => {
       const seen = new Set<string>()
       const result: Contract[] = []
@@ -74,10 +72,7 @@ export default function App() {
           displayName: job.fileName.replace(/\.[^.]+$/, '').replace(/_/g, ' '),
           fileName: job.fileName,
           status: 'search_only' as const,
-          uploadedAt: '',
-          pageCount: 0,
-          fileSize: '',
-          graphReady: false,
+          uploadedAt: '', pageCount: 0, fileSize: '', graphReady: false,
         })
       }
       return result
@@ -85,25 +80,37 @@ export default function App() {
 
     const fromSearch = api.listContracts().then(summaries =>
       summaries.map(s => ({
-        id: s.id,
-        displayName: s.displayName,
-        fileName: s.id,
+        id: s.id, displayName: s.displayName, fileName: s.id,
         status: 'search_only' as const,
-        uploadedAt: '',
-        pageCount: 0,
-        fileSize: '',
-        graphReady: false,
+        uploadedAt: '', pageCount: 0, fileSize: '', graphReady: false,
       } as Contract))
     ).catch(() => [] as Contract[])
 
-    Promise.all([fromJobs, fromSearch]).then(([jobContracts, searchContracts]) => {
-      const merged = new Map<string, Contract>()
-      // Search results take display precedence; jobs guarantee presence
-      for (const c of [...jobContracts, ...searchContracts]) merged.set(c.id, c)
-      const all = Array.from(merged.values())
-      if (all.length > 0) setContracts(all)
-    })
+    const [jobContracts, searchContracts] = await Promise.all([fromJobs, fromSearch])
+    const merged = new Map<string, Contract>()
+    for (const c of [...jobContracts, ...searchContracts]) merged.set(c.id, c)
+    const all = Array.from(merged.values())
+    if (all.length > 0) setContracts(all)
   }, [])
+
+  useEffect(() => { refreshContracts() }, [refreshContracts])
+
+  // ── Poll ingest jobs so upload progress persists and sidebar refreshes on completion ──
+  useEffect(() => {
+    let prevActive = 0
+    const tick = async () => {
+      try {
+        const jobs = await api.listIngestJobs()
+        const active = jobs.filter(j => j.status === 'queued' || j.status === 'processing').length
+        setActiveUploads(active)
+        if (active < prevActive) refreshContracts()
+        prevActive = active
+      } catch { /* ignore */ }
+    }
+    tick()
+    const handle = setInterval(tick, 4000)
+    return () => clearInterval(handle)
+  }, [refreshContracts])
 
   // ── Lazy-load message history when switching sessions ───────────────
   useEffect(() => {
@@ -287,6 +294,20 @@ export default function App() {
     }
   }, [activeSessionId, contractFilter, selectedContracts, isLoading])
 
+  const handleDeleteContract = useCallback(async (id: string) => {
+    const ok = window.confirm(
+      `Delete "${id.replace(/_/g, ' ')}"?\n\nThis permanently removes it from search, the knowledge graph, and storage. This cannot be undone.`
+    )
+    if (!ok) return
+    try {
+      await api.deleteContract(id)
+      setContracts(prev => prev.filter(c => c.id !== id))
+      setSelectedContracts(prev => prev.filter(cid => cid !== id))
+    } catch (err) {
+      setApiError(err instanceof Error ? err.message : 'Failed to delete contract.')
+    }
+  }, [])
+
   const handleContractAdded = useCallback((contractId: string, fileName: string) => {
     setContracts(prev => {
       if (prev.find(c => c.id === contractId)) return prev
@@ -325,6 +346,8 @@ export default function App() {
         onClearContracts={handleClearContracts}
         onOpenUpload={() => setUploadOpen(true)}
         onDeleteSession={handleDeleteSession}
+        onDeleteContract={handleDeleteContract}
+        activeUploads={activeUploads}
       />
 
       <div className="flex flex-col flex-1 min-w-0">

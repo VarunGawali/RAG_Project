@@ -1,0 +1,6422 @@
+{
+  "entity_types": {
+    "Obligor": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligation": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "NoticeObligor": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Obligee": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Indemnitor": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Indemnitee": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ComplianceTransferPeriod": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "IndemnifiableObligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "ComplianceStandard": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "CriticalAsset": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "ComplianceObligation": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Facility": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ReportableRelease": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "ReportingObligation": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IndemnityObligation": [
+      "Edison_NYPA_OandM_Contract_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "DiscoveringParty": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Agreement": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CostObligation": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PaymentObligation": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "SurvivingProvision": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "ContractedService": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Standard": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "NoticeRecipient": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "TaxObligation": [
+      "Edison_NYPA_OandM_Contract_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ChargeObligation": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "NonBreachingParty": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "BreachingParty": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Default": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TerminationRight": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "WrittenNotice": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "DamagesAndRemedies": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "ArticleProvisions": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "ProtectedParties": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "IndemnifiableClaim": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "IndemnityTrigger": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ReleaseObligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "WaiverObligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Contract": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "TerminationEvent": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ServiceProvider": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ComplianceDocument": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Estimate": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Service": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ReimbursementObligation": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "EstimateCondition": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "BillingRate": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "PreparednessInformation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "EmergencyResponseEquipment": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "ReleaseEvent": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "TrackedMaterial": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "ExcludedService": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "ServiceObligation": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Defect": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "CapitalExpenditure": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "DesignChange": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "TerminatingParty": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "NonTerminatingParty": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "PreTerminationObligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "GovernmentalAuthority": [
+      "Edison_NYPA_OandM_Contract_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Permit": [
+      "Edison_NYPA_OandM_Contract_1",
+      "SoCal_EPC"
+    ],
+    "ReimbursableExpense": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "AccessObligor": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "AccessObligee": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Property": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "EmergencyCondition": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "AccessRequirement": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "CooperationObligor": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Location": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "Customer": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "FringeBenefitsRate": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "AdministrativeOverhead": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "RegulatoryTariff": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "InterestObligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "PaymentPolicy": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "AffidavitObligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "PaymentDueDate": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "BusinessDay": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Agent": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Equipment": [
+      "Edison_NYPA_OandM_Contract_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ReportableEvent": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "BreachNotice": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "CurePeriod": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ExtendedCurePeriod": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ForceMajeure": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "InsuranceObligation": [
+      "Edison_NYPA_OandM_Contract_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "InsurancePolicy": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "WaiverOfSubrogation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "ExcuseEvent": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "NoticeObligation": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Approver": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "ApprovedItem": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "SubjectMatter": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ReportableReleaseEvent": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "OperatedComponent": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "RegulatoryRequirement": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CertificateOfOccupancy": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "TrainingRecipient": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "TrainingSubjectMatter": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "TrainingScope": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "PreventativeMaintenanceProcedure": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "FinalizedPreventativeMaintenanceProcedure": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "PMPProposal": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "ObligationTrigger": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "ReportingDeliverable": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "InvoiceObligation": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ServicePerformed": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "InvoiceSubmissionPeriod": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "ReportObligation": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "ReleaseRecipient": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Work": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "SoCal_EPC"
+    ],
+    "TransactionDocuments": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "AuthorizedAgent": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "PaymentMilestone": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "PermitObligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Exclusion": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "RiskAllocation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Milestone": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PaymentRequest": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "InsuranceCertificate": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "InspectionRequest": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ScopeOfWork": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ProjectCompletionDocuments": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "DesignDeliverable": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ReviewApproval": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Liability": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "SurvivalClause": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "LiabilityReductionClause": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "PlanSheet": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Deliverable": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CompletionCost": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "UnpaidContractSum": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "PaymentDemand": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "LiabilityCap": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MisconductException": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "MitigationObligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "PaymentPeriod": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "InterestRate": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "TaxLiability": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "PerformanceStandard": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "TestObligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "TestDelayCondition": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "RemedyOption": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ObligeeDuty": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "IndemnificationAgreement": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Deficiency": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "PaymentRight": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "LiabilityRelease": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ObligationRelease": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "AssignableContractualRights": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ProprietaryInformation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "WarrantyRight": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Limitation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "DeductibleObligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "NonIndemnifyingParty": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "InsuranceCoverage": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "AdditionalCurePeriod": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "EffortObligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ContractorPersonnel": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "SecurityIdentificationBadge": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "BackgroundCheckRequirement": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "FacilitySupervisor": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Contraband": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Inmate": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "StateLaw": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "InsurancePolicies": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "PolicyEndorsement": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "PolicyProvision": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "EvidenceObligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "TitleTransferTrigger": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "SuspensionRight": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "TerminationProcedure": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "DamageClaimRight": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ContractualPerformance": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Dispute": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "SoCal_EPC"
+    ],
+    "TerminationNotice": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "PerformanceDispute": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Claim": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "NoticeMethod": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "NoticeTiming": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "DataAsset": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "LimitedDataRight": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Representative": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "RequestingParty": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TechnicalExpert": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "TechnicalExpertCandidate": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "DisputingParties": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ExpertDetermination": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "DeterminationCosts": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Applicant": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Utility": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "InterconnectionApplication": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ApplicationFees": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Payment": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "LienRight": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "RoofRenovation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "System": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Invoice": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ExcusedDelay": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ContractualPaymentProvision": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "LienWaiver": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ContractDocument": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ApprovalDocument": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Notice": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Project": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Party": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DelayEvent": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ExcusableDelay": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ContractualDeadline": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ProjectProperty": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ChangeOrder": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "SoCal_EPC"
+    ],
+    "ContractualScope": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "PaymentApplication": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PerformanceIntervalSchedule": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ScheduleOfValues": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "DisbursementRequestForm": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "SupportingItemsList": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ProjectChangeOrder": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Lien": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "DischargeMechanism": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Claims": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "LiabilityException": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "InsuranceProceeds": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "InvalidOrUnenforceableProvision": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "RenegotiationObligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "SeveranceEffect": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ValidityPreservation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ImplementationObligation": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "RequestedParty": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "AdditionalInstruments": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "PaymentTrigger": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "PaymentRate": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "DefectiveMaterials": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ReplacementMaterials": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Site": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "AdditionalCostItem": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "Report": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "CompletionEvent": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "EventOfDefault": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "SetOffRight": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "PerformanceAssurance": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "SecurityPeriod": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Covenant": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "BreachEvent": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ConfidentialInformation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DisclosingParty": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ReceivingParty": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "LegalRequirement": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "CourtOrder": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "LegalProceeding": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "ProtectiveOrder": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "LegalCounselOpinion": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "FailureToDeliverEvent": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "PermittedExcuse": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "BuyerFailureToPerform": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "LiquidatedDamagesObligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "SoCal_EPC"
+    ],
+    "ContractPrice": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "NonDefaultingParty": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Meter": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "BillingPeriod": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "PaymentDeadline": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "EarlyTerminationDate": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DefaultingParty": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "NetSettlementAmount": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "TerminationGainsLossesCosts": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "NoticeOfNetSettlementAmount": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Excuse": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "TerminationPayment": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "LiquidatedDamages": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ExpressRemedy": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "OtherRemedies": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DirectActualDamages": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "ExcludedDamages": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "DamagesStipulation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Assignor": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Assignee": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Assignment": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ChangeOfControl": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "RegulatoryApproval": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Assurance": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "GoverningAgreement": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "PerformanceObligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "AccountingStandard": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "FinancialInformation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Auditor": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ForceMajeureEvent": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ExcludedForceMajeureEvent": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "ContractualRight": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "LaborDispute": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "ProtectedInformation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Regulator": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "RegulatoryProceeding": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "ReimbursementAmount": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "EarlyTerminationEvent": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "AssignmentRight": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "CreditworthyPerson": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Guarantor": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ConsentRequirement": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PermittedDisclosure": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "SurvivingObligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PerformanceEstimate": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "DeliverableProduct": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "DeliveryLocation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CreditSupport": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "ContractualRights": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "ObligatedAsset": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "IndustryStandard": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Insurer": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "InsuranceCostResponsibility": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "LiabilityLimit": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "BuyerRight": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Information": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "InformationRequest": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "SoCal_EPC"
+    ],
+    "DisputingParty": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "OtherParty": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "InvoiceDispute": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "UndisputedAmount": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "DisputeResolutionProvision": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Correction": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "PaymentWithInterest": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "NoticeOfDispute": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "PaymentFailure": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Remedy": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "NegotiatingParty": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "DisputeNotice": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "NegotiatingExecutives": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "ConfidentialityAgreement": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "AcknowledgingParty": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Acknowledgement": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "KnowledgeHolder": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "InternalRecords": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "BuyerRightsAndDefenses": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "ThirdParty": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DeliveryMethod": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Visitor": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "NoticeCondition": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "FacilityAccessObserver": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "EffectiveDate": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "FacilityAddress": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "FacilityDescription": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "NameplateCapacity": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "FuelType": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "ModificationApprovalRequirement": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "TransferrableProduct": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "DeliveryPoint": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MeasurementObligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "AdjustmentRight": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "InstallationRight": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "CreditRatingChangeEvent": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "SubjectFacility": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Incentive": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "AgreementTerm": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "RegulatoryEvent": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "Risk": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "MaintenanceOutage": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "RescheduleRequest": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "RescheduleComplianceObligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "SubsequentNotification": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "OralNoticeConfirmationObligation": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "SecuredParty": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Successor": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Affiliate": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ConsentAndAgreement": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ApplicableLaw": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "AuthorizedOfficer": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Breach": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "EquitableRelief": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "CodeOfConduct": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "TrainingObligation": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "AdditionalCodeOfConductRequirement": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ExpenseObligation": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "EmployeeGroup": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "AffiliateGroup": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "NoticeEffectivenessRule": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Company": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Provider": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "TerminationCondition": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ContractualService": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ContractEffectiveDate": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "LiabilityLimitation": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "GovernmentalApproval": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "InterpretationResponsibility": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ServiceRecipient": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Compensation": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "NonAffiliatedPerson": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "InitialExpirationDate": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ExtendedExpirationDate": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ExtensionRight": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "NoticePeriod": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "SuccessorProvider": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ReimbursableCost": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "AuditorEngager": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "AuditedService": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "BilledParty": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "PaymentRecipient": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "PaymentObligor": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "AuditPeriod": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ConsultingParty": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ConsultationSubject": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "IndependentContractor": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Principal": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ContractingParties": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Record": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ContractingParty": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PriorAgreement": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "RepresentationAndWarranty": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ParoleEvidenceRule": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "OperationalSystem": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "GoverningLaw": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "JuryTrialRight": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Litigation": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ServiceObligor": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "LicensedResource": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "SupportSystem": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "AssetManagementSystem": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "AccessControlSystem": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ComplianceManagementSystem": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Client": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "VegetationManagementActivities": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "AssistingEntity": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Waiver": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "SubsequentBreach": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "Counterpart": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ContractTerm": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "InvalidityOrUnenforceability": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "SuspensionEvent": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "DefenseCounsel": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "IndemnifiableTaxLiability": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "IndemnifiableTaxCosts": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "IndemnificationTerminationCondition": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Security": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ForfeitureTrigger": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ForfeiturePurpose": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "SecurityForm": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MutualDebt": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "PaymentNettingProcess": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "InformationRequestor": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "InformationProvider": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "NonRequestingParty": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "PostTerminationObligation": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "SecurityRequirement": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TriggeringEvent": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Article": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "DisclosureRequest": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "SuspensionPeriod": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Authorization": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DesignChangeObligation": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "DesignReview": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TaxContestAction": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "FinalTaxAssessment": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "WithheldTaxPayment": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TaxInterestAndPenalties": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ContractedMaterialsAndEquipment": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "RefundObligation": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "NonObligor": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ContractualObligation": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PerformanceDeadline": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "GrantingParty": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "AccessParty": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "AccessRights": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "EPCServices": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "SecurityReduction": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ConditionPrecedent": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "RefundAmount": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "PaymentInvoice": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PaymentFunds": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "PaymentMethod": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "PaymentEffect": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "DefaultNotice": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "InterestCalculationMethod": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "SeparateAgreement": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Consent": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DesignatingParty": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "NotifiedParty": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "BreachOfAgreement": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ApplicableLawOrStandard": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "BreachExemptionCondition": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "AffectedSystem": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "AffectedSystemOperator": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "AffectedSystemUpgradeFacilities": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ApplicableLawsAndRegulations": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ApplicableReliabilityCouncils": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ApplicableReliabilityStandards": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ASOEstimatedTotalCosts": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "CalendarDay": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ConnectingTransmissionOwner": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "DevelopmentAgreement": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "EnvironmentalLaw": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "FacilitiesStudy": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "FederalPowerAct": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "FERC": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "GoodUtilityPractice": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "HazardousSubstances": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "InServiceDate": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "InterconnectionAgreements": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "IRS": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "NERC": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "NetworkUpgradeFacilities": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "NewYorkStateTransmissionSystem": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "NPCC": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "NYISOTransmissionInterconnectionStandard": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "NYSRC": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "PointOfInterconnection": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ReasonableEfforts": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ServicesTariff": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "SystemImpactStudy": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "SystemProtectionFacilities": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Tariff": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TransmissionDeveloper": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TransmissionInterconnectionApplication": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TransmissionInterconnectionProcedures": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TransmissionInterconnectionStudy": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TransmissionProject": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TaxRefundTrigger": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "SecurityInterest": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "WrittenDetermination": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TerminationAgreement": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TerminationCost": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ObligationSubject": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "AdditionalCost": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "RegulatoryFilingOrNotice": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "RegulatoryStatus": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "NoticeInstrument": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "NoticeAddress": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "NoticeChangePeriod": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "Loss": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "SoCal_EPC"
+    ],
+    "CoverageBasis": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "CoverageType": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "CoveredContractors": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "CoverageLimit": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "CoverageScope": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "PolicyFeature": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "AdditionalInsuredGroup": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "CertificateOfInsurance": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "AuthorizedInsurerRepresentative": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "InformationRecipient": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "InformationSupplier": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "CostBearingParty": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "BreachObligation": [
+      "SoCal_EPC"
+    ],
+    "Misconduct": [
+      "SoCal_EPC"
+    ],
+    "AuditRight": [
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ContractorRecord": [
+      "SoCal_EPC"
+    ],
+    "SecurityTesting": [
+      "SoCal_EPC"
+    ],
+    "FinancialAssuranceObligation": [
+      "SoCal_EPC"
+    ],
+    "Subcontractor": [
+      "SoCal_EPC"
+    ],
+    "SurvivabilityObligation": [
+      "SoCal_EPC"
+    ],
+    "SuspensionDuration": [
+      "SoCal_EPC"
+    ],
+    "ReimbursableCosts": [
+      "SoCal_EPC"
+    ],
+    "CostComponent": [
+      "SoCal_EPC"
+    ],
+    "ClaimRight": [
+      "SoCal_EPC"
+    ],
+    "ExcusingEvent": [
+      "SoCal_EPC"
+    ],
+    "Vendor": [
+      "SoCal_EPC"
+    ],
+    "SubstantialSubcontractor": [
+      "SoCal_EPC"
+    ],
+    "SubstantialVendor": [
+      "SoCal_EPC"
+    ],
+    "ContractDocuments": [
+      "SoCal_EPC"
+    ],
+    "IndependentContractorStatus": [
+      "SoCal_EPC"
+    ],
+    "NoPartnershipRelationship": [
+      "SoCal_EPC"
+    ],
+    "ThirdPartyInsurer": [
+      "SoCal_EPC"
+    ],
+    "InsuranceCancellationEvent": [
+      "SoCal_EPC"
+    ],
+    "PropertySite": [
+      "SoCal_EPC"
+    ],
+    "JobSite": [
+      "SoCal_EPC"
+    ],
+    "Easement": [
+      "SoCal_EPC"
+    ],
+    "CooperationObligation": [
+      "SoCal_EPC"
+    ],
+    "PermitEvidence": [
+      "SoCal_EPC"
+    ],
+    "PerformanceSecurity": [
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "QualifiedSurety": [
+      "SoCal_EPC"
+    ],
+    "QualifiedInstitution": [
+      "SoCal_EPC"
+    ],
+    "ContractorEventOfDefault": [
+      "SoCal_EPC"
+    ],
+    "WarrantyBreach": [
+      "SoCal_EPC"
+    ],
+    "ServicePackagePeriod": [
+      "SoCal_EPC"
+    ],
+    "ThirdPartyPerformer": [
+      "SoCal_EPC"
+    ],
+    "InfringementClaim": [
+      "SoCal_EPC"
+    ],
+    "ProjectMaterials": [
+      "SoCal_EPC"
+    ],
+    "WarrantyPeriod": [
+      "SoCal_EPC"
+    ],
+    "RepairRightHolder": [
+      "SoCal_EPC"
+    ],
+    "EmergencyAction": [
+      "SoCal_EPC"
+    ],
+    "CorrectionCostObligation": [
+      "SoCal_EPC"
+    ],
+    "Warranty": [
+      "SoCal_EPC"
+    ],
+    "ThirdPartyBeneficiary": [
+      "SoCal_EPC"
+    ],
+    "WarrantyAssignment": [
+      "SoCal_EPC"
+    ],
+    "NoticeToProceed": [
+      "SoCal_EPC"
+    ],
+    "ProjectSchedule": [
+      "SoCal_EPC"
+    ],
+    "CompletionDate": [
+      "SoCal_EPC"
+    ],
+    "NoticeDate": [
+      "SoCal_EPC"
+    ],
+    "LiquidatedDamagesCap": [
+      "SoCal_EPC"
+    ],
+    "MilestoneObligation": [
+      "SoCal_EPC"
+    ],
+    "OperationalObligation": [
+      "SoCal_EPC"
+    ],
+    "ChangeRequestor": [
+      "SoCal_EPC"
+    ],
+    "ChangeRecipient": [
+      "SoCal_EPC"
+    ],
+    "StatementOfWork": [
+      "SoCal_EPC"
+    ],
+    "MinorChange": [
+      "SoCal_EPC"
+    ],
+    "CriticalMilestones": [
+      "SoCal_EPC"
+    ],
+    "CompanyCausedDelay": [
+      "SoCal_EPC"
+    ],
+    "ChangeInLaw": [
+      "SoCal_EPC"
+    ],
+    "UnforeseeableSubsurfaceConditions": [
+      "SoCal_EPC"
+    ],
+    "DueDiligenceObligation": [
+      "SoCal_EPC"
+    ],
+    "WarrantyObligations": [
+      "SoCal_EPC"
+    ],
+    "StatuteOfLimitation": [
+      "SoCal_EPC"
+    ],
+    "DisputeResolutionProcedure": [
+      "SoCal_EPC"
+    ],
+    "PerformanceGuarantee": [
+      "SoCal_EPC"
+    ],
+    "NonParty": [
+      "SoCal_EPC"
+    ],
+    "PermittedSuccessorOrAssign": [
+      "SoCal_EPC"
+    ],
+    "InsuranceChangeNotice": [
+      "SoCal_EPC"
+    ],
+    "CompletionMilestone": [
+      "SoCal_EPC"
+    ],
+    "CompletionDeadline": [
+      "SoCal_EPC"
+    ],
+    "WarrantyObligation": [
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ServicePackage": [
+      "SoCal_EPC"
+    ],
+    "GuaranteeObligation": [
+      "SoCal_EPC"
+    ],
+    "Purchaser": [
+      "SoCal_EPC"
+    ],
+    "Maintenance": [
+      "SoCal_EPC"
+    ],
+    "LiquidatedDamagesRate": [
+      "SoCal_EPC"
+    ],
+    "GuaranteedCompletionDate": [
+      "SoCal_EPC"
+    ],
+    "ServiceOption": [
+      "SoCal_EPC"
+    ],
+    "ServicePackageOption": [
+      "SoCal_EPC"
+    ],
+    "LiabilityExclusion": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PenaltyRisk": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "IndemnificationProvision": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ContaminationEvent": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "CorrectiveActionCosts": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "LeadDisturbanceCondition": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "QualifiedPerson": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "WasteProduct": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "HazardousWaste": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "CertifiedHazardousWasteHauler": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "SampleResult": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "LeadTrainingRecord": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Supervisor": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "EmployeeList": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ProhibitedMaterial": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "RegulatoryAuthority": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "LegalObligation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "AssignableRight": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PaymentEvent": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "DisputedClaim": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "LegalCondition": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "LegalEffect": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "CostAllocation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "AssignmentRestriction": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Venue": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "MaintenanceSubject": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "MaintenanceReportingObligation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "MaintenanceObligation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "InitialTerm": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "RenewalTerm": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "NoticeOfTermination": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "AdditionalTerm": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "FeeObligation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PerformanceData": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "DataConnection": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "MonitoringPortal": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "AccessCredential": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "MeteringDevice": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "SynchronizationRequirement": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "DataFormatRequirement": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PerformanceReviewReport": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "OperationsAndMaintenanceRecords": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "RecommendedActionPlan": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "CustomReport": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Regulation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Inspector": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Building": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "CertificationRequirement": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ExtraService": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Approval": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "IndemnityExclusion": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "InsuredParty": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "CoveredClaim": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "CoveredActivity": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "InsuranceEndorsement": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ContractorInsurancePolicy": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "SubrogationWaiver": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ReportingSystem": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ReportingDeadline": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PayrollData": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "NoticeTrigger": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "RegulatedWork": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Certification": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ExtraServiceObligation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ThirdPartyClaim": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "NotificationCosts": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "CleaningScope": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "EquipmentUsageLimit": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "WarrantyTerm": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PerformanceGuaranteeAgreement": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "SystemComponents": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "WarrantyClaims": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "InstallationSite": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "SystemCapacity": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ModuleTilt": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "MountingLocation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "SystemCapacityDC": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Classification": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "TestingProcedure": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "TestingCosts": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "TerminationTriggerEvent": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "InsuredOperation": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "InsuranceExpirationDate": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "NoticePeriodLength": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "TravelDistanceThreshold": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "NonconformingWork": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "WarrantyOfAuthority": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "NotificationTrigger": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "SiteGroup": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "Guaranty": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Lender": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CollateralAssignee": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CollateralAssignmentAgreement": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CureReport": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PossessionEvent": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PermittedTransferee": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ReplacementAgreement": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ProgressReport": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ProgressReviewMeeting": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "RequestedDocumentation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "OptionalFacility": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ContractExhibit": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CapacityAttribute": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ResourceAdequacyBenefit": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Price": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DeliveryTerm": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Certificate": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ObligationCost": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CostCap": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ComplianceAction": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "AcceptedCost": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "RenewableEnergyCredit": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Account": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Law": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "TransferMethod": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Date": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Term": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "NoticeOfClaim": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IndemnifiableEvent": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "FailureToProvideNotice": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DefenseAssumptionRight": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Settlement": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "FirmSettlementOffer": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Buyer": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Seller": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Product": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PortfolioProduct": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ProjectPortfolio": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PortfolioProductDeliveryTerm": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ContractQuantity": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "RPSComplianceRequirement": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CAISO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "WREGISCertificates": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CurtailmentOrder": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "EvidenceOfInsurance": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "TriggerCondition": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ContractProvision": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DefaultCondition": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MeterData": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MeterSeal": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MeteringDiagram": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "OperationalMeterAnalysisReportingSystem": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ContractMilestone": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DrawEvent": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ReturnEvent": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "LatePayment": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "LatePaymentCharge": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PublicationSource": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "TerminatedTransaction": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DamagePayment": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PaymentWithholdingRight": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PerformanceSuspensionRight": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DesignatedFund": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "LegalStatus": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "LegalQualification": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "GoverningBodyMember": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Authority": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "RestrictionStatus": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "NonConflictRepresentation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ExecutedAgreement": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "BindingObligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "EnforceabilityLimitation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "WaiverOfImmunity": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "VenueLimitation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "StatutoryReservation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "AssigneeConsentProvider": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "AssignmentTrigger": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "InvalidAssignment": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CostObligee": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "GuaranteedDate": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ExtensionPeriod": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ExtensionLimit": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PerformanceMeasurementPeriod": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ReplacementEnergy": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DamageObligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DamageCap": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PaymentProcedure": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DefaultProvision": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DamagePaymentRight": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "EarlyTerminationProvision": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ConfidentialityObligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IndemnityAndAuditRight": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PostTerminationProvision": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ContractedProduct": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DeliveryEvidence": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "LiquidatedDamagesAmount": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ReplacementRA": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "RA_Shortfall_Month": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "GeneratingFacilityCapacityAttributes": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CapacityMeasure": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "NoticeTimingRequirement": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MeteredData": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "AccessRight": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "FormatSpecification": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "BillingInaccuracy": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PaymentAdjustment": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DataCorrection": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "AccruedInterest": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "JurisdictionOfFormation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Jurisdiction": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CEQADocumentApplicationObligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "LegalValidityRepresentation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "NoConflictRepresentation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "FinancedAsset": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "FinancingTransaction": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "EnforcementAction": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PublicRecordsLaw": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PerformancePeriod": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "BindingDocument": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "BindingLaw": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "BindingContractualProvision": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PendingAction": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "BreachCondition": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ContractualProvision": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PrimaryObligor": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "GuaranteedAmount": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PrincipalDebtor": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Defense": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "SetoffOrCounterclaim": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CertificationObligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ContractualTerm": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "Energy": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "GreenAttribute": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "SchedulingAuthority": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PlannedOutage": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ForcedFacilityOutage": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "SystemEmergency": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "BuyerDefault": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MarketCurtailmentPeriod": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ChargingEnergyCondition": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "UnscheduledDAForecastVolume": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "HealthAndSafetyCondition": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ExemptionDocumentationObligation": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "UndisputedInvoicePortion": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DisputedAmount": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DisputeResolution": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "InadvertentOverpayment": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ]
+  },
+  "relationship_types": {
+    "BEARS_OBLIGATION_TO_DEVELOP_AND_MAINTAIN": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "NOTIFIES": [
+      "Edison_NYPA_OandM_Contract_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "BEARS_OBLIGATION_TO_PREPARE_AND_MAINTAIN": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "PROVIDES_DRAFT_RMP_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "BEARS_OBLIGATION_TO_IMPLEMENT": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "BEARS_OBLIGATION_TO_OBTAIN_AND_SUBMIT": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "BEARS_OBLIGATION_TO_APPOINT_AND_NOTIFY": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "BEARS_OBLIGATION_TO_FILE_AND_PAY": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "PROVIDES_COPIES_OF_FILINGS_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "NOTIFIES_AND_SUBMITS_DOCUMENTS_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "INDEMNIFIES": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "LIMITS_INDEMNITY_OBLIGATION_OF": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "TERMINATES_INDEMNITY_PROTECTION_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "TRIGGERS_COMPLIANCE_MANAGEMENT_OBLIGATION_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "PROVIDES_COMPLIANCE_EVIDENCE_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "DETERMINES_STATUS_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "BEARS_RESPONSIBILITY_FOR_CHANGES_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "REQUIRES_COMPLIANCE_WITH": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PERFORMS_FUNCTIONS_UNDER": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "ASSUMES_RESPONSIBILITY_AFTER": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "DIRECTS_TO_ESTABLISH_AND_MANAGE": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "BEARS_COST_FOR": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "RETAINS_RESPONSIBILITY_FOR_DETERMINATION_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "BEARS_COST_FOR_UPGRADES_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "REPORTS_RELEASES_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "PROVIDES_INFORMATION_TO": [
+      "Edison_NYPA_OandM_Contract_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "MAY_REPORT_RELEASES_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "CONTROLS_AND_CONTAINS": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "SURVIVES_TERMINATION_FOR": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "SURVIVES_TERMINATION_OF": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PAYS_FOR": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "PERFORMS": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "FOLLOWS": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "TAKES_PRECEDENCE_OVER": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "SUBCONTRACTS_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "PROVIDES_TO": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "REIMBURSES": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PAYS": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DECLARES": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "TERMINATES": [
+      "Edison_NYPA_OandM_Contract_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "EXERCISES_TERMINATION_RIGHT_BY": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "IS_RELIEVED_FROM": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "RECOVERS_FROM": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "FALLS_WITHIN_INDEMNITY_SCOPE_OF": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "TRIGGERS_INDEMNITY_FOR": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "INCLUDES": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "RELEASES": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "WAIVES_RIGHTS_TO_RECOVER_FROM": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "OBLIGATES_TO_TURN_OVER_EQUIPMENT_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "OBLIGATES_TO_PROVIDE_TRAINING_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "OBLIGATES_TO_TURN_OVER_DATA_AND_PROCEDURES_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "OBLIGATES_TO_TURN_OVER_MINOR_SPARE_PARTS_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "TRIGGERS_OBLIGATION_OF": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "SUBMITS": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "SUBJECT_TO_REVIEW_BY": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "SUBMITTED_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "PROVIDES_TEMPLATE_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "MAY_USE_TEMPLATE_FROM": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "BEARS_COSTS_FROM_VIOLATIONS_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "PROVIDES_ESTIMATE_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "PROVIDES_BUDGET_AND_WORK_PLAN_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "LIMITS_RELIABILITY_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "DOES_NOT_LIMIT_REIMBURSEMENT_OBLIGATION_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "APPLIES_TO_BILLING_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "MAINTAINS_ON_SITE": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "MAINTAINS": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CAUSES_LIABILITY_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "TRIGGERS": [
+      "Edison_NYPA_OandM_Contract_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PERFORMS_O_AND_M_SERVICES_FOR": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "BEARS_OBLIGATION_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "RELATES_TO": [
+      "Edison_NYPA_OandM_Contract_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "APPLIES_AT": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "OWNS": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "INSTALLS_AND_MAINTAINS_FOR": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "BEARS_COST_AND_RISK_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "IS_SOLELY_RESPONSIBLE_FOR": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "EXCLUDES": [
+      "Edison_NYPA_OandM_Contract_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "IS_SOLELY_RESPONSIBLE_TO_CORRECT": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "SUBMITS_FOR_REVIEW": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "GIVES": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "TERMINATES_WITHOUT_LIABILITY_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "DOES_NOT_RELIEVE": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "OBLIGATED_TO_OBTAIN": [
+      "Edison_NYPA_OandM_Contract_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "OBLIGATED_TO_OBTAIN_PERMITS_FROM": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "COOPERATES_WITH": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "AUTHORIZES_ACCESS_AND_USE_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "ACCESSES_AND_USES": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "GIVES_REASONABLE_NOTICE_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "EXCUSES_NOTICE_OBLIGATION_OF": [
+      "Edison_NYPA_OandM_Contract_1",
+      "SoCal_EPC"
+    ],
+    "COMPLIES_WITH": [
+      "Edison_NYPA_OandM_Contract_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "GIVES_IMMEDIATE_NOTICE_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "MAINTAINS_AT": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "SOLELY_MAINTAINS_NOT_AT": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "RETAINS_TITLE_AND_RISK_UNTIL_DELIVERY_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "MAY_SHIP_DIRECTLY_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "REVIEWS_AND_DEFINES_REQUIRED": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "CHARGES_USING": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "APPROVED_BY": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "PROVIDES_COURTESY_COPIES_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "OWES_PAYMENT_TO": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "BEARS_INTEREST_OBLIGATION_UNDER": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "CALCULATED_FROM": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "EXTENDS_PAYMENT_DUE_DATE_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "MUST_PROVIDE": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "MAY_WITHHOLD_PAYMENT_PENDING": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "GOVERNS_PAYMENT_OBLIGATIONS_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "PAYS_COSTS_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "PROVIDES_WORK_PLANS_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "KEEPS_APPRISED_OF_STATUS": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "ACTS_ON_BEHALF_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "REPORTS_LEAKAGE_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "CERTIFIES_LEAK_FREE_STATUS_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "REPORTS_EMISSIONS_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "HAS_RIGHT_TO_INSPECT": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "REPORTS_LEAKS_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "RESPONSIBLE_FOR_FIXING": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "SUPPLIES": [
+      "Edison_NYPA_OandM_Contract_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "PROVIDES_TRAINING_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "BEARS_OBLIGATION_TO_PERFORM": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "REPORTS_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "GIVES_NOTICE_OF_BREACH_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "TRIGGERS_CURE_PERIOD_FOR": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "HAS_CURE_PERIOD_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "HAS_EXTENDED_CURE_PERIOD_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "EXCUSES_BREACH_OF": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "NAMES_AS_ADDITIONAL_INSURED": [
+      "Edison_NYPA_OandM_Contract_1",
+      "SoCal_EPC"
+    ],
+    "PROCURES_AND_MAINTAINS": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "SATISFIES_INSURANCE_REQUIREMENT_THROUGH": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "INSURANCE_IS_PRIMARY_AND_NON_CONTRIBUTORY_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "INCLUDES_WAIVER_OF_SUBROGATION_IN_FAVOR_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "LIMITS_OBLIGATION_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "EXCUSES_PERFORMANCE_OF": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "OWES_SERVICES_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "OWES_NOTICE_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "APPROVES": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "DOES_NOT_RELEASE_OBLIGATIONS_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "DOES_NOT_ASSUME_RESPONSIBILITY_FOR": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "PURCHASES": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "BEARS_COST_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "PROVIDES_FOR_USE_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "ENSURES_RECALIBRATION_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "TRIGGERS_NOTICE_OBLIGATION_OF": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "IS_RESPONSIBLE_FOR_OPERATION_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "MUST_NOT_ADVERSELY_IMPACT": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "MUST_COMPLY_WITH": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "PROVIDES": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "RENEWS": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "OBTAINS": [
+      "Edison_NYPA_OandM_Contract_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "OBLIGATED_TO_PROVIDE_TRAINING_AT_REQUEST_OF": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "PROVIDES_TRAINING_ON": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "TRAINED_TO_WORK_ON": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "REVIEWS_AND_APPROVES": [
+      "Edison_NYPA_OandM_Contract_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "WORKS_TO_FINALIZE_WITH": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "HAS_FINAL_AUTHORITY_OVER": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "REQUESTS_MODIFICATIONS_FROM": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "PROVIDES_REPORT_TO": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PURSUES_CLAIMS_AGAINST": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "MAKES_PAYMENT_TO": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "OBLIGATED_TO_SUBMIT": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "REPRESENTS_WORK_PERFORMED": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "MUST_BE_SUBMITTED_WITHIN": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "DELIVERS_REPORTS_TO": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "GENERATES": [
+      "Edison_NYPA_OandM_Contract_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "INTENDED_FOR": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "DESIGNATES_NOTICE_RECIPIENT": [
+      "Edison_NYPA_OandM_Contract_1"
+    ],
+    "RELEASES_AND_WAIVES_LIABILITY_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "INDEMNIFIES_AND_HOLDS_HARMLESS": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "AGREES_SCHEDULE_OF_VALUES_WITH": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "AUTHORIZED_TO_ACT_ON_BEHALF_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "EXECUTES_AND_PERFORMS_OBLIGATIONS_UNDER": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "PROVIDES_CONSTRUCTION_SERVICES_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "EXCLUDES_LIABILITY_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "PERFORMS_OPERATIONS_AND_MAINTENANCE_FOR": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "BEARS_RESPONSIBILITY_FOR": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "GOVERNS_PAYMENT_SCHEDULE_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "REQUIRES_PROCESSING_BY": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ALLOCATES_RISK_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "CORRESPONDS_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "SENDS": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "SUBMITS_PAYMENT_DOCUMENTS_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "MUST_PROVIDE_NOTICE_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "FAILURE_TO_NOTIFY_CONSTITUTES_DEFAULT_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "OBLIGATES": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "SoCal_EPC"
+    ],
+    "REQUIRED_FOR": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "DEVELOPS": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "REVIEWS_AND_NOTIFIES_ACCEPTANCE_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "DOES_NOT_WAIVE_LIABILITY_FOR": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "IMPOSES_LIABILITY_ON": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ACTIVATES_INDEMNITY_OBLIGATION_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "CAPS_LIABILITY_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PREPARES": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "PROVIDES_APPROVED_SINGLE_LINE_DIAGRAM_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "DELIVERS": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "TRIGGERS_PAYMENT_OBLIGATION_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "REQUIRES_PAYMENT_FROM": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "LIMITS_PAYMENT_OBLIGATION_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "EXEMPTS_FROM": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IMPOSES_DUTY_ON": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "INVOICES": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "APPLIES_TO_OVERDUE_PAYMENTS_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "REIMBURSES_COSTS_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "BEARS_TAX_LIABILITY_FOR": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "OWES_PERFORMANCE_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IMPOSES_OBLIGATION_ON": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "GRANTS_TIME_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "REQUIRES_COOPERATION_FROM": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "SoCal_EPC"
+    ],
+    "GRANTS_OPTION_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "EXTENDS_TIME_FOR": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "PROVIDES_EVIDENCE_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "NOTIFIES_CHANGES_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "REPRESENTS_AND_WARRANTS_COMPLIANCE_WITH": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "BENEFITS": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "GIVES_NOTICE_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "TRIGGERS_CURE_PERIOD_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "CAUSES": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ELECTS_REMEDY_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "EXERCISES_TERMINATION_RIGHT": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ENTITLES_TO_PAYMENT_RECOVERY": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "RELEASES_FROM_LIABILITY": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "RELEASES_FROM_OBLIGATIONS": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "WITHDRAWS_FROM": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ASSISTS_IN_PREPARING_INVENTORY_FOR": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ASSIGNS": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "DELIVERS_INFORMATION_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "AUTHORIZES_USE_OF_INFORMATION_BY": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "REMOVES_MATERIALS_FROM": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "EMPLOYS": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "AUTHORIZES_EXPENDITURES_FOR_COMPLETION_BY": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "IMPOSES_CONTINUING_LIABILITY_ON": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "EXCLUDES_INDEMNITY_FOR_OWN_FAULT_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "EXCLUDES_INDEMNITY_FOR": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "IMPOSES_ADDITIONAL_LIABILITY_ON": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "TERMINATES_FOR_CAUSE_IF_UNCURED_DEFAULT_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "REQUIRES_CURE_FROM": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ALLOWS_CURE_TIME_FOR": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "REQUIRES_EFFORT_FROM": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "GRANTS_ADDITIONAL_CURE_TIME_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "OWES_COMPLIANCE_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "MUST_POSSESS": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "MUST_UNDERGO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "WORKS_UNDER_SUPERVISION_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "MUST_NOT_CONTACT": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "MUST_NOT_BRING": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "MUST_OBTAIN_ADMITTANCE_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "GOVERN_UNAUTHORIZED_CONVEYANCE_BY": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "GOVERN_POSSESSION_OF_WEAPONS_BY": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "GOVERN_CONVEYANCE_OR_USE_OF_ELECTRONIC_DEVICES_BY": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "REQUIRES_SATISFACTION_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "CONTAINS": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "TITLE_PASSES_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "TRIGGERS_TITLE_TRANSFER_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "RETAINS_CUSTODY_AND_RISK_OF_LOSS_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "TERMINATES_CUSTODY_OBLIGATION_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "MUST_CURE_PAYMENT_DEFAULT_WITHIN": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ACCRUES_INTEREST_ON_DELINQUENT_AMOUNT_FROM": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "CONTINUES_PAYMENT_BREACH_FOR": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "EXERCISES_RIGHT_TO_SUSPEND_PERFORMANCE": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "EXERCISES_RIGHT_TO_TERMINATE": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "FOLLOWS_PROCEDURE_IN": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "RETAINS_RIGHT_TO_CLAIM_DAMAGES": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "MAKES_PAYMENTS_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TRIGGERS_CONTINUED_PERFORMANCE_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ASSUMES_DEFENSE_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DEFENDS": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "EMPLOYS_COUNSEL_TO_PARTICIPATE_IN": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "HAS_SURVIVING_OBLIGATIONS_UNTIL_STATUTE_OF_LIMITATIONS": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "MUST_USE_NOTICE_METHODS": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "TRIGGERS_DEEMED_SERVICE_TIMING": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "GRANTS_LIMITED_DATA_RIGHTS_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "APPLIES_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "AUTHORIZES_USE_BY": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "OBLIGATED_TO_OBTAIN_AND_COMPLY_WITH": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "PROVIDES_ASSISTANCE_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "REQUESTS_APPOINTMENT_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "DETERMINES_DISPUTE_BETWEEN": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ISSUES": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "BINDS": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "SHARED_EQUALLY_BY": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "IS_SUBMITTED_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ARE_PAID_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "TRIGGERS_LIEN_RELEASE_OBLIGATION_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "TRIGGERS_FINAL_LIEN_RELEASE_OBLIGATION_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "HOLDS": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "GOVERS_RIGHTS_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "PROVIDES_NOTICE_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "HAS_OPTION_TO_ATTEND_TESTS_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "PERFORMS_SERVICES_FOR": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "COSTS_BEAR_BY": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "UNDERTAKES": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "NOTIFIES_REFUSAL_TO_UNDERTAKE": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "EXCUSES_DELAY_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "OBLIGATES_PAYMENT_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "REQUIRES_PAYMENT_PROVISION_FROM": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "REQUIRES_PROVISION_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "GRANTS_LIEN_WAIVER_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "DOES_NOT_CREATE_CONTRACTUAL_RELATIONSHIP_WITH": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "DOES_NOT_CREATE_PAYMENT_OBLIGATION_ON": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "KEEPS_INFORMED": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ORDERS": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ACCEPTS": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "EXTENDS_DATES_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "DETERMINES_START_OF_EXTENSION_FOR": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "STORES_EQUIPMENT_AT_EXPENSE_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "TRIGGERS_STORAGE_OBLIGATION_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "CONSTITUTES": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "EXTENDS": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "RECEIVES_EXTENSION_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "AGREES_DELIVERY_DATE_WITH": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "JOINTLY_AGREE_DELIVERY_DATE_WITH": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "COORDINATES_WITH": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "SUBMITS_FOR_APPROVAL_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "REQUESTS_CHANGE_ORDER_FROM": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "AUTHORIZES_MOVEMENT_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "MATERIALLY_AFFECTS_COST_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "REFLECTS_PERFORMANCE_INTERVALS_SET_BY": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "USES_SCHEDULE_OF_VALUES_SET_BY": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "INCLUDES_COMPLETED_FORM": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "INCLUDES_LISTED_ITEMS": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "REMIT_PAYMENT_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "OWED_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "MAKES_PROVISIONS_SATISFYING_LIENS_FOR": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "WITHHOLDS_PAYMENT_FROM": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "USES_TO_DISCHARGE_LIENS": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "OWES_AGGREGATE_LIABILITY_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "EXCLUDES_LIABILITY_CAP_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "REDUCES_LIABILITY_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "TRIGGERS_SEVERANCE_EFFECT": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "PRESERVES_VALIDITY_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "TRIGGERS_RENEGOTIATION_OBLIGATION": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "BEAR_RENEGOTIATION_OBLIGATION": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "OBLIGATED_TO_USE_REASONABLE_EFFORTS": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "REQUESTS_EXECUTION_FROM": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "OBLIGATED_TO_EXECUTE": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "IMPLEMENT_PROVISIONS_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "RETAINS": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "DETERMINES_AMOUNT_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "NOTIFIES_PAYMENT_OBLIGATION_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "MUST_PAY_WITHIN_30_DAYS_OF": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "REPLACES": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "PROCURES": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "REMOVES_FROM": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "DELIVERS_TO": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "ENTERS_INFORMATION_VIA": [
+      "Exhibit-D1-Sunpower-EPC-Contract-Template-CORRECTED_1_1"
+    ],
+    "GRANTS_RIGHT_TO_SET_OFF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "SET_OFFS_OBLIGATIONS_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "OBLIGATES_TO_MAINTAIN": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "BEARS_COSTS_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ENTITLED_TO_DRAW_ON": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "ENTITLED_TO_GIVE_NOTICE_OF_DEFAULT_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "TERMINATES_PAYMENTS_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "COVENANTS_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "MAINTAINS_COVENANT_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "TRIGGERS_TERMINATION_RIGHT_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PROVIDES_TERMINATION_NOTICE_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "HAS_CURE_PERIOD_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "OWES_CONFIDENTIALITY_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "MAY_SEEK": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "SHALL_NOT_OPPOSE": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "DISCLOSES": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "FOLLOWS_OPINION_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "USES_REASONABLE_EFFORTS_TO_PROTECT": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "MAY_BE_DISCLOSED_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "MAY_BE_DISCLOSED_IN_RESPONSE_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "MAY_BE_DISCLOSED_IN_CONNECTION_WITH": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "COMMITS": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "NOT_EXCUSED_BY": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "ELECTS_TO_EXERCISE": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "ELECTS_TO_REQUIRE": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "IMPOSES_PAYMENT_OBLIGATION_ON": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CALCULATED_USING": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "ASSUMES_ROLE_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "READS_DATA_FROM": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "RECEIVES": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IMPOSES_PAYMENT_DEADLINE_ON": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "ACCRUES_INTEREST_FROM_UNPAID_AMOUNT_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "TRIGGERS_OCCURRENCE_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "EXERCISES_REMEDIES_UPON": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "CALCULATES": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "DETERMINES": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "MAY_CONSTITUTE": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "TERMINATES_IF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "DEMANDS_PAYMENT_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "PROTECTS": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "LIMITS_LIABILITY_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "WAIVES_RIGHTS_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "EXCLUDES_LIABILITY_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "ASSUMES_OBLIGATIONS_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DELIVERS_ASSURANCES_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "CONSENTS_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "TRIGGERS_IF_UNAUTHORIZED": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "ATTRIBUTES_BREACH_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "GOVERN_OBLIGATIONS_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "ENTERS_SEPARATE_AGREEMENT_WITH": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "GRANTS_RIGHT_TO_OBTAIN_INFORMATION_FROM": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "IMPOSES_COST_RESPONSIBILITY_ON": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "GRANTS_ACCESS_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CONDUCTS_AUDITS_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "IS_PROVIDED_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "BECOMES_NOTICE_OBLIGOR_IF_RENDERED_UNABLE_BY": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "EXCUSES_LIABILITY_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "GRANTS_RIGHT_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DOES_NOT_OBLIGATE": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "DISCLOSES_INFORMATION_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "CONTROLS_DISCLOSURE_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "DISCLOSES_INFORMATION_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "GOVERNS_DISCLOSURE_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "PARTICIPATES_IN": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IS_NOT_REQUIRED_TO_PAY": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "IS_ENTITLED_TO_RECOVER": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "IS_OBLIGATED_TO_REIMBURSE": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "TRIGGERS_REIMBURSEMENT_OBLIGATION_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "IMPOSES_REIMBURSEMENT_AMOUNT_ON": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "REQUIRES_CONSENT_FROM": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MUST_PROVIDE_ASSURANCES_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "MAY_WITHHOLD_CONSENT_FROM": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "MAY_ASSIGN_TO_WITHOUT_CONSENT_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "PROVIDES_GUARANTY_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "IS_PROHIBITED_FROM_USING_NAME_LOGO_LIKENESS_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "CREATES_EVENT_OF_DEFAULT_BY": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "PERMITS_DISCLOSURE_BY": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "PROHIBITS_IMPLICATION_OF_ENDORSEMENT_BY": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "TERMINATES_OBLIGATIONS_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "BINDING_ON": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "OWES_PERFORMANCE_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "IS_EXCUSED_FROM": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "DOES_NOT_TRIGGER": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "BEARS_COSTS_OF_DELIVERY_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "OBLIGATED_TO_PAY_FOR": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "NOTIFIES_IN_WRITING": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "SECURES_PERFORMANCE_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "BELONGS_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "OPERATES": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "CONTROLS": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "TESTS": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "OBTAINS_AND_MAINTAINS": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "ARRANGES_AND_OBTAINS": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "GENERATES_SCHEDULES_AND_DELIVERS": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "OPERATES_IN_ACCORDANCE_WITH": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "MAINTAINS_OR_SELF_INSURES": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "UNDERWRITES": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "EXCLUDES_ADDITIONAL_INSURED": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "INCLUDES_ADDITIONAL_INSURED": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "WAIVES_SUBROGATION_RIGHTS_AGAINST": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "GRANTS_PRIMARY_INSURANCE_STATUS_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "DOES_NOT_LIMIT_LIABILITY_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "PRESERVES_RIGHTS_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "GRANTS_RIGHT_TO_REQUEST_INSURANCE_POLICIES_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "REQUIRES_PROVISION_OF_INSURANCE_POLICIES_FROM": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "TRIGGERS_INFORMATION_OBLIGATION_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "MAKES_INFORMATION_REQUEST_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "TRIGGERS_REGULATORY_REQUEST_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "REFUNDS_AMOUNT_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "PAYS_AMOUNT_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "REQUIRES_NOTICE_FROM": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CALCULATES_INTEREST_ON_ADJUSTMENT_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "PROVIDES_WRITTEN_EXPLANATION_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "RAISES": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "RECEIVES_DISPUTE_FROM": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "PURSUES_RESOLUTION_UNDER": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "TRIGGERS_PAYMENT_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REQUIRES_NOTICE_FOR": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "REQUESTS_REIMBURSEMENT_FROM": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "DEDUCTS_FROM_PAYMENT_FOR": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "IS_RECEIVED_BY": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "COMMITTED_BY": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "HAS_RIGHT_TO_CURE_WITHIN": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MAY_PURSUIT_REMEDIES_AGAINST": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "MUST_GIVE_NOTICE_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "EXERCISES": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "TERMINATES_AGREEMENT_WITH": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "RESPONDS_TO_NOTICE_FROM": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "NEGOTIATE_RESOLUTION_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "REQUESTS_CONFIDENTIALITY_AGREEMENT": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "AGREES_TO_CONFIDENTIALITY_AGREEMENT": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "REQUESTS_ACKNOWLEDGEMENT_FROM": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "EXECUTES": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "BASED_ON_KNOWLEDGE_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "BASED_ON_INQUIRY_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "DOES_NOT_WAIVE_RIGHTS_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "DOES_NOT_CREATE_RIGHTS_FOR": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "SENDS_NOTICE_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MUST_BE_DELIVERED_BY": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "SENT_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "OBLIGATES_ACCESS_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "OBLIGATES_LIMITED_ACCESS_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "TRIGGERS_ACCESS_OBLIGATION_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "AUTHORIZED_TO_ACCESS": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "AUTHORIZED_TO_ACCESS_LIMITED": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "GRANTS_RIGHT_TO_HAVE_PRESENT": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "BECOMES_EFFECTIVE_ON": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "REQUIRES_APPROVAL_FROM": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "TRANSFERS_TITLE_AND_RISK_OF_LOSS_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "BEARS_COSTS_AND_CHARGES_FOR_BEFORE_DELIVERY_POINT": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "BEARS_COSTS_AND_CHARGES_FOR_AFTER_DELIVERY_POINT": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "ADJUSTS_VAR_PRODUCTION_FOR": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "MAY_REDUCE_PURCHASED_ENERGY_BY": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "RESERVES_RIGHT_TO_INSTALL": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "REQUESTS_PERFORMANCE_ASSURANCE_FROM": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "PROVIDES_PERFORMANCE_ASSURANCE_TO": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "TRIGGERS_RIGHT_TO_REQUEST_PERFORMANCE_ASSURANCE_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "CAPS_PERFORMANCE_ASSURANCE_OBLIGATION_OF": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "BECOMES_UNAVAILABLE_DURING": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "DOES_NOT_CONSTITUTE": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "HAS_NO_RIGHT_TO_TERMINATE": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "BEARS": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "APPLIES_THROUGHOUT": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "REQUIRES_CREATION_BY": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "REQUESTS": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1"
+    ],
+    "OBLIGATED_TO_COMPLY_WITH": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REQUIRES_ACTION_BY": [
+      "LFGTE_Duke_Energy_power_purchase_agrmnt_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "RENDERS": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "IS_REIMBURSED_FOR": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "PROVIDES_SUPPORTING_DOCUMENTATION_TO": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "RECEIVES_NOTICE_FROM": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "GRANTS_CONSENT_TO": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "GRANTS_SECURITY_INTEREST_TO": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "RECEIVES_SECURITY_INTEREST_FROM": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "EXECUTES_CONSENT_AND_AGREEMENT_FOR": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ASSIGNS_RIGHTS_TO": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "KEEPS_IN_CONFIDENCE": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "RESTRAINS_USE_AND_DISCLOSURE_OF": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "OBTAINS_CONSENT_FROM": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "DISCLOSES_TO": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "DISCLOSES_UNDER": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "SEEKS": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "RETURNS_OR_DESTROYS": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "CERTIFIES_COMPLIANCE_TO": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "CAUSES_IRREPARABLE_INJURY_TO": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ENTITLED_TO": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "OBLIGATES_COMPLIANCE_FROM": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "BEARS_EXPENSE_OF": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ASSISTS_COMPLIANCE_WITH": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "REQUIRES_TRAINING_FROM": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "TRAINS": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "PROTECTS_FROM_CROSS_SUBSIDIZATION_BY": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "DETERMINES_EFFECTIVENESS_OF_NOTICE_TO": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "MAY_TERMINATE_WITH_NOTICE_TO": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "GRANTS_TERMINATION_RIGHT_TO": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "COMMENCES_PERFORMANCE_FROM": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ALLOCATES_RESPONSIBILITY_TO": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "BEARS_EXPENSE_OF_COMPLIANCE_BY": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "HOLDS_RESPONSIBILITY_FOR": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "PROVIDES_SERVICE_TO": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "COMPENSATES_FOR": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "IS_GOVERNED_BY": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "CAPPED_BY_CHARGES_TO": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "IS_NOT_SUBSIDIZED_BY": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "IS_NOT_LIABLE_FOR": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "COMMENCES_ON": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "EXPIRES_ON": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "SUBJECT_TO": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ENDS_ON": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "INFORMS": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "CAN_TERMINATE_EARLIER_THAN": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "DESIGNATES": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "COOPERATE_TO_DEVELOP": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "DOES_NOT_LIMIT_REQUESTS_OF": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ENGAGES_AT_OWN_EXPENSE": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "AUDITS": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "VERIFIES_COMPLIANCE_WITH": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "REVIEWS_BOOKS_AND_RECORDS_OF": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "PAYS_OVER_OR_UNDERPAYMENT_TO": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "LIMITS_AUDIT_PERIOD_FOR": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "SHALL_CONSULT_REGARDING": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ARE_NOT_EMPLOYEES_OF": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "COOPERATE_IN": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "KEEPS_ACCURATE": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "MAKES_AVAILABLE_FOR_INSPECTION_AND_AUDIT": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "SUPERSEDES": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "RELYS_ON": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "AGREES_TO": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "PROVIDES_OPERATIONAL_FUNCTIONS_TO": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "GOVERNS": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "WAIVES": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "PROVIDES_SERVICES_TO": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "SHARES": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "USES": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "MANAGES": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "CONTROLS_ACCESS_TO": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "MONITORS": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "TRACKS_AND_MAINTAINS": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "PERTAINS_TO": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "CONTRACTS_WITH": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "ASSISTS_IN_PERFORMANCE_OF": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "DOES_NOT_WAIVE": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "EACH_DEEMED_ORIGINAL": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "DOES_NOT_AFFECT": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "IS_ENFORCED_UNDER": [
+      "NextEra_Corporate_Support_O_M_Agreement_2018_1"
+    ],
+    "SUSPENDS_WORK_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "SoCal_EPC"
+    ],
+    "REQUIRES_SUSPENSION_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TERMINATION_TRIGGERS_RIGHT_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TRIGGERS_COST_OBLIGATION_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "INVOICES_COSTS_TO": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "CAUSES_TERMINATION_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TRIGGERS_INDEMNITY_OBLIGATION_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "DESIGNATES_DEFENSE_COUNSEL": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "SELECTS_SEPARATE_COUNSEL": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "PAYS_DEFENSE_EXPENSES_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "PARTICIPATES_IN_DEFENSE_WITH_EXPENSES_BORNE_BY": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "RESTRICTS_DEFENSE_CONTROL_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "PAYS_REASONABLE_EXPENSES_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "REQUIRES_CONSENT_FROM_BEFORE_SETTLEMENT": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "INCLUDES_INDEMNITY_SCOPE_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TERMINATES_INDEMNITY_OBLIGATION_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "PROVIDES_SECURITY_TO": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TRIGGERS_FORFEITURE_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "SUBJECT_TO_FORFEITURE_TO_DEFRAY": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "AUTHORIZED_TO_DRAW_ON": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "MUST_PROVIDE_SECURITY_IN": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ENABLES_DRAW_ON_BY": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "SUBMITS_INVOICE_TO": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "EVIDENCES_AMOUNT_DUE_FROM": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "EVIDENCES_FINAL_AMOUNT_DUE_FROM": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ARE_OWED_BY": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "DISCHARGES": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "REQUESTS_INFORMATION_FROM": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "SoCal_EPC"
+    ],
+    "HOLDS_CONFIDENTIALITY_OBLIGATION_FOR": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "REQUESTS_CONFIDENTIAL_TREATMENT_FOR": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "PROHIBITED_FROM_NOTIFYING_PRIOR_TO_RELEASE_TO": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "NOTIFIES_UPON_RECEIPT_OF_REQUEST_FROM": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "CONTINUES_TO_OBLIGATE_FOR": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "REQUIRES_POST_TERMINATION_SATISFACTION_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "SATISFIES": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ARISES_FROM": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TRIGGERS_RIGHT_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "GOVERNS_CURE_PERIOD_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "RESTRICTS_DISCLOSURE_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "SUSPENDS_WORK_FOR": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "BEARS_COSTS_FOR": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "REQUIRES_AUTHORIZATION_FROM": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "IS_GRANTED_BY": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "SHARES_SAFETY_AND_RELIABILITY_CRITERIA_WITH": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "EXCHANGES_INFORMATION_WITH": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "REQUIRES_DESIGN_CHANGES_FROM": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "OBLIGATED_TO_MAKE": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "CONDUCTS": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "INFORMS_OF_TERMINATION": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "REQUESTS_ACTION_FROM": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "CONTESTS": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "SEEKS_OR_OBTAINS_CONSENT_FROM": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ADDRESSES": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "OBLIGATES_CANCELLATION_WITH_AUTHORIZATION_FROM": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ASSUMES_PAYMENT_OBLIGATIONS_FOR": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "DELIVERS_AND_ASSIGNS": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "OBLIGATES_REFUND_TO": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "USES_REASONABLE_EFFORTS_TO_MEET": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "HAS_NO_LIABILITY_FOR": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "GRANTS_ACCESS_RIGHTS_TO": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "USES_ACCESS_RIGHTS_FOR": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "BEARS_PAYMENT_OBLIGATION_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "MAY_DRAW_UPON": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "REDUCES": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "REFUNDS": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TRIGGERS_REFUND_OBLIGATION_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "REQUIRES_REFUND_WITHIN_PERIOD_BY": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "RENDERS_INVOICE_TO": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "MAKES_PAYMENT_IN": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "MAKES_PAYMENT_BY": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TRIGGERS_CONTINUATION_OF_PERFORMANCE_BY": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "PROVIDES_NOTICE_OF_DEFAULT_TO": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "PAYS_AMOUNT_DUE_TO": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "GOVERN_INTEREST_CALCULATION_FOR": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "IS_PREVENTED_FROM_FULFILLING_OBLIGATION_BY": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "DESCRIBES_IN_NOTICE": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "EXCUSED_FROM_OBLIGATION_BY": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "EXCUSES_EXISTENCE_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "GRANTS_CURE_PERIOD_TO": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "GRANTS_EXTENDED_CURE_PERIOD_TO": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "IS_OWNED_BY": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "LIABLE_FOR": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "EXCLUDED_FROM_LIABILITY_FOR": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "EXCLUDES_LIMITATION_ON_LIABILITY_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "EXCLUDES_DAMAGES_FROM_EXCLUSION": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "DOES_NOT_RELIEVE_OBLIGATIONS_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "DOES_NOT_ENLARGE_OBLIGATIONS_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "EXCLUDES_INFORMATION_FROM_CONFIDENTIALITY": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "DESIGNATES_AS_CONFIDENTIAL": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "SUPPLIES_INFORMATION_WITHOUT_RESTRICTION": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "REQUIRES_DISCLOSURE_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "REVOKES_CONFIDENTIALITY_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "PREVENTS_PUBLIC_DISCLOSURE_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "PERFORMS_OBLIGATIONS_IN_ACCORDANCE_WITH": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "REQUIRES_NOTICE_TO": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1",
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "GOVERNES_INTEREST_CALCULATION_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ISSUES_REFUND_OR_CREDIT_TO": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "REMIT_REFUND_TO_AFTER_RECEIPT_FROM": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "REMAINS_IN_EFFECT_UNTIL_COMPLETION_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "REMAINS_IN_EFFECT_UNTIL_PAYMENT_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "REMAINS_IN_EFFECT_UNTIL_RELEASE_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "REQUESTS_COMPLETION_BY": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "IS_SUSPENDED_DURING": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "ENDS_UPON": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "COMPLETES": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "PAUSES_RUNNING_OF_ADVANCED_NOTICE_PERIOD_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "REQUIRES_WRITTEN_AGREEMENT_TO_TERMINATE": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TRIGGERS_TERMINATION_COST_RESPONSIBILITY_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "BEARS_COSTS_INCURRED_BY": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "INCLUDED_IN_COST_RESPONSIBILITY_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "REQUIRES_MITIGATION_EFFORTS_BY": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "IS_RESPONSIBLE_FOR_PAYMENT_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "COVERS": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "HAS_RIGHT_TO_DRAW_ON": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "POSTED": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "OBLIGATIONS_SUBJECT_TO": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "MUST_MAKE": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "MUST_USE_EFFORTS_TO_OBTAIN": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "MUST_NOT_JEOPARDIZE": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "DELIVERS_INSTRUMENT_TO": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "IS_DELIVERED_TO": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "IS_DELIVERED_AT": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "GIVES_ADVANCE_NOTICE_OF_CHANGE_TO": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "MUST_BE_MAINTAINED_AFTER_TERMINATION_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "IS_WRITTEN_ON": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "MAY_FORM": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "REQUIRES_AGREEMENT_FROM": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "LIMITS_COVERAGE_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "DEFINES_SCOPE_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "SPECIFIES_FEATURES_OF": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "NAMES_AS_ADDITIONAL_INSUREDS": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "EXECUTED_BY": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "REQUESTS_WRITTEN_BASIS_FROM": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "DISCLOSES_WRITING_TO": [
+      "NYISO-NGrd-NxtEraEPCAgt-EmpireStateLn_EPC_1_1"
+    ],
+    "TRIGGERS_LIABILITY_OF": [
+      "SoCal_EPC",
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "HAS_RIGHT_TO_AUDIT": [
+      "SoCal_EPC"
+    ],
+    "PROVIDES_RESULTS_TO": [
+      "SoCal_EPC"
+    ],
+    "OBLIGATED_TO_REMEDIATE_VULNERABILITIES_FOR": [
+      "SoCal_EPC"
+    ],
+    "DEMANDS_FINANCIAL_ASSURANCES_FROM": [
+      "SoCal_EPC"
+    ],
+    "REQUIRES_SUSPENSION_BY": [
+      "SoCal_EPC"
+    ],
+    "OBLIGATED_TO_RESUME_WORK_FOR": [
+      "SoCal_EPC"
+    ],
+    "REQUIRES_SUBSTANTIATION_TO": [
+      "SoCal_EPC"
+    ],
+    "MUST_BE_SUBMITTED_TO": [
+      "SoCal_EPC"
+    ],
+    "EXCUSES_SUSPENSION_OBLIGATIONS_OF": [
+      "SoCal_EPC"
+    ],
+    "ENGAGES": [
+      "SoCal_EPC"
+    ],
+    "BEARS_LIABILITY_FOR": [
+      "SoCal_EPC"
+    ],
+    "HAS_NO_OBLIGATION_TOWARD": [
+      "SoCal_EPC"
+    ],
+    "IS_NOT_THIRD_PARTY_BENEFICIARY_OF": [
+      "SoCal_EPC"
+    ],
+    "OBJECTS_TO": [
+      "SoCal_EPC"
+    ],
+    "REQUIRES_TO_COMPLY_WITH": [
+      "SoCal_EPC"
+    ],
+    "IS_THIRD_PARTY_BENEFICIARY_OF": [
+      "SoCal_EPC"
+    ],
+    "ASSIGNS_RIGHTS_AND_OBLIGATIONS_TO": [
+      "SoCal_EPC"
+    ],
+    "REQUIRES_TO_PROHIBIT_SUBCONTRACTING": [
+      "SoCal_EPC"
+    ],
+    "PROVIDES_INSURANCE_DOCUMENTATION_TO": [
+      "SoCal_EPC"
+    ],
+    "OBLIGATED_TO_OBTAIN_AND_MAINTAIN": [
+      "SoCal_EPC"
+    ],
+    "ENFORCES_INSURANCE_OBLIGATIONS_ON": [
+      "SoCal_EPC"
+    ],
+    "DEFENDS_AND_INDEMNIFIES": [
+      "SoCal_EPC"
+    ],
+    "ASSISTS_IN_ADJUSTMENT_OF": [
+      "SoCal_EPC"
+    ],
+    "OBLIGATES_TO_COOPERATE_WITH": [
+      "SoCal_EPC"
+    ],
+    "REQUIRES_REPLACEMENT_BY": [
+      "SoCal_EPC"
+    ],
+    "OBLIGATED_TO_EXECUTE_APPLICATIONS_FOR": [
+      "SoCal_EPC"
+    ],
+    "PERMITS_BRINGING_AND_REMOVAL_OF": [
+      "SoCal_EPC"
+    ],
+    "OBLIGATED_TO_PAY_OR_REIMBURSE": [
+      "SoCal_EPC"
+    ],
+    "OBLIGATED_TO_PAY": [
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "OBLIGATED_TO_COOPERATE_WITH": [
+      "SoCal_EPC"
+    ],
+    "OBLIGATED_TO_DELIVER_EVIDENCE_TO": [
+      "SoCal_EPC"
+    ],
+    "OBLIGATES_TO_DELIVER_SECURITY_TO": [
+      "SoCal_EPC"
+    ],
+    "MODIFIES_AMOUNT_OF": [
+      "SoCal_EPC"
+    ],
+    "WITHHOLDS_PAYMENTS_FROM": [
+      "SoCal_EPC"
+    ],
+    "EXERCISES_RIGHT_TO_TERMINATE_PERFORMANCE_OF": [
+      "SoCal_EPC"
+    ],
+    "DRAWS_ON_SECURITY_UPON": [
+      "SoCal_EPC"
+    ],
+    "HOLDS_PROCEEDS_IN_TRUST_FOR": [
+      "SoCal_EPC"
+    ],
+    "OBLIGATES_TO_RESTORE_USE_FOR": [
+      "SoCal_EPC"
+    ],
+    "MAKES_REPAIRS_WITHOUT_NOTICE_TO": [
+      "SoCal_EPC"
+    ],
+    "IMPOSES_COST_OBLIGATION_ON": [
+      "SoCal_EPC"
+    ],
+    "OBLIGATES_TO_OBTAIN_FROM": [
+      "SoCal_EPC"
+    ],
+    "GRANTS_THIRD_PARTY_BENEFICIARY_RIGHTS_TO": [
+      "SoCal_EPC"
+    ],
+    "HAS_DATE": [
+      "SoCal_EPC"
+    ],
+    "COMMENCES": [
+      "SoCal_EPC"
+    ],
+    "DILIGENTLY_PURSUES": [
+      "SoCal_EPC"
+    ],
+    "PERFORMS_IN_COMPLIANCE_WITH": [
+      "SoCal_EPC"
+    ],
+    "COMPLETES_BY": [
+      "SoCal_EPC"
+    ],
+    "OWES_PAYMENT_OF": [
+      "SoCal_EPC"
+    ],
+    "PAYABLE_TO": [
+      "SoCal_EPC"
+    ],
+    "ACCRUES_INTEREST_AT": [
+      "SoCal_EPC"
+    ],
+    "CAPPED_BY": [
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "SUBJECT_TO_CAP": [
+      "SoCal_EPC"
+    ],
+    "HAS_RIGHT_TO_OFFSET_AGAINST": [
+      "SoCal_EPC"
+    ],
+    "OWES_ACHIEVEMENT_OF": [
+      "SoCal_EPC"
+    ],
+    "PRECEDES_OBLIGATION_TO_OPERATE": [
+      "SoCal_EPC"
+    ],
+    "REQUESTS_CHANGE_FROM": [
+      "SoCal_EPC"
+    ],
+    "ACCEPTS_OR_NEGOTIATES_CHANGE_ORDER": [
+      "SoCal_EPC"
+    ],
+    "OBLIGATES_PERFORMANCE_OF": [
+      "SoCal_EPC"
+    ],
+    "ENTITLES_EXTENSION_OF": [
+      "SoCal_EPC"
+    ],
+    "ENTITLES_INCREASE_OF_AFTER_THRESHOLD": [
+      "SoCal_EPC"
+    ],
+    "ARISES_FROM_FAILURE_TO_AGREE_ON": [
+      "SoCal_EPC"
+    ],
+    "REQUIRES_RESPONSE_FROM": [
+      "SoCal_EPC"
+    ],
+    "LIMITS_RIGHT_OF_TO_REQUEST_CHANGE": [
+      "SoCal_EPC"
+    ],
+    "ARE_AMENDED_BY": [
+      "SoCal_EPC"
+    ],
+    "MAY_BE_MODIFIED_BY": [
+      "SoCal_EPC"
+    ],
+    "TRIGGERS_CONTINUING_OBLIGATION_OF": [
+      "SoCal_EPC"
+    ],
+    "TOLLS": [
+      "SoCal_EPC"
+    ],
+    "ACTS_WITHOUT_PREJUDICE_TO": [
+      "SoCal_EPC"
+    ],
+    "ACTS_DESPITE": [
+      "SoCal_EPC"
+    ],
+    "REQUIRES_GOOD_FAITH_PARTICIPATION_OF": [
+      "SoCal_EPC"
+    ],
+    "IS_ATTACHED_TO": [
+      "SoCal_EPC"
+    ],
+    "IS_PART_OF": [
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "HAS_PRECEDENCE_OVER": [
+      "SoCal_EPC"
+    ],
+    "IS_OBLIGATED_UNDER": [
+      "SoCal_EPC"
+    ],
+    "IMPOSES_STRINGENT_REQUIREMENTS_ON": [
+      "SoCal_EPC"
+    ],
+    "GUARANTEES_PERFORMANCE_OF": [
+      "SoCal_EPC"
+    ],
+    "OWES_LIQUIDATED_DAMAGES_TO": [
+      "SoCal_EPC",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ENTITLES_PAYMENT_TO": [
+      "SoCal_EPC"
+    ],
+    "DOES_NOT_CREATE_DUTY_TO": [
+      "SoCal_EPC"
+    ],
+    "DOES_NOT_GRANT_RIGHTS_TO": [
+      "SoCal_EPC"
+    ],
+    "DISCLAIMS_INTENT_TO_BENEFIT": [
+      "SoCal_EPC"
+    ],
+    "SUBJECT_TO_OFFSET_BY": [
+      "SoCal_EPC"
+    ],
+    "PROVIDES_CERTIFICATES_TO": [
+      "SoCal_EPC"
+    ],
+    "EVIDENCES": [
+      "SoCal_EPC"
+    ],
+    "TRIGGERS_IF_NOT_ACHIEVED": [
+      "SoCal_EPC"
+    ],
+    "MUST_BE_ACHIEVED_BY": [
+      "SoCal_EPC"
+    ],
+    "REQUIRES_PURCHASE_OF": [
+      "SoCal_EPC"
+    ],
+    "HAS_OPTION_TO_PURCHASE": [
+      "SoCal_EPC"
+    ],
+    "IMPOSES_LIQUIDATED_DAMAGES_ON": [
+      "SoCal_EPC"
+    ],
+    "TRIGGERS_LIQUIDATED_DAMAGES_RATE_FOR": [
+      "SoCal_EPC"
+    ],
+    "ELECTS_TO_PURCHASE": [
+      "SoCal_EPC"
+    ],
+    "IDENTIFIED_PRIOR_TO_EXPIRATION_OF": [
+      "SoCal_EPC"
+    ],
+    "GUARANTEES_WORKMANSHIP_TO": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "MAINTAINS_CONFIDENTIALITY_FOR": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "HAS_LIABILITY_LIMITED_BY": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "IS_EXEMPT_FROM_LIABILITY_FOR": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "NOTIFIES_OF_LAW_VARIANCE_TO": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "BEARS_COSTS_ARISING_FROM_VIOLATION_TO": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "RISKS_PENALTIES_FOR_NONCOMPLIANCE_WITH": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "GOVERN_INDEMNITY_OBLIGATION_OF": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "REQUIRES_WORK_BY": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "RESPONSIBLE_FOR_PROPER_DISPOSAL_OF": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "TRANSPORTS": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "MAY_REQUEST_TO_EXAMINE": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "OWES_CERTIFICATIONS_TO": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "SUBJECT_TO_MONITORING_BY": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "MAINTAINS_INSURANCE_WITH": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "MAY_SELF_INSURE_WITH_CONSENT_FROM": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "DESIGNATES_SUPERVISOR": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "SUBJECT_TO_BACKGROUND_CHECK_BY": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "MAY_IMPLEMENT_SAFETY_MEASURES_UNDER": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PROVIDES_EMPLOYEE_LIST_TO": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PROHIBITS_USE_OF": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "IS_SUBJECT_TO_MONITORING_BY": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "TRIGGERS_ASSIGNMENT_OF": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "SUSPENDS_TIME_LIMIT_FOR": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "CONTINUES_PERFORMANCE_UNDER": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ALLOCATES_COSTS_TO": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "IS_RESTRICTED_BY": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PERFORMS_INSPECTION_ON": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PERFORMS_MAINTENANCE_ON": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PERFORMS_INSPECTION_AND_TESTING_ON": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PERFORMS_INSPECTION_AND_CLEANING_ON": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PERFORMS_INSPECTION_AND_MAINTENANCE_ON": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "OBLIGATED_TO_PROVIDE": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "HAS_INITIAL_TERM": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "AUTOMATICALLY_RENEWS_TO": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "OFFERS": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ACCEPTS_AT_SOLE_DISCRETION": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "RETAINS_MONEYS_DUE_FROM": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "EXCLUDES_USE_OF": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "GRANTS_FULL_DATA_ACCESS_TO": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "MEASURES": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "SYNCHRONIZES": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ENABLES_DATA_DOWNLOAD_TO": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "INCLUDES_FEE_OBLIGATION_OF": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PROVIDES_RECORDS_TO": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "REVIEWS_WITH": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PROPOSES": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "SUPPLIES_UPON_REQUEST_TO": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "OBLIGATES_PAYMENT_BY": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "SECURES": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REQUIRES_COMPLIANCE_BY": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "REQUIRES_INSURANCE_COVERAGE_FROM": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "OBLIGATES_PROTECTION_OF": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "REQUIRES_COMPLIANCE_FROM": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "DETERMINES_LEAD_FREE_STATUS_OF": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "OBLIGATES_COMPENSATION_FOR": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "APPROVES_COMPLETION_OF": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "GRANTS_AUTHORIZATION_TO": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "EXCLUDES_INDEMNITY_OBLIGATION_OF": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "REQUIRED_TO_MAINTAIN": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ARE_COVERED_BY": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "TRIGGERS_COVERAGE_OF": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "OBLIGATED_TO_DELIVER": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "DELIVERED_TO": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1",
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REQUIRED_TO_OBTAIN": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "NAMES_ADDITIONAL_INSURED": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ESTABLISHES_PRIMARY_STATUS_OF": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "REQUIRES_WAIVER_OF": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "REQUIRED_TO_UPLOAD": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "MUST_BE_UPLOADED_VIA": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "IMPOSES_DEADLINE_ON": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "MAY_REQUEST_REPORTS_FROM": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "INCLUDES_DATA": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "IMPOSES": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "IMPOSES_REQUIREMENTS_ON": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "COORDINATES_WORK_WITH": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "OBLIGATED_TO_PERFORM": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PERFORMED_FOR": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "MAY_PROVIDE": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "MUST_AGREE_TO": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ARE_COMPENSATED_BY": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "TRIGGERS_DEFENSE_AND_INDEMNITY_OBLIGATION_OF": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "EXCLUDES_COVERAGE_FOR": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PROPOSES_LEGAL_REPRESENTATION_TO": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ACCEPTS_OR_REJECTS_LEGAL_REPRESENTATION_PROPOSED_BY": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PROVIDES_NOTIFICATION_TO": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "TRIGGERS_NOTIFICATION_OBLIGATION_OF": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ENTITLED_TO_RECOVER": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "LIMITS_METHOD_OF": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "DOCUMENTS": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PERFORMS_TROUBLESHOOTING_ON": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "RESETS": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PROCESSES_ON_BEHALF_OF": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "PERFORMS_REPAIR_AND_REPLACEMENT_DURING": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "CLASSIFIES": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "IS_CLASSIFIED_AS": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "TRIGGERS_RIGHT_TO_TERMINATE_OF": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "EXCUSES_FAILURE_OF": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "CONSIDERATION_FOR": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "IS_REJECTED_BY": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "REMOVES": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "BEARS_OBLIGATION_TO_COMPly_WITH": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "GIVES_WARRANTY_OF_AUTHORITY_TO": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "MAY_REQUIRE_PROOF_OF_AUTHORITY_FROM": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "MONITORS_SYSTEM_OF": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "ACTS_AS_AGENT_FOR": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "IDENTIFIES_AND_RESPONDS_TO": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "CONTACTS": [
+      "Solar_System_Operations_and_Maintenance_Agreement_1"
+    ],
+    "GUARANTEES_OBLIGATIONS_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "RECOVERS_COSTS_FROM": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "FINANCES": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REGULATES": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DELIVERS_ENERGY_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "GRANTS_RIGHT_TO_ASSIGN_AS_COLLATERAL_UNDER": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PARTICIPATES_IN_FORMING": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "GIVES_NOTICE_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IS_GIVEN_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REQUIRES_REPORT_FROM": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "HAS_RIGHT_TO_CONSENT_BEFORE_TERMINATION_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "HAS_RIGHT_TO_APPROVE_MATERIAL_AMENDMENTS_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MAY_CURE": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MAY_DECLINE_TO_ASSUME": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MUST_CAUSE_TO_ASSUME_OBLIGATIONS": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "HAS_RIGHT_TO_ENTER_INTO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MUST_ENTER_INTO_UPON_REQUEST": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PROVIDES_PROGRESS_REPORT_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "AGREES_TO_PARTICIPATE_IN": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REQUESTS_DOCUMENTATION_FROM": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PROVIDES_DOCUMENTATION_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IS_RESPONSIBLE_FOR_DESIGN_AND_CONSTRUCTION_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "HAS_RIGHT_TO_INCLUDE": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "INCLUDES_REVISED": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "SUPERSEDES_PRIOR_VERSION_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "GRANTS_CAPACITY_ATTRIBUTES_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "COVENANTS_TO_TRANSFER_RESOURCE_ADEQUACY_BENEFITS_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ELECTS_TO_PURCHASE_CAPACITY_FROM": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "NOTIFIES_PURCHASE_ELECTION_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DELIVERS_CERTIFICATE_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "GRANTS_STORAGE_CAPACITY_ATTRIBUTES_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "COVENANTS_TO_TRANSFER_STORAGE_RESOURCE_ADEQUACY_BENEFITS_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PAYS_MONTHLY_STORAGE_RA_PAYMENT_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MUST_TAKE": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "EVALUATES_NOTICE_FROM": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "AGREES_TO_REIMBURSE_FOR": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "WAIVES_OBLIGATION_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "OBLIGATED_DURING": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ENSURES_ISSUANCE_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ENSURES_TRACKING_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "TRANSFERS_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "HOLDS_TITLE_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ESTABLISHES_AND_MAINTAINS": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "TRANSFERS_CERTIFICATES_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REGISTERS": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PERFORMS_REGISTRATION_BEFORE": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MAINTAINS_ACCOUNT_UNTIL": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ACKNOWLEDGES_PAYMENT_TIMING_RELATIVE_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DESCRIBES_EVENT_FOR": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "GIVES_RISE_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MAY_PREJUDICE_RIGHTS_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "GIVES_NOTICE_OF_FAILURE_TO_DEFEND_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MAY_ACCEPT_SETTLEMENT_WITHOUT_CONSENT_IF_RELEASES": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MAY_CONTEST_IF_NO_CONSENT_WITHIN": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "SUPPLIES_AND_DELIVERS": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "SELLS_AND_DELIVERS": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DELIVERS_ENERGY_TO_ON_BEHALF_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MEETS_REQUIREMENTS_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "EXCUSES_PURCHASE_OBLIGATION_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "INCLUDES_AS_ADDITIONAL_INSURED": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REQUIRES_INSURANCE_FROM": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "SUBMITS_REPORT_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IMPOSES_REPORTING_OBLIGATION_ON": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "EXCUSES_OBLIGATION_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MUST_ACHIEVE_BY": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "AVOIDS_DEFAULT_IF_COMPLIES_WITH": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MODIFIES_OBLIGATIONS_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MEASURES_USING": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PROVIDES_METER_DATA_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "OBTAINS_METER_DATA_FROM": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "OWES_SECURITY_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "RETURNS_SECURITY_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "TRIGGERS_REPLENISHMENT_OBLIGATION_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "TRIGGERS_CURE_OBLIGATION_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MUST_PAY_BY": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ADJUSTED_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CHARGES": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CALCULATED_BASED_ON": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PUBLISHED_IN": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ADDED_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ENDS": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "COLLECTS_AS_LIQUIDATED_DAMAGES": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "EXERCISES_RIGHT_TO_WITHHOLD": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "EXERCISES_RIGHT_TO_SUSPEND": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CONSTITUTES_SOLE_REMEDY_FOR": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "LIMITS_REMEDY_OBLIGATION_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "HAS_STATUS_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IS_IN_COMPLIANCE_WITH": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IS_AUTHORIZED_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "HAS_AUTHORITY_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IS_NOT_PROHIBITED_FROM": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "HAS_AUTHORIZED": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REQUIRES_NO_CONSENT_FROM": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "WILL_NOT_BREACH": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "HAS_EXECUTED": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IS_BOUND_BY": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IS_SUBJECT_TO_LIMITATION_BY": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "WAIVES_IMMUNITY_FOR": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IS_LIMITED_BY": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "EXCLUDES_FROM_WAIVER": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DEEMS_AS": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "NULLIFIES": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "OBLIGATES_TO_PAY_COSTS_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "TRIGGERS_EXTENSION_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "LIMITS_DURATION_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DISQUALIFIES_EXTENSION_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REQUIRES_DOCUMENTATION_FROM": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ADJUSTS_AMOUNT_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DEFINES_PERIOD_FOR": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "OBLIGATED_TO_ACHIEVE": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ENTITLED_TO_RECEIVE": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CONDUCTS_INVOICING_VIA": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REQUIRED_TO_PAY_VIA": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "NOT_TRIGGERED_BY_RECEIPT_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "RETAINS_RIGHT_TO_DECLARE": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ENTITLED_TO_RECEIVE_UPON_DEFAULT": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "OBLIGATED_TO_PAY_OR_ACCEPT_SUBJECT_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CONTINUES_OBLIGATIONS_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DELIVERS_DOCUMENT_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "SATISFIES_CONDITION_PRECEDENT_BY_DELIVERING": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "EXECUTES_AND_DELIVERS": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "OBTAINS_OR_APPLIES_FOR": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "RECEIVES_CERTIFICATION": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "COMPLETES_REGISTRATION": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "TRIGGERS_COMMENCEMENT_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PERFORMS_SCHEDULING_FOR": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "EVIDENCES_TRANSFER_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MAY_RESELL": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PROVIDES_REPLACEMENT_RA_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "FAILURE_TO_CONVEY_BY": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CALCULATED_FROM_CAPACITY_DIFFERENCE_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ALTERNATIVE_REMEDY_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "GOVERN_NOTICE_TIMING_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "COMMENCES_OBLIGATION_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DELIVERS_INVOICE_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "COMPLIES_WITH_FORMAT_SPECIFICATION_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ENABLES_PREPARATION_OF_INVOICE_BY": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "RECEIVES_PAYMENT_ADJUSTMENT_FROM": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ISSUES_INVOICE_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "TRIGGERS_PAYMENT_ADJUSTMENT": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "BEARS_INTEREST_UNTIL_SETTLED": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IS_ORGANIZED_UNDER": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IS_QUALIFIED_TO_CONDUCT_BUSINESS_IN": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "HAS_AUTHORITY_TO_EXECUTE": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REPRESENTS_NO_CONFLICT_WITH": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REPRESENTS_VALIDITY_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "OWNS_OR_OPERATES": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IS_RESPONSIBLE_FOR_OBTAINING": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IS_APPLICANT_FOR": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MAY_FINANCE": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MAY_USE": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "BEARS_ATTORNEY_FEES_FOR": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "EXCUSES_FROM_AGREEING_TO_MATERIAL_ADVERSE_TERMS": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MAY_DISCLOSE": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REQUIRES_DISCLOSURE_BY": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "SUBJECTS_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MUST_BE_GENERATED_DURING": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "BEARS_OBLIGATION_UNDER": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IS_ENFORCEABLE_AGAINST": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "DOES_NOT_CONTRAVENE": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ADVERSELY_AFFECTS_ABILITY_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REQUIRES_CONSENT_FOR": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "BEARS_OBLIGATION_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "SUBJECT_TO_OBLIGATION_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REQUIRES_REPORTS_FROM": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MUST_NOTIFY": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "VIOLATION_CONSTITUTES": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "GUARANTEES_PAYMENT_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REPRESENTS_PAYMENT_OBLIGATION_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IS_GUARANTEED_BY": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "TERMINATES_UPON_PROVISION_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "TERMINATES_UPON_FULL_PAYMENT_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "RESERVES_RIGHT_TO_ASSERT": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IS_NOT_RELEASED_BY_AMENDMENTS_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IS_NOT_RELEASED_BY_INDEMNITY_FROM": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IS_NOT_RELEASED_BY_INSURANCE_AVAILABLE_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IS_NOT_RELEASED_BY_INSOLVENCY_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "IS_NOT_INVALIDATED_BY": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "OBLIGATED_TO_APPLY_FOR_AND_OBTAIN": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "OBLIGATED_TO_MAINTAIN_CERTIFICATION_THROUGHOUT": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REQUIRED_TO_NOTIFY": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "TAKES_DELIVERY_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PAYS_COSTS_FOR_DELIVERY_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PAYS_CHARGES_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "SCHEDULES_ENERGY_WITH": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "CONVEYS": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "ARE_DEDICATED_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PERMITTED_TO_REDUCE_DELIVERIES_DURING": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MAY_REDUCE_DELIVERIES_DURING": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MAY_REDUCE_PV_ENERGY_TO_PROVIDE": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MAY_REDUCE_DELIVERIES_AT_ANY_TIME_DURING": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "PERMITTED_TO_REDUCE_DELIVERIES_FOR": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REQUIRES_REIMBURSEMENT_FROM": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REQUIRES_REIMBURSEMENT_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REQUIRES_DOCUMENTATION_TO": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "GRANTS_ACCESS_TO_BOOKS_AND_RECORDS_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "MAY_INITIATE": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "TRIGGERS_INTEREST_ACCRUAL_AT": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ],
+    "REQUIRES_ADJUSTMENT_OF": [
+      "Terra-Gen_SJCE__PPA__PUBLIC_1"
+    ]
+  }
+}

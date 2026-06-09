@@ -71,12 +71,19 @@ def _run_kg_pipeline(
     Returns True if graph was written, False if skipped or failed.
     Non-fatal: caller continues to mark_done even on failure.
     """
-    from app.kg.gremlin_writer import GremlinWriter, gremlin_is_configured
+    from app.kg.gremlin_writer import GremlinWriter
     from app.kg.normalize_tree import normalize_contract_tree_from_dict
     from app.kg.legal_extractor import LegalLLMExtractor
     from app.kg.clause_selector import select_representative_clauses
+    from app.kg.resolution.pipeline import resolve_one_contract
+    from app.kg.resolution.graph_writer import write_resolved_graph
 
-    if not gremlin_is_configured():
+    # Self-contained config check (avoids version-skew on gremlin_writer helpers)
+    if not all([
+        getattr(config, "GREMLIN_ENDPOINT", None),
+        getattr(config, "GREMLIN_USERNAME", None),
+        getattr(config, "GREMLIN_PASSWORD", None),
+    ]):
         logger.info("Job %s: Gremlin not configured, skipping KG pipeline.", job_id)
         return False
 
@@ -88,31 +95,31 @@ def _run_kg_pipeline(
 
         writer = GremlinWriter()
         try:
-            # Select clauses and run LLM extraction
+            # Select clauses (full coverage — no top-N cap) and run LLM extraction.
             job_store.update_stage(job_id, user_id, stage="extracting", progress=82)
-            clauses = select_representative_clauses(normalized.nodes)
+            clauses = select_representative_clauses(normalized.nodes, limit=None)
             logger.info("Job %s: extracting KG from %d clauses", job_id, len(clauses))
 
             extractor = LegalLLMExtractor()
-            extractions = []
+            extraction_dicts = []
             for clause in clauses:
                 try:
                     result = extractor.extract_from_clause(clause)
-                    extractions.append(result)
+                    extraction_dicts.append(result.model_dump())
                 except Exception as e:
                     logger.warning("Job %s: extraction failed for clause %s: %s", job_id, clause.kgId, e)
 
-            # Write semantic entities and relations to Gremlin
+            # Resolve (normalize → de-fragment → canonicalize) then write the clean
+            # two-tier graph. Idempotent: deterministic ids merge into existing
+            # canonical entities across contracts.
             job_store.update_stage(job_id, user_id, stage="graph_writing", progress=90)
-            for extraction in extractions:
-                try:
-                    writer.write_legal_extraction(extraction, config.TENANT_ID, contract_id)
-                except Exception as e:
-                    logger.warning("Job %s: Gremlin write failed for extraction: %s", job_id, e)
+            tenant_id = getattr(config, "TENANT_ID", "default") or "default"
+            resolved = resolve_one_contract(contract_id, tenant_id, extraction_dicts)
+            summary = write_resolved_graph(writer, resolved, tenant_id, log=None)
 
             logger.info(
-                "Job %s: KG pipeline done — %d extractions written to Gremlin",
-                job_id, len(extractions),
+                "Job %s: KG resolution+write done for %s — %s",
+                job_id, contract_id, summary,
             )
             return True
 

@@ -105,7 +105,7 @@ class JobStore:
             self._container.query_items(
                 query=query,
                 parameters=params,
-                enable_cross_partition_query=False,
+                enable_cross_partition_query=True,
             )
         )
 

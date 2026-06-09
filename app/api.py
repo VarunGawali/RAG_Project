@@ -543,6 +543,21 @@ def list_contracts() -> List[ContractSummary]:
     ]
 
 
+@app.delete("/contracts/{contract_id}")
+def delete_contract_endpoint(
+    contract_id: str,
+    x_user_id: Optional[str] = Header(default=None),
+):
+    """
+    Delete a contract everywhere: Azure AI Search, Cosmos Gremlin, and Blob.
+    Returns a per-store summary (best-effort; partial failures are reported).
+    """
+    user_id = _get_user(x_user_id)
+    from app.services.contract_delete import delete_contract
+    summary = delete_contract(contract_id, user_id=user_id)
+    return summary
+
+
 # ──────────────────────────────────────────────
 # Helpers
 # ──────────────────────────────────────────────

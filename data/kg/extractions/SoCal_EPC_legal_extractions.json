@@ -1,0 +1,2944 @@
+[
+  {
+    "source_clause_id": "clause:SoCal_EPC:ARTICLE_V:5_1:COMMENCEMENT_OF_WORK_After_the_date_hereof_subject:d4dab7",
+    "source_clause_title": "5.1 COMMENCEMENT OF WORK. After the date hereof, subject to Section 5.2, Contractor will commence performance of the Work so as to ensure completion of the Work in accordance with the terms hereof.",
+    "source_page_start": 42,
+    "source_page_end": 43,
+    "entities": [
+      {
+        "id": "obligation:SoCal_EPC:commence_performance_of_work",
+        "type": "Obligation",
+        "name": "Commence performance of the Work",
+        "properties": {
+          "description": "Contractor will commence performance of the Work so as to ensure completion of the Work in accordance with the terms hereof",
+          "subject_to": "Section 5.2"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "After the date hereof, subject to Section 5.2, Contractor will commence performance of the Work so as to ensure completion of the Work in accordance with the terms hereof."
+      },
+      {
+        "id": "party:SoCal_EPC:Contractor",
+        "type": "Party",
+        "name": "Contractor",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_V:5_1:COMMENCEMENT_OF_WORK_After_the_date_hereof_subject:d4dab7",
+        "target_id": "obligation:SoCal_EPC:commence_performance_of_work",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "After the date hereof, subject to Section 5.2, Contractor will commence performance of the Work so as to ensure completion of the Work in accordance with the terms hereof."
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:commence_performance_of_work",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor will commence performance of the Work"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:SoCal_EPC:ARTICLE_XVIII:18_12:COUNTERPARTS_This_Agreement_may_be_executed_in_mul:15268a",
+    "source_clause_title": "18.12 COUNTERPARTS. This Agreement may be executed in multiple counterparts, each of which shall be deemed an original, and all of which together shall constitute one and the same instrument.",
+    "source_page_start": 90,
+    "source_page_end": 103,
+    "entities": [
+      {
+        "id": "obligation:SoCal_EPC:execute_in_multiple_counterparts",
+        "type": "Obligation",
+        "name": "Execute Agreement in multiple counterparts",
+        "properties": {
+          "description": "This Agreement may be executed in multiple counterparts, each of which shall be deemed an original, and all of which together shall constitute one and the same instrument."
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "This Agreement may be executed in multiple counterparts, each of which shall be deemed an original, and all of which together shall constitute one and the same instrument."
+      },
+      {
+        "id": "party:SoCal_EPC:Party",
+        "type": "Party",
+        "name": "Party",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "neither Party, its respective officers, directors, employees, agents, representatives, successors, and assigns"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XVIII:18_12:COUNTERPARTS_This_Agreement_may_be_executed_in_mul:15268a",
+        "target_id": "obligation:SoCal_EPC:execute_in_multiple_counterparts",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "This Agreement may be executed in multiple counterparts, each of which shall be deemed an original, and all of which together shall constitute one and the same instrument."
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:execute_in_multiple_counterparts",
+        "target_id": "party:SoCal_EPC:Party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "This Agreement may be executed in multiple counterparts"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:SoCal_EPC:ARTICLE_IX:9_2:Notwithstanding_anything_to_the_contrary_contained:4fb1b4",
+    "source_clause_title": "9.2. Notwithstanding anything to the contrary contained herein, evidence of such coverage shall be provided to Company as a condition precedent to Initial Site Mobilization.",
+    "source_page_start": 53,
+    "source_page_end": 56,
+    "entities": [
+      {
+        "id": "obligation:SoCal_EPC:evidence_coverage_provided_to_company",
+        "type": "Obligation",
+        "name": "Provide evidence of insurance coverage to Company as a condition precedent to Initial Site Mobilization",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "evidence of such coverage shall be provided to Company as a condition precedent to Initial Site Mobilization"
+      },
+      {
+        "id": "party:SoCal_EPC:Contractor",
+        "type": "Party",
+        "name": "Contractor",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall provide Company with complete copies of all ... Contractor Insurance Policies"
+      },
+      {
+        "id": "party:SoCal_EPC:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "evidence of such coverage shall be provided to Company"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_IX:9_2:Notwithstanding_anything_to_the_contrary_contained:4fb1b4",
+        "target_id": "obligation:SoCal_EPC:evidence_coverage_provided_to_company",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "evidence of such coverage shall be provided to Company as a condition precedent to Initial Site Mobilization"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:evidence_coverage_provided_to_company",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall provide Company with complete copies of all ... Contractor Insurance Policies"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:evidence_coverage_provided_to_company",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "evidence of such coverage shall be provided to Company"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:SoCal_EPC:ARTICLE_XII:12_4:PROPRIETARY_RIGHTS:991c0c",
+    "source_clause_title": "12.4 PROPRIETARY RIGHTS.",
+    "source_page_start": 65,
+    "source_page_end": 67,
+    "entities": [
+      {
+        "id": "party:SoCal_EPC:Contractor",
+        "type": "Party",
+        "name": "Contractor",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor"
+      },
+      {
+        "id": "party:SoCal_EPC:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company"
+      },
+      {
+        "id": "obligation:SoCal_EPC:remove_impediment_due_to_claim",
+        "type": "Obligation",
+        "name": "Remove impediment caused by claim or proceeding related to proprietary rights",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall promptly, but in no event later than [*****] from the date of any action or proceeding, take all actions necessary to remove such impediment"
+      },
+      {
+        "id": "obligation:SoCal_EPC:secure_termination_or_replacement",
+        "type": "Obligation",
+        "name": "Secure termination of injunction or replace/modify infringing materials",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "including (a) secure termination of the injunction and procure for Company or its Affiliates or assigns, as applicable, the right to use such materials... or (b) replace such materials... with a non-infringing equivalent, or modify same to become non-infringing"
+      },
+      {
+        "id": "obligation:SoCal_EPC:bear_costs_of_removal",
+        "type": "Obligation",
+        "name": "Bear sole cost and expense of removing impediment without reimbursement",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "all at Contractor’s sole cost and expense and without reimbursement hereunder"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XII:12_4:PROPRIETARY_RIGHTS:991c0c",
+        "target_id": "obligation:SoCal_EPC:remove_impediment_due_to_claim",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall promptly, but in no event later than [*****] from the date of any action or proceeding, take all actions necessary to remove such impediment"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:remove_impediment_due_to_claim",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall promptly... take all actions necessary to remove such impediment"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:remove_impediment_due_to_claim",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "procure for Company or its Affiliates or assigns, as applicable, the right to use such materials"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XII:12_4:PROPRIETARY_RIGHTS:991c0c",
+        "target_id": "obligation:SoCal_EPC:secure_termination_or_replacement",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "including (a) secure termination of the injunction and procure for Company or its Affiliates or assigns... or (b) replace such materials... or modify same to become non-infringing"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:secure_termination_or_replacement",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall... secure termination... or replace... or modify"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:secure_termination_or_replacement",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "procure for Company or its Affiliates or assigns... the right to use such materials"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XII:12_4:PROPRIETARY_RIGHTS:991c0c",
+        "target_id": "obligation:SoCal_EPC:bear_costs_of_removal",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "all at Contractor’s sole cost and expense and without reimbursement hereunder"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:bear_costs_of_removal",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor’s sole cost and expense"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:SoCal_EPC:ARTICLE_I:1_3:EXHIBITS_The_following_exhibits_are_attached_to_an:7f502d",
+    "source_clause_title": "1.3 EXHIBITS. The following exhibits are attached to and incorporated into and made a part of this Agreement: (a)",
+    "source_page_start": 19,
+    "source_page_end": 21,
+    "entities": [
+      {
+        "id": "obligation:SoCal_EPC:incorporate_exhibits",
+        "type": "Obligation",
+        "name": "Incorporate Exhibits into Agreement",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "The following exhibits are attached to and incorporated into and made a part of this Agreement"
+      },
+      {
+        "id": "agreement:SoCal_EPC:227c585e:socal_epc_agreement",
+        "type": "Agreement",
+        "name": "SoCal_EPC Agreement",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "this Agreement"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_I:1_3:EXHIBITS_The_following_exhibits_are_attached_to_an:7f502d",
+        "target_id": "obligation:SoCal_EPC:incorporate_exhibits",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "The following exhibits are attached to and incorporated into and made a part of this Agreement"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:incorporate_exhibits",
+        "target_id": "agreement:SoCal_EPC:227c585e:socal_epc_agreement",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "incorporated into and made a part of this Agreement"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:SoCal_EPC:ARTICLE_XVII:17_4:CONTINUING_OBLIGATIONS_AND_RIGHTS_When_any_Dispute:6b9591",
+    "source_clause_title": "17.4 CONTINUING OBLIGATIONS AND RIGHTS. When any Dispute occurs and is the subject of negotiations or litigation, Contractor shall continue the Work in accordance with the Project",
+    "source_page_start": 85,
+    "source_page_end": 85,
+    "entities": [
+      {
+        "id": "party:SoCal_EPC:Contractor",
+        "type": "Party",
+        "name": "Contractor",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor"
+      },
+      {
+        "id": "party:SoCal_EPC:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company"
+      },
+      {
+        "id": "obligation:SoCal_EPC:continue_work",
+        "type": "Obligation",
+        "name": "Continue the Work in accordance with the Project Schedule and the terms hereof",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall continue the Work in accordance with the Project Schedule and the terms hereof"
+      },
+      {
+        "id": "obligation:SoCal_EPC:make_payments_of_undisputed_amounts",
+        "type": "Obligation",
+        "name": "Make payments of undisputed amounts in accordance with the Contract Documents",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall continue to make payments of undisputed amounts in accordance with the Contract Documents"
+      },
+      {
+        "id": "obligation:SoCal_EPC:parties_exercise_rights_and_fulfill_obligations",
+        "type": "Obligation",
+        "name": "Parties shall continue to exercise their rights and fulfill their respective obligations under the Contract Documents",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Parties shall otherwise continue to exercise their rights, and fulfill their respective obligations, under the Contract Documents"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XVII:17_4:CONTINUING_OBLIGATIONS_AND_RIGHTS_When_any_Dispute:6b9591",
+        "target_id": "obligation:SoCal_EPC:continue_work",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall continue the Work in accordance with the Project Schedule and the terms hereof"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:continue_work",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall continue the Work"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:make_payments_of_undisputed_amounts",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall continue to make payments"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:make_payments_of_undisputed_amounts",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "Company shall continue to make payments of undisputed amounts"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:parties_exercise_rights_and_fulfill_obligations",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "the Parties shall otherwise continue to exercise their rights, and fulfill their respective obligations"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:parties_exercise_rights_and_fulfill_obligations",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "the Parties shall otherwise continue to exercise their rights, and fulfill their respective obligations"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XVII:17_4:CONTINUING_OBLIGATIONS_AND_RIGHTS_When_any_Dispute:6b9591",
+        "target_id": "obligation:SoCal_EPC:make_payments_of_undisputed_amounts",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall continue to make payments of undisputed amounts in accordance with the Contract Documents"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XVII:17_4:CONTINUING_OBLIGATIONS_AND_RIGHTS_When_any_Dispute:6b9591",
+        "target_id": "obligation:SoCal_EPC:parties_exercise_rights_and_fulfill_obligations",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Parties shall otherwise continue to exercise their rights, and fulfill their respective obligations, under the Contract Documents"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:SoCal_EPC:ARTICLE_XV:15_4:SUSPENSION_BY_COMPANY_FOR_CONVENIENCE_a_Company_ma:99611d",
+    "source_clause_title": "15.4 SUSPENSION BY COMPANY FOR CONVENIENCE. (a) Company may suspend all or a portion of the Work to be performed under the Contract Documents at any time for any reason in its sole discretion by giving written notice thereof to Contractor.",
+    "source_page_start": 75,
+    "source_page_end": 79,
+    "entities": [
+      {
+        "id": "party:SoCal_EPC:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company may suspend all or a portion of the Work"
+      },
+      {
+        "id": "party:SoCal_EPC:Contractor",
+        "type": "Party",
+        "name": "Contractor",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "giving written notice thereof to Contractor"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Company_gives_written_notice_of_suspension_to_Contractor",
+        "type": "Obligation",
+        "name": "Company gives written notice of suspension to Contractor",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company may suspend all or a portion of the Work ... by giving written notice thereof to Contractor"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Contractor_discontinue_work_on_receipt_of_suspension_notice",
+        "type": "Obligation",
+        "name": "Contractor immediately discontinues the Work on the date and extent specified in the suspension notice",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall: (i) immediately discontinue the Work on the date and to the extent specified in the notice"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Contractor_place_no_further_orders_for_suspended_work",
+        "type": "Obligation",
+        "name": "Contractor places no further orders or subcontracts for Equipment, services or facilities with respect to suspended Work except as required",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(ii) place no further orders or subcontracts for Equipment, services or facilities with respect to suspended Work, other than to the extent required in the notice"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Contractor_obtain_suspension_of_orders_and_subcontracts",
+        "type": "Obligation",
+        "name": "Contractor promptly makes every reasonable effort to obtain suspension of all orders, subcontracts and rental agreements related to suspended Work",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(iii) promptly make every reasonable effort to obtain suspension, with terms satisfactory to Company, of all orders, subcontracts and rental agreements to the extent they relate to performance of suspended Work"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Contractor_protect_and_maintain_suspended_work",
+        "type": "Obligation",
+        "name": "Contractor continues to protect and maintain the Work performed including suspended portions",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(iv) continue to protect and maintain the Work performed, including those portions on which Work has been suspended"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Contractor_minimize_costs_and_expenses_of_suspension",
+        "type": "Obligation",
+        "name": "Contractor takes reasonable steps to minimize costs and expenses associated with suspension",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(v) take any other reasonable steps to minimize costs and expenses associated with such suspension"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Company_reimburses_Contractor_for_reasonable_suspension_costs",
+        "type": "Obligation",
+        "name": "Company reimburses Contractor for reasonable costs directly resulting from suspension excluding anticipated profit",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor will be reimbursed by Company for the costs, as reasonably incurred, without duplication of any item, to the extent that such costs directly result from such suspension of the Work and to the extent that they do not reflect reimbursement for Contractor’s, Vendors’ or Subcontractors’ anticipated profit"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Contractor_resume_performance_upon_notice",
+        "type": "Obligation",
+        "name": "Contractor resumes performance promptly upon receipt of notice from Company to resume suspended Work",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor agrees to resume performance of the Work promptly upon receipt of notice from Company"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Contractor_request_change_order_after_resumption_notice",
+        "type": "Obligation",
+        "name": "Contractor may request a Change Order within specified period after notice to resume suspended Work, subject to conditions",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor may request a Change Order as a result of a suspension of Work under this Section 15.4 within [*****] after receipt of notice to resume the suspended Work; provided that such suspension was not due to Contractor’s negligence, willful misconduct or noncompliance"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Contractor_provide_access_to_records_for_claim_review",
+        "type": "Obligation",
+        "name": "Contractor permits Company access to pertinent records for reviewing claims of schedule and monetary impact",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall permit access by Company to pertinent records for purposes of reviewing the claims by Contractor of schedule and monetary impact"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Contractor_use_reasonable_efforts_to_minimize_critical_path_impact",
+        "type": "Obligation",
+        "name": "Contractor uses reasonable efforts to minimize effect on Critical Path during resumption",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "during resumption of the Work Contractor shall use reasonable efforts to minimize the effect on the Critical Path of the Work"
+      },
+      {
+        "id": "event:SoCal_EPC:SuspensionNotice",
+        "type": "ObligationTrigger",
+        "name": "Notice of suspension by Company to Contractor",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company may suspend ... by giving written notice thereof to Contractor"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XV:15_4:SUSPENSION_BY_COMPANY_FOR_CONVENIENCE_a_Company_ma:99611d",
+        "target_id": "obligation:SoCal_EPC:Company_gives_written_notice_of_suspension_to_Contractor",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company may suspend ... by giving written notice thereof to Contractor"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Company_gives_written_notice_of_suspension_to_Contractor",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company may suspend ... by giving written notice thereof to Contractor"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Company_gives_written_notice_of_suspension_to_Contractor",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company may suspend ... by giving written notice thereof to Contractor"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XV:15_4:SUSPENSION_BY_COMPANY_FOR_CONVENIENCE_a_Company_ma:99611d",
+        "target_id": "obligation:SoCal_EPC:Contractor_discontinue_work_on_receipt_of_suspension_notice",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall: (i) immediately discontinue the Work on the date and to the extent specified in the notice"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Contractor_discontinue_work_on_receipt_of_suspension_notice",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall: (i) immediately discontinue the Work"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XV:15_4:SUSPENSION_BY_COMPANY_FOR_CONVENIENCE_a_Company_ma:99611d",
+        "target_id": "obligation:SoCal_EPC:Contractor_place_no_further_orders_for_suspended_work",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(ii) place no further orders or subcontracts for Equipment, services or facilities with respect to suspended Work"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Contractor_place_no_further_orders_for_suspended_work",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(ii) place no further orders or subcontracts"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XV:15_4:SUSPENSION_BY_COMPANY_FOR_CONVENIENCE_a_Company_ma:99611d",
+        "target_id": "obligation:SoCal_EPC:Contractor_obtain_suspension_of_orders_and_subcontracts",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(iii) promptly make every reasonable effort to obtain suspension ... of all orders, subcontracts and rental agreements"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Contractor_obtain_suspension_of_orders_and_subcontracts",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(iii) promptly make every reasonable effort to obtain suspension"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XV:15_4:SUSPENSION_BY_COMPANY_FOR_CONVENIENCE_a_Company_ma:99611d",
+        "target_id": "obligation:SoCal_EPC:Contractor_protect_and_maintain_suspended_work",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(iv) continue to protect and maintain the Work performed"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Contractor_protect_and_maintain_suspended_work",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(iv) continue to protect and maintain the Work performed"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XV:15_4:SUSPENSION_BY_COMPANY_FOR_CONVENIENCE_a_Company_ma:99611d",
+        "target_id": "obligation:SoCal_EPC:Contractor_minimize_costs_and_expenses_of_suspension",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(v) take any other reasonable steps to minimize costs and expenses associated with such suspension"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Contractor_minimize_costs_and_expenses_of_suspension",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "(v) take any other reasonable steps to minimize costs and expenses"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XV:15_4:SUSPENSION_BY_COMPANY_FOR_CONVENIENCE_a_Company_ma:99611d",
+        "target_id": "obligation:SoCal_EPC:Company_reimburses_Contractor_for_reasonable_suspension_costs",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor will be reimbursed by Company for the costs ... to the extent that such costs directly result from such suspension"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Company_reimburses_Contractor_for_reasonable_suspension_costs",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor will be reimbursed by Company for the costs"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Company_reimburses_Contractor_for_reasonable_suspension_costs",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor will be reimbursed by Company for the costs"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XV:15_4:SUSPENSION_BY_COMPANY_FOR_CONVENIENCE_a_Company_ma:99611d",
+        "target_id": "obligation:SoCal_EPC:Contractor_resume_performance_upon_notice",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor agrees to resume performance of the Work promptly upon receipt of notice from Company"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Contractor_resume_performance_upon_notice",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor agrees to resume performance of the Work promptly upon receipt of notice from Company"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XV:15_4:SUSPENSION_BY_COMPANY_FOR_CONVENIENCE_a_Company_ma:99611d",
+        "target_id": "obligation:SoCal_EPC:Contractor_request_change_order_after_resumption_notice",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor may request a Change Order as a result of a suspension of Work under this Section 15.4 within [*****] after receipt of notice to resume the suspended Work"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Contractor_request_change_order_after_resumption_notice",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor may request a Change Order as a result of a suspension of Work"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XV:15_4:SUSPENSION_BY_COMPANY_FOR_CONVENIENCE_a_Company_ma:99611d",
+        "target_id": "obligation:SoCal_EPC:Contractor_provide_access_to_records_for_claim_review",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall permit access by Company to pertinent records for purposes of reviewing the claims"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Contractor_provide_access_to_records_for_claim_review",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall permit access by Company to pertinent records"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XV:15_4:SUSPENSION_BY_COMPANY_FOR_CONVENIENCE_a_Company_ma:99611d",
+        "target_id": "obligation:SoCal_EPC:Contractor_use_reasonable_efforts_to_minimize_critical_path_impact",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "during resumption of the Work Contractor shall use reasonable efforts to minimize the effect on the Critical Path"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Contractor_use_reasonable_efforts_to_minimize_critical_path_impact",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall use reasonable efforts to minimize the effect on the Critical Path"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Company_gives_written_notice_of_suspension_to_Contractor",
+        "target_id": "event:SoCal_EPC:SuspensionNotice",
+        "type": "TRIGGERED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company may suspend ... by giving written notice thereof to Contractor"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:SoCal_EPC:ARTICLE_XI:11_4:PAYMENT_OF_LIQUIDATED_DAMAGES_a:62d5bd",
+    "source_clause_title": "11.4 PAYMENT OF LIQUIDATED DAMAGES. (a)",
+    "source_page_start": 60,
+    "source_page_end": 61,
+    "entities": [
+      {
+        "id": "party:SoCal_EPC:Contractor",
+        "type": "Party",
+        "name": "Contractor",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor’s obligation to pay Liquidated Damages"
+      },
+      {
+        "id": "party:SoCal_EPC:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "any default by Company in the performance or observance of any of its obligations hereunder"
+      },
+      {
+        "id": "obligation:SoCal_EPC:pay_liquidated_damages",
+        "type": "Obligation",
+        "name": "Contractor's obligation to pay Liquidated Damages",
+        "properties": {
+          "absolute": true,
+          "unconditional": true,
+          "no_deduction_setoff_reduction_counterclaim": true,
+          "liquidated_damages_limit_schedule": "10% of EPC Price",
+          "liquidated_damages_limit_performance_12_month": "3% of EPC Price",
+          "liquidated_damages_limit_performance_aggregate": "20% of EPC Price"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor’s obligation to pay Liquidated Damages when and as provided in this Article XI is an absolute and unconditional obligation, and shall not be released, discharged, diminished, or in any way affected by (i) any default by Company ... Contractor shall pay such Liquidated Damages without deduction, set-off, reduction or counterclaim. ... (c) Notwithstanding anything contained herein to the contrary (i) Schedule Liquidated Damages shall not exceed an amount equal to ten percent (10%) of the EPC Price, and (ii) Performance Liquidated Damages shall not exceed an amount equal to: (1) three percent (3%) of the EPC Price during each twelve (12) month period following the Substantial Completion Date; and (2) twenty percent (20%) of the EPC Price in the aggregate during the Term"
+      },
+      {
+        "id": "obligation:SoCal_EPC:pay_interest_on_overdue_liquidated_damages",
+        "type": "Obligation",
+        "name": "Accrue interest on unpaid Liquidated Damages",
+        "properties": {
+          "interest_rate_reference": "Reference Rate",
+          "interest_accrual_period": "from due date until paid"
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "Any amounts not paid when due shall accrue interest from the due date until paid at the Reference Rate (established as of the first day of the month in which payment is due)"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Company_offset_right",
+        "type": "Obligation",
+        "name": "Company's right to offset amounts owing under Article XI",
+        "properties": {
+          "offset_right": true,
+          "discretionary_order": true
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall have the right to offset any amounts owing to Company under this Article XI against payments or other amounts owing to Contractor and to exercise its rights against any security provided by or for the benefit of Contractor, in such order as Company may elect in its sole discretion"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XI:11_4:PAYMENT_OF_LIQUIDATED_DAMAGES_a:62d5bd",
+        "target_id": "obligation:SoCal_EPC:pay_liquidated_damages",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor’s obligation to pay Liquidated Damages when and as provided in this Article XI is an absolute and unconditional obligation"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:pay_liquidated_damages",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor’s obligation to pay Liquidated Damages"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:pay_liquidated_damages",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor’s obligation to pay Liquidated Damages"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XI:11_4:PAYMENT_OF_LIQUIDATED_DAMAGES_a:62d5bd",
+        "target_id": "obligation:SoCal_EPC:pay_interest_on_overdue_liquidated_damages",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Any amounts not paid when due shall accrue interest from the due date until paid at the Reference Rate"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:pay_interest_on_overdue_liquidated_damages",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor’s obligation to pay Liquidated Damages"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:pay_interest_on_overdue_liquidated_damages",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor’s obligation to pay Liquidated Damages"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XI:11_4:PAYMENT_OF_LIQUIDATED_DAMAGES_a:62d5bd",
+        "target_id": "obligation:SoCal_EPC:Company_offset_right",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall have the right to offset any amounts owing to Company under this Article XI against payments or other amounts owing to Contractor"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Company_offset_right",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall have the right to offset any amounts owing to Company"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Company_offset_right",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "offset any amounts owing to Company under this Article XI against payments or other amounts owing to Contractor"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:SoCal_EPC:ARTICLE_XVIII:18_10:NO_THIRD_PARTY_BENEFICIARY:2cfb61",
+    "source_clause_title": "18.10 NO THIRD-PARTY BENEFICIARY.",
+    "source_page_start": 89,
+    "source_page_end": 90,
+    "entities": [
+      {
+        "id": "obligation:SoCal_EPC:no_third_party_beneficiary",
+        "type": "Obligation",
+        "name": "No third-party beneficiary rights",
+        "properties": {
+          "description": "No person that is not a Party shall have any rights or interest, direct or indirect, in the Contract Documents or the services to be provided hereunder, except for permitted successors and assigns and indemnitees under Article XVI and Section 18.13(a). The Contract Documents are intended solely for the benefit of the Parties."
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "nothing in the Contract Documents nor any action taken hereunder shall be construed to create any duty, liability or standard of care to any Person that is not a Party, (b) no person that is not a Party shall have any rights or interest, direct or indirect, in the Contract Documents or the services to be provided hereunder, and (c) the Contract Documents are intended solely for the benefit of the Parties, and the Parties expressly disclaim any intent to create any rights in any third-party as a third-party beneficiary to the Contract Documents or the services to be provided hereunder."
+      },
+      {
+        "id": "party:SoCal_EPC:party",
+        "type": "Party",
+        "name": "Party",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Contract Documents are intended solely for the benefit of the Parties"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XVIII:18_10:NO_THIRD_PARTY_BENEFICIARY:2cfb61",
+        "target_id": "obligation:SoCal_EPC:no_third_party_beneficiary",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "nothing in the Contract Documents nor any action taken hereunder shall be construed to create any duty, liability or standard of care to any Person that is not a Party, (b) no person that is not a Party shall have any rights or interest, direct or indirect, in the Contract Documents or the services to be provided hereunder, and (c) the Contract Documents are intended solely for the benefit of the Parties"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:no_third_party_beneficiary",
+        "target_id": "party:SoCal_EPC:party",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Contract Documents are intended solely for the benefit of the Parties"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:no_third_party_beneficiary",
+        "target_id": "party:SoCal_EPC:party",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Contract Documents are intended solely for the benefit of the Parties"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:SoCal_EPC:ARTICLE_XIII:13_2:SURVIVAL_OF_REPRESENTATIONS_AND_WARRANTIES_The_rep:d3d6e6",
+    "source_clause_title": "13.2 SURVIVAL OF REPRESENTATIONS AND WARRANTIES. The representations and warranties of Contractor and Company herein shall survive execution and termination of this Agreement.",
+    "source_page_start": 69,
+    "source_page_end": 70,
+    "entities": [
+      {
+        "id": "obligation:SoCal_EPC:survival_of_representations_and_warranties",
+        "type": "Obligation",
+        "name": "Survival of representations and warranties",
+        "properties": {
+          "description": "The representations and warranties of Contractor and Company shall survive execution and termination of this Agreement."
+        },
+        "confidence": 1.0,
+        "evidenceQuote": "The representations and warranties of Contractor and Company herein shall survive execution and termination of this Agreement."
+      },
+      {
+        "id": "party:SoCal_EPC:contractor",
+        "type": "Party",
+        "name": "Contractor",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The representations and warranties of Contractor"
+      },
+      {
+        "id": "party:SoCal_EPC:company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The representations and warranties of ... Company"
+      },
+      {
+        "id": "agreement:SoCal_EPC:agreement",
+        "type": "Agreement",
+        "name": "Agreement",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "shall survive execution and termination of this Agreement."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XIII:13_2:SURVIVAL_OF_REPRESENTATIONS_AND_WARRANTIES_The_rep:d3d6e6",
+        "target_id": "obligation:SoCal_EPC:survival_of_representations_and_warranties",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The representations and warranties of Contractor and Company herein shall survive execution and termination of this Agreement."
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:survival_of_representations_and_warranties",
+        "target_id": "party:SoCal_EPC:contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The representations and warranties of Contractor"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:survival_of_representations_and_warranties",
+        "target_id": "party:SoCal_EPC:company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "The representations and warranties of ... Company"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:survival_of_representations_and_warranties",
+        "target_id": "agreement:SoCal_EPC:agreement",
+        "type": "APPLIES_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "shall survive execution and termination of this Agreement."
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:SoCal_EPC:ARTICLE_XVIII:1:The_service_packages_shall_be_structured_as_descri:f6f157",
+    "source_clause_title": "1. The service packages shall be structured as described below and as shown in Table 1. Table",
+    "source_page_start": 103,
+    "source_page_end": 104,
+    "entities": [],
+    "relationships": []
+  },
+  {
+    "source_clause_id": "clause:SoCal_EPC:ARTICLE_XI:11_3:PERFORMANCE_GUARANTEES_a_As_set_forth_in_the_Purch:f207a0",
+    "source_clause_title": "11.3 PERFORMANCE GUARANTEES. (a) As set forth in the Purchase Order, Contractor guarantees that the ESS will operate to meet or exceed the performance levels set forth in",
+    "source_page_start": 60,
+    "source_page_end": 60,
+    "entities": [
+      {
+        "id": "party:SoCal_EPC:Contractor",
+        "type": "Party",
+        "name": "Contractor",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor guarantees that the ESS will operate to meet or exceed the performance levels set forth"
+      },
+      {
+        "id": "party:SoCal_EPC:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company and Contractor acknowledge and agree that any failure to meet the Performance Guarantees will directly cause substantial damage to Company"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Contractor_meet_performance_guarantees",
+        "type": "Obligation",
+        "name": "Contractor to meet or exceed Performance Guarantees",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor guarantees that the ESS will operate to meet or exceed the performance levels set forth"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Contractor_pay_performance_liquidated_damages",
+        "type": "Obligation",
+        "name": "Contractor to pay Performance Liquidated Damages to Company if Performance Guarantees are not met",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "if Contractor shall fail to meet the Performance Guarantees, subject to Section 11.4(c), it shall pay to Company, as liquidated and agreed damages and not as a penalty, an amount (collectively, the “Performance Liquidated Damages”) as set forth in Exhibit M within [*****] after the end of any Operating Year"
+      },
+      {
+        "id": "agreement:SoCal_EPC:Performance_Liquidated_Damages_are_exclusive_remedy",
+        "type": "Agreement",
+        "name": "Payment of Performance Liquidated Damages are the exclusive remedies for Contractor’s failure to meet the Performance Guarantees",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Payment of Performance Liquidated Damages are the exclusive remedies for Contractor’s failure to meet the Performance Guarantees"
+      },
+      {
+        "id": "deadline:SoCal_EPC:Performance_Liquidated_Damages_payment_deadline",
+        "type": "Deadline",
+        "name": "Payment deadline for Performance Liquidated Damages",
+        "properties": {
+          "timeframe": "within [*****] after the end of any Operating Year (or portion thereof) during which Contractor shall fail to meet the Performance Guarantees"
+        },
+        "confidence": 0.9,
+        "evidenceQuote": "within [*****] after the end of any Operating Year (or portion thereof) during which Contractor shall fail to meet the Performance Guarantees"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XI:11_3:PERFORMANCE_GUARANTEES_a_As_set_forth_in_the_Purch:f207a0",
+        "target_id": "obligation:SoCal_EPC:Contractor_meet_performance_guarantees",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor guarantees that the ESS will operate to meet or exceed the performance levels set forth"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Contractor_meet_performance_guarantees",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor guarantees that the ESS will operate to meet or exceed the performance levels set forth"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Contractor_pay_performance_liquidated_damages",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "if Contractor shall fail to meet the Performance Guarantees, subject to Section 11.4(c), it shall pay to Company"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Contractor_pay_performance_liquidated_damages",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "if Contractor shall fail to meet the Performance Guarantees, subject to Section 11.4(c), it shall pay to Company"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Contractor_pay_performance_liquidated_damages",
+        "target_id": "deadline:SoCal_EPC:Performance_Liquidated_Damages_payment_deadline",
+        "type": "HAS_DEADLINE",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "within [*****] after the end of any Operating Year (or portion thereof) during which Contractor shall fail to meet the Performance Guarantees"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XI:11_3:PERFORMANCE_GUARANTEES_a_As_set_forth_in_the_Purch:f207a0",
+        "target_id": "obligation:SoCal_EPC:Contractor_pay_performance_liquidated_damages",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "if Contractor shall fail to meet the Performance Guarantees, subject to Section 11.4(c), it shall pay to Company"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XI:11_3:PERFORMANCE_GUARANTEES_a_As_set_forth_in_the_Purch:f207a0",
+        "target_id": "agreement:SoCal_EPC:Performance_Liquidated_Damages_are_exclusive_remedy",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Payment of Performance Liquidated Damages are the exclusive remedies for Contractor’s failure to meet the Performance Guarantees"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:SoCal_EPC:ARTICLE_V:5_4:LIQUIDATED_DAMAGES_Nothing_contained_in_this_Artic:00cc6e",
+    "source_clause_title": "5.4 LIQUIDATED DAMAGES. Nothing contained in this Article V shall relieve Contractor of its obligation to pay",
+    "source_page_start": 43,
+    "source_page_end": 43,
+    "entities": [
+      {
+        "id": "obligation:SoCal_EPC:pay_schedule_liquidated_damages_if_substantial_completion_not_achieved",
+        "type": "Obligation",
+        "name": "Pay Schedule Liquidated Damages if Substantial Completion is not achieved by the Guaranteed Completion Date",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Schedule Liquidated Damages in the event that Substantial Completion is not achieved by the Guaranteed Completion Date."
+      },
+      {
+        "id": "party:SoCal_EPC:Contractor",
+        "type": "Party",
+        "name": "Contractor",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Nothing contained in this Article V shall relieve Contractor of its obligation to pay"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_V:5_4:LIQUIDATED_DAMAGES_Nothing_contained_in_this_Artic:00cc6e",
+        "target_id": "obligation:SoCal_EPC:pay_schedule_liquidated_damages_if_substantial_completion_not_achieved",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Nothing contained in this Article V shall relieve Contractor of its obligation to pay Schedule Liquidated Damages in the event that Substantial Completion is not achieved by the Guaranteed Completion Date."
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:pay_schedule_liquidated_damages_if_substantial_completion_not_achieved",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Nothing contained in this Article V shall relieve Contractor of its obligation to pay"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:SoCal_EPC:ARTICLE_IX:9_3:QUALIFIED_INSURERS_All_Contractor_Insurance_Polici:f63499",
+    "source_clause_title": "9.3 QUALIFIED INSURERS. All Contractor Insurance Policies shall be written by insurers that are authorized to do business in the state in which the Work is to be performed, and rated [*****] or higher by [*****].",
+    "source_page_start": 53,
+    "source_page_end": 53,
+    "entities": [
+      {
+        "id": "obligation:SoCal_EPC:provide_certificates_of_insurance",
+        "type": "Obligation",
+        "name": "Provide certificates of insurance to Company",
+        "properties": {
+          "deadline": "[*****] of commencement of the Work or no later than date Contractor enters the Job Site or upon issuance of policies if earlier",
+          "frequency": "on each issuance anniversary while insurance is in effect",
+          "form_and_substance": "acceptable to Company",
+          "evidence": "Contractor shall provide Company with certificates of insurance, in form and substance acceptable to Company, evidencing and describing Contractors Insurance Policies and endorsements maintained hereunder within [*****] of commencement of the Work, but in no event later than the date Contractor enters the Job Site, or upon issuance of such policies, if earlier, and on each issuance anniversary while such insurance is in effect"
+        },
+        "confidence": 0.95,
+        "evidenceQuote": "Contractor shall provide Company with certificates of insurance, in form and substance acceptable to Company, evidencing and describing Contractors Insurance Policies and endorsements maintained hereunder within [*****] of commencement of the Work, but in no event later than the date Contractor enters the Job Site, or upon issuance of such policies, if earlier, and on each issuance anniversary while such insurance is in effect."
+      },
+      {
+        "id": "obligation:SoCal_EPC:provide_notice_of_insurance_changes",
+        "type": "Obligation",
+        "name": "Provide written notice to Company of changes, non-renewal or cancellation of insurance policies",
+        "properties": {
+          "notice_period": "at least [*****] in advance",
+          "evidence": "Contractor shall provide Company written notice at least [*****] in advance of any change in, non-renewal of or cancellation of such insurance policies"
+        },
+        "confidence": 0.95,
+        "evidenceQuote": "Contractor shall provide Company written notice at least [*****] in advance of any change in, non-renewal of or cancellation of such insurance policies."
+      },
+      {
+        "id": "party:SoCal_EPC:Contractor",
+        "type": "Party",
+        "name": "Contractor",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor"
+      },
+      {
+        "id": "party:SoCal_EPC:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_IX:9_3:QUALIFIED_INSURERS_All_Contractor_Insurance_Polici:f63499",
+        "target_id": "obligation:SoCal_EPC:provide_certificates_of_insurance",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Contractor shall provide Company with certificates of insurance, in form and substance acceptable to Company, evidencing and describing Contractors Insurance Policies and endorsements maintained hereunder within [*****] of commencement of the Work, but in no event later than the date Contractor enters the Job Site, or upon issuance of such policies, if earlier, and on each issuance anniversary while such insurance is in effect."
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_IX:9_3:QUALIFIED_INSURERS_All_Contractor_Insurance_Polici:f63499",
+        "target_id": "obligation:SoCal_EPC:provide_notice_of_insurance_changes",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Contractor shall provide Company written notice at least [*****] in advance of any change in, non-renewal of or cancellation of such insurance policies."
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:provide_certificates_of_insurance",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall provide Company with certificates of insurance"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:provide_certificates_of_insurance",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall provide Company with certificates of insurance"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:provide_notice_of_insurance_changes",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall provide Company written notice"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:provide_notice_of_insurance_changes",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall provide Company written notice"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:SoCal_EPC:ARTICLE_IV:4_1:THE_PROPERTY_SITE_Company_shall_obtain_the_Company:8a2d84",
+    "source_clause_title": "4.1 THE PROPERTY SITE. Company shall obtain the Company Permits necessary for Contractor to have access to, and perform the Work on the Property Site.",
+    "source_page_start": 41,
+    "source_page_end": 42,
+    "entities": [
+      {
+        "id": "party:SoCal_EPC:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company"
+      },
+      {
+        "id": "party:SoCal_EPC:Contractor",
+        "type": "Party",
+        "name": "Contractor",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor"
+      },
+      {
+        "id": "obligation:SoCal_EPC:obtain_company_permits",
+        "type": "Obligation",
+        "name": "Obtain Company Permits necessary for Contractor to have access to and perform the Work on the Property Site",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall obtain the Company Permits necessary for Contractor to have access to, and perform the Work on the Property Site."
+      },
+      {
+        "id": "obligation:SoCal_EPC:timely_obtain_and_maintain_company_permits",
+        "type": "Obligation",
+        "name": "Timely obtain and maintain all Company Permits at its own cost and expense with Contractor’s reasonable assistance",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall, with Contractor’s reasonable assistance, timely obtain and maintain, at its own cost and expense, all Company Permits."
+      },
+      {
+        "id": "obligation:SoCal_EPC:execute_applications_for_contractor_permits",
+        "type": "Obligation",
+        "name": "Execute applications as Contractor may reasonably request in connection with obtaining Contractor Permits",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall execute such applications as Contractor may reasonably request in connection with obtaining any of the Contractor Permits."
+      },
+      {
+        "id": "obligation:SoCal_EPC:deliver_evidence_of_company_permits",
+        "type": "Obligation",
+        "name": "Deliver to Contractor evidence that Company Permits necessary to begin construction of the ESS have been received or approved for issuance",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall deliver to Contractor evidence that the Company Permits necessary to begin construction of the ESS have been received by Company or, if any such required Company Permit has not actually been issued, that it has been approved for issuance, or in the opinion of Company, will be approved for issuance."
+      },
+      {
+        "id": "obligation:SoCal_EPC:permit_access_to_property_site",
+        "type": "Obligation",
+        "name": "Permit Contractor employees, agents, Subcontractors and Vendors uninterrupted access to the Job Site from Agreement date until Final Acceptance",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall permit the employees and agents of Contractor and its Subcontractors and Vendors to have uninterrupted access to the portions of the Property Site constituting the Job Site as may be reasonably required by Contractor in order to perform the Work"
+      },
+      {
+        "id": "obligation:SoCal_EPC:permit_access_after_final_acceptance_with_notice",
+        "type": "Obligation",
+        "name": "Permit access to Property Site after Final Acceptance upon reasonable notice and during reasonable times for repair or replacement of Defects or non-compliant Work",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Thereafter, upon reasonable notice and during reasonable times... Company shall permit the employees and agents of Contractor and its Subcontractors and Vendors to have access to the Property Site as necessary to repair or replace Defects or other Work that is not in compliance with the Contract Documents."
+      },
+      {
+        "id": "obligation:SoCal_EPC:permit_bringing_and_removal_of_contractor_equipment",
+        "type": "Obligation",
+        "name": "Permit Contractor and related personnel to bring onto and remove Contractor Equipment from the Property Site",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the references to access contemplate... they also will be permitted to bring onto and remove from the Property Site any and all kinds of Contractor Equipment."
+      },
+      {
+        "id": "obligation:SoCal_EPC:obtain_easements_and_rights_of_way",
+        "type": "Obligation",
+        "name": "Obtain easements and rights of way over property of others for construction of site access road at own cost and expense",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall obtain, at its own cost and expense, any easements and rights of way over the property of others for the construction of the site access road"
+      },
+      {
+        "id": "obligation:SoCal_EPC:pay_or_reimburse_company_taxes",
+        "type": "Obligation",
+        "name": "Pay or reimburse Contractor for Company Taxes within [*****] of receipt of invoice and evidence of payment",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall pay, or reimburse to the Contractor within [*****] of receipt of an invoice and evidence of payment by Contractor, all real property taxes assessed against the Property Site..."
+      },
+      {
+        "id": "obligation:SoCal_EPC:cooperate_and_supply_material_information",
+        "type": "Obligation",
+        "name": "Cooperate materially and make reasonable efforts to supply material information and data required for performance of the Work",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall cooperate in all material respects to permit Contractor to perform its obligations hereunder and shall make reasonable efforts to supply to Contractor, in a timely manner, either directly or indirectly, material information and data that is available to Company and that is required for the performance of the Work"
+      },
+      {
+        "id": "party:SoCal_EPC:Contractor_Subcontractors_and_Vendors",
+        "type": "Party",
+        "name": "Contractor and its Subcontractors and Vendors",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor and its Subcontractors and Vendors"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_IV:4_1:THE_PROPERTY_SITE_Company_shall_obtain_the_Company:8a2d84",
+        "target_id": "obligation:SoCal_EPC:obtain_company_permits",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall obtain the Company Permits necessary for Contractor to have access to, and perform the Work on the Property Site."
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:obtain_company_permits",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall obtain the Company Permits"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:obtain_company_permits",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "necessary for Contractor to have access to, and perform the Work"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_IV:4_1:THE_PROPERTY_SITE_Company_shall_obtain_the_Company:8a2d84",
+        "target_id": "obligation:SoCal_EPC:timely_obtain_and_maintain_company_permits",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall, with Contractor’s reasonable assistance, timely obtain and maintain, at its own cost and expense, all Company Permits."
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:timely_obtain_and_maintain_company_permits",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall... obtain and maintain"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_IV:4_1:THE_PROPERTY_SITE_Company_shall_obtain_the_Company:8a2d84",
+        "target_id": "obligation:SoCal_EPC:execute_applications_for_contractor_permits",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall execute such applications as Contractor may reasonably request in connection with obtaining any of the Contractor Permits."
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:execute_applications_for_contractor_permits",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall execute such applications"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_IV:4_1:THE_PROPERTY_SITE_Company_shall_obtain_the_Company:8a2d84",
+        "target_id": "obligation:SoCal_EPC:deliver_evidence_of_company_permits",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall deliver to Contractor evidence that the Company Permits necessary to begin construction of the ESS have been received"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:deliver_evidence_of_company_permits",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall deliver to Contractor evidence"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:deliver_evidence_of_company_permits",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "deliver to Contractor evidence"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_IV:4_1:THE_PROPERTY_SITE_Company_shall_obtain_the_Company:8a2d84",
+        "target_id": "obligation:SoCal_EPC:permit_access_to_property_site",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall permit the employees and agents of Contractor and its Subcontractors and Vendors to have uninterrupted access to the portions of the Property Site"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:permit_access_to_property_site",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall permit"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:permit_access_to_property_site",
+        "target_id": "party:SoCal_EPC:Contractor_Subcontractors_and_Vendors",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "permit the employees and agents of Contractor and its Subcontractors and Vendors"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_IV:4_1:THE_PROPERTY_SITE_Company_shall_obtain_the_Company:8a2d84",
+        "target_id": "obligation:SoCal_EPC:permit_access_after_final_acceptance_with_notice",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Thereafter, upon reasonable notice and during reasonable times... Company shall permit the employees and agents of Contractor and its Subcontractors and Vendors to have access"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:permit_access_after_final_acceptance_with_notice",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall permit"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:permit_access_after_final_acceptance_with_notice",
+        "target_id": "party:SoCal_EPC:Contractor_Subcontractors_and_Vendors",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "permit the employees and agents of Contractor and its Subcontractors and Vendors"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_IV:4_1:THE_PROPERTY_SITE_Company_shall_obtain_the_Company:8a2d84",
+        "target_id": "obligation:SoCal_EPC:permit_bringing_and_removal_of_contractor_equipment",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "they also will be permitted to bring onto and remove from the Property Site any and all kinds of Contractor Equipment."
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:permit_bringing_and_removal_of_contractor_equipment",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall permit"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:permit_bringing_and_removal_of_contractor_equipment",
+        "target_id": "party:SoCal_EPC:Contractor_Subcontractors_and_Vendors",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "permitted to bring onto and remove from the Property Site any and all kinds of Contractor Equipment"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_IV:4_1:THE_PROPERTY_SITE_Company_shall_obtain_the_Company:8a2d84",
+        "target_id": "obligation:SoCal_EPC:obtain_easements_and_rights_of_way",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall obtain, at its own cost and expense, any easements and rights of way over the property of others for the construction of the site access road"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:obtain_easements_and_rights_of_way",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall obtain"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_IV:4_1:THE_PROPERTY_SITE_Company_shall_obtain_the_Company:8a2d84",
+        "target_id": "obligation:SoCal_EPC:pay_or_reimburse_company_taxes",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall pay, or reimburse to the Contractor within [*****] of receipt of an invoice and evidence of payment by Contractor, all real property taxes assessed against the Property Site"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:pay_or_reimburse_company_taxes",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall pay, or reimburse"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:pay_or_reimburse_company_taxes",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "reimburse to the Contractor"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_IV:4_1:THE_PROPERTY_SITE_Company_shall_obtain_the_Company:8a2d84",
+        "target_id": "obligation:SoCal_EPC:cooperate_and_supply_material_information",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall cooperate in all material respects to permit Contractor to perform its obligations hereunder and shall make reasonable efforts to supply to Contractor, in a timely manner, either directly or indirectly, material information and data that is available to Company and that is required for the performance of the Work"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:cooperate_and_supply_material_information",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall cooperate"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:cooperate_and_supply_material_information",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "supply to Contractor... material information and data"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:SoCal_EPC:ARTICLE_XVIII:7_1:Covers_Years_11_through_15:9da692",
+    "source_clause_title": "7.1. Covers Years 11 through 15.",
+    "source_page_start": 104,
+    "source_page_end": 105,
+    "entities": [
+      {
+        "id": "obligation:SoCal_EPC:fixed_energy_capacity_service_package_extension_c_purchase_identification",
+        "type": "Obligation",
+        "name": "Identification of Fixed Energy Capacity Service Package – Extension C purchase prior to expiration of preceding service package",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "if SCE elects to purchase this option, it would be identified prior to the expiration of the preceding service package"
+      },
+      {
+        "id": "obligation:SoCal_EPC:maintenance_only_service_package_extension_c_purchase_identification",
+        "type": "Obligation",
+        "name": "Identification of Maintenance Only Service Package – Extension C purchase prior to expiration of preceding service package",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "if SCE elects to purchase this option, it would be identified prior to the expiration of the preceding service package"
+      },
+      {
+        "id": "party:SoCal_EPC:SCE",
+        "type": "Party",
+        "name": "SCE",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "if SCE elects to purchase this option"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XVIII:7_1:Covers_Years_11_through_15:9da692",
+        "target_id": "obligation:SoCal_EPC:fixed_energy_capacity_service_package_extension_c_purchase_identification",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "if SCE elects to purchase this option, it would be identified prior to the expiration of the preceding service package"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:fixed_energy_capacity_service_package_extension_c_purchase_identification",
+        "target_id": "party:SoCal_EPC:SCE",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "if SCE elects to purchase this option"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XVIII:7_1:Covers_Years_11_through_15:9da692",
+        "target_id": "obligation:SoCal_EPC:maintenance_only_service_package_extension_c_purchase_identification",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "if SCE elects to purchase this option, it would be identified prior to the expiration of the preceding service package"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:maintenance_only_service_package_extension_c_purchase_identification",
+        "target_id": "party:SoCal_EPC:SCE",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "if SCE elects to purchase this option"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:SoCal_EPC:ARTICLE_XVIII:2:Table_2_AEA_Requirement_and_Liquidated_Damages_Ite:c81c0c",
+    "source_clause_title": "2. Table 2. AEA Requirement and Liquidated Damages Item Value AEA Requirement (%) 97 Liquidated Damages (%) 0.2 B. Energy Capacity Guarantee The Energy Capacity Guarantee shall adhere to the following: [*****]",
+    "source_page_start": 105,
+    "source_page_end": 108,
+    "entities": [
+      {
+        "id": "obligation:SoCal_EPC:energy_capacity_guarantee_adherence",
+        "type": "Obligation",
+        "name": "Energy Capacity Guarantee Adherence",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "The Energy Capacity Guarantee shall adhere to the following: [*****]"
+      },
+      {
+        "id": "obligation:SoCal_EPC:schedule_liquidated_damages_payment",
+        "type": "Obligation",
+        "name": "Schedule Liquidated Damages Payment",
+        "properties": {
+          "liquidatedDamagesCap": "10% of the EPC Price LD Cap per individual project",
+          "liquidatedDamagesRate1": "0.015% of the EPC Price per Day for delays of [*****]",
+          "liquidatedDamagesRate2": "0.4% of the EPC Price per Day for delays of [*****] to 60 Days from the Guaranteed Completion Date"
+        },
+        "confidence": 0.95,
+        "evidenceQuote": "The agreed schedule for Schedule Liquidated Damages is as follows (aggregates to 10% of the EPC Price LD Cap per individual project): • 0.015% of the EPC Price per Day for delays of [*****] • 0.4% of the EPC Price per Day for delays of [*****] to 60 Days from the Guaranteed Completion Date"
+      },
+      {
+        "id": "party:SoCal_EPC:Edison",
+        "type": "Party",
+        "name": "Edison",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "Edison Agreement No. CW2264109"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XVIII:2:Table_2_AEA_Requirement_and_Liquidated_Damages_Ite:c81c0c",
+        "target_id": "obligation:SoCal_EPC:energy_capacity_guarantee_adherence",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "The Energy Capacity Guarantee shall adhere to the following: [*****]"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XVIII:2:Table_2_AEA_Requirement_and_Liquidated_Damages_Ite:c81c0c",
+        "target_id": "obligation:SoCal_EPC:schedule_liquidated_damages_payment",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "The agreed schedule for Schedule Liquidated Damages is as follows (aggregates to 10% of the EPC Price LD Cap per individual project): • 0.015% of the EPC Price per Day for delays of [*****] • 0.4% of the EPC Price per Day for delays of [*****] to 60 Days from the Guaranteed Completion Date"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:energy_capacity_guarantee_adherence",
+        "target_id": "party:SoCal_EPC:Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.8,
+        "evidenceQuote": "Edison Agreement No. CW2264109"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:schedule_liquidated_damages_payment",
+        "target_id": "party:SoCal_EPC:Edison",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 0.8,
+        "evidenceQuote": "Edison Agreement No. CW2264109"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:SoCal_EPC:ARTICLE_VI:6_2:CHANGE_ORDERS_REQUESTED_BY_CONTRACTOR_a_It_is_the_:3dac5a",
+    "source_clause_title": "6.2 CHANGE ORDERS REQUESTED BY CONTRACTOR. (a) It is the intent of Company and Contractor that the Statement of Work attached hereto as",
+    "source_page_start": 44,
+    "source_page_end": 45,
+    "entities": [
+      {
+        "id": "party:SoCal_EPC:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor may at any time, by written notice to Company"
+      },
+      {
+        "id": "party:SoCal_EPC:Contractor",
+        "type": "Party",
+        "name": "Contractor",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor may at any time, by written notice to Company"
+      },
+      {
+        "id": "obligation:SoCal_EPC:contractor_requests_change_by_written_notice",
+        "type": "Obligation",
+        "name": "Contractor requests Change in the Work by written notice to Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor may at any time, by written notice to Company, request a Change in the Work"
+      },
+      {
+        "id": "obligation:SoCal_EPC:contractor_notifies_company_of_impact_of_change_request",
+        "type": "Obligation",
+        "name": "Contractor notifies Company of justification and effect of requested Change within specified time",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "it shall notify Company of such, setting forth its justification for and effect of such changes, within [*****] after making a request for a Change"
+      },
+      {
+        "id": "obligation:SoCal_EPC:parties_execute_written_change_order",
+        "type": "Obligation",
+        "name": "Parties execute written Change Order signed by both Parties for agreed Changes",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Parties shall set forth the agreed upon Change in the Work and agreed upon amendments to the Contract Documents, if any, in a written Change Order signed by the Parties"
+      },
+      {
+        "id": "obligation:SoCal_EPC:contractor_proposes_changes_by_written_notice",
+        "type": "Obligation",
+        "name": "Contractor proposes Changes in the Work or Critical Milestones by written notice to Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor may at any time, by written notice to Company, propose Changes in the Work or the Critical Milestones"
+      },
+      {
+        "id": "obligation:SoCal_EPC:parties_bargain_in_good_faith_for_change_order",
+        "type": "Obligation",
+        "name": "Parties bargain reasonably and in good faith for mutually acceptable Change Order if conditions met",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Parties agree to bargain reasonably and in good faith for the execution of a mutually acceptable Change Order"
+      },
+      {
+        "id": "obligation:SoCal_EPC:contractor_provides_written_notification_of_circumstances_requiring_change",
+        "type": "Obligation",
+        "name": "Contractor provides written notification to Company within specified time of circumstances requiring Change",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "If Contractor knows of circumstances or events that do or may require a Change in the Work or Project Schedule, and Contractor does not provide written notification to Company of such within [*****] after the date Contractor knows or should have known"
+      },
+      {
+        "id": "obligation:SoCal_EPC:contractor_provides_information_on_contemplated_change",
+        "type": "Obligation",
+        "name": "Contractor provides requested information to Company within specified time regarding effect of contemplated Change",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall provide the requested information to Company within [*****] after the receipt of said request"
+      },
+      {
+        "id": "obligation:SoCal_EPC:contractor_carries_out_minor_changes_promptly",
+        "type": "Obligation",
+        "name": "Contractor carries out minor changes and clarifications promptly without adjustment to Contract Price or Completion Date",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall carry out such written orders promptly and Contractor shall receive no adjustment in the Contract Price nor shall there be any change to the Contract Documents"
+      },
+      {
+        "id": "event:SoCal_EPC:Force_Majeure_Event",
+        "type": "ForceMajeureEvent",
+        "name": "Force Majeure Event",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Force Majeure Events will only entitle Contractor to extensions of the Project Schedule"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_VI:6_2:CHANGE_ORDERS_REQUESTED_BY_CONTRACTOR_a_It_is_the_:3dac5a",
+        "target_id": "obligation:SoCal_EPC:contractor_requests_change_by_written_notice",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor may at any time, by written notice to Company, request a Change in the Work"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:contractor_requests_change_by_written_notice",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor may at any time, by written notice to Company, request a Change in the Work"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:contractor_requests_change_by_written_notice",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor may at any time, by written notice to Company, request a Change in the Work"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_VI:6_2:CHANGE_ORDERS_REQUESTED_BY_CONTRACTOR_a_It_is_the_:3dac5a",
+        "target_id": "obligation:SoCal_EPC:contractor_notifies_company_of_impact_of_change_request",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "it shall notify Company of such, setting forth its justification for and effect of such changes, within [*****] after making a request for a Change"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:contractor_notifies_company_of_impact_of_change_request",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "it shall notify Company of such, setting forth its justification for and effect of such changes"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:contractor_notifies_company_of_impact_of_change_request",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "it shall notify Company of such, setting forth its justification for and effect of such changes"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_VI:6_2:CHANGE_ORDERS_REQUESTED_BY_CONTRACTOR_a_It_is_the_:3dac5a",
+        "target_id": "obligation:SoCal_EPC:parties_execute_written_change_order",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Parties shall set forth the agreed upon Change in the Work and agreed upon amendments to the Contract Documents, if any, in a written Change Order signed by the Parties"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:parties_execute_written_change_order",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "in a written Change Order signed by the Parties"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:parties_execute_written_change_order",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "in a written Change Order signed by the Parties"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_VI:6_2:CHANGE_ORDERS_REQUESTED_BY_CONTRACTOR_a_It_is_the_:3dac5a",
+        "target_id": "obligation:SoCal_EPC:contractor_proposes_changes_by_written_notice",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor may at any time, by written notice to Company, propose Changes in the Work or the Critical Milestones"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:contractor_proposes_changes_by_written_notice",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor may at any time, by written notice to Company, propose Changes in the Work or the Critical Milestones"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:contractor_proposes_changes_by_written_notice",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor may at any time, by written notice to Company, propose Changes in the Work or the Critical Milestones"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_VI:6_2:CHANGE_ORDERS_REQUESTED_BY_CONTRACTOR_a_It_is_the_:3dac5a",
+        "target_id": "obligation:SoCal_EPC:parties_bargain_in_good_faith_for_change_order",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Parties agree to bargain reasonably and in good faith for the execution of a mutually acceptable Change Order"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:parties_bargain_in_good_faith_for_change_order",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Parties agree to bargain reasonably and in good faith"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:parties_bargain_in_good_faith_for_change_order",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "the Parties agree to bargain reasonably and in good faith"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_VI:6_2:CHANGE_ORDERS_REQUESTED_BY_CONTRACTOR_a_It_is_the_:3dac5a",
+        "target_id": "obligation:SoCal_EPC:contractor_provides_written_notification_of_circumstances_requiring_change",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "If Contractor knows of circumstances or events that do or may require a Change in the Work or Project Schedule, and Contractor does not provide written notification to Company of such within [*****] after the date Contractor knows or should have known"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:contractor_provides_written_notification_of_circumstances_requiring_change",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor does not provide written notification to Company"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:contractor_provides_written_notification_of_circumstances_requiring_change",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor does not provide written notification to Company"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_VI:6_2:CHANGE_ORDERS_REQUESTED_BY_CONTRACTOR_a_It_is_the_:3dac5a",
+        "target_id": "obligation:SoCal_EPC:contractor_provides_information_on_contemplated_change",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall provide the requested information to Company within [*****] after the receipt of said request"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:contractor_provides_information_on_contemplated_change",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall provide the requested information to Company"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:contractor_provides_information_on_contemplated_change",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall provide the requested information to Company"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_VI:6_2:CHANGE_ORDERS_REQUESTED_BY_CONTRACTOR_a_It_is_the_:3dac5a",
+        "target_id": "obligation:SoCal_EPC:contractor_carries_out_minor_changes_promptly",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall carry out such written orders promptly and Contractor shall receive no adjustment in the Contract Price nor shall there be any change to the Contract Documents"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:contractor_carries_out_minor_changes_promptly",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall carry out such written orders promptly"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_VI:6_2:CHANGE_ORDERS_REQUESTED_BY_CONTRACTOR_a_It_is_the_:3dac5a",
+        "target_id": "event:SoCal_EPC:Force_Majeure_Event",
+        "type": "TRIGGERED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Force Majeure Events will only entitle Contractor to extensions of the Project Schedule"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:SoCal_EPC:ARTICLE_XVIII:5_1:Covers_Years_3_through_5:dbf0f4",
+    "source_clause_title": "5.1. Covers Years 3 through 5.",
+    "source_page_start": 104,
+    "source_page_end": 104,
+    "entities": [
+      {
+        "id": "obligation:SoCal_EPC:purchase_option_fixed_energy_capacity_service_package",
+        "type": "Obligation",
+        "name": "Purchase Option for Fixed Energy Capacity Service Package – Extension A",
+        "properties": {
+          "description": "If SCE elects to purchase the Fixed Energy Capacity Service Package – Extension A, it must be identified prior to the expiration of the Standard Service Package",
+          "condition": "SCE elects to purchase this option",
+          "deadline": "prior to the expiration of the Standard Service Package"
+        },
+        "confidence": 0.95,
+        "evidenceQuote": "if SCE elects to purchase this option, it would be identified prior to the expiration of the Standard Service Package"
+      },
+      {
+        "id": "obligation:SoCal_EPC:purchase_option_maintenance_only_service_package",
+        "type": "Obligation",
+        "name": "Purchase Option for Maintenance Only Service Package – Extension A",
+        "properties": {
+          "description": "If SCE elects to purchase the Maintenance Only Service Package – Extension A, it must be identified prior to the expiration of the Standard Service Package",
+          "condition": "SCE elects to purchase this option",
+          "deadline": "prior to the expiration of the Standard Service Package"
+        },
+        "confidence": 0.95,
+        "evidenceQuote": "if SCE elects to purchase this option, it would be identified prior to the expiration of the Standard Service Package"
+      },
+      {
+        "id": "party:SoCal_EPC:SCE",
+        "type": "Party",
+        "name": "SCE",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "if SCE elects to purchase this option"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XVIII:5_1:Covers_Years_3_through_5:dbf0f4",
+        "target_id": "obligation:SoCal_EPC:purchase_option_fixed_energy_capacity_service_package",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "if SCE elects to purchase this option, it would be identified prior to the expiration of the Standard Service Package"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XVIII:5_1:Covers_Years_3_through_5:dbf0f4",
+        "target_id": "obligation:SoCal_EPC:purchase_option_maintenance_only_service_package",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "if SCE elects to purchase this option, it would be identified prior to the expiration of the Standard Service Package"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:purchase_option_fixed_energy_capacity_service_package",
+        "target_id": "party:SoCal_EPC:SCE",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "if SCE elects to purchase this option"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:purchase_option_maintenance_only_service_package",
+        "target_id": "party:SoCal_EPC:SCE",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "if SCE elects to purchase this option"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:SoCal_EPC:ARTICLE_XI:11_6:PERFORMANCE_SECURITY_a_Prior_to_commencing_the_Wor:0095de",
+    "source_clause_title": "11.6 PERFORMANCE SECURITY. a. Prior to commencing the Work, Contractor shall deliver to Company payment and performance bonds in the form attached hereto as",
+    "source_page_start": 61,
+    "source_page_end": 64,
+    "entities": [
+      {
+        "id": "party:SoCal_EPC:Contractor",
+        "type": "Party",
+        "name": "Contractor",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor"
+      },
+      {
+        "id": "party:SoCal_EPC:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company"
+      },
+      {
+        "id": "obligation:SoCal_EPC:deliver_payment_and_performance_bonds_prior_to_commencing_work",
+        "type": "Obligation",
+        "name": "Deliver payment and performance bonds prior to commencing the Work",
+        "properties": {
+          "bond_types": [
+            "Payment Bond",
+            "Performance Bond"
+          ],
+          "bond_amount_reference": "EPC Price and Contract Price",
+          "bond_amount_adjustment": "may be increased or decreased over time through Change Orders or lesser amount designated by Company",
+          "bond_issuer_requirements": [
+            "listed on US Department of Treasury’s Approved Sureties",
+            "admitted surety insurers authorized in California",
+            "have [*****] of not less than [*****]",
+            "writers of bonds not greater than underwriting limitation"
+          ],
+          "bond_maintenance_period": "until Contractor provides Company the Standard Service Package Period Performance Security as set forth in Subsection (b)"
+        },
+        "confidence": 0.95,
+        "evidenceQuote": "Prior to commencing the Work, Contractor shall deliver to Company payment and performance bonds in the form attached hereto as Exhibit Q acceptable to Company and issued by an approved surety acceptable to Company in its reasonable discretion"
+      },
+      {
+        "id": "obligation:SoCal_EPC:maintain_payment_and_performance_bonds",
+        "type": "Obligation",
+        "name": "Maintain Payment and Performance Bonds in specified amounts",
+        "properties": {
+          "payment_bond_amount": "[*****] of the EPC Price",
+          "performance_bond_amount": "[*****] of the Contract Price",
+          "adjustment_method": "may be increased or decreased over time through Change Orders or lesser amount designated by Company",
+          "duration": "until Contractor provides Company the Standard Service Package Period Performance Security"
+        },
+        "confidence": 0.95,
+        "evidenceQuote": "Contractor shall maintain a Payment Bond in an amount equal to [*****] of the EPC Price and shall maintain a Performance Bond in an amount equal to [*****] of the Contract Price, as such amount may be increased or decreased over time through Change Orders, or such lesser amount designated by Company, until Contractor provides Company the Standard Service Package Period Performance Security as set forth in Subsection (b) below"
+      },
+      {
+        "id": "obligation:SoCal_EPC:notify_company_of_surety_issues",
+        "type": "Obligation",
+        "name": "Notify Company promptly if surety withdraws, cancels bond, becomes insolvent or bankrupt",
+        "properties": {
+          "notification_type": "written notice",
+          "events": [
+            "surety withdraws or cancels bond",
+            "surety becomes insolvent",
+            "surety makes assignment for benefit of creditors",
+            "surety files for or is placed into bankruptcy, run off, receivership or liquidation"
+          ]
+        },
+        "confidence": 0.95,
+        "evidenceQuote": "Should any surety withdraw or cancel its bond, whether voluntarily or involuntarily, or should any surety become insolvent, make an assignment for benefit of creditors, or file for or be placed into bankruptcy, run off, receivership or liquidation, Contractor shall promptly give Company written notice"
+      },
+      {
+        "id": "obligation:SoCal_EPC:provide_substitute_surety_and_bond",
+        "type": "Obligation",
+        "name": "Provide substitute surety and bond acceptable to Company promptly after surety issues",
+        "properties": {
+          "condition": "surety withdraws, cancels bond, or becomes insolvent or bankrupt"
+        },
+        "confidence": 0.95,
+        "evidenceQuote": "In such event, Contractor shall also promptly provide a substitute surety and bond acceptable to Company"
+      },
+      {
+        "id": "obligation:SoCal_EPC:maintain_performance_and_payment_bonds_in_effect",
+        "type": "Obligation",
+        "name": "Maintain Performance Bond and Payment Bond in effect",
+        "properties": {
+          "consequence_of_noncompliance": "Company has no obligation to make payments to Contractor during any period when bonds are not in effect or surety is insolvent or bankrupt"
+        },
+        "confidence": 0.9,
+        "evidenceQuote": "Company shall have no obligation to make payments to Contractor during any period of time in which either a Performance Bond or a Payment Bond required by the Agreement is not in effect or during any period of time when a surety is insolvent, or when a surety has made an assignment for the benefit of creditors, or has filed for or been placed into bankruptcy, run off, receivership or liquidation"
+      },
+      {
+        "id": "obligation:SoCal_EPC:substitute_bonds_or_security_or_face_consequences",
+        "type": "Obligation",
+        "name": "Substitute bonds or security or face Company remedies",
+        "properties": {
+          "remedies": [
+            "permit Contractor to continue performance and withhold additional retention until substitute bonds provided or obligations satisfied",
+            "permit Contractor to continue performance subject to alternative security acceptable to Company",
+            "terminate Contractor’s right to perform remaining Work and withhold amounts due until obligations satisfied by completion contractor"
+          ],
+          "condition": "Contractor fails or is unable to substitute bonds and sureties"
+        },
+        "confidence": 0.95,
+        "evidenceQuote": "If Contractor fails or is unable to substitute bonds and sureties Company shall have the right, exercisable in its sole discretion, to proceed as set forth below: (1) permit Contractor to continue its performance and withhold [*****] additional retention ... (2) permit Contractor to continue performance subject to Contractor providing an alternative form of security acceptable to Company; or (3) terminate Contractor’s right to perform any of the Work remaining after withdrawal or cancellation of the bond and withhold from Contractor any amounts due until all obligations under this Agreement have been satisfied by a completion contractor"
+      },
+      {
+        "id": "obligation:SoCal_EPC:return_payment_and_performance_bond_upon_receipt_of_standard_service_package_security",
+        "type": "Obligation",
+        "name": "Return Payment and Performance Bond upon receipt of Standard Service Package Period Performance Security",
+        "properties": {
+          "condition": "no Contractor Event of Default has occurred and remains uncured or unresolved",
+          "trigger": "receipt of Energy Capacity Guarantee Service Package Period Performance Security as set forth in Subsection (b)"
+        },
+        "confidence": 0.9,
+        "evidenceQuote": "Provided that no Contractor Event of Default has occurred and remains uncured, if a cure period is applicable to such Contractor Event of Default, or otherwise unresolved at such time, Company shall return the Payment and Performance Bond to Contractor upon receipt of the Energy Capacity Guarantee Service Package Period Performance Security as set forth in Subsection (b) below"
+      },
+      {
+        "id": "obligation:SoCal_EPC:deliver_standard_service_package_period_performance_security",
+        "type": "Obligation",
+        "name": "Deliver Standard Service Package Period Performance Security upon achieving Final Acceptance and during Standard Service Package Period",
+        "properties": {
+          "security_types": [
+            "letter of credit issued by Qualified Institution",
+            "performance bond issued by Qualified Surety"
+          ],
+          "amount": "[*****] of the EPC Price",
+          "purpose": "to secure Contractor’s obligations during the Standard Service Package Period"
+        },
+        "confidence": 0.95,
+        "evidenceQuote": "Upon achieving Final Acceptance of the Work and during the Standard Service Package Period, Contractor shall deliver to Company either a letter of credit ... or performance bond ... in the amount of [*****] of the EPC Price ... to secure Contractor’s obligations during the Standard Service Package Period"
+      },
+      {
+        "id": "obligation:SoCal_EPC:deliver_energy_capacity_guarantee_service_package_period_performance_security",
+        "type": "Obligation",
+        "name": "Deliver Energy Capacity Guarantee Service Package Period Performance Security upon completion of Standard Service Package Period and during Fixed Energy Capacity Guarantee Service Package Period",
+        "properties": {
+          "security_types": [
+            "letter of credit issued by Qualified Institution",
+            "annually renewable performance bonds issued by Qualified Surety"
+          ],
+          "amount": "[*****] of the EPC Price",
+          "advance_notice": "[*****]",
+          "purpose": "to secure Contractor’s obligations during each year that the Fixed Energy Capacity Guarantee Service Package Period is in effect"
+        },
+        "confidence": 0.95,
+        "evidenceQuote": "Upon completion of the Standard Service Package Period and during any Fixed Energy Capacity Guarantee Service Package Period, Contractor shall deliver to Company either a letter of credit ... or annually renewable performance bonds ... in the amount of [*****] of the EPC Price ... to secure Contractor’s obligations during each year that the Fixed Energy Capacity Guarantee Service Package Period is in effect"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XI:11_6:PERFORMANCE_SECURITY_a_Prior_to_commencing_the_Wor:0095de",
+        "target_id": "obligation:SoCal_EPC:deliver_payment_and_performance_bonds_prior_to_commencing_work",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Prior to commencing the Work, Contractor shall deliver to Company payment and performance bonds in the form attached hereto as Exhibit Q acceptable to Company and issued by an approved surety acceptable to Company in its reasonable discretion"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:deliver_payment_and_performance_bonds_prior_to_commencing_work",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall deliver to Company payment and performance bonds"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:deliver_payment_and_performance_bonds_prior_to_commencing_work",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall deliver to Company payment and performance bonds"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XI:11_6:PERFORMANCE_SECURITY_a_Prior_to_commencing_the_Wor:0095de",
+        "target_id": "obligation:SoCal_EPC:maintain_payment_and_performance_bonds",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Contractor shall maintain a Payment Bond in an amount equal to [*****] of the EPC Price and shall maintain a Performance Bond in an amount equal to [*****] of the Contract Price"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:maintain_payment_and_performance_bonds",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall maintain a Payment Bond ... and shall maintain a Performance Bond"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:maintain_payment_and_performance_bonds",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall maintain ... bonds ... until Contractor provides Company the Standard Service Package Period Performance Security"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XI:11_6:PERFORMANCE_SECURITY_a_Prior_to_commencing_the_Wor:0095de",
+        "target_id": "obligation:SoCal_EPC:notify_company_of_surety_issues",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Contractor shall promptly give Company written notice if surety withdraws or cancels bond or becomes insolvent or bankrupt"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:notify_company_of_surety_issues",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall promptly give Company written notice"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:notify_company_of_surety_issues",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall promptly give Company written notice"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XI:11_6:PERFORMANCE_SECURITY_a_Prior_to_commencing_the_Wor:0095de",
+        "target_id": "obligation:SoCal_EPC:provide_substitute_surety_and_bond",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Contractor shall also promptly provide a substitute surety and bond acceptable to Company"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:provide_substitute_surety_and_bond",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall provide substitute surety and bond"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:provide_substitute_surety_and_bond",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "substitute surety and bond acceptable to Company"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XI:11_6:PERFORMANCE_SECURITY_a_Prior_to_commencing_the_Wor:0095de",
+        "target_id": "obligation:SoCal_EPC:maintain_performance_and_payment_bonds_in_effect",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "Company shall have no obligation to make payments to Contractor during any period ... when bonds are not in effect or surety is insolvent or bankrupt"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:maintain_performance_and_payment_bonds_in_effect",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor must maintain bonds in effect"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:maintain_performance_and_payment_bonds_in_effect",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company has no obligation to pay if bonds not in effect"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XI:11_6:PERFORMANCE_SECURITY_a_Prior_to_commencing_the_Wor:0095de",
+        "target_id": "obligation:SoCal_EPC:substitute_bonds_or_security_or_face_consequences",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "If Contractor fails or is unable to substitute bonds and sureties Company shall have the right ... to proceed as set forth below"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:substitute_bonds_or_security_or_face_consequences",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor must substitute bonds or face consequences"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:substitute_bonds_or_security_or_face_consequences",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company has rights if Contractor fails to substitute bonds"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XI:11_6:PERFORMANCE_SECURITY_a_Prior_to_commencing_the_Wor:0095de",
+        "target_id": "obligation:SoCal_EPC:return_payment_and_performance_bond_upon_receipt_of_standard_service_package_security",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.9,
+        "evidenceQuote": "Company shall return the Payment and Performance Bond to Contractor upon receipt of the Energy Capacity Guarantee Service Package Period Performance Security"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:return_payment_and_performance_bond_upon_receipt_of_standard_service_package_security",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall return the Payment and Performance Bond"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:return_payment_and_performance_bond_upon_receipt_of_standard_service_package_security",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall return the Payment and Performance Bond to Contractor"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XI:11_6:PERFORMANCE_SECURITY_a_Prior_to_commencing_the_Wor:0095de",
+        "target_id": "obligation:SoCal_EPC:deliver_standard_service_package_period_performance_security",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Upon achieving Final Acceptance of the Work and during the Standard Service Package Period, Contractor shall deliver to Company ... Standard Service Package Period Performance Security"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:deliver_standard_service_package_period_performance_security",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall deliver ... Standard Service Package Period Performance Security"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:deliver_standard_service_package_period_performance_security",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall deliver ... to Company"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XI:11_6:PERFORMANCE_SECURITY_a_Prior_to_commencing_the_Wor:0095de",
+        "target_id": "obligation:SoCal_EPC:deliver_energy_capacity_guarantee_service_package_period_performance_security",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "Upon completion of the Standard Service Package Period and during any Fixed Energy Capacity Guarantee Service Package Period, Contractor shall deliver to Company ... Energy Capacity Guarantee Service Package Period Performance Security"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:deliver_energy_capacity_guarantee_service_package_period_performance_security",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall deliver ... Energy Capacity Guarantee Service Package Period Performance Security"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:deliver_energy_capacity_guarantee_service_package_period_performance_security",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall deliver ... to Company"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:SoCal_EPC:ARTICLE_XVIII:6_1:Covers_Years_6_through_10:fc724f",
+    "source_clause_title": "6.1. Covers Years 6 through 10.",
+    "source_page_start": 104,
+    "source_page_end": 104,
+    "entities": [
+      {
+        "id": "obligation:SoCal_EPC:fixed_energy_capacity_service_package_extension_b_purchase_identification",
+        "type": "Obligation",
+        "name": "Identification of Fixed Energy Capacity Service Package – Extension B purchase prior to expiration",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "if SCE elects to purchase this option, it would be identified prior to the expiration of the preceding service package"
+      },
+      {
+        "id": "obligation:SoCal_EPC:maintenance_only_service_package_extension_b_purchase_identification",
+        "type": "Obligation",
+        "name": "Identification of Maintenance Only Service Package – Extension B purchase prior to expiration",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "if SCE elects to purchase this option, it would be identified prior to the expiration of the preceding service package"
+      },
+      {
+        "id": "party:SoCal_EPC:SCE",
+        "type": "Party",
+        "name": "SCE",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "if SCE elects to purchase this option"
+      },
+      {
+        "id": "obligation:SoCal_EPC:fixed_energy_capacity_service_package_extension_b_requires_extension_a_purchase",
+        "type": "Obligation",
+        "name": "Purchase of Fixed Energy Capacity Service Package – Extension A required for Extension B",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "requires the purchase of the “Fixed Energy Capacity Service Package – Extension A”"
+      },
+      {
+        "id": "obligation:SoCal_EPC:maintenance_only_service_package_extension_b_requires_extension_a_purchase",
+        "type": "Obligation",
+        "name": "Purchase of any Service Package under Extension A required for Maintenance Only Service Package – Extension B",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "requires the purchase of any Service Package under Extension A"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XVIII:6_1:Covers_Years_6_through_10:fc724f",
+        "target_id": "obligation:SoCal_EPC:fixed_energy_capacity_service_package_extension_b_purchase_identification",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "if SCE elects to purchase this option, it would be identified prior to the expiration of the preceding service package"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XVIII:6_1:Covers_Years_6_through_10:fc724f",
+        "target_id": "obligation:SoCal_EPC:maintenance_only_service_package_extension_b_purchase_identification",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "if SCE elects to purchase this option, it would be identified prior to the expiration of the preceding service package"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:fixed_energy_capacity_service_package_extension_b_purchase_identification",
+        "target_id": "party:SoCal_EPC:SCE",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "if SCE elects to purchase this option"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:maintenance_only_service_package_extension_b_purchase_identification",
+        "target_id": "party:SoCal_EPC:SCE",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "if SCE elects to purchase this option"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XVIII:6_1:Covers_Years_6_through_10:fc724f",
+        "target_id": "obligation:SoCal_EPC:fixed_energy_capacity_service_package_extension_b_requires_extension_a_purchase",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "requires the purchase of the “Fixed Energy Capacity Service Package – Extension A”"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_XVIII:6_1:Covers_Years_6_through_10:fc724f",
+        "target_id": "obligation:SoCal_EPC:maintenance_only_service_package_extension_b_requires_extension_a_purchase",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 0.95,
+        "evidenceQuote": "requires the purchase of any Service Package under Extension A"
+      }
+    ]
+  },
+  {
+    "source_clause_id": "clause:SoCal_EPC:ARTICLE_II:2_1:RETENTION_OF_CONTRACTOR_Company_hereby_engages_Con:c0bf64",
+    "source_clause_title": "2.1 RETENTION OF CONTRACTOR. Company hereby engages Contractor, and Contractor hereby agrees to be engaged by Company to perform the Work in accordance with the terms and conditions set forth herein.",
+    "source_page_start": 21,
+    "source_page_end": 23,
+    "entities": [
+      {
+        "id": "party:SoCal_EPC:Company",
+        "type": "Party",
+        "name": "Company",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company hereby engages Contractor"
+      },
+      {
+        "id": "party:SoCal_EPC:Contractor",
+        "type": "Party",
+        "name": "Contractor",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor hereby agrees to be engaged by Company"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Contractor_perform_Work",
+        "type": "Obligation",
+        "name": "Contractor to perform the Work in accordance with the terms and conditions set forth herein",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor hereby agrees to be engaged by Company to perform the Work in accordance with the terms and conditions set forth herein"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Contractor_independent_status",
+        "type": "Obligation",
+        "name": "Contractor shall be an independent contractor with respect to any and all Work performed",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall be an independent contractor with respect to any and all Work performed and to be performed under the Contract Documents"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Contractor_manage_subcontractors",
+        "type": "Obligation",
+        "name": "Contractor shall be solely responsible for engaging, managing, supervising and paying all Subcontractors and Vendors",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall be solely responsible for engaging, managing, supervising and paying all such Subcontractors and Vendors"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Contractor_require_subcontractor_compliance",
+        "type": "Obligation",
+        "name": "Contractor shall require Subcontractors and Vendors to comply with Contract Documents and Applicable Laws",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall require that all Work performed, and all Equipment provided by Subcontractors and Vendors are received, inspected and otherwise furnished in accordance with the Contract Documents"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Contractor_liable_for_subcontractors",
+        "type": "Obligation",
+        "name": "Contractor shall be solely liable for all acts, omissions, liabilities and Work of Subcontractors and Vendors",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall be solely liable for all acts, omissions, liabilities and Work (including Defects therein) of such Subcontractors and Vendors"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Contractor_notify_Company_for_approval",
+        "type": "Obligation",
+        "name": "Contractor shall notify Company in writing and provide information for approval of additional Substantial Subcontractors and Vendors",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall notify Company in writing and provide it with such information as necessary to enable Company to evaluate each such proposed Substantial Subcontractor or Substantial Vendor"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Company_approve_subcontractors",
+        "type": "Obligation",
+        "name": "Company shall have the right to approve in advance in writing each additional Substantial Subcontractor and Substantial Vendor",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall have the right to approve, in advance in writing, each additional Substantial Subcontractor and Substantial Vendor"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Contractor_submit_purchase_orders",
+        "type": "Obligation",
+        "name": "Contractor shall submit to Company a copy of each purchase order or agreement entered into with a Subcontractor or Vendor",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall submit to Company a copy of each purchase order or agreement entered into with a Subcontractor or Vendor"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Subcontractors_comply_laws_and_permits",
+        "type": "Obligation",
+        "name": "Subcontractors and Vendors shall comply with Applicable Laws and Applicable Permits",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "all subcontracts and purchase orders shall require the Subcontractors and Vendors to comply with Applicable Laws and Applicable Permits"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Subcontractors_provide_certificates_of_insurance",
+        "type": "Obligation",
+        "name": "Subcontractors and Vendors shall provide certificates of insurance as set forth herein",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "require such Subcontractors and Vendors to ... provide certificates of insurance as set forth herein"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Subcontractors_provide_guarantees_and_warranties",
+        "type": "Obligation",
+        "name": "Subcontractors shall provide guarantees and warranties with respect to their portion of the Work and Equipment",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "require such Subcontractors and Vendors to ... provide guarantees and warranties with respect to its portion of the Work and the Equipment"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Subcontractors_prohibit_subcontracts",
+        "type": "Obligation",
+        "name": "Subcontractors shall be prohibited from entering into subcontracts regarding their portion of the Work",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "prohibit each Subcontractor from entering into subcontracts regarding its portion of the Work"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Subcontractors_limitation_of_liability",
+        "type": "Obligation",
+        "name": "Subcontractors shall provide a limitation of liability of not less than [*****] of the agreement value",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "provide a limitation of liability of not less than [*****] of the agreement value"
+      },
+      {
+        "id": "obligation:SoCal_EPC:Company_right_to_direct_assignment",
+        "type": "Obligation",
+        "name": "Company may direct Contractor to assign rights and obligations under subcontract agreements to Company or its designees without prior consent",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company may direct Contractor to assign at any time Contractor’s rights and obligations under such agreement to Company or its designees without the prior written consent of the applicable Subcontractor"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_II:2_1:RETENTION_OF_CONTRACTOR_Company_hereby_engages_Con:c0bf64",
+        "target_id": "obligation:SoCal_EPC:Contractor_perform_Work",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor hereby agrees to be engaged by Company to perform the Work in accordance with the terms and conditions set forth herein"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Contractor_perform_Work",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor hereby agrees to be engaged by Company to perform the Work"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Contractor_perform_Work",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor hereby agrees to be engaged by Company to perform the Work"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_II:2_1:RETENTION_OF_CONTRACTOR_Company_hereby_engages_Con:c0bf64",
+        "target_id": "obligation:SoCal_EPC:Contractor_independent_status",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall be an independent contractor with respect to any and all Work performed"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Contractor_independent_status",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall be an independent contractor"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_II:2_1:RETENTION_OF_CONTRACTOR_Company_hereby_engages_Con:c0bf64",
+        "target_id": "obligation:SoCal_EPC:Contractor_manage_subcontractors",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall be solely responsible for engaging, managing, supervising and paying all such Subcontractors and Vendors"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Contractor_manage_subcontractors",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall be solely responsible"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_II:2_1:RETENTION_OF_CONTRACTOR_Company_hereby_engages_Con:c0bf64",
+        "target_id": "obligation:SoCal_EPC:Contractor_require_subcontractor_compliance",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall require that all Work performed, and all Equipment provided by Subcontractors and Vendors are received, inspected and otherwise furnished in accordance with the Contract Documents"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Contractor_require_subcontractor_compliance",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall require"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_II:2_1:RETENTION_OF_CONTRACTOR_Company_hereby_engages_Con:c0bf64",
+        "target_id": "obligation:SoCal_EPC:Contractor_liable_for_subcontractors",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall be solely liable for all acts, omissions, liabilities and Work (including Defects therein) of such Subcontractors and Vendors"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Contractor_liable_for_subcontractors",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall be solely liable"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_II:2_1:RETENTION_OF_CONTRACTOR_Company_hereby_engages_Con:c0bf64",
+        "target_id": "obligation:SoCal_EPC:Contractor_notify_Company_for_approval",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall notify Company in writing and provide it with such information as necessary to enable Company to evaluate each such proposed Substantial Subcontractor or Substantial Vendor"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Contractor_notify_Company_for_approval",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall notify Company"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Contractor_notify_Company_for_approval",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall notify Company"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_II:2_1:RETENTION_OF_CONTRACTOR_Company_hereby_engages_Con:c0bf64",
+        "target_id": "obligation:SoCal_EPC:Company_approve_subcontractors",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall have the right to approve, in advance in writing, each additional Substantial Subcontractor and Substantial Vendor"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Company_approve_subcontractors",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company shall have the right to approve"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_II:2_1:RETENTION_OF_CONTRACTOR_Company_hereby_engages_Con:c0bf64",
+        "target_id": "obligation:SoCal_EPC:Contractor_submit_purchase_orders",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall submit to Company a copy of each purchase order or agreement entered into with a Subcontractor or Vendor"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Contractor_submit_purchase_orders",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Contractor shall submit"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_II:2_1:RETENTION_OF_CONTRACTOR_Company_hereby_engages_Con:c0bf64",
+        "target_id": "obligation:SoCal_EPC:Subcontractors_comply_laws_and_permits",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "all subcontracts and purchase orders shall require the Subcontractors and Vendors to comply with Applicable Laws and Applicable Permits"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Subcontractors_comply_laws_and_permits",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "all subcontracts and purchase orders shall require the Subcontractors and Vendors to comply"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_II:2_1:RETENTION_OF_CONTRACTOR_Company_hereby_engages_Con:c0bf64",
+        "target_id": "obligation:SoCal_EPC:Subcontractors_provide_certificates_of_insurance",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "require such Subcontractors and Vendors to ... provide certificates of insurance as set forth herein"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Subcontractors_provide_certificates_of_insurance",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "require such Subcontractors and Vendors to provide certificates of insurance"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_II:2_1:RETENTION_OF_CONTRACTOR_Company_hereby_engages_Con:c0bf64",
+        "target_id": "obligation:SoCal_EPC:Subcontractors_provide_guarantees_and_warranties",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "require such Subcontractors and Vendors to ... provide guarantees and warranties with respect to its portion of the Work and the Equipment"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Subcontractors_provide_guarantees_and_warranties",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "require such Subcontractors and Vendors to provide guarantees and warranties"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_II:2_1:RETENTION_OF_CONTRACTOR_Company_hereby_engages_Con:c0bf64",
+        "target_id": "obligation:SoCal_EPC:Subcontractors_prohibit_subcontracts",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "prohibit each Subcontractor from entering into subcontracts regarding its portion of the Work"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Subcontractors_prohibit_subcontracts",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "prohibit each Subcontractor"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_II:2_1:RETENTION_OF_CONTRACTOR_Company_hereby_engages_Con:c0bf64",
+        "target_id": "obligation:SoCal_EPC:Subcontractors_limitation_of_liability",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "provide a limitation of liability of not less than [*****] of the agreement value"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Subcontractors_limitation_of_liability",
+        "target_id": "party:SoCal_EPC:Contractor",
+        "type": "OWED_TO",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "provide a limitation of liability"
+      },
+      {
+        "source_id": "clause:SoCal_EPC:ARTICLE_II:2_1:RETENTION_OF_CONTRACTOR_Company_hereby_engages_Con:c0bf64",
+        "target_id": "obligation:SoCal_EPC:Company_right_to_direct_assignment",
+        "type": "IMPOSES_OBLIGATION",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company may direct Contractor to assign at any time Contractor’s rights and obligations under such agreement to Company or its designees without the prior written consent of the applicable Subcontractor"
+      },
+      {
+        "source_id": "obligation:SoCal_EPC:Company_right_to_direct_assignment",
+        "target_id": "party:SoCal_EPC:Company",
+        "type": "OWED_BY",
+        "properties": {},
+        "confidence": 1.0,
+        "evidenceQuote": "Company may direct Contractor"
+      }
+    ]
+  }
+]

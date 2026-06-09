@@ -228,6 +228,33 @@ export default function UploadPanel({ onClose, onContractAdded }: Props) {
     }
   }, [])
 
+  // On open: hydrate from the backend so in-progress (and recent) uploads
+  // persist even though the panel was closed and its local state was lost.
+  useEffect(() => {
+    let cancelled = false
+    api.listIngestJobs()
+      .then(serverJobs => {
+        if (cancelled) return
+        const mapped: UploadJob[] = serverJobs.map(j => ({
+          id: j.jobId,
+          fileName: j.fileName,
+          fileSize: '',
+          stage: toUploadStage(j.stage),
+          progress: j.progress,
+          error: j.error ?? undefined,
+        }))
+        setJobs(mapped)
+        // resume polling for anything still running
+        serverJobs.forEach(j => {
+          if (j.status === 'queued' || j.status === 'processing') {
+            startPolling(j.jobId, j.contractId, j.fileName)
+          }
+        })
+      })
+      .catch(() => { /* ignore — fresh panel */ })
+    return () => { cancelled = true }
+  }, [startPolling])
+
   const handleFiles = useCallback(async (files: File[]) => {
     setApiError(null)
     setUploading(true)
