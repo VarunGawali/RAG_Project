@@ -1,17 +1,19 @@
+"""
+Debug helper: list Obligation vertices and their denormalized citation
+metadata directly from Gremlin.
+
+Updated for the legal-only KG: obligations carry clauseTitle/pageStart/pageEnd
+on the vertex itself (no structural Clause vertex / EXTRACTED_ENTITY edge).
+"""
+
 from app.kg.gremlin_writer import GremlinWriter
 
 
 def main():
     query = """
-    g.V().
-      hasLabel('Clause').
-      as('clause').
-      out('EXTRACTED_ENTITY').
-      hasLabel('Obligation').
-      as('obligation').
-      select('clause', 'obligation').
-      by(valueMap('title', 'pageStart', 'pageEnd', 'sourcePath')).
-      by(valueMap('name', 'confidence', 'evidenceQuote'))
+    g.V().hasLabel('Obligation').dedup()
+      .valueMap('name', 'contractId', 'confidence', 'evidenceQuote',
+                'clauseTitle', 'pageStart', 'pageEnd')
     """
 
     writer = GremlinWriter()

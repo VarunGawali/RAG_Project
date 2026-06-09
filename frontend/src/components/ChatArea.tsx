@@ -129,19 +129,28 @@ function renderContent(text: string): React.ReactNode {
       continue
     }
 
-    // Ordered list
-    if (/^\d+\. /.test(line)) {
-      const items: string[] = []
-      while (i < lines.length && /^\d+\. /.test(lines[i])) {
-        items.push(lines[i].replace(/^\d+\. /, ''))
-        i++
+    // Ordered list — preserve the REAL number from each line and tolerate a
+    // blank line between consecutive numbered items (so they don't each
+    // become a separate list restarting at "1").
+    if (/^\d+\.\s/.test(line)) {
+      const items: { num: string; text: string }[] = []
+      while (i < lines.length) {
+        const m = lines[i].match(/^(\d+)\.\s+(.*)/)
+        if (m) {
+          items.push({ num: m[1], text: m[2] })
+          i++
+        } else if (lines[i].trim() === '' && /^\d+\.\s/.test(lines[i + 1] || '')) {
+          i++ // skip a blank line that just separates two numbered items
+        } else {
+          break
+        }
       }
       elements.push(
         <ol key={i} className="space-y-1 my-2 pl-4">
-          {items.map((item, j) => (
+          {items.map((it, j) => (
             <li key={j} className="text-sm text-ey-light flex gap-2">
-              <span className="text-ey-yellow font-medium w-4 flex-shrink-0 text-right">{j + 1}.</span>
-              <span>{renderInline(item)}</span>
+              <span className="text-ey-yellow font-medium w-5 flex-shrink-0 text-right">{it.num}.</span>
+              <span>{renderInline(it.text)}</span>
             </li>
           ))}
         </ol>
@@ -500,15 +509,21 @@ export default function ChatArea({
           <WelcomeScreen selectedContracts={selectedContracts} contracts={contracts} />
         ) : (
           <div className="max-w-3xl mx-auto px-4 md:px-6 py-6 space-y-6">
-            {messages.map((msg, idx) => (
-              <MessageBubble
-                key={`${msg.id}-${idx}`}
-                message={msg}
-                isLast={idx === lastAssistantIdx && !isLoading}
-                onFollowUp={onSendMessage}
-              />
-            ))}
-            {isLoading && <TypingIndicator />}
+            {messages.map((msg, idx) => {
+              // Don't render the streaming placeholder until the first token
+              // arrives — the TypingIndicator stands in for it, otherwise the
+              // user sees two boxes (an empty bubble + the indicator).
+              if (msg.isStreaming && msg.content === '') return null
+              return (
+                <MessageBubble
+                  key={`${msg.id}-${idx}`}
+                  message={msg}
+                  isLast={idx === lastAssistantIdx && !isLoading}
+                  onFollowUp={onSendMessage}
+                />
+              )
+            })}
+            {isLoading && !messages.some(m => m.isStreaming && m.content !== '') && <TypingIndicator />}
             <div ref={bottomRef} />
           </div>
         )}

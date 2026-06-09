@@ -9,24 +9,31 @@ interface Props {
 }
 
 const STAGES: { key: UploadStage; label: string }[] = [
-  { key: 'uploading',  label: 'Uploading' },
-  { key: 'parsing',   label: 'Reading document' },
-  { key: 'embedding', label: 'Processing content' },
-  { key: 'indexing',  label: 'Preparing for search' },
-  { key: 'done',      label: 'Ready' },
+  { key: 'uploading',     label: 'Uploading' },
+  { key: 'parsing',      label: 'Reading document' },
+  { key: 'embedding',    label: 'Processing content' },
+  { key: 'indexing',     label: 'Preparing for search' },
+  { key: 'extracting',   label: 'Extracting knowledge graph' },
+  { key: 'graph_writing', label: 'Writing to graph DB' },
+  { key: 'done',         label: 'Ready' },
 ]
 
-const STAGE_ORDER: UploadStage[] = ['uploading', 'parsing', 'embedding', 'indexing', 'done']
+const STAGE_ORDER: UploadStage[] = [
+  'uploading', 'parsing', 'embedding', 'indexing',
+  'extracting', 'graph_writing', 'done',
+]
 
 // Map backend stage strings to UploadStage type
 function toUploadStage(backendStage: string): UploadStage {
   const map: Record<string, UploadStage> = {
-    uploading: 'uploading',
-    parsing:   'parsing',
-    embedding: 'embedding',
-    indexing:  'indexing',
-    done:      'done',
-    error:     'error',
+    uploading:     'uploading',
+    parsing:       'parsing',
+    embedding:     'embedding',
+    indexing:      'indexing',
+    extracting:    'extracting',
+    graph_writing: 'graph_writing',
+    done:          'done',
+    error:         'error',
   }
   return map[backendStage] ?? 'uploading'
 }
@@ -220,6 +227,33 @@ export default function UploadPanel({ onClose, onContractAdded }: Props) {
       pollers.current.forEach(h => clearInterval(h))
     }
   }, [])
+
+  // On open: hydrate from the backend so in-progress (and recent) uploads
+  // persist even though the panel was closed and its local state was lost.
+  useEffect(() => {
+    let cancelled = false
+    api.listIngestJobs()
+      .then(serverJobs => {
+        if (cancelled) return
+        const mapped: UploadJob[] = serverJobs.map(j => ({
+          id: j.jobId,
+          fileName: j.fileName,
+          fileSize: '',
+          stage: toUploadStage(j.stage),
+          progress: j.progress,
+          error: j.error ?? undefined,
+        }))
+        setJobs(mapped)
+        // resume polling for anything still running
+        serverJobs.forEach(j => {
+          if (j.status === 'queued' || j.status === 'processing') {
+            startPolling(j.jobId, j.contractId, j.fileName)
+          }
+        })
+      })
+      .catch(() => { /* ignore — fresh panel */ })
+    return () => { cancelled = true }
+  }, [startPolling])
 
   const handleFiles = useCallback(async (files: File[]) => {
     setApiError(null)

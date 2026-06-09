@@ -18,7 +18,6 @@ import re
 
 from app.rag.query_router import route_question
 from app.rag.graph_retriever import graph_native_retrieve
-from app.rag.hybrid_retriever import graph_rag_retrieve
 from app.rag.answer_generator import AnswerGenerator
 from app.indexing.search_tester import AzureSearchTester
 
@@ -188,23 +187,31 @@ def search_only_retrieve(
 def retrieve_context(question: str, route: str, contract_id: str, top: int) -> str:
     """
     Retrieve context according to selected route.
+
+    Routes (current 3-route system):
+      graph  — Cosmos Gremlin semantic graph only
+      tree   — Azure AI Search + structural scope
+      hybrid — tree context + graph facts merged
     """
 
     if route == "graph":
-        return graph_native_retrieve(question)
+        return graph_native_retrieve(question, contract_id=contract_id)
 
-    if route == "search":
-        return search_only_retrieve(
-            question=question,
-            contract_id=contract_id,
-            top=top,
+    if route == "hybrid":
+        tree_context = search_only_retrieve(
+            question=question, contract_id=contract_id, top=top,
+        )
+        graph_context = graph_native_retrieve(question, contract_id=contract_id)
+        return (
+            "TREE SEARCH CONTEXT\n" + "=" * 80 + "\n" + tree_context
+            + "\n\nGRAPH CONTEXT\n" + "=" * 80 + "\n" + graph_context
         )
 
-    return graph_rag_retrieve(
+    # tree (default)
+    return search_only_retrieve(
         question=question,
-        k=top,
         contract_id=contract_id,
-        graph_ready_only=True,
+        top=top,
     )
 
 
@@ -237,7 +244,7 @@ def main():
     print("=" * 100)
     print("Question:", args.question)
     print("Route:", route)
-    print("Reason:", routing["reason"])
+    print("Reason:", routing.get("reasoning", ""))
 
     context = retrieve_context(
         question=args.question,
@@ -261,16 +268,23 @@ def main():
 
     generator = AnswerGenerator()
 
-    answer = generator.generate(
+    # generate() returns (answer, follow_up_suggestions)
+    answer, follow_ups = generator.generate(
         question=args.question,
         context=context,
         route=route,
+        active_contract_ids=[args.contract_id],
     )
 
     print("\n" + "=" * 100)
     print("FINAL ANSWER")
     print("=" * 100)
     print(answer)
+
+    if follow_ups:
+        print("\nSuggested follow-ups:")
+        for fu in follow_ups:
+            print(f"  - {fu}")
 
 
 if __name__ == "__main__":

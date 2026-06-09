@@ -26,6 +26,7 @@ export default function App() {
   const [sidebarCollapsed, setSidebarCollapsed]   = useState(false)
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false)
   const [apiError, setApiError]                   = useState<string | null>(null)
+  const [activeUploads, setActiveUploads]         = useState(0)
 
   const activeSession = sessions.find(s => s.id === activeSessionId) ?? null
   // null contract_filter = all contracts (for session creation)
@@ -58,24 +59,60 @@ export default function App() {
       })
   }, [])
 
-  // ── Load contract list from the search index on mount ───────────────
-  useEffect(() => {
-    api.listContracts()
-      .then(summaries => {
-        const loaded: Contract[] = summaries.map(s => ({
-          id: s.id,
-          displayName: s.displayName,
-          fileName: s.id,
+  // ── Refresh contract list (merge ingest jobs + search index) ────────
+  const refreshContracts = useCallback(async () => {
+    const fromJobs = api.listIngestJobs().then(jobs => {
+      const seen = new Set<string>()
+      const result: Contract[] = []
+      for (const job of jobs) {
+        if (job.status !== 'done' || seen.has(job.contractId)) continue
+        seen.add(job.contractId)
+        result.push({
+          id: job.contractId,
+          displayName: job.fileName.replace(/\.[^.]+$/, '').replace(/_/g, ' '),
+          fileName: job.fileName,
           status: 'search_only' as const,
-          uploadedAt: '',
-          pageCount: 0,
-          fileSize: '',
-          graphReady: false,
-        }))
-        if (loaded.length > 0) setContracts(loaded)
-      })
-      .catch(() => {}) // sidebar stays empty; non-fatal
+          uploadedAt: '', pageCount: 0, fileSize: '', graphReady: false,
+        })
+      }
+      return result
+    }).catch(() => [] as Contract[])
+
+    const fromSearch = api.listContracts().then(summaries =>
+      summaries.map(s => ({
+        id: s.id, displayName: s.displayName, fileName: s.id,
+        status: 'search_only' as const,
+        uploadedAt: '', pageCount: 0, fileSize: '', graphReady: false,
+      } as Contract))
+    ).catch(() => [] as Contract[])
+
+    const [jobContracts, searchContracts] = await Promise.all([fromJobs, fromSearch])
+    const merged = new Map<string, Contract>()
+    for (const c of [...jobContracts, ...searchContracts]) merged.set(c.id, c)
+    const all = Array.from(merged.values())
+    if (all.length > 0) setContracts(all)
   }, [])
+
+  useEffect(() => { refreshContracts() }, [refreshContracts])
+
+  // ── Poll ingest jobs so upload progress persists across the panel ───
+  // closing, and refresh the sidebar when an upload finishes.
+  useEffect(() => {
+    let prevActive = 0
+    const tick = async () => {
+      try {
+        const jobs = await api.listIngestJobs()
+        const active = jobs.filter(j => j.status === 'queued' || j.status === 'processing').length
+        setActiveUploads(active)
+        // a job just finished → pull the new contract into the sidebar
+        if (active < prevActive) refreshContracts()
+        prevActive = active
+      } catch { /* ignore */ }
+    }
+    tick()
+    const handle = setInterval(tick, 4000)
+    return () => clearInterval(handle)
+  }, [refreshContracts])
 
   // ── Lazy-load message history when switching sessions ───────────────
   useEffect(() => {
@@ -187,50 +224,65 @@ export default function App() {
     ))
 
     try {
-      const result = await api.askQuestion(sessionId!, {
-        question: text,
-        route_override: 'auto',
-        // Send multi-contract filter only when user has selected more than one contract
-        contract_ids: selectedContracts.length > 0 ? selectedContracts : null,
-      })
-
-      const words = result.answer.split(' ')
-      let streamedContent = ''
-
-      await new Promise<void>(resolve => {
-        let idx = 0
-        const interval = setInterval(() => {
-          idx = Math.min(idx + Math.floor(Math.random() * 3) + 1, words.length)
-          streamedContent = words.slice(0, idx).join(' ')
+      await api.askQuestionStream(
+        sessionId!,
+        {
+          question: text,
+          route_override: 'auto',
+          contract_ids: selectedContracts.length > 0 ? selectedContracts : null,
+        },
+        // onDelta — append each token as it arrives
+        (token) => {
           setSessions(prev => prev.map(s =>
             s.id === sessionId ? {
               ...s,
               messages: s.messages.map(m =>
-                m.id === streamingId ? { ...m, content: streamedContent } : m
+                m.id === streamingId
+                  ? { ...m, content: m.content + token }
+                  : m
               ),
             } : s
           ))
-          if (idx >= words.length) { clearInterval(interval); resolve() }
-        }, 28)
-      })
-
-      setSessions(prev => prev.map(s =>
-        s.id === sessionId ? {
-          ...s,
-          messages: s.messages.map(m =>
-            m.id === streamingId ? {
-              id: result.message_id,
-              role: 'assistant' as const,
-              content: result.answer,
-              timestamp: new Date().toISOString(),
-              route: result.route as Message['route'],
-              isStreaming: false,
-            } : m
-          ),
-          previewText: result.answer.slice(0, 80) + (result.answer.length > 80 ? '…' : ''),
-          updatedAt: new Date().toISOString(),
-        } : s
-      ))
+        },
+        // onDone — replace placeholder with final message + metadata
+        (done) => {
+          setSessions(prev => prev.map(s =>
+            s.id === sessionId ? {
+              ...s,
+              messages: s.messages.map(m =>
+                m.id === streamingId ? {
+                  id: done.message_id,
+                  role: 'assistant' as const,
+                  content: m.content,   // already fully streamed
+                  timestamp: new Date().toISOString(),
+                  route: done.route as Message['route'],
+                  citations: done.citations,
+                  followUpSuggestions: done.follow_up_suggestions,
+                  isStreaming: false,
+                } : m
+              ),
+              previewText: (() => {
+                const last = s.messages.find(m => m.id === streamingId)
+                const txt = last?.content ?? ''
+                return txt.slice(0, 80) + (txt.length > 80 ? '…' : '')
+              })(),
+              updatedAt: new Date().toISOString(),
+            } : s
+          ))
+          setIsLoading(false)
+        },
+        // onError
+        (detail) => {
+          setApiError(detail)
+          setSessions(prev => prev.map(s =>
+            s.id === sessionId ? {
+              ...s,
+              messages: s.messages.filter(m => m.id !== streamingId),
+            } : s
+          ))
+          setIsLoading(false)
+        },
+      )
     } catch (err) {
       const errorText = err instanceof Error ? err.message : 'An error occurred.'
       setApiError(errorText)
@@ -240,10 +292,25 @@ export default function App() {
           messages: s.messages.filter(m => m.id !== streamingId),
         } : s
       ))
-    } finally {
       setIsLoading(false)
     }
   }, [activeSessionId, contractFilter, selectedContracts, isLoading])
+
+  const handleDeleteContract = useCallback(async (id: string) => {
+    const ok = window.confirm(
+      `Delete "${id.replace(/_/g, ' ')}"?\n\nThis permanently removes it from search, the knowledge graph, and storage. This cannot be undone.`
+    )
+    if (!ok) return
+    // optimistic removal
+    setContracts(prev => prev.filter(c => c.id !== id))
+    setSelectedContracts(prev => prev.filter(c => c !== id))
+    try {
+      await api.deleteContract(id)
+    } catch (e) {
+      setApiError(e instanceof Error ? e.message : 'Delete failed.')
+      refreshContracts()   // restore on failure
+    }
+  }, [refreshContracts])
 
   const handleContractAdded = useCallback((contractId: string, fileName: string) => {
     setContracts(prev => {
@@ -283,6 +350,8 @@ export default function App() {
         onClearContracts={handleClearContracts}
         onOpenUpload={() => setUploadOpen(true)}
         onDeleteSession={handleDeleteSession}
+        onDeleteContract={handleDeleteContract}
+        activeUploads={activeUploads}
       />
 
       <div className="flex flex-col flex-1 min-w-0">

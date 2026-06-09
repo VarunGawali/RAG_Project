@@ -22,3 +22,4 @@ class IndexBuilder:
         print(f"[IndexBuilder] Done — {len(docs)} docs ready.", flush=True)
         return docs
     
+

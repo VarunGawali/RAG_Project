@@ -45,28 +45,6 @@ def roman_to_int(value: str):
 
     return roman.get(value.upper())
 
-def list_contract_ids(self, top: int = 1000):
-    """
-    Return unique contract IDs currently present in Azure AI Search.
-    """
-
-    results = self.client.search(
-        search_text="*",
-        select=["contractId"],
-        top=top,
-    )
-
-    contract_ids = sorted(
-        {
-            r.get("contractId")
-            for r in results
-            if r.get("contractId")
-        }
-    )
-
-    return contract_ids
-
-
 def is_doc_in_article_scope(doc: dict, article_identifier: str) -> bool:
     """
     Post-filter docs for a requested article.
@@ -114,6 +92,47 @@ class AzureSearchTester:
             credential=AzureKeyCredential(config.AZURE_SEARCH_ADMIN_KEY),
         )
         self.embedder = EmbeddingClient()
+
+    def list_contract_ids(self, top: int = 1000):
+        """
+        Return unique contract IDs currently present in Azure AI Search.
+        """
+        results = self.client.search(
+            search_text="*",
+            select=["contractId"],
+            top=top,
+        )
+
+        return sorted(
+            {
+                r.get("contractId")
+                for r in results
+                if r.get("contractId")
+            }
+        )
+
+    def delete_by_contract(self, contract_id: str) -> int:
+        """
+        Delete every search document for a contract. Returns count deleted.
+        Pages through results since a single batch is capped.
+        """
+        safe = contract_id.replace("'", "''")
+        total = 0
+        while True:
+            results = self.client.search(
+                search_text="*",
+                filter=f"contractId eq '{safe}'",
+                select=["id"],
+                top=1000,
+            )
+            keys = [{"id": r["id"]} for r in results if r.get("id")]
+            if not keys:
+                break
+            self.client.delete_documents(documents=keys)
+            total += len(keys)
+            if len(keys) < 1000:
+                break
+        return total
 
     def hybrid_search(
         self,

@@ -95,6 +95,37 @@ class BlobStore:
     # Download helpers (used by worker)
     # ------------------------------------------------------------------
 
+    # ------------------------------------------------------------------
+    # Deletion (used by contract delete)
+    # ------------------------------------------------------------------
+
+    def delete_blob(self, blob_path: str) -> bool:
+        """Delete a single blob. Returns True if deleted, False if absent."""
+        try:
+            self._client.get_blob_client(
+                container=self._container, blob=blob_path
+            ).delete_blob()
+            return True
+        except Exception as exc:  # ResourceNotFound etc. — non-fatal
+            logger.info("delete_blob skipped %s: %s", blob_path, exc)
+            return False
+
+    def delete_prefix(self, prefix: str) -> int:
+        """Delete all blobs under a prefix. Returns count deleted."""
+        container = self._client.get_container_client(self._container)
+        count = 0
+        for blob in container.list_blobs(name_starts_with=prefix):
+            try:
+                container.delete_blob(blob.name)
+                count += 1
+            except Exception as exc:
+                logger.info("delete_prefix skipped %s: %s", blob.name, exc)
+        return count
+
+    def delete_contract_artifacts(self, contract_id: str) -> int:
+        """Delete artifacts/<contractId>/* ."""
+        return self.delete_prefix(f"{_ARTIFACTS_PREFIX}/{contract_id}/")
+
     def download_raw_file(self, blob_path: str) -> bytes:
         blob_client = self._client.get_blob_client(
             container=self._container, blob=blob_path

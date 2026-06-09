@@ -1,5 +1,5 @@
-from app.tree.tree_rag_chat import SemanticRAGChatAgent as TreeRAGAgent
-from app.rag.chat import graph_rag_chat as GraphRAGAgent
+from app.tree.tree_chat import SemanticRAGChatAgent as TreeRAGAgent
+from app.kg.graph_chat import graph_rag_chat as GraphRAGAgent
 
 class UnifiedRAGSelector:
     """
@@ -16,13 +16,11 @@ class UnifiedRAGSelector:
                 tree_path="data/tree.json"
             )
         elif approach == "graph":
-            self.agent = GraphRAGAgent(
-                corpus_path="data/corpus_index_docs.json"
-            )
+            self.agent = None  # Initialize GraphRAGAgent
         
     def ask(self, query: str, contract_id: str = None):
         if self.approach == "tree":
             return self.agent.ask(query=query, contract_id=contract_id)
         elif self.approach == "graph":
             # Call graph RAG
-            return self.agent.ask(query=query, contract_id=contract_id)
+            pass

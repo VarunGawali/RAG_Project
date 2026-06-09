@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import {
   Plus, MessageSquare, FileText, ChevronDown, ChevronRight,
-  Upload, CheckCircle2, PanelLeftClose, PanelLeftOpen, X,
+  Upload, CheckCircle2, PanelLeftClose, PanelLeftOpen, X, Trash2, Loader2,
 } from 'lucide-react'
 import type { ChatSession, Contract } from '../types'
 
@@ -20,6 +20,8 @@ interface Props {
   onClearContracts: () => void
   onOpenUpload: () => void
   onDeleteSession?: (id: string) => void
+  onDeleteContract?: (id: string) => void
+  activeUploads?: number
 }
 
 function formatDate(iso: string) {
@@ -50,6 +52,7 @@ export default function Sidebar({
   collapsed, mobileOpen,
   onToggleCollapse, onCloseMobile,
   onNewChat, onSelectSession, onToggleContract, onClearContracts, onOpenUpload, onDeleteSession,
+  onDeleteContract, activeUploads = 0,
 }: Props) {
   const [contractsExpanded, setContractsExpanded] = useState(true)
 
@@ -136,6 +139,8 @@ export default function Sidebar({
             onClearContracts={onClearContracts}
             onOpenUpload={onOpenUpload}
             onDeleteSession={onDeleteSession}
+            onDeleteContract={onDeleteContract}
+            activeUploads={activeUploads}
           />
         )}
       </aside>
@@ -176,6 +181,7 @@ function SidebarContent({
   showCollapseBtn, showCloseBtn,
   onToggleCollapse, onCloseBtn,
   onNewChat, onSelectSession, onToggleContract, onClearContracts, onOpenUpload, onDeleteSession,
+  onDeleteContract, activeUploads = 0,
 }: {
   sessions: ChatSession[]
   activeSessionId: string | null
@@ -193,6 +199,8 @@ function SidebarContent({
   onClearContracts: () => void
   onOpenUpload: () => void
   onDeleteSession?: (id: string) => void
+  onDeleteContract?: (id: string) => void
+  activeUploads?: number
 }) {
   return (
     <>
@@ -339,34 +347,46 @@ function SidebarContent({
               {contracts.map(contract => {
                 const checked = selectedContracts.includes(contract.id)
                 return (
-                  <button
-                    key={contract.id}
-                    onClick={() => onToggleContract(contract.id)}
-                    className={`w-full text-left px-3 py-2 rounded transition-colors ${
-                      checked ? 'bg-ey-card border border-ey-border' : 'hover:bg-ey-surface'
-                    }`}
-                  >
-                    <div className="flex items-start gap-2">
-                      {/* Checkbox visual */}
-                      <div className={`w-3.5 h-3.5 rounded border flex items-center justify-center flex-shrink-0 mt-0.5 transition-colors ${
-                        checked ? 'bg-ey-yellow border-ey-yellow' : 'border-ey-border bg-ey-darker'
-                      }`}>
-                        {checked && (
-                          <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
-                            <path d="M1 3L3 5L7 1" stroke="#1A1A24" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                          </svg>
-                        )}
+                  <div key={contract.id} className="relative group/contract">
+                    <button
+                      onClick={() => onToggleContract(contract.id)}
+                      className={`w-full text-left px-3 py-2 pr-8 rounded transition-colors ${
+                        checked ? 'bg-ey-card border border-ey-border' : 'hover:bg-ey-surface'
+                      }`}
+                    >
+                      <div className="flex items-start gap-2">
+                        {/* Checkbox visual */}
+                        <div className={`w-3.5 h-3.5 rounded border flex items-center justify-center flex-shrink-0 mt-0.5 transition-colors ${
+                          checked ? 'bg-ey-yellow border-ey-yellow' : 'border-ey-border bg-ey-darker'
+                        }`}>
+                          {checked && (
+                            <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                              <path d="M1 3L3 5L7 1" stroke="#1A1A24" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                          )}
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <p className={`text-xs font-medium truncate leading-snug ${checked ? 'text-white' : 'text-ey-light'}`}>
+                            {contract.displayName}
+                          </p>
+                          <p className="text-[10px] text-ey-muted mt-0.5">
+                            {contract.pageCount > 0 ? `${contract.pageCount}p · ` : ''}{contract.fileSize}
+                          </p>
+                        </div>
                       </div>
-                      <div className="flex-1 min-w-0">
-                        <p className={`text-xs font-medium truncate leading-snug ${checked ? 'text-white' : 'text-ey-light'}`}>
-                          {contract.displayName}
-                        </p>
-                        <p className="text-[10px] text-ey-muted mt-0.5">
-                          {contract.pageCount > 0 ? `${contract.pageCount}p · ` : ''}{contract.fileSize}
-                        </p>
-                      </div>
-                    </div>
-                  </button>
+                    </button>
+                    {onDeleteContract && (
+                      <button
+                        onClick={e => { e.stopPropagation(); onDeleteContract(contract.id) }}
+                        title="Delete contract (removes from search, graph, storage)"
+                        className="absolute right-2 top-1/2 -translate-y-1/2 w-6 h-6 flex items-center
+                                   justify-center rounded text-ey-muted hover:text-red-400 hover:bg-ey-card-hover
+                                   opacity-0 group-hover/contract:opacity-100 transition-opacity"
+                      >
+                        <Trash2 size={12} />
+                      </button>
+                    )}
+                  </div>
                 )
               })}
             </div>
@@ -382,8 +402,17 @@ function SidebarContent({
                      border border-ey-border text-ey-light text-sm rounded
                      hover:border-ey-yellow hover:text-ey-yellow transition-colors"
         >
-          <Upload size={14} />
-          Upload Contract
+          {activeUploads > 0 ? (
+            <>
+              <Loader2 size={14} className="animate-spin text-ey-yellow" />
+              Processing {activeUploads} upload{activeUploads !== 1 ? 's' : ''}…
+            </>
+          ) : (
+            <>
+              <Upload size={14} />
+              Upload Contract
+            </>
+          )}
         </button>
       </div>
     </>

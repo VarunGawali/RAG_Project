@@ -101,11 +101,13 @@ class JobStore:
             "ORDER BY c.createdAt DESC"
         )
         params = [{"name": "@uid", "value": user_id}]
+        # Container is partitioned by /jobId, so a query filtered by userId spans
+        # partitions — must allow cross-partition.
         return list(
             self._container.query_items(
                 query=query,
                 parameters=params,
-                enable_cross_partition_query=False,
+                enable_cross_partition_query=True,
             )
         )
 
