@@ -38,5 +38,8 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 EXPOSE ${PORT}
 
+HEALTHCHECK --interval=30s --timeout=10s --start-period=20s --retries=3 \
+    CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:${PORT}/health')" || exit 1
+
 # Use uvicorn with 2 workers; scale via Container Apps replicas instead of processes
 CMD ["sh", "-c", "uvicorn app.api:app --host 0.0.0.0 --port ${PORT} --workers 2"]

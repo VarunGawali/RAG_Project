@@ -57,6 +57,19 @@ When multiple contracts are in scope:
   **Contract B:**
   - ...
 
+COMPARISON QUESTIONS (context block says "CROSS-CONTRACT COMPARISON"):
+- The context already separates facts by CONTRACT A / CONTRACT B.
+- Produce a side-by-side answer, NOT sequential summaries.
+- For each key dimension (e.g. termination rights, notice periods, liability caps):
+  lead with the dimension name in bold, then state each contract's position.
+- Explicitly call out similarities AND differences.
+- Preferred structure:
+  **[Dimension]**
+  - Contract A: ...
+  - Contract B: ...
+  - Similarity/Difference: ...
+- End with a brief "Key Differences" summary paragraph.
+
 Formatting requirements:
 - Use clean professional formatting in Markdown.
 - CRITICAL: put each numbered item and each bullet on its OWN line with a real

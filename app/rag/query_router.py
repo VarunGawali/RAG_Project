@@ -48,12 +48,15 @@ ROUTES
              "which obligations have deadlines?"
              "who is responsible for NERC compliance?"
              "what rights does the Power Authority have?"
-             "compare payment obligations across contracts"
              "which parties appear in multiple contracts?"
 
 "hybrid" — questions that need BOTH source clause text AND structured graph facts,
-           or that explicitly ask for citations alongside structured facts.
+           OR any comparison / contrast question across two or more contracts.
            Examples:
+             "compare payment obligations across contracts"
+             "how do the termination clauses differ between Contract A and Contract B?"
+             "which contract has stricter indemnification requirements?"
+             "contrast the liability caps in these two contracts"
              "what are Con Edison's environmental obligations with citations?"
              "what are the termination remedies and where are they stated?"
              "summarize obligations with supporting clause references"
@@ -147,11 +150,16 @@ def _parse_plan(raw: str, original_question: str) -> Dict:
 def _keyword_route(question: str) -> Dict:
     q = question.lower()
 
+    comparison_terms = [
+        "compare", "comparison", "versus", " vs ", " vs.", "differ", "difference",
+        "contrast", "both contract", "side by side", "which contract", "which one",
+        "more stringent", "stricter", "stronger", "how do", "how does",
+    ]
     graph_terms = [
         "obligation", "obligations", "owed", "owe", "responsible",
         "deadline", "due", "by when", "right", "rights", "restriction",
         "prohibit", "shall not", "who owes", "owed to",
-        "compare", "across contracts", "shared parties", "portfolio",
+        "across contracts", "shared parties", "portfolio",
     ]
     evidence_terms = [
         "cite", "citation", "evidence", "source", "where stated",
@@ -168,12 +176,17 @@ def _keyword_route(question: str) -> Dict:
         "reporting", "community right to know",
     ]
 
+    has_comparison = any(t in q for t in comparison_terms)
     has_graph    = any(t in q for t in graph_terms)
     has_evidence = any(t in q for t in evidence_terms)
     has_text     = any(t in q for t in text_terms)
     has_hybrid   = any(t in q for t in hybrid_topics)
 
-    if has_graph and (has_evidence or has_hybrid):
+    # Comparison questions always use hybrid so they get both clause text
+    # (for quotes) and graph facts (for structured side-by-side context)
+    if has_comparison:
+        route, reason = "hybrid", "comparison across contracts — needs both clause text and graph facts"
+    elif has_graph and (has_evidence or has_hybrid):
         route, reason = "hybrid", "structured facts requested with evidence/citations"
     elif has_graph:
         route, reason = "graph", "structured legal fact question"

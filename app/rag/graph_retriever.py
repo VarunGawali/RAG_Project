@@ -19,12 +19,199 @@ handled.
 """
 
 import logging
+import math
 from collections import defaultdict
-from typing import Any, Dict, List, Optional
+from typing import Any, Callable, Dict, List, Optional, Tuple
 
 from app.kg.gremlin_writer import GremlinWriter
 
 logger = logging.getLogger(__name__)
+
+
+# ── Semantic intent classifier ─────────────────────────────────────────────────
+#
+# Each intent has:
+#   name        — internal label used for logging / citation route label
+#   description — plain-English description embedded once at startup; the query
+#                 embedding is compared against these at retrieval time.
+#   examples    — additional example questions that expand the semantic coverage
+#                 (all concatenated into one embedding vector per intent)
+#
+# The classifier embeds all descriptions+examples once (lazy, module-level
+# singleton) and picks the closest intent by cosine similarity at query time.
+# This replaces every `if "keyword" in q` branch in graph_native_retrieve.
+
+_GRAPH_INTENTS: List[Dict] = [
+    {
+        "name": "deadline",
+        "description": "Questions about deadlines, due dates, time limits, or when obligations must be performed.",
+        "examples": [
+            "when is payment due?",
+            "what are the time limits for notice?",
+            "which obligations have deadlines?",
+            "by when must the contractor submit reports?",
+        ],
+    },
+    {
+        "name": "indemnity",
+        "description": "Questions about indemnification, hold-harmless clauses, indemnitors, indemnitees, or who bears financial responsibility for losses.",
+        "examples": [
+            "who indemnifies whom?",
+            "what are the indemnification obligations?",
+            "hold harmless provisions",
+            "who is responsible for third-party claims?",
+        ],
+    },
+    {
+        "name": "termination",
+        "description": "Questions about contract termination, cancellation, end of agreement, termination for cause or convenience.",
+        "examples": [
+            "how can the contract be terminated?",
+            "what are the grounds for termination?",
+            "termination rights and procedures",
+            "what happens when the contract ends?",
+        ],
+    },
+    {
+        "name": "breach_cure",
+        "description": "Questions about breach of contract, default, cure periods, remedies for non-performance, or consequences of violation.",
+        "examples": [
+            "what constitutes a breach?",
+            "how long is the cure period?",
+            "consequences of default",
+            "what remedies are available for non-performance?",
+        ],
+    },
+    {
+        "name": "notice",
+        "description": "Questions about notice requirements, notification obligations, notice periods, or how parties must communicate formal notices.",
+        "examples": [
+            "how must notices be delivered?",
+            "what are the notice requirements?",
+            "notice period for termination",
+            "who receives formal notices?",
+        ],
+    },
+    {
+        "name": "payment",
+        "description": "Questions about payment obligations, fees, invoicing, billing cycles, reimbursements, or financial compensation.",
+        "examples": [
+            "what are the payment terms?",
+            "how are invoices submitted?",
+            "fee schedule and billing",
+            "reimbursement obligations",
+            "what does the service provider get paid?",
+        ],
+    },
+    {
+        "name": "liability",
+        "description": "Questions about liability caps, limitation of liability, maximum financial exposure, or damage limits.",
+        "examples": [
+            "what is the liability cap?",
+            "is there a limit on damages?",
+            "maximum financial exposure",
+            "limitation of liability clause",
+        ],
+    },
+    {
+        "name": "obligations_by_party",
+        "description": "Questions about what a specific named party owes, must do, or is responsible for under the contract.",
+        "examples": [
+            "what does Con Edison owe?",
+            "what are the contractor's obligations?",
+            "what is the Power Authority responsible for?",
+            "list obligations of the service provider",
+        ],
+    },
+    {
+        "name": "obligations_owed_to_party",
+        "description": "Questions about obligations owed TO a specific party, or what a party is entitled to receive.",
+        "examples": [
+            "what is owed to the owner?",
+            "what obligations are owed to Con Edison?",
+            "what must be provided to the client?",
+        ],
+    },
+    {
+        "name": "all_obligations",
+        "description": "General questions about all contract obligations, duties, responsibilities, or what parties shall do.",
+        "examples": [
+            "list all obligations",
+            "what are the parties' responsibilities?",
+            "what must each party do under this contract?",
+            "summarize the contractual duties",
+        ],
+    },
+    {
+        "name": "rights",
+        "description": "Questions about rights, entitlements, permissions, or what a party is allowed to do under the contract.",
+        "examples": [
+            "what rights does the operator have?",
+            "is the contractor permitted to subcontract?",
+            "what is the owner entitled to?",
+            "intellectual property rights",
+        ],
+    },
+    {
+        "name": "restrictions",
+        "description": "Questions about restrictions, prohibitions, what parties shall not do, or activities that are forbidden or limited.",
+        "examples": [
+            "what is prohibited under the contract?",
+            "what can't the contractor do?",
+            "restrictions on assignment",
+            "shall not provisions",
+        ],
+    },
+    {
+        "name": "cross_contract",
+        "description": "Questions about parties or facts that appear in multiple contracts, portfolio-wide analysis, or shared relationships across contracts.",
+        "examples": [
+            "which parties appear in multiple contracts?",
+            "shared parties across contracts",
+            "cross-contract obligations",
+            "portfolio-wide analysis",
+        ],
+    },
+]
+
+# Build a single embedding text per intent (description + examples joined)
+_INTENT_TEXTS: List[str] = [
+    i["description"] + " " + " ".join(i["examples"])
+    for i in _GRAPH_INTENTS
+]
+
+# Module-level cache: populated lazily on first use
+_intent_embeddings: Optional[List[List[float]]] = None
+
+
+def _cosine(a: List[float], b: List[float]) -> float:
+    dot = sum(x * y for x, y in zip(a, b))
+    na  = math.sqrt(sum(x * x for x in a))
+    nb  = math.sqrt(sum(y * y for y in b))
+    return dot / (na * nb) if na and nb else 0.0
+
+
+def _classify_intent(question: str) -> Tuple[str, float]:
+    """
+    Embed `question` and return (intent_name, similarity_score).
+    Falls back to 'all_obligations' if the embedder is unavailable.
+    """
+    global _intent_embeddings
+    try:
+        from app.embedding.embedding_client import EmbeddingClient
+        embedder = EmbeddingClient()
+        if _intent_embeddings is None:
+            logger.info("GraphIntentClassifier: embedding %d intents (one-time).", len(_GRAPH_INTENTS))
+            _intent_embeddings = embedder.embed_many(_INTENT_TEXTS)
+        q_emb = embedder.embed(question)
+        scores = [(_cosine(q_emb, iv), i) for i, iv in enumerate(_intent_embeddings)]
+        best_score, best_idx = max(scores)
+        intent = _GRAPH_INTENTS[best_idx]["name"]
+        logger.debug("Intent '%s' (score=%.3f) for: %s", intent, best_score, question[:80])
+        return intent, best_score
+    except Exception as exc:
+        logger.warning("Intent classifier failed (%s) — defaulting to 'all_obligations'.", exc)
+        return "all_obligations", 0.0
 
 
 # ── Canonical label sets ───────────────────────────────────────────────────────
@@ -594,6 +781,66 @@ def format_graph_result(
     return "\n".join(lines)
 
 
+_COMPARISON_TRIGGERS = {
+    "compare", "comparison", "versus", " vs ", " vs.", "differ", "difference",
+    "contrast", "both contract", "how do", "how does", "side by side",
+    "which contract", "which one", "more stringent", "stricter", "stronger",
+}
+
+
+def _is_comparison(question: str) -> bool:
+    q = question.lower()
+    return any(t in q for t in _COMPARISON_TRIGGERS)
+
+
+def format_comparison_result(
+    question: str,
+    intent: str,
+    grouped: Dict[str, List[Dict]],
+    retriever: GraphNativeRetriever,
+    extra_sections: Optional[List[str]] = None,
+) -> str:
+    """
+    Side-by-side comparison block for exactly 2 (or more) contracts.
+    Produces CONTRACT A / CONTRACT B sections for every dimension so the LLM
+    can directly compare rather than summarising two flat lists.
+    """
+    contracts = sorted(grouped.keys())
+    total = sum(len(v) for v in grouped.values())
+    labels = {cid: f"CONTRACT {chr(65 + i)} ({cid})" for i, cid in enumerate(contracts)}
+
+    lines = [
+        "=" * 80,
+        "CROSS-CONTRACT COMPARISON — GRAPH RETRIEVAL",
+        "=" * 80,
+        f"Question: {question}",
+        f"Comparing {len(contracts)} contracts  |  Total facts: {total}",
+        "",
+        "INSTRUCTIONS FOR ANSWER GENERATION:",
+        "- Produce a side-by-side comparison, not sequential summaries.",
+        "- For each key dimension, state Contract A's position THEN Contract B's.",
+        "- Highlight similarities and differences explicitly.",
+        "- Use a table or paired bullet structure, not prose paragraphs.",
+        "",
+    ]
+
+    for cid in contracts:
+        facts = grouped[cid]
+        lines.append("─" * 80)
+        lines.append(labels[cid])
+        lines.append("─" * 80)
+        if facts:
+            lines += _format_facts(facts, retriever, show_contract=False)
+        else:
+            lines.append("  (no facts found for this contract on this topic)")
+        lines.append("")
+
+    if extra_sections:
+        lines += extra_sections
+
+    return "\n".join(lines)
+
+
 def format_cross_contract_result(
     question: str,
     intent: str,
@@ -601,6 +848,10 @@ def format_cross_contract_result(
     retriever: GraphNativeRetriever,
     extra_sections: Optional[List[str]] = None,
 ) -> str:
+    # Route to comparison format if the question is asking for a comparison
+    if _is_comparison(question) and len(grouped) >= 2:
+        return format_comparison_result(question, intent, grouped, retriever, extra_sections)
+
     total = sum(len(v) for v in grouped.values())
     lines = [
         "=" * 80, "CROSS-CONTRACT GRAPH RETRIEVAL", "=" * 80,
@@ -645,127 +896,100 @@ def graph_native_retrieve(
     try:
         party = extract_party(question)
 
-        # ── Deadline questions ─────────────────────────────────────────
-        if "deadline" in q or "due date" in q or "by when" in q:
-            if multi or portfolio:
-                grouped = retriever.get_deadlines_grouped_by_contract(contract_ids=scope_ids)
-                return format_cross_contract_result(question, "obligations_with_deadlines", grouped, retriever)
-            facts = retriever.get_obligations_with_deadlines(contract_id=contract_id, contract_ids=scope_ids)
-            return format_graph_result(question, "obligations_with_deadlines", facts, retriever)
+        # ── Comparison questions (2+ contracts) ───────────────────────────────
+        # Detect BEFORE intent classification so a comparison question
+        # ("compare termination clauses") gets the side-by-side path regardless
+        # of which topic the classifier picks.
+        if _is_comparison(question) and (multi or portfolio):
+            # Use the semantic classifier to identify which topic to compare
+            intent, _ = _classify_intent(question)
+            fetcher = _intent_to_fetcher(intent, retriever, party)
+            raw_facts = fetcher(contract_ids=scope_ids)  # type: ignore[call-arg]
+            comparison_facts: Dict[str, List[Dict]] = defaultdict(list)
+            for f in raw_facts:
+                cid = f.get("contractId") or "unknown"
+                if not scope_ids or cid in scope_ids:
+                    comparison_facts[cid].append(f)
 
-        # ── Indemnification ────────────────────────────────────────────
-        if "indemnif" in q or "indemnit" in q or "hold harmless" in q:
-            facts = retriever.get_indemnity_facts(contract_id=contract_id, contract_ids=scope_ids)
-            if multi or portfolio:
-                grouped = retriever._group_by_contract(facts)
-                return format_cross_contract_result(question, "indemnity", grouped, retriever)
-            return format_graph_result(question, "indemnity", facts, retriever, multi_contract=portfolio)
-
-        # ── Termination ────────────────────────────────────────────────
-        if "terminat" in q or "termination" in q:
-            facts = retriever.get_termination_facts(contract_id=contract_id, contract_ids=scope_ids)
-            if multi or portfolio:
-                grouped = retriever._group_by_contract(facts)
-                return format_cross_contract_result(question, "termination", grouped, retriever)
-            return format_graph_result(question, "termination", facts, retriever, multi_contract=portfolio)
-
-        # ── Breach / cure / default ────────────────────────────────────
-        if "breach" in q or "cure" in q or "default" in q:
-            facts = retriever.get_breach_cure_facts(contract_id=contract_id, contract_ids=scope_ids)
-            if multi or portfolio:
-                grouped = retriever._group_by_contract(facts)
-                return format_cross_contract_result(question, "breach_cure", grouped, retriever)
-            return format_graph_result(question, "breach_cure", facts, retriever, multi_contract=portfolio)
-
-        # ── Notice ─────────────────────────────────────────────────────
-        if "notice" in q or "notif" in q or "notice period" in q:
-            facts = retriever.get_notice_facts(contract_id=contract_id, contract_ids=scope_ids)
-            if multi or portfolio:
-                grouped = retriever._group_by_contract(facts)
-                return format_cross_contract_result(question, "notice", grouped, retriever)
-            return format_graph_result(question, "notice", facts, retriever, multi_contract=portfolio)
-
-        # ── Payment / invoicing / reimbursement ───────────────────────
-        if any(t in q for t in ["payment", "invoice", "reimburse", "pay ", "pays ", "billing"]):
-            facts = retriever.get_payment_facts(contract_id=contract_id, contract_ids=scope_ids)
-            if multi or portfolio:
-                grouped = retriever._group_by_contract(facts)
-                return format_cross_contract_result(question, "payment", grouped, retriever)
-            return format_graph_result(question, "payment", facts, retriever, multi_contract=portfolio)
-
-        # ── Liability / caps ───────────────────────────────────────────
-        if "liabilit" in q or "liability cap" in q or "cap " in q:
-            facts = retriever.get_liability_facts(contract_id=contract_id, contract_ids=scope_ids)
-            if multi or portfolio:
-                grouped = retriever._group_by_contract(facts)
-                return format_cross_contract_result(question, "liability", grouped, retriever)
-            return format_graph_result(question, "liability", facts, retriever, multi_contract=portfolio)
-
-        # ── Shared party / cross-contract analysis ─────────────────────
-        cross_triggers = [
-            "across contracts", "compare", "shared parties", "both contracts",
-            "all contracts", "portfolio", "multiple contracts",
-        ]
-        if any(t in q for t in cross_triggers) or (portfolio and party is None):
-            shared  = retriever.get_shared_parties(contract_ids=scope_ids)
-            grouped = retriever.get_obligations_grouped_by_contract(contract_ids=scope_ids)
-            extra = []
+            shared = retriever.get_shared_parties(contract_ids=scope_ids)
+            extra: List[str] = []
             if shared:
                 extra.append("\n── Parties Appearing in Multiple Contracts ─────────────")
                 for pname, cids in sorted(shared.items()):
                     extra.append(f"  {pname}: {', '.join(cids)}")
-            return format_cross_contract_result(
-                question, "cross_contract_analysis", grouped, retriever, extra_sections=extra,
+
+            return format_comparison_result(
+                question, intent, dict(comparison_facts), retriever, extra,
             )
 
-        # ── Party-owed-to ──────────────────────────────────────────────
-        if "owed to" in q and party:
+        # ── Semantic intent classification → fetch → format ───────────────────
+        intent, score = _classify_intent(question)
+        logger.info("Graph intent: %s (score=%.3f)", intent, score)
+
+        # Cross-contract / shared-party intent
+        if intent == "cross_contract" or (portfolio and party is None):
+            shared  = retriever.get_shared_parties(contract_ids=scope_ids)
+            grouped = retriever.get_obligations_grouped_by_contract(contract_ids=scope_ids)
+            extra_s: List[str] = []
+            if shared:
+                extra_s.append("\n── Parties Appearing in Multiple Contracts ─────────────")
+                for pname, cids in sorted(shared.items()):
+                    extra_s.append(f"  {pname}: {', '.join(cids)}")
+            return format_cross_contract_result(
+                question, "cross_contract_analysis", grouped, retriever, extra_sections=extra_s,
+            )
+
+        # Party-scoped intents: narrow to a specific direction if party is found
+        if intent == "obligations_owed_to_party" and party:
             if multi or portfolio:
                 facts = retriever.get_obligations_owed_to_party(party, contract_ids=scope_ids)
-                grouped = retriever._group_by_contract(facts)
-                return format_cross_contract_result(question, f"obligations_owed_to:{party}", grouped, retriever)
+                return format_cross_contract_result(question, f"owed_to:{party}", retriever._group_by_contract(facts), retriever)
             facts = retriever.get_obligations_owed_to_party(party, contract_id=contract_id, contract_ids=scope_ids)
-            return format_graph_result(question, f"obligations_owed_to:{party}", facts, retriever)
+            return format_graph_result(question, f"owed_to:{party}", facts, retriever)
 
-        # ── Party obligation ───────────────────────────────────────────
-        if ("obligation" in q or "responsible" in q or "owe" in q or "owed" in q) and party:
+        if intent == "obligations_by_party" and party:
             if multi or portfolio:
                 facts = retriever.get_obligations_by_party(party, contract_ids=scope_ids)
-                grouped = retriever._group_by_contract(facts)
-                return format_cross_contract_result(question, f"obligations_by_party:{party}", grouped, retriever)
+                return format_cross_contract_result(question, f"by_party:{party}", retriever._group_by_contract(facts), retriever)
             facts = retriever.get_obligations_by_party(party, contract_id=contract_id, contract_ids=scope_ids)
-            return format_graph_result(question, f"obligations_by_party:{party}", facts, retriever)
+            return format_graph_result(question, f"by_party:{party}", facts, retriever)
 
-        # ── All obligations (no specific party) ────────────────────────
-        if "obligation" in q or "responsible" in q:
+        # Deadline intent gets its own grouped-by-contract fetcher
+        if intent == "deadline":
             if multi or portfolio:
-                grouped = retriever.get_obligations_grouped_by_contract(contract_ids=scope_ids)
-                return format_cross_contract_result(question, "all_obligations", grouped, retriever)
-            facts = retriever.get_all_obligations(contract_id=contract_id, contract_ids=scope_ids)
-            return format_graph_result(question, "all_obligations", facts, retriever)
+                grouped = retriever.get_deadlines_grouped_by_contract(contract_ids=scope_ids)
+                return format_cross_contract_result(question, "deadline", grouped, retriever)
+            facts = retriever.get_obligations_with_deadlines(contract_id=contract_id, contract_ids=scope_ids)
+            return format_graph_result(question, "deadline", facts, retriever)
 
-        # ── Rights ─────────────────────────────────────────────────────
-        if "right" in q or "entitl" in q or "permission" in q:
-            facts = retriever.get_rights(contract_id=contract_id, contract_ids=scope_ids)
-            if multi or portfolio:
-                grouped = retriever._group_by_contract(facts)
-                return format_cross_contract_result(question, "rights", grouped, retriever)
-            return format_graph_result(question, "rights", facts, retriever, multi_contract=multi or portfolio)
-
-        # ── Restrictions ───────────────────────────────────────────────
-        if "restriction" in q or "prohibit" in q or "shall not" in q or "may not" in q:
-            facts = retriever.get_restrictions(contract_id=contract_id, contract_ids=scope_ids)
-            if multi or portfolio:
-                grouped = retriever._group_by_contract(facts)
-                return format_cross_contract_result(question, "restrictions", grouped, retriever)
-            return format_graph_result(question, "restrictions", facts, retriever, multi_contract=multi or portfolio)
-
-        # ── Fallback: obligations ──────────────────────────────────────
+        # All other intents share the same fetch → group → format pattern
+        fetcher = _intent_to_fetcher(intent, retriever, party)
+        facts = fetcher(contract_id=contract_id, contract_ids=scope_ids)  # type: ignore[call-arg]
         if multi or portfolio:
-            grouped = retriever.get_obligations_grouped_by_contract(contract_ids=scope_ids)
-            return format_cross_contract_result(question, "all_obligations_fallback", grouped, retriever)
-        facts = retriever.get_all_obligations(contract_id=contract_id, contract_ids=scope_ids)
-        return format_graph_result(question, "all_obligations_fallback", facts, retriever)
+            return format_cross_contract_result(question, intent, retriever._group_by_contract(facts), retriever)
+        return format_graph_result(question, intent, facts, retriever, multi_contract=portfolio)
 
     finally:
         retriever.close()
+
+
+def _intent_to_fetcher(intent: str, retriever: "GraphNativeRetriever", party: Optional[str]) -> Callable:
+    """Map a classified intent name to the right fetcher method."""
+    _map: Dict[str, Callable] = {
+        "indemnity":              retriever.get_indemnity_facts,
+        "termination":            retriever.get_termination_facts,
+        "breach_cure":            retriever.get_breach_cure_facts,
+        "notice":                 retriever.get_notice_facts,
+        "payment":                retriever.get_payment_facts,
+        "liability":              retriever.get_liability_facts,
+        "rights":                 retriever.get_rights,
+        "restrictions":           retriever.get_restrictions,
+        "all_obligations":        retriever.get_all_obligations,
+        "obligations_by_party":   (retriever.get_obligations_by_party if party
+                                   else retriever.get_all_obligations),
+        "obligations_owed_to_party": (retriever.get_obligations_owed_to_party if party
+                                      else retriever.get_all_obligations),
+        "cross_contract":         retriever.get_all_obligations,
+        "deadline":               retriever.get_obligations_with_deadlines,
+    }
+    return _map.get(intent, retriever.get_all_obligations)
