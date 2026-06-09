@@ -594,6 +594,66 @@ def format_graph_result(
     return "\n".join(lines)
 
 
+_COMPARISON_TRIGGERS = {
+    "compare", "comparison", "versus", " vs ", " vs.", "differ", "difference",
+    "contrast", "both contract", "how do", "how does", "side by side",
+    "which contract", "which one", "more stringent", "stricter", "stronger",
+}
+
+
+def _is_comparison(question: str) -> bool:
+    q = question.lower()
+    return any(t in q for t in _COMPARISON_TRIGGERS)
+
+
+def format_comparison_result(
+    question: str,
+    intent: str,
+    grouped: Dict[str, List[Dict]],
+    retriever: GraphNativeRetriever,
+    extra_sections: Optional[List[str]] = None,
+) -> str:
+    """
+    Side-by-side comparison block for exactly 2 (or more) contracts.
+    Produces CONTRACT A / CONTRACT B sections for every dimension so the LLM
+    can directly compare rather than summarising two flat lists.
+    """
+    contracts = sorted(grouped.keys())
+    total = sum(len(v) for v in grouped.values())
+    labels = {cid: f"CONTRACT {chr(65 + i)} ({cid})" for i, cid in enumerate(contracts)}
+
+    lines = [
+        "=" * 80,
+        "CROSS-CONTRACT COMPARISON — GRAPH RETRIEVAL",
+        "=" * 80,
+        f"Question: {question}",
+        f"Comparing {len(contracts)} contracts  |  Total facts: {total}",
+        "",
+        "INSTRUCTIONS FOR ANSWER GENERATION:",
+        "- Produce a side-by-side comparison, not sequential summaries.",
+        "- For each key dimension, state Contract A's position THEN Contract B's.",
+        "- Highlight similarities and differences explicitly.",
+        "- Use a table or paired bullet structure, not prose paragraphs.",
+        "",
+    ]
+
+    for cid in contracts:
+        facts = grouped[cid]
+        lines.append("─" * 80)
+        lines.append(labels[cid])
+        lines.append("─" * 80)
+        if facts:
+            lines += _format_facts(facts, retriever, show_contract=False)
+        else:
+            lines.append("  (no facts found for this contract on this topic)")
+        lines.append("")
+
+    if extra_sections:
+        lines += extra_sections
+
+    return "\n".join(lines)
+
+
 def format_cross_contract_result(
     question: str,
     intent: str,
@@ -601,6 +661,10 @@ def format_cross_contract_result(
     retriever: GraphNativeRetriever,
     extra_sections: Optional[List[str]] = None,
 ) -> str:
+    # Route to comparison format if the question is asking for a comparison
+    if _is_comparison(question) and len(grouped) >= 2:
+        return format_comparison_result(question, intent, grouped, retriever, extra_sections)
+
     total = sum(len(v) for v in grouped.values())
     lines = [
         "=" * 80, "CROSS-CONTRACT GRAPH RETRIEVAL", "=" * 80,
@@ -644,6 +708,55 @@ def graph_native_retrieve(
     retriever = GraphNativeRetriever()
     try:
         party = extract_party(question)
+
+        # ── Comparison questions (2+ contracts) — run topic-aware fetch ────────
+        # Detect comparison intent FIRST so "compare termination clauses across
+        # both contracts" doesn't fall through to the single-topic branch and
+        # produce a plain list instead of a side-by-side block.
+        if _is_comparison(question) and (multi or portfolio):
+            # Determine which topic(s) they're comparing and fetch accordingly
+            comparison_facts: Dict[str, List[Dict]] = defaultdict(list)
+
+            topic_fetchers = [
+                (["indemnif", "indemnit", "hold harmless"], retriever.get_indemnity_facts),
+                (["terminat"], retriever.get_termination_facts),
+                (["breach", "cure", "default"], retriever.get_breach_cure_facts),
+                (["notice", "notif"], retriever.get_notice_facts),
+                (["payment", "invoice", "reimburse", "fee"], retriever.get_payment_facts),
+                (["liabilit", "liability cap", "cap "], retriever.get_liability_facts),
+                (["deadline", "due date", "by when"], retriever.get_obligations_with_deadlines),
+                (["right", "entitl", "permission"], retriever.get_rights),
+                (["restriction", "prohibit", "shall not", "may not"], retriever.get_restrictions),
+                (["obligation", "responsible", "owe", "owed", "duty"], retriever.get_all_obligations),
+            ]
+
+            matched_fetcher = None
+            for keywords, fetcher in topic_fetchers:
+                if any(kw in q for kw in keywords):
+                    matched_fetcher = fetcher
+                    break
+
+            if matched_fetcher is None:
+                # No specific topic — fetch obligations as the broadest proxy
+                matched_fetcher = retriever.get_all_obligations
+
+            raw_facts = matched_fetcher(contract_ids=scope_ids)  # type: ignore[call-arg]
+            for f in raw_facts:
+                cid = f.get("contractId") or "unknown"
+                if not scope_ids or cid in scope_ids:
+                    comparison_facts[cid].append(f)
+
+            # Also fetch shared parties for enrichment
+            shared = retriever.get_shared_parties(contract_ids=scope_ids)
+            extra: List[str] = []
+            if shared:
+                extra.append("\n── Parties Appearing in Multiple Contracts ─────────────")
+                for pname, cids in sorted(shared.items()):
+                    extra.append(f"  {pname}: {', '.join(cids)}")
+
+            return format_comparison_result(
+                question, "comparison", dict(comparison_facts), retriever, extra,
+            )
 
         # ── Deadline questions ─────────────────────────────────────────
         if "deadline" in q or "due date" in q or "by when" in q:

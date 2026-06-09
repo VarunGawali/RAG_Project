@@ -191,7 +191,24 @@ def canonical_graph_retrieve(
     search_anchor_fn(question, scope) -> List[clause_id]  (Phase-2 bridge; optional)
     """
     scope = list(contract_ids) if contract_ids else ([contract_id] if contract_id else None)
+    is_multi = scope is not None and len(scope) >= 2
     qlow = question.lower()
+
+    # Comparison questions with 2+ contracts: delegate to graph_native_retrieve
+    # which already has a dedicated side-by-side comparison path.
+    _comparison_triggers = {
+        "compare", "comparison", "versus", " vs ", " vs.", "differ",
+        "contrast", "both contract", "side by side", "which contract",
+        "more stringent", "stricter", "how do", "how does",
+    }
+    if is_multi and any(t in qlow for t in _comparison_triggers):
+        from app.rag.graph_retriever import graph_native_retrieve
+        ctx = graph_native_retrieve(question, contract_ids=scope)
+        # Re-parse facts from the context isn't feasible here; return empty facts
+        # list so the caller falls back to scope-based citation cards — the rich
+        # comparison text is in ctx.
+        return ctx, []
+
     # Direction: "obligations owed TO X" → OWED_TO; otherwise the common case
     # ("X's obligations" / "what does X owe") → OWED_BY only. This avoids
     # conflating duties-of vs duties-toward and roughly halves the result set.
